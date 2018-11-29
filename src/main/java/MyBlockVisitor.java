@@ -1,5 +1,6 @@
 import ast.Block;
 import ast.interfaces.BlockStatement;
+import ast.statements.Statement;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +15,9 @@ public class MyBlockVisitor extends Java8BaseVisitor<Block> {
         for(Java8Parser.BlockStatementContext blk : ctx.blockStatement()) {
 
             if(blk.statement() != null) {
-                blockStmts.add(Driver.statementVisitor.visitStatement(blk.statement()));
+                Statement stmt = Driver.statementVisitor.visitStatement(blk.statement());
+                if(stmt != null)
+                    blockStmts.add(stmt);
             }
             if(blk.localVariableDeclarationStatement() != null) {
 
@@ -26,6 +29,6 @@ public class MyBlockVisitor extends Java8BaseVisitor<Block> {
             }
         }
 
-        return new Block(blockStmts);
+        return new Block(ctx.start.getLine(), blockStmts);
     }
 }

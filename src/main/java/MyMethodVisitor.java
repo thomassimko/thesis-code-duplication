@@ -1,7 +1,6 @@
 import ast.Block;
 import ast.Declaration;
 import ast.Method;
-import ast.interfaces.Statement;
 
 import java.util.ArrayList;
 import java.util.List;

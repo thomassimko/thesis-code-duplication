@@ -1365,4 +1365,28 @@ public interface Java8Visitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitCastExpression(Java8Parser.CastExpressionContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link Java8Parser#typeDotClass}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitTypeDotClass(Java8Parser.TypeDotClassContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link Java8Parser#primitiveTypeDotClass}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitPrimitiveTypeDotClass(Java8Parser.PrimitiveTypeDotClassContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link Java8Parser#voidDotClass}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitVoidDotClass(Java8Parser.VoidDotClassContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link Java8Parser#typeDotThis}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitTypeDotThis(Java8Parser.TypeDotThisContext ctx);
 }

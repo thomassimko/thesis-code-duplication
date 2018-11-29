@@ -1,3 +1,4 @@
+import ast.Program;
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
 
@@ -13,7 +14,8 @@ public class Driver {
     static final MyMethodVisitor methodVisitor = new MyMethodVisitor();
     static final MyLeftHandSideVisitor leftHandSideVisitor = new MyLeftHandSideVisitor();
     static final MyTypeDeclarationVisitor typeVisitor = new MyTypeDeclarationVisitor();
-
+    static final MyPrimaryVisitor primaryVisitor = new MyPrimaryVisitor();
+    static final MyLiteralVisitor literalVisitor = new MyLiteralVisitor();
 
     public static void main(String[] args) {
 
@@ -24,8 +26,11 @@ public class Driver {
             Java8Parser parser = new Java8Parser(tokens);
             ParserRuleContext tree = parser.compilationUnit(); // parse
 
-            Java8Visitor visitor = new MyVisitor();
-            visitor.visit(tree);
+            MyVisitor visitor = new MyVisitor();
+            Program program = visitor.visit(tree);
+
+            program.printProgram();
+
         } catch (Exception e) {
             e.printStackTrace();
         }

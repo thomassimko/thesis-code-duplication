@@ -1,5 +1,5 @@
 import ast.Declaration;
-import ast.interfaces.Expression;
+import ast.expressions.Expression;
 
 import java.util.ArrayList;
 import java.util.List;

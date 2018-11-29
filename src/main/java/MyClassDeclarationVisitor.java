@@ -11,8 +11,13 @@ public class MyClassDeclarationVisitor extends Java8BaseVisitor<ClassObject> {
     public ClassObject visitClassDeclaration(Java8Parser.ClassDeclarationContext ctx) {
         //System.out.println(ctx.normalClassDeclaration().classModifier().get(0).getText());
         Java8Parser.ClassBodyContext body = ctx.normalClassDeclaration().classBody();
+
         //System.out.println(body.getText());
-        return new ClassObject(gatherMethods(body));
+        return this.visitClassBody(body);
+    }
+
+    public ClassObject visitClassBody(Java8Parser.ClassBodyContext ctx) {
+        return new ClassObject(gatherMethods(ctx));
     }
 
     public List<Method> gatherMethods(Java8Parser.ClassBodyContext body) {

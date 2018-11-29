@@ -1,17 +1,21 @@
 package ast.expressions;
 
-import ast.interfaces.LeftSide;
-import ast.interfaces.Expression;
-
-public class AssignmentExpression implements Expression {
+public class AssignmentExpression extends Expression {
 
     private Expression exp;
     private String operator;
-    private LeftSide left;
+    private Expression left;
 
-    public AssignmentExpression(LeftSide left, String operator, Expression exp) {
+    public AssignmentExpression(int line, Expression left, String operator, Expression exp) {
+        super(line);
         this.left = left;
         this.operator = operator;
         this.exp = exp;
+    }
+
+    public void printAST() {
+        System.out.println("Assignment");
+        left.printAST();
+        exp.printAST();
     }
 }

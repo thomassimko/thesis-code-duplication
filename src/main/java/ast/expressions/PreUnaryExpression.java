@@ -1,15 +1,20 @@
 package ast.expressions;
 
-import ast.interfaces.Expression;
-
-public class PreUnaryExpression implements Expression {
+public class PreUnaryExpression extends Expression {
 
     private String op;
     private Expression exp;
 
-    public PreUnaryExpression(String op, Expression exp) {
-            this.op = op;
-            this.exp = exp;
+    public PreUnaryExpression(int line, String op, Expression exp) {
+        super(line);
+        this.op = op;
+        this.exp = exp;
 
-        }
+    }
+
+    @Override
+    public void printAST() {
+        System.out.println("Unary: " + op);
+        exp.printAST();
+    }
 }

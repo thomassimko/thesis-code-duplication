@@ -7,4 +7,8 @@ public class Method {
     public Method(Block block) {
         this.block = block;
     }
+
+    public void printAST() {
+        block.printAST();
+    }
 }

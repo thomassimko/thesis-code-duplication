@@ -1,13 +1,18 @@
 package ast.statements;
 
-import ast.interfaces.Expression;
-import ast.interfaces.Statement;
+import ast.expressions.Expression;
 
-public class ReturnStatement implements Statement {
+public class ReturnStatement extends Statement {
 
     private Expression exp;
 
-    public ReturnStatement(Expression exp) {
+    public ReturnStatement(int line, Expression exp) {
+        super(line);
         this.exp = exp;
+    }
+
+    public void printAST() {
+        System.out.println("Return");
+        exp.printAST();
     }
 }

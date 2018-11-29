@@ -1,9 +1,9 @@
 import ast.*;
 import ast.expressions.AssignmentExpression;
-import ast.interfaces.Expression;
-import ast.interfaces.Statement;
+import ast.expressions.Expression;
+import ast.statements.Statement;
 import ast.statements.*;
-import ast.values.Identifier;
+import ast.expressions.Identifier;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,25 +17,25 @@ public class MyStatementVisitor extends Java8BaseVisitor<Statement> {
         if(ctx.ifThenStatement() != null) {
             Expression exp = Driver.expressionVisitor.visitExpression(ctx.ifThenStatement().expression());
             Statement stmt = visitStatement(ctx.ifThenStatement().statement());
-            return new ConditionalStatement(exp, stmt, null);
+            return new ConditionalStatement(ctx.start.getLine(), exp, stmt, null);
         }
         //If then else
         else if (ctx.ifThenElseStatement() != null) {
             Expression exp = Driver.expressionVisitor.visitExpression(ctx.ifThenElseStatement().expression());
             Statement trueStmt = visitStatement(ctx.ifThenElseStatement().statement().get(0));
             Statement falseStmt = visitStatement(ctx.ifThenElseStatement().statement().get(1));
-            return new ConditionalStatement(exp, trueStmt, falseStmt);
+            return new ConditionalStatement(ctx.start.getLine(), exp, trueStmt, falseStmt);
         }
         //Labeled statement
         else if (ctx.labeledStatement() != null) {
             Statement stmt = visitStatement(ctx.labeledStatement().statement());
-            return new LabeledStatement(ctx.labeledStatement().Identifier().getSymbol().getText(), stmt);
+            return new LabeledStatement(ctx.start.getLine(), ctx.labeledStatement().Identifier().getSymbol().getText(), stmt);
         }
         //while
         else if (ctx.whileStatement() != null) {
             Expression exp = Driver.expressionVisitor.visitExpression(ctx.whileStatement().expression());
             Statement stmt = visitStatement(ctx.whileStatement().statement());
-            return new WhileStatement(exp, stmt);
+            return new WhileStatement(ctx.start.getLine(), exp, stmt);
         }
         //for
         else if (ctx.forStatement() != null) {
@@ -47,37 +47,41 @@ public class MyStatementVisitor extends Java8BaseVisitor<Statement> {
             if(ctx.assertStatement().expression(1) != null) {
                 detail = Driver.expressionVisitor.visitExpression(ctx.assertStatement().expression(1));
             }
-            return new AssertStatement(exp, detail);
+            return new AssertStatement(ctx.start.getLine(), exp, detail);
         }
         else if (ctx.block() != null) {
             return Driver.blockVisitor.visitBlockStatements(ctx.block().blockStatements());
         }
         else if (ctx.breakStatement() != null) {
             if(ctx.breakStatement().Identifier() != null) {
-                return new BreakStatement(ctx.breakStatement().Identifier().toString());
+                return new BreakStatement(ctx.start.getLine(), ctx.breakStatement().Identifier().toString());
             }
-            return new BreakStatement();
+            return new BreakStatement(ctx.start.getLine());
         }
         else if (ctx.continueStatement() != null) {
 
             if(ctx.continueStatement().Identifier() != null) {
-                return new ContinueStatement(ctx.continueStatement().Identifier().toString());
+                return new ContinueStatement(ctx.start.getLine(), ctx.continueStatement().Identifier().toString());
             }
-            return new ContinueStatement();
+            return new ContinueStatement(ctx.start.getLine());
         }
         else if (ctx.doStatement() != null) {
             Statement stmt = visitStatement(ctx.doStatement().statement());
             Expression exp = Driver.expressionVisitor.visitExpression(ctx.doStatement().expression());
-            return new DoStatement(stmt, exp);
+            return new DoStatement(ctx.start.getLine(), stmt, exp);
         }
         else if (ctx.emptyStatement() != null) {
+            return null;
             //do nothing
         }
         else if (ctx.expressionStatement() != null) {
-            return new ExpressionStatement(Driver.expressionVisitor.visitStatementExpression(ctx.expressionStatement().statementExpression()));
+
+            System.out.println("expression statement: " + ctx.getText());
+            Expression exp = Driver.expressionVisitor.visitStatementExpression(ctx.expressionStatement().statementExpression());
+            return new ExpressionStatement(ctx.start.getLine(), exp);
         }
         else if (ctx.returnStatement() != null) {
-            return new ReturnStatement(Driver.expressionVisitor.visitExpression(ctx.returnStatement().expression()));
+            return new ReturnStatement(ctx.start.getLine(), Driver.expressionVisitor.visitExpression(ctx.returnStatement().expression()));
         }
         else if (ctx.switchStatement() != null) {
             return Driver.switchStatementVisitor.visitSwitchStatement(ctx.switchStatement());
@@ -86,11 +90,11 @@ public class MyStatementVisitor extends Java8BaseVisitor<Statement> {
 
             Block block = Driver.blockVisitor.visitBlockStatements(ctx.synchronizedStatement().block().blockStatements());
             Expression exp = Driver.expressionVisitor.visitExpression(ctx.synchronizedStatement().expression());
-            return new SynchronizedStatement(block, exp);
+            return new SynchronizedStatement(ctx.start.getLine(), block, exp);
 
         }
         else if (ctx.throwStatement() != null) {
-            return new ThrowStatement(Driver.expressionVisitor.visitExpression(ctx.throwStatement().expression()));
+            return new ThrowStatement(ctx.start.getLine(), Driver.expressionVisitor.visitExpression(ctx.throwStatement().expression()));
         }
         else if (ctx.tryStatement() != null) {
             return handleTryStatement(ctx.tryStatement());
@@ -116,7 +120,7 @@ public class MyStatementVisitor extends Java8BaseVisitor<Statement> {
             }
             if (forStmt.basicForStatement().forInit().statementExpressionList() != null ) {
                 for(Java8Parser.StatementExpressionContext stCtx : forStmt.basicForStatement().forInit().statementExpressionList().statementExpression()) {
-                    Statement initStmt = new ExpressionStatement(Driver.expressionVisitor.visitStatementExpression(stCtx));
+                    Statement initStmt = new ExpressionStatement(forStmt.start.getLine(), Driver.expressionVisitor.visitStatementExpression(stCtx));
                     initStatements.add(initStmt);
                 }
             }
@@ -125,13 +129,13 @@ public class MyStatementVisitor extends Java8BaseVisitor<Statement> {
             }
             if(forStmt.basicForStatement().forUpdate() != null) {
                 for(Java8Parser.StatementExpressionContext expCtx : forStmt.basicForStatement().forUpdate().statementExpressionList().statementExpression()) {
-                    Statement update = new ExpressionStatement(Driver.expressionVisitor.visitStatementExpression(expCtx));
+                    Statement update = new ExpressionStatement(forStmt.start.getLine(), Driver.expressionVisitor.visitStatementExpression(expCtx));
                     updateStatements.add(update);
                 }
             }
             stmt = visitStatement(forStmt.basicForStatement().statement());
 
-            return new ForStatement(declaration, initStatements, exp, stmt, updateStatements);
+            return new ForStatement(forStmt.start.getLine(), declaration, initStatements, exp, stmt, updateStatements);
 
         } else {
 
@@ -139,7 +143,7 @@ public class MyStatementVisitor extends Java8BaseVisitor<Statement> {
             Expression exp = Driver.expressionVisitor.visitExpression(forStmt.enhancedForStatement().expression());
             String var = forStmt.enhancedForStatement().variableDeclaratorId().Identifier().getSymbol().getText();
 
-            return new ForEachStatement(exp, stmt, var);
+            return new ForEachStatement(forStmt.start.getLine(), exp, stmt, var);
         }
     }
 
@@ -154,9 +158,9 @@ public class MyStatementVisitor extends Java8BaseVisitor<Statement> {
 
             for(Java8Parser.CatchClauseContext catchCtx : ctx.catches().catchClause()) {
                 Block catchBlock = Driver.blockVisitor.visitBlockStatements(catchCtx.block().blockStatements());
-                Identifier id = new Identifier(catchCtx.catchFormalParameter().variableDeclaratorId().Identifier().getSymbol().getText());
+                Identifier id = new Identifier(ctx.start.getLine(), catchCtx.catchFormalParameter().variableDeclaratorId().Identifier().getSymbol().getText());
 
-                catches.add(new CatchStatement(id, catchBlock));
+                catches.add(new CatchStatement(ctx.start.getLine(), id, catchBlock));
             }
         }
         if(ctx.finally_() != null) {
@@ -165,12 +169,12 @@ public class MyStatementVisitor extends Java8BaseVisitor<Statement> {
         if(ctx.resourceSpecification() != null) {
             for (Java8Parser.ResourceContext resource : ctx.resourceSpecification().resourceList().resource()) {
                 Expression exp = Driver.expressionVisitor.visitExpression(resource.expression());
-                Identifier id = new Identifier(resource.variableDeclaratorId().Identifier().getSymbol().getText());
-                resources.add(new AssignmentExpression(id, "=", exp));
+                Identifier id = new Identifier(ctx.start.getLine(), resource.variableDeclaratorId().Identifier().getSymbol().getText());
+                resources.add(new AssignmentExpression(ctx.start.getLine(), id, "=", exp));
             }
         }
 
-        return new TryStatement(tryBlock, catches, finallyBlock, resources);
+        return new TryStatement(ctx.start.getLine(), tryBlock, catches, finallyBlock, resources);
     }
 
 }

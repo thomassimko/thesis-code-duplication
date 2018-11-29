@@ -2266,4 +2266,44 @@ public interface Java8Listener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitCastExpression(Java8Parser.CastExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link Java8Parser#typeDotClass}.
+	 * @param ctx the parse tree
+	 */
+	void enterTypeDotClass(Java8Parser.TypeDotClassContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link Java8Parser#typeDotClass}.
+	 * @param ctx the parse tree
+	 */
+	void exitTypeDotClass(Java8Parser.TypeDotClassContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link Java8Parser#primitiveTypeDotClass}.
+	 * @param ctx the parse tree
+	 */
+	void enterPrimitiveTypeDotClass(Java8Parser.PrimitiveTypeDotClassContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link Java8Parser#primitiveTypeDotClass}.
+	 * @param ctx the parse tree
+	 */
+	void exitPrimitiveTypeDotClass(Java8Parser.PrimitiveTypeDotClassContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link Java8Parser#voidDotClass}.
+	 * @param ctx the parse tree
+	 */
+	void enterVoidDotClass(Java8Parser.VoidDotClassContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link Java8Parser#voidDotClass}.
+	 * @param ctx the parse tree
+	 */
+	void exitVoidDotClass(Java8Parser.VoidDotClassContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link Java8Parser#typeDotThis}.
+	 * @param ctx the parse tree
+	 */
+	void enterTypeDotThis(Java8Parser.TypeDotThisContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link Java8Parser#typeDotThis}.
+	 * @param ctx the parse tree
+	 */
+	void exitTypeDotThis(Java8Parser.TypeDotThisContext ctx);
 }

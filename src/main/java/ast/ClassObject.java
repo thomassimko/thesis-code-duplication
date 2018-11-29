@@ -11,4 +11,11 @@ public class ClassObject implements BlockStatement {
     public ClassObject(List<Method> methods) {
         this.methods = methods;
     }
+
+    public void printAST() {
+        System.out.println("Class");
+        for(Method method: methods) {
+            method.printAST();
+        }
+    }
 }

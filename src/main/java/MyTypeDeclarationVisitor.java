@@ -1,12 +1,13 @@
+import ast.ClassObject;
 import ast.TypeDeclaration;
 
-public class MyTypeDeclarationVisitor extends Java8BaseVisitor<TypeDeclaration> {
+public class MyTypeDeclarationVisitor extends Java8BaseVisitor<ClassObject> {
 
     @Override
-    public TypeDeclaration visitTypeDeclaration(Java8Parser.TypeDeclarationContext ctx) {
-        Driver.classDeclarationVisitor.visitClassDeclaration(ctx.classDeclaration());
+    public ClassObject visitTypeDeclaration(Java8Parser.TypeDeclarationContext ctx) {
+        return Driver.classDeclarationVisitor.visitClassDeclaration(ctx.classDeclaration());
         //ctx.classDeclaration().normalClassDeclaration().classBody().
         //System.out.println(ctx.getText());
-        return null;
+        //return null;
     }
 }

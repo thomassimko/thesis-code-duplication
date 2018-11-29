@@ -1,13 +1,18 @@
 package ast.statements;
 
-import ast.interfaces.Expression;
-import ast.interfaces.Statement;
+import ast.expressions.Expression;
 
-public class ThrowStatement implements Statement {
+public class ThrowStatement extends Statement {
 
     private Expression exp;
 
-    public ThrowStatement(Expression exp) {
+    public ThrowStatement(int line, Expression exp) {
+        super(line);
         this.exp = exp;
+    }
+
+    public void printAST() {
+        System.out.println("Throw:");
+        exp.printAST();
     }
 }

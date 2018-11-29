@@ -912,10 +912,10 @@ primary
 
 primaryNoNewArray
 	:	literal
-	|	typeName ('[' ']')* '.' 'class'
-	|	'void' '.' 'class'
+	|   typeDotClass
+	|   voidDotClass
+	|   typeDotThis
 	|	'this'
-	|	typeName '.' 'this'
 	|	'(' expression ')'
 	|	classInstanceCreationExpression
 	|	fieldAccess
@@ -930,10 +930,10 @@ primaryNoNewArray_lf_arrayAccess
 
 primaryNoNewArray_lfno_arrayAccess
 	:	literal
-	|	typeName ('[' ']')* '.' 'class'
-	|	'void' '.' 'class'
+	|   typeDotClass
+    |   voidDotClass
+    |   typeDotThis
 	|	'this'
-	|	typeName '.' 'this'
 	|	'(' expression ')'
 	|	classInstanceCreationExpression
 	|	fieldAccess
@@ -962,11 +962,11 @@ primaryNoNewArray_lf_primary_lfno_arrayAccess_lf_primary
 
 primaryNoNewArray_lfno_primary
 	:	literal
-	|	typeName ('[' ']')* '.' 'class'
-	|	unannPrimitiveType ('[' ']')* '.' 'class'
-	|	'void' '.' 'class'
+	|   typeDotClass
+    |   voidDotClass
+    |   typeDotThis
+    |   primitiveTypeDotClass
 	|	'this'
-	|	typeName '.' 'this'
 	|	'(' expression ')'
 	|	classInstanceCreationExpression_lfno_primary
 	|	fieldAccess_lfno_primary
@@ -981,11 +981,11 @@ primaryNoNewArray_lfno_primary_lf_arrayAccess_lfno_primary
 
 primaryNoNewArray_lfno_primary_lfno_arrayAccess_lfno_primary
 	:	literal
-	|	typeName ('[' ']')* '.' 'class'
-	|	unannPrimitiveType ('[' ']')* '.' 'class'
-	|	'void' '.' 'class'
+	|   typeDotClass
+    |   voidDotClass
+    |   typeDotThis
+    |   primitiveTypeDotClass
 	|	'this'
-	|	typeName '.' 'this'
 	|	'(' expression ')'
 	|	classInstanceCreationExpression_lfno_primary
 	|	fieldAccess_lfno_primary
@@ -1714,4 +1714,23 @@ COMMENT
 
 LINE_COMMENT
     :   '//' ~[\r\n]* -> skip
+    ;
+
+
+//My Stuff
+
+typeDotClass
+    :   typeName ('[' ']')* '.' 'class'
+    ;
+
+primitiveTypeDotClass
+    :	unannPrimitiveType ('[' ']')* '.' 'class'
+    ;
+
+voidDotClass
+    :	'void' '.' 'class'
+    ;
+
+typeDotThis
+    :   typeName '.' 'this'
     ;

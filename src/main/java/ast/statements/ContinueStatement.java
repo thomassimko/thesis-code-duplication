@@ -1,16 +1,19 @@
 package ast.statements;
 
-import ast.interfaces.Statement;
-
-public class ContinueStatement implements Statement {
+public class ContinueStatement extends Statement {
 
     private String id;
 
-    public ContinueStatement() {
-
+    public ContinueStatement(int line) {
+        super(line);
     }
 
-    public ContinueStatement(String id) {
+    public ContinueStatement(int line, String id) {
+        super(line);
         this.id = id;
+    }
+
+    public void printAST() {
+        System.out.println("Continue: " + id);
     }
 }

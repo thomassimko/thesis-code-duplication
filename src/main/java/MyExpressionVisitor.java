@@ -1,6 +1,8 @@
 import ast.expressions.*;
-import ast.interfaces.Expression;
-import ast.interfaces.LeftSide;
+import ast.expressions.Expression;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
 
@@ -8,10 +10,13 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
     public Expression visitExpression(Java8Parser.ExpressionContext ctx) {
 
         if (ctx.assignmentExpression() != null) {
+            System.out.println("Assignment exp: " + ctx.getText());
             return handleAssignmentExpression(ctx.assignmentExpression());
         }
         else if (ctx.lambdaExpression() != null) {
 
+            System.out.println("lambda: " + ctx.lambdaExpression().toString());
+            //TODO: Lambda exp
         }
         System.out.println("Unfound expression: " + ctx.getText());
         return super.visitExpression(ctx);
@@ -19,25 +24,77 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
 
     @Override
     public Expression visitStatementExpression(Java8Parser.StatementExpressionContext ctx) {
+
+        if(ctx.assignment() != null) {
+            return handleAssignment(ctx.assignment());
+        } else if (ctx.classInstanceCreationExpression() != null) {
+
+        } else if (ctx.methodInvocation() != null) {
+            return handleMethodInvocation(ctx.methodInvocation());
+        } else if (ctx.postDecrementExpression() != null) {
+            return handlePostFixExpression(ctx.postDecrementExpression().postfixExpression());
+        } else if (ctx.postIncrementExpression() != null) {
+            return handlePostFixExpression(ctx.postIncrementExpression().postfixExpression());
+        } else if (ctx.preDecrementExpression() != null) {
+            return handleUnaryExpression(ctx.preDecrementExpression().unaryExpression());
+        } else if (ctx.preIncrementExpression() != null) {
+            return handleUnaryExpression(ctx.preIncrementExpression().unaryExpression());
+        }
+        System.err.println("Statement Expression not found: " + ctx.getText());
         return super.visitStatementExpression(ctx);
+    }
+
+    private Expression handleMethodInvocation(Java8Parser.MethodInvocationContext ctx) {
+
+        List<Expression> args = new ArrayList<Expression>();
+        Identifier methodName = null;
+        Expression leftSide = null;
+
+
+        if(ctx.argumentList() != null) {
+            for(Java8Parser.ExpressionContext arg: ctx.argumentList().expression()) {
+                args.add(visitExpression(arg));
+            }
+        }
+
+        if(ctx.primary() != null) {
+            System.err.println("ctx primary in method call: " + ctx.getText());
+        }
+        if (ctx.typeName() != null) {
+            leftSide = Driver.leftHandSideVisitor.visitTypeName(ctx.typeName());
+        } else if(ctx.expressionName() != null) {
+            leftSide = Driver.leftHandSideVisitor.visitExpressionName(ctx.expressionName());
+        }
+
+        if(ctx.methodName() != null) {
+            methodName = new Identifier(ctx.start.getLine(), ctx.methodName().Identifier().getText());
+        } else if(ctx.Identifier() != null) {
+            methodName = new Identifier(ctx.start.getLine(), ctx.Identifier().getText());
+        }
+
+        return new CallExpression(ctx.start.getLine(), methodName, args, leftSide);
     }
 
 
     private Expression handleAssignmentExpression(Java8Parser.AssignmentExpressionContext ctx) {
         if(ctx.assignment() != null) {
-            Expression exp = visitExpression(ctx.assignment().expression());
-            String op = ctx.assignment().assignmentOperator().getText();
-            LeftSide left = Driver.leftHandSideVisitor.visitLeftHandSide(ctx.assignment().leftHandSide());
-
-            return new AssignmentExpression(left, op, exp);
+            return handleAssignment(ctx.assignment());
         }
         else if (ctx.conditionalExpression() != null) {
 
-            handleConditionalExpression(ctx.conditionalExpression());
+            return handleConditionalExpression(ctx.conditionalExpression());
 
         }
         System.out.println("Unfound assignment expression: " + ctx.getText());
         return null;
+    }
+
+    private Expression handleAssignment(Java8Parser.AssignmentContext ctx) {
+        Expression exp = visitExpression(ctx.expression());
+        String op = ctx.assignmentOperator().getText();
+        Expression left = Driver.leftHandSideVisitor.visitLeftHandSide(ctx.leftHandSide());
+
+        return new AssignmentExpression(ctx.start.getLine(), left, op, exp);
     }
 
     private Expression handleConditionalExpression(Java8Parser.ConditionalExpressionContext ctx) {
@@ -45,7 +102,7 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
             Expression falseExp = handleConditionalExpression(ctx.conditionalExpression());
             Expression trueExp = visitExpression(ctx.expression());
             Expression cond = handleConditionalOrExpression(ctx.conditionalOrExpression());
-            return new TernaryExpression(cond, trueExp, falseExp);
+            return new TernaryExpression(ctx.start.getLine(), cond, trueExp, falseExp);
         }
         return handleConditionalOrExpression(ctx.conditionalOrExpression());
     }
@@ -54,7 +111,7 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
         if(ctx.conditionalOrExpression() != null) {
             Expression left = handleConditionalOrExpression(ctx.conditionalOrExpression());
             Expression right = handleConditionalAndExpression(ctx.conditionalAndExpression());
-            return new BinaryExpression("||", left, right);
+            return new BinaryExpression(ctx.start.getLine(), "||", left, right);
         }
         return handleConditionalAndExpression(ctx.conditionalAndExpression());
     }
@@ -63,7 +120,7 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
         if(ctx.conditionalAndExpression() != null) {
             Expression left = handleConditionalAndExpression(ctx.conditionalAndExpression());
             Expression right = handleInclusiveOrExpression(ctx.inclusiveOrExpression());
-            return new BinaryExpression("&&", left, right);
+            return new BinaryExpression(ctx.start.getLine(), "&&", left, right);
         }
         return handleInclusiveOrExpression(ctx.inclusiveOrExpression());
     }
@@ -72,7 +129,7 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
         if(ctx.inclusiveOrExpression() != null) {
             Expression left = handleInclusiveOrExpression(ctx.inclusiveOrExpression());
             Expression right = handleExclusiveOrExpression(ctx.exclusiveOrExpression());
-            return new BinaryExpression("|", left, right);
+            return new BinaryExpression(ctx.start.getLine(), "|", left, right);
         }
         return handleExclusiveOrExpression(ctx.exclusiveOrExpression());
     }
@@ -81,7 +138,7 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
         if(ctx.exclusiveOrExpression() != null) {
             Expression left = handleExclusiveOrExpression(ctx.exclusiveOrExpression());
             Expression right = handleAndExpression(ctx.andExpression());
-            return new BinaryExpression("^", left, right);
+            return new BinaryExpression(ctx.start.getLine(), "^", left, right);
         }
         return handleAndExpression(ctx.andExpression());
     }
@@ -90,7 +147,7 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
         if(ctx.andExpression() != null) {
             Expression left = handleAndExpression(ctx.andExpression());
             Expression right = handleEqualityExpression(ctx.equalityExpression());
-            return new BinaryExpression("&", left, right);
+            return new BinaryExpression(ctx.start.getLine(), "&", left, right);
         }
         return handleEqualityExpression(ctx.equalityExpression());
     }
@@ -100,7 +157,7 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
             Expression left = handleEqualityExpression(ctx.equalityExpression());
             Expression right = handleRelationalExpression(ctx.relationalExpression());
             String op = ctx.getText().contains("==") ? "==" : "!=";
-            return new BinaryExpression(op, left, right);
+            return new BinaryExpression(ctx.start.getLine(), op, left, right);
         }
         return handleRelationalExpression(ctx.relationalExpression());
     }
@@ -111,7 +168,7 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
             Expression right = handleShiftExpression(ctx.shiftExpression());
 
 
-            return new BinaryExpression(ctx.op.getText(), left, right);
+            return new BinaryExpression(ctx.start.getLine(), ctx.op.getText(), left, right);
         }
         return handleShiftExpression(ctx.shiftExpression());
     }
@@ -121,7 +178,7 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
             Expression left = handleShiftExpression(ctx.shiftExpression());
             Expression right = handleAdditiveExpression(ctx.additiveExpression());
 
-            return new BinaryExpression(ctx.op.getText(), left, right);
+            return new BinaryExpression(ctx.start.getLine(), ctx.op.getText(), left, right);
         }
         return handleAdditiveExpression(ctx.additiveExpression());
     }
@@ -131,7 +188,7 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
             Expression left = handleAdditiveExpression(ctx.additiveExpression());
             Expression right = handleMultiplicativeExpression(ctx.multiplicativeExpression());
 
-            return new BinaryExpression(ctx.op.getText(), left, right);
+            return new BinaryExpression(ctx.start.getLine(), ctx.op.getText(), left, right);
         }
         return handleMultiplicativeExpression(ctx.multiplicativeExpression());
     }
@@ -141,7 +198,7 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
             Expression left = handleMultiplicativeExpression(ctx.multiplicativeExpression());
             Expression right = handleUnaryExpression(ctx.unaryExpression());
 
-            return new BinaryExpression(ctx.op.getText(), left, right);
+            return new BinaryExpression(ctx.start.getLine(), ctx.op.getText(), left, right);
         }
         return handleUnaryExpression(ctx.unaryExpression());
     }
@@ -149,18 +206,56 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
     private Expression handleUnaryExpression(Java8Parser.UnaryExpressionContext ctx) {
         if(ctx.preIncrementExpression() != null) {
             Expression exp = handleUnaryExpression(ctx.unaryExpression());
-            return new PreUnaryExpression("++", exp);
+            return new PreUnaryExpression(ctx.start.getLine(), "++", exp);
 
         } else if(ctx.preDecrementExpression() != null) {
             Expression exp = handleUnaryExpression(ctx.unaryExpression());
-            return new PreUnaryExpression("--", exp);
+            return new PreUnaryExpression(ctx.start.getLine(), "--", exp);
 
         } else if(ctx.unaryExpressionNotPlusMinus() != null) {
-
+            return handleUnaryExpressionNotPlusMinus(ctx.unaryExpressionNotPlusMinus());
         }
         System.out.println(ctx.getText());
         Expression exp = handleUnaryExpression(ctx.unaryExpression());
-        return new UnaryExpression(ctx.op.getText(), exp);
+        return new UnaryExpression(ctx.start.getLine(), ctx.op.getText(), exp);
+    }
+
+    private Expression handleUnaryExpressionNotPlusMinus(Java8Parser.UnaryExpressionNotPlusMinusContext ctx) {
+        if(ctx.unaryExpression() != null) {
+            return new UnaryExpression(ctx.start.getLine(), ctx.op.getText(), handleUnaryExpression(ctx.unaryExpression()));
+        } else if (ctx.castExpression() != null) {
+            return handleCastExpression(ctx.castExpression());
+        } else {
+            return handlePostFixExpression(ctx.postfixExpression());
+        }
+    }
+
+    private Expression handleCastExpression(Java8Parser.CastExpressionContext ctx) {
+        if(ctx.unaryExpression() != null) {
+            return new CastExpression(ctx.start.getLine(), handleUnaryExpression(ctx.unaryExpression()));
+        } else if (ctx.unaryExpressionNotPlusMinus() != null) {
+            return new CastExpression(ctx.start.getLine(), handleUnaryExpressionNotPlusMinus(ctx.unaryExpressionNotPlusMinus()));
+        } else {
+            //TODO: lambda exp
+            ctx.lambdaExpression();
+            return null;
+        }
+    }
+
+    private Expression handlePostFixExpression(Java8Parser.PostfixExpressionContext ctx) {
+        Expression exp = null;
+        if(ctx.expressionName() != null) {
+            exp = Driver.leftHandSideVisitor.visitExpressionName(ctx.expressionName());
+        } else if (ctx.primary() != null) {
+            exp = Driver.primaryVisitor.visitPrimary(ctx.primary());
+        }
+        for (Java8Parser.PostDecrementExpression_lf_postfixExpressionContext dec : ctx.postDecrementExpression_lf_postfixExpression()) {
+            exp = new PostUnaryExpression(ctx.start.getLine(), "--", exp);
+        }
+        for (Java8Parser.PostIncrementExpression_lf_postfixExpressionContext inc : ctx.postIncrementExpression_lf_postfixExpression()) {
+            exp = new PostUnaryExpression(ctx.start.getLine(), "++", exp);
+        }
+        return exp;
     }
 
 

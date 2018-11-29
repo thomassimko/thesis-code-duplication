@@ -1,7 +1,7 @@
 package ast;
 
 import ast.interfaces.BlockStatement;
-import ast.interfaces.Expression;
+import ast.expressions.Expression;
 
 public class Declaration implements BlockStatement {
 
@@ -16,5 +16,12 @@ public class Declaration implements BlockStatement {
     public Declaration(String varName) {
         this.exp = null;
         this.varName = varName;
+    }
+
+    public void printAST() {
+        System.out.println("Declaration: " + varName);
+
+        if(exp != null)
+            exp.printAST();
     }
 }

@@ -1,16 +1,20 @@
 package ast.statements;
 
-import ast.interfaces.Statement;
-
-public class BreakStatement implements Statement {
+public class BreakStatement extends Statement {
 
     private String id;
 
-    public BreakStatement() {
+    public BreakStatement(int line) {
+        super(line);
 
     }
 
-    public BreakStatement(String id) {
+    public BreakStatement(int line, String id) {
+        super(line);
         this.id = id;
+    }
+
+    public void printAST() {
+        System.out.println("break: " + id);
     }
 }
