@@ -1,6 +1,9 @@
 package ast.statements;
 
 import ast.Declaration;
+import cfg.CFGBlock;
+
+import java.util.HashMap;
 
 public class DeclarationStatement extends Statement {
     private Declaration decl;
@@ -17,5 +20,11 @@ public class DeclarationStatement extends Statement {
         System.out.println("Declaration");
         decl.printAST();
         stmt.printAST();
+    }
+
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap) {
+        CFGBlock declBlock = decl.generateCFG(block, finalBlock, labelMap);
+        CFGBlock stmtBlock = stmt.generateCFG(declBlock, finalBlock, labelMap);
+        return stmtBlock;
     }
 }

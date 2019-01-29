@@ -1,5 +1,10 @@
 package ast.statements;
 
+import cfg.BasicBlock;
+import cfg.CFGBlock;
+
+import java.util.HashMap;
+
 public class LabeledStatement extends Statement {
 
     private String label;
@@ -14,5 +19,15 @@ public class LabeledStatement extends Statement {
     public void printAST() {
         System.out.println("Label: " + label);
         stmt.printAST();
+    }
+
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap) {
+
+        CFGBlock newBlock = new BasicBlock(label);
+        block.addSuccessor(newBlock);
+
+        labelMap.put(label, newBlock);
+
+        return stmt.generateCFG(newBlock, finalBlock, labelMap);
     }
 }

@@ -1,14 +1,41 @@
 package ast;
 
+import cfg.*;
+
+import java.util.HashMap;
+
 public class Method {
 
-    private Block block;
+    private Block body;
+    private String name;
 
-    public Method(Block block) {
-        this.block = block;
+    public Method(String name, Block block) {
+        this.name = name;
+        this.body = block;
     }
 
     public void printAST() {
-        block.printAST();
+        body.printAST();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public CFGBlock buildCFG(CFGBlock start) {
+
+        HashMap<String, CFGBlock> labelMap = new HashMap<String, CFGBlock>();
+
+        CFGBlock bodyBlock = new BasicBlock();
+        EndBlock endBlock = new EndBlock();
+
+        start.addSuccessor(bodyBlock);
+
+        CFGBlock finalBlock = body.generateCFG(bodyBlock, endBlock, labelMap);
+
+        if(!(finalBlock instanceof EndBlock))
+            finalBlock.addSuccessor(endBlock);
+
+        return start;
     }
 }

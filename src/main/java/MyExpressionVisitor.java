@@ -10,7 +10,6 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
     public Expression visitExpression(Java8Parser.ExpressionContext ctx) {
 
         if (ctx.assignmentExpression() != null) {
-            System.out.println("Assignment exp: " + ctx.getText());
             return handleAssignmentExpression(ctx.assignmentExpression());
         }
         else if (ctx.lambdaExpression() != null) {

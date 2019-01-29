@@ -1,6 +1,10 @@
 package ast.statements;
 
 import ast.expressions.Expression;
+import cfg.BasicBlock;
+import cfg.CFGBlock;
+
+import java.util.HashMap;
 
 public class ConditionalStatement extends Statement{
 
@@ -22,5 +26,28 @@ public class ConditionalStatement extends Statement{
 
         if(ifFalse != null)
             ifFalse.printAST();
+    }
+
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap) {
+        block.addExpression(condition);
+
+        CFGBlock trueBlock = new BasicBlock("true");
+        CFGBlock newBlock = new BasicBlock("join");
+
+        block.addSuccessor(trueBlock);
+        CFGBlock lastTrue = ifTrue.generateCFG(trueBlock, finalBlock, labelMap);
+        lastTrue.addSuccessor(newBlock);
+
+        if(ifFalse != null) {
+            CFGBlock falseBlock = new BasicBlock("false");
+            block.addSuccessor(falseBlock);
+            CFGBlock lastFalse = ifFalse.generateCFG(falseBlock, finalBlock, labelMap);
+            lastFalse.addSuccessor(newBlock);
+        } else {
+            block.addSuccessor(newBlock);
+        }
+
+
+        return newBlock;
     }
 }

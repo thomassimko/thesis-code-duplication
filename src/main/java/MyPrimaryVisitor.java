@@ -119,8 +119,11 @@ public class MyPrimaryVisitor extends Java8BaseVisitor<Expression> {
     public Expression handleClassInstanceCreationExpression_lfno_primary(Java8Parser.ClassInstanceCreationExpression_lfno_primaryContext ctx) {
 
         ClassObject clss = null;
+        Expression exp = null;
         List<Expression> args = new ArrayList<Expression>();
-        Expression exp = handleExpressionName(ctx.expressionName());
+
+        if(ctx.expressionName() != null)
+            exp = handleExpressionName(ctx.expressionName());
 
         if(ctx.classBody() != null) {
             clss = Driver.classDeclarationVisitor.visitClassBody(ctx.classBody());

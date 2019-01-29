@@ -1,6 +1,14 @@
 import ast.Program;
+import cfg.CFGBlock;
+import cfg.StartBlock;
 import org.antlr.v4.runtime.*;
-import org.antlr.v4.runtime.tree.ParseTreeWalker;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 
 public class Driver {
@@ -29,10 +37,34 @@ public class Driver {
             MyVisitor visitor = new MyVisitor();
             Program program = visitor.visit(tree);
 
-            program.printProgram();
+            //program.printProgram();
+            List<StartBlock> blocks = program.getCFG();
+            printCFG(blocks);
 
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+
+    private static void printCFG(List<StartBlock> blockList) {
+        try {
+            FileWriter writer = new FileWriter(new File("cfg.gv"));
+            StringBuilder output = new StringBuilder();
+            Set<CFGBlock> visitedBlocks = new HashSet<CFGBlock>();
+
+            writer.write("digraph G {\n");
+            writer.write("size =\"8.5,11\";");
+
+            for (CFGBlock block : blockList) {
+                block.getGraphVisFormat(visitedBlocks, output);
+            }
+            writer.write(output.toString());
+            writer.write("}");
+
+            writer.flush();
+            writer.close();
+        } catch (IOException ex) {
+            System.err.println(ex);
         }
     }
 }

@@ -2,6 +2,9 @@ package ast;
 
 import ast.interfaces.BlockStatement;
 import ast.expressions.Expression;
+import cfg.CFGBlock;
+
+import java.util.HashMap;
 
 public class Declaration implements BlockStatement {
 
@@ -23,5 +26,11 @@ public class Declaration implements BlockStatement {
 
         if(exp != null)
             exp.printAST();
+    }
+
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap) {
+        if(exp != null)
+            block.addExpression(exp);
+        return block;
     }
 }

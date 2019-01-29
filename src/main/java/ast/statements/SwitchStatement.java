@@ -2,7 +2,11 @@ package ast.statements;
 
 import ast.expressions.Expression;
 import ast.switchObjects.SwitchOption;
+import cfg.BasicBlock;
+import cfg.CFGBlock;
+import cfg.SwitchOptionBlock;
 
+import java.util.HashMap;
 import java.util.List;
 
 public class SwitchStatement extends Statement {
@@ -22,5 +26,23 @@ public class SwitchStatement extends Statement {
         for(SwitchOption option : options) {
             option.printAST();
         }
+    }
+
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap) {
+
+        CFGBlock endBlock = new BasicBlock();
+
+        block.addExpression(exp);
+
+        for(SwitchOption option: options) {
+            SwitchOptionBlock optionBlock = new SwitchOptionBlock(option);
+            CFGBlock newBlock = option.generateCFG(optionBlock, finalBlock);
+
+            block.addSuccessor(optionBlock);
+            newBlock.addSuccessor(endBlock);
+        }
+
+
+        return endBlock;
     }
 }

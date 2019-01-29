@@ -2,7 +2,11 @@ package ast.statements;
 
 import ast.Declaration;
 import ast.expressions.Expression;
+import cfg.BasicBlock;
+import cfg.CFGBlock;
+import cfg.LoopBlock;
 
+import java.util.HashMap;
 import java.util.List;
 
 public class ForStatement extends Statement {
@@ -34,5 +38,33 @@ public class ForStatement extends Statement {
         }
         body.printAST();
 
+    }
+
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap) {
+
+        CFGBlock curBlock = block;
+
+        CFGBlock newBlock = new BasicBlock();
+        CFGBlock forBlock = new LoopBlock();
+
+        for(Statement stmt: initStatements) {
+            curBlock = stmt.generateCFG(curBlock, finalBlock, labelMap);
+        }
+        curBlock.addExpression(exp);
+
+        for(Statement stmt: updateStatements) {
+            curBlock = stmt.generateCFG(curBlock, finalBlock, labelMap);
+        }
+
+        CFGBlock endBlock = body.generateCFG(forBlock, finalBlock, labelMap);
+
+        //endBlock.addExpression();
+        //TODO: how do i add the update statements to a list of expression?
+
+        block.addSuccessor(forBlock);
+        endBlock.addSuccessor(forBlock);
+        endBlock.addSuccessor(newBlock);
+
+        return newBlock;
     }
 }

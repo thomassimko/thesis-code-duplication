@@ -2,7 +2,9 @@ package ast;
 
 import ast.interfaces.BlockStatement;
 import ast.statements.Statement;
+import cfg.CFGBlock;
 
+import java.util.HashMap;
 import java.util.List;
 
 public class Block extends Statement {
@@ -19,9 +21,19 @@ public class Block extends Statement {
     }
 
     public void printAST() {
-        System.out.println("Block");
+        System.out.println("CFGBlock");
         for(BlockStatement stmt: statements) {
             stmt.printAST();
         }
+    }
+
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap) {
+        CFGBlock current = block;
+
+        for(BlockStatement statement : statements) {
+            current = statement.generateCFG(current, finalBlock, labelMap);
+        }
+
+        return current;
     }
 }

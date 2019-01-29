@@ -10,7 +10,8 @@ public class MyMethodVisitor extends Java8BaseVisitor<Method> {
     @Override
     public Method visitMethodDeclaration(Java8Parser.MethodDeclarationContext ctx) {
         Block blocks = Driver.blockVisitor.visitBlockStatements(ctx.methodBody().block().blockStatements());
-        return new Method(blocks);
+        String name = ctx.methodHeader().methodDeclarator().Identifier().toString();
+        return new Method(name, blocks);
     }
 
     private List<Declaration> gatherDeclarations(Java8Parser.BlockStatementsContext statementsContext) {

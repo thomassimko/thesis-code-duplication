@@ -1,7 +1,9 @@
 package ast;
 
 import ast.interfaces.BlockStatement;
+import cfg.CFGBlock;
 
+import java.util.HashMap;
 import java.util.List;
 
 public class ClassObject implements BlockStatement {
@@ -17,5 +19,14 @@ public class ClassObject implements BlockStatement {
         for(Method method: methods) {
             method.printAST();
         }
+    }
+
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap) {
+
+        for(Method method: methods) {
+            method.buildCFG(block);
+        }
+
+        return block;
     }
 }

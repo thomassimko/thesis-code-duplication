@@ -10,9 +10,13 @@ public class testFile {
       if(true) {
          System.out.println(testFile.class);
       }
-      continue grumpy;
-      continue;
-      ;
+
+      myLabel:
+      while(true) {
+         break myLabel;
+      }
+
+
 
       num = getNum(6 + 2);
 
@@ -30,9 +34,25 @@ public class testFile {
 
       System.out.println(getArray()[0]);
 
+      List<Integer> list = new ArrayList<Integer>();
+
+      int sum = 0;
+      for(int num: list) {
+         sum += num;
+      }
+
    }
 
    public static int getNum(int num) {
+      for(int i = 0; i < 5; i++) {
+         int j;
+         break;
+         if(5==2) {
+            j = 0;
+         } else {
+            j = 1;
+         }
+      }
       return num + 1;
    }
 

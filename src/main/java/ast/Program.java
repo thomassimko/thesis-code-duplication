@@ -1,5 +1,8 @@
 package ast;
 
+import cfg.StartBlock;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class Program {
@@ -22,5 +25,21 @@ public class Program {
         for(ClassObject clss : classes) {
             clss.printAST();
         }
+    }
+
+    public List<StartBlock> getCFG() {
+
+        List<StartBlock> block = new ArrayList<StartBlock>();
+
+        for(ClassObject clss : classes) {
+            for(Method method: clss.methods) {
+
+                StartBlock start = new StartBlock(method.getName());
+                method.buildCFG(start);
+                block.add(start);
+
+            }
+        }
+        return block;
     }
 }

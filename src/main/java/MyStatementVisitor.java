@@ -76,7 +76,6 @@ public class MyStatementVisitor extends Java8BaseVisitor<Statement> {
         }
         else if (ctx.expressionStatement() != null) {
 
-            System.out.println("expression statement: " + ctx.getText());
             Expression exp = Driver.expressionVisitor.visitStatementExpression(ctx.expressionStatement().statementExpression());
             return new ExpressionStatement(ctx.start.getLine(), exp);
         }

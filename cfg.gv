@@ -1,0 +1,27 @@
+digraph G {
+size ="8.5,11";StartmainL0 -> BasicL1
+BasicL1 -> trueL3
+trueL3 -> joinL4
+joinL4 -> myLabelL5
+myLabelL5 -> LoopL6
+LoopL6 -> myLabelL5
+LoopL6 -> LoopL6
+LoopL6 -> BasicL7
+BasicL7 -> LoopL8
+LoopL8 -> BasicL9
+BasicL9 -> EndL2
+LoopL8 -> BasicL9
+myLabelL5 -> BasicL7
+BasicL1 -> joinL4
+StartgetNumL10 -> BasicL11
+BasicL11 -> LoopL14
+LoopL14 -> trueL15
+trueL15 -> joinL16
+joinL16 -> LoopL14
+joinL16 -> BasicL13
+BasicL13 -> EndL12
+LoopL14 -> falseL17
+falseL17 -> joinL16
+StartgetArrayL18 -> BasicL19
+BasicL19 -> EndL20
+}

@@ -1,6 +1,9 @@
 package ast.statements;
 
 import ast.expressions.Expression;
+import cfg.CFGBlock;
+
+import java.util.HashMap;
 
 public class AssertStatement extends Statement {
 
@@ -17,5 +20,12 @@ public class AssertStatement extends Statement {
         System.out.println("Assert:");
         exp.printAST();
         detail.printAST();
+    }
+
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap) {
+        block.addExpression(exp);
+        block.addExpression(detail);
+
+        return block;
     }
 }
