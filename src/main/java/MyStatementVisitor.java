@@ -3,7 +3,7 @@ import ast.expressions.AssignmentExpression;
 import ast.expressions.Expression;
 import ast.statements.Statement;
 import ast.statements.*;
-import ast.expressions.Identifier;
+import ast.expressions.left.Identifier;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -107,7 +107,7 @@ public class MyStatementVisitor extends Java8BaseVisitor<Statement> {
         if(forStmt.basicForStatement() != null) {
             //traditional for
 
-            Declaration declaration = null;
+            DeclarationStatement declaration = null;
             List<Statement> initStatements = new ArrayList<Statement>();
             Expression exp = null;
             Statement stmt = null;

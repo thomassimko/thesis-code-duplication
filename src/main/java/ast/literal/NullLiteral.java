@@ -10,4 +10,9 @@ public class NullLiteral extends Literal {
     public void printAST() {
         System.out.println("null");
     }
+
+    @Override
+    public String toString() {
+        return "null";
+    }
 }

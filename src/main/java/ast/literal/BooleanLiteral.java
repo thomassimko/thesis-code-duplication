@@ -1,5 +1,10 @@
 package ast.literal;
 
+import ast.expressions.Expression;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class BooleanLiteral extends Literal {
 
     private boolean value;
@@ -12,5 +17,10 @@ public class BooleanLiteral extends Literal {
     @Override
     public void printAST() {
         System.out.println("boolean: " + value);
+    }
+
+    @Override
+    public String toString() {
+        return value ? "true" : "false";
     }
 }

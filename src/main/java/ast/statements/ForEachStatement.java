@@ -1,10 +1,11 @@
 package ast.statements;
 
 import ast.expressions.Expression;
-import ast.expressions.Identifier;
+import ast.expressions.left.Identifier;
 import cfg.BasicBlock;
 import cfg.CFGBlock;
 import cfg.LoopBlock;
+import cfg.StartBlock;
 
 import java.util.HashMap;
 
@@ -27,19 +28,25 @@ public class ForEachStatement extends Statement {
         body.printAST();
     }
 
-    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap) {
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start) {
 
         CFGBlock forBlock = new LoopBlock();
         CFGBlock newBlock = new BasicBlock();
 
-        forBlock.addExpression(declaredId);
-        forBlock.addExpression(exp);
+        start.addBlock(forBlock);
+        start.addBlock(newBlock);
 
-        CFGBlock endBlock = body.generateCFG(forBlock, finalBlock, labelMap);
+        forBlock.addExpressions(declaredId.getExpressions());
+        forBlock.addExpressions(exp.getExpressions());
+
+        CFGBlock endBlock = body.generateCFG(forBlock, finalBlock, labelMap, start);
 
         block.addSuccessor(forBlock);
         forBlock.addSuccessor(newBlock);
-        endBlock.addSuccessor(newBlock);
+        endBlock.addSuccessor(forBlock);
+
+        if(forBlock != endBlock)
+            endBlock.addSuccessor(newBlock);
 
         return newBlock;
     }

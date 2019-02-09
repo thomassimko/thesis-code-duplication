@@ -22,7 +22,7 @@ public class Method {
         return name;
     }
 
-    public CFGBlock buildCFG(CFGBlock start) {
+    public CFGBlock buildCFG(StartBlock start) {
 
         HashMap<String, CFGBlock> labelMap = new HashMap<String, CFGBlock>();
 
@@ -31,7 +31,7 @@ public class Method {
 
         start.addSuccessor(bodyBlock);
 
-        CFGBlock finalBlock = body.generateCFG(bodyBlock, endBlock, labelMap);
+        CFGBlock finalBlock = body.generateCFG(bodyBlock, endBlock, labelMap, start);
 
         if(!(finalBlock instanceof EndBlock))
             finalBlock.addSuccessor(endBlock);

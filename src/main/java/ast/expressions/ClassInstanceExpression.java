@@ -2,6 +2,7 @@ package ast.expressions;
 
 import ast.ClassObject;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ClassInstanceExpression extends Expression {
@@ -24,7 +25,32 @@ public class ClassInstanceExpression extends Expression {
         for(Expression arg: args) {
             arg.printAST();
         }
-        System.out.println("Expression Names:");
-        expNames.printAST();
+        if(expNames != null) {
+            System.out.println("Expression Names:");
+            expNames.printAST();
+        }
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder output = new StringBuilder();
+        output.append("new ");
+        output.append(classObject.toString() + "(");
+        for(Expression arg:args) {
+            output.append(arg.toString() + ", ");
+        }
+        output.append(")");
+        return output.toString();
+    }
+
+    @Override
+    public List<Expression> getExpressions() {
+        List<Expression> output = new ArrayList<Expression>();
+
+        for(Expression arg: args) {
+            output.addAll(arg.getExpressions());
+        }
+        output.add(this);
+        return output;
     }
 }

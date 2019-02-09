@@ -1,5 +1,8 @@
 import ast.ClassObject;
 import ast.expressions.*;
+import ast.expressions.left.ArrayAccessExpression;
+import ast.expressions.left.Identifier;
+import ast.expressions.left.LeftIdDot;
 import ast.literal.Array;
 
 import java.util.ArrayList;

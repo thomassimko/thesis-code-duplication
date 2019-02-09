@@ -12,4 +12,9 @@ public class FloatLiteral extends Literal {
     public void printAST() {
         System.out.println("float: " + value);
     }
+
+    @Override
+    public String toString() {
+        return value + "";
+    }
 }

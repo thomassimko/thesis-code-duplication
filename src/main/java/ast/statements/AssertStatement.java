@@ -2,6 +2,7 @@ package ast.statements;
 
 import ast.expressions.Expression;
 import cfg.CFGBlock;
+import cfg.StartBlock;
 
 import java.util.HashMap;
 
@@ -22,9 +23,9 @@ public class AssertStatement extends Statement {
         detail.printAST();
     }
 
-    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap) {
-        block.addExpression(exp);
-        block.addExpression(detail);
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start) {
+        block.addExpressions(exp.getExpressions());
+        block.addExpressions(detail.getExpressions());
 
         return block;
     }

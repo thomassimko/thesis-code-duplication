@@ -1,7 +1,7 @@
-import ast.expressions.ArrayAccessExpression;
+import ast.expressions.left.ArrayAccessExpression;
 import ast.expressions.Expression;
-import ast.expressions.Identifier;
-import ast.expressions.LeftIdDot;
+import ast.expressions.left.Identifier;
+import ast.expressions.left.LeftIdDot;
 
 import java.util.ArrayList;
 import java.util.List;

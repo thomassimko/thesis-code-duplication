@@ -1,27 +1,56 @@
 digraph G {
 size ="8.5,11";StartmainL0 -> BasicL1
+BasicL1 -> StartmainL0 [style=dashed]
 BasicL1 -> trueL3
+trueL3 -> BasicL1 [style=dashed]
 trueL3 -> joinL4
+joinL4 -> trueL3 [style=dashed]
+joinL4 -> BasicL1 [style=dashed]
 joinL4 -> myLabelL5
+myLabelL5 -> joinL4 [style=dashed]
+myLabelL5 -> LoopL6 [style=dashed]
 myLabelL5 -> LoopL6
+LoopL6 -> myLabelL5 [style=dashed]
+LoopL6 -> LoopL6 [style=dashed]
 LoopL6 -> myLabelL5
 LoopL6 -> LoopL6
 LoopL6 -> BasicL7
+BasicL7 -> myLabelL5 [style=dashed]
+BasicL7 -> LoopL6 [style=dashed]
 BasicL7 -> LoopL8
+LoopL8 -> BasicL7 [style=dashed]
+LoopL8 -> LoopL8 [style=dashed]
 LoopL8 -> BasicL9
+BasicL9 -> LoopL8 [style=dashed]
 BasicL9 -> EndL2
-LoopL8 -> BasicL9
+EndL2 -> BasicL9 [style=dashed]
+LoopL8 -> LoopL8
 myLabelL5 -> BasicL7
 BasicL1 -> joinL4
 StartgetNumL10 -> BasicL11
-BasicL11 -> LoopL14
-LoopL14 -> trueL15
-trueL15 -> joinL16
-joinL16 -> LoopL14
-joinL16 -> BasicL13
-BasicL13 -> EndL12
-LoopL14 -> falseL17
-falseL17 -> joinL16
-StartgetArrayL18 -> BasicL19
-BasicL19 -> EndL20
+BasicL11 -> StartgetNumL10 [style=dashed]
+BasicL11 -> ForInitL13
+ForInitL13 -> BasicL11 [style=dashed]
+ForInitL13 -> ForCondL14
+ForCondL14 -> ForInitL13 [style=dashed]
+ForCondL14 -> joinL18 [style=dashed]
+ForCondL14 -> LoopL15
+LoopL15 -> ForCondL14 [style=dashed]
+LoopL15 -> trueL17
+trueL17 -> LoopL15 [style=dashed]
+trueL17 -> joinL18
+joinL18 -> trueL17 [style=dashed]
+joinL18 -> falseL19 [style=dashed]
+joinL18 -> ForCondL14
+LoopL15 -> falseL19
+falseL19 -> LoopL15 [style=dashed]
+falseL19 -> joinL18
+ForCondL14 -> BasicL16
+BasicL16 -> ForCondL14 [style=dashed]
+BasicL16 -> EndL12
+EndL12 -> BasicL16 [style=dashed]
+StartgetArrayL20 -> BasicL21
+BasicL21 -> StartgetArrayL20 [style=dashed]
+BasicL21 -> EndL22
+EndL22 -> BasicL21 [style=dashed]
 }

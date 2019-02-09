@@ -1,5 +1,8 @@
 package ast.expressions;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class UnaryExpression extends Expression {
 
     private String op;
@@ -9,11 +12,26 @@ public class UnaryExpression extends Expression {
         super(line);
         this.op = op;
         this.exp = exp;
+
+
     }
 
     @Override
     public void printAST() {
         System.out.println("Unary: " + op);
         exp.printAST();
+    }
+
+    @Override
+    public String toString() {
+        return op + exp.toString();
+    }
+
+    @Override
+    public List<Expression> getExpressions() {
+        List<Expression> output = new ArrayList<Expression>();
+        output.addAll(exp.getExpressions());
+        output.add(this);
+        return output;
     }
 }

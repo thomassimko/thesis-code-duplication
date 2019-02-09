@@ -2,6 +2,7 @@ package ast.statements;
 
 import cfg.BasicBlock;
 import cfg.CFGBlock;
+import cfg.StartBlock;
 
 import java.util.HashMap;
 
@@ -21,13 +22,13 @@ public class LabeledStatement extends Statement {
         stmt.printAST();
     }
 
-    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap) {
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start) {
 
         CFGBlock newBlock = new BasicBlock(label);
         block.addSuccessor(newBlock);
 
         labelMap.put(label, newBlock);
 
-        return stmt.generateCFG(newBlock, finalBlock, labelMap);
+        return stmt.generateCFG(newBlock, finalBlock, labelMap, start);
     }
 }

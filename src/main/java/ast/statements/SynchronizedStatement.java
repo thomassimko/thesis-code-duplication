@@ -4,6 +4,7 @@ import ast.Block;
 import ast.expressions.Expression;
 import cfg.BasicBlock;
 import cfg.CFGBlock;
+import cfg.StartBlock;
 
 import java.util.HashMap;
 
@@ -24,13 +25,13 @@ public class SynchronizedStatement extends Statement {
         body.printAST();
     }
 
-    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap) {
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start) {
         block.addExpression(exp);
 
         CFGBlock syncBlock = new BasicBlock();
         block.addSuccessor(syncBlock);
 
-        CFGBlock newBlock = body.generateCFG(syncBlock, finalBlock, labelMap);
+        CFGBlock newBlock = body.generateCFG(syncBlock, finalBlock, labelMap, start);
 
         return newBlock;
     }

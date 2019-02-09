@@ -1,8 +1,9 @@
 package ast.statements;
 
 import ast.Block;
-import ast.expressions.Identifier;
+import ast.expressions.left.Identifier;
 import cfg.CFGBlock;
+import cfg.StartBlock;
 
 import java.util.HashMap;
 
@@ -22,7 +23,7 @@ public class CatchStatement extends Statement {
         body.printAST();
     }
 
-    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap) {
-        return body.generateCFG(block, finalBlock, labelMap);
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start) {
+        return body.generateCFG(block, finalBlock, labelMap, start);
     }
 }

@@ -4,6 +4,7 @@ import ast.expressions.Expression;
 import ast.switchObjects.SwitchOption;
 import cfg.BasicBlock;
 import cfg.CFGBlock;
+import cfg.StartBlock;
 import cfg.SwitchOptionBlock;
 
 import java.util.HashMap;
@@ -28,7 +29,7 @@ public class SwitchStatement extends Statement {
         }
     }
 
-    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap) {
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start) {
 
         CFGBlock endBlock = new BasicBlock();
 
@@ -36,7 +37,7 @@ public class SwitchStatement extends Statement {
 
         for(SwitchOption option: options) {
             SwitchOptionBlock optionBlock = new SwitchOptionBlock(option);
-            CFGBlock newBlock = option.generateCFG(optionBlock, finalBlock);
+            CFGBlock newBlock = option.generateCFG(optionBlock, finalBlock, start);
 
             block.addSuccessor(optionBlock);
             newBlock.addSuccessor(endBlock);

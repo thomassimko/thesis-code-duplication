@@ -4,6 +4,7 @@ import ast.Block;
 import ast.expressions.AssignmentExpression;
 import cfg.BasicBlock;
 import cfg.CFGBlock;
+import cfg.StartBlock;
 
 import java.util.HashMap;
 import java.util.List;
@@ -34,21 +35,25 @@ public class TryStatement extends Statement {
         finallyBlock.printAST();
     }
 
-    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap) {
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start) {
 
         CFGBlock finallyCFG = null;
         CFGBlock tryCFG = new BasicBlock();
         CFGBlock endBlock = new BasicBlock();
 
+        start.addBlock(tryCFG);
+        start.addBlock(endBlock);
+
         for(AssignmentExpression assgn: resources) {
             tryCFG.addExpression(assgn);
         }
 
-        CFGBlock lastTryCFG = tryBlock.generateCFG(tryCFG, finalBlock, labelMap);
+        CFGBlock lastTryCFG = tryBlock.generateCFG(tryCFG, finalBlock, labelMap, start);
 
         if(finallyBlock != null) {
             finallyCFG = new BasicBlock();
-            CFGBlock lastFinallyCFG = finallyBlock.generateCFG(finallyCFG, finalBlock, labelMap);
+            start.addBlock(finallyCFG);
+            CFGBlock lastFinallyCFG = finallyBlock.generateCFG(finallyCFG, finalBlock, labelMap, start);
 
             lastTryCFG.addSuccessor(finallyCFG);
             lastFinallyCFG.addSuccessor(endBlock);
@@ -56,7 +61,8 @@ public class TryStatement extends Statement {
 
         for(CatchStatement catchStmt : catches) {
             CFGBlock catchBlock = new BasicBlock();
-            CFGBlock lastCatchBlock = catchStmt.generateCFG(catchBlock, finalBlock, labelMap);
+            start.addBlock(catchBlock);
+            CFGBlock lastCatchBlock = catchStmt.generateCFG(catchBlock, finalBlock, labelMap, start);
 
             lastTryCFG.addSuccessor(catchBlock);
 

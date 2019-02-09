@@ -1,5 +1,8 @@
 package ast.expressions;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class TernaryExpression extends Expression{
 
     private Expression trueExp;
@@ -11,6 +14,7 @@ public class TernaryExpression extends Expression{
         this.cond = cond;
         this.trueExp = trueExp;
         this.falseExp = falseExp;
+
     }
 
     @Override
@@ -19,5 +23,20 @@ public class TernaryExpression extends Expression{
         cond.printAST();
         trueExp.printAST();
         falseExp.printAST();
+    }
+
+    @Override
+    public String toString() {
+        return cond.toString() + " ? " + trueExp.toString() + " : " + falseExp.toString();
+    }
+
+    @Override
+    public List<Expression> getExpressions() {
+        List<Expression> output = new ArrayList<Expression>();
+        output.addAll(cond.getExpressions());
+        output.addAll(trueExp.getExpressions());
+        output.addAll(falseExp.getExpressions());
+        output.add(this);
+        return output;
     }
 }

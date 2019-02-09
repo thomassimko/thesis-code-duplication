@@ -3,6 +3,7 @@ package ast;
 import ast.interfaces.BlockStatement;
 import ast.statements.Statement;
 import cfg.CFGBlock;
+import cfg.StartBlock;
 
 import java.util.HashMap;
 import java.util.List;
@@ -13,7 +14,7 @@ public class Block extends Statement {
 
 //    private Statement statement;
 //    private ClassObject classDecl;
-//    private List<Declaration> declarationList;
+//    private List<DeclarationStatement> declarationList;
 
     public Block(int line, List<BlockStatement> statements) {
         super(line);
@@ -27,11 +28,11 @@ public class Block extends Statement {
         }
     }
 
-    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap) {
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start) {
         CFGBlock current = block;
 
         for(BlockStatement statement : statements) {
-            current = statement.generateCFG(current, finalBlock, labelMap);
+            current = statement.generateCFG(current, finalBlock, labelMap, start);
         }
 
         return current;

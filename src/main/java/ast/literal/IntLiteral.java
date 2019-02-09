@@ -13,4 +13,9 @@ public class IntLiteral extends Literal {
     public void printAST() {
         System.out.println("int: " + value);
     }
+
+    @Override
+    public String toString() {
+        return value + "";
+    }
 }

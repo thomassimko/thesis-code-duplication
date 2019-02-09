@@ -2,6 +2,7 @@ package ast.statements;
 
 import ast.expressions.Expression;
 import cfg.CFGBlock;
+import cfg.StartBlock;
 
 import java.util.HashMap;
 
@@ -19,7 +20,7 @@ public class ReturnStatement extends Statement {
         exp.printAST();
     }
 
-    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap) {
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start) {
         block.addExpression(exp);
         block.addSuccessor(finalBlock);
         return finalBlock;

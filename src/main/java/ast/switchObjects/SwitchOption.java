@@ -2,6 +2,7 @@ package ast.switchObjects;
 
 import ast.Block;
 import cfg.CFGBlock;
+import cfg.StartBlock;
 
 import java.util.List;
 
@@ -24,8 +25,8 @@ public class SwitchOption {
         block.printAST();
     }
 
-    public CFGBlock generateCFG(CFGBlock prev, CFGBlock finalBlock) {
+    public CFGBlock generateCFG(CFGBlock prev, CFGBlock finalBlock, StartBlock start) {
 
-        return block.generateCFG(prev, finalBlock, null);
+        return block.generateCFG(prev, finalBlock, null, start);
     }
 }

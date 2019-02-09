@@ -1,5 +1,5 @@
 import ast.Block;
-import ast.Declaration;
+import ast.statements.DeclarationStatement;
 import ast.Method;
 
 import java.util.ArrayList;
@@ -14,9 +14,9 @@ public class MyMethodVisitor extends Java8BaseVisitor<Method> {
         return new Method(name, blocks);
     }
 
-    private List<Declaration> gatherDeclarations(Java8Parser.BlockStatementsContext statementsContext) {
+    private List<DeclarationStatement> gatherDeclarations(Java8Parser.BlockStatementsContext statementsContext) {
 
-        List<Declaration> declarations = new ArrayList<Declaration>();
+        List<DeclarationStatement> declarations = new ArrayList<DeclarationStatement>();
 
         for(Java8Parser.BlockStatementContext context : statementsContext.blockStatement()) {
             if (context.localVariableDeclarationStatement() != null) {

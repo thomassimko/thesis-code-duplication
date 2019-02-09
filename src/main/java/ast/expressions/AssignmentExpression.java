@@ -1,5 +1,8 @@
 package ast.expressions;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class AssignmentExpression extends Expression {
 
     private Expression exp;
@@ -11,6 +14,8 @@ public class AssignmentExpression extends Expression {
         this.left = left;
         this.operator = operator;
         this.exp = exp;
+
+        addTarget(left);
     }
 
     public void printAST() {
@@ -18,4 +23,24 @@ public class AssignmentExpression extends Expression {
         left.printAST();
         exp.printAST();
     }
+
+    public Expression getLeft() {
+        return left;
+    }
+
+    @Override
+    public String toString() {
+        return left.toString() + " " + operator + " " + exp.toString();
+    }
+
+    @Override
+    public List<Expression> getExpressions() {
+        List<Expression> output = new ArrayList<Expression>();
+        output.addAll(left.getExpressions());
+        output.addAll(exp.getExpressions());
+        output.add(this);
+        return output;
+    }
+
+
 }

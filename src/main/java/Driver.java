@@ -41,6 +41,17 @@ public class Driver {
             List<StartBlock> blocks = program.getCFG();
             printCFG(blocks);
 
+            //Set<CFGBlock> visited = new HashSet<CFGBlock>();
+
+            for(StartBlock start : blocks) {
+//                Set<CFGBlock> visited = new HashSet<CFGBlock>();
+//                start.printBlock(visited);
+                for(CFGBlock block : start.getMethodBlocks()) {
+                    block.setTargets();
+                    block.printTargets();
+                }
+            }
+
         } catch (Exception e) {
             e.printStackTrace();
         }

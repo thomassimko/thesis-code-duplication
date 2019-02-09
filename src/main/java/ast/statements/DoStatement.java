@@ -4,6 +4,7 @@ import ast.expressions.Expression;
 import cfg.BasicBlock;
 import cfg.CFGBlock;
 import cfg.LoopBlock;
+import cfg.StartBlock;
 
 import java.util.HashMap;
 
@@ -23,15 +24,18 @@ public class DoStatement extends Statement {
         stmt.printAST();
     }
 
-    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap) {
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start) {
 
         CFGBlock newBlock = new BasicBlock();
         CFGBlock whileBlock = new LoopBlock();
-        CFGBlock lastBlock = stmt.generateCFG(whileBlock, finalBlock, labelMap);
+        CFGBlock lastBlock = stmt.generateCFG(whileBlock, finalBlock, labelMap, start);
         block.addSuccessor(whileBlock);
         lastBlock.addSuccessor(newBlock);
 
-        lastBlock.addExpression(exp);
+        lastBlock.addExpressions(exp.getExpressions());
+
+        start.addBlock(newBlock);
+        start.addBlock(whileBlock);
 
         return newBlock;
     }

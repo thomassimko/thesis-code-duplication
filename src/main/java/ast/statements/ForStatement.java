@@ -1,23 +1,23 @@
 package ast.statements;
 
-import ast.Declaration;
 import ast.expressions.Expression;
 import cfg.BasicBlock;
 import cfg.CFGBlock;
 import cfg.LoopBlock;
+import cfg.StartBlock;
 
 import java.util.HashMap;
 import java.util.List;
 
 public class ForStatement extends Statement {
 
-    private Declaration declaration = null;
+    private DeclarationStatement declaration = null;
     private List<Statement> initStatements = null;
     private Expression exp = null;
     private Statement body = null;
     private List<Statement> updateStatements = null;
 
-    public ForStatement(int line, Declaration decl, List<Statement> initStatements, Expression exp, Statement body, List<Statement> updateStatements) {
+    public ForStatement(int line, DeclarationStatement decl, List<Statement> initStatements, Expression exp, Statement body, List<Statement> updateStatements) {
         super(line);
         this.declaration = decl;
         this.initStatements = initStatements;
@@ -40,31 +40,41 @@ public class ForStatement extends Statement {
 
     }
 
-    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap) {
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start) {
 
-        CFGBlock curBlock = block;
+        CFGBlock initBlock = new BasicBlock("ForInit");
+        CFGBlock condBlock = new BasicBlock("ForCond");
+        CFGBlock loopBlock = new LoopBlock();
+        CFGBlock outBlock = new BasicBlock();
 
-        CFGBlock newBlock = new BasicBlock();
-        CFGBlock forBlock = new LoopBlock();
+        start.addBlock(initBlock);
+        start.addBlock(condBlock);
+        start.addBlock(loopBlock);
+        start.addBlock(outBlock);
 
+        //initialize loop
+        initBlock.addExpression(declaration.getExpression());
         for(Statement stmt: initStatements) {
-            curBlock = stmt.generateCFG(curBlock, finalBlock, labelMap);
+            initBlock = stmt.generateCFG(initBlock, finalBlock, labelMap, start);
         }
-        curBlock.addExpression(exp);
+
+        //condition block -- only has condition in it
+        condBlock.addExpression(exp);
+
+
+        //main loop -- add updates to end
+        CFGBlock endBlock = body.generateCFG(loopBlock, finalBlock, labelMap, start);
 
         for(Statement stmt: updateStatements) {
-            curBlock = stmt.generateCFG(curBlock, finalBlock, labelMap);
+            endBlock = stmt.generateCFG(endBlock, finalBlock, labelMap, start);
         }
 
-        CFGBlock endBlock = body.generateCFG(forBlock, finalBlock, labelMap);
+        block.addSuccessor(initBlock);
+        initBlock.addSuccessor(condBlock);
+        condBlock.addSuccessor(loopBlock);
+        condBlock.addSuccessor(outBlock);
+        endBlock.addSuccessor(condBlock);
 
-        //endBlock.addExpression();
-        //TODO: how do i add the update statements to a list of expression?
-
-        block.addSuccessor(forBlock);
-        endBlock.addSuccessor(forBlock);
-        endBlock.addSuccessor(newBlock);
-
-        return newBlock;
+        return outBlock;
     }
 }
