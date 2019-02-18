@@ -2,9 +2,11 @@ package ast.expressions;
 
 import ast.expressions.left.Identifier;
 import ast.expressions.left.Left;
+import ast.expressions.left.LeftIdDot;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public abstract class Expression {
 
@@ -28,6 +30,10 @@ public abstract class Expression {
         return output;
     }
 
+    public int getLine() {
+        return line;
+    }
+
     public boolean isIdentifier() {
         return this instanceof Identifier;
     }
@@ -48,6 +54,29 @@ public abstract class Expression {
         if(exp instanceof Left)
             this.sources.add((Left) exp);
     }
+
+    public static Expression getScopeId(List<Map<String, Left>> scope, Expression exp) {
+        if(exp == null) {
+            return null;
+        }
+        if(exp instanceof Left) {
+            Left left = (Left) exp;
+
+            for (int i = scope.size() - 1; i >= 0; i--) {
+                Map<String, Left> local = scope.get(i);
+                if (local.containsKey(left.toString())) {
+                    Left var = local.get(left.toString());
+                    System.err.println(left.toString() + " at line " + left.getLine() + " points to " + var.toString() + " which was declared at line " + var.getLine());
+                    return local.get(left.toString());
+                }
+            }
+        }
+        exp.setScopeId(scope);
+        return exp;
+    }
+
+    public abstract void setScopeId(List<Map<String, Left>> scope);
+    public abstract void setUsesAndDefines();
 
     //target: assignment expression, post unary, pre unary, method call
 

@@ -1,0 +1,1 @@
+Right now each cfgblock has a list of expressions, but i want to have information about the statements as well.  Such as a while statement and not just the condition.  Should i change it to have a list of statements? Or should I create my own expressions like a while expression?

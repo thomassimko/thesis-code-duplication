@@ -1,6 +1,7 @@
 package ast.statements;
 
 import ast.expressions.Expression;
+import ast.expressions.left.Left;
 import cfg.BasicBlock;
 import cfg.CFGBlock;
 import cfg.LoopBlock;
@@ -8,6 +9,7 @@ import cfg.StartBlock;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class ForStatement extends Statement {
 
@@ -40,7 +42,9 @@ public class ForStatement extends Statement {
 
     }
 
-    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start) {
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start, List<Map<String, Left>> scope) {
+
+        pushScope(scope);
 
         CFGBlock initBlock = new BasicBlock("ForInit");
         CFGBlock condBlock = new BasicBlock("ForCond");
@@ -53,20 +57,21 @@ public class ForStatement extends Statement {
         start.addBlock(outBlock);
 
         //initialize loop
-        initBlock.addExpression(declaration.getExpression());
+        initBlock = declaration.generateCFG(initBlock, finalBlock, labelMap, start, scope);
         for(Statement stmt: initStatements) {
-            initBlock = stmt.generateCFG(initBlock, finalBlock, labelMap, start);
+            initBlock = stmt.generateCFG(initBlock, finalBlock, labelMap, start, scope);
         }
 
         //condition block -- only has condition in it
+        exp = Expression.getScopeId(scope, exp);
         condBlock.addExpression(exp);
 
 
         //main loop -- add updates to end
-        CFGBlock endBlock = body.generateCFG(loopBlock, finalBlock, labelMap, start);
+        CFGBlock endBlock = body.generateCFG(loopBlock, finalBlock, labelMap, start, scope);
 
         for(Statement stmt: updateStatements) {
-            endBlock = stmt.generateCFG(endBlock, finalBlock, labelMap, start);
+            endBlock = stmt.generateCFG(endBlock, finalBlock, labelMap, start, scope);
         }
 
         block.addSuccessor(initBlock);
@@ -74,6 +79,8 @@ public class ForStatement extends Statement {
         condBlock.addSuccessor(loopBlock);
         condBlock.addSuccessor(outBlock);
         endBlock.addSuccessor(condBlock);
+
+        popScope(scope);
 
         return outBlock;
     }

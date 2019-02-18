@@ -12,6 +12,7 @@ public class StartBlock extends CFGBlock {
         super("Start" + functionName);
         this.functionName = functionName;
         methodBlocks = new ArrayList<CFGBlock>();
+        methodBlocks.add(this);
     }
 
     public void addBlock(CFGBlock block) {

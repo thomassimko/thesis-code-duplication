@@ -2,27 +2,24 @@ package ast.statements;
 
 import ast.expressions.AssignmentExpression;
 import ast.expressions.left.Identifier;
-import ast.interfaces.BlockStatement;
+import ast.expressions.left.Left;
 import ast.expressions.Expression;
-import ast.statements.Statement;
 import cfg.CFGBlock;
 import cfg.StartBlock;
 
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class DeclarationStatement extends Statement {
 
-    private Expression exp;
-    private String varName;
+    private AssignmentExpression exp;
+    private Identifier varName;
 
-    public DeclarationStatement(int line, String varName, Expression exp) {
+    public DeclarationStatement(int line, Identifier varName, Expression exp) {
         super(line);
         this.varName = varName;
-
-        if(exp != null) {
-            Identifier id = new Identifier(line, varName);
-            this.exp = new AssignmentExpression(line, id, "=", exp);
-        }
+        this.exp = (AssignmentExpression) exp;
     }
 
     public void printAST() {
@@ -32,7 +29,22 @@ public class DeclarationStatement extends Statement {
             exp.printAST();
     }
 
-    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start) {
+    @Override
+    public String toString() {
+        if(exp != null)
+            return "declared: " + varName.toString() + " : " + exp.toString();
+        return "declared: " + varName.toString();
+    }
+
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start, List<Map<String, Left>> scope) {
+        //exp = Expression.getScopeId(scope, exp);
+        if(exp != null) {
+            exp.replaceRight(scope);
+        }
+
+        scope.get(scope.size() - 1).put(varName.toString(), varName);
+        System.err.println("added to scope " + scope.size() + " : " + varName.toString());
+
         if(exp != null) {
             block.addExpressions(exp.getExpressions());
         }

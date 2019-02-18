@@ -1,6 +1,10 @@
 package ast.literal;
 
 import ast.expressions.Expression;
+import ast.expressions.left.Left;
+
+import java.util.List;
+import java.util.Map;
 
 public abstract class Literal extends Expression {
 
@@ -11,4 +15,13 @@ public abstract class Literal extends Expression {
         this.line = line;
     }
 
+    @Override
+    public void setScopeId(List<Map<String, Left>> scope) {
+        //do nothing
+    }
+
+    @Override
+    public void setUsesAndDefines() {
+        //do nithing
+    }
 }

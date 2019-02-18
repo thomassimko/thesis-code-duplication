@@ -5,6 +5,7 @@ import ast.expressions.left.Left;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class CallExpression extends Expression {
 
@@ -56,5 +57,20 @@ public class CallExpression extends Expression {
         }
         output.add(this);
         return output;
+    }
+
+    @Override
+    public void setScopeId(List<Map<String, Left>> scope) {
+        leftSide = getScopeId(scope, leftSide);
+        for(int i = 0; i < argumentList.size(); i++) {
+            argumentList.set(i, getScopeId(scope, argumentList.get(i)));
+        }
+    }
+
+    @Override
+    public void setUsesAndDefines() {
+        for(Expression arg: argumentList) {
+            addSource(arg);
+        }
     }
 }

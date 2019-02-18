@@ -2,12 +2,15 @@ package ast.statements;
 
 import ast.Block;
 import ast.expressions.AssignmentExpression;
+import ast.expressions.Expression;
+import ast.expressions.left.Left;
 import cfg.BasicBlock;
 import cfg.CFGBlock;
 import cfg.StartBlock;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class TryStatement extends Statement {
 
@@ -35,7 +38,7 @@ public class TryStatement extends Statement {
         finallyBlock.printAST();
     }
 
-    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start) {
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start, List<Map<String, Left>> scope) {
 
         CFGBlock finallyCFG = null;
         CFGBlock tryCFG = new BasicBlock();
@@ -45,24 +48,29 @@ public class TryStatement extends Statement {
         start.addBlock(endBlock);
 
         for(AssignmentExpression assgn: resources) {
-            tryCFG.addExpression(assgn);
+            Expression newExp = Expression.getScopeId(scope, assgn);
+            tryCFG.addExpression(newExp);
         }
 
-        CFGBlock lastTryCFG = tryBlock.generateCFG(tryCFG, finalBlock, labelMap, start);
+        CFGBlock lastTryCFG = tryBlock.generateCFG(tryCFG, finalBlock, labelMap, start, scope);
 
         if(finallyBlock != null) {
+
+            pushScope(scope);
             finallyCFG = new BasicBlock();
             start.addBlock(finallyCFG);
-            CFGBlock lastFinallyCFG = finallyBlock.generateCFG(finallyCFG, finalBlock, labelMap, start);
+            CFGBlock lastFinallyCFG = finallyBlock.generateCFG(finallyCFG, finalBlock, labelMap, start, scope);
 
             lastTryCFG.addSuccessor(finallyCFG);
             lastFinallyCFG.addSuccessor(endBlock);
+            popScope(scope);
         }
 
         for(CatchStatement catchStmt : catches) {
+            pushScope(scope);
             CFGBlock catchBlock = new BasicBlock();
             start.addBlock(catchBlock);
-            CFGBlock lastCatchBlock = catchStmt.generateCFG(catchBlock, finalBlock, labelMap, start);
+            CFGBlock lastCatchBlock = catchStmt.generateCFG(catchBlock, finalBlock, labelMap, start, scope);
 
             lastTryCFG.addSuccessor(catchBlock);
 
@@ -71,6 +79,7 @@ public class TryStatement extends Statement {
             } else {
                 lastCatchBlock.addSuccessor(endBlock);
             }
+            popScope(scope);
         }
 
         return endBlock;

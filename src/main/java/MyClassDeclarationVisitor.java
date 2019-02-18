@@ -1,6 +1,7 @@
 import ast.Block;
 import ast.ClassObject;
 import ast.Method;
+import ast.statements.DeclarationStatement;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,24 +14,24 @@ public class MyClassDeclarationVisitor extends Java8BaseVisitor<ClassObject> {
         Java8Parser.ClassBodyContext body = ctx.normalClassDeclaration().classBody();
 
         //System.out.println(body.getText());
-        return this.visitClassBody(body);
+        return this.visitClassBody(body, ctx.normalClassDeclaration().Identifier().getText());
     }
 
-    public ClassObject visitClassBody(Java8Parser.ClassBodyContext ctx) {
-        return new ClassObject(gatherMethods(ctx));
-    }
-
-    public List<Method> gatherMethods(Java8Parser.ClassBodyContext body) {
+    public ClassObject visitClassBody(Java8Parser.ClassBodyContext ctx, String className) {
 
         List<Method> methods = new ArrayList<Method>();
+        List<DeclarationStatement> decls = new ArrayList<DeclarationStatement>();
 
-        for(Java8Parser.ClassBodyDeclarationContext bl : body.classBodyDeclaration()) {
+        for(Java8Parser.ClassBodyDeclarationContext bl : ctx.classBodyDeclaration()) {
 
+            if (bl.classMemberDeclaration().fieldDeclaration() != null) {
+                decls.addAll(Driver.declarationVisitor.visitVariableDeclaratorList(bl.classMemberDeclaration().fieldDeclaration().variableDeclaratorList()));
+            }
             if(bl.classMemberDeclaration().methodDeclaration() != null) {
                 methods.add(Driver.methodVisitor.visitMethodDeclaration(bl.classMemberDeclaration().methodDeclaration()));
             }
         }
 
-        return methods;
+        return new ClassObject(methods, decls, className);
     }
 }

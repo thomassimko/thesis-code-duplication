@@ -1,9 +1,11 @@
 package ast.expressions;
 
 import ast.expressions.Expression;
+import ast.expressions.left.Left;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class Type extends Expression {
 
@@ -29,5 +31,15 @@ public class Type extends Expression {
         List<Expression> output = new ArrayList<Expression>();
         output.add(this);
         return output;
+    }
+
+    @Override
+    public void setScopeId(List<Map<String, Left>> scope) {
+        //do nothing
+    }
+
+    @Override
+    public void setUsesAndDefines() {
+
     }
 }

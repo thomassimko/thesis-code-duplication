@@ -1,7 +1,10 @@
 package ast.expressions;
 
+import ast.expressions.left.Left;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class BinaryExpression extends Expression {
 
@@ -35,5 +38,17 @@ public class BinaryExpression extends Expression {
         output.addAll(right.getExpressions());
         output.add(this);
         return output;
+    }
+
+    @Override
+    public void setScopeId(List<Map<String, Left>> scope) {
+        right = getScopeId(scope, right);
+        left = getScopeId(scope, left);
+    }
+
+    @Override
+    public void setUsesAndDefines() {
+        addSource(left);
+        addSource(right);
     }
 }

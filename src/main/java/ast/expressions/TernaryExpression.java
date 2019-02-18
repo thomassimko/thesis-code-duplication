@@ -1,7 +1,10 @@
 package ast.expressions;
 
+import ast.expressions.left.Left;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class TernaryExpression extends Expression{
 
@@ -14,7 +17,6 @@ public class TernaryExpression extends Expression{
         this.cond = cond;
         this.trueExp = trueExp;
         this.falseExp = falseExp;
-
     }
 
     @Override
@@ -38,5 +40,19 @@ public class TernaryExpression extends Expression{
         output.addAll(falseExp.getExpressions());
         output.add(this);
         return output;
+    }
+
+    @Override
+    public void setScopeId(List<Map<String, Left>> scope) {
+        cond = getScopeId(scope, cond);
+        trueExp = getScopeId(scope, trueExp);
+        falseExp = getScopeId(scope, falseExp);
+    }
+
+    @Override
+    public void setUsesAndDefines() {
+        addSource(cond);
+        addSource(trueExp);
+        addSource(falseExp);
     }
 }

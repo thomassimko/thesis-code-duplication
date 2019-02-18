@@ -2,10 +2,13 @@ package ast.statements;
 
 import ast.Block;
 import ast.expressions.left.Identifier;
+import ast.expressions.left.Left;
 import cfg.CFGBlock;
 import cfg.StartBlock;
 
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class CatchStatement extends Statement {
 
@@ -23,7 +26,10 @@ public class CatchStatement extends Statement {
         body.printAST();
     }
 
-    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start) {
-        return body.generateCFG(block, finalBlock, labelMap, start);
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start, List<Map<String, Left>> scope) {
+        pushScope(scope);
+        CFGBlock blk = body.generateCFG(block, finalBlock, labelMap, start, scope);
+        popScope(scope);
+        return blk;
     }
 }

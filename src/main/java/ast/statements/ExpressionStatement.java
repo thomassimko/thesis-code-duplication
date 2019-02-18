@@ -1,10 +1,13 @@
 package ast.statements;
 
 import ast.expressions.Expression;
+import ast.expressions.left.Left;
 import cfg.CFGBlock;
 import cfg.StartBlock;
 
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class ExpressionStatement extends Statement {
 
@@ -21,7 +24,8 @@ public class ExpressionStatement extends Statement {
             exp.printAST();
     }
 
-    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start) {
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start, List<Map<String, Left>> scope) {
+        exp = Expression.getScopeId(scope, exp);
         block.addExpressions(exp.getExpressions());
         return block;
     }

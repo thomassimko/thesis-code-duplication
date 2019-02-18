@@ -4,6 +4,7 @@ import ast.expressions.Expression;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class Identifier extends Left {
 
@@ -19,6 +20,7 @@ public class Identifier extends Left {
         System.out.println("id: " + id);
     }
 
+    @Override
     public String getId() {
         return id;
     }
@@ -26,5 +28,14 @@ public class Identifier extends Left {
     @Override
     public String toString() {
         return id;
+    }
+
+    public void setScopeId(List<Map<String, Left>> scope) {
+        System.err.println("Get scope id called in Identifier: " + id);
+    }
+
+    @Override
+    public void setUsesAndDefines() {
+        //None
     }
 }

@@ -1,34 +1,39 @@
 package ast.statements;
 
+import ast.expressions.AssignmentExpression;
 import ast.expressions.Expression;
 import ast.expressions.left.Identifier;
+import ast.expressions.left.Left;
 import cfg.BasicBlock;
 import cfg.CFGBlock;
 import cfg.LoopBlock;
 import cfg.StartBlock;
 
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class ForEachStatement extends Statement {
 
-    private Expression exp;
     private Statement body;
-    private Identifier declaredId = null;
+    private Expression assgn;
 
-    public ForEachStatement(int line, Expression exp, Statement body, String declaredId) {
+    public ForEachStatement(int line, Expression exp, Statement body, String id) {
         super(line);
-        this.exp = exp;
-        this.declaredId = new Identifier(line, declaredId);
+        Identifier declaredId = new Identifier(line, id);
         this.body = body;
+        assgn = new AssignmentExpression(line, declaredId, "=", exp);
     }
 
     public void printAST() {
-        System.out.println("For each: " + declaredId);
-        exp.printAST();
+        System.out.println("For each: ");
+        assgn.printAST();
         body.printAST();
     }
 
-    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start) {
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start, List<Map<String, Left>> scope) {
+
+        pushScope(scope);
 
         CFGBlock forBlock = new LoopBlock();
         CFGBlock newBlock = new BasicBlock();
@@ -36,10 +41,10 @@ public class ForEachStatement extends Statement {
         start.addBlock(forBlock);
         start.addBlock(newBlock);
 
-        forBlock.addExpressions(declaredId.getExpressions());
-        forBlock.addExpressions(exp.getExpressions());
+        assgn = Expression.getScopeId(scope, assgn);
+        forBlock.addExpressions(assgn.getExpressions());
 
-        CFGBlock endBlock = body.generateCFG(forBlock, finalBlock, labelMap, start);
+        CFGBlock endBlock = body.generateCFG(forBlock, finalBlock, labelMap, start, scope);
 
         block.addSuccessor(forBlock);
         forBlock.addSuccessor(newBlock);
@@ -47,6 +52,8 @@ public class ForEachStatement extends Statement {
 
         if(forBlock != endBlock)
             endBlock.addSuccessor(newBlock);
+
+        popScope(scope);
 
         return newBlock;
     }

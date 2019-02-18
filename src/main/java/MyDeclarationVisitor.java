@@ -14,8 +14,6 @@ public class MyDeclarationVisitor extends Java8BaseVisitor<List<DeclarationState
 
         for (Java8Parser.VariableDeclaratorContext decl : ctx.variableDeclaratorList().variableDeclarator()) {
 
-            if(decl.variableInitializer() != null)
-                System.err.println(decl.variableInitializer().getText());
             AssignmentExpression assgn = null;
             String varName = decl.variableDeclaratorId().Identifier().getSymbol().getText();
             Identifier id = new Identifier(ctx.start.getLine(), varName);
@@ -24,9 +22,37 @@ public class MyDeclarationVisitor extends Java8BaseVisitor<List<DeclarationState
                 Expression exp = Driver.expressionVisitor.visitExpression(decl.variableInitializer().expression());
                 assgn = new AssignmentExpression(ctx.start.getLine(), id, "=", exp);
             }
-            declarations.add(new DeclarationStatement(decl.start.getLine(), varName, assgn));
+            declarations.add(new DeclarationStatement(decl.start.getLine(), id, assgn));
         }
 
+        return declarations;
+    }
+
+    @Override
+    public List<DeclarationStatement> visitVariableDeclaratorList(Java8Parser.VariableDeclaratorListContext ctx) {
+        List<DeclarationStatement> declarations = new ArrayList<DeclarationStatement>();
+
+        for(Java8Parser.VariableDeclaratorContext varDecl : ctx.variableDeclarator()) {
+
+            Identifier id = new Identifier(ctx.start.getLine(), varDecl.variableDeclaratorId().Identifier().toString());
+            Expression exp = null;
+
+            if(varDecl.variableInitializer() != null) {
+                if(varDecl.variableInitializer().expression() != null) {
+                    exp = Driver.expressionVisitor.visitExpression(varDecl.variableInitializer().expression());
+                } else if(varDecl.variableInitializer().arrayInitializer() != null) {
+                    exp = Driver.primaryVisitor.handleArrayInitializer(varDecl.variableInitializer().arrayInitializer());
+                }
+            }
+
+            if(exp != null) {
+                AssignmentExpression asgn = new AssignmentExpression(ctx.start.getLine(), id, "=", exp);
+                DeclarationStatement decl = new DeclarationStatement(ctx.start.getLine(), id, asgn);
+                declarations.add(decl);
+            }
+
+
+        }
         return declarations;
     }
 }

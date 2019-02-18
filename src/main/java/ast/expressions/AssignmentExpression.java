@@ -1,7 +1,10 @@
 package ast.expressions;
 
+import ast.expressions.left.Left;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class AssignmentExpression extends Expression {
 
@@ -12,10 +15,8 @@ public class AssignmentExpression extends Expression {
     public AssignmentExpression(int line, Expression left, String operator, Expression exp) {
         super(line);
         this.left = left;
-        this.operator = operator;
+        this.operator = operator.trim();
         this.exp = exp;
-
-        addTarget(left);
     }
 
     public void printAST() {
@@ -42,5 +43,21 @@ public class AssignmentExpression extends Expression {
         return output;
     }
 
+    @Override
+    public void setScopeId(List<Map<String, Left>> scope) {
+        exp = getScopeId(scope, exp);
+        left = getScopeId(scope, left);
+    }
 
+    public void replaceRight(List<Map<String, Left>> scope) {
+        exp = getScopeId(scope, exp);
+    }
+
+    @Override
+    public void setUsesAndDefines() {
+        addTarget(left);
+        if(!operator.equals("="))
+            addSource(left);
+        addSource(exp);
+    }
 }

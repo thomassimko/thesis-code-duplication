@@ -1,14 +1,14 @@
 package ast.expressions.left;
 
 import ast.expressions.Expression;
-import ast.expressions.left.Left;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 //mark entire array as used/targetted
 
-public class ArrayAccessExpression extends Expression {
+public class ArrayAccessExpression extends Left {
 
     private Expression left;
     private List<Expression> accessors;
@@ -49,6 +49,26 @@ public class ArrayAccessExpression extends Expression {
         }
         output.add(this);
         return output;
+    }
+
+    @Override
+    public String getId() {
+        return left.toString();
+    }
+
+    public void setScopeId(List<Map<String, Left>> scope) {
+        left = getScopeId(scope, left);
+    }
+
+    public Expression getLeft() {
+        return left;
+    }
+
+    @Override
+    public void setUsesAndDefines() {
+        for(Expression exp: accessors) {
+            addSource(exp);
+        }
     }
 }
 

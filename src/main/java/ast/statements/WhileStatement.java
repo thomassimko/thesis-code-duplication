@@ -1,12 +1,15 @@
 package ast.statements;
 
 import ast.expressions.Expression;
+import ast.expressions.left.Left;
 import cfg.BasicBlock;
 import cfg.CFGBlock;
 import cfg.LoopBlock;
 import cfg.StartBlock;
 
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class WhileStatement extends Statement {
 
@@ -25,9 +28,13 @@ public class WhileStatement extends Statement {
         stmt.printAST();
     }
 
-    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start) {
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start, List<Map<String, Left>> scope) {
 
+        pushScope(scope);
+
+        exp = Expression.getScopeId(scope, exp);
         block.addExpression(exp);
+
         CFGBlock loopBlock = new LoopBlock();
         CFGBlock endBlock = new BasicBlock();
         block.addSuccessor(loopBlock);
@@ -35,10 +42,12 @@ public class WhileStatement extends Statement {
         start.addBlock(loopBlock);
         start.addBlock(endBlock);
 
-        CFGBlock newBlock = stmt.generateCFG(loopBlock, finalBlock, labelMap, start);
+        CFGBlock newBlock = stmt.generateCFG(loopBlock, finalBlock, labelMap, start, scope);
         newBlock.addExpression(exp);
         newBlock.addSuccessor(loopBlock);
         newBlock.addSuccessor(endBlock);
+        
+        popScope(scope);
 
         return endBlock;
     }

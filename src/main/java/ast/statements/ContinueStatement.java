@@ -1,9 +1,12 @@
 package ast.statements;
 
+import ast.expressions.left.Left;
 import cfg.CFGBlock;
 import cfg.StartBlock;
 
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class ContinueStatement extends Statement {
 
@@ -22,7 +25,7 @@ public class ContinueStatement extends Statement {
         System.out.println("Continue: " + id);
     }
 
-    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start) {
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start, List<Map<String, Left>> scope) {
 
         if(id == null) {
             block.addSuccessor(labelMap.get(id));

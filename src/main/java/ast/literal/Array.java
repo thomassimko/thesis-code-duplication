@@ -1,9 +1,11 @@
 package ast.literal;
 
 import ast.expressions.Expression;
+import ast.expressions.left.Left;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class Array extends Literal {
 
@@ -41,5 +43,17 @@ public class Array extends Literal {
         }
         output.add(this);
         return output;
+    }
+
+    @Override
+    public void setUsesAndDefines() {
+        for(Expression exp: expressionList) {
+            addSource(exp);
+        }
+    }
+
+    @Override
+    public void setScopeId(List<Map<String, Left>> scope) {
+        System.err.println("Array set scope not implemented");
     }
 }

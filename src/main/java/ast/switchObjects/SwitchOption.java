@@ -1,10 +1,12 @@
 package ast.switchObjects;
 
 import ast.Block;
+import ast.expressions.left.Left;
 import cfg.CFGBlock;
 import cfg.StartBlock;
 
 import java.util.List;
+import java.util.Map;
 
 public class SwitchOption {
 
@@ -25,8 +27,11 @@ public class SwitchOption {
         block.printAST();
     }
 
-    public CFGBlock generateCFG(CFGBlock prev, CFGBlock finalBlock, StartBlock start) {
+    public CFGBlock generateCFG(CFGBlock prev, CFGBlock finalBlock, StartBlock start, List<Map<String, Left>> scope) {
 
-        return block.generateCFG(prev, finalBlock, null, start);
+        for(SwitchLabel label: caseList) {
+            prev = label.generateCFG(prev, finalBlock, start, scope);
+        }
+        return block.generateCFG(prev, finalBlock, null, start, scope);
     }
 }

@@ -1,11 +1,14 @@
 package ast.statements;
 
 import ast.expressions.Expression;
+import ast.expressions.left.Left;
 import cfg.BasicBlock;
 import cfg.CFGBlock;
 import cfg.StartBlock;
 
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class ConditionalStatement extends Statement{
 
@@ -29,8 +32,10 @@ public class ConditionalStatement extends Statement{
             ifFalse.printAST();
     }
 
-    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start) {
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start, List<Map<String, Left>> scope) {
+        condition = condition.getScopeId(scope, condition);
         block.addExpressions(condition.getExpressions());
+
 
         CFGBlock trueBlock = new BasicBlock("true");
         CFGBlock newBlock = new BasicBlock("join");
@@ -39,19 +44,22 @@ public class ConditionalStatement extends Statement{
         start.addBlock(newBlock);
 
         block.addSuccessor(trueBlock);
-        CFGBlock lastTrue = ifTrue.generateCFG(trueBlock, finalBlock, labelMap, start);
+        pushScope(scope);
+        CFGBlock lastTrue = ifTrue.generateCFG(trueBlock, finalBlock, labelMap, start, scope);
+        popScope(scope);
         lastTrue.addSuccessor(newBlock);
 
         if(ifFalse != null) {
             CFGBlock falseBlock = new BasicBlock("false");
             block.addSuccessor(falseBlock);
             start.addBlock(falseBlock);
-            CFGBlock lastFalse = ifFalse.generateCFG(falseBlock, finalBlock, labelMap, start);
+            pushScope(scope);
+            CFGBlock lastFalse = ifFalse.generateCFG(falseBlock, finalBlock, labelMap, start, scope);
+            popScope(scope);
             lastFalse.addSuccessor(newBlock);
         } else {
             block.addSuccessor(newBlock);
         }
-
 
         return newBlock;
     }

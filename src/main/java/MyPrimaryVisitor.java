@@ -4,6 +4,7 @@ import ast.expressions.left.ArrayAccessExpression;
 import ast.expressions.left.Identifier;
 import ast.expressions.left.LeftIdDot;
 import ast.literal.Array;
+import org.antlr.v4.runtime.tree.TerminalNode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,7 +47,7 @@ public class MyPrimaryVisitor extends Java8BaseVisitor<Expression> {
         return null;
     }
 
-    private Expression handleArrayInitializer(Java8Parser.ArrayInitializerContext ctx) {
+    public Expression handleArrayInitializer(Java8Parser.ArrayInitializerContext ctx) {
 
         ArrayList<Expression> values = new ArrayList<Expression>();
 
@@ -124,6 +125,11 @@ public class MyPrimaryVisitor extends Java8BaseVisitor<Expression> {
         ClassObject clss = null;
         Expression exp = null;
         List<Expression> args = new ArrayList<Expression>();
+        Identifier className = null;
+
+        if(ctx.Identifier(0) != null) {
+            className = new Identifier(ctx.start.getLine(), ctx.Identifier(0).getText());
+        }
 
         if(ctx.expressionName() != null)
             exp = handleExpressionName(ctx.expressionName());
@@ -137,7 +143,7 @@ public class MyPrimaryVisitor extends Java8BaseVisitor<Expression> {
             }
         }
 
-        return new ClassInstanceExpression(ctx.start.getLine(), exp, args, clss);
+        return new ClassInstanceExpression(ctx.start.getLine(), exp, args, clss, className);
 
     }
 

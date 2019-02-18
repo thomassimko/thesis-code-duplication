@@ -1,7 +1,10 @@
 package ast.expressions;
 
+import ast.expressions.left.Left;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class UnaryExpression extends Expression {
 
@@ -12,8 +15,6 @@ public class UnaryExpression extends Expression {
         super(line);
         this.op = op;
         this.exp = exp;
-
-
     }
 
     @Override
@@ -33,5 +34,15 @@ public class UnaryExpression extends Expression {
         output.addAll(exp.getExpressions());
         output.add(this);
         return output;
+    }
+
+    @Override
+    public void setScopeId(List<Map<String, Left>> scope) {
+        exp = getScopeId(scope, exp);
+    }
+
+    @Override
+    public void setUsesAndDefines() {
+        addSource(exp);
     }
 }

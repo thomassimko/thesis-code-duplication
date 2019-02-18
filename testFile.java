@@ -2,31 +2,37 @@ import java.util.*;
 
 public class testFile {
 
-    private int thing = 2;
+    private static int thing = 2;
 
     public static void main(String[] args) {
         double that, thisthat;
         int num = 6;
         String banana = "check: " + 6;
-        int ham = 6 + 2;
+        int ham = num + 2;
         if(true) {
             System.out.println(testFile.class);
         }
 
         myLabel:
         while(true) {
+            ham = ham + 2;
             break myLabel;
         }
 
-
-
-        num = getNum(6 + 2);
+        num = getNum(num);
 
         testFile.getNum(4 + 3);
 
         int[] arr = new int[3];
 
         arr[2] = 4;
+
+        if(true) {
+            int thing = 2;
+            thing--;
+        }
+
+        ++thing;
 
         int[][] arr1 = new int[4][5];
 

@@ -1,7 +1,10 @@
 package ast.expressions;
 
+import ast.expressions.left.Left;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class CastExpression extends Expression {
 
@@ -29,5 +32,15 @@ public class CastExpression extends Expression {
         output.addAll(exp.getExpressions());
         output.add(this);
         return output;
+    }
+
+    @Override
+    public void setScopeId(List<Map<String, Left>> scope) {
+        exp = getScopeId(scope, exp);
+    }
+
+    @Override
+    public void setUsesAndDefines() {
+        addSource(exp);
     }
 }

@@ -1,18 +1,29 @@
 package ast;
 
+import ast.expressions.left.Left;
 import ast.interfaces.BlockStatement;
+import ast.statements.DeclarationStatement;
 import cfg.CFGBlock;
 import cfg.StartBlock;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class ClassObject implements BlockStatement {
 
     public List<Method> methods;
+    public List<DeclarationStatement> decls;
+    private String className;
 
-    public ClassObject(List<Method> methods) {
+    public ClassObject(List<Method> methods, List<DeclarationStatement> decls, String className) {
         this.methods = methods;
+        this.decls = decls;
+        this.className = className;
+
+        for(DeclarationStatement decl:decls) {
+            System.out.println(decl.toString());
+        }
     }
 
     public void printAST() {
@@ -22,12 +33,10 @@ public class ClassObject implements BlockStatement {
         }
     }
 
-    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start) {
+    public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start, List<Map<String, Left>> scope) {
 
-        StartBlock newStart = new StartBlock(methods.toString());
-
-        for(Method method: methods) {
-            method.buildCFG(newStart);
+        for(DeclarationStatement decl : decls) {
+            block = decl.generateCFG(block, finalBlock, labelMap, start, scope);
         }
 
         return block;

@@ -4,6 +4,7 @@ import ast.expressions.left.Left;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class PreUnaryExpression extends Expression {
 
@@ -14,8 +15,6 @@ public class PreUnaryExpression extends Expression {
         super(line);
         this.op = op;
         this.exp = exp;
-
-        addTarget(exp);
     }
 
     @Override
@@ -35,5 +34,16 @@ public class PreUnaryExpression extends Expression {
         output.addAll(exp.getExpressions());
         output.add(this);
         return output;
+    }
+
+    @Override
+    public void setScopeId(List<Map<String, Left>> scope) {
+        exp = getScopeId(scope, exp);
+    }
+
+    @Override
+    public void setUsesAndDefines() {
+        addTarget(exp);
+        addSource(exp);
     }
 }

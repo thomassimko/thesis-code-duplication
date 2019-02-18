@@ -4,6 +4,7 @@ import ast.expressions.Expression;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class LeftIdDot extends Left {
     private String id;
@@ -34,8 +35,17 @@ public class LeftIdDot extends Left {
         return output;
     }
 
-    //PER METHOD
-    //if i hit a left, add it (still check the rest)
-    //if assignment , post/pre then add left to target
-    //
+    public String getId() {
+        return left.toString() + "." + id;
+    }
+
+    @Override
+    public void setScopeId(List<Map<String, Left>> scope) {
+        System.err.println("Set scope id used in leftdot: " + this.toString());
+    }
+
+    @Override
+    public void setUsesAndDefines() {
+        //None
+    }
 }

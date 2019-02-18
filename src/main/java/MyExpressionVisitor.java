@@ -32,13 +32,13 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
         } else if (ctx.methodInvocation() != null) {
             return handleMethodInvocation(ctx.methodInvocation());
         } else if (ctx.postDecrementExpression() != null) {
-            return handlePostFixExpression(ctx.postDecrementExpression().postfixExpression());
+            return handlePostFixExpression(ctx.postDecrementExpression().postfixExpression(), "--");
         } else if (ctx.postIncrementExpression() != null) {
-            return handlePostFixExpression(ctx.postIncrementExpression().postfixExpression());
+            return handlePostFixExpression(ctx.postIncrementExpression().postfixExpression(), "++");
         } else if (ctx.preDecrementExpression() != null) {
-            return handleUnaryExpression(ctx.preDecrementExpression().unaryExpression());
+            return new PreUnaryExpression(ctx.start.getLine(), "--", handleUnaryExpression(ctx.preDecrementExpression().unaryExpression()));
         } else if (ctx.preIncrementExpression() != null) {
-            return handleUnaryExpression(ctx.preIncrementExpression().unaryExpression());
+            return new PreUnaryExpression(ctx.start.getLine(), "++", handleUnaryExpression(ctx.preIncrementExpression().unaryExpression()));
         }
         System.err.println("Statement Expression not found: " + ctx.getText());
         return super.visitStatementExpression(ctx);
@@ -226,7 +226,7 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
         } else if (ctx.castExpression() != null) {
             return handleCastExpression(ctx.castExpression());
         } else {
-            return handlePostFixExpression(ctx.postfixExpression());
+            return handlePostFixExpression(ctx.postfixExpression(), null);
         }
     }
 
@@ -242,13 +242,15 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
         }
     }
 
-    private Expression handlePostFixExpression(Java8Parser.PostfixExpressionContext ctx) {
+    private Expression handlePostFixExpression(Java8Parser.PostfixExpressionContext ctx, String op) {
         Expression exp = null;
         if(ctx.expressionName() != null) {
             exp = Driver.leftHandSideVisitor.visitExpressionName(ctx.expressionName());
         } else if (ctx.primary() != null) {
             exp = Driver.primaryVisitor.visitPrimary(ctx.primary());
         }
+        if(op != null)
+            exp = new PostUnaryExpression(ctx.start.getLine(), op, exp);
         for (Java8Parser.PostDecrementExpression_lf_postfixExpressionContext dec : ctx.postDecrementExpression_lf_postfixExpression()) {
             exp = new PostUnaryExpression(ctx.start.getLine(), "--", exp);
         }
