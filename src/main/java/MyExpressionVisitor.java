@@ -36,9 +36,9 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
         } else if (ctx.postIncrementExpression() != null) {
             return handlePostFixExpression(ctx.postIncrementExpression().postfixExpression(), "++");
         } else if (ctx.preDecrementExpression() != null) {
-            return new PreUnaryExpression(ctx.start.getLine(), "--", handleUnaryExpression(ctx.preDecrementExpression().unaryExpression()));
+            return new PreUnaryExpression(Driver.currentFileName, ctx.start.getLine(), "--", handleUnaryExpression(ctx.preDecrementExpression().unaryExpression()));
         } else if (ctx.preIncrementExpression() != null) {
-            return new PreUnaryExpression(ctx.start.getLine(), "++", handleUnaryExpression(ctx.preIncrementExpression().unaryExpression()));
+            return new PreUnaryExpression(Driver.currentFileName, ctx.start.getLine(), "++", handleUnaryExpression(ctx.preIncrementExpression().unaryExpression()));
         }
         System.err.println("Statement Expression not found: " + ctx.getText());
         return super.visitStatementExpression(ctx);
@@ -67,12 +67,12 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
         }
 
         if(ctx.methodName() != null) {
-            methodName = new Identifier(ctx.start.getLine(), ctx.methodName().Identifier().getText());
+            methodName = new Identifier(Driver.currentFileName, ctx.start.getLine(), ctx.methodName().Identifier().getText());
         } else if(ctx.Identifier() != null) {
-            methodName = new Identifier(ctx.start.getLine(), ctx.Identifier().getText());
+            methodName = new Identifier(Driver.currentFileName, ctx.start.getLine(), ctx.Identifier().getText());
         }
 
-        return new CallExpression(ctx.start.getLine(), methodName, args, leftSide);
+        return new CallExpression(Driver.currentFileName, ctx.start.getLine(), methodName, args, leftSide);
     }
 
 
@@ -94,7 +94,7 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
         String op = ctx.assignmentOperator().getText();
         Expression left = Driver.leftHandSideVisitor.visitLeftHandSide(ctx.leftHandSide());
 
-        return new AssignmentExpression(ctx.start.getLine(), left, op, exp);
+        return new AssignmentExpression(Driver.currentFileName, ctx.start.getLine(), left, op, exp);
     }
 
     private Expression handleConditionalExpression(Java8Parser.ConditionalExpressionContext ctx) {
@@ -102,7 +102,7 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
             Expression falseExp = handleConditionalExpression(ctx.conditionalExpression());
             Expression trueExp = visitExpression(ctx.expression());
             Expression cond = handleConditionalOrExpression(ctx.conditionalOrExpression());
-            return new TernaryExpression(ctx.start.getLine(), cond, trueExp, falseExp);
+            return new TernaryExpression(Driver.currentFileName, ctx.start.getLine(), cond, trueExp, falseExp);
         }
         return handleConditionalOrExpression(ctx.conditionalOrExpression());
     }
@@ -111,7 +111,7 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
         if(ctx.conditionalOrExpression() != null) {
             Expression left = handleConditionalOrExpression(ctx.conditionalOrExpression());
             Expression right = handleConditionalAndExpression(ctx.conditionalAndExpression());
-            return new BinaryExpression(ctx.start.getLine(), "||", left, right);
+            return new BinaryExpression(Driver.currentFileName, ctx.start.getLine(), "||", left, right);
         }
         return handleConditionalAndExpression(ctx.conditionalAndExpression());
     }
@@ -120,7 +120,7 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
         if(ctx.conditionalAndExpression() != null) {
             Expression left = handleConditionalAndExpression(ctx.conditionalAndExpression());
             Expression right = handleInclusiveOrExpression(ctx.inclusiveOrExpression());
-            return new BinaryExpression(ctx.start.getLine(), "&&", left, right);
+            return new BinaryExpression(Driver.currentFileName, ctx.start.getLine(), "&&", left, right);
         }
         return handleInclusiveOrExpression(ctx.inclusiveOrExpression());
     }
@@ -129,7 +129,7 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
         if(ctx.inclusiveOrExpression() != null) {
             Expression left = handleInclusiveOrExpression(ctx.inclusiveOrExpression());
             Expression right = handleExclusiveOrExpression(ctx.exclusiveOrExpression());
-            return new BinaryExpression(ctx.start.getLine(), "|", left, right);
+            return new BinaryExpression(Driver.currentFileName, ctx.start.getLine(), "|", left, right);
         }
         return handleExclusiveOrExpression(ctx.exclusiveOrExpression());
     }
@@ -138,7 +138,7 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
         if(ctx.exclusiveOrExpression() != null) {
             Expression left = handleExclusiveOrExpression(ctx.exclusiveOrExpression());
             Expression right = handleAndExpression(ctx.andExpression());
-            return new BinaryExpression(ctx.start.getLine(), "^", left, right);
+            return new BinaryExpression(Driver.currentFileName, ctx.start.getLine(), "^", left, right);
         }
         return handleAndExpression(ctx.andExpression());
     }
@@ -147,7 +147,7 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
         if(ctx.andExpression() != null) {
             Expression left = handleAndExpression(ctx.andExpression());
             Expression right = handleEqualityExpression(ctx.equalityExpression());
-            return new BinaryExpression(ctx.start.getLine(), "&", left, right);
+            return new BinaryExpression(Driver.currentFileName, ctx.start.getLine(), "&", left, right);
         }
         return handleEqualityExpression(ctx.equalityExpression());
     }
@@ -157,7 +157,7 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
             Expression left = handleEqualityExpression(ctx.equalityExpression());
             Expression right = handleRelationalExpression(ctx.relationalExpression());
             String op = ctx.getText().contains("==") ? "==" : "!=";
-            return new BinaryExpression(ctx.start.getLine(), op, left, right);
+            return new BinaryExpression(Driver.currentFileName, ctx.start.getLine(), op, left, right);
         }
         return handleRelationalExpression(ctx.relationalExpression());
     }
@@ -168,7 +168,7 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
             Expression right = handleShiftExpression(ctx.shiftExpression());
 
 
-            return new BinaryExpression(ctx.start.getLine(), ctx.op.getText(), left, right);
+            return new BinaryExpression(Driver.currentFileName, ctx.start.getLine(), ctx.op.getText(), left, right);
         }
         return handleShiftExpression(ctx.shiftExpression());
     }
@@ -178,7 +178,7 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
             Expression left = handleShiftExpression(ctx.shiftExpression());
             Expression right = handleAdditiveExpression(ctx.additiveExpression());
 
-            return new BinaryExpression(ctx.start.getLine(), ctx.op.getText(), left, right);
+            return new BinaryExpression(Driver.currentFileName, ctx.start.getLine(), ctx.op.getText(), left, right);
         }
         return handleAdditiveExpression(ctx.additiveExpression());
     }
@@ -188,7 +188,7 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
             Expression left = handleAdditiveExpression(ctx.additiveExpression());
             Expression right = handleMultiplicativeExpression(ctx.multiplicativeExpression());
 
-            return new BinaryExpression(ctx.start.getLine(), ctx.op.getText(), left, right);
+            return new BinaryExpression(Driver.currentFileName, ctx.start.getLine(), ctx.op.getText(), left, right);
         }
         return handleMultiplicativeExpression(ctx.multiplicativeExpression());
     }
@@ -198,7 +198,7 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
             Expression left = handleMultiplicativeExpression(ctx.multiplicativeExpression());
             Expression right = handleUnaryExpression(ctx.unaryExpression());
 
-            return new BinaryExpression(ctx.start.getLine(), ctx.op.getText(), left, right);
+            return new BinaryExpression(Driver.currentFileName, ctx.start.getLine(), ctx.op.getText(), left, right);
         }
         return handleUnaryExpression(ctx.unaryExpression());
     }
@@ -206,23 +206,23 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
     private Expression handleUnaryExpression(Java8Parser.UnaryExpressionContext ctx) {
         if(ctx.preIncrementExpression() != null) {
             Expression exp = handleUnaryExpression(ctx.unaryExpression());
-            return new PreUnaryExpression(ctx.start.getLine(), "++", exp);
+            return new PreUnaryExpression(Driver.currentFileName, ctx.start.getLine(), "++", exp);
 
         } else if(ctx.preDecrementExpression() != null) {
             Expression exp = handleUnaryExpression(ctx.unaryExpression());
-            return new PreUnaryExpression(ctx.start.getLine(), "--", exp);
+            return new PreUnaryExpression(Driver.currentFileName, ctx.start.getLine(), "--", exp);
 
         } else if(ctx.unaryExpressionNotPlusMinus() != null) {
             return handleUnaryExpressionNotPlusMinus(ctx.unaryExpressionNotPlusMinus());
         }
         System.out.println(ctx.getText());
         Expression exp = handleUnaryExpression(ctx.unaryExpression());
-        return new UnaryExpression(ctx.start.getLine(), ctx.op.getText(), exp);
+        return new UnaryExpression(Driver.currentFileName, ctx.start.getLine(), ctx.op.getText(), exp);
     }
 
     private Expression handleUnaryExpressionNotPlusMinus(Java8Parser.UnaryExpressionNotPlusMinusContext ctx) {
         if(ctx.unaryExpression() != null) {
-            return new UnaryExpression(ctx.start.getLine(), ctx.op.getText(), handleUnaryExpression(ctx.unaryExpression()));
+            return new UnaryExpression(Driver.currentFileName, ctx.start.getLine(), ctx.op.getText(), handleUnaryExpression(ctx.unaryExpression()));
         } else if (ctx.castExpression() != null) {
             return handleCastExpression(ctx.castExpression());
         } else {
@@ -232,9 +232,9 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
 
     private Expression handleCastExpression(Java8Parser.CastExpressionContext ctx) {
         if(ctx.unaryExpression() != null) {
-            return new CastExpression(ctx.start.getLine(), handleUnaryExpression(ctx.unaryExpression()));
+            return new CastExpression(Driver.currentFileName, ctx.start.getLine(), handleUnaryExpression(ctx.unaryExpression()));
         } else if (ctx.unaryExpressionNotPlusMinus() != null) {
-            return new CastExpression(ctx.start.getLine(), handleUnaryExpressionNotPlusMinus(ctx.unaryExpressionNotPlusMinus()));
+            return new CastExpression(Driver.currentFileName, ctx.start.getLine(), handleUnaryExpressionNotPlusMinus(ctx.unaryExpressionNotPlusMinus()));
         } else {
             //TODO: lambda exp
             ctx.lambdaExpression();
@@ -250,12 +250,12 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
             exp = Driver.primaryVisitor.visitPrimary(ctx.primary());
         }
         if(op != null)
-            exp = new PostUnaryExpression(ctx.start.getLine(), op, exp);
+            exp = new PostUnaryExpression(Driver.currentFileName, ctx.start.getLine(), op, exp);
         for (Java8Parser.PostDecrementExpression_lf_postfixExpressionContext dec : ctx.postDecrementExpression_lf_postfixExpression()) {
-            exp = new PostUnaryExpression(ctx.start.getLine(), "--", exp);
+            exp = new PostUnaryExpression(Driver.currentFileName, ctx.start.getLine(), "--", exp);
         }
         for (Java8Parser.PostIncrementExpression_lf_postfixExpressionContext inc : ctx.postIncrementExpression_lf_postfixExpression()) {
-            exp = new PostUnaryExpression(ctx.start.getLine(), "++", exp);
+            exp = new PostUnaryExpression(Driver.currentFileName, ctx.start.getLine(), "++", exp);
         }
         return exp;
     }

@@ -11,8 +11,8 @@ public class Type extends Expression {
 
     private String type;
 
-    public Type(int line, String type) {
-        super(line);
+    public Type(String file, int line, String type) {
+        super(file, line);
         this.type = type;
     }
 
@@ -26,12 +26,12 @@ public class Type extends Expression {
         return type;
     }
 
-    @Override
-    public List<Expression> getExpressions() {
-        List<Expression> output = new ArrayList<Expression>();
-        output.add(this);
-        return output;
-    }
+//    @Override
+//    public List<Expression> getExpressions() {
+//        List<Expression> output = new ArrayList<Expression>();
+//        output.add(this);
+//        return output;
+//    }
 
     @Override
     public void setScopeId(List<Map<String, Left>> scope) {
@@ -41,5 +41,10 @@ public class Type extends Expression {
     @Override
     public void setUsesAndDefines() {
 
+    }
+
+    @Override
+    public Expression transformToTemp(List<Expression> expressions) {
+        return this;
     }
 }

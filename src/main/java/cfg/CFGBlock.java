@@ -1,25 +1,23 @@
 package cfg;
 
 import ast.expressions.*;
+import ast.expressions.left.Identifier;
 import ast.expressions.left.Left;
 
 import java.util.*;
 
 public abstract class CFGBlock {
 
-    List<Expression> expressionList;
+    private List<Expression> expressionList;
 
-    List<CFGBlock> successors;
-    List<CFGBlock> predecessors;
-
-    String label;
-
-    List<Left> targets;
-    List<Left> sources;
-
-    Set<Left> gen;
-    Set<Left> kill;
-    Set<Left> liveOut;
+    private List<CFGBlock> successors;
+    private List<CFGBlock> predecessors;
+    private String label;
+    private List<Left> targets;
+    private List<Left> sources;
+    private Set<Left> gen;
+    private Set<Left> kill;
+    private Set<Left> liveOut;
 
     public CFGBlock(String label) {
         this.label = label + BlockCounter.getNextBlockLabel();
@@ -33,12 +31,10 @@ public abstract class CFGBlock {
         this.liveOut = new HashSet<Left>();
     }
 
-    public void addExpressions(List<Expression> exp) {
-        expressionList.addAll(exp);
-    }
-
     public void addExpression(Expression exp) {
-        expressionList.add(exp);
+        Expression newExp = exp.transformToTemp(expressionList);
+        if(!(newExp instanceof Left))
+            expressionList.add(newExp);
     }
 
     public void addSuccessor(CFGBlock successor) {
@@ -138,8 +134,8 @@ public abstract class CFGBlock {
 
     public void setLiveOut(Queue<CFGBlock> changed) {
 
-        Set<Left> newLiveOut = new HashSet<Left>(gen);
-        Set<Left> in = new HashSet<Left>();
+        Set<Left> newLiveOut = new HashSet<>(gen);
+        Set<Left> in = new HashSet<>();
         for(CFGBlock pred : predecessors) {
             in.addAll(pred.getLiveOut());
         }

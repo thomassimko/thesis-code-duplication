@@ -14,8 +14,8 @@ public class AssertStatement extends Statement {
     private Expression exp;
     private Expression detail;
 
-    public AssertStatement(int line, Expression exp, Expression detail) {
-        super(line);
+    public AssertStatement(String file, int line, Expression exp, Expression detail) {
+        super(file, line);
         this.exp = exp;
         this.detail = detail;
     }
@@ -30,8 +30,8 @@ public class AssertStatement extends Statement {
         this.setExpressionScope(scope);
 
 
-        block.addExpressions(exp.getExpressions());
-        block.addExpressions(detail.getExpressions());
+        block.addExpression(exp);
+        block.addExpression(detail);
 
         return block;
     }

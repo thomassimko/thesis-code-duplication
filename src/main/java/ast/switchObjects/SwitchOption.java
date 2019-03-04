@@ -11,11 +11,13 @@ import java.util.Map;
 public class SwitchOption {
 
     int line;
+    String file;
     List<SwitchLabel> caseList;
     Block block;
 
-    public SwitchOption(int line, List<SwitchLabel> caseList, Block block) {
+    public SwitchOption(String file, int line, List<SwitchLabel> caseList, Block block) {
         this.line = line;
+        this.file = file;
         this.caseList = caseList;
         this.block = block;
     }

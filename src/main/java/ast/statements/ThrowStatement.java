@@ -13,8 +13,8 @@ public class ThrowStatement extends Statement {
 
     private Expression exp;
 
-    public ThrowStatement(int line, Expression exp) {
-        super(line);
+    public ThrowStatement(String file, int line, Expression exp) {
+        super(file, line);
         this.exp = exp;
     }
 

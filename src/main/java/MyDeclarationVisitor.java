@@ -16,13 +16,13 @@ public class MyDeclarationVisitor extends Java8BaseVisitor<List<DeclarationState
 
             AssignmentExpression assgn = null;
             String varName = decl.variableDeclaratorId().Identifier().getSymbol().getText();
-            Identifier id = new Identifier(ctx.start.getLine(), varName);
+            Identifier id = new Identifier(Driver.currentFileName, ctx.start.getLine(), varName);
 
             if (decl.variableInitializer() != null) {
                 Expression exp = Driver.expressionVisitor.visitExpression(decl.variableInitializer().expression());
-                assgn = new AssignmentExpression(ctx.start.getLine(), id, "=", exp);
+                assgn = new AssignmentExpression(Driver.currentFileName, ctx.start.getLine(), id, "=", exp);
             }
-            declarations.add(new DeclarationStatement(decl.start.getLine(), id, assgn));
+            declarations.add(new DeclarationStatement(Driver.currentFileName, decl.start.getLine(), id, assgn));
         }
 
         return declarations;
@@ -34,7 +34,7 @@ public class MyDeclarationVisitor extends Java8BaseVisitor<List<DeclarationState
 
         for(Java8Parser.VariableDeclaratorContext varDecl : ctx.variableDeclarator()) {
 
-            Identifier id = new Identifier(ctx.start.getLine(), varDecl.variableDeclaratorId().Identifier().toString());
+            Identifier id = new Identifier(Driver.currentFileName, ctx.start.getLine(), varDecl.variableDeclaratorId().Identifier().toString());
             Expression exp = null;
 
             if(varDecl.variableInitializer() != null) {
@@ -46,8 +46,8 @@ public class MyDeclarationVisitor extends Java8BaseVisitor<List<DeclarationState
             }
 
             if(exp != null) {
-                AssignmentExpression asgn = new AssignmentExpression(ctx.start.getLine(), id, "=", exp);
-                DeclarationStatement decl = new DeclarationStatement(ctx.start.getLine(), id, asgn);
+                AssignmentExpression asgn = new AssignmentExpression(Driver.currentFileName, ctx.start.getLine(), id, "=", exp);
+                DeclarationStatement decl = new DeclarationStatement(Driver.currentFileName, ctx.start.getLine(), id, asgn);
                 declarations.add(decl);
             }
 

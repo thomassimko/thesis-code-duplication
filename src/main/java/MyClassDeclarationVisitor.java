@@ -23,15 +23,17 @@ public class MyClassDeclarationVisitor extends Java8BaseVisitor<ClassObject> {
         List<DeclarationStatement> decls = new ArrayList<DeclarationStatement>();
 
         for(Java8Parser.ClassBodyDeclarationContext bl : ctx.classBodyDeclaration()) {
-
-            if (bl.classMemberDeclaration().fieldDeclaration() != null) {
-                decls.addAll(Driver.declarationVisitor.visitVariableDeclaratorList(bl.classMemberDeclaration().fieldDeclaration().variableDeclaratorList()));
-            }
-            if(bl.classMemberDeclaration().methodDeclaration() != null) {
-                methods.add(Driver.methodVisitor.visitMethodDeclaration(bl.classMemberDeclaration().methodDeclaration()));
+            //Ignore constructors
+            if(bl.classMemberDeclaration() != null) {
+                if (bl.classMemberDeclaration().fieldDeclaration() != null) {
+                    decls.addAll(Driver.declarationVisitor.visitVariableDeclaratorList(bl.classMemberDeclaration().fieldDeclaration().variableDeclaratorList()));
+                }
+                else if (bl.classMemberDeclaration().methodDeclaration() != null) {
+                    methods.add(Driver.methodVisitor.visitMethodDeclaration(bl.classMemberDeclaration().methodDeclaration()));
+                }
             }
         }
 
-        return new ClassObject(methods, decls, className);
+        return new ClassObject(Driver.currentFileName, methods, decls, className);
     }
 }

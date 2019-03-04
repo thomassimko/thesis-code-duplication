@@ -11,8 +11,8 @@ public class SwitchLabelId extends SwitchLabel {
 
     private String id;
 
-    public SwitchLabelId(int line, String id) {
-        super(line);
+    public SwitchLabelId(String file, int line, String id) {
+        super(file, line);
         this.id = id;
     }
 

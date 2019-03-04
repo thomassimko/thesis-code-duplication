@@ -10,8 +10,10 @@ import java.util.Map;
 public abstract class SwitchLabel {
 
     int line;
+    String file;
 
-    public SwitchLabel(int line) {
+    public SwitchLabel(String file, int line) {
+        this.file = file;
         this.line = line;
     }
 

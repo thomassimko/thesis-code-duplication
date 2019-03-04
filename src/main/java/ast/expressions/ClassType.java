@@ -11,8 +11,8 @@ public class ClassType extends Expression {
 
     private String className;
 
-    public ClassType(int line, String className) {
-        super(line);
+    public ClassType(String file, int line, String className) {
+        super(file, line);
         this.className = className;
     }
 
@@ -34,5 +34,10 @@ public class ClassType extends Expression {
     @Override
     public void setUsesAndDefines() {
         //nothing
+    }
+
+    @Override
+    public Expression transformToTemp(List<Expression> expressions) {
+        return this;
     }
 }

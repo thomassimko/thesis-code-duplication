@@ -14,8 +14,8 @@ public class LabeledStatement extends Statement {
     private String label;
     private Statement stmt;
 
-    public LabeledStatement(int line, String label, Statement stmt) {
-        super(line);
+    public LabeledStatement(String file, int line, String label, Statement stmt) {
+        super(file, line);
         this.label = label;
         this.stmt = stmt;
     }

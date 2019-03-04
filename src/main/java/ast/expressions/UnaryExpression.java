@@ -11,8 +11,8 @@ public class UnaryExpression extends Expression {
     private String op;
     private Expression exp;
 
-    public UnaryExpression(int line, String op, Expression exp) {
-        super(line);
+    public UnaryExpression(String file, int line, String op, Expression exp) {
+        super(file, line);
         this.op = op;
         this.exp = exp;
     }
@@ -28,13 +28,13 @@ public class UnaryExpression extends Expression {
         return op + exp.toString();
     }
 
-    @Override
-    public List<Expression> getExpressions() {
-        List<Expression> output = new ArrayList<Expression>();
-        output.addAll(exp.getExpressions());
-        output.add(this);
-        return output;
-    }
+//    @Override
+//    public List<Expression> getExpressions() {
+//        List<Expression> output = new ArrayList<Expression>();
+//        output.addAll(exp.getExpressions());
+//        output.add(this);
+//        return output;
+//    }
 
     @Override
     public void setScopeId(List<Map<String, Left>> scope) {
@@ -43,6 +43,13 @@ public class UnaryExpression extends Expression {
 
     @Override
     public void setUsesAndDefines() {
+        setUseAndDefineForChild(exp);
         addSource(exp);
+    }
+
+    @Override
+    public Expression transformToTemp(List<Expression> expressions) {
+        exp = exp.transformToTemp(expressions);
+        return exp;
     }
 }

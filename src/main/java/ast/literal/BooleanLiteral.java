@@ -9,8 +9,8 @@ public class BooleanLiteral extends Literal {
 
     private boolean value;
 
-    public BooleanLiteral(int line, boolean value) {
-        super(line);
+    public BooleanLiteral(String file, int line, boolean value) {
+        super(file, line);
         this.value = value;
     }
 

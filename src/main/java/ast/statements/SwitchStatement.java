@@ -17,8 +17,8 @@ public class SwitchStatement extends Statement {
     private List<SwitchOption> options;
     private Expression exp;
 
-    public SwitchStatement(int line, Expression exp, List<SwitchOption> options) {
-        super(line);
+    public SwitchStatement(String file, int line, Expression exp, List<SwitchOption> options) {
+        super(file, line);
         this.options = options;
         this.exp = exp;
     }

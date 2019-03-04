@@ -11,7 +11,7 @@ public class MyMethodVisitor extends Java8BaseVisitor<Method> {
     public Method visitMethodDeclaration(Java8Parser.MethodDeclarationContext ctx) {
         Block blocks = Driver.blockVisitor.visitBlockStatements(ctx.methodBody().block().blockStatements());
         String name = ctx.methodHeader().methodDeclarator().Identifier().toString();
-        return new Method(name, blocks);
+        return new Method(Driver.currentFileName, ctx.start.getLine(), name, blocks);
     }
 
     private List<DeclarationStatement> gatherDeclarations(Java8Parser.BlockStatementsContext statementsContext) {

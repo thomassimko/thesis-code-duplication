@@ -15,8 +15,8 @@ public class DoStatement extends Statement {
     private Statement stmt;
     private Expression exp;
 
-    public DoStatement(int line, Statement stmt, Expression exp) {
-        super(line);
+    public DoStatement(String file, int line, Statement stmt, Expression exp) {
+        super(file, line);
         this.stmt = stmt;
         this.exp = exp;
     }
@@ -42,7 +42,7 @@ public class DoStatement extends Statement {
         lastBlock.addSuccessor(conditionBlock);
 
         exp = Expression.getScopeId(scope, exp);
-        conditionBlock.addExpressions(exp.getExpressions());
+        conditionBlock.addExpression(exp);
         conditionBlock.addSuccessor(whileBlock);
         conditionBlock.addSuccessor(newBlock);
 

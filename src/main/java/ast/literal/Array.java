@@ -11,8 +11,8 @@ public class Array extends Literal {
 
     private List<Expression> expressionList;
 
-    public Array(int line, List<Expression> values) {
-        super(line);
+    public Array(String file, int line, List<Expression> values) {
+        super(file, line);
         this.expressionList = values;
     }
 
@@ -35,25 +35,26 @@ public class Array extends Literal {
         return output.toString();
     }
 
-    @Override
-    public List<Expression> getExpressions() {
-        List<Expression> output = new ArrayList<Expression>();
-        for(Expression exp: expressionList) {
-            output.addAll(exp.getExpressions());
-        }
-        output.add(this);
-        return output;
-    }
+//    @Override
+//    public List<Expression> getExpressions() {
+//        List<Expression> output = new ArrayList<Expression>();
+//        for(Expression exp: expressionList) {
+//            output.addAll(exp.getExpressions());
+//        }
+//        output.add(this);
+//        return output;
+//    }
 
     @Override
     public void setUsesAndDefines() {
         for(Expression exp: expressionList) {
+            setUseAndDefineForChild(exp);
             addSource(exp);
         }
     }
 
     @Override
     public void setScopeId(List<Map<String, Left>> scope) {
-        System.err.println("Array set scope not implemented");
+        //System.err.println("Array set scope not implemented");
     }
 }

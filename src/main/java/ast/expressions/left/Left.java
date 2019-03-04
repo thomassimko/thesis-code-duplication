@@ -4,8 +4,8 @@ import ast.expressions.Expression;
 
 public abstract class Left extends Expression {
 
-    public Left(int line) {
-        super(line);
+    public Left(String file, int line) {
+        super(file, line);
     }
 
     public boolean equalsId(Left obj1) {

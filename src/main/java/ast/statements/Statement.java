@@ -10,8 +10,10 @@ import java.util.Map;
 public abstract class Statement implements BlockStatement {
 
     int line;
+    String file;
 
-    public Statement(int line) {
+    public Statement(String file, int line) {
+        this.file = file;
         this.line = line;
     }
 

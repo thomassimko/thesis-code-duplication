@@ -16,8 +16,8 @@ public class ConditionalStatement extends Statement{
     private Statement ifTrue;
     private Statement ifFalse;
 
-    public ConditionalStatement(int line, Expression condition, Statement ifTrue, Statement ifFalse) {
-        super(line);
+    public ConditionalStatement(String file, int line, Expression condition, Statement ifTrue, Statement ifFalse) {
+        super(file, line);
         this.condition = condition;
         this.ifTrue = ifTrue;
         this.ifFalse = ifFalse;
@@ -33,15 +33,14 @@ public class ConditionalStatement extends Statement{
     }
 
     public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start, List<Map<String, Left>> scope) {
-        condition = condition.getScopeId(scope, condition);
-        block.addExpressions(condition.getExpressions());
+        condition = Expression.getScopeId(scope, condition);
+        block.addExpression(condition);
 
 
         CFGBlock trueBlock = new BasicBlock("true");
         CFGBlock newBlock = new BasicBlock("join");
 
         start.addBlock(trueBlock);
-        start.addBlock(newBlock);
 
         block.addSuccessor(trueBlock);
         pushScope(scope);
@@ -60,6 +59,9 @@ public class ConditionalStatement extends Statement{
         } else {
             block.addSuccessor(newBlock);
         }
+
+        start.addBlock(newBlock);
+
 
         return newBlock;
     }

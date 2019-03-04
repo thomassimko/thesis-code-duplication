@@ -16,8 +16,8 @@ public class WhileStatement extends Statement {
     private Expression exp;
     private Statement stmt;
 
-    public WhileStatement(int line, Expression exp, Statement stmt) {
-        super(line);
+    public WhileStatement(String file, int line, Expression exp, Statement stmt) {
+        super(file, line);
         this.stmt = stmt;
         this.exp = exp;
     }

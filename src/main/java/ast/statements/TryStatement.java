@@ -19,8 +19,8 @@ public class TryStatement extends Statement {
     private Block finallyBlock;
     private List<AssignmentExpression> resources;
 
-    public TryStatement(int line, Block tryBlock, List<CatchStatement> catches, Block finallyBlock, List<AssignmentExpression> resources) {
-        super(line);
+    public TryStatement(String file, int line, Block tryBlock, List<CatchStatement> catches, Block finallyBlock, List<AssignmentExpression> resources) {
+        super(file, line);
         this.tryBlock = tryBlock;
         this.catches = catches;
         this.finallyBlock = finallyBlock;

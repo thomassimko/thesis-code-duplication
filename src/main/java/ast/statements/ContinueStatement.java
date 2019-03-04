@@ -12,12 +12,12 @@ public class ContinueStatement extends Statement {
 
     private String id;
 
-    public ContinueStatement(int line) {
-        super(line);
+    public ContinueStatement(String file, int line) {
+        super(file, line);
     }
 
-    public ContinueStatement(int line, String id) {
-        super(line);
+    public ContinueStatement(String file, int line, String id) {
+        super(file, line);
         this.id = id;
     }
 

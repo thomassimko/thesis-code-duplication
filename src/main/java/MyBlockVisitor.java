@@ -29,6 +29,6 @@ public class MyBlockVisitor extends Java8BaseVisitor<Block> {
             }
         }
 
-        return new Block(ctx.start.getLine(), blockStmts);
+        return new Block(Driver.currentFileName, ctx.start.getLine(), blockStmts);
     }
 }

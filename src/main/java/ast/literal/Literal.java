@@ -10,8 +10,8 @@ public abstract class Literal extends Expression {
 
     int line;
 
-    public Literal(int line) {
-        super(line);
+    public Literal(String file, int line) {
+        super(file, line);
         this.line = line;
     }
 
@@ -23,5 +23,10 @@ public abstract class Literal extends Expression {
     @Override
     public void setUsesAndDefines() {
         //do nithing
+    }
+
+    @Override
+    public Expression transformToTemp(List<Expression> expressions) {
+        return this;
     }
 }

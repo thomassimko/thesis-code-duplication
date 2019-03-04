@@ -15,8 +15,8 @@ public class CallExpression extends Expression {
     private Identifier methodName;
     private List<Expression> argumentList;
 
-    public CallExpression(int line, Identifier methodName, List<Expression> argumentList, Expression leftSide) {
-        super(line);
+    public CallExpression(String file, int line, Identifier methodName, List<Expression> argumentList, Expression leftSide) {
+        super(file, line);
         this.methodName = methodName;
         this.argumentList = argumentList;
         this.leftSide = leftSide;
@@ -47,17 +47,17 @@ public class CallExpression extends Expression {
         return output.toString();
     }
 
-    @Override
-    public List<Expression> getExpressions() {
-        List<Expression> output = new ArrayList<Expression>();
-        if(leftSide != null)
-            output.addAll(leftSide.getExpressions());
-        for(Expression arg : argumentList) {
-            output.addAll(arg.getExpressions());
-        }
-        output.add(this);
-        return output;
-    }
+//    @Override
+//    public List<Expression> getExpressions() {
+//        List<Expression> output = new ArrayList<Expression>();
+//        if(leftSide != null)
+//            output.addAll(leftSide.getExpressions());
+//        for(Expression arg : argumentList) {
+//            output.addAll(arg.getExpressions());
+//        }
+//        output.add(this);
+//        return output;
+//    }
 
     @Override
     public void setScopeId(List<Map<String, Left>> scope) {
@@ -70,7 +70,19 @@ public class CallExpression extends Expression {
     @Override
     public void setUsesAndDefines() {
         for(Expression arg: argumentList) {
+            setUseAndDefineForChild(arg);
             addSource(arg);
         }
+    }
+
+    @Override
+    public Expression transformToTemp(List<Expression> expressions) {
+        if(leftSide != null)
+            leftSide = leftSide.transformToTemp(expressions);
+        for(int i = 0; i < argumentList.size(); i++) {
+            Expression arg = argumentList.get(i);
+            argumentList.set(i, arg.transformToTemp(expressions));
+        }
+        return this;
     }
 }

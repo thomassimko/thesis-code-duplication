@@ -33,12 +33,12 @@ public class MyPrimaryVisitor extends Java8BaseVisitor<Expression> {
                     lengths.add(Driver.expressionVisitor.visitExpression(dim.expression()));
                 }
 
-                return new Array(ctx.start.getLine(), lengths);
+                return new Array(Driver.currentFileName, ctx.start.getLine(), lengths);
             }
 
             System.err.println("visitPrimary Array creation not found");
 
-            return new Array(ctx.start.getLine(), null);
+            return new Array(Driver.currentFileName, ctx.start.getLine(), null);
         }
         else if(ctx.primaryNoNewArray_lfno_primary() != null) {
             return handlePrimaryNoNewArray_lfno_primary(ctx.primaryNoNewArray_lfno_primary());
@@ -59,7 +59,7 @@ public class MyPrimaryVisitor extends Java8BaseVisitor<Expression> {
             }
         }
 
-        return new Array(ctx.start.getLine(), values);
+        return new Array(Driver.currentFileName, ctx.start.getLine(), values);
     }
 
     public Expression handlePrimaryNoNewArray_lfno_primary(Java8Parser.PrimaryNoNewArray_lfno_primaryContext ctx) {
@@ -80,7 +80,7 @@ public class MyPrimaryVisitor extends Java8BaseVisitor<Expression> {
         } else if (ctx.expression() != null) {
             return Driver.expressionVisitor.visitExpression(ctx.expression());
         } else if (ctx.voidDotClass() != null) {
-            return new ClassType(ctx.start.getLine(), "void");
+            return new ClassType(Driver.currentFileName, ctx.start.getLine(), "void");
         } else if (ctx.typeDotClass() != null) {
             return handleTypeDotClass(ctx.typeDotClass());
         } else if (ctx.typeDotThis() != null) {
@@ -105,19 +105,19 @@ public class MyPrimaryVisitor extends Java8BaseVisitor<Expression> {
     }
 
     public Expression handleTypeDotClass(Java8Parser.TypeDotClassContext ctx) {
-        return new LeftIdDot(ctx.start.getLine(), "class", new Type(ctx.start.getLine(), ctx.typeName().getText()));
+        return new LeftIdDot(Driver.currentFileName, ctx.start.getLine(), "class", new Type(Driver.currentFileName, ctx.start.getLine(), ctx.typeName().getText()));
     }
 
     public Expression handleTypeDotThis(Java8Parser.TypeDotThisContext ctx) {
-        return new LeftIdDot(ctx.start.getLine(), "this", new Type(ctx.start.getLine(), ctx.typeName().getText()));
+        return new LeftIdDot(Driver.currentFileName, ctx.start.getLine(), "this", new Type(Driver.currentFileName, ctx.start.getLine(), ctx.typeName().getText()));
     }
 
     public Expression handlePrimitiveTypeDotClass(Java8Parser.PrimitiveTypeDotClassContext ctx) {
-        return new LeftIdDot(ctx.start.getLine(), "class", new Type(ctx.start.getLine(), ctx.unannPrimitiveType().getText()));
+        return new LeftIdDot(Driver.currentFileName, ctx.start.getLine(), "class", new Type(Driver.currentFileName, ctx.start.getLine(), ctx.unannPrimitiveType().getText()));
     }
 
     public Expression handleVoidDotClass(Java8Parser.VoidDotClassContext ctx) {
-        return new LeftIdDot(ctx.start.getLine(), "class", new Type(ctx.start.getLine(), "void"));
+        return new LeftIdDot(Driver.currentFileName, ctx.start.getLine(), "class", new Type(Driver.currentFileName, ctx.start.getLine(), "void"));
     }
 
     public Expression handleClassInstanceCreationExpression_lfno_primary(Java8Parser.ClassInstanceCreationExpression_lfno_primaryContext ctx) {
@@ -128,7 +128,7 @@ public class MyPrimaryVisitor extends Java8BaseVisitor<Expression> {
         Identifier className = null;
 
         if(ctx.Identifier(0) != null) {
-            className = new Identifier(ctx.start.getLine(), ctx.Identifier(0).getText());
+            className = new Identifier(Driver.currentFileName, ctx.start.getLine(), ctx.Identifier(0).getText());
         }
 
         if(ctx.expressionName() != null)
@@ -143,15 +143,15 @@ public class MyPrimaryVisitor extends Java8BaseVisitor<Expression> {
             }
         }
 
-        return new ClassInstanceExpression(ctx.start.getLine(), exp, args, clss, className);
+        return new ClassInstanceExpression(Driver.currentFileName, ctx.start.getLine(), exp, args, clss, className);
 
     }
 
     public Expression handleExpressionName(Java8Parser.ExpressionNameContext ctx) {
         if(ctx.expressionName() != null) {
-            return new LeftIdDot(ctx.start.getLine(), ctx.Identifier().getText(), handleExpressionName(ctx.expressionName()));
+            return new LeftIdDot(Driver.currentFileName, ctx.start.getLine(), ctx.Identifier().getText(), handleExpressionName(ctx.expressionName()));
         }
-        return new Identifier(ctx.start.getLine(), ctx.Identifier().getText());
+        return new Identifier(Driver.currentFileName, ctx.start.getLine(), ctx.Identifier().getText());
 
     }
 
@@ -187,7 +187,7 @@ public class MyPrimaryVisitor extends Java8BaseVisitor<Expression> {
         } else {
             left = handlePrimaryNoNewArray_lfno_primary_lfno_arrayAccess_lfno_primary(ctx.primaryNoNewArray_lfno_primary_lfno_arrayAccess_lfno_primary());
         }
-        return new ArrayAccessExpression(ctx.start.getLine(), left, accessor);
+        return new ArrayAccessExpression(Driver.currentFileName, ctx.start.getLine(), left, accessor);
 
         //System.err.println("Found arrayAccess_lfno_primary");
 
@@ -253,12 +253,12 @@ public class MyPrimaryVisitor extends Java8BaseVisitor<Expression> {
         }
 
         if(ctx.methodName() != null) {
-            methodName = new Identifier(ctx.start.getLine(), ctx.methodName().Identifier().getText());
+            methodName = new Identifier(Driver.currentFileName, ctx.start.getLine(), ctx.methodName().Identifier().getText());
         } else if(ctx.Identifier() != null) {
-            methodName = new Identifier(ctx.start.getLine(), ctx.Identifier().getText());
+            methodName = new Identifier(Driver.currentFileName, ctx.start.getLine(), ctx.Identifier().getText());
         }
 
-        return new CallExpression(ctx.start.getLine(), methodName, args, leftSide);
+        return new CallExpression(Driver.currentFileName, ctx.start.getLine(), methodName, args, leftSide);
     }
 
     public Expression handleMethodReference_lfno_primary(Java8Parser.MethodReference_lfno_primaryContext ctx) {

@@ -1,3 +1,5 @@
+package testFiles;
+
 import java.util.*;
 
 public class testFile {
@@ -13,13 +15,19 @@ public class testFile {
             System.out.println(testFile.class);
         }
 
+        if(ham == 0) {
+            num = 1;
+        } else {
+            num = 2;
+        }
+
         myLabel:
         while(true) {
-            ham = ham + 2;
+            ham /= 2;
             break myLabel;
         }
 
-        num = getNum(num);
+        num = getNum(num) == 3 ? 5 : 2;
 
         testFile.getNum(4 + 3);
 
@@ -48,6 +56,11 @@ public class testFile {
         for(int x: list) {
             sum += x;
         }
+
+        methodWithManyArgs(sum++, sum--, num++);
+
+        testObject obj = new testObject(5);
+        obj.doSomething("bah");
     }
 
     public static int getNum(int num) {
@@ -64,6 +77,10 @@ public class testFile {
 
     public static int[][] getArray() {
         return new int[][]{{1,2,3}, {4,5,6}};
+    }
+
+    public static void methodWithManyArgs(int num1, int num2, int num3) {
+        return;
     }
 
 }

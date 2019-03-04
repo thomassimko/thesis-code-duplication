@@ -12,13 +12,13 @@ public class BreakStatement extends Statement {
 
     private String id;
 
-    public BreakStatement(int line) {
-        super(line);
+    public BreakStatement(String file, int line) {
+        super(file, line);
 
     }
 
-    public BreakStatement(int line, String id) {
-        super(line);
+    public BreakStatement(String file, int line, String id) {
+        super(file, line);
         this.id = id;
     }
 

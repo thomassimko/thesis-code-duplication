@@ -10,6 +10,7 @@ public class MyVisitor extends Java8BaseVisitor<Program> {
     @Override
     public Program visitCompilationUnit(Java8Parser.CompilationUnitContext ctx) {
 
+
         List<ClassObject> typeDeclarations = this.gatherTypeDecs(ctx.typeDeclaration());
         Program program = new Program(typeDeclarations);
         return program;

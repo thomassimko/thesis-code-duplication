@@ -16,8 +16,8 @@ public class SynchronizedStatement extends Statement {
     private Block body;
     private Expression exp;
 
-    public SynchronizedStatement(int line, Block block, Expression exp) {
-        super(line);
+    public SynchronizedStatement(String file, int line, Block block, Expression exp) {
+        super(file, line);
         this.body = block;
         this.exp = exp;
     }

@@ -11,10 +11,12 @@ import java.util.Map;
 public abstract class Expression {
 
     int line;
+    String file;
     List<Left> targets;
     List<Left> sources;
 
-    public Expression(int line) {
+    public Expression(String file, int line) {
+        this.file = file;
         this.line = line;
         targets = new ArrayList<Left>();
         sources = new ArrayList<Left>();
@@ -24,11 +26,11 @@ public abstract class Expression {
 
     public abstract String toString();
 
-    public List<Expression> getExpressions() {
-        List<Expression> output = new ArrayList<Expression>();
-        output.add(this);
-        return output;
-    }
+//    public List<Expression> getExpressions() {
+//        List<Expression> output = new ArrayList<Expression>();
+//        output.add(this);
+//        return output;
+//    }
 
     public int getLine() {
         return line;
@@ -66,8 +68,8 @@ public abstract class Expression {
                 Map<String, Left> local = scope.get(i);
                 if (local.containsKey(left.toString())) {
                     Left var = local.get(left.toString());
-                    System.err.println(left.toString() + " at line " + left.getLine() + " points to " + var.toString() + " which was declared at line " + var.getLine());
-                    return local.get(left.toString());
+                    //System.out.println(left.toString() + " at line " + left.getLine() + " points to " + var.toString() + " which was declared at line " + var.getLine());
+                    return var;
                 }
             }
         }
@@ -77,6 +79,16 @@ public abstract class Expression {
 
     public abstract void setScopeId(List<Map<String, Left>> scope);
     public abstract void setUsesAndDefines();
+
+    public void setUseAndDefineForChild(Expression exp) {
+        exp.setUsesAndDefines();
+        targets.addAll(exp.getTargets());
+        sources.addAll(exp.getSources());
+    }
+
+
+    public abstract Expression transformToTemp(List<Expression> expressions);
+
 
     //target: assignment expression, post unary, pre unary, method call
 

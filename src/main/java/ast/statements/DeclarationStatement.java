@@ -16,8 +16,8 @@ public class DeclarationStatement extends Statement {
     private AssignmentExpression exp;
     private Identifier varName;
 
-    public DeclarationStatement(int line, Identifier varName, Expression exp) {
-        super(line);
+    public DeclarationStatement(String file, int line, Identifier varName, Expression exp) {
+        super(file, line);
         this.varName = varName;
         this.exp = (AssignmentExpression) exp;
     }
@@ -43,10 +43,10 @@ public class DeclarationStatement extends Statement {
         }
 
         scope.get(scope.size() - 1).put(varName.toString(), varName);
-        System.err.println("added to scope " + scope.size() + " : " + varName.toString());
+        //System.err.println("added to scope " + scope.size() + " : " + varName.toString());
 
         if(exp != null) {
-            block.addExpressions(exp.getExpressions());
+            block.addExpression(exp);
         }
         return block;
     }

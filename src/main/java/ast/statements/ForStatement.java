@@ -19,8 +19,8 @@ public class ForStatement extends Statement {
     private Statement body = null;
     private List<Statement> updateStatements = null;
 
-    public ForStatement(int line, DeclarationStatement decl, List<Statement> initStatements, Expression exp, Statement body, List<Statement> updateStatements) {
-        super(line);
+    public ForStatement(String file, int line, DeclarationStatement decl, List<Statement> initStatements, Expression exp, Statement body, List<Statement> updateStatements) {
+        super(file, line);
         this.declaration = decl;
         this.initStatements = initStatements;
         this.exp = exp;

@@ -10,8 +10,8 @@ public class CastExpression extends Expression {
 
     private Expression exp;
 
-    public CastExpression(int line, Expression exp) {
-        super(line);
+    public CastExpression(String file, int line, Expression exp) {
+        super(file, line);
         this.exp = exp;
     }
 
@@ -26,13 +26,13 @@ public class CastExpression extends Expression {
         return "(" + exp.toString() + ")";
     }
 
-    @Override
-    public List<Expression> getExpressions() {
-        List<Expression> output = new ArrayList<Expression>();
-        output.addAll(exp.getExpressions());
-        output.add(this);
-        return output;
-    }
+//    @Override
+//    public List<Expression> getExpressions() {
+//        List<Expression> output = new ArrayList<Expression>();
+//        output.addAll(exp.getExpressions());
+//        output.add(this);
+//        return output;
+//    }
 
     @Override
     public void setScopeId(List<Map<String, Left>> scope) {
@@ -41,6 +41,12 @@ public class CastExpression extends Expression {
 
     @Override
     public void setUsesAndDefines() {
+        setUseAndDefineForChild(exp);
         addSource(exp);
+    }
+
+    @Override
+    public Expression transformToTemp(List<Expression> expressions) {
+        return exp = exp.transformToTemp(expressions);
     }
 }

@@ -13,19 +13,22 @@ public class ReturnStatement extends Statement {
 
     private Expression exp;
 
-    public ReturnStatement(int line, Expression exp) {
-        super(line);
+    public ReturnStatement(String file, int line, Expression exp) {
+        super(file, line);
         this.exp = exp;
     }
 
     public void printAST() {
         System.out.println("Return");
-        exp.printAST();
+        if(exp != null)
+            exp.printAST();
     }
 
     public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start, List<Map<String, Left>> scope) {
-        exp = Expression.getScopeId(scope, exp);
-        block.addExpression(exp);
+        if(exp != null) {
+            exp = Expression.getScopeId(scope, exp);
+            block.addExpression(exp);
+        }
         block.addSuccessor(finalBlock);
         return finalBlock;
     }

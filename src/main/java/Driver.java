@@ -25,33 +25,38 @@ public class Driver {
     static final MyPrimaryVisitor primaryVisitor = new MyPrimaryVisitor();
     static final MyLiteralVisitor literalVisitor = new MyLiteralVisitor();
 
+    static String currentFileName = null;
+
     public static void main(String[] args) {
 
-        try {
-            CharStream stream = CharStreams.fromFileName(args[0]);
-            Java8Lexer lexer = new Java8Lexer(stream);
-            CommonTokenStream tokens = new CommonTokenStream(lexer);
-            Java8Parser parser = new Java8Parser(tokens);
-            ParserRuleContext tree = parser.compilationUnit(); // parse
-
-            MyVisitor visitor = new MyVisitor();
-            Program program = visitor.visit(tree);
+//            CharStream stream = CharStreams.fromFileName(args[0]);
+//            currentFileName = args[0];
+//            Java8Lexer lexer = new Java8Lexer(stream);
+//            CommonTokenStream tokens = new CommonTokenStream(lexer);
+//            Java8Parser parser = new Java8Parser(tokens);
+//            ParserRuleContext tree = parser.compilationUnit(); // parse
+//
+//            MyVisitor visitor = new MyVisitor();
+//            Program program = visitor.visit(tree);
             //program.printProgram();
 
             //program.printProgram();
-            List<StartBlock> starts = program.getCFG();
-            List<CFGBlock> allBlocks = new ArrayList<CFGBlock>();
-            printCFG(starts);
+        Program program = FileParser.parseFiles(args[0]);
 
-            generateReachingDefinitions(allBlocks, starts);
+        List<StartBlock> starts = program.getCFG();
+        List<CFGBlock> allBlocks = new ArrayList<CFGBlock>();
 
-
-        } catch (Exception e) {
-            e.printStackTrace();
+        for(StartBlock start: starts) {
+            allBlocks.addAll(start.getMethodBlocks());
         }
+
+        graphCFG(starts);
+        writeExpressionsToFile(allBlocks);
+
+        generateReachingDefinitions(allBlocks, starts);
     }
 
-    private static void printCFG(List<StartBlock> blockList) {
+    private static void graphCFG(List<StartBlock> blockList) {
         try {
             FileWriter writer = new FileWriter(new File("cfg.gv"));
             StringBuilder nodes = new StringBuilder();
@@ -66,6 +71,28 @@ public class Driver {
             writer.write(nodes.toString());
             writer.write("}");
 
+            writer.flush();
+            writer.close();
+        } catch (IOException ex) {
+            System.err.println(ex);
+        }
+    }
+
+    private static void writeExpressionsToFile(List<CFGBlock> allBlocks) {
+        try {
+            FileWriter writer = new FileWriter(new File("expressions.txt"));
+
+            for(CFGBlock block: allBlocks) {
+                if(block instanceof StartBlock) {
+                    StartBlock start = (StartBlock) block;
+                    writer.write("function " + start.getFunctionName() + " from class ");
+                    writer.write(start.getClassName() + "\n");
+                }
+                for(Expression exp : block.getExpressions()) {
+                    writer.write(exp.toString() + "\n");
+                }
+                writer.write("\n");
+            }
             writer.flush();
             writer.close();
         } catch (IOException ex) {

@@ -10,8 +10,8 @@ public class Identifier extends Left {
 
     private String id;
 
-    public Identifier(int line, String id) {
-        super(line);
+    public Identifier(String file, int line, String id) {
+        super(file, line);
         this.id = id;
     }
 
@@ -31,11 +31,16 @@ public class Identifier extends Left {
     }
 
     public void setScopeId(List<Map<String, Left>> scope) {
-        System.err.println("Get scope id called in Identifier: " + id);
+        //System.err.println("Get scope id called in Identifier: " + id);
     }
 
     @Override
     public void setUsesAndDefines() {
         //None
+    }
+
+    @Override
+    public Expression transformToTemp(List<Expression> expressions) {
+        return this;
     }
 }

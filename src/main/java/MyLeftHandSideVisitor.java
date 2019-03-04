@@ -20,7 +20,7 @@ public class MyLeftHandSideVisitor extends Java8BaseVisitor<Expression> {
                 for(Java8Parser.ExpressionContext exp: ctx.arrayAccess().expression()) {
                     accessors.add(Driver.expressionVisitor.visitExpression(exp));
                 }
-                return new ArrayAccessExpression(ctx.start.getLine(), left, accessors);
+                return new ArrayAccessExpression(Driver.currentFileName, ctx.start.getLine(), left, accessors);
             }
             else if(ctx.arrayAccess().primaryNoNewArray_lfno_arrayAccess() != null) {
                 System.err.println("left sidevisitor: lfno_array");
@@ -36,7 +36,7 @@ public class MyLeftHandSideVisitor extends Java8BaseVisitor<Expression> {
             return visitExpressionName(ctx.expressionName());
         }
         else if (ctx.fieldAccess() != null) {
-            System.err.println("field access not found leftsidevisitor");
+            return new Identifier(Driver.currentFileName, ctx.start.getLine(), ctx.fieldAccess().Identifier().getText());
         }
 
         return super.visitLeftHandSide(ctx);
@@ -48,9 +48,9 @@ public class MyLeftHandSideVisitor extends Java8BaseVisitor<Expression> {
         String id = ctx.Identifier().toString();
         if(ctx.expressionName() != null) {
             Expression left = visitExpressionName(ctx.expressionName());
-            return new LeftIdDot(ctx.start.getLine(), id, left);
+            return new LeftIdDot(Driver.currentFileName, ctx.start.getLine(), id, left);
         }
-        return new Identifier(ctx.start.getLine(), id);
+        return new Identifier(Driver.currentFileName, ctx.start.getLine(), id);
     }
 
     @Override
@@ -60,9 +60,9 @@ public class MyLeftHandSideVisitor extends Java8BaseVisitor<Expression> {
 
         if(ctx.packageOrTypeName() != null) {
             Expression exp = visitPackageOrTypeName(ctx.packageOrTypeName());
-            return new LeftIdDot(ctx.start.getLine(), id, exp);
+            return new LeftIdDot(Driver.currentFileName, ctx.start.getLine(), id, exp);
         }
-        return new Identifier(ctx.start.getLine(), id);
+        return new Identifier(Driver.currentFileName, ctx.start.getLine(), id);
     }
 
     @Override
@@ -72,10 +72,10 @@ public class MyLeftHandSideVisitor extends Java8BaseVisitor<Expression> {
 
         if(ctx.packageOrTypeName() != null) {
             Expression exp = visitPackageOrTypeName(ctx.packageOrTypeName());
-            return new LeftIdDot(ctx.start.getLine(), id, exp);
+            return new LeftIdDot(Driver.currentFileName, ctx.start.getLine(), id, exp);
         }
 
-        return new Identifier(ctx.start.getLine(), id);
+        return new Identifier(Driver.currentFileName, ctx.start.getLine(), id);
     }
 
 }

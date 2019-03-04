@@ -15,8 +15,8 @@ public class CatchStatement extends Statement {
     private Block body;
     private Identifier id;
 
-    public CatchStatement(int line, Identifier id, Block block) {
-        super(line);
+    public CatchStatement(String file, int line, Identifier id, Block block) {
+        super(file, line);
         this.body = block;
         this.id = id;
     }

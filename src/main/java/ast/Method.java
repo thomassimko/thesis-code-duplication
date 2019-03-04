@@ -11,8 +11,12 @@ public class Method {
 
     private Block body;
     private String name;
+    private int line;
+    private String file;
 
-    public Method(String name, Block block) {
+    public Method(String file, int line, String name, Block block) {
+        this.file = file;
+        this.line = line;
         this.name = name;
         this.body = block;
     }

@@ -2,8 +2,8 @@ package ast.literal;
 
 public class NullLiteral extends Literal {
 
-    public NullLiteral(int line) {
-        super(line);
+    public NullLiteral(String file, int line) {
+        super(file, line);
     }
 
     @Override

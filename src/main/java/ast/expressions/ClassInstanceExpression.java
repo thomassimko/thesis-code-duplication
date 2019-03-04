@@ -15,8 +15,8 @@ public class ClassInstanceExpression extends Expression {
     private List<Expression> args;
     private Identifier className;
 
-    public ClassInstanceExpression(int line, Expression expNames, List<Expression> args, ClassObject obj, Identifier className) {
-        super(line);
+    public ClassInstanceExpression(String file, int line, Expression expNames, List<Expression> args, ClassObject obj, Identifier className) {
+        super(file, line);
         this.expNames = expNames;
         this.args = args;
         this.classObject = obj;
@@ -49,16 +49,16 @@ public class ClassInstanceExpression extends Expression {
         return output.toString();
     }
 
-    @Override
-    public List<Expression> getExpressions() {
-        List<Expression> output = new ArrayList<Expression>();
-
-        for(Expression arg: args) {
-            output.addAll(arg.getExpressions());
-        }
-        output.add(this);
-        return output;
-    }
+//    @Override
+//    public List<Expression> getExpressions() {
+//        List<Expression> output = new ArrayList<Expression>();
+//
+//        for(Expression arg: args) {
+//            output.addAll(arg.getExpressions());
+//        }
+//        output.add(this);
+//        return output;
+//    }
 
     @Override
     public void setScopeId(List<Map<String, Left>> scope) {
@@ -69,8 +69,14 @@ public class ClassInstanceExpression extends Expression {
 
     @Override
     public void setUsesAndDefines() {
-        for(Expression exp: args) {
-            addSource(exp);
+        for(Expression arg: args) {
+            setUseAndDefineForChild(arg);
+            addSource(arg);
         }
+    }
+
+    @Override
+    public Expression transformToTemp(List<Expression> expressions) {
+        return this;
     }
 }

@@ -18,11 +18,11 @@ public class ForEachStatement extends Statement {
     private Statement body;
     private Expression assgn;
 
-    public ForEachStatement(int line, Expression exp, Statement body, String id) {
-        super(line);
-        Identifier declaredId = new Identifier(line, id);
+    public ForEachStatement(String file, int line, Expression exp, Statement body, String id) {
+        super(file, line);
+        Identifier declaredId = new Identifier(file, line, id);
         this.body = body;
-        assgn = new AssignmentExpression(line, declaredId, "=", exp);
+        assgn = new AssignmentExpression(file, line, declaredId, "=", exp);
     }
 
     public void printAST() {
@@ -42,7 +42,7 @@ public class ForEachStatement extends Statement {
         start.addBlock(newBlock);
 
         assgn = Expression.getScopeId(scope, assgn);
-        forBlock.addExpressions(assgn.getExpressions());
+        forBlock.addExpression(assgn);
 
         CFGBlock endBlock = body.generateCFG(forBlock, finalBlock, labelMap, start, scope);
 

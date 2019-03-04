@@ -4,8 +4,8 @@ public class StringLiteral extends Literal {
 
     private String value;
 
-    public StringLiteral(int line, String value) {
-        super(line);
+    public StringLiteral(String file, int line, String value) {
+        super(file, line);
         this.value = value;
     }
 

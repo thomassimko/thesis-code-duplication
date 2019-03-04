@@ -23,6 +23,10 @@ public class Program {
         this.classes = classes;
     }
 
+    public Program() {
+        this.classes = new ArrayList<>();
+    }
+
     public void printProgram() {
         System.out.println("Program: ");
         for(ClassObject clss : classes) {
@@ -42,7 +46,7 @@ public class Program {
 
             for(Method method: clss.methods) {
 
-                StartBlock start = new StartBlock(method.getName());
+                StartBlock start = new StartBlock(method.getName(), clss.getName());
 
                 clss.generateCFG(start, null, null, null, scope);
 
@@ -52,5 +56,13 @@ public class Program {
             }
         }
         return block;
+    }
+
+    public void addClasses(List<ClassObject> classes) {
+        this.classes.addAll(classes);
+    }
+
+    public List<ClassObject> getClasses() {
+        return this.classes;
     }
 }

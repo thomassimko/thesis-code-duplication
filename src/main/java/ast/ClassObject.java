@@ -15,8 +15,10 @@ public class ClassObject implements BlockStatement {
     public List<Method> methods;
     public List<DeclarationStatement> decls;
     private String className;
+    String file;
 
-    public ClassObject(List<Method> methods, List<DeclarationStatement> decls, String className) {
+    public ClassObject(String file, List<Method> methods, List<DeclarationStatement> decls, String className) {
+        this.file = file;
         this.methods = methods;
         this.decls = decls;
         this.className = className;
@@ -40,5 +42,9 @@ public class ClassObject implements BlockStatement {
         }
 
         return block;
+    }
+
+    public String getName() {
+        return className;
     }
 }

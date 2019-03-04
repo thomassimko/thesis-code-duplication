@@ -1,0 +1,62 @@
+Right now each cfgblock has a list of expressions, but i want to have information about the statements as well.  Such as a while statement and not just the condition.  Should i change it to have a list of statements? Or should I create my own expressions like a while expression?
+
+
+
+Redo the reaching definitions to use expressions as small as possible
+Find where could have been declared -- add from definition to expression
+
+
+
+
+
+-----------------------------------------------------------
+2/25 Notes:
+
+Currently if I have expression:
+    x = 3 + y--
+
+My expression list looks as follows:
+//    y
+//    y--
+//    3
+//    3 + y--
+    x = 3 + y--
+
+    -- y returns itself
+    -- y-- returns the temp and adds the expression y = y - 1
+
+
+Should I be using temps so that it turns into: (ie turn every expression into an assignment)
+
+$temp1 = y
+y = y - 1
+$temp2 = 3 + $temp1
+x = temp2
+
+
+temp3 = z
+z = z - 1
+temp4 = 3 - temp3
+x = temp4
+
+if(blah) {
+    temp5 = z
+    z = z + 1
+    temp6 = 4 + temp5
+}
+
+x = 3 - z--
+if(blah)
+    x = 4 + z++;
+
+y = x + z
+
+
+-------------------------------------------------
+3/4 Notes:
+
+
+
+
+
+

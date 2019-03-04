@@ -13,8 +13,8 @@ public class ExpressionStatement extends Statement {
 
     private Expression exp;
 
-    public ExpressionStatement(int line, Expression exp) {
-        super(line);
+    public ExpressionStatement(String file, int line, Expression exp) {
+        super(file, line);
         this.exp = exp;
     }
 
@@ -26,7 +26,7 @@ public class ExpressionStatement extends Statement {
 
     public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start, List<Map<String, Left>> scope) {
         exp = Expression.getScopeId(scope, exp);
-        block.addExpressions(exp.getExpressions());
+        block.addExpression(exp);
         return block;
     }
 }

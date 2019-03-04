@@ -18,8 +18,8 @@ public class Block extends Statement {
 //    private ClassObject classDecl;
 //    private List<DeclarationStatement> declarationList;
 
-    public Block(int line, List<BlockStatement> statements) {
-        super(line);
+    public Block(String file, int line, List<BlockStatement> statements) {
+        super(file, line);
         this.statements = statements;
     }
 

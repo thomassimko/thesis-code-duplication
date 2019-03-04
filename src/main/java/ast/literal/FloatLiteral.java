@@ -4,8 +4,8 @@ public class FloatLiteral extends Literal {
 
     private float value;
 
-    public FloatLiteral(int line, float value) {
-        super(line);
+    public FloatLiteral(String file, int line, float value) {
+        super(file, line);
         this.value = value;
     }
     @Override

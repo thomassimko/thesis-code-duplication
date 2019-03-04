@@ -12,8 +12,8 @@ public class SwitchLabelExpression extends SwitchLabel {
 
     private Expression exp;
 
-    public SwitchLabelExpression(int line, Expression exp) {
-        super(line);
+    public SwitchLabelExpression(String file, int line, Expression exp) {
+        super(file, line);
         this.exp = exp;
     }
 
