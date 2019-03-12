@@ -22,13 +22,6 @@ public class SwitchOption {
         this.block = block;
     }
 
-    public void printAST() {
-        for(SwitchLabel label: caseList) {
-            label.printAST();
-        }
-        block.printAST();
-    }
-
     public CFGBlock generateCFG(CFGBlock prev, CFGBlock finalBlock, StartBlock start, List<Map<String, Left>> scope) {
 
         for(SwitchLabel label: caseList) {

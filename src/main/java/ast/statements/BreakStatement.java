@@ -22,10 +22,6 @@ public class BreakStatement extends Statement {
         this.id = id;
     }
 
-    public void printAST() {
-        System.out.println("break: " + id);
-    }
-
     public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start, List<Map<String, Left>> scope) {
 
         if(id != null) {

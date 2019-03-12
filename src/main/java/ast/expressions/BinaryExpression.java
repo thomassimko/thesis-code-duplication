@@ -20,13 +20,6 @@ public class BinaryExpression extends Expression {
     }
 
     @Override
-    public void printAST() {
-        System.out.println("Binary Exp: " + operator);
-        left.printAST();
-        right.printAST();
-    }
-
-    @Override
     public String toString() {
         return left.toString() + " " + operator + " " + right.toString();
     }

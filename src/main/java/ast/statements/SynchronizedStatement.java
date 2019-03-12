@@ -22,12 +22,6 @@ public class SynchronizedStatement extends Statement {
         this.exp = exp;
     }
 
-    public void printAST() {
-        System.out.println("Synchronized: ");
-        exp.printAST();
-        body.printAST();
-    }
-
     public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start, List<Map<String, Left>> scope) {
 
         pushScope(scope);

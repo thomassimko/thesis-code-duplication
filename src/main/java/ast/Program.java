@@ -27,13 +27,6 @@ public class Program {
         this.classes = new ArrayList<>();
     }
 
-    public void printProgram() {
-        System.out.println("Program: ");
-        for(ClassObject clss : classes) {
-            clss.printAST();
-        }
-    }
-
     public List<StartBlock> getCFG() {
 
         List<Map<String, Left>> scope = new ArrayList<Map<String, Left>>();

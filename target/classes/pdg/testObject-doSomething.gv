@@ -1,0 +1,7 @@
+digraph G {
+"5 : num = 0"
+"6 : text = null"
+"13 : System.out.println(\"Doing something\", )"
+"14 : text = text + \"\n\""
+"15 : text = text + \"banana\""
+}

@@ -8,10 +8,6 @@ public class FloatLiteral extends Literal {
         super(file, line);
         this.value = value;
     }
-    @Override
-    public void printAST() {
-        System.out.println("float: " + value);
-    }
 
     @Override
     public String toString() {

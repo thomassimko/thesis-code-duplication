@@ -83,4 +83,12 @@ public class testFile {
         return;
     }
 
+    {
+        int j = 1;
+        j = 2;
+        if(j == 3) {
+
+        }
+    }
+
 }

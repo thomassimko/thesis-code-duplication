@@ -15,20 +15,20 @@ public abstract class CFGBlock {
     private String label;
     private List<Left> targets;
     private List<Left> sources;
-    private Set<Left> gen;
-    private Set<Left> kill;
-    private Set<Left> liveOut;
+    private HashMap<Left, Expression> gen;
+    private HashMap<Left, Expression> kill;
+    private HashMap<Left, Set<Expression>> liveOut;
 
     public CFGBlock(String label) {
         this.label = label + BlockCounter.getNextBlockLabel();
-        this.expressionList = new ArrayList<Expression>();
-        this.successors = new ArrayList<CFGBlock>();
-        this.predecessors = new ArrayList<CFGBlock>();
-        this.targets = new ArrayList<Left>();
-        this.sources = new ArrayList<Left>();
-        this.gen = new HashSet<Left>();
-        this.kill = new HashSet<Left>();
-        this.liveOut = new HashSet<Left>();
+        this.expressionList = new ArrayList<>();
+        this.successors = new ArrayList<>();
+        this.predecessors = new ArrayList<>();
+        this.targets = new ArrayList<>();
+        this.sources = new ArrayList<>();
+        this.gen = new HashMap<>();
+        this.kill = new HashMap<>();
+        this.liveOut = new HashMap<>();
     }
 
     public void addExpression(Expression exp) {
@@ -48,23 +48,6 @@ public abstract class CFGBlock {
 
     public void addPredecessor(CFGBlock pred) {
         predecessors.add(pred);
-    }
-
-    public void printBlock(Set<CFGBlock> visited) {
-        if(visited.contains(this)) {
-            System.out.print("already visited: " + label);
-            return;
-        }
-
-        visited.add(this);
-        System.out.println(label);
-        for(Expression exp: expressionList) {
-            System.out.print("\t");
-            exp.printAST();
-        }
-        for(CFGBlock block:successors) {
-            block.printBlock(visited);
-        }
     }
 
     public String getLabel() {
@@ -112,8 +95,8 @@ public abstract class CFGBlock {
 
     public void setGenKillSet() {
 
-        this.gen = new HashSet<Left>();
-        this.kill = new HashSet<Left>();
+        this.gen = new HashMap<>();
+        this.kill = new HashMap<>();
 
         for(int i = expressionList.size() - 1; i >= 0; i--) {
 
@@ -122,31 +105,57 @@ public abstract class CFGBlock {
 
             for(int j = targets.size() - 1; j >= 0; j--) {
                 Left target = targets.get(j);
-                if(!kill.contains(target)) {
-                    gen.add(target);
+                if(!gen.containsKey(target)) {
+                    gen.put(target, exp);
                 } else {
-                    kill.add(target);
+                    kill.put(target, exp);
                 }
             }
-
         }
     }
 
     public void setLiveOut(Queue<CFGBlock> changed) {
 
-        Set<Left> newLiveOut = new HashSet<>(gen);
-        Set<Left> in = new HashSet<>();
-        for(CFGBlock pred : predecessors) {
-            in.addAll(pred.getLiveOut());
+        //out = gen
+        HashMap<Left, Set<Expression>> newLiveOut = new HashMap<>();
+        for(Left key: gen.keySet()) {
+            Set<Expression> newExp = new HashSet<>();
+            newExp.add(gen.get(key));
+            newLiveOut.put(key, newExp);
         }
-        in.removeAll(kill);
-        newLiveOut.addAll(in);
+
+        //in = in U (pred - kill)
+        HashMap<Left, Set<Expression>> in = new HashMap<>();
+        for(CFGBlock predBlock : predecessors) {
+            Map<Left, Set<Expression>> pred = predBlock.getLiveOut();
+            for(Left key : pred.keySet()) {
+                //pred - kill
+                if(!kill.containsKey(key)) {
+                    if (in.containsKey(key)) {
+                        in.get(key).addAll(pred.get(key));
+                    } else {
+                        Set<Expression> newSet = new HashSet<>();
+                        newSet.addAll(pred.get(key));
+                        in.put(key, newSet);
+                    }
+                }
+            }
+        }
+
+        //LO = gen + in
+        //ignore values already in gen because only new values matter
+        for(Left key: in.keySet()) {
+            if(!newLiveOut.containsKey(key)) {
+                newLiveOut.put(key, in.get(key));
+            }
+        }
 
         boolean equals = newLiveOut.size() == liveOut.size();
 
         if(equals) {
-            String[] liveOutArr = liveOut.stream().map(Left::toString).toArray(String[]::new);
-            String[] newLiveOutArr = newLiveOut.stream().map(Left::toString).toArray(String[]::new);
+            //TODO: can I terminate based on keys only?
+            String[] liveOutArr = liveOut.keySet().stream().map(Left::toString).toArray(String[]::new);
+            String[] newLiveOutArr = newLiveOut.keySet().stream().map(Left::toString).toArray(String[]::new);
             Arrays.sort(liveOutArr);
             Arrays.sort(newLiveOutArr);
 
@@ -163,7 +172,44 @@ public abstract class CFGBlock {
         }
     }
 
-    public Set<Left> getLiveOut() {
+    public void setDataDependents() {
+        HashMap<Left, Expression> gen = new HashMap<>();
+        for(int i = 0; i < expressionList.size(); i++) {
+            Expression cur = expressionList.get(i);
+
+            System.out.println(cur.toString());
+
+            List<Left> uses = cur.getSources();
+
+            for(Left use : uses) {
+
+                System.out.println("\t" + use.toString());
+
+                if(gen.containsKey(use)) {
+                    gen.get(use).addDataDependents(cur);
+                } else {
+                    for (CFGBlock pred : predecessors) {
+                        Set<Expression> defs = pred.getLiveOut().get(use);
+                        if (defs != null) {
+                            for (Expression def : defs) {
+                                def.addDataDependents(cur);
+                            }
+                        } else {
+                            System.out.println("no def found for " + use.toString());
+                        }
+                    }
+                }
+            }
+
+
+            for(Left target : cur.getTargets()) {
+                gen.put(target, cur);
+            }
+
+        }
+    }
+
+    public HashMap<Left, Set<Expression>> getLiveOut() {
         return liveOut;
     }
 

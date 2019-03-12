@@ -17,11 +17,6 @@ public class SwitchLabelExpression extends SwitchLabel {
         this.exp = exp;
     }
 
-    public void printAST() {
-        System.out.println("Option Expression: ");
-        exp.printAST();
-    }
-
     @Override
     public CFGBlock generateCFG(CFGBlock prev, CFGBlock finalBlock, StartBlock start, List<Map<String, Left>> scope) {
         exp = Expression.getScopeId(scope, exp);

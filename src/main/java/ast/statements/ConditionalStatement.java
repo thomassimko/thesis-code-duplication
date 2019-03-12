@@ -23,15 +23,6 @@ public class ConditionalStatement extends Statement{
         this.ifFalse = ifFalse;
     }
 
-    public void printAST() {
-        System.out.println("conditional: ");
-        condition.printAST();
-        ifTrue.printAST();
-
-        if(ifFalse != null)
-            ifFalse.printAST();
-    }
-
     public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start, List<Map<String, Left>> scope) {
         condition = Expression.getScopeId(scope, condition);
         block.addExpression(condition);

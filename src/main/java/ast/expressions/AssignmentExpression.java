@@ -19,12 +19,6 @@ public class AssignmentExpression extends Expression {
         this.exp = exp;
     }
 
-    public void printAST() {
-        System.out.println("Assignment");
-        left.printAST();
-        exp.printAST();
-    }
-
     public Expression getLeft() {
         return left;
     }
@@ -33,15 +27,6 @@ public class AssignmentExpression extends Expression {
     public String toString() {
         return left.toString() + " " + operator + " " + exp.toString();
     }
-
-//    @Override
-//    public List<Expression> getExpressions() {
-//        List<Expression> output = new ArrayList<Expression>();
-//        output.addAll(left.getExpressions());
-//        output.addAll(exp.getExpressions());
-//        output.add(this);
-//        return output;
-//    }
 
     @Override
     public void setScopeId(List<Map<String, Left>> scope) {
@@ -70,8 +55,6 @@ public class AssignmentExpression extends Expression {
     public Expression transformToTemp(List<Expression> expressions) {
 
         String newOp = operator.replace("=", "");
-
-        System.err.println(this.toString());
 
         left = left.transformToTemp(expressions);
         exp = exp.transformToTemp(expressions);

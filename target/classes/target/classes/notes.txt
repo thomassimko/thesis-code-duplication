@@ -1,15 +1,3 @@
-Right now each cfgblock has a list of expressions, but i want to have information about the statements as well.  Such as a while statement and not just the condition.  Should i change it to have a list of statements? Or should I create my own expressions like a while expression?
-
-
-
-Redo the reaching definitions to use expressions as small as possible
-Find where could have been declared -- add from definition to expression
-
-
-
-
-
------------------------------------------------------------
 2/25 Notes:
 
 Currently if I have expression:
@@ -54,6 +42,34 @@ y = x + z
 
 -------------------------------------------------
 3/4 Notes:
+
+
+Update use-defs to have full expression -- hash table
+TODO: Go top down and build gen set again adding edges from use to define
+
+top-down
+find all uses
+look at def-use chains
+
+-------------------------------------------------
+3/11 Notes:
+
+I changed the generation of the gen and kill set to be:
+
+    for(int j = targets.size() - 1; j >= 0; j--) {
+        Left target = targets.get(j);
+        if(!gen.containsKey(target)) {
+            gen.put(target, exp);
+        } else {
+            kill.put(target, exp);
+        }
+    }
+
+Specifically changed the gen.containsKey from kill.containsKey.  This is what i want correct? Otherwise the kill set would get nothing in it.
+
+
+In the PDG it shows dependencies for global variables, but they arent reset for each method.  I would want to do this correct?
+
 
 
 

@@ -19,23 +19,9 @@ public class PreUnaryExpression extends Expression {
     }
 
     @Override
-    public void printAST() {
-        System.out.println("Unary: " + op);
-        exp.printAST();
-    }
-
-    @Override
     public String toString() {
         return "(++" + exp.toString() + ")";
     }
-
-//    @Override
-//    public List<Expression> getExpressions() {
-//        List<Expression> output = new ArrayList<Expression>();
-//        output.addAll(exp.getExpressions());
-//        output.add(this);
-//        return output;
-//    }
 
     @Override
     public void setScopeId(List<Map<String, Left>> scope) {

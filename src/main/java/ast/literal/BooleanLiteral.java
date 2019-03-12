@@ -15,11 +15,6 @@ public class BooleanLiteral extends Literal {
     }
 
     @Override
-    public void printAST() {
-        System.out.println("boolean: " + value);
-    }
-
-    @Override
     public String toString() {
         return value ? "true" : "false";
     }

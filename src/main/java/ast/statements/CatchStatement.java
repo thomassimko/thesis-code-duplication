@@ -21,11 +21,6 @@ public class CatchStatement extends Statement {
         this.id = id;
     }
 
-    public void printAST() {
-        System.out.println("catch: " + id);
-        body.printAST();
-    }
-
     public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start, List<Map<String, Left>> scope) {
         pushScope(scope);
         CFGBlock blk = body.generateCFG(block, finalBlock, labelMap, start, scope);

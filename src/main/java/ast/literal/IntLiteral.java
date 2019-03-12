@@ -10,11 +10,6 @@ public class IntLiteral extends Literal {
     }
 
     @Override
-    public void printAST() {
-        System.out.println("int: " + value);
-    }
-
-    @Override
     public String toString() {
         return value + "";
     }

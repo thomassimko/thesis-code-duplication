@@ -17,14 +17,6 @@ public class Array extends Literal {
     }
 
     @Override
-    public void printAST() {
-        System.out.println("Array: ");
-        for (Expression exp : expressionList) {
-            exp.printAST();
-        }
-    }
-
-    @Override
     public String toString() {
         StringBuilder output = new StringBuilder();
         output.append('{');
@@ -34,16 +26,6 @@ public class Array extends Literal {
         output.append('}');
         return output.toString();
     }
-
-//    @Override
-//    public List<Expression> getExpressions() {
-//        List<Expression> output = new ArrayList<Expression>();
-//        for(Expression exp: expressionList) {
-//            output.addAll(exp.getExpressions());
-//        }
-//        output.add(this);
-//        return output;
-//    }
 
     @Override
     public void setUsesAndDefines() {

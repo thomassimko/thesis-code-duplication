@@ -27,17 +27,6 @@ public class TryStatement extends Statement {
         this.resources = resources;
     }
 
-    public void printAST() {
-        System.out.println("Try");
-        for(AssignmentExpression resource:resources) {
-            resource.printAST();
-        }
-        for(CatchStatement stmt: catches) {
-            stmt.printAST();
-        }
-        finallyBlock.printAST();
-    }
-
     public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start, List<Map<String, Left>> scope) {
 
         CFGBlock finallyCFG = null;

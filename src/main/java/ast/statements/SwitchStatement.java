@@ -23,14 +23,6 @@ public class SwitchStatement extends Statement {
         this.exp = exp;
     }
 
-    public void printAST() {
-        System.out.println("Switch:");
-        exp.printAST();
-        for(SwitchOption option : options) {
-            option.printAST();
-        }
-    }
-
     public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start, List<Map<String, Left>> scope) {
 
         pushScope(scope);

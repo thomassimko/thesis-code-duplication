@@ -23,13 +23,6 @@ public class Block extends Statement {
         this.statements = statements;
     }
 
-    public void printAST() {
-        System.out.println("CFGBlock");
-        for(BlockStatement stmt: statements) {
-            stmt.printAST();
-        }
-    }
-
     public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start, List<Map<String, Left>> scope) {
 
         pushScope(scope);

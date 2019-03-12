@@ -23,17 +23,6 @@ public class CallExpression extends Expression {
     }
 
     @Override
-    public void printAST() {
-        System.out.println("Call: ");
-        if(leftSide != null)
-            leftSide.printAST();
-        methodName.printAST();
-        for(Expression arg: argumentList) {
-            arg.printAST();
-        }
-    }
-
-    @Override
     public String toString() {
         StringBuilder output = new StringBuilder();
         if(leftSide != null) {

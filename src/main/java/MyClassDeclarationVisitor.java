@@ -26,7 +26,7 @@ public class MyClassDeclarationVisitor extends Java8BaseVisitor<ClassObject> {
             //Ignore constructors
             if(bl.classMemberDeclaration() != null) {
                 if (bl.classMemberDeclaration().fieldDeclaration() != null) {
-                    decls.addAll(Driver.declarationVisitor.visitVariableDeclaratorList(bl.classMemberDeclaration().fieldDeclaration().variableDeclaratorList()));
+                    decls.addAll(Driver.declarationVisitor.visitFieldDeclaration(bl.classMemberDeclaration().fieldDeclaration()));
                 }
                 else if (bl.classMemberDeclaration().methodDeclaration() != null) {
                     methods.add(Driver.methodVisitor.visitMethodDeclaration(bl.classMemberDeclaration().methodDeclaration()));

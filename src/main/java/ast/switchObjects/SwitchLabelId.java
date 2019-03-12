@@ -16,10 +16,6 @@ public class SwitchLabelId extends SwitchLabel {
         this.id = id;
     }
 
-    public void printAST() {
-        System.out.println("Option ID: " + id);
-    }
-
     @Override
     public CFGBlock generateCFG(CFGBlock prev, CFGBlock finalBlock, StartBlock start, List<Map<String, Left>> scope) {
         //TODO: Idk what to do here for enum

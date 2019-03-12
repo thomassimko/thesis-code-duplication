@@ -29,18 +29,6 @@ public class Driver {
 
     public static void main(String[] args) {
 
-//            CharStream stream = CharStreams.fromFileName(args[0]);
-//            currentFileName = args[0];
-//            Java8Lexer lexer = new Java8Lexer(stream);
-//            CommonTokenStream tokens = new CommonTokenStream(lexer);
-//            Java8Parser parser = new Java8Parser(tokens);
-//            ParserRuleContext tree = parser.compilationUnit(); // parse
-//
-//            MyVisitor visitor = new MyVisitor();
-//            Program program = visitor.visit(tree);
-            //program.printProgram();
-
-            //program.printProgram();
         Program program = FileParser.parseFiles(args[0]);
 
         List<StartBlock> starts = program.getCFG();
@@ -54,6 +42,17 @@ public class Driver {
         writeExpressionsToFile(allBlocks);
 
         generateReachingDefinitions(allBlocks, starts);
+        printReachingDefinitions(allBlocks);
+
+        System.out.println("------------------------------------------------------------------------");
+        for(CFGBlock block: allBlocks) {
+            System.out.println("BLOCK: " + block.getLabel());
+            block.setDataDependents();
+            System.out.println();
+        }
+
+        printPDG(starts);
+
     }
 
     private static void graphCFG(List<StartBlock> blockList) {
@@ -106,9 +105,6 @@ public class Driver {
             allBlocks.addAll(start.getMethodBlocks());
             for(CFGBlock block : start.getMethodBlocks()) {
                 block.setTargetsAndSources();
-                block.printTargets();
-                block.printSources();
-                System.out.println();
             }
         }
 
@@ -120,6 +116,59 @@ public class Driver {
         while(!changed.isEmpty()) {
             CFGBlock cur = changed.remove();
             cur.setLiveOut(changed);
+        }
+    }
+
+    private static void printReachingDefinitions(List<CFGBlock> allBlocks) {
+        for(CFGBlock block : allBlocks) {
+            System.out.println("BLOCK: " + block.getLabel());
+            HashMap<Left, Set<Expression>> lo = block.getLiveOut();
+            for(Left key: lo.keySet()) {
+                System.out.print(key.toString() + " : ");
+                for(Expression exp: lo.get(key)) {
+                    System.out.print(exp.toString() + ", ");
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
+    }
+
+    private static void printPDG(List<StartBlock> methods) {
+
+        try {
+
+            for (StartBlock method : methods) {
+
+                Set<Expression> notVisited = new HashSet<>();
+
+                String fileName = method.getClassName() + "-" + method.getFunctionName() + ".gv";
+                FileWriter writer = new FileWriter(new File("pdg/source/" + fileName));
+
+                writer.write("digraph G {\n");
+
+                for(CFGBlock block : method.getMethodBlocks()) {
+                    notVisited.addAll(block.getExpressions());
+                    for (Expression exp : block.getExpressions()) {
+                        writer.write(exp.toGraphVis() + "\n");
+                        for(Expression dependent : exp.getDataDependents()) {
+                            notVisited.remove(dependent);
+                            writer.write(exp.toGraphVis() + " -> " + dependent.toGraphVis() + "\n");
+                        }
+                    }
+                }
+
+                for(Expression head : notVisited) {
+                    writer.write("ENTRY -> " + head.toGraphVis() + "\n");
+                }
+
+                writer.write("}");
+
+                writer.flush();
+                writer.close();
+            }
+        } catch (IOException ex) {
+            System.err.println(ex);
         }
     }
 }

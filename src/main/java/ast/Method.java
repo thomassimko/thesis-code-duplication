@@ -21,10 +21,6 @@ public class Method {
         this.body = block;
     }
 
-    public void printAST() {
-        body.printAST();
-    }
-
     public String getName() {
         return name;
     }

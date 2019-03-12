@@ -1,6 +1,16 @@
+function doSomething from class testObject
+num = 0
+text = null
+
+System.out.println("Doing something", )
+text = text + "\n"
+text = text + "banana"
+
 function main from class testFile
 thing = 2
 
+that = 0.0
+thisthat = 0.0
 num = 6
 banana = "check: " + 6
 ham = num + 2
@@ -47,6 +57,8 @@ sum = sum - 1
 @temp5 = num
 num = num + 1
 methodWithManyArgs(@temp3, @temp4, @temp5, )
+obj = new testObject(5, )
+obj.doSomething("bah", )
 
 function getNum from class testFile
 thing = 2
@@ -56,6 +68,7 @@ i = 0
 
 i < 5
 
+j = 0
 i == 2
 
 num + 1
@@ -74,4 +87,17 @@ thing = 2
 function methodWithManyArgs from class testFile
 thing = 2
 
+
+function print from class PDGSample
+
+sum = 0
+i = 1
+i < 11
+
+sum = sum + i
+i = i + 1
+i < 11
+
+System.out.println(sum, )
+System.out.println(i, )
 

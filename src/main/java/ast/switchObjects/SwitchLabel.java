@@ -17,7 +17,5 @@ public abstract class SwitchLabel {
         this.line = line;
     }
 
-    public abstract void printAST();
-
     public abstract CFGBlock generateCFG(CFGBlock prev, CFGBlock finalBlock, StartBlock start, List<Map<String, Left>> scope);
 }

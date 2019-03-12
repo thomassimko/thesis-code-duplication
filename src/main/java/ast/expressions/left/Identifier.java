@@ -16,11 +16,6 @@ public class Identifier extends Left {
     }
 
     @Override
-    public void printAST() {
-        System.out.println("id: " + id);
-    }
-
-    @Override
     public String getId() {
         return id;
     }

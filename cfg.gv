@@ -76,4 +76,16 @@ StartmethodWithManyArgsL31 -> BasicL32
 BasicL32 -> StartmethodWithManyArgsL31 [style=dashed]
 BasicL32 -> EndL33
 EndL33 -> BasicL32 [style=dashed]
+StartprintL34 -> BasicL35
+BasicL35 -> StartprintL34 [style=dashed]
+BasicL35 -> LoopL37
+LoopL37 -> BasicL35 [style=dashed]
+LoopL37 -> LoopL37 [style=dashed]
+LoopL37 -> LoopL37
+LoopL37 -> BasicL38
+BasicL38 -> BasicL35 [style=dashed]
+BasicL38 -> LoopL37 [style=dashed]
+BasicL38 -> EndL36
+EndL36 -> BasicL38 [style=dashed]
+BasicL35 -> BasicL38
 }

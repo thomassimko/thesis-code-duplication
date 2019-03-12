@@ -16,12 +16,6 @@ public class CastExpression extends Expression {
     }
 
     @Override
-    public void printAST() {
-        System.out.println("CAST");
-        exp.printAST();
-    }
-
-    @Override
     public String toString() {
         return "(" + exp.toString() + ")";
     }

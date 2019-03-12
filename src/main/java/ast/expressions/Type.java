@@ -17,21 +17,9 @@ public class Type extends Expression {
     }
 
     @Override
-    public void printAST() {
-        System.out.println("Type: " + type);
-    }
-
-    @Override
     public String toString() {
         return type;
     }
-
-//    @Override
-//    public List<Expression> getExpressions() {
-//        List<Expression> output = new ArrayList<Expression>();
-//        output.add(this);
-//        return output;
-//    }
 
     @Override
     public void setScopeId(List<Map<String, Left>> scope) {

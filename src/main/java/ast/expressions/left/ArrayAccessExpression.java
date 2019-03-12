@@ -21,17 +21,6 @@ public class ArrayAccessExpression extends Left {
     }
 
     @Override
-    public void printAST() {
-        System.out.println("Array Access: ");
-        left.printAST();
-        for (Expression accessor : accessors) {
-            System.out.print("[");
-            accessor.printAST();
-            System.out.println("]");
-        }
-    }
-
-    @Override
     public String toString() {
         StringBuilder output = new StringBuilder();
         output.append(left.toString());

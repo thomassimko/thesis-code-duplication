@@ -18,12 +18,6 @@ public class ReturnStatement extends Statement {
         this.exp = exp;
     }
 
-    public void printAST() {
-        System.out.println("Return");
-        if(exp != null)
-            exp.printAST();
-    }
-
     public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start, List<Map<String, Left>> scope) {
         if(exp != null) {
             exp = Expression.getScopeId(scope, exp);

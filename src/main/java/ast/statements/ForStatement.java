@@ -28,20 +28,6 @@ public class ForStatement extends Statement {
         this.updateStatements = updateStatements;
     }
 
-    public void printAST() {
-        System.out.println("For");
-        declaration.printAST();
-        for(Statement stmt: initStatements) {
-            stmt.printAST();
-        }
-        exp.printAST();
-        for(Statement stmt: updateStatements) {
-            stmt.printAST();
-        }
-        body.printAST();
-
-    }
-
     public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start, List<Map<String, Left>> scope) {
 
         pushScope(scope);

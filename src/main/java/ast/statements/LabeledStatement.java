@@ -20,11 +20,6 @@ public class LabeledStatement extends Statement {
         this.stmt = stmt;
     }
 
-    public void printAST() {
-        System.out.println("Label: " + label);
-        stmt.printAST();
-    }
-
     public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start, List<Map<String, Left>> scope) {
 
         CFGBlock newBlock = new BasicBlock(label);

@@ -17,11 +17,6 @@ public class ClassType extends Expression {
     }
 
     @Override
-    public void printAST() {
-        System.out.println("Classname: " + className);
-    }
-
-    @Override
     public String toString() {
         return className + ".class";
     }

@@ -22,13 +22,6 @@ public class DeclarationStatement extends Statement {
         this.exp = (AssignmentExpression) exp;
     }
 
-    public void printAST() {
-        System.out.println("DeclarationStatement: " + varName);
-
-        if(exp != null)
-            exp.printAST();
-    }
-
     @Override
     public String toString() {
         if(exp != null)

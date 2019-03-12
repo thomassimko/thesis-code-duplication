@@ -3,26 +3,27 @@ package ast.expressions;
 import ast.expressions.left.Identifier;
 import ast.expressions.left.Left;
 import ast.expressions.left.LeftIdDot;
+import cfg.CFGBlock;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public abstract class Expression {
 
     int line;
     String file;
-    List<Left> targets;
-    List<Left> sources;
+    private List<Left> targets;
+    private List<Left> sources;
+    private Set<Expression> dataDependents;
+    private Set<Expression> wawDependents;
 
     public Expression(String file, int line) {
         this.file = file;
         this.line = line;
-        targets = new ArrayList<Left>();
-        sources = new ArrayList<Left>();
+        targets = new ArrayList<>();
+        sources = new ArrayList<>();
+        dataDependents = new HashSet<>();
+        wawDependents = new HashSet<>();
     }
-
-    public abstract void printAST();
 
     public abstract String toString();
 
@@ -88,6 +89,29 @@ public abstract class Expression {
 
 
     public abstract Expression transformToTemp(List<Expression> expressions);
+
+    public void addDataDependents(Expression exp) {
+        this.dataDependents.add(exp);
+    }
+
+    public Set<Expression> getDataDependents() {
+        return dataDependents;
+    }
+
+    public void addWawDependent(Expression exp) {
+        this.wawDependents.add(exp);
+    }
+
+    public Set<Expression> getWawDependents() {
+        return wawDependents;
+    }
+
+    public String toGraphVis() {
+        String out = "\"" + this.getLine() + " : " + this.toString().replaceAll("\"", "\\\\\"") + "\"";
+
+        System.out.println(out);
+        return out;
+    }
 
 
     //target: assignment expression, post unary, pre unary, method call

@@ -20,12 +20,6 @@ public class AssertStatement extends Statement {
         this.detail = detail;
     }
 
-    public void printAST() {
-        System.out.println("Assert:");
-        exp.printAST();
-        detail.printAST();
-    }
-
     public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start, List<Map<String, Left>> scope) {
         this.setExpressionScope(scope);
 

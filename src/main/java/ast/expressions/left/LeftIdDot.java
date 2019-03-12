@@ -17,12 +17,6 @@ public class LeftIdDot extends Left {
     }
 
     @Override
-    public void printAST() {
-        System.out.println("left id: " + id);
-        left.printAST();
-    }
-
-    @Override
     public String toString() {
         return left.toString() + "." + id;
     }

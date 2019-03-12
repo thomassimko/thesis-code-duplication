@@ -17,18 +17,13 @@ public class ForEachStatement extends Statement {
 
     private Statement body;
     private Expression assgn;
+    private Identifier declaredId;
 
     public ForEachStatement(String file, int line, Expression exp, Statement body, String id) {
         super(file, line);
-        Identifier declaredId = new Identifier(file, line, id);
+        this.declaredId = new Identifier(file, line, id);
         this.body = body;
         assgn = new AssignmentExpression(file, line, declaredId, "=", exp);
-    }
-
-    public void printAST() {
-        System.out.println("For each: ");
-        assgn.printAST();
-        body.printAST();
     }
 
     public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start, List<Map<String, Left>> scope) {
@@ -40,6 +35,8 @@ public class ForEachStatement extends Statement {
 
         start.addBlock(forBlock);
         start.addBlock(newBlock);
+
+        scope.get(scope.size() - 1).put(declaredId.toString(), declaredId);
 
         assgn = Expression.getScopeId(scope, assgn);
         forBlock.addExpression(assgn);

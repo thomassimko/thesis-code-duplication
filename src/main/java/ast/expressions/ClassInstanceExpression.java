@@ -24,19 +24,6 @@ public class ClassInstanceExpression extends Expression {
     }
 
     @Override
-    public void printAST() {
-        System.out.println("Class Instance");
-        System.out.println("Args:");
-        for(Expression arg: args) {
-            arg.printAST();
-        }
-        if(expNames != null) {
-            System.out.println("Expression Names:");
-            expNames.printAST();
-        }
-    }
-
-    @Override
     public String toString() {
         StringBuilder output = new StringBuilder();
         System.err.println("line: " + line);

@@ -18,11 +18,6 @@ public class ThrowStatement extends Statement {
         this.exp = exp;
     }
 
-    public void printAST() {
-        System.out.println("Throw:");
-        exp.printAST();
-    }
-
     public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start, List<Map<String, Left>> scope) {
         exp = Expression.getScopeId(scope, exp);
         block.addExpression(exp);
