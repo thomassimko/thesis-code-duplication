@@ -65,11 +65,14 @@ public abstract class Expression {
         if(exp instanceof Left) {
             Left left = (Left) exp;
 
+            //if(left instanceof LeftIdDot && ((LeftIdDot) left).)
+
+
             for (int i = scope.size() - 1; i >= 0; i--) {
                 Map<String, Left> local = scope.get(i);
                 if (local.containsKey(left.toString())) {
                     Left var = local.get(left.toString());
-                    //System.out.println(left.toString() + " at line " + left.getLine() + " points to " + var.toString() + " which was declared at line " + var.getLine());
+                    System.out.println(left.toString() + " at line " + left.getLine() + " points to " + var.toString() + " which was declared at line " + var.getLine());
                     return var;
                 }
             }
@@ -111,6 +114,10 @@ public abstract class Expression {
 
         System.out.println(out);
         return out;
+    }
+
+    public String getFile() {
+        return file;
     }
 
 

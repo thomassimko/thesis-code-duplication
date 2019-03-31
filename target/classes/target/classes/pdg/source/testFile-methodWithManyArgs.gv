@@ -1,0 +1,9 @@
+digraph G {
+"7 : thing = 2"
+"7 : thing = 2" -> "36 : useGlobal = thing + 100"
+"7 : thing = 2" -> "45 : thing = thing + 1"
+"85 : j = 1"
+"86 : j = 2"
+"86 : j = 2" -> "87 : j == 3"
+"87 : j == 3"
+}

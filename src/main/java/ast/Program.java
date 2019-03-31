@@ -39,9 +39,14 @@ public class Program {
 
             for(Method method: clss.methods) {
 
+                scope = new ArrayList<>();
+                newMap = new HashMap<>();
+                scope.add(newMap);
+
                 StartBlock start = new StartBlock(method.getName(), clss.getName());
 
-                clss.generateCFG(start, null, null, null, scope);
+                //does nothing
+                //clss.generateCFG(start, null, null, null, scope);
 
                 method.buildCFG(start, scope);
                 block.add(start);

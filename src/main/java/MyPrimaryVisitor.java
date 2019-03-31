@@ -4,6 +4,7 @@ import ast.expressions.left.ArrayAccessExpression;
 import ast.expressions.left.Identifier;
 import ast.expressions.left.LeftIdDot;
 import ast.literal.Array;
+import ast.literal.This;
 import org.antlr.v4.runtime.tree.TerminalNode;
 
 import java.util.ArrayList;
@@ -21,11 +22,13 @@ public class MyPrimaryVisitor extends Java8BaseVisitor<Expression> {
         //	|	'new' primitiveType dims arrayInitializer
         //	|	'new' classOrInterfaceType dims arrayInitializer
 
+        Expression exp = null;
+
 
         if(ctx.arrayCreationExpression() != null) {
 
             if(ctx.arrayCreationExpression().arrayInitializer() != null) {
-                return handleArrayInitializer(ctx.arrayCreationExpression().arrayInitializer());
+                exp = handleArrayInitializer(ctx.arrayCreationExpression().arrayInitializer());
             } else if(ctx.arrayCreationExpression().dimExprs() != null) {
                 ArrayList<Expression> lengths = new ArrayList<Expression>();
 
@@ -33,18 +36,27 @@ public class MyPrimaryVisitor extends Java8BaseVisitor<Expression> {
                     lengths.add(Driver.expressionVisitor.visitExpression(dim.expression()));
                 }
 
-                return new Array(Driver.currentFileName, ctx.start.getLine(), lengths);
+                exp = new Array(Driver.currentFileName, ctx.start.getLine(), lengths);
             }
-
-            System.err.println("visitPrimary Array creation not found");
-
-            return new Array(Driver.currentFileName, ctx.start.getLine(), null);
+            if(exp == null) {
+                exp = new Array(Driver.currentFileName, ctx.start.getLine(), null);
+            }
         }
         else if(ctx.primaryNoNewArray_lfno_primary() != null) {
-            return handlePrimaryNoNewArray_lfno_primary(ctx.primaryNoNewArray_lfno_primary());
+            exp = handlePrimaryNoNewArray_lfno_primary(ctx.primaryNoNewArray_lfno_primary());
         }
-        System.err.println("not covered primary");
-        return null;
+
+
+        if(ctx.primaryNoNewArray_lf_primary() != null) {
+
+            for(Java8Parser.PrimaryNoNewArray_lf_primaryContext left : ctx.primaryNoNewArray_lf_primary()) {
+                exp = handlePrimaryNoNewArray_lf_primaryContext(left, exp);
+            }
+        }
+
+        if(exp == null)
+            System.err.println("not covered primary");
+        return exp;
     }
 
     public Expression handleArrayInitializer(Java8Parser.ArrayInitializerContext ctx) {
@@ -63,6 +75,8 @@ public class MyPrimaryVisitor extends Java8BaseVisitor<Expression> {
     }
 
     public Expression handlePrimaryNoNewArray_lfno_primary(Java8Parser.PrimaryNoNewArray_lfno_primaryContext ctx) {
+
+
 //        	:	literal
 //                |	typeName ('[' ']')* '.' 'class'
 //                |	unannPrimitiveType ('[' ']')* '.' 'class'
@@ -99,6 +113,8 @@ public class MyPrimaryVisitor extends Java8BaseVisitor<Expression> {
             return handleMethodInvocation_lfno_primary(ctx.methodInvocation_lfno_primary());
         } else if (ctx.methodReference_lfno_primary() != null) {
             return handleMethodReference_lfno_primary(ctx.methodReference_lfno_primary());
+        } else if(ctx.getText().equalsIgnoreCase("this")) {
+            return new This(Driver.currentFileName, ctx.start.getLine());
         }
         System.out.println("ERROR: handlePrimaryNoNewArray_lfno_primary");
         return null;
@@ -263,6 +279,23 @@ public class MyPrimaryVisitor extends Java8BaseVisitor<Expression> {
 
     public Expression handleMethodReference_lfno_primary(Java8Parser.MethodReference_lfno_primaryContext ctx) {
         System.err.println("Found methodReference_lfno_primary");
+        return null;
+    }
+
+    private Expression handlePrimaryNoNewArray_lf_primaryContext(Java8Parser.PrimaryNoNewArray_lf_primaryContext ctx, Expression in) {
+        if(ctx.arrayAccess_lf_primary() != null) {
+            System.err.println("ctx.arrayAccess_lf_primary()");
+        } else if(ctx.classInstanceCreationExpression_lf_primary() != null) {
+            System.err.println("ctx.classInstanceCreationExpression_lf_primary()");
+        } else if(ctx.fieldAccess_lf_primary() != null) {
+            String id = ctx.fieldAccess_lf_primary().Identifier().getText();
+            return new LeftIdDot(Driver.currentFileName, ctx.start.getLine(), id, in);
+        } else if(ctx.methodInvocation_lf_primary() != null) {
+            System.err.println("ctx.methodInvocation_lf_primary()");
+        } else if(ctx.methodReference_lf_primary() != null) {
+            System.err.println("ctx.methodReference_lf_primary()");
+        }
+        System.err.println("No primary found for PrimaryNoNewArray_lf_primaryContext");
         return null;
     }
 

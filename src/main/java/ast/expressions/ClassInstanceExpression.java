@@ -26,7 +26,6 @@ public class ClassInstanceExpression extends Expression {
     @Override
     public String toString() {
         StringBuilder output = new StringBuilder();
-        System.err.println("line: " + line);
         output.append("new ");
         output.append(className.toString() + "(");
         for(Expression arg:args) {

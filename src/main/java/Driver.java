@@ -140,7 +140,7 @@ public class Driver {
 
             for (StartBlock method : methods) {
 
-                Set<Expression> notVisited = new HashSet<>();
+//                Set<Expression> notVisited = new HashSet<>();
 
                 String fileName = method.getClassName() + "-" + method.getFunctionName() + ".gv";
                 FileWriter writer = new FileWriter(new File("pdg/source/" + fileName));
@@ -148,19 +148,20 @@ public class Driver {
                 writer.write("digraph G {\n");
 
                 for(CFGBlock block : method.getMethodBlocks()) {
-                    notVisited.addAll(block.getExpressions());
                     for (Expression exp : block.getExpressions()) {
                         writer.write(exp.toGraphVis() + "\n");
                         for(Expression dependent : exp.getDataDependents()) {
-                            notVisited.remove(dependent);
                             writer.write(exp.toGraphVis() + " -> " + dependent.toGraphVis() + "\n");
+                        }
+                        for(Expression dependent : exp.getWawDependents()) {
+                            writer.write(exp.toGraphVis() + " -> " + dependent.toGraphVis() + " [style=dashed]\n");
                         }
                     }
                 }
 
-                for(Expression head : notVisited) {
-                    writer.write("ENTRY -> " + head.toGraphVis() + "\n");
-                }
+//                for(Expression head : notVisited) {
+//                    writer.write("ENTRY -> " + head.toGraphVis() + "\n");
+//                }
 
                 writer.write("}");
 

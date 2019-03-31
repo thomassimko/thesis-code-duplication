@@ -5,6 +5,13 @@ text = null
 System.out.println("Doing something", )
 text = text + "\n"
 text = text + "banana"
+out = text
+
+function testingMethodParams from class testObject
+num = 0
+text = null
+
+next = num + 1
 
 function main from class testFile
 thing = 2
@@ -32,10 +39,11 @@ true
 num = @temp1 ? 5 : 2
 testFile.getNum(4 + 3, )
 arr = {3, }
+useGlobal = thing + 100
 arr[2] = 4
 true
 
-thing = 2
+thing = 3
 @temp2 = thing
 thing = thing - 1
 
@@ -86,6 +94,12 @@ thing = 2
 
 function methodWithManyArgs from class testFile
 thing = 2
+
+useGlobal1 = thing + 10000
+j = 1
+j = 2
+j == 3
+
 
 
 function print from class PDGSample

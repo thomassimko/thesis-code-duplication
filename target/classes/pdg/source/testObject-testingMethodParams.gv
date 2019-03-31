@@ -1,0 +1,5 @@
+digraph G {
+"5 : num = 0"
+"6 : text = null"
+"20 : next = num + 1"
+}

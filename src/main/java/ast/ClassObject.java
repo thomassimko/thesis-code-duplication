@@ -12,12 +12,12 @@ import java.util.Map;
 
 public class ClassObject implements BlockStatement {
 
-    public List<Method> methods;
-    public List<DeclarationStatement> decls;
+    List<Method> methods;
+    private List<DeclarationStatement> decls;
     private String className;
-    String file;
+    private String file;
 
-    public ClassObject(String file, List<Method> methods, List<DeclarationStatement> decls, String className) {
+    public ClassObject(String file, List<Method> methods, String className) {
         this.file = file;
         this.methods = methods;
         this.decls = decls;
@@ -27,7 +27,7 @@ public class ClassObject implements BlockStatement {
     public CFGBlock generateCFG(CFGBlock block, CFGBlock finalBlock, HashMap<String, CFGBlock> labelMap, StartBlock start, List<Map<String, Left>> scope) {
 
         for(DeclarationStatement decl : decls) {
-            block = decl.generateCFG(block, finalBlock, labelMap, start, scope);
+            block = decl.generateCFGHelper(block, finalBlock, labelMap, start, scope, true);
         }
 
         return block;

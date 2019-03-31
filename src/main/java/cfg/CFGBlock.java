@@ -33,7 +33,7 @@ public abstract class CFGBlock {
 
     public void addExpression(Expression exp) {
         Expression newExp = exp.transformToTemp(expressionList);
-        if(!(newExp instanceof Left))
+        if (!(newExp instanceof Left))
             expressionList.add(newExp);
     }
 
@@ -69,8 +69,8 @@ public abstract class CFGBlock {
     }
 
     public void setTargetsAndSources() {
-        targets = new ArrayList<Left>();
-        sources = new ArrayList<Left>();
+        targets = new ArrayList<>();
+        sources = new ArrayList<>();
         for(Expression exp: expressionList) {
             exp.setUsesAndDefines();
             targets.addAll(exp.getTargets());
@@ -174,16 +174,13 @@ public abstract class CFGBlock {
 
     public void setDataDependents() {
         HashMap<Left, Expression> gen = new HashMap<>();
+
         for(int i = 0; i < expressionList.size(); i++) {
             Expression cur = expressionList.get(i);
-
-            System.out.println(cur.toString());
 
             List<Left> uses = cur.getSources();
 
             for(Left use : uses) {
-
-                System.out.println("\t" + use.toString());
 
                 if(gen.containsKey(use)) {
                     gen.get(use).addDataDependents(cur);
@@ -201,12 +198,15 @@ public abstract class CFGBlock {
                 }
             }
 
-
             for(Left target : cur.getTargets()) {
                 gen.put(target, cur);
             }
 
         }
+    }
+
+    public void setWawDependents() {
+
     }
 
     public HashMap<Left, Set<Expression>> getLiveOut() {

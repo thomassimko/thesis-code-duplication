@@ -68,6 +68,7 @@ I changed the generation of the gen and kill set to be:
 Specifically changed the gen.containsKey from kill.containsKey.  This is what i want correct? Otherwise the kill set would get nothing in it.
 
 
+In the PDG it shows dependencies for global variables, but they arent reset for each method.  I would want to do this correct?
 
 
 

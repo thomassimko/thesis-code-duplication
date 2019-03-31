@@ -21,14 +21,6 @@ public class LeftIdDot extends Left {
         return left.toString() + "." + id;
     }
 
-//    @Override
-//    public List<Expression> getExpressions() {
-//        List<Expression> output = new ArrayList<Expression>();
-//        output.addAll(left.getExpressions());
-//        output.add(this);
-//        return output;
-//    }
-
     public String getId() {
         return left.toString() + "." + id;
     }

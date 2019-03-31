@@ -3,5 +3,8 @@ digraph G {
 "6 : text = null"
 "13 : System.out.println(\"Doing something\", )"
 "14 : text = text + \"\n\""
+"14 : text = text + \"\n\"" -> "15 : text = text + \"banana\""
 "15 : text = text + \"banana\""
+"15 : text = text + \"banana\"" -> "16 : out = text"
+"16 : out = text"
 }

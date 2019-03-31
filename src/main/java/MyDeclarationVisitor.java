@@ -59,7 +59,7 @@ public class MyDeclarationVisitor extends Java8BaseVisitor<List<DeclarationState
         return declarations;
     }
 
-    private Literal getDefaultValueFromType(Java8Parser.UnannTypeContext ctx) {
+    public Literal getDefaultValueFromType(Java8Parser.UnannTypeContext ctx) {
         if (ctx.unannReferenceType() != null ){
             return new NullLiteral(Driver.currentFileName, ctx.start.getLine());
         }

@@ -13,5 +13,11 @@ public class testObject {
         System.out.println("Doing something");
         text = text + "\n";
         this.text = text + "banana";
+        String out = this.text;
+    }
+
+    public int testingMethodParams(int num) {
+        int next = num + 1;
+        return next;
     }
 }

@@ -12,23 +12,26 @@ public class MyBlockVisitor extends Java8BaseVisitor<Block> {
 
         List<BlockStatement> blockStmts = new ArrayList<BlockStatement>();
 
-        for(Java8Parser.BlockStatementContext blk : ctx.blockStatement()) {
+        if(ctx != null && ctx.blockStatement() != null) {
 
-            if(blk.statement() != null) {
-                Statement stmt = Driver.statementVisitor.visitStatement(blk.statement());
-                if(stmt != null)
-                    blockStmts.add(stmt);
-            }
-            if(blk.localVariableDeclarationStatement() != null) {
+            for (Java8Parser.BlockStatementContext blk : ctx.blockStatement()) {
 
-                blockStmts.addAll(Driver.declarationVisitor.visitLocalVariableDeclaration(blk.localVariableDeclarationStatement().localVariableDeclaration()));
+                if (blk.statement() != null) {
+                    Statement stmt = Driver.statementVisitor.visitStatement(blk.statement());
+                    if (stmt != null)
+                        blockStmts.add(stmt);
+                }
+                if (blk.localVariableDeclarationStatement() != null) {
 
-            }
-            if(blk.classDeclaration() != null) {
-                blockStmts.add(Driver.classDeclarationVisitor.visitClassDeclaration(blk.classDeclaration()));
+                    blockStmts.addAll(Driver.declarationVisitor.visitLocalVariableDeclaration(blk.localVariableDeclarationStatement().localVariableDeclaration()));
+
+                }
+                if (blk.classDeclaration() != null) {
+                    blockStmts.add(Driver.classDeclarationVisitor.visitClassDeclaration(blk.classDeclaration()));
+                }
             }
         }
 
-        return new Block(Driver.currentFileName, ctx.start.getLine(), blockStmts);
+        return new Block(Driver.currentFileName, ctx == null ? -1 : ctx.start.getLine(), blockStmts);
     }
 }

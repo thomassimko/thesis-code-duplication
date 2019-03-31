@@ -36,7 +36,9 @@ public class MyLeftHandSideVisitor extends Java8BaseVisitor<Expression> {
             return visitExpressionName(ctx.expressionName());
         }
         else if (ctx.fieldAccess() != null) {
-            return new Identifier(Driver.currentFileName, ctx.start.getLine(), ctx.fieldAccess().Identifier().getText());
+            Expression exp = Driver.primaryVisitor.visitPrimary(ctx.fieldAccess().primary());
+            LeftIdDot lft = new LeftIdDot(Driver.currentFileName, ctx.start.getLine(), ctx.fieldAccess().Identifier().getText(), exp);
+            return lft;
         }
 
         return super.visitLeftHandSide(ctx);

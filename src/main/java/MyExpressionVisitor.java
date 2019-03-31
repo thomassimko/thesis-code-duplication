@@ -11,6 +11,7 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
     public Expression visitExpression(Java8Parser.ExpressionContext ctx) {
 
         if (ctx.assignmentExpression() != null) {
+
             return handleAssignmentExpression(ctx.assignmentExpression());
         }
         else if (ctx.lambdaExpression() != null) {
@@ -81,7 +82,6 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
             return handleAssignment(ctx.assignment());
         }
         else if (ctx.conditionalExpression() != null) {
-
             return handleConditionalExpression(ctx.conditionalExpression());
 
         }
@@ -93,7 +93,6 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
         Expression exp = visitExpression(ctx.expression());
         String op = ctx.assignmentOperator().getText();
         Expression left = Driver.leftHandSideVisitor.visitLeftHandSide(ctx.leftHandSide());
-
         return new AssignmentExpression(Driver.currentFileName, ctx.start.getLine(), left, op, exp);
     }
 
@@ -215,7 +214,6 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
         } else if(ctx.unaryExpressionNotPlusMinus() != null) {
             return handleUnaryExpressionNotPlusMinus(ctx.unaryExpressionNotPlusMinus());
         }
-        System.out.println(ctx.getText());
         Expression exp = handleUnaryExpression(ctx.unaryExpression());
         return new UnaryExpression(Driver.currentFileName, ctx.start.getLine(), ctx.op.getText(), exp);
     }

@@ -1,6 +1,7 @@
 package ast;
 
 import ast.expressions.left.Left;
+import ast.statements.DeclarationStatement;
 import cfg.*;
 
 import java.util.HashMap;
@@ -13,11 +14,14 @@ public class Method {
     private String name;
     private int line;
     private String file;
+    private List<DeclarationStatement> params;
+    private List<DeclarationStatement> globalVars;
 
-    public Method(String file, int line, String name, Block block) {
+    public Method(String file, int line, String name, List<DeclarationStatement> params, Block block) {
         this.file = file;
         this.line = line;
         this.name = name;
+        this.params = params;
         this.body = block;
     }
 
@@ -27,12 +31,25 @@ public class Method {
 
     public CFGBlock buildCFG(StartBlock start, List<Map<String, Left>> scope) {
 
+        HashMap<String, CFGBlock> labelMap = new HashMap<String, CFGBlock>();
+
+        CFGBlock block = start;
+        for(DeclarationStatement global : globalVars) {
+            block = global.generateCFGHelper(block, null, null, start, scope, true);
+        }
+
+
         Map<String, Left> newMap = new HashMap<String, Left>();
         scope.add(newMap);
 
-        HashMap<String, CFGBlock> labelMap = new HashMap<String, CFGBlock>();
-
         CFGBlock bodyBlock = new BasicBlock();
+
+        for(DeclarationStatement stmt : params) {
+            //System.err.println("adding param: " + stmt.getVarName());
+            scope.get(scope.size() - 1).put(stmt.getVarName().toString(), stmt.getVarName());
+            //bodyBlock.addExpression(stmt.getExpression());
+        }
+
         start.addBlock(bodyBlock);
         EndBlock endBlock = new EndBlock();
 
@@ -46,5 +63,9 @@ public class Method {
         scope.remove(newMap);
 
         return start;
+    }
+
+    public void setGlobalVars(List<DeclarationStatement> globalVars) {
+        this.globalVars = globalVars;
     }
 }

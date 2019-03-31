@@ -33,10 +33,12 @@ public class testFile {
 
         int[] arr = new int[3];
 
+        int useGlobal = thing + 100;
+
         arr[2] = 4;
 
         if(true) {
-            int thing = 2;
+            int thing = 3;
             thing--;
         }
 
@@ -80,10 +82,7 @@ public class testFile {
     }
 
     public static void methodWithManyArgs(int num1, int num2, int num3) {
-        return;
-    }
-
-    {
+        int useGlobal1 = thing + 10000;
         int j = 1;
         j = 2;
         if(j == 3) {
