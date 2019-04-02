@@ -17,6 +17,7 @@ public class MyClassDeclarationVisitor extends Java8BaseVisitor<ClassObject> {
     public ClassObject visitClassBody(Java8Parser.ClassBodyContext ctx, String className) {
 
         List<Method> methods = new ArrayList<Method>();
+        int constructorCount = 0;
 
         List<Java8Parser.FieldDeclarationContext> fields = new ArrayList<>();
 
@@ -28,26 +29,36 @@ public class MyClassDeclarationVisitor extends Java8BaseVisitor<ClassObject> {
 
 
         for(Java8Parser.ClassBodyDeclarationContext bl : ctx.classBodyDeclaration()) {
-            //Ignore constructors
-            if(bl.classMemberDeclaration() != null) {
-//                if (bl.classMemberDeclaration().fieldDeclaration() != null) {
-//                    decls.addAll(Driver.declarationVisitor.visitFieldDeclaration(bl.classMemberDeclaration().fieldDeclaration()));
-//                }
-                if (bl.classMemberDeclaration().methodDeclaration() != null) {
-                    List<DeclarationStatement> decls = new ArrayList<DeclarationStatement>();
-
-
-                    for(Java8Parser.FieldDeclarationContext field : fields) {
-                        decls.addAll(Driver.declarationVisitor.visitFieldDeclaration(field));
-                    }
-                    Method method = Driver.methodVisitor.visitMethodDeclaration(bl.classMemberDeclaration().methodDeclaration());
-                    method.setGlobalVars(decls);
-
-                    methods.add(method);
-                }
+            Method method = null;
+            if(bl.constructorDeclaration() != null) {
+                method = handleConstructor(bl.constructorDeclaration(), ++constructorCount);
+            }
+            else if(bl.classMemberDeclaration() != null && bl.classMemberDeclaration().methodDeclaration() != null) {
+                method = Driver.methodVisitor.visitMethodDeclaration(bl.classMemberDeclaration().methodDeclaration());
+            }
+            if(method != null) {
+                method.setGlobalVars(generateDeclList(fields));
+                methods.add(method);
             }
         }
 
         return new ClassObject(Driver.currentFileName, methods, className);
+    }
+
+    private List<DeclarationStatement> generateDeclList(List<Java8Parser.FieldDeclarationContext> fields) {
+        List<DeclarationStatement> decls = new ArrayList<DeclarationStatement>();
+
+
+        for(Java8Parser.FieldDeclarationContext field : fields) {
+            decls.addAll(Driver.declarationVisitor.visitFieldDeclaration(field));
+        }
+        return decls;
+    }
+
+    private Method handleConstructor(Java8Parser.ConstructorDeclarationContext ctx, int count) {
+        Block block = Driver.blockVisitor.visitBlockStatements(ctx.constructorBody().blockStatements());
+        List<DeclarationStatement> params = new ArrayList<>();
+        Driver.methodVisitor.handleParameters(ctx.constructorDeclarator().formalParameterList(), params);
+        return new Method(Driver.currentFileName, ctx.start.getLine(), "constructor" + count, params, block);
     }
 }

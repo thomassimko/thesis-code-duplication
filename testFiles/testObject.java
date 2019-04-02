@@ -5,6 +5,12 @@ public class testObject {
     int num;
     String text;
 
+    public testObject(String num) {
+        String banana = num;
+        num = "hi";
+        String yeti = banana + num + this.num;
+    }
+
     public testObject(int num) {
         this.num = num;
     }

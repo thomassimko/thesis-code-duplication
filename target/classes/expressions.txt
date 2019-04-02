@@ -1,6 +1,20 @@
+function constructor1 from class testObject
+this.num = 0
+this.text = null
+
+banana = num
+num = "hi"
+yeti = banana + num
+
+function constructor2 from class testObject
+this.num = 0
+this.text = null
+
+this.num = num
+
 function doSomething from class testObject
-num = 0
-text = null
+this.num = 0
+this.text = null
 
 System.out.println("Doing something", )
 text = text + "\n"
@@ -8,13 +22,13 @@ this.text = text + "banana"
 out = this.text
 
 function testingMethodParams from class testObject
-num = 0
-text = null
+this.num = 0
+this.text = null
 
 next = num + 1
 
 function main from class testFile
-thing = 2
+this.thing = 2
 
 that = 0.0
 thisthat = 0.0
@@ -69,7 +83,7 @@ obj = new testObject(5, )
 obj.doSomething("bah", )
 
 function getNum from class testFile
-thing = 2
+this.thing = 2
 
 
 i = 0
@@ -88,12 +102,12 @@ j = 1
 i = i + 1
 
 function getArray from class testFile
-thing = 2
+this.thing = 2
 
 {{1, 2, 3, }, {4, 5, 6, }, }
 
 function methodWithManyArgs from class testFile
-thing = 2
+this.thing = 2
 
 useGlobal1 = this.thing + 10000
 j = 1

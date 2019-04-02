@@ -1,0 +1,9 @@
+digraph G {
+"5 : this.num = 0"
+"6 : this.text = null"
+"9 : banana = num"
+"9 : banana = num" -> "11 : yeti = banana + num"
+"10 : num = \"hi\""
+"10 : num = \"hi\"" -> "11 : yeti = banana + num"
+"11 : yeti = banana + num"
+}

@@ -1,10 +1,11 @@
 digraph G {
-"5 : num = 0"
-"6 : text = null"
-"13 : System.out.println(\"Doing something\", )"
-"14 : text = text + \"\n\""
-"14 : text = text + \"\n\"" -> "15 : this.text = text + \"banana\""
-"15 : this.text = text + \"banana\""
-"15 : this.text = text + \"banana\"" -> "16 : out = this.text"
-"16 : out = this.text"
+"5 : this.num = 0"
+"6 : this.text = null"
+"6 : this.text = null" -> "21 : this.text = text + \"banana\"" [style=dashed]
+"19 : System.out.println(\"Doing something\", )"
+"20 : text = text + \"\n\""
+"20 : text = text + \"\n\"" -> "21 : this.text = text + \"banana\""
+"21 : this.text = text + \"banana\""
+"21 : this.text = text + \"banana\"" -> "22 : out = this.text"
+"22 : out = this.text"
 }

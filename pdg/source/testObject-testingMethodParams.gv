@@ -1,5 +1,5 @@
 digraph G {
 "5 : this.num = 0"
 "6 : this.text = null"
-"20 : next = num + 1"
+"26 : next = num + 1"
 }

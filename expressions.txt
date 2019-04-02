@@ -1,3 +1,17 @@
+function constructor1 from class testObject
+this.num = 0
+this.text = null
+
+banana = num
+num = "hi"
+yeti = banana + num + this.num
+
+function constructor2 from class testObject
+this.num = 0
+this.text = null
+
+this.num = num
+
 function doSomething from class testObject
 this.num = 0
 this.text = null

@@ -4,9 +4,9 @@ digraph G {
 "6 : sum = 0" -> "9 : sum = sum + i"
 "6 : sum = 0" -> "9 : sum = sum + i" [style=dashed]
 "7 : i = 1"
+"7 : i = 1" -> "8 : i < 11"
 "7 : i = 1" -> "10 : i = i + 1"
 "7 : i = 1" -> "13 : System.out.println(i, )"
-"7 : i = 1" -> "8 : i < 11"
 "7 : i = 1" -> "9 : sum = sum + i"
 "7 : i = 1" -> "10 : i = i + 1" [style=dashed]
 "8 : i < 11"
@@ -15,10 +15,10 @@ digraph G {
 "9 : sum = sum + i" -> "9 : sum = sum + i"
 "9 : sum = sum + i" -> "9 : sum = sum + i" [style=dashed]
 "10 : i = i + 1"
+"10 : i = i + 1" -> "8 : i < 11"
 "10 : i = i + 1" -> "10 : i = i + 1"
 "10 : i = i + 1" -> "13 : System.out.println(i, )"
 "10 : i = i + 1" -> "9 : sum = sum + i"
-"10 : i = i + 1" -> "8 : i < 11"
 "10 : i = i + 1" -> "10 : i = i + 1" [style=dashed]
 "8 : i < 11"
 "12 : System.out.println(sum, )"

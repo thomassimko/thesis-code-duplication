@@ -13,7 +13,10 @@ public class MyMethodVisitor extends Java8BaseVisitor<Method> {
     public Method visitMethodDeclaration(Java8Parser.MethodDeclarationContext ctx) {
         Block blocks = Driver.blockVisitor.visitBlockStatements(ctx.methodBody().block().blockStatements());
         String name = ctx.methodHeader().methodDeclarator().Identifier().toString();
-        List<DeclarationStatement> params = handleParameters(ctx.methodHeader().methodDeclarator());
+        List<DeclarationStatement> params = new ArrayList<>();
+        if(ctx.methodHeader().methodDeclarator() != null) {
+            handleParameters(ctx.methodHeader().methodDeclarator().formalParameterList(), params);
+        }
         return new Method(Driver.currentFileName, ctx.start.getLine(), name, params, blocks);
     }
 
@@ -32,23 +35,18 @@ public class MyMethodVisitor extends Java8BaseVisitor<Method> {
 //        return declarations;
 //    }
 
-    private List<DeclarationStatement> handleParameters(Java8Parser.MethodDeclaratorContext ctx) {
-        List<DeclarationStatement> params = new ArrayList<>();
+    public void handleParameters(Java8Parser.FormalParameterListContext ctx, List<DeclarationStatement> params) {
 
         if (ctx != null) {
-            if (ctx.formalParameterList() != null) {
-                if (ctx.formalParameterList().formalParameters() != null) {
-                    for (Java8Parser.FormalParameterContext param : ctx.formalParameterList().formalParameters().formalParameter()) {
-                        handleFormalParameter(param, params);
-                    }
-                }
-                if(ctx.formalParameterList().lastFormalParameter() != null) {
-                    handleFormalParameter(ctx.formalParameterList().lastFormalParameter().formalParameter(), params);
+            if (ctx.formalParameters() != null) {
+                for (Java8Parser.FormalParameterContext param : ctx.formalParameters().formalParameter()) {
+                    handleFormalParameter(param, params);
                 }
             }
+            if(ctx.lastFormalParameter() != null) {
+                handleFormalParameter(ctx.lastFormalParameter().formalParameter(), params);
+            }
         }
-
-        return params;
     }
 
     private void handleFormalParameter(Java8Parser.FormalParameterContext ctx, List<DeclarationStatement> params) {
