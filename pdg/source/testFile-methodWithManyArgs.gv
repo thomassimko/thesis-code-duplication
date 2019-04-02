@@ -1,8 +1,9 @@
 digraph G {
-"7 : thing = 2"
-"7 : thing = 2" -> "85 : useGlobal1 = thing + 10000"
-"85 : useGlobal1 = thing + 10000"
+"7 : this.thing = 2"
+"7 : this.thing = 2" -> "85 : useGlobal1 = this.thing + 10000"
+"85 : useGlobal1 = this.thing + 10000"
 "86 : j = 1"
+"86 : j = 1" -> "87 : j = 2" [style=dashed]
 "87 : j = 2"
 "87 : j = 2" -> "88 : j == 3"
 "88 : j == 3"

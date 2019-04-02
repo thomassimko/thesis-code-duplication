@@ -5,6 +5,8 @@ import ast.expressions.left.Identifier;
 import ast.expressions.left.Left;
 
 import java.util.*;
+import java.util.function.BiConsumer;
+import java.util.function.Consumer;
 
 public abstract class CFGBlock {
 
@@ -153,7 +155,6 @@ public abstract class CFGBlock {
         boolean equals = newLiveOut.size() == liveOut.size();
 
         if(equals) {
-            //TODO: can I terminate based on keys only?
             String[] liveOutArr = liveOut.keySet().stream().map(Left::toString).toArray(String[]::new);
             String[] newLiveOutArr = newLiveOut.keySet().stream().map(Left::toString).toArray(String[]::new);
             Arrays.sort(liveOutArr);
@@ -172,31 +173,58 @@ public abstract class CFGBlock {
         }
     }
 
-    public void setDataDependents() {
+    public void setDependents() {
         HashMap<Left, Expression> gen = new HashMap<>();
+
+        BiConsumer<Left, Expression> addFromGenWaw = (a,cur) -> gen.get(a).addWawDependent(cur);
+        BiConsumer<Expression, Expression> addFromPredWaw = (a,cur) -> a.addWawDependent(cur);
+
+        BiConsumer<Left, Expression> addFromGen = (a,cur) -> gen.get(a).addDataDependents(cur);
+        BiConsumer<Expression, Expression> addFromPred = (a,cur) -> a.addDataDependents(cur);
+
 
         for(int i = 0; i < expressionList.size(); i++) {
             Expression cur = expressionList.get(i);
 
-            List<Left> uses = cur.getSources();
+            setDependentsHelper(cur, cur.getSources(), gen, addFromGen, addFromPred);
+            setDependentsHelper(cur, cur.getTargets(), gen, addFromGenWaw, addFromPredWaw);
 
-            for(Left use : uses) {
+            //List<Left> uses = cur.getSources();
 
-                if(gen.containsKey(use)) {
-                    gen.get(use).addDataDependents(cur);
-                } else {
-                    for (CFGBlock pred : predecessors) {
-                        Set<Expression> defs = pred.getLiveOut().get(use);
-                        if (defs != null) {
-                            for (Expression def : defs) {
-                                def.addDataDependents(cur);
-                            }
-                        } else {
-                            System.out.println("no def found for " + use.toString());
-                        }
-                    }
-                }
-            }
+//            for(Left use : uses) {
+//
+//                if(gen.containsKey(use)) {
+//                    gen.get(use).addDataDependents(cur);
+//                } else {
+//                    for (CFGBlock pred : predecessors) {
+//                        Set<Expression> defs = pred.getLiveOut().get(use);
+//                        if (defs != null) {
+//                            for (Expression def : defs) {
+//                                def.addDataDependents(cur);
+//                            }
+//                        } else {
+//                            System.out.println("no def found for " + use.toString());
+//                        }
+//                    }
+//                }
+//            }
+
+//            for(Left target : cur.getTargets()) {
+//                if(gen.containsKey(target)) {
+//                    gen.get(target).addWawDependent(cur);
+//                } else {
+//                    for (CFGBlock pred : predecessors) {
+//                        Set<Expression> defs = pred.getLiveOut().get(target);
+//                        if (defs != null) {
+//                            for (Expression def : defs) {
+//                                def.addWawDependent(cur);
+//                            }
+//                        } else {
+//                            System.out.println("no def found for " + target.toString());
+//                        }
+//                    }
+//                }
+//            }
 
             for(Left target : cur.getTargets()) {
                 gen.put(target, cur);
@@ -205,8 +233,22 @@ public abstract class CFGBlock {
         }
     }
 
-    public void setWawDependents() {
+    private void setDependentsHelper(Expression cur, List<Left> useTar, HashMap<Left, Expression> gen, BiConsumer<Left, Expression> addFromGen, BiConsumer<Expression, Expression> addFromPred) {
+        for(Left lft : useTar) {
 
+            if(gen.containsKey(lft)) {
+                addFromGen.accept(lft, cur);
+            } else {
+                for (CFGBlock pred : predecessors) {
+                    Set<Expression> defs = pred.getLiveOut().get(lft);
+                    if (defs != null) {
+                        for (Expression def : defs) {
+                            addFromPred.accept(def,cur);
+                        }
+                    }
+                }
+            }
+        }
     }
 
     public HashMap<Left, Set<Expression>> getLiveOut() {

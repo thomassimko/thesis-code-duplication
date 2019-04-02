@@ -35,7 +35,6 @@ public class AssignmentExpression extends Expression {
     }
 
     public void replaceRight(List<Map<String, Left>> scope) {
-        System.err.println(exp.toString());
         exp = getScopeId(scope, exp);
     }
 
@@ -66,5 +65,9 @@ public class AssignmentExpression extends Expression {
         }
 
         return this;
+    }
+
+    public void setLeft(Expression left) {
+        this.left = left;
     }
 }

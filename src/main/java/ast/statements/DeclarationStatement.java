@@ -41,15 +41,18 @@ public class DeclarationStatement extends Statement {
             exp.replaceRight(scope);
         }
 
+        String name = varName.toString();
+
         if(isClassDecl) {
             String file = varName.getFile();
             int line = varName.getLine();
-            //thisvarName = new LeftIdDot(file, line, varName.toString(), new This(file, line));
-            scope.get(scope.size() - 1).put("this." + varName.toString(), varName);
-            //System.err.println("added to scope " + scope.size() + " : this." + varName.toString());
+            varName = new LeftIdDot(file, line, varName.toString(), new This(file, line));
+            exp.setLeft(varName);
+            scope.get(scope.size() - 1).put("this." + name, varName);
+            System.err.println("added to scope " + scope.size() + " : this." + name);
         }
-        scope.get(scope.size() - 1).put(varName.toString(), varName);
-        //System.err.println("added to scope " + scope.size() + " : " + varName.toString());
+        scope.get(scope.size() - 1).put(name, varName);
+        System.err.println("added to scope " + scope.size() + " : " + name);
 
         if(exp != null) {
             block.addExpression(exp);

@@ -1,41 +1,47 @@
 digraph G {
 "7 : thing = 2"
-"7 : thing = 2" -> "36 : useGlobal = thing + 100"
-"7 : thing = 2" -> "45 : thing = thing + 1"
 "10 : that = 0.0"
 "10 : thisthat = 0.0"
 "11 : num = 6"
 "11 : num = 6" -> "13 : ham = num + 2"
+"11 : num = 6" -> "19 : num = 1" [style=dashed]
+"11 : num = 6" -> "21 : num = 2" [style=dashed]
 "12 : banana = \"check: \" + 6"
 "13 : ham = num + 2"
 "13 : ham = num + 2" -> "26 : ham = ham / 2"
 "13 : ham = num + 2" -> "18 : ham == 0"
+"13 : ham = num + 2" -> "26 : ham = ham / 2" [style=dashed]
 "14 : true"
 "15 : System.out.println(testFile.class, )"
 "18 : ham == 0"
 "19 : num = 1"
 "19 : num = 1" -> "30 : @temp1 = getNum(num, ) == 3"
+"19 : num = 1" -> "30 : num = @temp1 ? 5 : 2" [style=dashed]
 "21 : num = 2"
 "21 : num = 2" -> "30 : @temp1 = getNum(num, ) == 3"
+"21 : num = 2" -> "30 : num = @temp1 ? 5 : 2" [style=dashed]
 "26 : ham = ham / 2"
 "26 : ham = ham / 2" -> "26 : ham = ham / 2"
+"26 : ham = ham / 2" -> "26 : ham = ham / 2" [style=dashed]
 "25 : true"
 "30 : @temp1 = getNum(num, ) == 3"
 "30 : @temp1 = getNum(num, ) == 3" -> "30 : num = @temp1 ? 5 : 2"
 "30 : num = @temp1 ? 5 : 2"
-"30 : num = @temp1 ? 5 : 2" -> "62 : @temp5 = num"
 "30 : num = @temp1 ? 5 : 2" -> "62 : num = num + 1"
+"30 : num = @temp1 ? 5 : 2" -> "62 : @temp5 = num"
+"30 : num = @temp1 ? 5 : 2" -> "62 : num = num + 1" [style=dashed]
 "32 : testFile.getNum(4 + 3, )"
 "34 : arr = {3, }"
-"36 : useGlobal = thing + 100"
+"36 : useGlobal = this.thing + 100"
 "38 : arr[2] = 4"
 "40 : true"
 "41 : thing = 3"
 "41 : thing = 3" -> "42 : @temp2 = thing"
 "41 : thing = 3" -> "42 : thing = thing - 1"
+"41 : thing = 3" -> "42 : thing = thing - 1" [style=dashed]
 "42 : @temp2 = thing"
 "42 : thing = thing - 1"
-"45 : thing = thing + 1"
+"45 : this.thing = this.thing + 1"
 "47 : arr1 = {4, 5, }"
 "49 : arr1[1][2] = 9"
 "51 : System.out.println(arr1[0][0], )"
@@ -44,17 +50,22 @@ digraph G {
 "55 : list = new ArrayList()" -> "58 : x = list"
 "57 : sum = 0"
 "57 : sum = 0" -> "59 : sum = sum + x"
+"57 : sum = 0" -> "59 : sum = sum + x" [style=dashed]
 "58 : x = list"
 "58 : x = list" -> "59 : sum = sum + x"
+"58 : x = list" -> "58 : x = list" [style=dashed]
 "59 : sum = sum + x"
 "59 : sum = sum + x" -> "59 : sum = sum + x"
-"59 : sum = sum + x" -> "62 : @temp3 = sum"
 "59 : sum = sum + x" -> "62 : sum = sum + 1"
+"59 : sum = sum + x" -> "62 : @temp3 = sum"
+"59 : sum = sum + x" -> "59 : sum = sum + x" [style=dashed]
+"59 : sum = sum + x" -> "62 : sum = sum + 1" [style=dashed]
 "62 : @temp3 = sum"
 "62 : @temp3 = sum" -> "62 : methodWithManyArgs(@temp3, @temp4, @temp5, )"
 "62 : sum = sum + 1"
-"62 : sum = sum + 1" -> "62 : @temp4 = sum"
 "62 : sum = sum + 1" -> "62 : sum = sum - 1"
+"62 : sum = sum + 1" -> "62 : @temp4 = sum"
+"62 : sum = sum + 1" -> "62 : sum = sum - 1" [style=dashed]
 "62 : @temp4 = sum"
 "62 : @temp4 = sum" -> "62 : methodWithManyArgs(@temp3, @temp4, @temp5, )"
 "62 : sum = sum - 1"

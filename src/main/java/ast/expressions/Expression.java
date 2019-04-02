@@ -110,10 +110,7 @@ public abstract class Expression {
     }
 
     public String toGraphVis() {
-        String out = "\"" + this.getLine() + " : " + this.toString().replaceAll("\"", "\\\\\"") + "\"";
-
-        System.out.println(out);
-        return out;
+        return "\"" + this.getLine() + " : " + this.toString().replaceAll("\"", "\\\\\"") + "\"";
     }
 
     public String getFile() {

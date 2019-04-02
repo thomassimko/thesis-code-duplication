@@ -44,13 +44,6 @@ public class Driver {
         generateReachingDefinitions(allBlocks, starts);
         printReachingDefinitions(allBlocks);
 
-        System.out.println("------------------------------------------------------------------------");
-        for(CFGBlock block: allBlocks) {
-            System.out.println("BLOCK: " + block.getLabel());
-            block.setDataDependents();
-            System.out.println();
-        }
-
         printPDG(starts);
 
     }
@@ -116,6 +109,10 @@ public class Driver {
         while(!changed.isEmpty()) {
             CFGBlock cur = changed.remove();
             cur.setLiveOut(changed);
+        }
+
+        for(CFGBlock block: allBlocks) {
+            block.setDependents();
         }
     }
 

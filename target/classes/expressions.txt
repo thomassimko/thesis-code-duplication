@@ -4,8 +4,8 @@ text = null
 
 System.out.println("Doing something", )
 text = text + "\n"
-text = text + "banana"
-out = text
+this.text = text + "banana"
+out = this.text
 
 function testingMethodParams from class testObject
 num = 0
@@ -39,7 +39,7 @@ true
 num = @temp1 ? 5 : 2
 testFile.getNum(4 + 3, )
 arr = {3, }
-useGlobal = thing + 100
+useGlobal = this.thing + 100
 arr[2] = 4
 true
 
@@ -47,7 +47,7 @@ thing = 3
 @temp2 = thing
 thing = thing - 1
 
-thing = thing + 1
+this.thing = this.thing + 1
 arr1 = {4, 5, }
 arr1[1][2] = 9
 System.out.println(arr1[0][0], )
@@ -95,6 +95,7 @@ thing = 2
 function methodWithManyArgs from class testFile
 thing = 2
 
+useGlobal1 = this.thing + 10000
 j = 1
 j = 2
 j == 3

@@ -36,12 +36,6 @@ public class BinaryExpression extends Expression {
     @Override
     public void setScopeId(List<Map<String, Left>> scope) {
         right = getScopeId(scope, right);
-        if(left.toString().equals("thing") && right.toString().equals("100")) {
-            System.err.println("here");
-            for(Left scopeItem: scope.get(0).values()) {
-                System.err.println("item: " + scopeItem.toString());
-            }
-        }
         left = getScopeId(scope, left);
     }
 
