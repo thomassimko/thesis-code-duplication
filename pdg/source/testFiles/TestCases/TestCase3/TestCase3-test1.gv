@@ -3,26 +3,26 @@ digraph G {
 "11 : sum = 0" -> "14 : sum = sum + arr[i]"
 "11 : sum = 0" -> "14 : sum = sum + arr[i]" [style=dashed]
 "13 : i = 0"
-"13 : i = 0" -> "13 : i = i + 1"
-"13 : i = 0" -> "13 : @temp12 = i"
 "13 : i = 0" -> "13 : i < 3"
+"13 : i = 0" -> "13 : @temp8 = i"
+"13 : i = 0" -> "13 : i = i + 1"
 "13 : i = 0" -> "13 : i = i + 1" [style=dashed]
 "13 : i < 3"
 "14 : sum = sum + arr[i]"
 "14 : sum = sum + arr[i]" -> "14 : sum = sum + arr[i]"
 "14 : sum = sum + arr[i]" -> "14 : sum = sum + arr[i]" [style=dashed]
-"15 : @temp11 = count"
-"15 : @temp11 = count" -> "15 : @temp11 = count" [style=dashed]
+"15 : @temp7 = count"
+"15 : @temp7 = count" -> "15 : @temp7 = count" [style=dashed]
 "15 : count = count + 1"
 "15 : count = count + 1" -> "15 : count = count + 1"
-"15 : count = count + 1" -> "15 : @temp11 = count"
+"15 : count = count + 1" -> "15 : @temp7 = count"
 "15 : count = count + 1" -> "15 : count = count + 1" [style=dashed]
-"13 : @temp12 = i"
-"13 : @temp12 = i" -> "13 : @temp12 = i" [style=dashed]
+"13 : @temp8 = i"
+"13 : @temp8 = i" -> "13 : @temp8 = i" [style=dashed]
 "13 : i = i + 1"
-"13 : i = i + 1" -> "13 : i = i + 1"
-"13 : i = i + 1" -> "13 : @temp12 = i"
 "13 : i = i + 1" -> "13 : i < 3"
+"13 : i = i + 1" -> "13 : @temp8 = i"
+"13 : i = i + 1" -> "13 : i = i + 1"
 "13 : i = i + 1" -> "13 : i = i + 1" [style=dashed]
 "18 : average = sum1 * 1.0 / count"
 }

@@ -21,7 +21,6 @@ public class FileParser {
             for (File file : files) {
                 CharStream stream = CharStreams.fromFileName(file.getAbsolutePath());
                 Driver.currentFileName = file.getPath();
-                System.out.println(Driver.currentFileName);
                 Java8Lexer lexer = new Java8Lexer(stream);
                 CommonTokenStream tokens = new CommonTokenStream(lexer);
                 Java8Parser parser = new Java8Parser(tokens);

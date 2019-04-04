@@ -131,39 +131,6 @@ x = 6
 getNum(x, )
 getNum(x, )
 
-function exactClone1 from class Simple
-
-sum = 0
-count = 0
-
-i = 0
-
-i < 3
-
-sum = sum + arr[i]
-@temp7 = count
-count = count + 1
-@temp8 = i
-i = i + 1
-
-average = sum * 1.0 / count
-
-function exactClone2 from class Simple
-
-sum = 0
-
-i = 0
-
-i < 3
-
-sum = sum + arr[i]
-@temp9 = count
-count = count + 1
-@temp10 = i
-i = i + 1
-
-average = sum * 1.0 / count
-
 function print from class PDGSample
 
 sum = 0
@@ -186,9 +153,9 @@ i = 0
 i < 3
 
 sum = sum + arr[i]
-@temp11 = count
+@temp7 = count
 count = count + 1
-@temp12 = i
+@temp8 = i
 i = i + 1
 
 average = sum1 * 1.0 / count
@@ -203,9 +170,9 @@ i = 0
 i < 3
 
 sum = sum + arr[i]
-@temp13 = count
+@temp9 = count
 count = count + 1
-@temp14 = i
+@temp10 = i
 i = i + 1
 
 average = sum1 * 1.0 / count
@@ -220,9 +187,9 @@ i = 0
 i < 3
 
 sum = sum + arr[i]
-@temp15 = count
+@temp11 = count
 count = count + 1
-@temp16 = i
+@temp12 = i
 i = i + 1
 
 average = sum * 1.0 / count
@@ -238,7 +205,7 @@ i < 3
 
 sum = sum + arr[i]
 count = count + 1
-@temp17 = i
+@temp13 = i
 i = i + 1
 
 average = sum * 1.0 / count
@@ -261,7 +228,7 @@ i < 3
 
 sum = sum + arr[i]
 count = doSomething1(count, )
-@temp18 = i
+@temp14 = i
 i = i + 1
 
 average = sum * 1.0 / count
@@ -277,7 +244,7 @@ i < 3
 
 sum = sum + arr[i]
 count = doSomething2(count, )
-@temp19 = i
+@temp15 = i
 i = i + 1
 
 average = sum * 1.0 / count
@@ -291,9 +258,9 @@ i = 0
 i < 3
 
 sum1 = sum1 + arr[i]
-@temp20 = count1
+@temp16 = count1
 count1 = count1 + 1
-@temp21 = i
+@temp17 = i
 i = i + 1
 
 average1 = sum1 * 1.0 / count1
@@ -308,14 +275,48 @@ i = 0
 i < 3
 
 sum2 = sum2 + arr[i]
-@temp22 = count2
+@temp18 = count2
 count2 = count2 + 1
-@temp23 = i
+@temp19 = i
 i = i + 1
 
 average2 = sum2 * 1.0 / count2
 
 function test1 from class TestCase10
+
+sum = 0
+count = 0
+
+i = 0
+
+i < 3
+
+sum = sum + arr[i]
+@temp20 = count
+count = count + 1
+@temp21 = i
+i = i + 1
+
+average = sum * 1.0 / count
+
+function test2 from class TestCase10
+
+sum = 0
+count = 0
+
+i = 0
+
+i >= 3
+
+sum = sum + arr[i]
+@temp22 = count
+count = count + 1
+@temp23 = i
+i = i + 1
+
+average = sum * 1.0 / count
+
+function test1 from class TestCase11
 
 sum = 0
 count = 0
@@ -332,40 +333,6 @@ i = i + 1
 
 average = sum * 1.0 / count
 
-function test2 from class TestCase10
-
-sum = 0
-count = 0
-
-i = 0
-
-i >= 3
-
-sum = sum + arr[i]
-@temp26 = count
-count = count + 1
-@temp27 = i
-i = i + 1
-
-average = sum * 1.0 / count
-
-function test1 from class TestCase11
-
-sum = 0
-count = 0
-
-i = 0
-
-i < 3
-
-sum = sum + arr[i]
-@temp28 = count
-count = count + 1
-@temp29 = i
-i = i + 1
-
-average = sum * 1.0 / count
-
 function test2 from class TestCase11
 
 sum = 0
@@ -376,9 +343,9 @@ i = 0
 i < 3
 
 sum = sum + arr[i]
-@temp30 = count
+@temp26 = count
 count = count + 1
-@temp31 = i
+@temp27 = i
 i = i + 1
 
 average = sum * 1.0 / count
@@ -393,9 +360,9 @@ i = 0
 i < 3
 
 sum = sum + arr[i] + 3
-@temp32 = count
+@temp28 = count
 count = count + 1
-@temp33 = i
+@temp29 = i
 i = i + 1
 
 average = sum * 1.0 / count
@@ -411,9 +378,9 @@ i < 3
 
 sum = sum + arr[i]
 sum = sum + 3
-@temp34 = count
+@temp30 = count
 count = count + 1
-@temp35 = i
+@temp31 = i
 i = i + 1
 
 average = sum * 1.0 / count
@@ -428,9 +395,9 @@ i = 0
 i < 3
 
 sum = sum + arr[i]
-@temp36 = count
+@temp32 = count
 count = count + 1
-@temp37 = i
+@temp33 = i
 i = i + 1
 
 average = sum * 1.0 / count
@@ -445,9 +412,9 @@ i = 0
 3 > i
 
 sum = sum + arr[i]
-@temp38 = count
+@temp34 = count
 count = count + 1
-@temp39 = i
+@temp35 = i
 i = i + 1
 
 average = sum * 1.0 / count
@@ -462,9 +429,9 @@ i = 0
 i < 3
 
 sum = sum + arr[i] + 3
-@temp40 = count
+@temp36 = count
 count = count + 1
-@temp41 = i
+@temp37 = i
 i = i + 1
 
 average = sum * 1.0 / count
@@ -479,6 +446,40 @@ i = 0
 i < 3
 
 sum = 3 + sum + arr[i]
+@temp38 = count
+count = count + 1
+@temp39 = i
+i = i + 1
+
+average = sum * 1.0 / count
+
+function test1 from class TestCase1
+
+sum = 0
+count = 0
+
+i = 0
+
+i < 3
+
+sum = sum + arr[i]
+@temp40 = count
+count = count + 1
+@temp41 = i
+i = i + 1
+
+average = sum * 1.0 / count
+
+function test2 from class TestCase1
+
+sum = 0
+count = 0
+
+i = 0
+
+i < 3
+
+sum = sum + arr[i]
 @temp42 = count
 count = count + 1
 @temp43 = i
@@ -486,7 +487,7 @@ i = i + 1
 
 average = sum * 1.0 / count
 
-function test1 from class TestCase1
+function test1 from class TestCase6
 
 sum = 0
 count = 0
@@ -503,40 +504,6 @@ i = i + 1
 
 average = sum * 1.0 / count
 
-function test2 from class TestCase1
-
-sum = 0
-count = 0
-
-i = 0
-
-i < 3
-
-sum = sum + arr[i]
-@temp46 = count
-count = count + 1
-@temp47 = i
-i = i + 1
-
-average = sum * 1.0 / count
-
-function test1 from class TestCase6
-
-sum = 0
-count = 0
-
-i = 0
-
-i < 3
-
-sum = sum + arr[i]
-@temp48 = count
-count = count + 1
-@temp49 = i
-i = i + 1
-
-average = sum * 1.0 / count
-
 function test2 from class TestCase6
 
 sum = 0
@@ -545,9 +512,9 @@ i = 0
 i < 3
 
 sum = sum + arr[i]
-@temp50 = count
+@temp46 = count
 count = count + 1
-@temp51 = i
+@temp47 = i
 i = i + 1
 i < 3
 
