@@ -139,7 +139,10 @@ public class Driver {
 
 //                Set<Expression> notVisited = new HashSet<>();
 
-                String fileName = method.getClassName() + "-" + method.getFunctionName() + ".gv";
+                String path = method.getFile();
+                String fileName = path.replace(".java", "") + "-" + method.getFunctionName() + ".gv";
+                String dir = new File("pdg/source/" + fileName).getParent();
+                new File(dir).mkdirs();
                 FileWriter writer = new FileWriter(new File("pdg/source/" + fileName));
 
                 writer.write("digraph G {\n");

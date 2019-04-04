@@ -29,6 +29,10 @@ public class Method {
         return name;
     }
 
+    public String getFile() {
+        return file;
+    }
+
     public CFGBlock buildCFG(StartBlock start, List<Map<String, Left>> scope) {
 
         HashMap<String, CFGBlock> labelMap = new HashMap<String, CFGBlock>();

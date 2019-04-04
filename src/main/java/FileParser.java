@@ -20,7 +20,8 @@ public class FileParser {
             Program program = new Program();
             for (File file : files) {
                 CharStream stream = CharStreams.fromFileName(file.getAbsolutePath());
-                Driver.currentFileName = file.getAbsolutePath();
+                Driver.currentFileName = file.getPath();
+                System.out.println(Driver.currentFileName);
                 Java8Lexer lexer = new Java8Lexer(stream);
                 CommonTokenStream tokens = new CommonTokenStream(lexer);
                 Java8Parser parser = new Java8Parser(tokens);
@@ -49,7 +50,7 @@ public class FileParser {
                     if (file.isFile() && file.getName().endsWith(".java")) {
                         files.add(file);
                     } else if (file.isDirectory()) {
-                        listf(file.getAbsolutePath(), files);
+                        listf(file.getPath(), files);
                     }
                 }
             }

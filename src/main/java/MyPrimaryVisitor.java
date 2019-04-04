@@ -4,6 +4,7 @@ import ast.expressions.left.ArrayAccessExpression;
 import ast.expressions.left.Identifier;
 import ast.expressions.left.LeftIdDot;
 import ast.literal.Array;
+import ast.literal.Super;
 import ast.literal.This;
 import org.antlr.v4.runtime.tree.TerminalNode;
 
@@ -173,6 +174,14 @@ public class MyPrimaryVisitor extends Java8BaseVisitor<Expression> {
 
     public Expression handleFieldAccess_lfno_primary(Java8Parser.FieldAccess_lfno_primaryContext ctx) {
 
+        int line = ctx.start.getLine();
+        String file = Driver.currentFileName;
+
+//        Expression exp = new Super(file, line);
+//        if(ctx.typeName() != null) {
+//            ctx.typeName().
+//        }
+
         System.err.println("Found fieldAccess_lfno_primary");
         return null;
 
@@ -227,19 +236,19 @@ public class MyPrimaryVisitor extends Java8BaseVisitor<Expression> {
         if(ctx.literal() != null) {
             return Driver.literalVisitor.visitLiteral(ctx.literal());
         } else if(ctx.typeDotClass() != null) {
-            System.err.println("primary visitor type.class");
+            return handleTypeDotClass(ctx.typeDotClass());
         } else if(ctx.voidDotClass() != null) {
-            System.err.println("primary visitor void.class");
+            return handleVoidDotClass(ctx.voidDotClass());
         } else if(ctx.typeDotThis() != null) {
-            System.err.println("primary visitor type.this");
+            return handleTypeDotThis(ctx.typeDotThis());
         } else if(ctx.primitiveTypeDotClass() != null) {
-            System.err.println("primary visitor primitive type.class");
+            return handlePrimitiveTypeDotClass(ctx.primitiveTypeDotClass());
         } else if(ctx.expression() != null) {
             return Driver.expressionVisitor.visitExpression(ctx.expression());
         } else if(ctx.classInstanceCreationExpression_lfno_primary() != null) {
-            System.err.println("primary visitor classInstanceCreationExpression_lfno_primary");
+            return handleClassInstanceCreationExpression_lfno_primary(ctx.classInstanceCreationExpression_lfno_primary());
         } else if(ctx.fieldAccess_lfno_primary() != null) {
-            System.err.println("primary visitor fieldAccess_lfno_primary");
+            return handleFieldAccess_lfno_primary(ctx.fieldAccess_lfno_primary());
         } else if(ctx.methodInvocation_lfno_primary() != null) {
             return handleMethodInvocation_lfno_primary(ctx.methodInvocation_lfno_primary());
         } else if(ctx.methodReference_lfno_primary() != null) {

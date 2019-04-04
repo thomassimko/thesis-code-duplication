@@ -90,4 +90,32 @@ public class testFile {
         }
     }
 
+    public static void checkPlanar() {
+
+        int x = 0;
+
+        if (true) {
+
+            x = 5;
+        }
+        if(true) {
+            x = 6;
+        }
+//        if(true) {
+//            x = 7;
+//        }
+//        if(true) {
+//            x = 8;
+//        }
+
+        //int y = 4 == 3 ? x : 6;
+        getNum(x);
+        getNum(x);
+
+//        int z = y + x;
+//        int t = x + y;
+
+
+    }
+
 }

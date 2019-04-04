@@ -43,7 +43,7 @@ public class Program {
                 newMap = new HashMap<>();
                 scope.add(newMap);
 
-                StartBlock start = new StartBlock(method.getName(), clss.getName());
+                StartBlock start = new StartBlock(method.getFile(), method.getName(), clss.getName());
 
                 //does nothing
                 //clss.generateCFG(start, null, null, null, scope);

@@ -8,9 +8,11 @@ public class StartBlock extends CFGBlock {
     private String functionName;
     private String className;
     private List<CFGBlock> methodBlocks;
+    private String file;
 
-    public StartBlock(String functionName, String className) {
+    public StartBlock(String file, String functionName, String className) {
         super("Start" + functionName);
+        this.file = file;
         this.functionName = functionName;
         this.className = className;
         methodBlocks = new ArrayList<>();
@@ -31,5 +33,9 @@ public class StartBlock extends CFGBlock {
 
     public String getClassName() {
         return className;
+    }
+
+    public String getFile() {
+        return file;
     }
 }

@@ -70,6 +70,16 @@ Specifically changed the gen.containsKey from kill.containsKey.  This is what i 
 
 In the PDG it shows dependencies for global variables, but they arent reset for each method.  I would want to do this correct?
 
+---------------------------------------------------
+
+Migler:
+
+What is similar?
+Subgraph isoomorphism
+
+Olmen paper
+
+
 
 
 
