@@ -1,18 +1,18 @@
 digraph G {
 "24 : sum2 = 0"
-"24 : sum2 = 0" -> "32 : average2 = sum2 * 1.0 / count2"
 "24 : sum2 = 0" -> "28 : sum2 = sum2 + arr[i]"
+"24 : sum2 = 0" -> "32 : average2 = sum2 * 1.0 / count2"
 "24 : sum2 = 0" -> "28 : sum2 = sum2 + arr[i]" [style=dashed]
 "25 : count = 0"
 "27 : i = 0"
-"27 : i = 0" -> "27 : i = i + 1"
-"27 : i = 0" -> "27 : i < 3"
 "27 : i = 0" -> "27 : @temp19 = i"
+"27 : i = 0" -> "27 : i < 3"
+"27 : i = 0" -> "27 : i = i + 1"
 "27 : i = 0" -> "27 : i = i + 1" [style=dashed]
 "27 : i < 3"
 "28 : sum2 = sum2 + arr[i]"
-"28 : sum2 = sum2 + arr[i]" -> "32 : average2 = sum2 * 1.0 / count2"
 "28 : sum2 = sum2 + arr[i]" -> "28 : sum2 = sum2 + arr[i]"
+"28 : sum2 = sum2 + arr[i]" -> "32 : average2 = sum2 * 1.0 / count2"
 "28 : sum2 = sum2 + arr[i]" -> "28 : sum2 = sum2 + arr[i]" [style=dashed]
 "29 : @temp18 = count2"
 "29 : @temp18 = count2" -> "29 : @temp18 = count2" [style=dashed]
@@ -23,9 +23,9 @@ digraph G {
 "27 : @temp19 = i"
 "27 : @temp19 = i" -> "27 : @temp19 = i" [style=dashed]
 "27 : i = i + 1"
-"27 : i = i + 1" -> "27 : i = i + 1"
-"27 : i = i + 1" -> "27 : i < 3"
 "27 : i = i + 1" -> "27 : @temp19 = i"
+"27 : i = i + 1" -> "27 : i < 3"
+"27 : i = i + 1" -> "27 : i = i + 1"
 "27 : i = i + 1" -> "27 : i = i + 1" [style=dashed]
 "32 : average2 = sum2 * 1.0 / count2"
 }

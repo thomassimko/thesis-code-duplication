@@ -4,9 +4,9 @@ digraph G {
 "17 : sum = 0" -> "24 : average = sum * 1.0 / count"
 "17 : sum = 0" -> "20 : sum = sum + arr[i]" [style=dashed]
 "19 : i = 0"
-"19 : i = 0" -> "19 : @temp14 = i"
-"19 : i = 0" -> "19 : i < 3"
 "19 : i = 0" -> "19 : i = i + 1"
+"19 : i = 0" -> "19 : i < 3"
+"19 : i = 0" -> "19 : @temp14 = i"
 "19 : i = 0" -> "19 : i = i + 1" [style=dashed]
 "19 : i < 3"
 "20 : sum = sum + arr[i]"
@@ -18,9 +18,9 @@ digraph G {
 "19 : @temp14 = i"
 "19 : @temp14 = i" -> "19 : @temp14 = i" [style=dashed]
 "19 : i = i + 1"
-"19 : i = i + 1" -> "19 : @temp14 = i"
-"19 : i = i + 1" -> "19 : i < 3"
 "19 : i = i + 1" -> "19 : i = i + 1"
+"19 : i = i + 1" -> "19 : i < 3"
+"19 : i = i + 1" -> "19 : @temp14 = i"
 "19 : i = i + 1" -> "19 : i = i + 1" [style=dashed]
 "24 : average = sum * 1.0 / count"
 }

@@ -72,7 +72,7 @@ public abstract class Expression {
                 Map<String, Left> local = scope.get(i);
                 if (local.containsKey(left.toString())) {
                     Left var = local.get(left.toString());
-                    System.out.println(left.toString() + " at line " + left.getLine() + " points to " + var.toString() + " which was declared at line " + var.getLine());
+                    //System.out.println(left.toString() + " at line " + left.getLine() + " points to " + var.toString() + " which was declared at line " + var.getLine());
                     return var;
                 }
             }

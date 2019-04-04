@@ -3,7 +3,6 @@ import ast.expressions.Expression;
 import ast.expressions.left.Left;
 import cfg.CFGBlock;
 import cfg.StartBlock;
-import org.antlr.v4.runtime.*;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -137,8 +136,6 @@ public class Driver {
 
             for (StartBlock method : methods) {
 
-//                Set<Expression> notVisited = new HashSet<>();
-
                 String path = method.getFile();
                 String fileName = path.replace(".java", "") + "-" + method.getFunctionName() + ".gv";
                 String dir = new File("pdg/source/" + fileName).getParent();
@@ -158,10 +155,6 @@ public class Driver {
                         }
                     }
                 }
-
-//                for(Expression head : notVisited) {
-//                    writer.write("ENTRY -> " + head.toGraphVis() + "\n");
-//                }
 
                 writer.write("}");
 

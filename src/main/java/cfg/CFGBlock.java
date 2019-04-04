@@ -21,6 +21,8 @@ public abstract class CFGBlock {
     private HashMap<Left, Expression> kill;
     private HashMap<Left, Set<Expression>> liveOut;
 
+    private static LiveOutComparator liveOutComparator = new LiveOutComparator();
+
     public CFGBlock(String label) {
         this.label = label + BlockCounter.getNextBlockLabel();
         this.expressionList = new ArrayList<>();
@@ -105,6 +107,8 @@ public abstract class CFGBlock {
             Expression exp = expressionList.get(i);
             List<Left> targets = exp.getTargets();
 
+
+
             for(int j = targets.size() - 1; j >= 0; j--) {
                 Left target = targets.get(j);
                 if(!gen.containsKey(target)) {
@@ -114,6 +118,17 @@ public abstract class CFGBlock {
                 }
             }
         }
+//
+//        System.err.println(this.getLabel());
+//        System.err.println("Gen: ");
+//        for(Left left: gen.keySet()) {
+//            System.err.println("\t" + left.toString());
+//        }
+//        System.err.println("Kill: ");
+//        for(Left left: kill.keySet()) {
+//            System.err.println("\t" + left.toString());
+//        }
+//        System.err.println();
     }
 
     public void setLiveOut(Queue<CFGBlock> changed) {
@@ -136,8 +151,7 @@ public abstract class CFGBlock {
                     if (in.containsKey(key)) {
                         in.get(key).addAll(pred.get(key));
                     } else {
-                        Set<Expression> newSet = new HashSet<>();
-                        newSet.addAll(pred.get(key));
+                        Set<Expression> newSet = new HashSet<>(pred.get(key));
                         in.put(key, newSet);
                     }
                 }
@@ -152,22 +166,7 @@ public abstract class CFGBlock {
             }
         }
 
-        boolean equals = newLiveOut.size() == liveOut.size();
-
-        if(equals) {
-            String[] liveOutArr = liveOut.keySet().stream().map(Left::toString).toArray(String[]::new);
-            String[] newLiveOutArr = newLiveOut.keySet().stream().map(Left::toString).toArray(String[]::new);
-            Arrays.sort(liveOutArr);
-            Arrays.sort(newLiveOutArr);
-
-            for(int i = 0; i < liveOutArr.length; i++) {
-                if (!liveOutArr[i].equals(newLiveOutArr[i])) {
-                    equals = false;
-                }
-            }
-        }
-
-        if(!equals) {
+        if(liveOutComparator.compare(this.liveOut, newLiveOut) != 0) {
             this.liveOut = newLiveOut;
             changed.addAll(successors);
         }

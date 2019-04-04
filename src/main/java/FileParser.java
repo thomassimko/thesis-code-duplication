@@ -11,8 +11,6 @@ import java.util.List;
 
 public class FileParser {
 
-    private static Program program = new Program(new ArrayList<>());
-
     public static Program parseFiles(String directory) {
         try {
             List<File> files = new ArrayList<>();

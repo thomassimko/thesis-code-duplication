@@ -20,7 +20,6 @@ public class ClassObject implements BlockStatement {
     public ClassObject(String file, List<Method> methods, String className) {
         this.file = file;
         this.methods = methods;
-        this.decls = decls;
         this.className = className;
     }
 

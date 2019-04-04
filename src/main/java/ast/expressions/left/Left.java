@@ -2,7 +2,7 @@ package ast.expressions.left;
 
 import ast.expressions.Expression;
 
-public abstract class Left extends Expression {
+public abstract class Left extends Expression implements Comparable<Left> {
 
     public Left(String file, int line) {
         super(file, line);
@@ -13,4 +13,9 @@ public abstract class Left extends Expression {
     }
 
     public abstract String getId();
+
+    @Override
+    public int compareTo(Left o) {
+        return this.toString().compareTo(o.toString());
+    }
 }

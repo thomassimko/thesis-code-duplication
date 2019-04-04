@@ -49,10 +49,10 @@ public class DeclarationStatement extends Statement {
             varName = new LeftIdDot(file, line, varName.toString(), new This(file, line));
             exp.setLeft(varName);
             scope.get(scope.size() - 1).put("this." + name, varName);
-            System.err.println("added to scope " + scope.size() + " : this." + name);
+            //System.err.println("added to scope " + scope.size() + " : this." + name);
         }
         scope.get(scope.size() - 1).put(name, varName);
-        System.err.println("added to scope " + scope.size() + " : " + name);
+        //System.err.println("added to scope " + scope.size() + " : " + name);
 
         if(exp != null) {
             block.addExpression(exp);

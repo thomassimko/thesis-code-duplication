@@ -1,0 +1,20 @@
+digraph G {
+"122 : num = 5"
+"122 : num = 5" -> "124 : num = num + i"
+"122 : num = 5" -> "124 : num = num + i" [style=dashed]
+"123 : i = 0"
+"123 : i = 0" -> "123 : i < 5"
+"123 : i = 0" -> "123 : i = i + num"
+"123 : i = 0" -> "124 : num = num + i"
+"123 : i = 0" -> "123 : i = i + num" [style=dashed]
+"123 : i < 5"
+"124 : num = num + i"
+"124 : num = num + i" -> "123 : i = i + num"
+"124 : num = num + i" -> "124 : num = num + i"
+"124 : num = num + i" -> "124 : num = num + i" [style=dashed]
+"123 : i = i + num"
+"123 : i = i + num" -> "123 : i < 5"
+"123 : i = i + num" -> "123 : i = i + num"
+"123 : i = i + num" -> "124 : num = num + i"
+"123 : i = i + num" -> "123 : i = i + num" [style=dashed]
+}

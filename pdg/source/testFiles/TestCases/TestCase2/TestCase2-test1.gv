@@ -16,8 +16,8 @@ digraph G {
 "15 : @temp16 = count1"
 "15 : @temp16 = count1" -> "15 : @temp16 = count1" [style=dashed]
 "15 : count1 = count1 + 1"
-"15 : count1 = count1 + 1" -> "15 : count1 = count1 + 1"
 "15 : count1 = count1 + 1" -> "15 : @temp16 = count1"
+"15 : count1 = count1 + 1" -> "15 : count1 = count1 + 1"
 "15 : count1 = count1 + 1" -> "15 : count1 = count1 + 1" [style=dashed]
 "13 : @temp17 = i"
 "13 : @temp17 = i" -> "13 : @temp17 = i" [style=dashed]
