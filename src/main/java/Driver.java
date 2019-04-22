@@ -3,6 +3,16 @@ import ast.expressions.Expression;
 import ast.expressions.left.Left;
 import cfg.CFGBlock;
 import cfg.StartBlock;
+import graph.GraphComparison;
+import graph.IsomorphismFinder;
+import graph.SubGraphCreator;
+import graph.SubGraphSizeComparator;
+import main.ArgumentHandler;
+import main.OutputFormatter;
+import org.jgrapht.Graph;
+import org.jgrapht.GraphMapping;
+import org.jgrapht.graph.DefaultDirectedGraph;
+import org.jgrapht.graph.DefaultEdge;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -25,16 +35,30 @@ public class Driver {
     static final MyLiteralVisitor literalVisitor = new MyLiteralVisitor();
 
     static String currentFileName = null;
+    static boolean checkLiterals = false;
 
     public static void main(String[] args) {
 
-        Program program = FileParser.parseFiles(args[0]);
+        String directory = args[0];
+
+        List<Map<Expression, Expression>> mappings = Driver.run(directory);
+
+        OutputFormatter.printFilesAndLines(mappings);
+
+    }
+
+    public static List<Map<Expression, Expression>> run(String directoy) {
+        Program program = FileParser.parseFiles(directoy);
 
         List<StartBlock> starts = program.getCFG();
         List<CFGBlock> allBlocks = new ArrayList<CFGBlock>();
+        List<Expression> allExp = new ArrayList<>();
 
         for(StartBlock start: starts) {
             allBlocks.addAll(start.getMethodBlocks());
+        }
+        for(CFGBlock block: allBlocks) {
+            allExp.addAll(block.getExpressions());
         }
 
         graphCFG(starts);
@@ -45,6 +69,7 @@ public class Driver {
 
         printPDG(starts);
 
+        return GraphComparison.compareGraphs(allExp);
     }
 
     private static void graphCFG(List<StartBlock> blockList) {

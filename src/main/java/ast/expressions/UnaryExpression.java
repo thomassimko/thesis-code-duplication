@@ -38,4 +38,15 @@ public class UnaryExpression extends Expression {
         exp = exp.transformToTemp(expressions);
         return exp;
     }
+
+    @Override
+    public int graphicalCompareTo(Expression o) {
+        if(o instanceof UnaryExpression) {
+            UnaryExpression unary = (UnaryExpression) o;
+            if(op.compareTo(unary.op) == 0) {
+                return exp.graphicalCompareTo(unary.exp);
+            }
+        }
+        return 0;
+    }
 }

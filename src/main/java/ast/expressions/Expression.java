@@ -15,6 +15,7 @@ public abstract class Expression {
     private List<Left> sources;
     private Set<Expression> dataDependents;
     private Set<Expression> wawDependents;
+    private Set<Expression> dependentOn;
 
     public Expression(String file, int line) {
         this.file = file;
@@ -23,15 +24,10 @@ public abstract class Expression {
         sources = new ArrayList<>();
         dataDependents = new HashSet<>();
         wawDependents = new HashSet<>();
+        dependentOn = new HashSet<>();
     }
 
     public abstract String toString();
-
-//    public List<Expression> getExpressions() {
-//        List<Expression> output = new ArrayList<Expression>();
-//        output.add(this);
-//        return output;
-//    }
 
     public int getLine() {
         return line;
@@ -64,10 +60,6 @@ public abstract class Expression {
         }
         if(exp instanceof Left) {
             Left left = (Left) exp;
-
-            //if(left instanceof LeftIdDot && ((LeftIdDot) left).)
-
-
             for (int i = scope.size() - 1; i >= 0; i--) {
                 Map<String, Left> local = scope.get(i);
                 if (local.containsKey(left.toString())) {
@@ -95,6 +87,7 @@ public abstract class Expression {
 
     public void addDataDependents(Expression exp) {
         this.dataDependents.add(exp);
+        exp.dependentOn.add(this);
     }
 
     public Set<Expression> getDataDependents() {
@@ -103,10 +96,15 @@ public abstract class Expression {
 
     public void addWawDependent(Expression exp) {
         this.wawDependents.add(exp);
+        exp.dependentOn.add(this);
+
     }
 
     public Set<Expression> getWawDependents() {
         return wawDependents;
+    }
+    public Set<Expression> getDependentOn() {
+        return dependentOn;
     }
 
     public String toGraphVis() {
@@ -117,7 +115,6 @@ public abstract class Expression {
         return file;
     }
 
-
-    //target: assignment expression, post unary, pre unary, method call
+    public abstract int graphicalCompareTo(Expression exp);
 
 }

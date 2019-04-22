@@ -54,4 +54,18 @@ public class TernaryExpression extends Expression{
 
         return this;
     }
+
+    @Override
+    public int graphicalCompareTo(Expression o) {
+        if(o instanceof TernaryExpression) {
+            TernaryExpression ternary = (TernaryExpression) o;
+            int condComp = cond.graphicalCompareTo(ternary.cond);
+            int trueComp = trueExp.graphicalCompareTo(ternary.trueExp);
+            int falseComp = falseExp.graphicalCompareTo(ternary.falseExp);
+            if(condComp == 0 && trueComp == 0 && falseComp == 0) {
+                return 0;
+            }
+        }
+        return -1;
+    }
 }

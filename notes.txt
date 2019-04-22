@@ -80,6 +80,53 @@ Subgraph isoomorphism
 Olmen paper
 
 
+___________________________________________________
+
+https://jgrapht.org/javadoc/org/jgrapht/alg/isomorphism/VF2SubgraphIsomorphismInspector.html
+
+Assignment Expression : Check type match, Compare right sides, compare left type only\
+    -- flag for comparing left side
+Binary Expression : Check type match, check op, compare right, compare left
+Call Expression : Check function name, check args ---- double check if they are in temps
+Cast Expression : (SHOULD I REMOVE CASTS FROM GRAPH????) Remove cast and check (how to deal with other object?)
+Class Instance Expression : classname, aarg
+Class Type : Check className
+Post Unary Expression : (not used)
+Pre Unary Expression : (not used)
+Ternary Expression :
+Type : (Might not even be in graph)
+UnaryExpression : check type match, Check op, check exp
+
+Literals : (Should I ignore and just say they are the same? Double vs float, int vs long?)
+
+    -- just check if integral types
+    -- can flag hard check values
+
+
+
+Side notes:
+Should I make switch statements and ternary expressions appear like if statements?
+
+
+-----------------
+Add size check for subgraph
+get it to run
+store the already created graphs and dont continue if already processed
+# nodes in subgraph is larger
+
+
+------------------------------
+
+Array access doesnt have uses
+Return statements dont add source -- not in pdg
+Begin analysis
+    - 102 code
+    - time trials
+    - count the number
+    - see which cases it finds
+    -
+
+
 
 
 

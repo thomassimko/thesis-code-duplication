@@ -55,4 +55,16 @@ public class BinaryExpression extends Expression {
         right = right.transformToTemp(expressions);
         return this;
     }
+
+    @Override
+    public int graphicalCompareTo(Expression o) {
+
+        if(o instanceof BinaryExpression) {
+            BinaryExpression bin = (BinaryExpression) o;
+            if(operator.equals(((BinaryExpression) o).operator)) {
+                return left.graphicalCompareTo(bin.left) == 0 ? right.graphicalCompareTo(bin.right) : -1;
+            }
+        }
+        return -1;
+    }
 }

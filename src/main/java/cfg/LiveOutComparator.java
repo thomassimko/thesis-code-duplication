@@ -2,6 +2,7 @@ package cfg;
 
 import ast.expressions.Expression;
 import ast.expressions.left.Left;
+import ast.expressions.left.LeftComparator;
 
 import java.util.*;
 
@@ -19,8 +20,8 @@ public class LiveOutComparator implements Comparator<HashMap<Left, Set<Expressio
 
         Left[] keyArr1 = key1.stream().toArray(Left[]::new);
         Left[] keyArr2 = key2.stream().toArray(Left[]::new);
-        Arrays.sort(keyArr1);
-        Arrays.sort(keyArr2);
+        Arrays.sort(keyArr1, new LeftComparator());
+        Arrays.sort(keyArr2, new LeftComparator());
 
         for(int i = 0; i < keyArr1.length; i++) {
 

@@ -43,4 +43,10 @@ public class CastExpression extends Expression {
     public Expression transformToTemp(List<Expression> expressions) {
         return exp = exp.transformToTemp(expressions);
     }
+
+    @Override
+    public int graphicalCompareTo(Expression o) {
+        System.err.println("FOUND CAST COMPARE TO EXPRESSION");
+        return 0;
+    }
 }

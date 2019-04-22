@@ -9,12 +9,13 @@ public class TestCase5 {
     public int doSomething1(int x){
         return x+1;
     }
-    public void doSomething2(int x){
+    public int doSomething2(int x){
         return x+1;
     }
 
-    public void test1(int[] arr){
+    public double test1(int[] arr){
         int sum=0;
+        int count = 0;
 
         for(int i=0;i< 3;i++){
             sum=sum+arr[i];
@@ -26,7 +27,7 @@ public class TestCase5 {
         return average;
     }
 
-    public void test2(int[] arr){
+    public double test2(int[] arr){
         int sum = 0;
         int count = 0;
 

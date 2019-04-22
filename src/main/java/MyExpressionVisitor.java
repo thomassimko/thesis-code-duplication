@@ -230,9 +230,9 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
 
     private Expression handleCastExpression(Java8Parser.CastExpressionContext ctx) {
         if(ctx.unaryExpression() != null) {
-            return new CastExpression(Driver.currentFileName, ctx.start.getLine(), handleUnaryExpression(ctx.unaryExpression()));
+            return handleUnaryExpression(ctx.unaryExpression());
         } else if (ctx.unaryExpressionNotPlusMinus() != null) {
-            return new CastExpression(Driver.currentFileName, ctx.start.getLine(), handleUnaryExpressionNotPlusMinus(ctx.unaryExpressionNotPlusMinus()));
+            return handleUnaryExpressionNotPlusMinus(ctx.unaryExpressionNotPlusMinus());
         } else {
             //TODO: lambda exp
             ctx.lambdaExpression();

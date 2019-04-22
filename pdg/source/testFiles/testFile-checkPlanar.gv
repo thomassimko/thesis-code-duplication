@@ -1,19 +1,19 @@
 digraph G {
 "7 : this.thing = 2"
 "95 : x = 0"
-"95 : x = 0" -> "112 : getNum(x, )"
 "95 : x = 0" -> "113 : getNum(x, )"
-"95 : x = 0" -> "99 : x = 5" [style=dashed]
+"95 : x = 0" -> "112 : getNum(x, )"
 "95 : x = 0" -> "102 : x = 6" [style=dashed]
+"95 : x = 0" -> "99 : x = 5" [style=dashed]
 "97 : true"
 "99 : x = 5"
-"99 : x = 5" -> "112 : getNum(x, )"
 "99 : x = 5" -> "113 : getNum(x, )"
+"99 : x = 5" -> "112 : getNum(x, )"
 "99 : x = 5" -> "102 : x = 6" [style=dashed]
 "101 : true"
 "102 : x = 6"
-"102 : x = 6" -> "112 : getNum(x, )"
 "102 : x = 6" -> "113 : getNum(x, )"
+"102 : x = 6" -> "112 : getNum(x, )"
 "112 : getNum(x, )"
 "113 : getNum(x, )"
 }

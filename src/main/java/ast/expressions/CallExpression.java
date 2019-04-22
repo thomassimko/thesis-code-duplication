@@ -74,4 +74,23 @@ public class CallExpression extends Expression {
         }
         return this;
     }
+
+    @Override
+    public int graphicalCompareTo(Expression o) {
+        if(o instanceof CallExpression) {
+            CallExpression call = (CallExpression) o;
+            if(methodName.graphicalCompareTo(call.methodName) == 0) {
+                if(argumentList.size() != call.argumentList.size())
+                    return -1;
+                else
+                    for(int i = 0; i < argumentList.size(); i++) {
+                        if(argumentList.get(i).graphicalCompareTo(call.argumentList.get(i)) != 0) {
+                            return -1;
+                        }
+                    }
+                return 0;
+            }
+        }
+        return -1;
+    }
 }

@@ -1,5 +1,8 @@
 package ast.literal;
 
+import ast.expressions.Expression;
+import main.ArgumentHandler;
+
 public class FloatLiteral extends Literal {
 
     private float value;
@@ -12,5 +15,17 @@ public class FloatLiteral extends Literal {
     @Override
     public String toString() {
         return value + "";
+    }
+
+    @Override
+    public int graphicalCompareTo(Expression o) {
+        if(o instanceof FloatLiteral) {
+            if (ArgumentHandler.checkLiterals) {
+                return value == ((FloatLiteral) o).value ? 0 : -1;
+            } else {
+                return 0;
+            }
+        }
+        return -1;
     }
 }

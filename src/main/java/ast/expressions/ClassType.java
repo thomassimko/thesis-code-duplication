@@ -35,4 +35,12 @@ public class ClassType extends Expression {
     public Expression transformToTemp(List<Expression> expressions) {
         return this;
     }
+
+    public int graphicalCompareTo(Expression o) {
+        if(o instanceof ClassType) {
+            ClassType other = (ClassType) o;
+            return other.className.compareTo(className);
+        }
+        return -1;
+    }
 }

@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ClassObject implements BlockStatement {
+public class ClassObject implements BlockStatement, Comparable<ClassObject> {
 
     List<Method> methods;
     private List<DeclarationStatement> decls;
@@ -34,5 +34,9 @@ public class ClassObject implements BlockStatement {
 
     public String getName() {
         return className;
+    }
+
+    public int compareTo(ClassObject o) {
+        return className.compareTo(o.className);
     }
 }

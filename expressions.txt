@@ -1,12 +1,34 @@
-function cyclic from class testFile
+function test1 from class TestCase1
 
-num = 5
+sum = 0
+count = 0
 
 i = 0
 
-i < 5
+i < 3
 
-num = num + i
-i = i + num
+sum = sum + arr[i]
+@temp1 = count
+count = count + 1
+@temp2 = i
+i = i + 1
 
+average = sum * 1.0 / count
+
+function test2 from class TestCase1
+
+sum = 0
+count = 0
+
+i = 0
+
+i < 3
+
+sum = sum + arr[i]
+@temp3 = count
+count = count + 1
+@temp4 = i
+i = i + 1
+
+average = sum * 1.0 / count
 

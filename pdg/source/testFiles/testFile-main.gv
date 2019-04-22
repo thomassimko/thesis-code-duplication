@@ -7,8 +7,8 @@ digraph G {
 "10 : thisthat = 0.0"
 "11 : num = 6"
 "11 : num = 6" -> "13 : ham = num + 2"
-"11 : num = 6" -> "21 : num = 2" [style=dashed]
 "11 : num = 6" -> "19 : num = 1" [style=dashed]
+"11 : num = 6" -> "21 : num = 2" [style=dashed]
 "12 : banana = \"check: \" + 6"
 "13 : ham = num + 2"
 "13 : ham = num + 2" -> "26 : ham = ham / 2"
@@ -30,8 +30,8 @@ digraph G {
 "30 : @temp1 = getNum(num, ) == 3"
 "30 : @temp1 = getNum(num, ) == 3" -> "30 : num = @temp1 ? 5 : 2"
 "30 : num = @temp1 ? 5 : 2"
-"30 : num = @temp1 ? 5 : 2" -> "62 : num = num + 1"
 "30 : num = @temp1 ? 5 : 2" -> "62 : @temp5 = num"
+"30 : num = @temp1 ? 5 : 2" -> "62 : num = num + 1"
 "30 : num = @temp1 ? 5 : 2" -> "62 : num = num + 1" [style=dashed]
 "32 : testFile.getNum(4 + 3, )"
 "34 : arr = {3, }"
@@ -39,8 +39,8 @@ digraph G {
 "38 : arr[2] = 4"
 "40 : true"
 "41 : thing = 3"
-"41 : thing = 3" -> "42 : @temp2 = thing"
 "41 : thing = 3" -> "42 : thing = thing - 1"
+"41 : thing = 3" -> "42 : @temp2 = thing"
 "41 : thing = 3" -> "42 : thing = thing - 1" [style=dashed]
 "42 : @temp2 = thing"
 "42 : thing = thing - 1"
@@ -58,16 +58,16 @@ digraph G {
 "58 : x = list" -> "59 : sum = sum + x"
 "58 : x = list" -> "58 : x = list" [style=dashed]
 "59 : sum = sum + x"
+"59 : sum = sum + x" -> "62 : sum = sum + 1"
 "59 : sum = sum + x" -> "59 : sum = sum + x"
 "59 : sum = sum + x" -> "62 : @temp3 = sum"
-"59 : sum = sum + x" -> "62 : sum = sum + 1"
-"59 : sum = sum + x" -> "59 : sum = sum + x" [style=dashed]
 "59 : sum = sum + x" -> "62 : sum = sum + 1" [style=dashed]
+"59 : sum = sum + x" -> "59 : sum = sum + x" [style=dashed]
 "62 : @temp3 = sum"
 "62 : @temp3 = sum" -> "62 : methodWithManyArgs(@temp3, @temp4, @temp5, )"
 "62 : sum = sum + 1"
-"62 : sum = sum + 1" -> "62 : sum = sum - 1"
 "62 : sum = sum + 1" -> "62 : @temp4 = sum"
+"62 : sum = sum + 1" -> "62 : sum = sum - 1"
 "62 : sum = sum + 1" -> "62 : sum = sum - 1" [style=dashed]
 "62 : @temp4 = sum"
 "62 : @temp4 = sum" -> "62 : methodWithManyArgs(@temp3, @temp4, @temp5, )"

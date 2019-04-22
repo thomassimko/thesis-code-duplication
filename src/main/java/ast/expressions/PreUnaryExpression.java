@@ -48,4 +48,10 @@ public class PreUnaryExpression extends Expression {
 
         return exp;
     }
+
+    @Override
+    public int graphicalCompareTo(Expression o) {
+        System.err.println("FOUND PRE UNARY COMPARE TO EXPRESSION");
+        return 0;
+    }
 }

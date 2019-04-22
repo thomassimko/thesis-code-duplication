@@ -2,6 +2,7 @@ package ast.expressions.left;
 
 import ast.expressions.AssignmentExpression;
 import ast.expressions.Expression;
+import main.ArgumentHandler;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,6 +49,9 @@ public class ArrayAccessExpression extends Left {
 
     public void setScopeId(List<Map<String, Left>> scope) {
         left = getScopeId(scope, left);
+        for(int i = 0; i < accessors.size(); i++) {
+            accessors.set(i, getScopeId(scope, accessors.get(i)));
+        }
     }
 
     public Expression getLeft() {
@@ -56,6 +60,7 @@ public class ArrayAccessExpression extends Left {
 
     @Override
     public void setUsesAndDefines() {
+
         for(Expression exp: accessors) {
             setUseAndDefineForChild(exp);
             addSource(exp);
@@ -69,6 +74,12 @@ public class ArrayAccessExpression extends Left {
             accessors.set(i, exp.transformToTemp(expressions));
         }
         return this;
+    }
+
+    public int graphicalCompareTo(Expression o) {
+        if(ArgumentHandler.checkLeft)
+            return o instanceof ArrayAccessExpression ? 0 : -1;
+        return 0;
     }
 }
 

@@ -9,13 +9,14 @@ public class TestCase3 {
 
     public double test1(int[] arr) {
         int sum = 0;
+        int count = 0;
 
         for(int i = 0; i < 3; i++) {
             sum = sum + arr[i];
             count++;
         }
 
-        double average = (sum1 * 1.0) / count;
+        double average = (sum * 1.0) / count;
 
         return average;
     }
@@ -29,7 +30,7 @@ public class TestCase3 {
             count++;
         }
 
-        float average = (sum1 * 1.0) / count;
+        float average = (float) ((sum * 1.0) / count);
 
         return average;
     }

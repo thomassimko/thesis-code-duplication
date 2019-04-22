@@ -66,6 +66,8 @@ public class Method {
 
         scope.remove(newMap);
 
+        //start.addBlock(endBlock);
+
         return start;
     }
 

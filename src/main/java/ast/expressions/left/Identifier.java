@@ -1,6 +1,7 @@
 package ast.expressions.left;
 
 import ast.expressions.Expression;
+import main.ArgumentHandler;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,5 +38,12 @@ public class Identifier extends Left {
     @Override
     public Expression transformToTemp(List<Expression> expressions) {
         return this;
+    }
+
+    @Override
+    public int graphicalCompareTo(Expression o) {
+        if(ArgumentHandler.checkLeft)
+            return o instanceof Identifier ? 0 : -1;
+        return 0;
     }
 }

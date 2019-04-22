@@ -1,12 +1,9 @@
 package cfg;
 
 import ast.expressions.*;
-import ast.expressions.left.Identifier;
 import ast.expressions.left.Left;
-
 import java.util.*;
 import java.util.function.BiConsumer;
-import java.util.function.Consumer;
 
 public abstract class CFGBlock {
 
@@ -188,43 +185,6 @@ public abstract class CFGBlock {
             setDependentsHelper(cur, cur.getSources(), gen, addFromGen, addFromPred);
             setDependentsHelper(cur, cur.getTargets(), gen, addFromGenWaw, addFromPredWaw);
 
-            //List<Left> uses = cur.getSources();
-
-//            for(Left use : uses) {
-//
-//                if(gen.containsKey(use)) {
-//                    gen.get(use).addDataDependents(cur);
-//                } else {
-//                    for (CFGBlock pred : predecessors) {
-//                        Set<Expression> defs = pred.getLiveOut().get(use);
-//                        if (defs != null) {
-//                            for (Expression def : defs) {
-//                                def.addDataDependents(cur);
-//                            }
-//                        } else {
-//                            System.out.println("no def found for " + use.toString());
-//                        }
-//                    }
-//                }
-//            }
-
-//            for(Left target : cur.getTargets()) {
-//                if(gen.containsKey(target)) {
-//                    gen.get(target).addWawDependent(cur);
-//                } else {
-//                    for (CFGBlock pred : predecessors) {
-//                        Set<Expression> defs = pred.getLiveOut().get(target);
-//                        if (defs != null) {
-//                            for (Expression def : defs) {
-//                                def.addWawDependent(cur);
-//                            }
-//                        } else {
-//                            System.out.println("no def found for " + target.toString());
-//                        }
-//                    }
-//                }
-//            }
-
             for(Left target : cur.getTargets()) {
                 gen.put(target, cur);
             }
@@ -234,7 +194,6 @@ public abstract class CFGBlock {
 
     private void setDependentsHelper(Expression cur, List<Left> useTar, HashMap<Left, Expression> gen, BiConsumer<Left, Expression> addFromGen, BiConsumer<Expression, Expression> addFromPred) {
         for(Left lft : useTar) {
-
             if(gen.containsKey(lft)) {
                 addFromGen.accept(lft, cur);
             } else {

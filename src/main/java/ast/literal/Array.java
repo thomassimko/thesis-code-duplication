@@ -29,6 +29,7 @@ public class Array extends Literal {
 
     @Override
     public void setUsesAndDefines() {
+
         for(Expression exp: expressionList) {
             setUseAndDefineForChild(exp);
             addSource(exp);
@@ -38,5 +39,10 @@ public class Array extends Literal {
     @Override
     public void setScopeId(List<Map<String, Left>> scope) {
         //System.err.println("Array set scope not implemented");
+    }
+
+    @Override
+    public int graphicalCompareTo(Expression o) {
+        return (o instanceof Array) ? 0 : -1;
     }
 }

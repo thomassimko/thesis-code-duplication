@@ -70,4 +70,13 @@ public class AssignmentExpression extends Expression {
     public void setLeft(Expression left) {
         this.left = left;
     }
+
+    @Override
+    public int graphicalCompareTo(Expression o) {
+        if(o instanceof AssignmentExpression) {
+            AssignmentExpression asgn = (AssignmentExpression) o;
+            return exp.graphicalCompareTo(asgn.exp);
+        }
+        return -1;
+    }
 }

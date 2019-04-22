@@ -65,4 +65,22 @@ public class ClassInstanceExpression extends Expression {
     public Expression transformToTemp(List<Expression> expressions) {
         return this;
     }
+
+    @Override
+    public int graphicalCompareTo(Expression o) {
+        if(o instanceof ClassInstanceExpression) {
+            ClassInstanceExpression other = (ClassInstanceExpression) o;
+            if(className.graphicalCompareTo(other.className) == 0) {
+                if(args.size() == other.args.size()) {
+                    for(int i = 0; i < args.size(); i++) {
+                        if (args.get(i).graphicalCompareTo(other.args.get(i)) != 0) {
+                            return -1;
+                        }
+                    }
+                    return 0;
+                }
+            }
+        }
+        return -1;
+    }
 }

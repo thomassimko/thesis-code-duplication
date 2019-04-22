@@ -52,4 +52,10 @@ public class PostUnaryExpression extends Expression {
 
         return temp;
     }
+
+    @Override
+    public int graphicalCompareTo(Expression o) {
+        System.err.println("FOUND POST UNARY COMPARE TO EXPRESSION");
+        return 0;
+    }
 }
