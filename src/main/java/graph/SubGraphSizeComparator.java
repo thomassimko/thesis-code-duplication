@@ -4,10 +4,10 @@ import ast.expressions.Expression;
 import java.util.Comparator;
 import java.util.Map;
 
-public class SubGraphSizeComparator implements Comparator<Map<Expression, Expression>> {
+public class SubGraphSizeComparator implements Comparator<Mapping> {
 
     @Override
-    public int compare(Map<Expression, Expression> o1, Map<Expression, Expression> o2) {
-        return o2.size() - o1.size();
+    public int compare(Mapping o1, Mapping o2) {
+        return o2.getSize() - o1.getSize();
     }
 }

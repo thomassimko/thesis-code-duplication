@@ -13,7 +13,7 @@ import java.util.*;
 
 public class IsomorphismFinder {
 
-    public static void findSubgraphs(Graph<Expression, DefaultEdge> subgraph, Graph<Expression, DefaultEdge> largeGraph, List<Expression> added, Set<Set<Expression>> seenGraphs, PriorityQueue<Map<Expression, Expression>> mappings) {
+    public static void findSubgraphs(Graph<Expression, DefaultEdge> subgraph, Graph<Expression, DefaultEdge> largeGraph, List<Expression> added, Set<Set<Expression>> seenGraphs, PriorityQueue<Mapping> mappings) {
 
         //get all of the outgoing/incoming vertices minus the ones already in the graph
         Set<Expression> possibleNext = new HashSet<>();
@@ -61,7 +61,7 @@ public class IsomorphismFinder {
                                 if(corresponding != null)
                                     newMapping.put(exp, corresponding);
                             }
-                            mappings.add(newMapping);
+                            mappings.add(new Mapping(newMapping));
                         }
 
                     }

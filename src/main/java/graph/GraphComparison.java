@@ -12,9 +12,9 @@ import java.util.stream.Collectors;
 
 public class GraphComparison {
 
-    public static List<Map<Expression, Expression>> compareGraphs(List<Expression> expressions) {
+    public static List<Mapping> compareGraphs(List<Expression> expressions) {
 
-        PriorityQueue<Map<Expression, Expression>> mappings = new PriorityQueue<>(10, new SubGraphSizeComparator());
+        PriorityQueue<Mapping> mappings = new PriorityQueue<Mapping>(10, new SubGraphSizeComparator());
         List<Graph<Expression, DefaultEdge>> graphList = generateLargeGraphs(expressions);
 
         //Generate the mappings
@@ -41,24 +41,25 @@ public class GraphComparison {
             }
         }
         System.out.println("Unfiltered: " + mappings.size());
-        List<Map<Expression, Expression>> filteredMappings = filterMappings(mappings);
+        List<Mapping> filteredMappings = filterMappings(mappings);
         System.out.println("Filtered: " + filteredMappings.size() + "\n\n");
 
         return filteredMappings;
     }
 
-    private static List<Map<Expression, Expression>> filterMappings(PriorityQueue<Map<Expression, Expression>> mappings) {
-        List<Map<Expression, Expression>> filteredMapList = new ArrayList<>();
-        List<Map<Expression, Expression>> mapListMask = new ArrayList<>();
+    private static List<Mapping> filterMappings(PriorityQueue<Mapping> mappings) {
+        List<Mapping> filteredMapList = new ArrayList<>();
+        List<Mapping> mapListMask = new ArrayList<>();
 
         while(mappings.size() > 0) {
-            Map<Expression, Expression> map = mappings.poll();
+            Mapping map = mappings.poll();
             boolean isSubMap = false;
             //System.out.println(map.size());
 
             //if one is a subset of the other map
-            for(Map<Expression, Expression> filteredMap : mapListMask) {
-                if(filteredMap.entrySet().containsAll(map.entrySet())) {
+            for(Mapping filteredMap : mapListMask) {
+
+                if(filteredMap.isSubMapping(map)) {
                     isSubMap = true;
                     break;
                 }
@@ -70,7 +71,7 @@ public class GraphComparison {
                 //add the list to the mask
                 mapListMask.add(map);
                 //add the reversed list to the mask
-                mapListMask.add(map.entrySet().stream().collect(Collectors.toMap(Map.Entry::getValue, Map.Entry::getKey)));
+                mapListMask.add(map.getReverse());
             }
         }
         return filteredMapList;

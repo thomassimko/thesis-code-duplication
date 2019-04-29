@@ -9,8 +9,9 @@ digraph G {
 "12 : count1 = 0" -> "16 : @temp16 = count1"
 "12 : count1 = 0" -> "16 : count1 = count1 + 1" [style=dashed]
 "14 : i = 0"
-"14 : i = 0" -> "14 : i = i + 1"
 "14 : i = 0" -> "14 : i < 3"
+"14 : i = 0" -> "15 : sum1 = sum1 + arr[i]"
+"14 : i = 0" -> "14 : i = i + 1"
 "14 : i = 0" -> "14 : @temp17 = i"
 "14 : i = 0" -> "14 : i = i + 1" [style=dashed]
 "14 : i < 3"
@@ -28,8 +29,9 @@ digraph G {
 "14 : @temp17 = i"
 "14 : @temp17 = i" -> "14 : @temp17 = i" [style=dashed]
 "14 : i = i + 1"
-"14 : i = i + 1" -> "14 : i = i + 1"
 "14 : i = i + 1" -> "14 : i < 3"
+"14 : i = i + 1" -> "15 : sum1 = sum1 + arr[i]"
+"14 : i = i + 1" -> "14 : i = i + 1"
 "14 : i = i + 1" -> "14 : @temp17 = i"
 "14 : i = i + 1" -> "14 : i = i + 1" [style=dashed]
 "19 : average1 = sum1 * 1.0 / count1"

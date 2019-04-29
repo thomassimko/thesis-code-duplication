@@ -2,50 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5edafadb-72a2-4840-931c-a298e06c996e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ast/expressions/left/LeftComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/graph/ExpressionComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/graph/GraphComparison.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/graph/IsomorphismFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/graph/SubGraphCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/graph/SubGraphSizeComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/ArgumentHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/OutputFormatter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DriverTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/graph/LineOrderingComparator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cfg.gv" beforeDir="false" afterPath="$PROJECT_DIR$/cfg.gv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg.png" beforeDir="false" afterPath="$PROJECT_DIR$/cfg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expressions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/expressions.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg.gv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/images/testFiles/PDGSample-print.png" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/images/testFiles/PDGSample-print.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase1/TestCase1-test1.png" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase1/TestCase1-test1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase1/TestCase1-test2.png" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase1/TestCase1-test2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase10/TestCase10-test1.png" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase10/TestCase10-test1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase10/TestCase10-test2.png" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase10/TestCase10-test2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase11/TestCase11-test1.png" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase11/TestCase11-test1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase11/TestCase11-test2.png" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase11/TestCase11-test2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase2/TestCase2-test1.png" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase2/TestCase2-test1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase2/TestCase2-test2.png" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase2/TestCase2-test2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase3/TestCase3-test1.png" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase3/TestCase3-test1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase3/TestCase3-test2.png" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase3/TestCase3-test2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase4/TestCase4-test1.png" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase4/TestCase4-test1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase4/TestCase4-test2.png" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase4/TestCase4-test2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase5/TestCase5-test1.png" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase5/TestCase5-test1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase5/TestCase5-test2.png" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase5/TestCase5-test2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase6/TestCase6-test1.png" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase6/TestCase6-test1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase6/TestCase6-test2.png" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase6/TestCase6-test2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase7/TestCase7-test1.png" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase7/TestCase7-test1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase7/TestCase7-test2.png" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase7/TestCase7-test2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase8/TestCase8-test1.png" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase8/TestCase8-test1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase8/TestCase8-test2.png" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase8/TestCase8-test2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase9/TestCase9-test1.png" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase9/TestCase9-test1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase9/TestCase9-test2.png" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/images/testFiles/TestCases/TestCase9/TestCase9-test2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/images/testFiles/testFile-checkPlanar.png" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/images/testFiles/testFile-checkPlanar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/images/testFiles/testFile-cyclic.png" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/images/testFiles/testFile-cyclic.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/images/testFiles/testFile-getNum.png" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/images/testFiles/testFile-getNum.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/images/testFiles/testFile-main.png" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/images/testFiles/testFile-main.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/source/testFiles/PDGSample-print.gv" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/source/testFiles/PDGSample-print.gv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pdg/source/testFiles/TestCases/TestCase1/TestCase1-test1.gv" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/source/testFiles/TestCases/TestCase1/TestCase1-test1.gv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pdg/source/testFiles/TestCases/TestCase1/TestCase1-test2.gv" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/source/testFiles/TestCases/TestCase1/TestCase1-test2.gv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pdg/source/testFiles/TestCases/TestCase10/TestCase10-test1.gv" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/source/testFiles/TestCases/TestCase10/TestCase10-test1.gv" afterDir="false" />
@@ -68,46 +29,12 @@
       <change beforePath="$PROJECT_DIR$/pdg/source/testFiles/TestCases/TestCase8/TestCase8-test2.gv" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/source/testFiles/TestCases/TestCase8/TestCase8-test2.gv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pdg/source/testFiles/TestCases/TestCase9/TestCase9-test1.gv" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/source/testFiles/TestCases/TestCase9/TestCase9-test1.gv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pdg/source/testFiles/TestCases/TestCase9/TestCase9-test2.gv" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/source/testFiles/TestCases/TestCase9/TestCase9-test2.gv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/source/testFiles/testFile-checkPlanar.gv" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/source/testFiles/testFile-checkPlanar.gv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/source/testFiles/testFile-cyclic.gv" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/source/testFiles/testFile-cyclic.gv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/source/testFiles/testFile-getNum.gv" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/source/testFiles/testFile-getNum.gv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdg/source/testFiles/testFile-main.gv" beforeDir="false" afterPath="$PROJECT_DIR$/pdg/source/testFiles/testFile-main.gv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyExpressionVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyExpressionVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ast/ClassObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ast/ClassObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ast/Method.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ast/Method.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ast/expressions/AssignmentExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ast/expressions/AssignmentExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ast/expressions/BinaryExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ast/expressions/BinaryExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ast/expressions/CallExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ast/expressions/CallExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ast/expressions/CastExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ast/expressions/CastExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ast/expressions/ClassInstanceExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ast/expressions/ClassInstanceExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ast/expressions/ClassType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ast/expressions/ClassType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ast/expressions/Expression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ast/expressions/Expression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ast/expressions/PostUnaryExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ast/expressions/PostUnaryExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ast/expressions/PreUnaryExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ast/expressions/PreUnaryExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ast/expressions/TernaryExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ast/expressions/TernaryExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ast/expressions/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ast/expressions/Type.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ast/expressions/UnaryExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ast/expressions/UnaryExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ast/expressions/left/ArrayAccessExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ast/expressions/left/ArrayAccessExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ast/expressions/left/Identifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ast/expressions/left/Identifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ast/expressions/left/Left.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ast/expressions/left/Left.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ast/expressions/left/LeftIdDot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ast/expressions/left/LeftIdDot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ast/literal/Array.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ast/literal/Array.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ast/literal/BooleanLiteral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ast/literal/BooleanLiteral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ast/literal/CharacterLiteral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ast/literal/CharacterLiteral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ast/literal/FloatLiteral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ast/literal/FloatLiteral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ast/literal/IntLiteral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ast/literal/IntLiteral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ast/literal/NullLiteral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ast/literal/NullLiteral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ast/literal/StringLiteral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ast/literal/StringLiteral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ast/literal/Super.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ast/literal/Super.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ast/literal/This.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ast/literal/This.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cfg/CFGBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cfg/CFGBlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cfg/LiveOutComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cfg/LiveOutComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFiles/TestCases/TestCase2/TestCase2.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/TestCases/TestCase2/TestCase2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFiles/TestCases/TestCase3/TestCase3.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/TestCases/TestCase3/TestCase3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFiles/TestCases/TestCase5/TestCase5.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/TestCases/TestCase5/TestCase5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFiles/testFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/testFiles/testFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graph/GraphComparison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graph/GraphComparison.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graph/IsomorphismFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graph/IsomorphismFinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graph/SubGraphSizeComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graph/SubGraphSizeComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/OutputFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/OutputFormatter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DriverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DriverTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -181,7 +108,7 @@
           <entry key="Bash" value="3" />
           <entry key="CLASS" value="3" />
           <entry key="Image" value="5" />
-          <entry key="JAVA" value="1649" />
+          <entry key="JAVA" value="1658" />
           <entry key="PLAIN_TEXT" value="17" />
           <entry key="XML" value="4" />
           <entry key="dot file" value="3" />
@@ -200,8 +127,8 @@
         <counts>
           <entry key="ANTLR v4 grammar file" value="353" />
           <entry key="Bash" value="428" />
-          <entry key="JAVA" value="87116" />
-          <entry key="PLAIN_TEXT" value="3257" />
+          <entry key="JAVA" value="89124" />
+          <entry key="PLAIN_TEXT" value="3289" />
           <entry key="XML" value="16" />
           <entry key="dot file" value="41" />
         </counts>
@@ -211,37 +138,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ast/expressions/left/ArrayAccessExpression.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ast/literal/Array.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notes.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="126" column="5" selection-start-line="126" selection-start-column="5" selection-end-line="126" selection-end-column="5" />
+            <state relative-caret-position="390">
+              <caret line="123" column="17" selection-start-line="123" selection-start-column="17" selection-end-line="123" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/main/OutputFormatter.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/DriverTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-288">
-              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+            <state relative-caret-position="203">
+              <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testFiles/PDGSample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -249,10 +170,62 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/graph/GraphComparison.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+            <state relative-caret-position="86">
+              <caret line="71" column="35" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#468#477#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/graph/SubGraphSizeComparator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/graph/Mapping.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#952#953#0" expanded="true" />
+                <element signature="e#977#978#0" expanded="true" />
+                <element signature="e#1070#1071#0" expanded="true" />
+                <element signature="e#1096#1097#0" expanded="true" />
+                <element signature="e#1827#1828#0" expanded="true" />
+                <element signature="e#1857#1858#0" expanded="true" />
+                <element signature="e#1971#1972#0" expanded="true" />
+                <element signature="e#2000#2001#0" expanded="true" />
+                <element signature="e#2107#2108#0" expanded="true" />
+                <element signature="e#2136#2137#0" expanded="true" />
+                <element signature="e#2249#2250#0" expanded="true" />
+                <element signature="e#2281#2282#0" expanded="true" />
+                <element signature="e#2405#2406#0" expanded="true" />
+                <element signature="e#2436#2437#0" expanded="true" />
+                <element signature="e#2553#2554#0" expanded="true" />
+                <element signature="e#2584#2585#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/graph/LineOrderingComparator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="59" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#222#223#0" expanded="true" />
+                <element signature="e#246#247#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -261,33 +234,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/graph/IsomorphismFinder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="39" column="46" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
+            <state relative-caret-position="37">
+              <caret line="60" column="48" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/main/ArgumentHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cfg/CFGBlock.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2797">
-              <caret line="199" column="34" selection-start-line="199" selection-start-column="34" selection-end-line="199" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#7180#7181#0" expanded="true" />
-                <element signature="e#7210#7211#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -296,8 +246,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Driver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+            <state relative-caret-position="68">
+              <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -306,10 +256,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testFiles/TestCases/TestCase1/TestCase1.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/OutputFormatter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+            <state relative-caret-position="136">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -321,14 +271,13 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>added</find>
       <find>System</find>
       <find>system</find>
       <find>field</find>
@@ -358,6 +307,7 @@
       <find>HE</find>
       <find>src</find>
       <find>USE</find>
+      <find>System.ou</find>
     </findStrings>
     <replaceStrings>
       <replace>void</replace>
@@ -490,15 +440,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/ast/ClassObject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ast/expressions/left/Left.java" />
         <option value="$PROJECT_DIR$/src/main/java/ast/expressions/left/LeftComparator.java" />
         <option value="$PROJECT_DIR$/src/test/TestExpressionCompareTo.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/testFiles/testFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/graph/SubGraphCreator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/graph/SubGraphSizeComparator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ast/expressions/Expression.java" />
         <option value="$PROJECT_DIR$/src/main/java/ast/expressions/left/Identifier.java" />
         <option value="$PROJECT_DIR$/src/main/java/ast/expressions/left/LeftIdDot.java" />
         <option value="$PROJECT_DIR$/src/main/java/ast/expressions/AssignmentExpression.java" />
@@ -529,18 +475,22 @@
         <option value="$PROJECT_DIR$/src/main/java/main/MyPrimaryVisitor.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/MyMethodVisitor.java" />
         <option value="$PROJECT_DIR$/src/main/java/MyMethodVisitor.java" />
-        <option value="$PROJECT_DIR$/src/test/java/DriverTest.java" />
-        <option value="$PROJECT_DIR$/notes.txt" />
         <option value="$PROJECT_DIR$/src/main/java/ast/statements/ReturnStatement.java" />
         <option value="$PROJECT_DIR$/src/main/java/ast/Method.java" />
         <option value="$PROJECT_DIR$/src/main/java/ast/literal/Array.java" />
         <option value="$PROJECT_DIR$/src/main/java/ast/expressions/left/ArrayAccessExpression.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/ArgumentHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/OutputFormatter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Driver.java" />
-        <option value="$PROJECT_DIR$/src/main/java/graph/GraphComparison.java" />
-        <option value="$PROJECT_DIR$/src/main/java/graph/IsomorphismFinder.java" />
         <option value="$PROJECT_DIR$/src/main/java/cfg/CFGBlock.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ast/expressions/Expression.java" />
+        <option value="$PROJECT_DIR$/notes.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/graph/SubGraphSizeComparator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/graph/IsomorphismFinder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Driver.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DriverTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/graph/GraphComparison.java" />
+        <option value="$PROJECT_DIR$/src/main/java/graph/LineOrderingComparator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/OutputFormatter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/graph/Mapping.java" />
       </list>
     </option>
   </component>
@@ -740,7 +690,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/Simko/ownCloud/College/Master's Thesis/Thesis-Code/notes.txt" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555973639722" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556578171749" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -786,7 +736,7 @@
     <configuration name="Driver" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Driver" />
       <module name="thesis" />
-      <option name="PROGRAM_PARAMETERS" value="testFiles/TestCases/TestCase1" />
+      <option name="PROGRAM_PARAMETERS" value="testFiles" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -912,7 +862,7 @@
       <workItem from="1555107758767" duration="3155000" />
       <workItem from="1555349542906" duration="11963000" />
       <workItem from="1555441460228" duration="18935000" />
-      <workItem from="1555699791566" duration="3553000" />
+      <workItem from="1555699791566" duration="7864000" />
     </task>
     <servers />
   </component>
@@ -949,7 +899,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="345324000" />
+    <option name="totallyTimeSpent" value="349635000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -961,10 +911,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="829" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="829" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24892704" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24892704" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -973,7 +922,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32384825" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49785408" visible="true" weight="0.43283582" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49785408" visible="true" weight="0.43283582" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -984,7 +933,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Tool Output" order="11" weight="0.32971507" />
       <window_info anchor="bottom" id="ANTLR Preview" order="12" weight="0.3283582" />
-      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49928468" weight="0.31886023" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49928468" weight="0.3175034" />
       <window_info anchor="bottom" id="Docker" order="14" />
       <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.32882273" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -1045,37 +994,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ast/expressions/PostUnaryExpression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="56" column="24" selection-start-line="55" selection-start-column="4" selection-end-line="59" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ast/expressions/PreUnaryExpression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ast/expressions/TernaryExpression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="63" column="55" selection-start-line="63" selection-start-column="55" selection-end-line="63" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ast/expressions/Type.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ast/expressions/UnaryExpression.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
@@ -1164,6 +1082,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="e#175#176#0" expanded="true" />
+            <element signature="e#236#237#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1171,6 +1093,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1267,16 +1192,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DriverTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testFiles/TestCases/TestCase5/TestCase5.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1325,38 +1240,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ast/expressions/Expression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="86" column="25" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ast/literal/Array.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ast/expressions/left/ArrayAccessExpression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testFiles/TestCases/TestCase1/TestCase1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notes.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="126" column="5" selection-start-line="126" selection-start-column="5" selection-end-line="126" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1367,17 +1254,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/OutputFormatter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ast/literal/Array.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-288">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        <state relative-caret-position="157">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ast/expressions/left/ArrayAccessExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-127">
+          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cfg/CFGBlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="91" column="21" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7180#7181#0" expanded="true" />
+            <element signature="e#7210#7211#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ast/expressions/Expression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="66" column="31" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="123" column="17" selection-start-line="123" selection-start-column="17" selection-end-line="123" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testFiles/PDGSample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+        <state relative-caret-position="68">
+          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/DriverTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1386,32 +1323,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/graph/GraphComparison.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+        <state relative-caret-position="86">
+          <caret line="71" column="35" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#468#477#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/graph/LineOrderingComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="59" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#222#223#0" expanded="true" />
+            <element signature="e#246#247#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/graph/IsomorphismFinder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="39" column="46" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
+        <state relative-caret-position="37">
+          <caret line="60" column="48" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cfg/CFGBlock.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/graph/SubGraphSizeComparator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2797">
-          <caret line="199" column="34" selection-start-line="199" selection-start-column="34" selection-end-line="199" selection-end-column="34" />
+        <state relative-caret-position="45">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/OutputFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/graph/Mapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#7180#7181#0" expanded="true" />
-            <element signature="e#7210#7211#0" expanded="true" />
+            <element signature="e#952#953#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
+            <element signature="e#1070#1071#0" expanded="true" />
+            <element signature="e#1096#1097#0" expanded="true" />
+            <element signature="e#1827#1828#0" expanded="true" />
+            <element signature="e#1857#1858#0" expanded="true" />
+            <element signature="e#1971#1972#0" expanded="true" />
+            <element signature="e#2000#2001#0" expanded="true" />
+            <element signature="e#2107#2108#0" expanded="true" />
+            <element signature="e#2136#2137#0" expanded="true" />
+            <element signature="e#2249#2250#0" expanded="true" />
+            <element signature="e#2281#2282#0" expanded="true" />
+            <element signature="e#2405#2406#0" expanded="true" />
+            <element signature="e#2436#2437#0" expanded="true" />
+            <element signature="e#2553#2554#0" expanded="true" />
+            <element signature="e#2584#2585#0" expanded="true" />
           </folding>
         </state>
       </provider>

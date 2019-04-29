@@ -3,10 +3,7 @@ import ast.expressions.Expression;
 import ast.expressions.left.Left;
 import cfg.CFGBlock;
 import cfg.StartBlock;
-import graph.GraphComparison;
-import graph.IsomorphismFinder;
-import graph.SubGraphCreator;
-import graph.SubGraphSizeComparator;
+import graph.*;
 import main.ArgumentHandler;
 import main.OutputFormatter;
 import org.jgrapht.Graph;
@@ -41,13 +38,13 @@ public class Driver {
 
         String directory = args[0];
 
-        List<Map<Expression, Expression>> mappings = Driver.run(directory);
+        List<Mapping> mappings = Driver.run(directory);
 
         OutputFormatter.printFilesAndLines(mappings);
 
     }
 
-    public static List<Map<Expression, Expression>> run(String directoy) {
+    public static List<Mapping> run(String directoy) {
         Program program = FileParser.parseFiles(directoy);
 
         List<StartBlock> starts = program.getCFG();
