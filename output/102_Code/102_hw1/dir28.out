@@ -1,0 +1,1891 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for thesis:thesis:jar:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.version' for org.junit.jupiter:junit-jupiter-api:jar is either LATEST or RELEASE (both of them are being deprecated) @ line 25, column 22
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building thesis 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default-cli) > validate @ thesis >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default-cli) < validate @ thesis <<<
+[INFO] 
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ thesis ---
+BLOCK: Startconstructor1L0
+this.y : this.y = 0.0, 
+this.a : this.a = 0.0, 
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: BasicL1
+this.y : this.y = 0.0, 
+this.a : this.a = angle, 
+this.x : this.x = 0.0, 
+this.r : this.r = radius, 
+
+BLOCK: LoopL3
+this.y : this.y = 0.0, 
+this.a : this.a = this.a + 2 * Math.PI, 
+this.x : this.x = 0.0, 
+this.r : this.r = radius, 
+
+BLOCK: BasicL4
+this.y : this.y = 0.0, 
+this.a : this.a = angle, this.a = this.a + 2 * Math.PI, 
+this.x : this.x = 0.0, 
+this.r : this.r = radius, 
+
+BLOCK: StartradiusL5
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: BasicL6
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: trueL8
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: joinL9
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: trueL10
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: joinL11
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: StartangleL12
+this.y : this.y = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: BasicL13
+this.y : this.y = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: StartxCoordinateL15
+this.a : this.a = 0.0, 
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL16
+this.a : this.a = 0.0, 
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartyCoordinateL18
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+
+BLOCK: BasicL19
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+
+BLOCK: Startrotate90L21
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: BasicL22
+b : b = new PolarPoint(this.r, this.a + Math.PI / 2, ), 
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: StartdistanceL24
+
+BLOCK: BasicL25
+
+BLOCK: StartsameQuadrantL27
+
+BLOCK: BasicL28
+
+BLOCK: trueL30
+
+BLOCK: falseL32
+
+BLOCK: trueL33
+
+BLOCK: falseL35
+
+BLOCK: trueL36
+
+BLOCK: falseL38
+
+BLOCK: trueL39
+
+BLOCK: joinL40
+
+BLOCK: joinL37
+
+BLOCK: joinL34
+
+BLOCK: joinL31
+
+BLOCK: StartmainL41
+
+BLOCK: BasicL42
+r2 : r2 = 0.0, 
+x : x = 0.0, 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = 0.0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: trueL44
+r2 : r2 = 0.0, 
+x : x = 0.0, 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = 0.0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: trueL46
+r2 : r2 = 0.0, 
+x : x = 0, 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = 0.0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: falseL48
+r2 : r2 = 0.0, 
+x : x = scan.nextDouble(), 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = 0.0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: joinL47
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = 0.0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: trueL49
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = 0.0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0, 
+
+BLOCK: falseL51
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = 0.0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = scan.nextInt(), 
+
+BLOCK: joinL50
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), 
+store : store = new CartesianPoint(x, y, ), 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = 0.0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0, 
+
+BLOCK: falseL52
+r2 : r2 = 0.0, 
+x : x = 0.0, 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = 0.0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: trueL53
+r2 : r2 = 0.0, 
+x : x = 0.0, 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = 0.0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: trueL55
+r2 : r2 = 0.0, 
+x : x = 0.0, 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: falseL57
+r2 : r2 = 0.0, 
+x : x = 0.0, 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: joinL56
+r2 : r2 = 0.0, 
+x : x = 0.0, 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: trueL58
+r2 : r2 = 0.0, 
+x : x = 0.0, 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: falseL60
+r2 : r2 = 0.0, 
+x : x = 0.0, 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = scan.nextDouble() * 2 * Math.PI / 360, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: joinL59
+r2 : r2 = 0.0, 
+x : x = 0.0, 
+store : store = new PolarPoint(r, a, ), 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: falseL61
+r2 : r2 = 0.0, 
+x : x = 0.0, 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = 0.0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: joinL54
+r2 : r2 = 0.0, 
+x : x = 0.0, 
+store : store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: joinL45
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: trueL62
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: trueL64
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0, 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: falseL66
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = scan.nextDouble(), 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: joinL65
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0, x2 = scan.nextDouble(), 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: trueL67
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+y2 : y2 = 0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0, x2 = scan.nextDouble(), 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: falseL69
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+y2 : y2 = scan.nextDouble(), 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0, x2 = scan.nextDouble(), 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: joinL68
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+y2 : y2 = 0, y2 = scan.nextDouble(), 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0, x2 = scan.nextDouble(), 
+store2 : store2 = new CartesianPoint(x2, y2, ), 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: falseL70
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: trueL71
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: trueL73
+r2 : r2 = 0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: falseL75
+r2 : r2 = scan.nextDouble(), 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: joinL74
+r2 : r2 = scan.nextDouble(), r2 = 0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: trueL76
+r2 : r2 = scan.nextDouble(), r2 = 0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: falseL78
+r2 : r2 = scan.nextDouble(), r2 = 0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = scan.nextDouble() * 2 * Math.PI / 360, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: joinL77
+r2 : r2 = scan.nextDouble(), r2 = 0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0, a2 = scan.nextDouble() * 2 * Math.PI / 360, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = new PolarPoint(r2, a2, ), 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: falseL79
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: joinL72
+r2 : r2 = 0.0, r2 = scan.nextDouble(), r2 = 0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0, a2 = scan.nextDouble() * 2 * Math.PI / 360, a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = new PolarPoint(r2, a2, ), store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: joinL63
+r2 : r2 = 0.0, r2 = scan.nextDouble(), r2 = 0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = distance(store, store2, ), 
+y2 : y2 = 0.0, y2 = 0, y2 = scan.nextDouble(), 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+a2 : a2 = 0, a2 = 0.0, a2 = scan.nextDouble() * 2 * Math.PI / 360, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0, x2 = 0.0, x2 = scan.nextDouble(), 
+store2 : store2 = new CartesianPoint(x2, y2, ), store2 = new PolarPoint(r2, a2, ), store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: trueL80
+r2 : r2 = 0.0, r2 = scan.nextDouble(), r2 = 0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = distance(store, store2, ), 
+y2 : y2 = 0.0, y2 = 0, y2 = scan.nextDouble(), 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+a2 : a2 = 0, a2 = 0.0, a2 = scan.nextDouble() * 2 * Math.PI / 360, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0, x2 = 0.0, x2 = scan.nextDouble(), 
+store2 : store2 = new CartesianPoint(x2, y2, ), store2 = new PolarPoint(r2, a2, ), store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: falseL82
+r2 : r2 = 0.0, r2 = scan.nextDouble(), r2 = 0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = distance(store, store2, ), 
+y2 : y2 = 0.0, y2 = 0, y2 = scan.nextDouble(), 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+a2 : a2 = 0, a2 = 0.0, a2 = scan.nextDouble() * 2 * Math.PI / 360, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0, x2 = 0.0, x2 = scan.nextDouble(), 
+store2 : store2 = new CartesianPoint(x2, y2, ), store2 = new PolarPoint(r2, a2, ), store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: joinL81
+r2 : r2 = 0.0, r2 = scan.nextDouble(), r2 = 0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = distance(store, store2, ), 
+y2 : y2 = 0.0, y2 = 0, y2 = scan.nextDouble(), 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+a2 : a2 = 0, a2 = 0.0, a2 = scan.nextDouble() * 2 * Math.PI / 360, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0, x2 = 0.0, x2 = scan.nextDouble(), 
+store2 : store2 = new CartesianPoint(x2, y2, ), store2 = new PolarPoint(r2, a2, ), store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: StartmainL83
+
+BLOCK: BasicL84
+b : b = new PolarPoint(5.0, 5.0, ), 
+a : a = new PolarPoint(5.0, 0.6435, ), 
+c : c = new PolarPoint(5.0, 4.63, ), 
+
+BLOCK: Startconstructor1L86
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.a : this.a = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL87
+this.x : this.x = x_coord, 
+this.r : this.r = 0.0, 
+this.a : this.a = 0.0, 
+this.y : this.y = y_coord, 
+
+BLOCK: StartxCoordinateL89
+this.a : this.a = 0.0, 
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: BasicL90
+this.a : this.a = 0.0, 
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: StartyCoordinateL92
+this.a : this.a = 0.0, 
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: BasicL93
+this.a : this.a = 0.0, 
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: StartradiusL95
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: BasicL96
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: trueL98
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: joinL99
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.r : this.r = Math.sqrt(this.x * this.x + this.y * this.y, ), 
+this.a : this.a = 0.0, 
+
+BLOCK: StartangleL100
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+this.a : this.a = 0.0, 
+
+BLOCK: BasicL101
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+this.a : this.a = 0.0, 
+
+BLOCK: trueL103
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+this.a : this.a = Math.atan(this.y / this.x, ) + Math.PI, 
+
+BLOCK: falseL105
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+this.a : this.a = 0.0, 
+
+BLOCK: trueL106
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+this.a : this.a = Math.atan(this.y / this.x, ) + Math.PI, 
+
+BLOCK: falseL108
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+this.a : this.a = 0.0, 
+
+BLOCK: trueL109
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+this.a : this.a = Math.atan(this.y / this.x, ) + 2 * Math.PI, 
+
+BLOCK: joinL110
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+this.a : this.a = Math.atan(this.y / this.x, ) + Math.PI, this.a = Math.atan(this.y / this.x, ) + Math.PI, this.a = Math.atan(this.y / this.x, ) + 2 * Math.PI, this.a = 0.0, this.a = Math.atan(this.y / this.x, ), 
+
+BLOCK: joinL107
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+this.a : this.a = Math.atan(this.y / this.x, ) + Math.PI, this.a = Math.atan(this.y / this.x, ) + Math.PI, this.a = Math.atan(this.y / this.x, ) + 2 * Math.PI, this.a = 0.0, this.a = Math.atan(this.y / this.x, ), 
+
+BLOCK: joinL104
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+this.a : this.a = Math.atan(this.y / this.x, ), 
+
+BLOCK: Startrotate90L111
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.a : this.a = 0.0, 
+
+BLOCK: BasicL112
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.a : this.a = 0.0, 
+cart : cart = new CartesianPoint(-this.y, this.x, ), 
+
+BLOCK: StartmainL114
+
+BLOCK: BasicL115
+d : d = new CartesianPoint(-5.0, 2.0, ), 
+a : a = new CartesianPoint(4.0, 3.0, ), 
+b : b = new CartesianPoint(-5.0, -2.0, ), 
+c : c = new CartesianPoint(5.0, -2.0, ), 
+
+BLOCK: Startconstructor1L0
+this.y : this.y = 0.0, 
+this.a : this.a = 0.0, 
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: Startconstructor1L0
+this.y : this.y = 0.0, 
+this.a : this.a = 0.0, 
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: BasicL1
+this.y : this.y = 0.0, 
+this.a : this.a = angle, 
+this.x : this.x = 0.0, 
+this.r : this.r = radius, 
+
+BLOCK: LoopL3
+this.y : this.y = 0.0, 
+this.a : this.a = this.a + 2 * Math.PI, 
+this.x : this.x = 0.0, 
+this.r : this.r = radius, 
+
+BLOCK: BasicL4
+this.y : this.y = 0.0, 
+this.a : this.a = angle, this.a = this.a + 2 * Math.PI, 
+this.x : this.x = 0.0, 
+this.r : this.r = radius, 
+
+BLOCK: StartradiusL5
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: StartradiusL5
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: BasicL6
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: trueL8
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: joinL9
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: trueL10
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: joinL11
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: StartangleL12
+this.y : this.y = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: StartangleL12
+this.y : this.y = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: BasicL13
+this.y : this.y = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: StartxCoordinateL15
+this.a : this.a = 0.0, 
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartxCoordinateL15
+this.a : this.a = 0.0, 
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL16
+this.a : this.a = 0.0, 
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartyCoordinateL18
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+
+BLOCK: StartyCoordinateL18
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+
+BLOCK: BasicL19
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+
+BLOCK: Startrotate90L21
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: Startrotate90L21
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: BasicL22
+b : b = new PolarPoint(this.r, this.a + Math.PI / 2, ), 
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: StartdistanceL24
+
+BLOCK: StartdistanceL24
+
+BLOCK: BasicL25
+
+BLOCK: StartsameQuadrantL27
+
+BLOCK: StartsameQuadrantL27
+
+BLOCK: BasicL28
+
+BLOCK: trueL30
+
+BLOCK: falseL32
+
+BLOCK: trueL33
+
+BLOCK: falseL35
+
+BLOCK: trueL36
+
+BLOCK: falseL38
+
+BLOCK: trueL39
+
+BLOCK: joinL40
+
+BLOCK: joinL37
+
+BLOCK: joinL34
+
+BLOCK: joinL31
+
+BLOCK: StartmainL41
+
+BLOCK: StartmainL41
+
+BLOCK: BasicL42
+r2 : r2 = 0.0, 
+x : x = 0.0, 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = 0.0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: trueL44
+r2 : r2 = 0.0, 
+x : x = 0.0, 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = 0.0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: trueL46
+r2 : r2 = 0.0, 
+x : x = 0, 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = 0.0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: falseL48
+r2 : r2 = 0.0, 
+x : x = scan.nextDouble(), 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = 0.0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: joinL47
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = 0.0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: trueL49
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = 0.0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0, 
+
+BLOCK: falseL51
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = 0.0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = scan.nextInt(), 
+
+BLOCK: joinL50
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), 
+store : store = new CartesianPoint(x, y, ), 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = 0.0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0, 
+
+BLOCK: falseL52
+r2 : r2 = 0.0, 
+x : x = 0.0, 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = 0.0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: trueL53
+r2 : r2 = 0.0, 
+x : x = 0.0, 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = 0.0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: trueL55
+r2 : r2 = 0.0, 
+x : x = 0.0, 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: falseL57
+r2 : r2 = 0.0, 
+x : x = 0.0, 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: joinL56
+r2 : r2 = 0.0, 
+x : x = 0.0, 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: trueL58
+r2 : r2 = 0.0, 
+x : x = 0.0, 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: falseL60
+r2 : r2 = 0.0, 
+x : x = 0.0, 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = scan.nextDouble() * 2 * Math.PI / 360, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: joinL59
+r2 : r2 = 0.0, 
+x : x = 0.0, 
+store : store = new PolarPoint(r, a, ), 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: falseL61
+r2 : r2 = 0.0, 
+x : x = 0.0, 
+store : store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = 0.0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: joinL54
+r2 : r2 = 0.0, 
+x : x = 0.0, 
+store : store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = 0.0, 
+
+BLOCK: joinL45
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: trueL62
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: trueL64
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0, 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: falseL66
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = scan.nextDouble(), 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: joinL65
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0, x2 = scan.nextDouble(), 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: trueL67
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+y2 : y2 = 0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0, x2 = scan.nextDouble(), 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: falseL69
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+y2 : y2 = scan.nextDouble(), 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0, x2 = scan.nextDouble(), 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: joinL68
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+y2 : y2 = 0, y2 = scan.nextDouble(), 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0, x2 = scan.nextDouble(), 
+store2 : store2 = new CartesianPoint(x2, y2, ), 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: falseL70
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: trueL71
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: trueL73
+r2 : r2 = 0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: falseL75
+r2 : r2 = scan.nextDouble(), 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: joinL74
+r2 : r2 = scan.nextDouble(), r2 = 0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: trueL76
+r2 : r2 = scan.nextDouble(), r2 = 0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: falseL78
+r2 : r2 = scan.nextDouble(), r2 = 0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = scan.nextDouble() * 2 * Math.PI / 360, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: joinL77
+r2 : r2 = scan.nextDouble(), r2 = 0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0, a2 = scan.nextDouble() * 2 * Math.PI / 360, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = new PolarPoint(r2, a2, ), 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: falseL79
+r2 : r2 = 0.0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: joinL72
+r2 : r2 = 0.0, r2 = scan.nextDouble(), r2 = 0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = 0.0, 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+y2 : y2 = 0.0, 
+a2 : a2 = 0, a2 = scan.nextDouble() * 2 * Math.PI / 360, a2 = 0.0, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0.0, 
+store2 : store2 = new PolarPoint(r2, a2, ), store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: joinL63
+r2 : r2 = 0.0, r2 = scan.nextDouble(), r2 = 0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = distance(store, store2, ), 
+y2 : y2 = 0.0, y2 = 0, y2 = scan.nextDouble(), 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+a2 : a2 = 0, a2 = 0.0, a2 = scan.nextDouble() * 2 * Math.PI / 360, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0, x2 = 0.0, x2 = scan.nextDouble(), 
+store2 : store2 = new CartesianPoint(x2, y2, ), store2 = new PolarPoint(r2, a2, ), store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: trueL80
+r2 : r2 = 0.0, r2 = scan.nextDouble(), r2 = 0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = distance(store, store2, ), 
+y2 : y2 = 0.0, y2 = 0, y2 = scan.nextDouble(), 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+a2 : a2 = 0, a2 = 0.0, a2 = scan.nextDouble() * 2 * Math.PI / 360, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0, x2 = 0.0, x2 = scan.nextDouble(), 
+store2 : store2 = new CartesianPoint(x2, y2, ), store2 = new PolarPoint(r2, a2, ), store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: falseL82
+r2 : r2 = 0.0, r2 = scan.nextDouble(), r2 = 0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = distance(store, store2, ), 
+y2 : y2 = 0.0, y2 = 0, y2 = scan.nextDouble(), 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+a2 : a2 = 0, a2 = 0.0, a2 = scan.nextDouble() * 2 * Math.PI / 360, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0, x2 = 0.0, x2 = scan.nextDouble(), 
+store2 : store2 = new CartesianPoint(x2, y2, ), store2 = new PolarPoint(r2, a2, ), store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: joinL81
+r2 : r2 = 0.0, r2 = scan.nextDouble(), r2 = 0, 
+x : x = 0, x = scan.nextDouble(), x = 0.0, 
+store : store = new CartesianPoint(x, y, ), store = new PolarPoint(r, a, ), store = null, 
+scan : scan = new Scanner(System.in, ), 
+dist : dist = distance(store, store2, ), 
+y2 : y2 = 0.0, y2 = 0, y2 = scan.nextDouble(), 
+a : a = 0.0, a = scan.nextDouble() * 2 * Math.PI / 360, a = 0, 
+a2 : a2 = 0, a2 = 0.0, a2 = scan.nextDouble() * 2 * Math.PI / 360, 
+r : r = scan.nextDouble(), r = 0.0, r = 0, 
+i : i = scan.nextInt(), 
+x2 : x2 = 0, x2 = 0.0, x2 = scan.nextDouble(), 
+store2 : store2 = new CartesianPoint(x2, y2, ), store2 = new PolarPoint(r2, a2, ), store2 = null, 
+y : y = scan.nextInt(), y = 0.0, y = 0, 
+
+BLOCK: StartmainL83
+
+BLOCK: StartmainL83
+
+BLOCK: BasicL84
+b : b = new PolarPoint(5.0, 5.0, ), 
+a : a = new PolarPoint(5.0, 0.6435, ), 
+c : c = new PolarPoint(5.0, 4.63, ), 
+
+BLOCK: Startconstructor1L86
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.a : this.a = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: Startconstructor1L86
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.a : this.a = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL87
+this.x : this.x = x_coord, 
+this.r : this.r = 0.0, 
+this.a : this.a = 0.0, 
+this.y : this.y = y_coord, 
+
+BLOCK: StartxCoordinateL89
+this.a : this.a = 0.0, 
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: StartxCoordinateL89
+this.a : this.a = 0.0, 
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: BasicL90
+this.a : this.a = 0.0, 
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: StartyCoordinateL92
+this.a : this.a = 0.0, 
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: StartyCoordinateL92
+this.a : this.a = 0.0, 
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: BasicL93
+this.a : this.a = 0.0, 
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: StartradiusL95
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: StartradiusL95
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: BasicL96
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: trueL98
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: joinL99
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.r : this.r = Math.sqrt(this.x * this.x + this.y * this.y, ), 
+this.a : this.a = 0.0, 
+
+BLOCK: StartangleL100
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+this.a : this.a = 0.0, 
+
+BLOCK: StartangleL100
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+this.a : this.a = 0.0, 
+
+BLOCK: BasicL101
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+this.a : this.a = 0.0, 
+
+BLOCK: trueL103
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+this.a : this.a = Math.atan(this.y / this.x, ) + Math.PI, 
+
+BLOCK: falseL105
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+this.a : this.a = 0.0, 
+
+BLOCK: trueL106
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+this.a : this.a = Math.atan(this.y / this.x, ) + Math.PI, 
+
+BLOCK: falseL108
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+this.a : this.a = 0.0, 
+
+BLOCK: trueL109
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+this.a : this.a = Math.atan(this.y / this.x, ) + 2 * Math.PI, 
+
+BLOCK: joinL110
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+this.a : this.a = Math.atan(this.y / this.x, ) + Math.PI, this.a = Math.atan(this.y / this.x, ) + Math.PI, this.a = Math.atan(this.y / this.x, ) + 2 * Math.PI, this.a = 0.0, this.a = Math.atan(this.y / this.x, ), 
+
+BLOCK: joinL107
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+this.a : this.a = Math.atan(this.y / this.x, ) + Math.PI, this.a = Math.atan(this.y / this.x, ) + Math.PI, this.a = Math.atan(this.y / this.x, ) + 2 * Math.PI, this.a = 0.0, this.a = Math.atan(this.y / this.x, ), 
+
+BLOCK: joinL104
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.y : this.y = 0.0, 
+this.a : this.a = Math.atan(this.y / this.x, ), 
+
+BLOCK: Startrotate90L111
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.a : this.a = 0.0, 
+
+BLOCK: Startrotate90L111
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.a : this.a = 0.0, 
+
+BLOCK: BasicL112
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.r : this.r = 0.0, 
+this.a : this.a = 0.0, 
+cart : cart = new CartesianPoint(-this.y, this.x, ), 
+
+BLOCK: StartmainL114
+
+BLOCK: StartmainL114
+
+BLOCK: BasicL115
+d : d = new CartesianPoint(-5.0, 2.0, ), 
+a : a = new CartesianPoint(4.0, 3.0, ), 
+b : b = new CartesianPoint(-5.0, -2.0, ), 
+c : c = new CartesianPoint(5.0, -2.0, ), 
+
+Unfiltered: 0
+Filtered: 0
+
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 12.180 s
+[INFO] Finished at: 2019-05-01T17:12:40-07:00
+[INFO] Final Memory: 20M/1017M
+[INFO] ------------------------------------------------------------------------

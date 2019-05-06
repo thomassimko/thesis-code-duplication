@@ -1,0 +1,6 @@
+digraph G {
+"3 : this.radius = 0.0"
+"3 : this.radius = 0.0" -> "26 : this.radius * Math.cos(angle(), )"
+"4 : this.angle = 0.0"
+"26 : this.radius * Math.cos(angle(), )"
+}

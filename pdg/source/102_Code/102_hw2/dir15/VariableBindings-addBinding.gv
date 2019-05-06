@@ -1,0 +1,6 @@
+digraph G {
+"7 : this.bindingList = null"
+"16 : binding = new Binding(id, value, )"
+"16 : binding = new Binding(id, value, )" -> "18 : this.bindingList.add(0, binding, )"
+"18 : this.bindingList.add(0, binding, )"
+}

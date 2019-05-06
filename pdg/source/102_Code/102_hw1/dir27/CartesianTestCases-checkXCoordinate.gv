@@ -1,0 +1,12 @@
+digraph G {
+"3 : this.test1 = new CartesianPoint(0, 0, )"
+"4 : this.test2 = new CartesianPoint(1, 0, )"
+"5 : this.test3 = new CartesianPoint(0, 1, )"
+"6 : this.test4 = new CartesianPoint(2, 2, )"
+"7 : this.test5 = new CartesianPoint(-2, -2, )"
+"17 : Check.check(this.test1.xCoordinate(), 0, )"
+"18 : Check.check(this.test2.xCoordinate(), 1, )"
+"19 : Check.check(this.test3.xCoordinate(), 0, )"
+"20 : Check.check(this.test4.xCoordinate(), 2, )"
+"21 : Check.check(this.test5.xCoordinate(), 2, )"
+}

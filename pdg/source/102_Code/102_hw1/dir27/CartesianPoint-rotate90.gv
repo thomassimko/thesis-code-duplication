@@ -1,0 +1,6 @@
+digraph G {
+"2 : this.x_coord = 0.0"
+"2 : this.y_coord = 0.0"
+"31 : polarPoint = rotate90()"
+"32 : new CartesianPoint(polarPoint.xCoordinate(), polarPoint.yCoordinate(), )"
+}

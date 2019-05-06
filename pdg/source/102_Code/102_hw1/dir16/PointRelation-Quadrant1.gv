@@ -1,0 +1,11 @@
+digraph G {
+"82 : p1.xCoordinate() > 0 && p1.yCoordinate() > 0"
+"84 : 1"
+"86 : p1.xCoordinate() < 0 && p1.yCoordinate() > 0"
+"88 : 2"
+"90 : p1.xCoordinate() < 0 && p1.yCoordinate() < 0"
+"92 : 3"
+"94 : p1.xCoordinate() > 0 && p1.yCoordinate() < 0"
+"96 : 4"
+"100 : 0"
+}

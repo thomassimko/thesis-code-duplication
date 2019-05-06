@@ -1,0 +1,3 @@
+digraph G {
+"89 : Math.sqrt(a.xCoordinate() - b.xCoordinate() * a.xCoordinate() - b.xCoordinate() + a.yCoordinate() - b.yCoordinate() * a.yCoordinate() - b.yCoordinate(), )"
+}

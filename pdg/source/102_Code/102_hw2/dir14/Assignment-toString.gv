@@ -1,0 +1,6 @@
+digraph G {
+"4 : this.variable = null"
+"5 : this.expression = null"
+"5 : this.expression = null" -> "20 : \"set \" + this.variable.toString() + \" = \" + this.expression"
+"20 : \"set \" + this.variable.toString() + \" = \" + this.expression"
+}

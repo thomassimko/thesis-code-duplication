@@ -1,0 +1,11 @@
+digraph G {
+"77 : p1.xCoordinate() > 0 && p1.yCoordinate() >= 0 && p2.xCoordinate() > 0 && p2.yCoordinate() >= 0"
+"79 : System.out.println(\"In same quadrant.\", )"
+"81 : p1.xCoordinate() <= 0 && p1.yCoordinate() > 0 && p2.xCoordinate() <= 0 && p2.yCoordinate() > 0"
+"83 : System.out.println(\"In same quadrant.\", )"
+"85 : p1.xCoordinate() < 0 && p1.yCoordinate() <= 0 && p2.xCoordinate() < 0 && p2.yCoordinate() <= 0"
+"87 : System.out.println(\"In same quadrant.\", )"
+"89 : p1.xCoordinate() >= 0 && p1.yCoordinate() < 0 && p2.xCoordinate() >= 0 && p2.yCoordinate() < 0"
+"91 : System.out.println(\"In same quadrant.\", )"
+"95 : System.out.println(\"Not in same quadrant.\", )"
+}

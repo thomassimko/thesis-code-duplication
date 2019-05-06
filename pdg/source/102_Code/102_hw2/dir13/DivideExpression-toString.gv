@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.l = null"
+"4 : this.l = null" -> "16 : \"(\" + this.l + \" / \" + this.r + \")\""
+"4 : this.r = null"
+"4 : this.r = null" -> "16 : \"(\" + this.l + \" / \" + this.r + \")\""
+"16 : \"(\" + this.l + \" / \" + this.r + \")\""
+}

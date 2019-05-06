@@ -1,0 +1,11 @@
+digraph G {
+"137 : x1 = pointA.xCoordinate()"
+"137 : x1 = pointA.xCoordinate()" -> "141 : Math.sqrt(x2 - x1 * x2 - x1 + y2 - y1 * y2 - y1, )"
+"138 : y1 = pointA.yCoordinate()"
+"138 : y1 = pointA.yCoordinate()" -> "141 : Math.sqrt(x2 - x1 * x2 - x1 + y2 - y1 * y2 - y1, )"
+"139 : x2 = pointB.xCoordinate()"
+"139 : x2 = pointB.xCoordinate()" -> "141 : Math.sqrt(x2 - x1 * x2 - x1 + y2 - y1 * y2 - y1, )"
+"140 : y2 = pointB.yCoordinate()"
+"140 : y2 = pointB.yCoordinate()" -> "141 : Math.sqrt(x2 - x1 * x2 - x1 + y2 - y1 * y2 - y1, )"
+"141 : Math.sqrt(x2 - x1 * x2 - x1 + y2 - y1 * y2 - y1, )"
+}

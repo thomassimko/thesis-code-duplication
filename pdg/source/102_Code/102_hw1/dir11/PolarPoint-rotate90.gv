@@ -1,0 +1,15 @@
+digraph G {
+"6 : this.rad = 0.0"
+"6 : this.rad = 0.0" -> "50 : radius90 = this.rad"
+"7 : this.ang = 0.0"
+"7 : this.ang = 0.0" -> "49 : angle90 = this.ang + 3.1415963 / 2"
+"48 : angle90 = 0.0"
+"48 : angle90 = 0.0" -> "49 : angle90 = this.ang + 3.1415963 / 2" [style=dashed]
+"48 : radius90 = 0.0"
+"48 : radius90 = 0.0" -> "50 : radius90 = this.rad" [style=dashed]
+"49 : angle90 = this.ang + 3.1415963 / 2"
+"49 : angle90 = this.ang + 3.1415963 / 2" -> "51 : pt90 = new PolarPoint(radius90, angle90, )"
+"50 : radius90 = this.rad"
+"50 : radius90 = this.rad" -> "51 : pt90 = new PolarPoint(radius90, angle90, )"
+"51 : pt90 = new PolarPoint(radius90, angle90, )"
+}

@@ -1,0 +1,9 @@
+digraph G {
+"4 : this.lft = null"
+"4 : this.rht = null"
+"14 : left = evaluate(binding, )"
+"14 : left = evaluate(binding, )" -> "17 : sum = left + right"
+"15 : right = evaluate(binding, )"
+"15 : right = evaluate(binding, )" -> "17 : sum = left + right"
+"17 : sum = left + right"
+}

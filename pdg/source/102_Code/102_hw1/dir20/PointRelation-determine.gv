@@ -1,0 +1,129 @@
+digraph G {
+"25 : current_quad1 = 0"
+"25 : current_quad1 = 0" -> "93 : current_quad1 == current_quad2"
+"25 : current_quad1 = 0" -> "33 : current_quad1 = 2" [style=dashed]
+"25 : current_quad1 = 0" -> "37 : current_quad1 = 3" [style=dashed]
+"25 : current_quad1 = 0" -> "29 : current_quad1 = 1" [style=dashed]
+"25 : current_quad1 = 0" -> "65 : current_quad1 = 4" [style=dashed]
+"25 : current_quad1 = 0" -> "73 : current_quad1 = 3" [style=dashed]
+"25 : current_quad1 = 0" -> "41 : current_quad1 = 4" [style=dashed]
+"25 : current_quad1 = 0" -> "69 : current_quad1 = 2" [style=dashed]
+"25 : current_quad1 = 0" -> "61 : current_quad1 = 1" [style=dashed]
+"26 : current_quad2 = 0"
+"26 : current_quad2 = 0" -> "93 : current_quad1 == current_quad2"
+"26 : current_quad2 = 0" -> "57 : current_quad2 = 4" [style=dashed]
+"26 : current_quad2 = 0" -> "49 : current_quad2 = 2" [style=dashed]
+"26 : current_quad2 = 0" -> "90 : current_quad2 = 3" [style=dashed]
+"26 : current_quad2 = 0" -> "78 : current_quad2 = 1" [style=dashed]
+"26 : current_quad2 = 0" -> "45 : current_quad2 = 1" [style=dashed]
+"26 : current_quad2 = 0" -> "53 : current_quad2 = 3" [style=dashed]
+"26 : current_quad2 = 0" -> "86 : current_quad2 = 2" [style=dashed]
+"26 : current_quad2 = 0" -> "82 : current_quad2 = 4" [style=dashed]
+"27 : pt1.xCoordinate() > 0.0 && pt1.yCoordinate() == 0.0"
+"29 : current_quad1 = 1"
+"29 : current_quad1 = 1" -> "93 : current_quad1 == current_quad2"
+"29 : current_quad1 = 1" -> "33 : current_quad1 = 2" [style=dashed]
+"29 : current_quad1 = 1" -> "37 : current_quad1 = 3" [style=dashed]
+"29 : current_quad1 = 1" -> "65 : current_quad1 = 4" [style=dashed]
+"29 : current_quad1 = 1" -> "73 : current_quad1 = 3" [style=dashed]
+"29 : current_quad1 = 1" -> "41 : current_quad1 = 4" [style=dashed]
+"29 : current_quad1 = 1" -> "69 : current_quad1 = 2" [style=dashed]
+"29 : current_quad1 = 1" -> "61 : current_quad1 = 1" [style=dashed]
+"31 : pt1.xCoordinate() == 0.0 && pt1.yCoordinate() > 0.0"
+"33 : current_quad1 = 2"
+"33 : current_quad1 = 2" -> "93 : current_quad1 == current_quad2"
+"33 : current_quad1 = 2" -> "37 : current_quad1 = 3" [style=dashed]
+"33 : current_quad1 = 2" -> "65 : current_quad1 = 4" [style=dashed]
+"33 : current_quad1 = 2" -> "73 : current_quad1 = 3" [style=dashed]
+"33 : current_quad1 = 2" -> "41 : current_quad1 = 4" [style=dashed]
+"33 : current_quad1 = 2" -> "69 : current_quad1 = 2" [style=dashed]
+"33 : current_quad1 = 2" -> "61 : current_quad1 = 1" [style=dashed]
+"35 : pt1.xCoordinate() < 0.0 && pt1.yCoordinate() == 0.0"
+"37 : current_quad1 = 3"
+"37 : current_quad1 = 3" -> "93 : current_quad1 == current_quad2"
+"37 : current_quad1 = 3" -> "65 : current_quad1 = 4" [style=dashed]
+"37 : current_quad1 = 3" -> "73 : current_quad1 = 3" [style=dashed]
+"37 : current_quad1 = 3" -> "41 : current_quad1 = 4" [style=dashed]
+"37 : current_quad1 = 3" -> "69 : current_quad1 = 2" [style=dashed]
+"37 : current_quad1 = 3" -> "61 : current_quad1 = 1" [style=dashed]
+"39 : pt1.xCoordinate() == 0.0 && pt1.yCoordinate() < 0.0"
+"41 : current_quad1 = 4"
+"41 : current_quad1 = 4" -> "93 : current_quad1 == current_quad2"
+"41 : current_quad1 = 4" -> "65 : current_quad1 = 4" [style=dashed]
+"41 : current_quad1 = 4" -> "73 : current_quad1 = 3" [style=dashed]
+"41 : current_quad1 = 4" -> "69 : current_quad1 = 2" [style=dashed]
+"41 : current_quad1 = 4" -> "61 : current_quad1 = 1" [style=dashed]
+"43 : pt2.xCoordinate() > 0.0 && pt2.yCoordinate() == 0.0"
+"45 : current_quad2 = 1"
+"45 : current_quad2 = 1" -> "93 : current_quad1 == current_quad2"
+"45 : current_quad2 = 1" -> "57 : current_quad2 = 4" [style=dashed]
+"45 : current_quad2 = 1" -> "49 : current_quad2 = 2" [style=dashed]
+"45 : current_quad2 = 1" -> "90 : current_quad2 = 3" [style=dashed]
+"45 : current_quad2 = 1" -> "78 : current_quad2 = 1" [style=dashed]
+"45 : current_quad2 = 1" -> "53 : current_quad2 = 3" [style=dashed]
+"45 : current_quad2 = 1" -> "86 : current_quad2 = 2" [style=dashed]
+"45 : current_quad2 = 1" -> "82 : current_quad2 = 4" [style=dashed]
+"47 : pt2.xCoordinate() == 0.0 && pt2.yCoordinate() > 0.0"
+"49 : current_quad2 = 2"
+"49 : current_quad2 = 2" -> "93 : current_quad1 == current_quad2"
+"49 : current_quad2 = 2" -> "57 : current_quad2 = 4" [style=dashed]
+"49 : current_quad2 = 2" -> "90 : current_quad2 = 3" [style=dashed]
+"49 : current_quad2 = 2" -> "78 : current_quad2 = 1" [style=dashed]
+"49 : current_quad2 = 2" -> "53 : current_quad2 = 3" [style=dashed]
+"49 : current_quad2 = 2" -> "86 : current_quad2 = 2" [style=dashed]
+"49 : current_quad2 = 2" -> "82 : current_quad2 = 4" [style=dashed]
+"51 : pt2.xCoordinate() < 0.0 && pt2.yCoordinate() == 0.0"
+"53 : current_quad2 = 3"
+"53 : current_quad2 = 3" -> "93 : current_quad1 == current_quad2"
+"53 : current_quad2 = 3" -> "57 : current_quad2 = 4" [style=dashed]
+"53 : current_quad2 = 3" -> "90 : current_quad2 = 3" [style=dashed]
+"53 : current_quad2 = 3" -> "78 : current_quad2 = 1" [style=dashed]
+"53 : current_quad2 = 3" -> "86 : current_quad2 = 2" [style=dashed]
+"53 : current_quad2 = 3" -> "82 : current_quad2 = 4" [style=dashed]
+"55 : pt2.xCoordinate() == 0.0 && pt2.yCoordinate() < 0.0"
+"57 : current_quad2 = 4"
+"57 : current_quad2 = 4" -> "93 : current_quad1 == current_quad2"
+"57 : current_quad2 = 4" -> "90 : current_quad2 = 3" [style=dashed]
+"57 : current_quad2 = 4" -> "78 : current_quad2 = 1" [style=dashed]
+"57 : current_quad2 = 4" -> "86 : current_quad2 = 2" [style=dashed]
+"57 : current_quad2 = 4" -> "82 : current_quad2 = 4" [style=dashed]
+"59 : pt1.xCoordinate() > 0.0 && pt1.yCoordinate() > 0.0"
+"61 : current_quad1 = 1"
+"61 : current_quad1 = 1" -> "93 : current_quad1 == current_quad2"
+"61 : current_quad1 = 1" -> "65 : current_quad1 = 4" [style=dashed]
+"61 : current_quad1 = 1" -> "73 : current_quad1 = 3" [style=dashed]
+"61 : current_quad1 = 1" -> "69 : current_quad1 = 2" [style=dashed]
+"63 : pt1.xCoordinate() > 0.0 && pt1.yCoordinate() < 0.0"
+"65 : current_quad1 = 4"
+"65 : current_quad1 = 4" -> "93 : current_quad1 == current_quad2"
+"65 : current_quad1 = 4" -> "73 : current_quad1 = 3" [style=dashed]
+"65 : current_quad1 = 4" -> "69 : current_quad1 = 2" [style=dashed]
+"67 : pt1.xCoordinate() < 0.0 && pt1.yCoordinate() > 0.0"
+"69 : current_quad1 = 2"
+"69 : current_quad1 = 2" -> "93 : current_quad1 == current_quad2"
+"69 : current_quad1 = 2" -> "73 : current_quad1 = 3" [style=dashed]
+"71 : pt1.xCoordinate() < 0.0 && pt1.yCoordinate() < 0.0"
+"73 : current_quad1 = 3"
+"73 : current_quad1 = 3" -> "93 : current_quad1 == current_quad2"
+"76 : pt2.xCoordinate() > 0.0 && pt2.yCoordinate() > 0.0"
+"78 : current_quad2 = 1"
+"78 : current_quad2 = 1" -> "93 : current_quad1 == current_quad2"
+"78 : current_quad2 = 1" -> "90 : current_quad2 = 3" [style=dashed]
+"78 : current_quad2 = 1" -> "86 : current_quad2 = 2" [style=dashed]
+"78 : current_quad2 = 1" -> "82 : current_quad2 = 4" [style=dashed]
+"80 : pt2.xCoordinate() > 0.0 && pt2.yCoordinate() < 0.0"
+"82 : current_quad2 = 4"
+"82 : current_quad2 = 4" -> "93 : current_quad1 == current_quad2"
+"82 : current_quad2 = 4" -> "90 : current_quad2 = 3" [style=dashed]
+"82 : current_quad2 = 4" -> "86 : current_quad2 = 2" [style=dashed]
+"84 : pt2.xCoordinate() < 0.0 && pt2.yCoordinate() > 0.0"
+"86 : current_quad2 = 2"
+"86 : current_quad2 = 2" -> "93 : current_quad1 == current_quad2"
+"86 : current_quad2 = 2" -> "90 : current_quad2 = 3" [style=dashed]
+"88 : pt2.xCoordinate() < 0.0 && pt2.yCoordinate() < 0.0"
+"90 : current_quad2 = 3"
+"90 : current_quad2 = 3" -> "93 : current_quad1 == current_quad2"
+"93 : current_quad1 == current_quad2"
+"95 : true"
+"99 : false"
+}

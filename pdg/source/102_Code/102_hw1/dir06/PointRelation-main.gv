@@ -1,0 +1,14 @@
+digraph G {
+"7 : pt1 = getPoint()"
+"7 : pt1 = getPoint()" -> "9 : dis = distance(pt1, pt2, )"
+"7 : pt1 = getPoint()" -> "11 : sameQuad(pt1, pt2, )"
+"8 : pt2 = getPoint()"
+"8 : pt2 = getPoint()" -> "9 : dis = distance(pt1, pt2, )"
+"8 : pt2 = getPoint()" -> "11 : sameQuad(pt1, pt2, )"
+"9 : dis = distance(pt1, pt2, )"
+"9 : dis = distance(pt1, pt2, )" -> "10 : System.out.println(\"Distance between points: \" + dis, )"
+"10 : System.out.println(\"Distance between points: \" + dis, )"
+"11 : sameQuad(pt1, pt2, )"
+"13 : System.out.println(\"In same quadrant.\", )"
+"15 : System.out.println(\"Not in same quadrant.\", )"
+}

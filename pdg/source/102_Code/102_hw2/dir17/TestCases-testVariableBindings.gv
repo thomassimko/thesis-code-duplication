@@ -1,0 +1,9 @@
+digraph G {
+"40 : b = new VariableBindings()"
+"42 : b.addBinding(\"two\", 2, )"
+"43 : b.addBinding(\"three\", 3, )"
+"45 : Check.check(b.lookupBinding(\"two\", ), 2, )"
+"46 : Check.check(b.lookupBinding(\"three\", ), 3, )"
+"48 : b.addBinding(\"two\", 5, )"
+"50 : Check.check(b.lookupBinding(\"two\", ), 5, )"
+}

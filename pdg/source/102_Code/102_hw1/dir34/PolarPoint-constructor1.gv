@@ -1,0 +1,22 @@
+digraph G {
+"4 : this.radius = 0.0"
+"4 : this.radius = 0.0" -> "9 : this.radius = Math.abs(radius, )" [style=dashed]
+"5 : this.angle = 0.0"
+"5 : this.angle = 0.0" -> "19 : this.angle < 0"
+"5 : this.angle = 0.0" -> "21 : this.angle = this.angle + 360"
+"5 : this.angle = 0.0" -> "17 : this.angle = angle" [style=dashed]
+"5 : this.angle = 0.0" -> "21 : this.angle = this.angle + 360" [style=dashed]
+"9 : this.radius = Math.abs(radius, )"
+"11 : radius < 0"
+"13 : angle = angle + 180"
+"17 : this.angle = angle"
+"17 : this.angle = angle" -> "19 : this.angle < 0"
+"17 : this.angle = angle" -> "21 : this.angle = this.angle + 360"
+"17 : this.angle = angle" -> "21 : this.angle = this.angle + 360" [style=dashed]
+"19 : this.angle < 0"
+"21 : this.angle = this.angle + 360"
+"21 : this.angle = this.angle + 360" -> "19 : this.angle < 0"
+"21 : this.angle = this.angle + 360" -> "21 : this.angle = this.angle + 360"
+"21 : this.angle = this.angle + 360" -> "21 : this.angle = this.angle + 360" [style=dashed]
+"19 : this.angle < 0"
+}

@@ -1,0 +1,834 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for thesis:thesis:jar:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.version' for org.junit.jupiter:junit-jupiter-api:jar is either LATEST or RELEASE (both of them are being deprecated) @ line 25, column 22
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building thesis 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default-cli) > validate @ thesis >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default-cli) < validate @ thesis <<<
+[INFO] 
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ thesis ---
+BLOCK: Startconstructor1L0
+this.right : this.right = null, 
+this.left : this.left = null, 
+
+BLOCK: BasicL1
+this.right : this.right = rht, 
+this.left : this.left = lft, 
+
+BLOCK: StartevaluateL3
+this.left : this.left = null, 
+this.right : this.right = null, 
+
+BLOCK: BasicL4
+this.left : this.left = null, 
+this.right : this.right = null, 
+
+BLOCK: StarttoStringL6
+this.right : this.right = null, 
+this.left : this.left = null, 
+
+BLOCK: BasicL7
+this.right : this.right = null, 
+this.left : this.left = null, 
+str : str = "(" + this.left + " * " + this.right + ")", 
+
+BLOCK: Starttest_dblConstExpL9
+
+BLOCK: BasicL10
+DCE : DCE = new DoubleConstantExpression(2.0, ), 
+
+BLOCK: Starttest_negExpL12
+
+BLOCK: BasicL13
+e : e = new DoubleConstantExpression(2.0, ), 
+NE : NE = new NegationExpression(e, ), 
+
+BLOCK: Starttest_AddExpL15
+
+BLOCK: BasicL16
+rht : rht = new DoubleConstantExpression(7.0, ), 
+AE : AE = new AddExpression(lft, rht, ), 
+lft : lft = new DoubleConstantExpression(5.0, ), 
+
+BLOCK: Starttest_SubExpL18
+
+BLOCK: BasicL19
+rht : rht = new DoubleConstantExpression(3.0, ), 
+SE : SE = new SubtractExpression(lft, rht, ), 
+lft : lft = new DoubleConstantExpression(8.0, ), 
+
+BLOCK: Starttest_MultExpL21
+
+BLOCK: BasicL22
+lft : lft = new DoubleConstantExpression(6.0, ), 
+rht : rht = new DoubleConstantExpression(4.0, ), 
+ME : ME = new MultiplyExpression(lft, rht, ), 
+
+BLOCK: Starttest_DivExpL24
+
+BLOCK: BasicL25
+rht : rht = new DoubleConstantExpression(5.0, ), 
+DE : DE = new DivideExpression(lft, rht, ), 
+lft : lft = new DoubleConstantExpression(10.0, ), 
+
+BLOCK: Starttest_BindingL27
+
+BLOCK: BasicL28
+bin : bin = new Binding("pi", 3.14, ), 
+
+BLOCK: Starttest_AssignmentL30
+
+BLOCK: BasicL31
+e : e = new DoubleConstantExpression(1.312, ), 
+Ass : Ass = new Assignment("wut?", e, ), 
+
+BLOCK: Starttest_IdExpL33
+
+BLOCK: BasicL34
+IE : IE = new IdentifierExpression("LULZ", ), 
+VB : VB = new VariableBindings(), 
+
+BLOCK: StartmainL36
+
+BLOCK: BasicL37
+
+BLOCK: Startconstructor1L39
+this.right : this.right = null, 
+this.left : this.left = null, 
+
+BLOCK: BasicL40
+this.right : this.right = rht, 
+this.left : this.left = lft, 
+
+BLOCK: StartevaluateL42
+this.left : this.left = null, 
+this.right : this.right = null, 
+
+BLOCK: BasicL43
+this.left : this.left = null, 
+this.right : this.right = null, 
+
+BLOCK: StarttoStringL45
+this.right : this.right = null, 
+this.left : this.left = null, 
+
+BLOCK: BasicL46
+this.right : this.right = null, 
+str : str = "(" + this.left + " + " + this.right + ")", 
+this.left : this.left = null, 
+
+BLOCK: StartaddBindingL48
+this.bindlist : this.bindlist = new ArrayList(), 
+this.bindval : this.bindval = 0.0, 
+
+BLOCK: BasicL49
+this.bindlist : this.bindlist = new ArrayList(), 
+bin : bin = new Binding(id, value, ), 
+this.bindval : this.bindval = 0.0, 
+
+BLOCK: StartlookupBindingL51
+this.bindlist : this.bindlist = new ArrayList(), 
+this.bindval : this.bindval = 0.0, 
+
+BLOCK: BasicL52
+this.bindlist : this.bindlist = new ArrayList(), 
+this.bindval : this.bindval = 0.0, 
+
+BLOCK: ForInitL54
+i : i = 0, 
+this.bindlist : this.bindlist = new ArrayList(), 
+this.bindval : this.bindval = 0.0, 
+
+BLOCK: ForCondL55
+i : i = 0, i = i + 1, 
+this.bindlist : this.bindlist = new ArrayList(), 
+this.bindval : this.bindval = 0.0, this.bindval = getval(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: LoopL56
+i : i = 0, i = i + 1, 
+this.bindlist : this.bindlist = new ArrayList(), 
+this.bindval : this.bindval = 0.0, this.bindval = getval(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: BasicL57
+i : i = 0, i = i + 1, 
+this.bindlist : this.bindlist = new ArrayList(), 
+this.bindval : this.bindval = 0.0, this.bindval = getval(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: trueL58
+i : i = 0, i = i + 1, 
+this.bindlist : this.bindlist = new ArrayList(), 
+this.bindval : this.bindval = getval(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: joinL59
+i : i = i + 1, 
+this.bindlist : this.bindlist = new ArrayList(), 
+this.bindval : this.bindval = 0.0, this.bindval = getval(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: Startconstructor1L60
+this.left : this.left = null, 
+this.right : this.right = null, 
+
+BLOCK: BasicL61
+this.left : this.left = lft, 
+this.right : this.right = rht, 
+
+BLOCK: StartevaluateL63
+this.right : this.right = null, 
+this.left : this.left = null, 
+
+BLOCK: BasicL64
+this.right : this.right = null, 
+this.left : this.left = null, 
+
+BLOCK: StarttoStringL66
+this.right : this.right = null, 
+this.left : this.left = null, 
+
+BLOCK: BasicL67
+str : str = "(" + this.left + " / " + this.right + ")", 
+this.right : this.right = null, 
+this.left : this.left = null, 
+
+BLOCK: Startconstructor1L69
+this.ID : this.ID = null, 
+
+BLOCK: BasicL70
+this.ID : this.ID = id, 
+
+BLOCK: StartevaluateL72
+this.ID : this.ID = null, 
+
+BLOCK: BasicL73
+this.ID : this.ID = null, 
+
+BLOCK: StarttoStringL75
+this.ID : this.ID = null, 
+
+BLOCK: BasicL76
+this.ID : this.ID = null, 
+
+BLOCK: Startconstructor1L78
+this.left : this.left = null, 
+this.right : this.right = null, 
+
+BLOCK: BasicL79
+this.left : this.left = lft, 
+this.right : this.right = rht, 
+
+BLOCK: StartevaluateL81
+this.right : this.right = null, 
+this.left : this.left = null, 
+
+BLOCK: BasicL82
+this.right : this.right = null, 
+this.left : this.left = null, 
+
+BLOCK: StarttoStringL84
+this.left : this.left = null, 
+this.right : this.right = null, 
+
+BLOCK: BasicL85
+str : str = "(" + this.left + " - " + this.right + ")", 
+this.left : this.left = null, 
+this.right : this.right = null, 
+
+BLOCK: Startconstructor1L87
+this.ID : this.ID = null, 
+this.exp : this.exp = null, 
+
+BLOCK: BasicL88
+this.ID : this.ID = id, 
+this.exp : this.exp = e, 
+
+BLOCK: StartevaluateL90
+this.exp : this.exp = null, 
+this.ID : this.ID = null, 
+
+BLOCK: BasicL91
+this.exp : this.exp = null, 
+bin : bin = new Binding(this.ID, evaluate(binding, ), ), 
+this.ID : this.ID = null, 
+
+BLOCK: StarttoStringL93
+this.ID : this.ID = null, 
+this.exp : this.exp = null, 
+
+BLOCK: BasicL94
+this.ID : this.ID = null, 
+this.exp : this.exp = null, 
+str : str = "set " + this.ID + " = " + this.exp, 
+
+BLOCK: Startconstructor1L96
+this.exp : this.exp = null, 
+
+BLOCK: BasicL97
+this.exp : this.exp = e, 
+
+BLOCK: StartevaluateL99
+this.exp : this.exp = null, 
+
+BLOCK: BasicL100
+this.exp : this.exp = null, 
+
+BLOCK: StarttoStringL102
+this.exp : this.exp = null, 
+
+BLOCK: BasicL103
+str : str = "-" + this.exp, 
+this.exp : this.exp = null, 
+
+BLOCK: Startconstructor1L105
+this.Val : this.Val = 0.0, 
+this.ID : this.ID = null, 
+
+BLOCK: BasicL106
+this.Val : this.Val = value, 
+this.ID : this.ID = id, 
+
+BLOCK: StartsetstringL108
+this.ID : this.ID = null, 
+this.Val : this.Val = 0.0, 
+
+BLOCK: BasicL109
+this.ID : this.ID = name, 
+this.Val : this.Val = 0.0, 
+
+BLOCK: StartsetvalueL111
+this.ID : this.ID = null, 
+this.Val : this.Val = 0.0, 
+
+BLOCK: BasicL112
+this.ID : this.ID = null, 
+this.Val : this.Val = num, 
+
+BLOCK: StartgetstrL114
+this.ID : this.ID = null, 
+this.Val : this.Val = 0.0, 
+
+BLOCK: BasicL115
+this.ID : this.ID = null, 
+this.Val : this.Val = 0.0, 
+
+BLOCK: StartgetvalL117
+this.Val : this.Val = 0.0, 
+this.ID : this.ID = null, 
+
+BLOCK: BasicL118
+this.Val : this.Val = 0.0, 
+this.ID : this.ID = null, 
+
+BLOCK: Startconstructor1L120
+this.num : this.num = 0.0, 
+
+BLOCK: BasicL121
+this.num : this.num = value, 
+
+BLOCK: StartevaluateL123
+this.num : this.num = 0.0, 
+
+BLOCK: BasicL124
+this.num : this.num = 0.0, 
+
+BLOCK: StarttoStringL126
+this.num : this.num = 0.0, 
+
+BLOCK: BasicL127
+this.num : this.num = 0.0, 
+str : str = this.num + "", 
+
+BLOCK: Startconstructor1L0
+this.right : this.right = null, 
+this.left : this.left = null, 
+
+BLOCK: Startconstructor1L0
+this.right : this.right = null, 
+this.left : this.left = null, 
+
+BLOCK: BasicL1
+this.right : this.right = rht, 
+this.left : this.left = lft, 
+
+BLOCK: StartevaluateL3
+this.left : this.left = null, 
+this.right : this.right = null, 
+
+BLOCK: StartevaluateL3
+this.left : this.left = null, 
+this.right : this.right = null, 
+
+BLOCK: BasicL4
+this.left : this.left = null, 
+this.right : this.right = null, 
+
+BLOCK: StarttoStringL6
+this.right : this.right = null, 
+this.left : this.left = null, 
+
+BLOCK: StarttoStringL6
+this.right : this.right = null, 
+this.left : this.left = null, 
+
+BLOCK: BasicL7
+this.right : this.right = null, 
+this.left : this.left = null, 
+str : str = "(" + this.left + " * " + this.right + ")", 
+
+BLOCK: Starttest_dblConstExpL9
+
+BLOCK: Starttest_dblConstExpL9
+
+BLOCK: BasicL10
+DCE : DCE = new DoubleConstantExpression(2.0, ), 
+
+BLOCK: Starttest_negExpL12
+
+BLOCK: Starttest_negExpL12
+
+BLOCK: BasicL13
+e : e = new DoubleConstantExpression(2.0, ), 
+NE : NE = new NegationExpression(e, ), 
+
+BLOCK: Starttest_AddExpL15
+
+BLOCK: Starttest_AddExpL15
+
+BLOCK: BasicL16
+rht : rht = new DoubleConstantExpression(7.0, ), 
+AE : AE = new AddExpression(lft, rht, ), 
+lft : lft = new DoubleConstantExpression(5.0, ), 
+
+BLOCK: Starttest_SubExpL18
+
+BLOCK: Starttest_SubExpL18
+
+BLOCK: BasicL19
+rht : rht = new DoubleConstantExpression(3.0, ), 
+SE : SE = new SubtractExpression(lft, rht, ), 
+lft : lft = new DoubleConstantExpression(8.0, ), 
+
+BLOCK: Starttest_MultExpL21
+
+BLOCK: Starttest_MultExpL21
+
+BLOCK: BasicL22
+lft : lft = new DoubleConstantExpression(6.0, ), 
+rht : rht = new DoubleConstantExpression(4.0, ), 
+ME : ME = new MultiplyExpression(lft, rht, ), 
+
+BLOCK: Starttest_DivExpL24
+
+BLOCK: Starttest_DivExpL24
+
+BLOCK: BasicL25
+rht : rht = new DoubleConstantExpression(5.0, ), 
+DE : DE = new DivideExpression(lft, rht, ), 
+lft : lft = new DoubleConstantExpression(10.0, ), 
+
+BLOCK: Starttest_BindingL27
+
+BLOCK: Starttest_BindingL27
+
+BLOCK: BasicL28
+bin : bin = new Binding("pi", 3.14, ), 
+
+BLOCK: Starttest_AssignmentL30
+
+BLOCK: Starttest_AssignmentL30
+
+BLOCK: BasicL31
+e : e = new DoubleConstantExpression(1.312, ), 
+Ass : Ass = new Assignment("wut?", e, ), 
+
+BLOCK: Starttest_IdExpL33
+
+BLOCK: Starttest_IdExpL33
+
+BLOCK: BasicL34
+IE : IE = new IdentifierExpression("LULZ", ), 
+VB : VB = new VariableBindings(), 
+
+BLOCK: StartmainL36
+
+BLOCK: StartmainL36
+
+BLOCK: BasicL37
+
+BLOCK: Startconstructor1L39
+this.right : this.right = null, 
+this.left : this.left = null, 
+
+BLOCK: Startconstructor1L39
+this.right : this.right = null, 
+this.left : this.left = null, 
+
+BLOCK: BasicL40
+this.right : this.right = rht, 
+this.left : this.left = lft, 
+
+BLOCK: StartevaluateL42
+this.left : this.left = null, 
+this.right : this.right = null, 
+
+BLOCK: StartevaluateL42
+this.left : this.left = null, 
+this.right : this.right = null, 
+
+BLOCK: BasicL43
+this.left : this.left = null, 
+this.right : this.right = null, 
+
+BLOCK: StarttoStringL45
+this.right : this.right = null, 
+this.left : this.left = null, 
+
+BLOCK: StarttoStringL45
+this.right : this.right = null, 
+this.left : this.left = null, 
+
+BLOCK: BasicL46
+this.right : this.right = null, 
+str : str = "(" + this.left + " + " + this.right + ")", 
+this.left : this.left = null, 
+
+BLOCK: StartaddBindingL48
+this.bindlist : this.bindlist = new ArrayList(), 
+this.bindval : this.bindval = 0.0, 
+
+BLOCK: StartaddBindingL48
+this.bindlist : this.bindlist = new ArrayList(), 
+this.bindval : this.bindval = 0.0, 
+
+BLOCK: BasicL49
+this.bindlist : this.bindlist = new ArrayList(), 
+bin : bin = new Binding(id, value, ), 
+this.bindval : this.bindval = 0.0, 
+
+BLOCK: StartlookupBindingL51
+this.bindlist : this.bindlist = new ArrayList(), 
+this.bindval : this.bindval = 0.0, 
+
+BLOCK: StartlookupBindingL51
+this.bindlist : this.bindlist = new ArrayList(), 
+this.bindval : this.bindval = 0.0, 
+
+BLOCK: BasicL52
+this.bindlist : this.bindlist = new ArrayList(), 
+this.bindval : this.bindval = 0.0, 
+
+BLOCK: ForInitL54
+i : i = 0, 
+this.bindlist : this.bindlist = new ArrayList(), 
+this.bindval : this.bindval = 0.0, 
+
+BLOCK: ForCondL55
+i : i = 0, i = i + 1, 
+this.bindlist : this.bindlist = new ArrayList(), 
+this.bindval : this.bindval = 0.0, this.bindval = getval(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: LoopL56
+i : i = 0, i = i + 1, 
+this.bindlist : this.bindlist = new ArrayList(), 
+this.bindval : this.bindval = 0.0, this.bindval = getval(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: BasicL57
+i : i = 0, i = i + 1, 
+this.bindlist : this.bindlist = new ArrayList(), 
+this.bindval : this.bindval = 0.0, this.bindval = getval(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: trueL58
+i : i = 0, i = i + 1, 
+this.bindlist : this.bindlist = new ArrayList(), 
+this.bindval : this.bindval = getval(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: joinL59
+i : i = i + 1, 
+this.bindlist : this.bindlist = new ArrayList(), 
+this.bindval : this.bindval = 0.0, this.bindval = getval(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: Startconstructor1L60
+this.left : this.left = null, 
+this.right : this.right = null, 
+
+BLOCK: Startconstructor1L60
+this.left : this.left = null, 
+this.right : this.right = null, 
+
+BLOCK: BasicL61
+this.left : this.left = lft, 
+this.right : this.right = rht, 
+
+BLOCK: StartevaluateL63
+this.right : this.right = null, 
+this.left : this.left = null, 
+
+BLOCK: StartevaluateL63
+this.right : this.right = null, 
+this.left : this.left = null, 
+
+BLOCK: BasicL64
+this.right : this.right = null, 
+this.left : this.left = null, 
+
+BLOCK: StarttoStringL66
+this.right : this.right = null, 
+this.left : this.left = null, 
+
+BLOCK: StarttoStringL66
+this.right : this.right = null, 
+this.left : this.left = null, 
+
+BLOCK: BasicL67
+str : str = "(" + this.left + " / " + this.right + ")", 
+this.right : this.right = null, 
+this.left : this.left = null, 
+
+BLOCK: Startconstructor1L69
+this.ID : this.ID = null, 
+
+BLOCK: Startconstructor1L69
+this.ID : this.ID = null, 
+
+BLOCK: BasicL70
+this.ID : this.ID = id, 
+
+BLOCK: StartevaluateL72
+this.ID : this.ID = null, 
+
+BLOCK: StartevaluateL72
+this.ID : this.ID = null, 
+
+BLOCK: BasicL73
+this.ID : this.ID = null, 
+
+BLOCK: StarttoStringL75
+this.ID : this.ID = null, 
+
+BLOCK: StarttoStringL75
+this.ID : this.ID = null, 
+
+BLOCK: BasicL76
+this.ID : this.ID = null, 
+
+BLOCK: Startconstructor1L78
+this.left : this.left = null, 
+this.right : this.right = null, 
+
+BLOCK: Startconstructor1L78
+this.left : this.left = null, 
+this.right : this.right = null, 
+
+BLOCK: BasicL79
+this.left : this.left = lft, 
+this.right : this.right = rht, 
+
+BLOCK: StartevaluateL81
+this.right : this.right = null, 
+this.left : this.left = null, 
+
+BLOCK: StartevaluateL81
+this.right : this.right = null, 
+this.left : this.left = null, 
+
+BLOCK: BasicL82
+this.right : this.right = null, 
+this.left : this.left = null, 
+
+BLOCK: StarttoStringL84
+this.left : this.left = null, 
+this.right : this.right = null, 
+
+BLOCK: StarttoStringL84
+this.left : this.left = null, 
+this.right : this.right = null, 
+
+BLOCK: BasicL85
+str : str = "(" + this.left + " - " + this.right + ")", 
+this.left : this.left = null, 
+this.right : this.right = null, 
+
+BLOCK: Startconstructor1L87
+this.ID : this.ID = null, 
+this.exp : this.exp = null, 
+
+BLOCK: Startconstructor1L87
+this.ID : this.ID = null, 
+this.exp : this.exp = null, 
+
+BLOCK: BasicL88
+this.ID : this.ID = id, 
+this.exp : this.exp = e, 
+
+BLOCK: StartevaluateL90
+this.exp : this.exp = null, 
+this.ID : this.ID = null, 
+
+BLOCK: StartevaluateL90
+this.exp : this.exp = null, 
+this.ID : this.ID = null, 
+
+BLOCK: BasicL91
+this.exp : this.exp = null, 
+bin : bin = new Binding(this.ID, evaluate(binding, ), ), 
+this.ID : this.ID = null, 
+
+BLOCK: StarttoStringL93
+this.ID : this.ID = null, 
+this.exp : this.exp = null, 
+
+BLOCK: StarttoStringL93
+this.ID : this.ID = null, 
+this.exp : this.exp = null, 
+
+BLOCK: BasicL94
+this.ID : this.ID = null, 
+this.exp : this.exp = null, 
+str : str = "set " + this.ID + " = " + this.exp, 
+
+BLOCK: Startconstructor1L96
+this.exp : this.exp = null, 
+
+BLOCK: Startconstructor1L96
+this.exp : this.exp = null, 
+
+BLOCK: BasicL97
+this.exp : this.exp = e, 
+
+BLOCK: StartevaluateL99
+this.exp : this.exp = null, 
+
+BLOCK: StartevaluateL99
+this.exp : this.exp = null, 
+
+BLOCK: BasicL100
+this.exp : this.exp = null, 
+
+BLOCK: StarttoStringL102
+this.exp : this.exp = null, 
+
+BLOCK: StarttoStringL102
+this.exp : this.exp = null, 
+
+BLOCK: BasicL103
+str : str = "-" + this.exp, 
+this.exp : this.exp = null, 
+
+BLOCK: Startconstructor1L105
+this.Val : this.Val = 0.0, 
+this.ID : this.ID = null, 
+
+BLOCK: Startconstructor1L105
+this.Val : this.Val = 0.0, 
+this.ID : this.ID = null, 
+
+BLOCK: BasicL106
+this.Val : this.Val = value, 
+this.ID : this.ID = id, 
+
+BLOCK: StartsetstringL108
+this.ID : this.ID = null, 
+this.Val : this.Val = 0.0, 
+
+BLOCK: StartsetstringL108
+this.ID : this.ID = null, 
+this.Val : this.Val = 0.0, 
+
+BLOCK: BasicL109
+this.ID : this.ID = name, 
+this.Val : this.Val = 0.0, 
+
+BLOCK: StartsetvalueL111
+this.ID : this.ID = null, 
+this.Val : this.Val = 0.0, 
+
+BLOCK: StartsetvalueL111
+this.ID : this.ID = null, 
+this.Val : this.Val = 0.0, 
+
+BLOCK: BasicL112
+this.ID : this.ID = null, 
+this.Val : this.Val = num, 
+
+BLOCK: StartgetstrL114
+this.ID : this.ID = null, 
+this.Val : this.Val = 0.0, 
+
+BLOCK: StartgetstrL114
+this.ID : this.ID = null, 
+this.Val : this.Val = 0.0, 
+
+BLOCK: BasicL115
+this.ID : this.ID = null, 
+this.Val : this.Val = 0.0, 
+
+BLOCK: StartgetvalL117
+this.Val : this.Val = 0.0, 
+this.ID : this.ID = null, 
+
+BLOCK: StartgetvalL117
+this.Val : this.Val = 0.0, 
+this.ID : this.ID = null, 
+
+BLOCK: BasicL118
+this.Val : this.Val = 0.0, 
+this.ID : this.ID = null, 
+
+BLOCK: Startconstructor1L120
+this.num : this.num = 0.0, 
+
+BLOCK: Startconstructor1L120
+this.num : this.num = 0.0, 
+
+BLOCK: BasicL121
+this.num : this.num = value, 
+
+BLOCK: StartevaluateL123
+this.num : this.num = 0.0, 
+
+BLOCK: StartevaluateL123
+this.num : this.num = 0.0, 
+
+BLOCK: BasicL124
+this.num : this.num = 0.0, 
+
+BLOCK: StarttoStringL126
+this.num : this.num = 0.0, 
+
+BLOCK: StarttoStringL126
+this.num : this.num = 0.0, 
+
+BLOCK: BasicL127
+this.num : this.num = 0.0, 
+str : str = this.num + "", 
+
+Unfiltered: 0
+Filtered: 0
+
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.212 s
+[INFO] Finished at: 2019-05-01T17:14:42-07:00
+[INFO] Final Memory: 15M/699M
+[INFO] ------------------------------------------------------------------------

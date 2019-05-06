@@ -1,0 +1,9 @@
+digraph G {
+"49 : point.xCoordinate() > 0 && point.yCoordinate() >= 0"
+"50 : 1"
+"51 : point.xCoordinate() <= 0 && point.yCoordinate() > 0"
+"52 : 2"
+"53 : point.xCoordinate() < 0 && point.yCoordinate() <= 0"
+"54 : 3"
+"55 : 4"
+}

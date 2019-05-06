@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.r = 0.0"
+"4 : this.r = 0.0" -> "33 : this.r * Math.cos(Math.toRadians(this.a, ), )"
+"5 : this.a = 0.0"
+"5 : this.a = 0.0" -> "33 : this.r * Math.cos(Math.toRadians(this.a, ), )"
+"33 : this.r * Math.cos(Math.toRadians(this.a, ), )"
+}

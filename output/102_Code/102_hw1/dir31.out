@@ -1,0 +1,560 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for thesis:thesis:jar:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.version' for org.junit.jupiter:junit-jupiter-api:jar is either LATEST or RELEASE (both of them are being deprecated) @ line 25, column 22
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building thesis 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default-cli) > validate @ thesis >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default-cli) < validate @ thesis <<<
+[INFO] 
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ thesis ---
+BLOCK: Startconstructor1L0
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL1
+this.radius : this.radius = r, 
+this.angle : this.angle = a * Math.PI / 180, 
+
+BLOCK: StartxCoordL3
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL4
+this.radius : this.radius = 0.0, 
+x : x = this.radius * Math.cos(this.angle, ), 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartyCoordL6
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL7
+this.radius : this.radius = 0.0, 
+y : y = this.radius * Math.sin(this.angle, ), 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartradiusL9
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL10
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartangleL12
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: BasicL13
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: Startrot90L15
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: BasicL16
+this.angle : this.angle = 0.0, 
+ang : ang = this.angle + Math.PI / 2, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: trueL18
+this.angle : this.angle = 0.0, 
+ang : ang = ang - 2 * Math.PI, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: joinL19
+this.angle : this.angle = 0.0, 
+ang : ang = ang - 2 * Math.PI, ang = this.angle + Math.PI / 2, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: StartmainL20
+
+BLOCK: BasicL21
+tp : tp = new PolarPoint(1, Math.PI / 6, ), 
+rp : rp = new PolarPoint(2, Math.PI / 4, ), 
+
+BLOCK: StartmainL23
+
+BLOCK: BasicL24
+cp : cp = new CartesianPoint(4, 3, ), 
+dp : dp = new CartesianPoint(5, 12, ), 
+
+BLOCK: StartdistanceL26
+
+BLOCK: BasicL27
+
+BLOCK: trueL29
+
+BLOCK: falseL31
+
+BLOCK: joinL30
+
+BLOCK: StartquadL32
+
+BLOCK: BasicL33
+
+BLOCK: trueL35
+
+BLOCK: falseL37
+
+BLOCK: trueL38
+
+BLOCK: falseL40
+
+BLOCK: trueL41
+
+BLOCK: falseL43
+
+BLOCK: joinL42
+
+BLOCK: joinL39
+
+BLOCK: joinL36
+
+BLOCK: StartSameQuadL44
+
+BLOCK: BasicL45
+
+BLOCK: trueL47
+
+BLOCK: joinL48
+
+BLOCK: StartcallPointL49
+
+BLOCK: BasicL50
+scan : scan = new Scanner(System.in, ), 
+y : y = 0.0, 
+ans : ans = scan.nextInt(), 
+x : x = 0.0, 
+
+BLOCK: trueL52
+scan : scan = new Scanner(System.in, ), 
+y : y = scan.nextDouble(), 
+ans : ans = scan.nextInt(), 
+x : x = scan.nextDouble(), 
+
+BLOCK: falseL54
+scan : scan = new Scanner(System.in, ), 
+y : y = scan.nextDouble(), 
+ans : ans = scan.nextInt(), 
+x : x = scan.nextDouble(), 
+
+BLOCK: joinL53
+scan : scan = new Scanner(System.in, ), scan = new Scanner(System.in, ), 
+y : y = scan.nextDouble(), y = scan.nextDouble(), 
+ans : ans = scan.nextInt(), 
+x : x = scan.nextDouble(), x = scan.nextDouble(), 
+
+BLOCK: StartmainL55
+
+BLOCK: BasicL56
+dist : dist = distance(point1, point2, ), 
+point2 : point2 = callPoint(), 
+point1 : point1 = callPoint(), 
+
+BLOCK: trueL58
+dist : dist = distance(point1, point2, ), 
+point2 : point2 = callPoint(), 
+point1 : point1 = callPoint(), 
+
+BLOCK: falseL60
+dist : dist = distance(point1, point2, ), 
+point2 : point2 = callPoint(), 
+point1 : point1 = callPoint(), 
+
+BLOCK: joinL59
+dist : dist = distance(point1, point2, ), 
+point2 : point2 = callPoint(), 
+point1 : point1 = callPoint(), 
+
+BLOCK: Startconstructor1L61
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: BasicL62
+this.y : this.y = in2, 
+this.x : this.x = in1, 
+
+BLOCK: StartxCoordL64
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL65
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartyCoordL67
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: BasicL68
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: StartradiusL70
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL71
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+hyp : hyp = Math.sqrt(this.x * this.x + this.y * this.y, ), 
+
+BLOCK: StartangleL73
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL74
+ang : ang = Math.atan2(this.y, this.x, ), 
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: trueL76
+ang : ang = ang - 2 * Math.PI, 
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: joinL77
+ang : ang = ang - 2 * Math.PI, ang = Math.atan2(this.y, this.x, ), 
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: Startrot90L78
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: BasicL79
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+x2 : x2 = this.x * Math.cos(angle(), ) + this.y * Math.sin(angle(), ), 
+y2 : y2 = this.y * Math.cos(angle(), ) - this.x * Math.sin(angle(), ), 
+
+BLOCK: Startconstructor1L0
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: Startconstructor1L0
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL1
+this.radius : this.radius = r, 
+this.angle : this.angle = a * Math.PI / 180, 
+
+BLOCK: StartxCoordL3
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartxCoordL3
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL4
+this.radius : this.radius = 0.0, 
+x : x = this.radius * Math.cos(this.angle, ), 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartyCoordL6
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartyCoordL6
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL7
+this.radius : this.radius = 0.0, 
+y : y = this.radius * Math.sin(this.angle, ), 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartradiusL9
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartradiusL9
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL10
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartangleL12
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: StartangleL12
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: BasicL13
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: Startrot90L15
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: Startrot90L15
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: BasicL16
+this.angle : this.angle = 0.0, 
+ang : ang = this.angle + Math.PI / 2, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: trueL18
+this.angle : this.angle = 0.0, 
+ang : ang = ang - 2 * Math.PI, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: joinL19
+this.angle : this.angle = 0.0, 
+ang : ang = ang - 2 * Math.PI, ang = this.angle + Math.PI / 2, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: StartmainL20
+
+BLOCK: StartmainL20
+
+BLOCK: BasicL21
+tp : tp = new PolarPoint(1, Math.PI / 6, ), 
+rp : rp = new PolarPoint(2, Math.PI / 4, ), 
+
+BLOCK: StartmainL23
+
+BLOCK: StartmainL23
+
+BLOCK: BasicL24
+cp : cp = new CartesianPoint(4, 3, ), 
+dp : dp = new CartesianPoint(5, 12, ), 
+
+BLOCK: StartdistanceL26
+
+BLOCK: StartdistanceL26
+
+BLOCK: BasicL27
+
+BLOCK: trueL29
+
+BLOCK: falseL31
+
+BLOCK: joinL30
+
+BLOCK: StartquadL32
+
+BLOCK: StartquadL32
+
+BLOCK: BasicL33
+
+BLOCK: trueL35
+
+BLOCK: falseL37
+
+BLOCK: trueL38
+
+BLOCK: falseL40
+
+BLOCK: trueL41
+
+BLOCK: falseL43
+
+BLOCK: joinL42
+
+BLOCK: joinL39
+
+BLOCK: joinL36
+
+BLOCK: StartSameQuadL44
+
+BLOCK: StartSameQuadL44
+
+BLOCK: BasicL45
+
+BLOCK: trueL47
+
+BLOCK: joinL48
+
+BLOCK: StartcallPointL49
+
+BLOCK: StartcallPointL49
+
+BLOCK: BasicL50
+scan : scan = new Scanner(System.in, ), 
+y : y = 0.0, 
+ans : ans = scan.nextInt(), 
+x : x = 0.0, 
+
+BLOCK: trueL52
+scan : scan = new Scanner(System.in, ), 
+y : y = scan.nextDouble(), 
+ans : ans = scan.nextInt(), 
+x : x = scan.nextDouble(), 
+
+BLOCK: falseL54
+scan : scan = new Scanner(System.in, ), 
+y : y = scan.nextDouble(), 
+ans : ans = scan.nextInt(), 
+x : x = scan.nextDouble(), 
+
+BLOCK: joinL53
+scan : scan = new Scanner(System.in, ), scan = new Scanner(System.in, ), 
+y : y = scan.nextDouble(), y = scan.nextDouble(), 
+ans : ans = scan.nextInt(), 
+x : x = scan.nextDouble(), x = scan.nextDouble(), 
+
+BLOCK: StartmainL55
+
+BLOCK: StartmainL55
+
+BLOCK: BasicL56
+dist : dist = distance(point1, point2, ), 
+point2 : point2 = callPoint(), 
+point1 : point1 = callPoint(), 
+
+BLOCK: trueL58
+dist : dist = distance(point1, point2, ), 
+point2 : point2 = callPoint(), 
+point1 : point1 = callPoint(), 
+
+BLOCK: falseL60
+dist : dist = distance(point1, point2, ), 
+point2 : point2 = callPoint(), 
+point1 : point1 = callPoint(), 
+
+BLOCK: joinL59
+dist : dist = distance(point1, point2, ), 
+point2 : point2 = callPoint(), 
+point1 : point1 = callPoint(), 
+
+BLOCK: Startconstructor1L61
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: Startconstructor1L61
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: BasicL62
+this.y : this.y = in2, 
+this.x : this.x = in1, 
+
+BLOCK: StartxCoordL64
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartxCoordL64
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL65
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartyCoordL67
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: StartyCoordL67
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: BasicL68
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: StartradiusL70
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartradiusL70
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL71
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+hyp : hyp = Math.sqrt(this.x * this.x + this.y * this.y, ), 
+
+BLOCK: StartangleL73
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartangleL73
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL74
+ang : ang = Math.atan2(this.y, this.x, ), 
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: trueL76
+ang : ang = ang - 2 * Math.PI, 
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: joinL77
+ang : ang = ang - 2 * Math.PI, ang = Math.atan2(this.y, this.x, ), 
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: Startrot90L78
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: Startrot90L78
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: BasicL79
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+x2 : x2 = this.x * Math.cos(angle(), ) + this.y * Math.sin(angle(), ), 
+y2 : y2 = this.y * Math.cos(angle(), ) - this.x * Math.sin(angle(), ), 
+
+Unfiltered: 8
+Filtered: 1
+
+
+Duplicate found: 102_Code/102_hw1/dir31/PointRelation.java lines [30, 52] and 102_Code/102_hw1/dir31/PointRelation.java lines [30, 52]
+102_Code/102_hw1/dir31/PointRelation.java ----------
+30 :	y = 0.0
+37 :	x = scan.nextDouble()
+40 :	y = scan.nextDouble()
+42 :	new CartesianPoint(x, y, )
+47 :	x = scan.nextDouble()
+50 :	y = scan.nextDouble()
+52 :	new PolarPoint(x, y, )
+102_Code/102_hw1/dir31/PointRelation.java ----------
+30 :	x = 0.0
+50 :	y = scan.nextDouble()
+47 :	x = scan.nextDouble()
+52 :	new PolarPoint(x, y, )
+40 :	y = scan.nextDouble()
+37 :	x = scan.nextDouble()
+42 :	new CartesianPoint(x, y, )
+===========================
+
+
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.014 s
+[INFO] Finished at: 2019-05-01T17:11:42-07:00
+[INFO] Final Memory: 28M/1004M
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,186 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for thesis:thesis:jar:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.version' for org.junit.jupiter:junit-jupiter-api:jar is either LATEST or RELEASE (both of them are being deprecated) @ line 25, column 22
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building thesis 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default-cli) > validate @ thesis >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default-cli) < validate @ thesis <<<
+[INFO] 
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ thesis ---
+BLOCK: Starttest1L0
+
+BLOCK: BasicL1
+count1 : count1 = 0, 
+sum1 : sum1 = 0, 
+
+BLOCK: ForInitL3
+count1 : count1 = 0, 
+sum1 : sum1 = 0, 
+i : i = 0, 
+
+BLOCK: ForCondL4
+count1 : count1 = 0, count1 = count1 + 1, 
+sum1 : sum1 = 0, sum1 = sum1 + arr[i], 
+i : i = 0, i = i + 1, 
+@temp1 : @temp1 = count1, 
+@temp2 : @temp2 = i, 
+
+BLOCK: LoopL5
+count1 : count1 = count1 + 1, 
+sum1 : sum1 = sum1 + arr[i], 
+i : i = i + 1, 
+@temp1 : @temp1 = count1, 
+@temp2 : @temp2 = i, 
+
+BLOCK: BasicL6
+count1 : count1 = 0, count1 = count1 + 1, 
+sum1 : sum1 = 0, sum1 = sum1 + arr[i], 
+average1 : average1 = sum1 * 1.0 / count1, 
+i : i = 0, i = i + 1, 
+@temp1 : @temp1 = count1, 
+@temp2 : @temp2 = i, 
+
+BLOCK: Starttest2L7
+
+BLOCK: BasicL8
+count2 : count2 = 0, 
+sum2 : sum2 = 0, 
+
+BLOCK: ForInitL10
+count2 : count2 = 0, 
+sum2 : sum2 = 0, 
+i : i = 0, 
+
+BLOCK: ForCondL11
+@temp3 : @temp3 = count2, 
+count2 : count2 = 0, count2 = count2 + 1, 
+sum2 : sum2 = 0, sum2 = sum2 + arr[i], 
+@temp4 : @temp4 = i, 
+i : i = i + 1, i = 0, 
+
+BLOCK: LoopL12
+@temp3 : @temp3 = count2, 
+count2 : count2 = count2 + 1, 
+sum2 : sum2 = sum2 + arr[i], 
+@temp4 : @temp4 = i, 
+i : i = i + 1, 
+
+BLOCK: BasicL13
+average2 : average2 = sum2 * 1.0 / count2, 
+@temp3 : @temp3 = count2, 
+count2 : count2 = 0, count2 = count2 + 1, 
+sum2 : sum2 = 0, sum2 = sum2 + arr[i], 
+@temp4 : @temp4 = i, 
+i : i = i + 1, i = 0, 
+
+BLOCK: Starttest1L0
+
+BLOCK: Starttest1L0
+
+BLOCK: BasicL1
+count1 : count1 = 0, 
+sum1 : sum1 = 0, 
+
+BLOCK: ForInitL3
+count1 : count1 = 0, 
+sum1 : sum1 = 0, 
+i : i = 0, 
+
+BLOCK: ForCondL4
+count1 : count1 = 0, count1 = count1 + 1, 
+sum1 : sum1 = 0, sum1 = sum1 + arr[i], 
+i : i = 0, i = i + 1, 
+@temp1 : @temp1 = count1, 
+@temp2 : @temp2 = i, 
+
+BLOCK: LoopL5
+count1 : count1 = count1 + 1, 
+sum1 : sum1 = sum1 + arr[i], 
+i : i = i + 1, 
+@temp1 : @temp1 = count1, 
+@temp2 : @temp2 = i, 
+
+BLOCK: BasicL6
+count1 : count1 = 0, count1 = count1 + 1, 
+sum1 : sum1 = 0, sum1 = sum1 + arr[i], 
+average1 : average1 = sum1 * 1.0 / count1, 
+i : i = 0, i = i + 1, 
+@temp1 : @temp1 = count1, 
+@temp2 : @temp2 = i, 
+
+BLOCK: Starttest2L7
+
+BLOCK: Starttest2L7
+
+BLOCK: BasicL8
+count2 : count2 = 0, 
+sum2 : sum2 = 0, 
+
+BLOCK: ForInitL10
+count2 : count2 = 0, 
+sum2 : sum2 = 0, 
+i : i = 0, 
+
+BLOCK: ForCondL11
+@temp3 : @temp3 = count2, 
+count2 : count2 = 0, count2 = count2 + 1, 
+sum2 : sum2 = 0, sum2 = sum2 + arr[i], 
+@temp4 : @temp4 = i, 
+i : i = i + 1, i = 0, 
+
+BLOCK: LoopL12
+@temp3 : @temp3 = count2, 
+count2 : count2 = count2 + 1, 
+sum2 : sum2 = sum2 + arr[i], 
+@temp4 : @temp4 = i, 
+i : i = i + 1, 
+
+BLOCK: BasicL13
+average2 : average2 = sum2 * 1.0 / count2, 
+@temp3 : @temp3 = count2, 
+count2 : count2 = 0, count2 = count2 + 1, 
+sum2 : sum2 = 0, sum2 = sum2 + arr[i], 
+@temp4 : @temp4 = i, 
+i : i = i + 1, i = 0, 
+
+Unfiltered: 357
+Filtered: 1
+
+
+Duplicate found: testFiles/TestCases/TestCase2/TestCase2.java lines [11, 19] and testFiles/TestCases/TestCase2/TestCase2.java lines [25, 33]
+testFiles/TestCases/TestCase2/TestCase2.java ----------
+11 :	sum1 = 0
+12 :	count1 = 0
+14 :	i = 0
+15 :	sum1 = sum1 + arr[i]
+16 :	@temp1 = count1
+19 :	average1 = sum1 * 1.0 / count1
+testFiles/TestCases/TestCase2/TestCase2.java ----------
+25 :	sum2 = 0
+26 :	count2 = 0
+28 :	@temp4 = i
+29 :	sum2 = sum2 + arr[i]
+30 :	@temp3 = count2
+33 :	average2 = sum2 * 1.0 / count2
+===========================
+
+
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.211 s
+[INFO] Finished at: 2019-05-01T17:07:50-07:00
+[INFO] Final Memory: 10M/437M
+[INFO] ------------------------------------------------------------------------

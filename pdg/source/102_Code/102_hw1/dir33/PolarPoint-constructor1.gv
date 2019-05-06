@@ -1,0 +1,33 @@
+digraph G {
+"5 : this.radius = 0.0"
+"5 : this.radius = 0.0" -> "20 : this.radius = 1 * radius" [style=dashed]
+"5 : this.radius = 0.0" -> "10 : this.radius = radius" [style=dashed]
+"5 : this.radius = 0.0" -> "15 : this.radius = 0" [style=dashed]
+"5 : this.angle = 0.0"
+"5 : this.angle = 0.0" -> "11 : this.angle = Math.toRadians(angle, )" [style=dashed]
+"5 : this.angle = 0.0" -> "16 : this.angle = 0" [style=dashed]
+"5 : this.angle = 0.0" -> "21 : this.angle = Math.toRadians(angle + 180, )" [style=dashed]
+"8 : radius > 0"
+"10 : this.radius = radius"
+"11 : this.angle = Math.toRadians(angle, )"
+"11 : this.angle = Math.toRadians(angle, )" -> "26 : this.angle = this.angle + 2 * Math.PI"
+"11 : this.angle = Math.toRadians(angle, )" -> "24 : this.angle < 0 && radius != 0"
+"11 : this.angle = Math.toRadians(angle, )" -> "26 : this.angle = this.angle + 2 * Math.PI" [style=dashed]
+"13 : radius == 0"
+"15 : this.radius = 0"
+"16 : this.angle = 0"
+"16 : this.angle = 0" -> "26 : this.angle = this.angle + 2 * Math.PI"
+"16 : this.angle = 0" -> "24 : this.angle < 0 && radius != 0"
+"16 : this.angle = 0" -> "26 : this.angle = this.angle + 2 * Math.PI" [style=dashed]
+"20 : this.radius = 1 * radius"
+"21 : this.angle = Math.toRadians(angle + 180, )"
+"21 : this.angle = Math.toRadians(angle + 180, )" -> "26 : this.angle = this.angle + 2 * Math.PI"
+"21 : this.angle = Math.toRadians(angle + 180, )" -> "24 : this.angle < 0 && radius != 0"
+"21 : this.angle = Math.toRadians(angle + 180, )" -> "26 : this.angle = this.angle + 2 * Math.PI" [style=dashed]
+"24 : this.angle < 0 && radius != 0"
+"26 : this.angle = this.angle + 2 * Math.PI"
+"26 : this.angle = this.angle + 2 * Math.PI" -> "26 : this.angle = this.angle + 2 * Math.PI"
+"26 : this.angle = this.angle + 2 * Math.PI" -> "24 : this.angle < 0 && radius != 0"
+"26 : this.angle = this.angle + 2 * Math.PI" -> "26 : this.angle = this.angle + 2 * Math.PI" [style=dashed]
+"24 : this.angle < 0 && radius != 0"
+}

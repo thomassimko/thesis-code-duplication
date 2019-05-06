@@ -1,0 +1,9 @@
+digraph G {
+"4 : this.x = 0.0"
+"4 : this.y = 0.0"
+"4 : this.r = 0.0"
+"4 : this.r = 0.0" -> "32 : this.r * Math.cos(this.a, )"
+"4 : this.a = 0.0"
+"4 : this.a = 0.0" -> "32 : this.r * Math.cos(this.a, )"
+"32 : this.r * Math.cos(this.a, )"
+}

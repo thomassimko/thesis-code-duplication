@@ -1,0 +1,57 @@
+digraph G {
+"48 : points = new ArrayList()"
+"49 : pointType = 0"
+"49 : pointType = 0" -> "56 : pointType = scanner.nextInt()" [style=dashed]
+"51 : i = 0"
+"51 : i = 0" -> "51 : @temp1 = i"
+"51 : i = 0" -> "51 : i < 2"
+"51 : i = 0" -> "51 : i = i + 1"
+"51 : i = 0" -> "66 : points.add(i, new CartesianPoint(x_coord, y_coord, ), )"
+"51 : i = 0" -> "77 : points.add(i, new PolarPoint(radius, angle, ), )"
+"51 : i = 0" -> "51 : i = i + 1" [style=dashed]
+"51 : i < 2"
+"53 : System.out.print(\"Which type of point should be created (1 for Cartesian, 2 for Polar)? \", )"
+"54 : scanner = new Scanner(System.in, )"
+"54 : scanner = new Scanner(System.in, )" -> "54 : scanner = new Scanner(System.in, )" [style=dashed]
+"56 : pointType = scanner.nextInt()"
+"56 : pointType = scanner.nextInt()" -> "58 : pointType == 1"
+"56 : pointType = scanner.nextInt()" -> "69 : pointType == 2"
+"56 : pointType = scanner.nextInt()" -> "56 : pointType = scanner.nextInt()" [style=dashed]
+"58 : pointType == 1"
+"87 : distance = PointRelation.calcDistance(points.get(0, ), points.get(1, ), )"
+"87 : distance = PointRelation.calcDistance(points.get(0, ), points.get(1, ), )" -> "89 : System.out.println(\"Distance between points: \" + distance, )"
+"89 : System.out.println(\"Distance between points: \" + distance, )"
+"91 : PointRelation.inSameQuadrant(points.get(0, ), points.get(1, ), )"
+"60 : System.out.print(\"Enter x-coordinate: \", )"
+"61 : x_coord = scanner.nextDouble()"
+"61 : x_coord = scanner.nextDouble()" -> "66 : points.add(i, new CartesianPoint(x_coord, y_coord, ), )"
+"61 : x_coord = scanner.nextDouble()" -> "61 : x_coord = scanner.nextDouble()" [style=dashed]
+"63 : System.out.print(\"Enter y-coordinate: \", )"
+"64 : y_coord = scanner.nextDouble()"
+"64 : y_coord = scanner.nextDouble()" -> "66 : points.add(i, new CartesianPoint(x_coord, y_coord, ), )"
+"64 : y_coord = scanner.nextDouble()" -> "64 : y_coord = scanner.nextDouble()" [style=dashed]
+"66 : points.add(i, new CartesianPoint(x_coord, y_coord, ), )"
+"69 : pointType == 2"
+"71 : System.out.print(\"Enter radius: \", )"
+"72 : radius = scanner.nextDouble()"
+"72 : radius = scanner.nextDouble()" -> "77 : points.add(i, new PolarPoint(radius, angle, ), )"
+"72 : radius = scanner.nextDouble()" -> "72 : radius = scanner.nextDouble()" [style=dashed]
+"74 : System.out.print(\"Enter angle (in degrees): \", )"
+"75 : angle = scanner.nextDouble() * Math.PI / 180"
+"75 : angle = scanner.nextDouble() * Math.PI / 180" -> "77 : points.add(i, new PolarPoint(radius, angle, ), )"
+"75 : angle = scanner.nextDouble() * Math.PI / 180" -> "75 : angle = scanner.nextDouble() * Math.PI / 180" [style=dashed]
+"77 : points.add(i, new PolarPoint(radius, angle, ), )"
+"82 : System.out.println(\"Invalid value entered\", )"
+"83 : System.exit(1, )"
+"51 : @temp1 = i"
+"51 : @temp1 = i" -> "51 : @temp1 = i" [style=dashed]
+"51 : i = i + 1"
+"51 : i = i + 1" -> "51 : @temp1 = i"
+"51 : i = i + 1" -> "51 : i < 2"
+"51 : i = i + 1" -> "51 : i = i + 1"
+"51 : i = i + 1" -> "66 : points.add(i, new CartesianPoint(x_coord, y_coord, ), )"
+"51 : i = i + 1" -> "77 : points.add(i, new PolarPoint(radius, angle, ), )"
+"51 : i = i + 1" -> "51 : i = i + 1" [style=dashed]
+"93 : System.out.println(\"In same quadrant.\", )"
+"97 : System.out.println(\"Not in same quadrant.\", )"
+}

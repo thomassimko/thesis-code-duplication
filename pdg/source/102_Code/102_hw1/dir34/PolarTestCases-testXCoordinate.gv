@@ -1,0 +1,6 @@
+digraph G {
+"14 : Tacobell = new PolarPoint(1, 0, )"
+"15 : Belltaco = new PolarPoint(5, 90, )"
+"17 : Check.check(Tacobell.xCoordinate(), 1, )"
+"18 : Check.check(Belltaco.xCoordinate(), 0, )"
+}

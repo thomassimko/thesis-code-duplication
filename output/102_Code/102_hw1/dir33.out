@@ -1,0 +1,969 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for thesis:thesis:jar:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.version' for org.junit.jupiter:junit-jupiter-api:jar is either LATEST or RELEASE (both of them are being deprecated) @ line 25, column 22
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building thesis 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default-cli) > validate @ thesis >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default-cli) < validate @ thesis <<<
+[INFO] 
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ thesis ---
+BLOCK: Startconstructor1L0
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL1
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: trueL3
+this.radius : this.radius = radius, 
+this.angle : this.angle = Math.toRadians(angle, ), 
+
+BLOCK: falseL5
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: trueL6
+this.radius : this.radius = 0, 
+this.angle : this.angle = 0, 
+
+BLOCK: falseL8
+this.radius : this.radius = 1 * radius, 
+this.angle : this.angle = Math.toRadians(angle + 180, ), 
+
+BLOCK: joinL7
+this.radius : this.radius = 1 * radius, this.radius = 0, 
+this.angle : this.angle = 0, this.angle = Math.toRadians(angle + 180, ), 
+
+BLOCK: joinL4
+this.radius : this.radius = 1 * radius, this.radius = radius, this.radius = 0, 
+this.angle : this.angle = Math.toRadians(angle, ), this.angle = 0, this.angle = Math.toRadians(angle + 180, ), 
+
+BLOCK: LoopL9
+this.radius : this.radius = 1 * radius, this.radius = radius, this.radius = 0, 
+this.angle : this.angle = this.angle + 2 * Math.PI, 
+
+BLOCK: BasicL10
+this.radius : this.radius = 1 * radius, this.radius = radius, this.radius = 0, 
+this.angle : this.angle = this.angle + 2 * Math.PI, this.angle = Math.toRadians(angle, ), this.angle = 0, this.angle = Math.toRadians(angle + 180, ), 
+
+BLOCK: StartxCoordinateL11
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL12
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartyCoordinateL14
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL15
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartradiusL17
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL18
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartangleL20
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: BasicL21
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: Startrotate90L23
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL24
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartmainL26
+
+BLOCK: BasicL27
+b : b = makePoint(), 
+isSame : isSame = sameQuadrant(a, b, ), 
+a : a = makePoint(), 
+input : input = 0, 
+distance : distance = distance(a, b, ), 
+
+BLOCK: trueL29
+b : b = makePoint(), 
+isSame : isSame = sameQuadrant(a, b, ), 
+a : a = makePoint(), 
+input : input = 0, 
+distance : distance = distance(a, b, ), 
+
+BLOCK: falseL31
+b : b = makePoint(), 
+isSame : isSame = sameQuadrant(a, b, ), 
+a : a = makePoint(), 
+input : input = 0, 
+distance : distance = distance(a, b, ), 
+
+BLOCK: joinL30
+b : b = makePoint(), 
+isSame : isSame = sameQuadrant(a, b, ), 
+a : a = makePoint(), 
+input : input = 0, 
+distance : distance = distance(a, b, ), 
+
+BLOCK: StartmakePointL32
+
+BLOCK: BasicL33
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, 
+r : r = 0, 
+y : y = 0, 
+x : x = 0, 
+input : input = 0, 
+
+BLOCK: trueL35
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, 
+r : r = 0, 
+y : y = 0, 
+x : x = 0, 
+input : input = scanner.nextInt(), 
+
+BLOCK: joinL36
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, 
+r : r = 0, 
+y : y = 0, 
+x : x = 0, 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: trueL37
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, 
+r : r = 0, 
+y : y = 0, 
+x : x = 0, 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: trueL39
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, 
+r : r = 0, 
+x : x = scanner.nextDouble(), 
+y : y = 0, 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: falseL41
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, 
+r : r = 0, 
+y : y = 0, 
+x : x = 0, 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: joinL40
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, 
+r : r = 0, 
+x : x = scanner.nextDouble(), x = 0, 
+y : y = 0, 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: trueL42
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, 
+r : r = 0, 
+y : y = scanner.nextDouble(), 
+x : x = scanner.nextDouble(), x = 0, 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: falseL44
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, 
+r : r = 0, 
+x : x = scanner.nextDouble(), x = 0, 
+y : y = 0, 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: joinL43
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, 
+r : r = 0, 
+y : y = scanner.nextDouble(), y = 0, 
+x : x = scanner.nextDouble(), x = 0, 
+cartesian : cartesian = new CartesianPoint(x, y, ), 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: falseL45
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, 
+r : r = 0, 
+y : y = 0, 
+x : x = 0, 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: trueL46
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, 
+r : r = 0, 
+y : y = 0, 
+x : x = 0, 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: trueL48
+scanner : scanner = new Scanner(System.in, ), 
+r : r = scanner.nextDouble(), 
+theta : theta = 0, 
+y : y = 0, 
+x : x = 0, 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: falseL50
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, 
+r : r = 0, 
+y : y = 0, 
+x : x = 0, 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: joinL49
+scanner : scanner = new Scanner(System.in, ), 
+r : r = 0, r = scanner.nextDouble(), 
+theta : theta = 0, 
+y : y = 0, 
+x : x = 0, 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: trueL51
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = scanner.nextDouble(), 
+r : r = 0, r = scanner.nextDouble(), 
+y : y = 0, 
+x : x = 0, 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: falseL53
+scanner : scanner = new Scanner(System.in, ), 
+r : r = 0, r = scanner.nextDouble(), 
+theta : theta = 0, 
+y : y = 0, 
+x : x = 0, 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: joinL52
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, theta = scanner.nextDouble(), 
+r : r = 0, r = scanner.nextDouble(), 
+y : y = 0, 
+x : x = 0, 
+polar : polar = new PolarPoint(r, theta, ), 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: falseL54
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, 
+r : r = 0, 
+y : y = 0, 
+x : x = 0, 
+elsePoint : elsePoint = new CartesianPoint(0, 0, ), 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: joinL47
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, theta = scanner.nextDouble(), 
+r : r = 0, r = scanner.nextDouble(), 
+y : y = scanner.nextDouble(), y = 0, 
+x : x = scanner.nextDouble(), x = 0, 
+polar : polar = new PolarPoint(r, theta, ), 
+cartesian : cartesian = new CartesianPoint(x, y, ), 
+input : input = scanner.nextInt(), input = 0, 
+elsePoint : elsePoint = new CartesianPoint(0, 0, ), 
+
+BLOCK: joinL38
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, theta = scanner.nextDouble(), 
+r : r = 0, r = scanner.nextDouble(), 
+y : y = scanner.nextDouble(), y = 0, 
+x : x = scanner.nextDouble(), x = 0, 
+polar : polar = new PolarPoint(r, theta, ), 
+cartesian : cartesian = new CartesianPoint(x, y, ), 
+input : input = scanner.nextInt(), input = 0, 
+elsePoint : elsePoint = new CartesianPoint(0, 0, ), 
+
+BLOCK: StartdistanceL55
+
+BLOCK: BasicL56
+y2 : y2 = b.yCoordinate(), 
+y1 : y1 = a.yCoordinate(), 
+x1 : x1 = a.xCoordinate(), 
+x2 : x2 = b.xCoordinate(), 
+
+BLOCK: StartsameQuadrantL58
+
+BLOCK: BasicL59
+x1 : x1 = a.xCoordinate(), 
+y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
+x2 : x2 = b.xCoordinate(), 
+
+BLOCK: trueL61
+x1 : x1 = a.xCoordinate(), 
+y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
+x2 : x2 = b.xCoordinate(), 
+
+BLOCK: falseL63
+x1 : x1 = a.xCoordinate(), 
+y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
+x2 : x2 = b.xCoordinate(), 
+
+BLOCK: trueL64
+x1 : x1 = a.xCoordinate(), 
+y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
+x2 : x2 = b.xCoordinate(), 
+
+BLOCK: falseL66
+x1 : x1 = a.xCoordinate(), 
+y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
+x2 : x2 = b.xCoordinate(), 
+
+BLOCK: trueL67
+x1 : x1 = a.xCoordinate(), 
+y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
+x2 : x2 = b.xCoordinate(), 
+
+BLOCK: falseL69
+x1 : x1 = a.xCoordinate(), 
+y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
+x2 : x2 = b.xCoordinate(), 
+
+BLOCK: trueL70
+x1 : x1 = a.xCoordinate(), 
+y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
+x2 : x2 = b.xCoordinate(), 
+
+BLOCK: falseL72
+x1 : x1 = a.xCoordinate(), 
+y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
+x2 : x2 = b.xCoordinate(), 
+
+BLOCK: joinL71
+x1 : x1 = a.xCoordinate(), 
+y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
+x2 : x2 = b.xCoordinate(), 
+
+BLOCK: joinL68
+x1 : x1 = a.xCoordinate(), 
+y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
+x2 : x2 = b.xCoordinate(), 
+
+BLOCK: joinL65
+x1 : x1 = a.xCoordinate(), 
+y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
+x2 : x2 = b.xCoordinate(), 
+
+BLOCK: joinL62
+x1 : x1 = a.xCoordinate(), 
+y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
+x2 : x2 = b.xCoordinate(), 
+
+BLOCK: StartmainL73
+
+BLOCK: BasicL74
+f : f = new PolarPoint(3.0, -270, ), 
+c : c = new PolarPoint(3.0, 90, ), 
+d : d = new PolarPoint(2.0, 45, ), 
+e : e = new PolarPoint(-2.0, -135, ), 
+
+BLOCK: Startconstructor1L76
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: BasicL77
+this.y : this.y = y, 
+this.x : this.x = x, 
+
+BLOCK: StartxCoordinateL79
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: BasicL80
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: StartyCoordinateL82
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL83
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartradiusL85
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL86
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartangleL88
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: BasicL89
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: Startrotate90L91
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: BasicL92
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: StartmainL94
+
+BLOCK: BasicL95
+a : a = new CartesianPoint(1.0, 2.0, ), 
+b : b = new CartesianPoint(2.0, 3.0, ), 
+
+BLOCK: Startconstructor1L0
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: Startconstructor1L0
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL1
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: trueL3
+this.radius : this.radius = radius, 
+this.angle : this.angle = Math.toRadians(angle, ), 
+
+BLOCK: falseL5
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: trueL6
+this.radius : this.radius = 0, 
+this.angle : this.angle = 0, 
+
+BLOCK: falseL8
+this.radius : this.radius = 1 * radius, 
+this.angle : this.angle = Math.toRadians(angle + 180, ), 
+
+BLOCK: joinL7
+this.radius : this.radius = 1 * radius, this.radius = 0, 
+this.angle : this.angle = 0, this.angle = Math.toRadians(angle + 180, ), 
+
+BLOCK: joinL4
+this.radius : this.radius = 1 * radius, this.radius = radius, this.radius = 0, 
+this.angle : this.angle = Math.toRadians(angle, ), this.angle = 0, this.angle = Math.toRadians(angle + 180, ), 
+
+BLOCK: LoopL9
+this.radius : this.radius = 1 * radius, this.radius = radius, this.radius = 0, 
+this.angle : this.angle = this.angle + 2 * Math.PI, 
+
+BLOCK: BasicL10
+this.radius : this.radius = 1 * radius, this.radius = radius, this.radius = 0, 
+this.angle : this.angle = this.angle + 2 * Math.PI, this.angle = Math.toRadians(angle, ), this.angle = 0, this.angle = Math.toRadians(angle + 180, ), 
+
+BLOCK: StartxCoordinateL11
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartxCoordinateL11
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL12
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartyCoordinateL14
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartyCoordinateL14
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL15
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartradiusL17
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartradiusL17
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL18
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartangleL20
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: StartangleL20
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: BasicL21
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: Startrotate90L23
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: Startrotate90L23
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL24
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartmainL26
+
+BLOCK: StartmainL26
+
+BLOCK: BasicL27
+b : b = makePoint(), 
+isSame : isSame = sameQuadrant(a, b, ), 
+a : a = makePoint(), 
+input : input = 0, 
+distance : distance = distance(a, b, ), 
+
+BLOCK: trueL29
+b : b = makePoint(), 
+isSame : isSame = sameQuadrant(a, b, ), 
+a : a = makePoint(), 
+input : input = 0, 
+distance : distance = distance(a, b, ), 
+
+BLOCK: falseL31
+b : b = makePoint(), 
+isSame : isSame = sameQuadrant(a, b, ), 
+a : a = makePoint(), 
+input : input = 0, 
+distance : distance = distance(a, b, ), 
+
+BLOCK: joinL30
+b : b = makePoint(), 
+isSame : isSame = sameQuadrant(a, b, ), 
+a : a = makePoint(), 
+input : input = 0, 
+distance : distance = distance(a, b, ), 
+
+BLOCK: StartmakePointL32
+
+BLOCK: StartmakePointL32
+
+BLOCK: BasicL33
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, 
+r : r = 0, 
+y : y = 0, 
+x : x = 0, 
+input : input = 0, 
+
+BLOCK: trueL35
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, 
+r : r = 0, 
+y : y = 0, 
+x : x = 0, 
+input : input = scanner.nextInt(), 
+
+BLOCK: joinL36
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, 
+r : r = 0, 
+y : y = 0, 
+x : x = 0, 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: trueL37
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, 
+r : r = 0, 
+y : y = 0, 
+x : x = 0, 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: trueL39
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, 
+r : r = 0, 
+x : x = scanner.nextDouble(), 
+y : y = 0, 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: falseL41
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, 
+r : r = 0, 
+y : y = 0, 
+x : x = 0, 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: joinL40
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, 
+r : r = 0, 
+x : x = scanner.nextDouble(), x = 0, 
+y : y = 0, 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: trueL42
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, 
+r : r = 0, 
+y : y = scanner.nextDouble(), 
+x : x = scanner.nextDouble(), x = 0, 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: falseL44
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, 
+r : r = 0, 
+x : x = scanner.nextDouble(), x = 0, 
+y : y = 0, 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: joinL43
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, 
+r : r = 0, 
+y : y = scanner.nextDouble(), y = 0, 
+x : x = scanner.nextDouble(), x = 0, 
+cartesian : cartesian = new CartesianPoint(x, y, ), 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: falseL45
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, 
+r : r = 0, 
+y : y = 0, 
+x : x = 0, 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: trueL46
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, 
+r : r = 0, 
+y : y = 0, 
+x : x = 0, 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: trueL48
+scanner : scanner = new Scanner(System.in, ), 
+r : r = scanner.nextDouble(), 
+theta : theta = 0, 
+y : y = 0, 
+x : x = 0, 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: falseL50
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, 
+r : r = 0, 
+y : y = 0, 
+x : x = 0, 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: joinL49
+scanner : scanner = new Scanner(System.in, ), 
+r : r = 0, r = scanner.nextDouble(), 
+theta : theta = 0, 
+y : y = 0, 
+x : x = 0, 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: trueL51
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = scanner.nextDouble(), 
+r : r = 0, r = scanner.nextDouble(), 
+y : y = 0, 
+x : x = 0, 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: falseL53
+scanner : scanner = new Scanner(System.in, ), 
+r : r = 0, r = scanner.nextDouble(), 
+theta : theta = 0, 
+y : y = 0, 
+x : x = 0, 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: joinL52
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, theta = scanner.nextDouble(), 
+r : r = 0, r = scanner.nextDouble(), 
+y : y = 0, 
+x : x = 0, 
+polar : polar = new PolarPoint(r, theta, ), 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: falseL54
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, 
+r : r = 0, 
+y : y = 0, 
+x : x = 0, 
+elsePoint : elsePoint = new CartesianPoint(0, 0, ), 
+input : input = scanner.nextInt(), input = 0, 
+
+BLOCK: joinL47
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, theta = scanner.nextDouble(), 
+r : r = 0, r = scanner.nextDouble(), 
+y : y = scanner.nextDouble(), y = 0, 
+x : x = scanner.nextDouble(), x = 0, 
+polar : polar = new PolarPoint(r, theta, ), 
+cartesian : cartesian = new CartesianPoint(x, y, ), 
+input : input = scanner.nextInt(), input = 0, 
+elsePoint : elsePoint = new CartesianPoint(0, 0, ), 
+
+BLOCK: joinL38
+scanner : scanner = new Scanner(System.in, ), 
+theta : theta = 0, theta = scanner.nextDouble(), 
+r : r = 0, r = scanner.nextDouble(), 
+y : y = scanner.nextDouble(), y = 0, 
+x : x = scanner.nextDouble(), x = 0, 
+polar : polar = new PolarPoint(r, theta, ), 
+cartesian : cartesian = new CartesianPoint(x, y, ), 
+input : input = scanner.nextInt(), input = 0, 
+elsePoint : elsePoint = new CartesianPoint(0, 0, ), 
+
+BLOCK: StartdistanceL55
+
+BLOCK: StartdistanceL55
+
+BLOCK: BasicL56
+y2 : y2 = b.yCoordinate(), 
+y1 : y1 = a.yCoordinate(), 
+x1 : x1 = a.xCoordinate(), 
+x2 : x2 = b.xCoordinate(), 
+
+BLOCK: StartsameQuadrantL58
+
+BLOCK: StartsameQuadrantL58
+
+BLOCK: BasicL59
+x1 : x1 = a.xCoordinate(), 
+y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
+x2 : x2 = b.xCoordinate(), 
+
+BLOCK: trueL61
+x1 : x1 = a.xCoordinate(), 
+y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
+x2 : x2 = b.xCoordinate(), 
+
+BLOCK: falseL63
+x1 : x1 = a.xCoordinate(), 
+y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
+x2 : x2 = b.xCoordinate(), 
+
+BLOCK: trueL64
+x1 : x1 = a.xCoordinate(), 
+y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
+x2 : x2 = b.xCoordinate(), 
+
+BLOCK: falseL66
+x1 : x1 = a.xCoordinate(), 
+y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
+x2 : x2 = b.xCoordinate(), 
+
+BLOCK: trueL67
+x1 : x1 = a.xCoordinate(), 
+y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
+x2 : x2 = b.xCoordinate(), 
+
+BLOCK: falseL69
+x1 : x1 = a.xCoordinate(), 
+y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
+x2 : x2 = b.xCoordinate(), 
+
+BLOCK: trueL70
+x1 : x1 = a.xCoordinate(), 
+y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
+x2 : x2 = b.xCoordinate(), 
+
+BLOCK: falseL72
+x1 : x1 = a.xCoordinate(), 
+y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
+x2 : x2 = b.xCoordinate(), 
+
+BLOCK: joinL71
+x1 : x1 = a.xCoordinate(), 
+y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
+x2 : x2 = b.xCoordinate(), 
+
+BLOCK: joinL68
+x1 : x1 = a.xCoordinate(), 
+y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
+x2 : x2 = b.xCoordinate(), 
+
+BLOCK: joinL65
+x1 : x1 = a.xCoordinate(), 
+y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
+x2 : x2 = b.xCoordinate(), 
+
+BLOCK: joinL62
+x1 : x1 = a.xCoordinate(), 
+y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
+x2 : x2 = b.xCoordinate(), 
+
+BLOCK: StartmainL73
+
+BLOCK: StartmainL73
+
+BLOCK: BasicL74
+f : f = new PolarPoint(3.0, -270, ), 
+c : c = new PolarPoint(3.0, 90, ), 
+d : d = new PolarPoint(2.0, 45, ), 
+e : e = new PolarPoint(-2.0, -135, ), 
+
+BLOCK: Startconstructor1L76
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: Startconstructor1L76
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: BasicL77
+this.y : this.y = y, 
+this.x : this.x = x, 
+
+BLOCK: StartxCoordinateL79
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: StartxCoordinateL79
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: BasicL80
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: StartyCoordinateL82
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartyCoordinateL82
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL83
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartradiusL85
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartradiusL85
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL86
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartangleL88
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: StartangleL88
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: BasicL89
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: Startrotate90L91
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: Startrotate90L91
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: BasicL92
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: StartmainL94
+
+BLOCK: StartmainL94
+
+BLOCK: BasicL95
+a : a = new CartesianPoint(1.0, 2.0, ), 
+b : b = new CartesianPoint(2.0, 3.0, ), 
+
+Unfiltered: 0
+Filtered: 0
+
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.343 s
+[INFO] Finished at: 2019-05-01T17:13:59-07:00
+[INFO] Final Memory: 33M/1390M
+[INFO] ------------------------------------------------------------------------

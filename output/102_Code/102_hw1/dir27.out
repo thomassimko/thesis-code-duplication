@@ -1,0 +1,1309 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for thesis:thesis:jar:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.version' for org.junit.jupiter:junit-jupiter-api:jar is either LATEST or RELEASE (both of them are being deprecated) @ line 25, column 22
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building thesis 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default-cli) > validate @ thesis >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default-cli) < validate @ thesis <<<
+[INFO] 
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ thesis ---
+BLOCK: Startconstructor1L0
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL1
+this.radius : this.radius = radius, 
+this.angle : this.angle = angle, 
+
+BLOCK: StartxCoordinateL3
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: BasicL4
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: StartyCoordinateL6
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL7
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartradiusL9
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL10
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartangleL12
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: BasicL13
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: Startrotate90L15
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: BasicL16
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: StartmainL18
+
+BLOCK: BasicL19
+points : points = {2, }, 
+s : s = new Scanner(System.in, ), 
+
+BLOCK: ForInitL21
+points : points = {2, }, 
+s : s = new Scanner(System.in, ), 
+i : i = 0, 
+
+BLOCK: ForCondL22
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+choice : choice = s.nextInt(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: LoopL23
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+choice : choice = s.nextInt(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: BasicL24
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+choice : choice = s.nextInt(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: trueL25
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+choice : choice = s.nextInt(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: joinL26
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+choice : choice = s.nextInt(), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+@temp1 : @temp1 = i, 
+
+BLOCK: trueL27
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+choice : choice = s.nextInt(), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+@temp1 : @temp1 = i, 
+
+BLOCK: trueL29
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+choice : choice = s.nextInt(), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+@temp1 : @temp1 = i, 
+
+BLOCK: joinL30
+x : x = s.nextDouble(), 
+points : points = {2, }, 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+choice : choice = s.nextInt(), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+@temp1 : @temp1 = i, 
+
+BLOCK: trueL31
+x : x = s.nextDouble(), 
+points : points = {2, }, 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+choice : choice = s.nextInt(), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+@temp1 : @temp1 = i, 
+
+BLOCK: joinL32
+x : x = s.nextDouble(), 
+points : points = {2, }, 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+choice : choice = s.nextInt(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: falseL33
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+choice : choice = s.nextInt(), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+@temp1 : @temp1 = i, 
+
+BLOCK: trueL34
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+choice : choice = s.nextInt(), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+@temp1 : @temp1 = i, 
+
+BLOCK: trueL36
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+choice : choice = s.nextInt(), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+@temp1 : @temp1 = i, 
+
+BLOCK: joinL37
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+choice : choice = s.nextInt(), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+@temp1 : @temp1 = i, 
+
+BLOCK: trueL38
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+choice : choice = s.nextInt(), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+@temp1 : @temp1 = i, 
+
+BLOCK: joinL39
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+choice : choice = s.nextInt(), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+@temp1 : @temp1 = i, 
+
+BLOCK: falseL40
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+choice : choice = s.nextInt(), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+@temp1 : @temp1 = i, 
+
+BLOCK: joinL35
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+choice : choice = s.nextInt(), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+@temp1 : @temp1 = i, 
+
+BLOCK: joinL28
+x : x = s.nextDouble(), 
+points : points = {2, }, 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+choice : choice = s.nextInt(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: trueL41
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+choice : choice = s.nextInt(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: joinL42
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+choice : choice = s.nextInt(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: trueL43
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+choice : choice = s.nextInt(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: falseL45
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+choice : choice = s.nextInt(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: joinL44
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+choice : choice = s.nextInt(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: StartdistanceL46
+
+BLOCK: BasicL47
+
+BLOCK: StartquadrantL49
+
+BLOCK: BasicL50
+
+BLOCK: trueL52
+
+BLOCK: joinL53
+
+BLOCK: trueL54
+
+BLOCK: joinL55
+
+BLOCK: trueL56
+
+BLOCK: joinL57
+
+BLOCK: StartmainL58
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+
+BLOCK: BasicL59
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+
+BLOCK: StartcheckXCoordinateL61
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+
+BLOCK: BasicL62
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+
+BLOCK: StartcheckYCoordinateL64
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+
+BLOCK: BasicL65
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+
+BLOCK: StartcheckRotate90L67
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+
+BLOCK: BasicL68
+test5_90 : test5_90 = this.test5.rotate90(), 
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+test4_90 : test4_90 = this.test4.rotate90(), 
+test2_90 : test2_90 = this.test2.rotate90(), 
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+test1_90 : test1_90 = this.test1.rotate90(), 
+test3_90 : test3_90 = this.test3.rotate90(), 
+
+BLOCK: StartcheckAngleL70
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+
+BLOCK: BasicL71
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+
+BLOCK: StartcheckRadiusL73
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+
+BLOCK: BasicL74
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+
+BLOCK: Startconstructor1L76
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: BasicL77
+this.y_coord : this.y_coord = y_coord, 
+this.x_coord : this.x_coord = x_coord, 
+
+BLOCK: StartxCoordinateL79
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: BasicL80
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: StartyCoordinateL82
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: BasicL83
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: StartradiusL85
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: BasicL86
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: StartangleL88
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: BasicL89
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: Startrotate90L91
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: BasicL92
+this.x_coord : this.x_coord = 0.0, 
+polarPoint : polarPoint = rotate90(), 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: StartmainL94
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+
+BLOCK: BasicL95
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+
+BLOCK: StartcheckXCoordinateL97
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+
+BLOCK: BasicL98
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+
+BLOCK: StartcheckYCoordinateL100
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+
+BLOCK: BasicL101
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+
+BLOCK: StartcheckRotate90L103
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+
+BLOCK: BasicL104
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+test4_90 : test4_90 = this.test4.rotate90(), 
+test3_90 : test3_90 = this.test3.rotate90(), 
+test2_90 : test2_90 = this.test2.rotate90(), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+test5_90 : test5_90 = this.test5.rotate90(), 
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+test1_90 : test1_90 = this.test1.rotate90(), 
+
+BLOCK: StartcheckAngleL106
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+
+BLOCK: BasicL107
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+
+BLOCK: StartcheckRadiusL109
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+
+BLOCK: BasicL110
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+
+BLOCK: Startconstructor1L0
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: Startconstructor1L0
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL1
+this.radius : this.radius = radius, 
+this.angle : this.angle = angle, 
+
+BLOCK: StartxCoordinateL3
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: StartxCoordinateL3
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: BasicL4
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: StartyCoordinateL6
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartyCoordinateL6
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL7
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartradiusL9
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartradiusL9
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL10
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartangleL12
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: StartangleL12
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: BasicL13
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: Startrotate90L15
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: Startrotate90L15
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: BasicL16
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: StartmainL18
+
+BLOCK: StartmainL18
+
+BLOCK: BasicL19
+points : points = {2, }, 
+s : s = new Scanner(System.in, ), 
+
+BLOCK: ForInitL21
+points : points = {2, }, 
+s : s = new Scanner(System.in, ), 
+i : i = 0, 
+
+BLOCK: ForCondL22
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+choice : choice = s.nextInt(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: LoopL23
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+choice : choice = s.nextInt(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: BasicL24
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+choice : choice = s.nextInt(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: trueL25
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+choice : choice = s.nextInt(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: joinL26
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+choice : choice = s.nextInt(), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+@temp1 : @temp1 = i, 
+
+BLOCK: trueL27
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+choice : choice = s.nextInt(), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+@temp1 : @temp1 = i, 
+
+BLOCK: trueL29
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+choice : choice = s.nextInt(), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+@temp1 : @temp1 = i, 
+
+BLOCK: joinL30
+x : x = s.nextDouble(), 
+points : points = {2, }, 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+choice : choice = s.nextInt(), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+@temp1 : @temp1 = i, 
+
+BLOCK: trueL31
+x : x = s.nextDouble(), 
+points : points = {2, }, 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+choice : choice = s.nextInt(), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+@temp1 : @temp1 = i, 
+
+BLOCK: joinL32
+x : x = s.nextDouble(), 
+points : points = {2, }, 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+choice : choice = s.nextInt(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: falseL33
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+choice : choice = s.nextInt(), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+@temp1 : @temp1 = i, 
+
+BLOCK: trueL34
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+choice : choice = s.nextInt(), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+@temp1 : @temp1 = i, 
+
+BLOCK: trueL36
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+choice : choice = s.nextInt(), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+@temp1 : @temp1 = i, 
+
+BLOCK: joinL37
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+choice : choice = s.nextInt(), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+@temp1 : @temp1 = i, 
+
+BLOCK: trueL38
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+choice : choice = s.nextInt(), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+@temp1 : @temp1 = i, 
+
+BLOCK: joinL39
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+choice : choice = s.nextInt(), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+@temp1 : @temp1 = i, 
+
+BLOCK: falseL40
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+choice : choice = s.nextInt(), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+@temp1 : @temp1 = i, 
+
+BLOCK: joinL35
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+choice : choice = s.nextInt(), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+@temp1 : @temp1 = i, 
+
+BLOCK: joinL28
+x : x = s.nextDouble(), 
+points : points = {2, }, 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+choice : choice = s.nextInt(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: trueL41
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+choice : choice = s.nextInt(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: joinL42
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+choice : choice = s.nextInt(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: trueL43
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+choice : choice = s.nextInt(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: falseL45
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+choice : choice = s.nextInt(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: joinL44
+points : points = {2, }, 
+x : x = s.nextDouble(), 
+s : s = new Scanner(System.in, ), 
+radius : radius = s.nextDouble(), 
+i : i = 0, i = i + 1, 
+points[i] : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), ), 
+points[i] : points[i] = new CartesianPoint(x, s.nextDouble(), ), 
+choice : choice = s.nextInt(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: StartdistanceL46
+
+BLOCK: StartdistanceL46
+
+BLOCK: BasicL47
+
+BLOCK: StartquadrantL49
+
+BLOCK: StartquadrantL49
+
+BLOCK: BasicL50
+
+BLOCK: trueL52
+
+BLOCK: joinL53
+
+BLOCK: trueL54
+
+BLOCK: joinL55
+
+BLOCK: trueL56
+
+BLOCK: joinL57
+
+BLOCK: StartmainL58
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+
+BLOCK: StartmainL58
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+
+BLOCK: BasicL59
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+
+BLOCK: StartcheckXCoordinateL61
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+
+BLOCK: StartcheckXCoordinateL61
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+
+BLOCK: BasicL62
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+
+BLOCK: StartcheckYCoordinateL64
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+
+BLOCK: StartcheckYCoordinateL64
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+
+BLOCK: BasicL65
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+
+BLOCK: StartcheckRotate90L67
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+
+BLOCK: StartcheckRotate90L67
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+
+BLOCK: BasicL68
+test5_90 : test5_90 = this.test5.rotate90(), 
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+test4_90 : test4_90 = this.test4.rotate90(), 
+test2_90 : test2_90 = this.test2.rotate90(), 
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+test1_90 : test1_90 = this.test1.rotate90(), 
+test3_90 : test3_90 = this.test3.rotate90(), 
+
+BLOCK: StartcheckAngleL70
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+
+BLOCK: StartcheckAngleL70
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+
+BLOCK: BasicL71
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+
+BLOCK: StartcheckRadiusL73
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+
+BLOCK: StartcheckRadiusL73
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+
+BLOCK: BasicL74
+this.test1 : this.test1 = new PolarPoint(0, 0, ), 
+this.test3 : this.test3 = new PolarPoint(1, Math.PI / 2, ), 
+this.test5 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, ), 
+this.test4 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, ), 
+this.test2 : this.test2 = new PolarPoint(1, 0, ), 
+
+BLOCK: Startconstructor1L76
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: Startconstructor1L76
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: BasicL77
+this.y_coord : this.y_coord = y_coord, 
+this.x_coord : this.x_coord = x_coord, 
+
+BLOCK: StartxCoordinateL79
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: StartxCoordinateL79
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: BasicL80
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: StartyCoordinateL82
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: StartyCoordinateL82
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: BasicL83
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: StartradiusL85
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: StartradiusL85
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: BasicL86
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: StartangleL88
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: StartangleL88
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: BasicL89
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: Startrotate90L91
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: Startrotate90L91
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: BasicL92
+this.x_coord : this.x_coord = 0.0, 
+polarPoint : polarPoint = rotate90(), 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: StartmainL94
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+
+BLOCK: StartmainL94
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+
+BLOCK: BasicL95
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+
+BLOCK: StartcheckXCoordinateL97
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+
+BLOCK: StartcheckXCoordinateL97
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+
+BLOCK: BasicL98
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+
+BLOCK: StartcheckYCoordinateL100
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+
+BLOCK: StartcheckYCoordinateL100
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+
+BLOCK: BasicL101
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+
+BLOCK: StartcheckRotate90L103
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+
+BLOCK: StartcheckRotate90L103
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+
+BLOCK: BasicL104
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+test4_90 : test4_90 = this.test4.rotate90(), 
+test3_90 : test3_90 = this.test3.rotate90(), 
+test2_90 : test2_90 = this.test2.rotate90(), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+test5_90 : test5_90 = this.test5.rotate90(), 
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+test1_90 : test1_90 = this.test1.rotate90(), 
+
+BLOCK: StartcheckAngleL106
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+
+BLOCK: StartcheckAngleL106
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+
+BLOCK: BasicL107
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+
+BLOCK: StartcheckRadiusL109
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+
+BLOCK: StartcheckRadiusL109
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+
+BLOCK: BasicL110
+this.test3 : this.test3 = new CartesianPoint(0, 1, ), 
+this.test4 : this.test4 = new CartesianPoint(2, 2, ), 
+this.test1 : this.test1 = new CartesianPoint(0, 0, ), 
+this.test5 : this.test5 = new CartesianPoint(-2, -2, ), 
+this.test2 : this.test2 = new CartesianPoint(1, 0, ), 
+
+Unfiltered: 0
+Filtered: 0
+
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.626 s
+[INFO] Finished at: 2019-05-01T17:13:22-07:00
+[INFO] Final Memory: 34M/1450M
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,7 @@
+digraph G {
+"15 : pt = new PolarPoint(Math.sqrt(2, ), 45, )"
+"15 : pt = new PolarPoint(Math.sqrt(2, ), 45, )" -> "18 : pt = new PolarPoint(1.0, 0.0, )" [style=dashed]
+"16 : Check.check(pt.yCoordinate(), 1.0, )"
+"18 : pt = new PolarPoint(1.0, 0.0, )"
+"19 : Check.check(pt.yCoordinate(), 0.0, )"
+}

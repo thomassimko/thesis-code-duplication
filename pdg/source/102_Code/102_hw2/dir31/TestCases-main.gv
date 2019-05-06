@@ -1,0 +1,17 @@
+digraph G {
+"5 : bindings = new VariableBindings()"
+"5 : bindings = new VariableBindings()" -> "9 : checkAdd(bindings, )"
+"5 : bindings = new VariableBindings()" -> "11 : checkMultiply(bindings, )"
+"5 : bindings = new VariableBindings()" -> "12 : checkDivide(bindings, )"
+"5 : bindings = new VariableBindings()" -> "7 : checkDoubleConstant(bindings, )"
+"5 : bindings = new VariableBindings()" -> "10 : checkSubtract(bindings, )"
+"5 : bindings = new VariableBindings()" -> "13 : checkAssignment(bindings, )"
+"5 : bindings = new VariableBindings()" -> "8 : checkNegation(bindings, )"
+"7 : checkDoubleConstant(bindings, )"
+"8 : checkNegation(bindings, )"
+"9 : checkAdd(bindings, )"
+"10 : checkSubtract(bindings, )"
+"11 : checkMultiply(bindings, )"
+"12 : checkDivide(bindings, )"
+"13 : checkAssignment(bindings, )"
+}

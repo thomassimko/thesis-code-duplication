@@ -1,0 +1,18 @@
+digraph G {
+"5 : crazy = new CartesianPoint(1, 2, )"
+"5 : crazy = new CartesianPoint(1, 2, )" -> "18 : crazy = crazy.rotate90()" [style=dashed]
+"6 : UhnTiss = new CartesianPoint(5, -9, )"
+"8 : Check.check(crazy.xCoordinate(), 1.0, )"
+"9 : Check.check(UhnTiss.xCoordinate(), 5.0, )"
+"10 : Check.check(crazy.yCoordinate(), 2.0, )"
+"11 : Check.check(UhnTiss.yCoordinate(), 9.0, )"
+"13 : Check.check(crazy.radius(), Math.sqrt(5, ), )"
+"14 : Check.check(UhnTiss.radius(), Math.sqrt(25 + 81, ), )"
+"15 : Check.check(crazy.angle(), Math.atan2(2, 1, ), )"
+"16 : Check.check(UhnTiss.angle(), Math.atan2(9, 5, ), )"
+"18 : crazy = crazy.rotate90()"
+"19 : Check.check(crazy.xCoordinate(), 2, )"
+"20 : Check.check(crazy.yCoordinate(), 1, )"
+"21 : Check.check(crazy.radius(), Math.sqrt(5, ), )"
+"22 : Check.check(crazy.angle(), Math.atan2(1, 2, ), )"
+}

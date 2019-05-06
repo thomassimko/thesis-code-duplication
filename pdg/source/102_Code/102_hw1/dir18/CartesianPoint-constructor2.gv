@@ -1,0 +1,8 @@
+digraph G {
+"4 : this.x = 0"
+"4 : this.x = 0" -> "15 : this.x = x_coord" [style=dashed]
+"5 : this.y = 0"
+"5 : this.y = 0" -> "16 : this.y = y_coord" [style=dashed]
+"15 : this.x = x_coord"
+"16 : this.y = y_coord"
+}

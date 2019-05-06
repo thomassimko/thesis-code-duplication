@@ -1,0 +1,4 @@
+digraph G {
+"96 : System.out.println(\"In same quadrant.\", )"
+"100 : System.out.println(\"Not in same quadrant.\", )"
+}

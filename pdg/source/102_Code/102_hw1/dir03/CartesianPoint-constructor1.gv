@@ -1,0 +1,15 @@
+digraph G {
+"6 : this.x = 0.0"
+"6 : this.x = 0.0" -> "9 : this.x = x_coord" [style=dashed]
+"6 : this.y = 0.0"
+"6 : this.y = 0.0" -> "10 : this.y = y_coord" [style=dashed]
+"6 : this.a = 0.0"
+"6 : this.b = 0.0"
+"6 : this.h = 0.0"
+"6 : this.nx = 0.0"
+"6 : this.ny = 0.0"
+"6 : this.theta = 0.0"
+"6 : this.temp = 0.0"
+"9 : this.x = x_coord"
+"10 : this.y = y_coord"
+}

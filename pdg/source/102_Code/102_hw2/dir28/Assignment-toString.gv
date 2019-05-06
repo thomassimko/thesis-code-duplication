@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.var = null"
+"4 : this.var = null" -> "18 : \"set \" + this.var + \" = \" + this.expression"
+"5 : this.expression = null"
+"5 : this.expression = null" -> "18 : \"set \" + this.var + \" = \" + this.expression"
+"18 : \"set \" + this.var + \" = \" + this.expression"
+}

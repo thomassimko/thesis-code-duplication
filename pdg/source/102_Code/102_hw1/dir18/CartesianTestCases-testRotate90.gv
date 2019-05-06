@@ -1,0 +1,7 @@
+digraph G {
+"45 : pt = new CartesianPoint(1, 0, )"
+"46 : pt1 = new CartesianPoint(0, 1, )"
+"47 : pt2 = pt.rotate90()"
+"49 : Check.check(pt1.xCoordinate(), pt2.xCoordinate(), )"
+"50 : Check.check(pt1.yCoordinate(), pt2.yCoordinate(), )"
+}

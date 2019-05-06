@@ -1,0 +1,11 @@
+digraph G {
+"191 : comp.equals(\"date\", )"
+"192 : c = new ExpenseDateComparator()"
+"194 : comp.equals(\"amount\", )"
+"195 : c = new ExpenseAmountComparator()"
+"197 : comp.equals(\"category\", )"
+"198 : c = new ExpenseCategoryComparator()"
+"200 : comp.equals(\"payee\", )"
+"201 : c = new ExpensePayeeComparator()"
+"204 : null"
+}

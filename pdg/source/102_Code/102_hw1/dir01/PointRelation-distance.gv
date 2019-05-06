@@ -1,0 +1,11 @@
+digraph G {
+"112 : ax = a.xCoordinate()"
+"112 : ax = a.xCoordinate()" -> "116 : Math.sqrt(ax - bx * ax - bx + ay - by * ay - by, )"
+"113 : ay = a.yCoordinate()"
+"113 : ay = a.yCoordinate()" -> "116 : Math.sqrt(ax - bx * ax - bx + ay - by * ay - by, )"
+"114 : bx = b.xCoordinate()"
+"114 : bx = b.xCoordinate()" -> "116 : Math.sqrt(ax - bx * ax - bx + ay - by * ay - by, )"
+"115 : by = b.yCoordinate()"
+"115 : by = b.yCoordinate()" -> "116 : Math.sqrt(ax - bx * ax - bx + ay - by * ay - by, )"
+"116 : Math.sqrt(ax - bx * ax - bx + ay - by * ay - by, )"
+}

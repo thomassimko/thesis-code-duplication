@@ -1,0 +1,18 @@
+digraph G {
+"5 : p1 = new PolarPoint(2, Math.PI / 4, )"
+"6 : p2 = p1.rotate90()"
+"7 : p3 = new PolarPoint(-3, -13 * Math.PI / 6, )"
+"8 : p4 = p3.rotate90()"
+"10 : Check.check(p1.xCoordinate(), 1.41421, )"
+"11 : Check.check(p1.yCoordinate(), 1.41421, )"
+"12 : Check.check(p1.radius(), 2, )"
+"13 : Check.check(p1.angle(), 0.78539, )"
+"14 : Check.check(p2.xCoordinate(), 1.41421, )"
+"15 : Check.check(p2.yCoordinate(), 1.41421, )"
+"17 : Check.check(p3.xCoordinate(), 2.59807, )"
+"18 : Check.check(p3.yCoordinate(), 1.5, )"
+"19 : Check.check(p3.radius(), 3, )"
+"20 : Check.check(p3.angle(), 2.61799, )"
+"21 : Check.check(p4.xCoordinate(), 1.5, )"
+"22 : Check.check(p4.yCoordinate(), 2.59807, )"
+}

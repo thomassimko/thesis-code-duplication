@@ -1,0 +1,7 @@
+digraph G {
+"88 : distance_x = pointA.xCoordinate() - pointB.xCoordinate()"
+"88 : distance_x = pointA.xCoordinate() - pointB.xCoordinate()" -> "90 : distance = Math.sqrt(distance_x * distance_x + distance_y * distance_y, )"
+"89 : distance_y = pointA.yCoordinate() - pointB.yCoordinate()"
+"89 : distance_y = pointA.yCoordinate() - pointB.yCoordinate()" -> "90 : distance = Math.sqrt(distance_x * distance_x + distance_y * distance_y, )"
+"90 : distance = Math.sqrt(distance_x * distance_x + distance_y * distance_y, )"
+}

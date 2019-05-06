@@ -1,0 +1,10 @@
+digraph G {
+"33 : pt = new CartesianPoint(1.0, 1.0, )"
+"33 : pt = new CartesianPoint(1.0, 1.0, )" -> "36 : pt = new CartesianPoint(0, 17.0, )" [style=dashed]
+"34 : Check.check(pt.angle(), Math.PI / 4, )"
+"36 : pt = new CartesianPoint(0, 17.0, )"
+"36 : pt = new CartesianPoint(0, 17.0, )" -> "39 : pt = new CartesianPoint(0, 0, )" [style=dashed]
+"37 : Check.check(pt.angle(), Math.PI / 2, )"
+"39 : pt = new CartesianPoint(0, 0, )"
+"40 : Check.check(pt.angle(), 0, )"
+}

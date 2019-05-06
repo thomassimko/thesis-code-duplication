@@ -1,0 +1,14 @@
+digraph G {
+"3 : this.xCoordinate = 0.0"
+"3 : this.xCoordinate = 0.0" -> "10 : this.xCoordinate = x_coord" [style=dashed]
+"4 : this.yCoordinate = 0.0"
+"4 : this.yCoordinate = 0.0" -> "11 : this.yCoordinate = y_coord" [style=dashed]
+"5 : this.radius = 0.0"
+"5 : this.radius = 0.0" -> "12 : this.radius = Math.sqrt(x_coord * x_coord + y_coord * y_coord, )" [style=dashed]
+"6 : this.angle = 0.0"
+"6 : this.angle = 0.0" -> "13 : this.angle = Math.atan2(y_coord, x_coord, )" [style=dashed]
+"10 : this.xCoordinate = x_coord"
+"11 : this.yCoordinate = y_coord"
+"12 : this.radius = Math.sqrt(x_coord * x_coord + y_coord * y_coord, )"
+"13 : this.angle = Math.atan2(y_coord, x_coord, )"
+}

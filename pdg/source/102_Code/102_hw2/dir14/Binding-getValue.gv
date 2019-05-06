@@ -1,0 +1,4 @@
+digraph G {
+"4 : this.variable = null"
+"5 : this.current_value = 0.0"
+}

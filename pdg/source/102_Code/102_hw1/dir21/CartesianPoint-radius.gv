@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.xCord = 0.0"
+"4 : this.xCord = 0.0" -> "25 : Math.sqrt(this.xCord * this.xCord + this.yCord * this.yCord, )"
+"5 : this.yCord = 0.0"
+"5 : this.yCord = 0.0" -> "25 : Math.sqrt(this.xCord * this.xCord + this.yCord * this.yCord, )"
+"25 : Math.sqrt(this.xCord * this.xCord + this.yCord * this.yCord, )"
+}

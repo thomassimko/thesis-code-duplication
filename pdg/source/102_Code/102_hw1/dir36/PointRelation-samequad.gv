@@ -1,0 +1,11 @@
+digraph G {
+"97 : pointA.xCoordinate() < 0 && pointB.xCoordinate() < 0 && pointA.yCoordinate() < 0 && pointB.yCoordinate() < 0"
+"100 : 1"
+"104 : pointA.xCoordinate() < 0 && pointB.xCoordinate() < 0 && pointA.yCoordinate() > 0 && pointB.yCoordinate() > 0"
+"107 : 1"
+"111 : pointA.xCoordinate() > 0 && pointB.xCoordinate() > 0 && pointA.yCoordinate() < 0 && pointB.yCoordinate() < 0"
+"114 : 1"
+"118 : pointA.xCoordinate() > 0 && pointB.xCoordinate() > 0 && pointA.yCoordinate() > 0 && pointB.yCoordinate() > 0"
+"121 : 1"
+"125 : 0"
+}

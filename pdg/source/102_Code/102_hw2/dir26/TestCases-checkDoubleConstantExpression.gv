@@ -1,0 +1,15 @@
+digraph G {
+"4 : this.a = new DoubleConstantExpression(1.0, )"
+"5 : this.b = new DoubleConstantExpression(1.2, )"
+"6 : this.c = new DoubleConstantExpression(2.2, )"
+"7 : this.d = new DoubleConstantExpression(-8.0, )"
+"9 : this.binding = new VariableBindings()"
+"9 : this.binding = new VariableBindings()" -> "12 : Check.check(this.a.evaluate(this.binding, ), 1.0, )"
+"9 : this.binding = new VariableBindings()" -> "13 : Check.check(this.b.evaluate(this.binding, ), 1.2, )"
+"9 : this.binding = new VariableBindings()" -> "14 : Check.check(this.c.evaluate(this.binding, ), 2.2, )"
+"9 : this.binding = new VariableBindings()" -> "15 : Check.check(this.d.evaluate(this.binding, ), 8.0, )"
+"12 : Check.check(this.a.evaluate(this.binding, ), 1.0, )"
+"13 : Check.check(this.b.evaluate(this.binding, ), 1.2, )"
+"14 : Check.check(this.c.evaluate(this.binding, ), 2.2, )"
+"15 : Check.check(this.d.evaluate(this.binding, ), 8.0, )"
+}

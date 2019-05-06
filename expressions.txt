@@ -1,538 +1,271 @@
-function constructor1 from class testObject
-this.num = 0
-this.text = null
+function constructor1 from class ExpensePayeeComparator
 
-banana = num
-num = "hi"
-yeti = banana + num + this.num
 
-function constructor2 from class testObject
-this.num = 0
-this.text = null
+function compare from class ExpensePayeeComparator
 
-this.num = num
+compareTo(o2.getPayee(), )
 
-function doSomething from class testObject
-this.num = 0
-this.text = null
+function constructor1 from class ExpenseCategoryComparator
 
-System.out.println("Doing something", )
-text = text + "\n"
-this.text = text + "banana"
-out = this.text
 
-function testingMethodParams from class testObject
-this.num = 0
-this.text = null
+function compare from class ExpenseCategoryComparator
 
-next = num + 1
+compareTo(o2.getCategory(), )
 
-function main from class testFile
-this.thing = 2
+function constructor1 from class ExpenseDelegateComparator
+this.comp1 = null
+this.comp2 = null
 
-that = 0.0
-thisthat = 0.0
-num = 6
-banana = "check: " + 6
-ham = num + 2
+this.comp1 = comp1
+this.comp2 = comp2
+
+function compare from class ExpenseDelegateComparator
+this.comp1 = null
+this.comp2 = null
+
+firstComparison = this.comp1.compare(o1, o2, )
+firstComparison == 0
+
+this.comp2.compare(o1, o2, )
+
+
+function constructor1 from class ExpenseDateComparator
+
+
+function compare from class ExpenseDateComparator
+
+after(o2.getDate(), )
+
+1
+
+before(o2.getDate(), )
+
+1
+
+
+0
+
+function constructor1 from class FullExpense
+this.date = null
+this.category = null
+this.payee = null
+this.amountPaid = 0.0
+
+this.date = date
+this.category = category
+this.payee = payee
+this.amountPaid = amountPaid
+
+function getType from class FullExpense
+this.date = null
+this.category = null
+this.payee = null
+this.amountPaid = 0.0
+
+"in-full"
+
+function getDate from class FullExpense
+this.date = null
+this.category = null
+this.payee = null
+this.amountPaid = 0.0
+
+
+function getCategory from class FullExpense
+this.date = null
+this.category = null
+this.payee = null
+this.amountPaid = 0.0
+
+
+function getPayee from class FullExpense
+this.date = null
+this.category = null
+this.payee = null
+this.amountPaid = 0.0
+
+
+function getAmountPaid from class FullExpense
+this.date = null
+this.category = null
+this.payee = null
+this.amountPaid = 0.0
+
+
+function constructor1 from class ExpenseAmountComparator
+
+
+function compare from class ExpenseAmountComparator
+
+o1.getAmountPaid() > o2.getAmountPaid()
+
+1
+
+o1.getAmountPaid() < o2.getAmountPaid()
+
+1
+
+
+0
+
+function main from class Expensify
+
+s = null
+out = null
+scan = new Scanner(System.in, )
+expenseList = new ArrayList()
+error = false
+
+date = null
+category = null
+payee = null
+amount = 0.0
+remainingAmount = 0.0
+s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), )
+s.hasNextLine()
+
+
+str = s.nextLine()
+str.equals("in-full", )
+
+
+df = new SimpleDateFormat("MM/dd/yyyy", )
+date = df.parse(s.nextLine(), )
+category = s.nextLine()
+payee = s.nextLine()
+amount = Double.parseDouble(s.nextLine(), )
+expenseList.add(new FullExpense(date, category, payee, amount, ), )
+
+str.equals("partial", )
+
+df = new SimpleDateFormat("MM/dd/yyyy", )
+date = df.parse(s.nextLine(), )
+category = s.nextLine()
+payee = s.nextLine()
+amount = Double.parseDouble(s.nextLine(), )
+remainingAmount = Double.parseDouble(s.nextLine(), )
+expenseList.add(new PartialExpense(date, category, payee, amount, remainingAmount, ), )
+
+
+s.hasNextLine()
+
+System.out.print("File Not Completely Loaded\n", )
+error = true
+
+System.out.print("File Not Completely Loaded\n", )
+error = true
+
+System.out.print("File Loaded\n", )
+
+choice = 0
 true
 
-System.out.println(testFile.class, )
+System.out.println("\n1. Display", )
+System.out.println("2. Add Expense", )
+System.out.println("3. Sort", )
+System.out.println("4. Save", )
+System.out.println("5. Quit", )
+System.out.print("\nEnter choice: ", )
+choice = Integer.parseInt(scan.next(), )
+choice == 5
 
-ham == 0
 
-num = 1
 
-num = 2
 
+exp = expenseList
+strOut = null
+expDate = exp.getDate()
+expPayee = exp.getPayee()
+expAmount = exp.getAmountPaid()
+expCategory = exp.getCategory()
+exp instanceof PartialExpense
 
-ham = ham / 2
-true
+System.out.print("\n", )
 
-@temp1 = getNum(num, ) == 3
-num = @temp1 ? 5 : 2
-testFile.getNum(4 + 3, )
-arr = {3, }
-useGlobal = this.thing + 100
-arr[2] = 4
-true
+expRemaining = getRemainingAmount()
+strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s (%s) [%s]", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, )
 
-thing = 3
-@temp2 = thing
-thing = thing - 1
+strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s [%s]", expPayee, expAmount.toString(), expCategory, )
 
-this.thing = this.thing + 1
-arr1 = {4, 5, }
-arr1[1][2] = 9
-System.out.println(arr1[0][0], )
-System.out.println(getArray()[0], )
-list = new ArrayList()
-sum = 0
+System.out.print("\n" + strOut, )
 
-x = list
-sum = sum + x
+listNew = new ArrayList()
+listNew.add(new FullExpense(date, category, payee, amount, ), )
+listNew.addAll(expenseList, )
+expenseList = listNew
 
-@temp3 = sum
-sum = sum + 1
-@temp4 = sum
-sum = sum - 1
-@temp5 = num
-num = num + 1
-methodWithManyArgs(@temp3, @temp4, @temp5, )
-obj = new testObject(5, )
-obj.doSomething("bah", )
+System.out.print("Expense Balance: ", )
+remainingAmount = Double.parseDouble(scan.next(), )
+listNew = new ArrayList()
+listNew.add(new PartialExpense(date, category, payee, amount, remainingAmount, ), )
+listNew.addAll(expenseList, )
+expenseList = listNew
 
-function getNum from class testFile
-this.thing = 2
 
+out = new FileWriter("StoredExpenses", )
 
-i = 0
 
-i < 5
+exp = expenseList
+exp instanceof PartialExpense
 
-j = 0
-i == 2
+out.flush()
 
-num + 1
+out.write("partial\r\n", )
+out.write(format(exp.getDate(), ) + "\r\n", )
+out.write(exp.getCategory() + "\r\n", )
+out.write(exp.getPayee() + "\r\n", )
+out.write(Double.toString(exp.getAmountPaid(), ) + "\r\n", )
+out.write(Double.toString(getRemainingAmount(), ) + "\r\n", )
 
+out.write("in-full\r\n", )
+out.write(format(exp.getDate(), ) + "\r\n", )
+out.write(exp.getCategory() + "\r\n", )
+out.write(exp.getPayee() + "\r\n", )
+out.write(Double.toString(exp.getAmountPaid(), ) + "\r\n", )
 
-j = 1
 
-@temp6 = i
-i = i + 1
+out != null
 
-function getArray from class testFile
-this.thing = 2
+out.close()
 
-{{1, 2, 3, }, {4, 5, 6, }, }
 
-function methodWithManyArgs from class testFile
-this.thing = 2
+function comparatorBuilder from class Expensify
 
-useGlobal1 = this.thing + 10000
-j = 1
-j = 2
-j == 3
+comp.equals("date", )
 
+c = new ExpenseDateComparator()
 
+comp.equals("amount", )
 
-function checkPlanar from class testFile
-this.thing = 2
+c = new ExpenseAmountComparator()
 
-x = 0
-true
+comp.equals("category", )
 
-x = 5
+c = new ExpenseCategoryComparator()
 
-true
+comp.equals("payee", )
 
-x = 6
+c = new ExpensePayeeComparator()
 
-getNum(x, )
-getNum(x, )
 
-function cyclic from class testFile
-this.thing = 2
 
-num = 5
 
-i = 0
+null
 
-i < 5
+function recursiveComparator from class Expensify
 
-num = num + i
-i = i + num
+comp = comparatorBuilder(compArr[i], )
+i == compArr.length - 1
 
 
-function print from class PDGSample
+new ExpenseDelegateComparator(comp, recursiveComparator(compArr, i + 1, ), )
 
-sum = 0
-i = 1
-i < 11
+function constructor1 from class PartialExpense
+this.remainingAmount = 0.0
 
-sum = sum + i
-i = i + 1
-i < 11
+this.remainingAmount = remainingAmount
 
-System.out.println(sum, )
-System.out.println(i, )
+function getRemainingAmount from class PartialExpense
+this.remainingAmount = 0.0
 
-function test1 from class TestCase3
-
-sum = 0
-count = 0
-
-i = 0
-
-i < 3
-
-sum = sum + arr[i]
-@temp7 = count
-count = count + 1
-@temp8 = i
-i = i + 1
-
-average = sum * 1.0 / count
-
-function test2 from class TestCase3
-
-sum = 0
-count = 0
-
-i = 0
-
-i < 3
-
-sum = sum + arr[i]
-@temp9 = count
-count = count + 1
-@temp10 = i
-i = i + 1
-
-average = sum * 1.0 / count
-
-function test1 from class TestCase4
-
-sum = 0
-count = 0
-
-i = 0
-
-i < 3
-
-sum = sum + arr[i]
-@temp11 = count
-count = count + 1
-@temp12 = i
-i = i + 1
-
-average = sum * 1.0 / count
-
-function test2 from class TestCase4
-
-sum = 0
-count = 0
-
-i = 0
-
-i < 3
-
-sum = sum + arr[i]
-count = count + 1
-@temp13 = i
-i = i + 1
-
-average = sum * 1.0 / count
-
-function doSomething1 from class TestCase5
-
-x + 1
-
-function doSomething2 from class TestCase5
-
-x + 1
-
-function test1 from class TestCase5
-
-sum = 0
-count = 0
-
-i = 0
-
-i < 3
-
-sum = sum + arr[i]
-count = doSomething1(count, )
-@temp14 = i
-i = i + 1
-
-average = sum * 1.0 / count
-
-function test2 from class TestCase5
-
-sum = 0
-count = 0
-
-i = 0
-
-i < 3
-
-sum = sum + arr[i]
-count = doSomething2(count, )
-@temp15 = i
-i = i + 1
-
-average = sum * 1.0 / count
-
-function test1 from class TestCase2
-
-sum1 = 0
-count1 = 0
-
-i = 0
-
-i < 3
-
-sum1 = sum1 + arr[i]
-@temp16 = count1
-count1 = count1 + 1
-@temp17 = i
-i = i + 1
-
-average1 = sum1 * 1.0 / count1
-
-function test2 from class TestCase2
-
-sum2 = 0
-count2 = 0
-
-i = 0
-
-i < 3
-
-sum2 = sum2 + arr[i]
-@temp18 = count2
-count2 = count2 + 1
-@temp19 = i
-i = i + 1
-
-average2 = sum2 * 1.0 / count2
-
-function test1 from class TestCase10
-
-sum = 0
-count = 0
-
-i = 0
-
-i < 3
-
-sum = sum + arr[i]
-@temp20 = count
-count = count + 1
-@temp21 = i
-i = i + 1
-
-average = sum * 1.0 / count
-
-function test2 from class TestCase10
-
-sum = 0
-count = 0
-
-i = 0
-
-i >= 3
-
-sum = sum + arr[i]
-@temp22 = count
-count = count + 1
-@temp23 = i
-i = i + 1
-
-average = sum * 1.0 / count
-
-function test1 from class TestCase11
-
-sum = 0
-count = 0
-
-i = 0
-
-i < 3
-
-sum = sum + arr[i]
-@temp24 = count
-count = count + 1
-@temp25 = i
-i = i + 1
-
-average = sum * 1.0 / count
-
-function test2 from class TestCase11
-
-sum = 0
-count = 0
-
-i = 0
-
-i < 3
-
-sum = sum + arr[i]
-@temp26 = count
-count = count + 1
-@temp27 = i
-i = i + 1
-
-average = sum * 1.0 / count
-
-function test1 from class TestCase7
-
-sum = 0
-count = 0
-
-i = 0
-
-i < 3
-
-sum = sum + arr[i] + 3
-@temp28 = count
-count = count + 1
-@temp29 = i
-i = i + 1
-
-average = sum * 1.0 / count
-
-function test2 from class TestCase7
-
-sum = 0
-count = 0
-
-i = 0
-
-i < 3
-
-sum = sum + arr[i]
-sum = sum + 3
-@temp30 = count
-count = count + 1
-@temp31 = i
-i = i + 1
-
-average = sum * 1.0 / count
-
-function test1 from class TestCase9
-
-sum = 0
-count = 0
-
-i = 0
-
-i < 3
-
-sum = sum + arr[i]
-@temp32 = count
-count = count + 1
-@temp33 = i
-i = i + 1
-
-average = sum * 1.0 / count
-
-function test2 from class TestCase9
-
-sum = 0
-count = 0
-
-i = 0
-
-3 > i
-
-sum = sum + arr[i]
-@temp34 = count
-count = count + 1
-@temp35 = i
-i = i + 1
-
-average = sum * 1.0 / count
-
-function test1 from class TestCase8
-
-sum = 0
-count = 0
-
-i = 0
-
-i < 3
-
-sum = sum + arr[i] + 3
-@temp36 = count
-count = count + 1
-@temp37 = i
-i = i + 1
-
-average = sum * 1.0 / count
-
-function test2 from class TestCase8
-
-sum = 0
-count = 0
-
-i = 0
-
-i < 3
-
-sum = 3 + sum + arr[i]
-@temp38 = count
-count = count + 1
-@temp39 = i
-i = i + 1
-
-average = sum * 1.0 / count
-
-function test1 from class TestCase1
-
-sum = 0
-count = 0
-
-i = 0
-
-i < 3
-
-sum = sum + arr[i]
-@temp40 = count
-count = count + 1
-@temp41 = i
-i = i + 1
-
-average = sum * 1.0 / count
-
-function test2 from class TestCase1
-
-sum = 0
-count = 0
-
-i = 0
-
-i < 3
-
-sum = sum + arr[i]
-@temp42 = count
-count = count + 1
-@temp43 = i
-i = i + 1
-
-average = sum * 1.0 / count
-
-function test1 from class TestCase6
-
-sum = 0
-count = 0
-
-i = 0
-
-i < 3
-
-sum = sum + arr[i]
-@temp44 = count
-count = count + 1
-@temp45 = i
-i = i + 1
-
-average = sum * 1.0 / count
-
-function test2 from class TestCase6
-
-sum = 0
-count = 0
-i = 0
-i < 3
-
-sum = sum + arr[i]
-@temp46 = count
-count = count + 1
-@temp47 = i
-i = i + 1
-i < 3
-
-average = sum * 1.0 / count
 

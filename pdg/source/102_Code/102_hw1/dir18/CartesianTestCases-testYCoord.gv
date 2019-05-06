@@ -1,0 +1,7 @@
+digraph G {
+"15 : pt = new CartesianPoint(1.0, 1.0, )"
+"15 : pt = new CartesianPoint(1.0, 1.0, )" -> "18 : pt = new CartesianPoint(1.0, 9.0, )" [style=dashed]
+"16 : Check.check(pt.yCoordinate(), 1.0, )"
+"18 : pt = new CartesianPoint(1.0, 9.0, )"
+"19 : Check.check(pt.yCoordinate(), 9.0, )"
+}

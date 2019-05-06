@@ -1,0 +1,9 @@
+digraph G {
+"4 : this.lft = null"
+"4 : this.rht = null"
+"14 : divisor = evaluate(binding, )"
+"14 : divisor = evaluate(binding, )" -> "17 : quotient = divisor / dividend"
+"15 : dividend = evaluate(binding, )"
+"15 : dividend = evaluate(binding, )" -> "17 : quotient = divisor / dividend"
+"17 : quotient = divisor / dividend"
+}

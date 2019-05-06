@@ -1,0 +1,10 @@
+digraph G {
+"54 : coordinates = new Scanner(System.in, )"
+"56 : System.out.println(\"Enter x-coordinate: \", )"
+"57 : xCoor = coordinates.nextDouble()"
+"57 : xCoor = coordinates.nextDouble()" -> "62 : new CartesianPoint(xCoor, yCoor, )"
+"59 : System.out.println(\"Enter y-coordinate: \", )"
+"60 : yCoor = coordinates.nextDouble()"
+"60 : yCoor = coordinates.nextDouble()" -> "62 : new CartesianPoint(xCoor, yCoor, )"
+"62 : new CartesianPoint(xCoor, yCoor, )"
+}

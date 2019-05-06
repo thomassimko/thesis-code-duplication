@@ -1,0 +1,6 @@
+digraph G {
+"5 : pt1 = new PolarPoint(5, 1.5707963, )"
+"6 : pt2 = new PolarPoint(10, 0.7853982, )"
+"7 : Check.check(pt1.xCoordinate(), 0, )"
+"8 : Check.check(pt2.xCoordinate(), 7.071068, )"
+}

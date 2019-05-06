@@ -1,0 +1,8 @@
+digraph G {
+"3 : this.bindVar = null"
+"3 : this.bindVar = null" -> "7 : this.bindVar = bindVar" [style=dashed]
+"4 : this.bindNum = 0.0"
+"4 : this.bindNum = 0.0" -> "8 : this.bindNum = bindNum" [style=dashed]
+"7 : this.bindVar = bindVar"
+"8 : this.bindNum = bindNum"
+}

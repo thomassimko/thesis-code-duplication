@@ -1,0 +1,12 @@
+digraph G {
+"3 : this.test1 = new PolarPoint(0, 0, )"
+"4 : this.test2 = new PolarPoint(1, 0, )"
+"5 : this.test3 = new PolarPoint(1, Math.PI / 2, )"
+"6 : this.test4 = new PolarPoint(Math.sqrt(8, ), Math.PI / 4, )"
+"7 : this.test5 = new PolarPoint(Math.sqrt(8, ), -3 * Math.PI / 4, )"
+"60 : Check.check(this.test1.radius(), 0, )"
+"61 : Check.check(this.test2.radius(), 1, )"
+"62 : Check.check(this.test3.radius(), 1, )"
+"63 : Check.check(this.test4.radius(), Math.sqrt(8, ), )"
+"64 : Check.check(this.test5.radius(), Math.sqrt(8, ), )"
+}

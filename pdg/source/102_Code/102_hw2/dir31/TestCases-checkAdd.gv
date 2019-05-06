@@ -1,0 +1,8 @@
+digraph G {
+"98 : a = new DoubleConstantExpression(2, )"
+"98 : a = new DoubleConstantExpression(2, )" -> "100 : e = new AddExpression(a, b, )"
+"99 : b = new DoubleConstantExpression(3, )"
+"99 : b = new DoubleConstantExpression(3, )" -> "100 : e = new AddExpression(a, b, )"
+"100 : e = new AddExpression(a, b, )"
+"102 : Check.check(e.evaluate(bindings, ), 5, )"
+}

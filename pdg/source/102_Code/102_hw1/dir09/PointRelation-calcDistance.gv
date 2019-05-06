@@ -1,0 +1,8 @@
+digraph G {
+"5 : this.scan = new Scanner(System.in, )"
+"74 : dx = pt2.xCoordinate() - pt1.xCoordinate()"
+"74 : dx = pt2.xCoordinate() - pt1.xCoordinate()" -> "76 : Math.sqrt(dx * dx + dy * dy, )"
+"75 : dy = pt2.yCoordinate() - pt1.yCoordinate()"
+"75 : dy = pt2.yCoordinate() - pt1.yCoordinate()" -> "76 : Math.sqrt(dx * dx + dy * dy, )"
+"76 : Math.sqrt(dx * dx + dy * dy, )"
+}

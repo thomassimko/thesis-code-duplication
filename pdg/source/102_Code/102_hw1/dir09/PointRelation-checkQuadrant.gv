@@ -1,0 +1,12 @@
+digraph G {
+"5 : this.scan = new Scanner(System.in, )"
+"81 : pt.xCoordinate() == 0 && pt.yCoordinate() == 0"
+"82 : 0"
+"83 : pt.xCoordinate() > 0 && pt.yCoordinate() >= 0"
+"84 : 1"
+"85 : pt.xCoordinate() <= 0 && pt.yCoordinate() > 0"
+"86 : 2"
+"87 : pt.xCoordinate() < 0 && pt.yCoordinate() <= 0"
+"88 : 3"
+"90 : 4"
+}

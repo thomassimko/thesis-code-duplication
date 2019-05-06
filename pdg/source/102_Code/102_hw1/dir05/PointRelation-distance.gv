@@ -1,0 +1,5 @@
+digraph G {
+"7 : d = 0.0"
+"7 : d = 0.0" -> "8 : d = Math.sqrt(Math.pow(a.xCoordinate() - b.xCoordinate(), 2, ) + Math.pow(a.yCoordinate() - b.yCoordinate(), 2, ), )" [style=dashed]
+"8 : d = Math.sqrt(Math.pow(a.xCoordinate() - b.xCoordinate(), 2, ) + Math.pow(a.yCoordinate() - b.yCoordinate(), 2, ), )"
+}

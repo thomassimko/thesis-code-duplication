@@ -1,0 +1,6 @@
+digraph G {
+"3 : this.xCoordinate = 0.0"
+"4 : this.yCoordinate = 0.0"
+"5 : this.radius = 0.0"
+"6 : this.angle = 0.0"
+}

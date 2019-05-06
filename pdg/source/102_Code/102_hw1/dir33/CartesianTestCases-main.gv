@@ -1,0 +1,14 @@
+digraph G {
+"5 : a = new CartesianPoint(1.0, 2.0, )"
+"6 : b = new CartesianPoint(2.0, 3.0, )"
+"8 : Check.check(a.xCoordinate(), 1.0, )"
+"9 : Check.check(a.yCoordinate(), 2.0, )"
+"11 : Check.check(b.xCoordinate(), 2.0, )"
+"12 : Check.check(b.yCoordinate(), 3.0, )"
+"14 : Check.check(a.radius(), Math.sqrt(5.0, ), )"
+"15 : Check.check(b.radius(), Math.sqrt(13.0, ), )"
+"17 : Check.check(a.angle(), Math.atan2(2.0, 1.0, ), )"
+"18 : Check.check(b.angle(), Math.atan2(3.0, 2.0, ), )"
+"20 : Check.check(angle(), Math.atan2(2.0, 1.0, ) + Math.PI / 2, )"
+"21 : Check.check(angle(), Math.atan2(3.0, 2.0, ) + Math.PI / 2, )"
+}

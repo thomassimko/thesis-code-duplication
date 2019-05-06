@@ -1,0 +1,5 @@
+digraph G {
+"9 : square = 0.0"
+"9 : square = 0.0" -> "10 : square = x * x" [style=dashed]
+"10 : square = x * x"
+}

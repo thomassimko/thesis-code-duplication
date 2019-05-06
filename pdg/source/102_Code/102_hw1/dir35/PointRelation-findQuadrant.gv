@@ -1,0 +1,9 @@
+digraph G {
+"18 : point.angle() >= 0 && point.angle() < Math.PI / 2"
+"20 : 1"
+"22 : point.angle() >= Math.PI / 2 && point.angle() < Math.PI"
+"24 : 2"
+"26 : point.angle() >= Math.PI && point.angle() < 3 * Math.PI / 2"
+"28 : 3"
+"32 : 4"
+}

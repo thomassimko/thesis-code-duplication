@@ -1,0 +1,5 @@
+digraph G {
+"4 : this.l = null"
+"4 : this.r = null"
+"12 : this.l.evaluate(binding, ) / this.r.evaluate(binding, )"
+}

@@ -1,0 +1,13 @@
+digraph G {
+"8 : distance = 0.0"
+"8 : distance = 0.0" -> "11 : distance = Math.sqrt(x_distance * x_distance + y_distance * y_distance, )" [style=dashed]
+"8 : x_distance = 0.0"
+"8 : x_distance = 0.0" -> "9 : x_distance = Math.abs(pt1.xCoordinate() - pt2.xCoordinate(), )" [style=dashed]
+"8 : y_distance = 0.0"
+"8 : y_distance = 0.0" -> "10 : y_distance = Math.abs(pt1.yCoordinate() - pt2.yCoordinate(), )" [style=dashed]
+"9 : x_distance = Math.abs(pt1.xCoordinate() - pt2.xCoordinate(), )"
+"9 : x_distance = Math.abs(pt1.xCoordinate() - pt2.xCoordinate(), )" -> "11 : distance = Math.sqrt(x_distance * x_distance + y_distance * y_distance, )"
+"10 : y_distance = Math.abs(pt1.yCoordinate() - pt2.yCoordinate(), )"
+"10 : y_distance = Math.abs(pt1.yCoordinate() - pt2.yCoordinate(), )" -> "11 : distance = Math.sqrt(x_distance * x_distance + y_distance * y_distance, )"
+"11 : distance = Math.sqrt(x_distance * x_distance + y_distance * y_distance, )"
+}

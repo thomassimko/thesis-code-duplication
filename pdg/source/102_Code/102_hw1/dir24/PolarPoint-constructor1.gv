@@ -1,0 +1,50 @@
+digraph G {
+"4 : this.radius = 0.0"
+"4 : this.radius = 0.0" -> "44 : this.radius = radius" [style=dashed]
+"5 : this.angle = 0.0"
+"5 : this.angle = 0.0" -> "45 : this.angle = angle" [style=dashed]
+"9 : angle < 0"
+"11 : angle = 2 * Math.PI + angle"
+"11 : angle = 2 * Math.PI + angle" -> "35 : angle = angle + Math.PI"
+"11 : angle = 2 * Math.PI + angle" -> "40 : angle = angle + Math.PI"
+"11 : angle = 2 * Math.PI + angle" -> "25 : angle = 2 * Math.PI + angle"
+"11 : angle = 2 * Math.PI + angle" -> "18 : angle >= 0"
+"11 : angle = 2 * Math.PI + angle" -> "20 : angle = angle"
+"11 : angle = 2 * Math.PI + angle" -> "33 : angle >= 0"
+"11 : angle = 2 * Math.PI + angle" -> "45 : this.angle = angle"
+"11 : angle = 2 * Math.PI + angle" -> "35 : angle = angle + Math.PI" [style=dashed]
+"11 : angle = 2 * Math.PI + angle" -> "40 : angle = angle + Math.PI" [style=dashed]
+"11 : angle = 2 * Math.PI + angle" -> "25 : angle = 2 * Math.PI + angle" [style=dashed]
+"11 : angle = 2 * Math.PI + angle" -> "20 : angle = angle" [style=dashed]
+"14 : radius >= 0"
+"16 : radius = radius"
+"16 : radius = radius" -> "44 : this.radius = radius"
+"16 : radius = radius" -> "31 : radius = radius * 1"
+"16 : radius = radius" -> "29 : radius < 0"
+"16 : radius = radius" -> "31 : radius = radius * 1" [style=dashed]
+"18 : angle >= 0"
+"20 : angle = angle"
+"20 : angle = angle" -> "35 : angle = angle + Math.PI"
+"20 : angle = angle" -> "40 : angle = angle + Math.PI"
+"20 : angle = angle" -> "33 : angle >= 0"
+"20 : angle = angle" -> "45 : this.angle = angle"
+"20 : angle = angle" -> "35 : angle = angle + Math.PI" [style=dashed]
+"20 : angle = angle" -> "40 : angle = angle + Math.PI" [style=dashed]
+"25 : angle = 2 * Math.PI + angle"
+"25 : angle = 2 * Math.PI + angle" -> "35 : angle = angle + Math.PI"
+"25 : angle = 2 * Math.PI + angle" -> "40 : angle = angle + Math.PI"
+"25 : angle = 2 * Math.PI + angle" -> "33 : angle >= 0"
+"25 : angle = 2 * Math.PI + angle" -> "45 : this.angle = angle"
+"25 : angle = 2 * Math.PI + angle" -> "35 : angle = angle + Math.PI" [style=dashed]
+"25 : angle = 2 * Math.PI + angle" -> "40 : angle = angle + Math.PI" [style=dashed]
+"29 : radius < 0"
+"31 : radius = radius * 1"
+"31 : radius = radius * 1" -> "44 : this.radius = radius"
+"33 : angle >= 0"
+"35 : angle = angle + Math.PI"
+"35 : angle = angle + Math.PI" -> "45 : this.angle = angle"
+"40 : angle = angle + Math.PI"
+"40 : angle = angle + Math.PI" -> "45 : this.angle = angle"
+"44 : this.radius = radius"
+"45 : this.angle = angle"
+}

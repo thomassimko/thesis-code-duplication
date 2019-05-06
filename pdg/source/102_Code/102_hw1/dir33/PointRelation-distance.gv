@@ -1,0 +1,19 @@
+digraph G {
+"92 : x1 = 0.0"
+"92 : x1 = 0.0" -> "93 : x1 = a.xCoordinate()" [style=dashed]
+"92 : y1 = 0.0"
+"92 : y1 = 0.0" -> "94 : y1 = a.yCoordinate()" [style=dashed]
+"92 : x2 = 0.0"
+"92 : x2 = 0.0" -> "95 : x2 = b.xCoordinate()" [style=dashed]
+"92 : y2 = 0.0"
+"92 : y2 = 0.0" -> "96 : y2 = b.yCoordinate()" [style=dashed]
+"93 : x1 = a.xCoordinate()"
+"93 : x1 = a.xCoordinate()" -> "97 : Math.sqrt(Math.pow(x2 - x1, 2, ) + Math.pow(y2 - y1, 2, ), )"
+"94 : y1 = a.yCoordinate()"
+"94 : y1 = a.yCoordinate()" -> "97 : Math.sqrt(Math.pow(x2 - x1, 2, ) + Math.pow(y2 - y1, 2, ), )"
+"95 : x2 = b.xCoordinate()"
+"95 : x2 = b.xCoordinate()" -> "97 : Math.sqrt(Math.pow(x2 - x1, 2, ) + Math.pow(y2 - y1, 2, ), )"
+"96 : y2 = b.yCoordinate()"
+"96 : y2 = b.yCoordinate()" -> "97 : Math.sqrt(Math.pow(x2 - x1, 2, ) + Math.pow(y2 - y1, 2, ), )"
+"97 : Math.sqrt(Math.pow(x2 - x1, 2, ) + Math.pow(y2 - y1, 2, ), )"
+}

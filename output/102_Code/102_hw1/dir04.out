@@ -1,0 +1,1096 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for thesis:thesis:jar:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.version' for org.junit.jupiter:junit-jupiter-api:jar is either LATEST or RELEASE (both of them are being deprecated) @ line 25, column 22
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building thesis 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default-cli) > validate @ thesis >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default-cli) < validate @ thesis <<<
+[INFO] 
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ thesis ---
+BLOCK: Startconstructor1L0
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: BasicL1
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: trueL3
+this.theta : this.theta = 0.0, 
+this.r : this.r = r, 
+
+BLOCK: trueL5
+this.theta : this.theta = theta + Math.PI / 2, 
+this.r : this.r = r, 
+
+BLOCK: falseL7
+this.theta : this.theta = theta + Math.PI, 
+this.r : this.r = r, 
+
+BLOCK: joinL6
+this.theta : this.theta = theta + Math.PI, this.theta = theta + Math.PI / 2, 
+this.r : this.r = r, 
+
+BLOCK: falseL8
+this.theta : this.theta = 0.0, 
+this.r : this.r = r, 
+
+BLOCK: trueL9
+this.theta : this.theta = 2 * Math.PI + theta, 
+this.r : this.r = r, 
+
+BLOCK: falseL11
+this.theta : this.theta = theta, 
+this.r : this.r = r, 
+
+BLOCK: joinL10
+this.theta : this.theta = theta, this.theta = 2 * Math.PI + theta, 
+this.r : this.r = r, 
+
+BLOCK: joinL4
+this.theta : this.theta = theta + Math.PI, this.theta = theta + Math.PI / 2, this.theta = theta, this.theta = 2 * Math.PI + theta, 
+this.r : this.r = r, this.r = r, 
+
+BLOCK: StartxCoordinateL12
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: BasicL13
+x : x = 0.0, 
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: trueL15
+x : x = 0.0, 
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: falseL17
+x : x = this.r * Math.cos(this.theta, ), 
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: joinL16
+x : x = 0.0, x = this.r * Math.cos(this.theta, ), 
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: StartyCoordinateL18
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: BasicL19
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+y : y = 0.0, 
+
+BLOCK: trueL21
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+y : y = 0.0, 
+
+BLOCK: falseL23
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+y : y = this.r * Math.sin(this.theta, ), 
+
+BLOCK: joinL22
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+y : y = this.r * Math.sin(this.theta, ), y = 0.0, 
+
+BLOCK: StartradiusL24
+this.r : this.r = 0.0, 
+this.theta : this.theta = 0.0, 
+
+BLOCK: BasicL25
+this.r : this.r = 0.0, 
+this.theta : this.theta = 0.0, 
+
+BLOCK: StartangleL27
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: BasicL28
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: Startrotate90L30
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: BasicL31
+newTheta : newTheta = angle() + Math.PI / 2, 
+result : result = new PolarPoint(this.r, newTheta, ), 
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: StarterrorMsgL33
+
+BLOCK: BasicL34
+
+BLOCK: StartdistanceL36
+
+BLOCK: BasicL37
+x : x = pt1.xCoordinate() - pt2.xCoordinate(), 
+y : y = pt1.yCoordinate() - pt2.yCoordinate(), 
+dist : dist = Math.sqrt(x * x + y * y, ), 
+
+BLOCK: StartCheckQuadL39
+
+BLOCK: BasicL40
+pt2Xpos : pt2Xpos = pt2.xCoordinate() > 0 || pt2.xCoordinate() == 0 && pt2.yCoordinate() < 0, 
+same : same = false, 
+pt1Xpos : pt1Xpos = pt1.xCoordinate() > 0 || pt1.xCoordinate() == 0 && pt1.yCoordinate() < 0, 
+pt1Ypos : pt1Ypos = pt1.yCoordinate() > 0 || pt1.yCoordinate() == 0 && pt1.xCoordinate() > 0, 
+pt2Ypos : pt2Ypos = pt2.yCoordinate() > 0 || pt2.yCoordinate() == 0 && pt2.xCoordinate() > 0, 
+
+BLOCK: trueL42
+pt2Xpos : pt2Xpos = pt2.xCoordinate() > 0 || pt2.xCoordinate() == 0 && pt2.yCoordinate() < 0, 
+same : same = false, 
+pt1Xpos : pt1Xpos = pt1.xCoordinate() > 0 || pt1.xCoordinate() == 0 && pt1.yCoordinate() < 0, 
+pt1Ypos : pt1Ypos = pt1.yCoordinate() > 0 || pt1.yCoordinate() == 0 && pt1.xCoordinate() > 0, 
+pt2Ypos : pt2Ypos = pt2.yCoordinate() > 0 || pt2.yCoordinate() == 0 && pt2.xCoordinate() > 0, 
+
+BLOCK: falseL44
+pt2Xpos : pt2Xpos = pt2.xCoordinate() > 0 || pt2.xCoordinate() == 0 && pt2.yCoordinate() < 0, 
+same : same = false, 
+pt1Xpos : pt1Xpos = pt1.xCoordinate() > 0 || pt1.xCoordinate() == 0 && pt1.yCoordinate() < 0, 
+pt1Ypos : pt1Ypos = pt1.yCoordinate() > 0 || pt1.yCoordinate() == 0 && pt1.xCoordinate() > 0, 
+pt2Ypos : pt2Ypos = pt2.yCoordinate() > 0 || pt2.yCoordinate() == 0 && pt2.xCoordinate() > 0, 
+
+BLOCK: joinL43
+pt2Xpos : pt2Xpos = pt2.xCoordinate() > 0 || pt2.xCoordinate() == 0 && pt2.yCoordinate() < 0, 
+same : same = false, 
+pt1Xpos : pt1Xpos = pt1.xCoordinate() > 0 || pt1.xCoordinate() == 0 && pt1.yCoordinate() < 0, 
+pt1Ypos : pt1Ypos = pt1.yCoordinate() > 0 || pt1.yCoordinate() == 0 && pt1.xCoordinate() > 0, 
+pt2Ypos : pt2Ypos = pt2.yCoordinate() > 0 || pt2.yCoordinate() == 0 && pt2.xCoordinate() > 0, 
+
+BLOCK: StartmainL45
+
+BLOCK: BasicL46
+yCoor : yCoor = 0.0, 
+dist : dist = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = null, 
+rad : rad = 0.0, 
+xCoor : xCoor = 0.0, 
+choice : choice = scan.nextInt(), 
+theta : theta = 0.0, 
+sameQuadrant : sameQuadrant = false, 
+pt2 : pt2 = null, 
+thetaDeg : thetaDeg = 0.0, 
+
+BLOCK: trueL48
+yCoor : yCoor = scan.nextDouble(), 
+dist : dist = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = new CartesianPoint(xCoor, yCoor, ), 
+rad : rad = 0.0, 
+xCoor : xCoor = scan.nextDouble(), 
+choice : choice = scan.nextInt(), 
+theta : theta = 0.0, 
+sameQuadrant : sameQuadrant = false, 
+pt2 : pt2 = null, 
+thetaDeg : thetaDeg = 0.0, 
+
+BLOCK: falseL50
+yCoor : yCoor = 0.0, 
+dist : dist = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = null, 
+rad : rad = 0.0, 
+xCoor : xCoor = 0.0, 
+choice : choice = scan.nextInt(), 
+theta : theta = 0.0, 
+sameQuadrant : sameQuadrant = false, 
+pt2 : pt2 = null, 
+thetaDeg : thetaDeg = 0.0, 
+
+BLOCK: trueL51
+yCoor : yCoor = 0.0, 
+dist : dist = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = new PolarPoint(rad, theta, ), 
+rad : rad = scan.nextDouble(), 
+xCoor : xCoor = 0.0, 
+theta : theta = Math.toRadians(thetaDeg, ), 
+choice : choice = scan.nextInt(), 
+thetaDeg : thetaDeg = scan.nextDouble(), 
+sameQuadrant : sameQuadrant = false, 
+pt2 : pt2 = null, 
+
+BLOCK: falseL53
+yCoor : yCoor = 0.0, 
+dist : dist = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = new CartesianPoint(0, 0, ), 
+rad : rad = 0.0, 
+xCoor : xCoor = 0.0, 
+choice : choice = scan.nextInt(), 
+theta : theta = 0.0, 
+sameQuadrant : sameQuadrant = false, 
+pt2 : pt2 = null, 
+thetaDeg : thetaDeg = 0.0, 
+
+BLOCK: joinL52
+yCoor : yCoor = 0.0, 
+dist : dist = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = new CartesianPoint(0, 0, ), pt1 = new PolarPoint(rad, theta, ), 
+rad : rad = 0.0, rad = scan.nextDouble(), 
+xCoor : xCoor = 0.0, 
+theta : theta = Math.toRadians(thetaDeg, ), theta = 0.0, 
+choice : choice = scan.nextInt(), 
+thetaDeg : thetaDeg = 0.0, thetaDeg = scan.nextDouble(), 
+sameQuadrant : sameQuadrant = false, 
+pt2 : pt2 = null, 
+
+BLOCK: joinL49
+yCoor : yCoor = scan.nextDouble(), yCoor = 0.0, 
+dist : dist = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = new CartesianPoint(0, 0, ), pt1 = new PolarPoint(rad, theta, ), pt1 = new CartesianPoint(xCoor, yCoor, ), 
+rad : rad = 0.0, rad = scan.nextDouble(), 
+xCoor : xCoor = scan.nextDouble(), xCoor = 0.0, 
+choice : choice = scan.nextInt(), 
+theta : theta = Math.toRadians(thetaDeg, ), theta = 0.0, 
+sameQuadrant : sameQuadrant = false, 
+pt2 : pt2 = null, 
+thetaDeg : thetaDeg = 0.0, thetaDeg = scan.nextDouble(), 
+
+BLOCK: trueL54
+yCoor : yCoor = scan.nextDouble(), 
+dist : dist = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = new CartesianPoint(0, 0, ), pt1 = new PolarPoint(rad, theta, ), pt1 = new CartesianPoint(xCoor, yCoor, ), 
+rad : rad = 0.0, rad = scan.nextDouble(), 
+xCoor : xCoor = scan.nextDouble(), 
+choice : choice = scan.nextInt(), 
+theta : theta = Math.toRadians(thetaDeg, ), theta = 0.0, 
+pt2 : pt2 = new CartesianPoint(xCoor, yCoor, ), 
+sameQuadrant : sameQuadrant = false, 
+thetaDeg : thetaDeg = 0.0, thetaDeg = scan.nextDouble(), 
+
+BLOCK: falseL56
+yCoor : yCoor = scan.nextDouble(), yCoor = 0.0, 
+dist : dist = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = new CartesianPoint(0, 0, ), pt1 = new PolarPoint(rad, theta, ), pt1 = new CartesianPoint(xCoor, yCoor, ), 
+rad : rad = 0.0, rad = scan.nextDouble(), 
+xCoor : xCoor = scan.nextDouble(), xCoor = 0.0, 
+choice : choice = scan.nextInt(), 
+theta : theta = Math.toRadians(thetaDeg, ), theta = 0.0, 
+sameQuadrant : sameQuadrant = false, 
+pt2 : pt2 = null, 
+thetaDeg : thetaDeg = 0.0, thetaDeg = scan.nextDouble(), 
+
+BLOCK: trueL57
+yCoor : yCoor = scan.nextDouble(), yCoor = 0.0, 
+dist : dist = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = new CartesianPoint(0, 0, ), pt1 = new PolarPoint(rad, theta, ), pt1 = new CartesianPoint(xCoor, yCoor, ), 
+rad : rad = scan.nextDouble(), 
+xCoor : xCoor = scan.nextDouble(), xCoor = 0.0, 
+theta : theta = Math.toRadians(thetaDeg, ), 
+choice : choice = scan.nextInt(), 
+pt2 : pt2 = new PolarPoint(rad, theta, ), 
+thetaDeg : thetaDeg = scan.nextDouble(), 
+sameQuadrant : sameQuadrant = false, 
+
+BLOCK: falseL59
+yCoor : yCoor = scan.nextDouble(), yCoor = 0.0, 
+dist : dist = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = new CartesianPoint(0, 0, ), pt1 = new PolarPoint(rad, theta, ), pt1 = new CartesianPoint(xCoor, yCoor, ), 
+rad : rad = 0.0, rad = scan.nextDouble(), 
+xCoor : xCoor = scan.nextDouble(), xCoor = 0.0, 
+choice : choice = scan.nextInt(), 
+theta : theta = Math.toRadians(thetaDeg, ), theta = 0.0, 
+pt2 : pt2 = new CartesianPoint(0, 0, ), 
+sameQuadrant : sameQuadrant = false, 
+thetaDeg : thetaDeg = 0.0, thetaDeg = scan.nextDouble(), 
+
+BLOCK: joinL58
+yCoor : yCoor = scan.nextDouble(), yCoor = 0.0, 
+dist : dist = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = new CartesianPoint(0, 0, ), pt1 = new PolarPoint(rad, theta, ), pt1 = new CartesianPoint(xCoor, yCoor, ), 
+rad : rad = 0.0, rad = scan.nextDouble(), rad = scan.nextDouble(), 
+xCoor : xCoor = scan.nextDouble(), xCoor = 0.0, 
+theta : theta = Math.toRadians(thetaDeg, ), theta = 0.0, theta = Math.toRadians(thetaDeg, ), 
+choice : choice = scan.nextInt(), 
+pt2 : pt2 = new PolarPoint(rad, theta, ), pt2 = new CartesianPoint(0, 0, ), 
+thetaDeg : thetaDeg = 0.0, thetaDeg = scan.nextDouble(), thetaDeg = scan.nextDouble(), 
+sameQuadrant : sameQuadrant = false, 
+
+BLOCK: joinL55
+yCoor : yCoor = scan.nextDouble(), yCoor = scan.nextDouble(), yCoor = 0.0, 
+dist : dist = distance(pt1, pt2, ), 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = new CartesianPoint(0, 0, ), pt1 = new PolarPoint(rad, theta, ), pt1 = new CartesianPoint(xCoor, yCoor, ), 
+rad : rad = 0.0, rad = scan.nextDouble(), rad = scan.nextDouble(), 
+xCoor : xCoor = scan.nextDouble(), xCoor = 0.0, xCoor = scan.nextDouble(), 
+choice : choice = scan.nextInt(), 
+theta : theta = Math.toRadians(thetaDeg, ), theta = 0.0, theta = Math.toRadians(thetaDeg, ), 
+sameQuadrant : sameQuadrant = CheckQuad(pt1, pt2, ), 
+pt2 : pt2 = new PolarPoint(rad, theta, ), pt2 = new CartesianPoint(0, 0, ), pt2 = new CartesianPoint(xCoor, yCoor, ), 
+thetaDeg : thetaDeg = 0.0, thetaDeg = scan.nextDouble(), thetaDeg = scan.nextDouble(), 
+
+BLOCK: trueL60
+yCoor : yCoor = scan.nextDouble(), yCoor = scan.nextDouble(), yCoor = 0.0, 
+dist : dist = distance(pt1, pt2, ), 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = new CartesianPoint(0, 0, ), pt1 = new PolarPoint(rad, theta, ), pt1 = new CartesianPoint(xCoor, yCoor, ), 
+rad : rad = 0.0, rad = scan.nextDouble(), rad = scan.nextDouble(), 
+xCoor : xCoor = scan.nextDouble(), xCoor = 0.0, xCoor = scan.nextDouble(), 
+choice : choice = scan.nextInt(), 
+theta : theta = Math.toRadians(thetaDeg, ), theta = 0.0, theta = Math.toRadians(thetaDeg, ), 
+sameQuadrant : sameQuadrant = CheckQuad(pt1, pt2, ), 
+pt2 : pt2 = new PolarPoint(rad, theta, ), pt2 = new CartesianPoint(0, 0, ), pt2 = new CartesianPoint(xCoor, yCoor, ), 
+thetaDeg : thetaDeg = 0.0, thetaDeg = scan.nextDouble(), thetaDeg = scan.nextDouble(), 
+
+BLOCK: falseL62
+yCoor : yCoor = scan.nextDouble(), yCoor = scan.nextDouble(), yCoor = 0.0, 
+dist : dist = distance(pt1, pt2, ), 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = new CartesianPoint(0, 0, ), pt1 = new PolarPoint(rad, theta, ), pt1 = new CartesianPoint(xCoor, yCoor, ), 
+rad : rad = 0.0, rad = scan.nextDouble(), rad = scan.nextDouble(), 
+xCoor : xCoor = scan.nextDouble(), xCoor = 0.0, xCoor = scan.nextDouble(), 
+choice : choice = scan.nextInt(), 
+theta : theta = Math.toRadians(thetaDeg, ), theta = 0.0, theta = Math.toRadians(thetaDeg, ), 
+sameQuadrant : sameQuadrant = CheckQuad(pt1, pt2, ), 
+pt2 : pt2 = new PolarPoint(rad, theta, ), pt2 = new CartesianPoint(0, 0, ), pt2 = new CartesianPoint(xCoor, yCoor, ), 
+thetaDeg : thetaDeg = 0.0, thetaDeg = scan.nextDouble(), thetaDeg = scan.nextDouble(), 
+
+BLOCK: joinL61
+yCoor : yCoor = scan.nextDouble(), yCoor = scan.nextDouble(), yCoor = 0.0, 
+dist : dist = distance(pt1, pt2, ), 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = new CartesianPoint(0, 0, ), pt1 = new PolarPoint(rad, theta, ), pt1 = new CartesianPoint(xCoor, yCoor, ), 
+rad : rad = 0.0, rad = scan.nextDouble(), rad = scan.nextDouble(), 
+xCoor : xCoor = scan.nextDouble(), xCoor = 0.0, xCoor = scan.nextDouble(), 
+choice : choice = scan.nextInt(), 
+theta : theta = Math.toRadians(thetaDeg, ), theta = 0.0, theta = Math.toRadians(thetaDeg, ), 
+sameQuadrant : sameQuadrant = CheckQuad(pt1, pt2, ), 
+pt2 : pt2 = new PolarPoint(rad, theta, ), pt2 = new CartesianPoint(0, 0, ), pt2 = new CartesianPoint(xCoor, yCoor, ), 
+thetaDeg : thetaDeg = 0.0, thetaDeg = scan.nextDouble(), thetaDeg = scan.nextDouble(), 
+
+BLOCK: StarttestPolarPointL63
+
+BLOCK: BasicL64
+pt3Rot : pt3Rot = new PolarPoint(-2, 5 * Math.PI / 4, ), 
+pt2Rot : pt2Rot = new PolarPoint(2, -Math.PI / 6, ), 
+pt1 : pt1 = new PolarPoint(1, Math.PI, ), 
+pt2 : pt2 = new PolarPoint(2, -2 * Math.PI / 3, ), 
+pt3 : pt3 = new PolarPoint(-2, 3 * Math.PI / 4, ), 
+pt1Rot : pt1Rot = new PolarPoint(1, 3 * Math.PI / 2, ), 
+
+BLOCK: StartmainL66
+
+BLOCK: BasicL67
+
+BLOCK: Startconstructor1L69
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL70
+this.x : this.x = x_coor, 
+this.y : this.y = y_coor, 
+
+BLOCK: StartxCoordinateL72
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL73
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartyCoordinateL75
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL76
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartradiusL78
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL79
+radius : radius = 0.0, 
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: trueL81
+radius : radius = 0.0, 
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: falseL83
+radius : radius = Math.sqrt(this.x * this.x + this.y * this.y, ), 
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: joinL82
+radius : radius = 0.0, radius = Math.sqrt(this.x * this.x + this.y * this.y, ), 
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartangleL84
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL85
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+angle : angle = 0.0, 
+
+BLOCK: trueL87
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+angle : angle = 0.0, 
+
+BLOCK: falseL89
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+angle : angle = Math.atan2(this.y, this.x, ), 
+
+BLOCK: joinL88
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+angle : angle = 0.0, angle = Math.atan2(this.y, this.x, ), 
+
+BLOCK: Startrotate90L90
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL91
+this.x : this.x = 0.0, 
+newX : newX = this.y, 
+this.y : this.y = 0.0, 
+result : result = new CartesianPoint(newX, newY, ), 
+newY : newY = this.x, 
+
+BLOCK: StarttestCartesianPointL93
+
+BLOCK: BasicL94
+pt2 : pt2 = new CartesianPoint(3, 4, ), 
+pt2Rot : pt2Rot = new CartesianPoint(-4, 3, ), 
+pt4 : pt4 = new CartesianPoint(-1, -1, ), 
+pt1 : pt1 = new CartesianPoint(1, 0, ), 
+pt4Rot : pt4Rot = new CartesianPoint(1, -1, ), 
+pt3 : pt3 = new CartesianPoint(0, 0, ), 
+pt1Rot : pt1Rot = new CartesianPoint(0, 1, ), 
+pt3Rot : pt3Rot = new CartesianPoint(0, 0, ), 
+
+BLOCK: StartmainL96
+
+BLOCK: BasicL97
+
+BLOCK: Startconstructor1L0
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: Startconstructor1L0
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: BasicL1
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: trueL3
+this.theta : this.theta = 0.0, 
+this.r : this.r = r, 
+
+BLOCK: trueL5
+this.theta : this.theta = theta + Math.PI / 2, 
+this.r : this.r = r, 
+
+BLOCK: falseL7
+this.theta : this.theta = theta + Math.PI, 
+this.r : this.r = r, 
+
+BLOCK: joinL6
+this.theta : this.theta = theta + Math.PI, this.theta = theta + Math.PI / 2, 
+this.r : this.r = r, 
+
+BLOCK: falseL8
+this.theta : this.theta = 0.0, 
+this.r : this.r = r, 
+
+BLOCK: trueL9
+this.theta : this.theta = 2 * Math.PI + theta, 
+this.r : this.r = r, 
+
+BLOCK: falseL11
+this.theta : this.theta = theta, 
+this.r : this.r = r, 
+
+BLOCK: joinL10
+this.theta : this.theta = theta, this.theta = 2 * Math.PI + theta, 
+this.r : this.r = r, 
+
+BLOCK: joinL4
+this.theta : this.theta = theta + Math.PI, this.theta = theta + Math.PI / 2, this.theta = theta, this.theta = 2 * Math.PI + theta, 
+this.r : this.r = r, this.r = r, 
+
+BLOCK: StartxCoordinateL12
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: StartxCoordinateL12
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: BasicL13
+x : x = 0.0, 
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: trueL15
+x : x = 0.0, 
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: falseL17
+x : x = this.r * Math.cos(this.theta, ), 
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: joinL16
+x : x = 0.0, x = this.r * Math.cos(this.theta, ), 
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: StartyCoordinateL18
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: StartyCoordinateL18
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: BasicL19
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+y : y = 0.0, 
+
+BLOCK: trueL21
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+y : y = 0.0, 
+
+BLOCK: falseL23
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+y : y = this.r * Math.sin(this.theta, ), 
+
+BLOCK: joinL22
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+y : y = this.r * Math.sin(this.theta, ), y = 0.0, 
+
+BLOCK: StartradiusL24
+this.r : this.r = 0.0, 
+this.theta : this.theta = 0.0, 
+
+BLOCK: StartradiusL24
+this.r : this.r = 0.0, 
+this.theta : this.theta = 0.0, 
+
+BLOCK: BasicL25
+this.r : this.r = 0.0, 
+this.theta : this.theta = 0.0, 
+
+BLOCK: StartangleL27
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: StartangleL27
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: BasicL28
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: Startrotate90L30
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: Startrotate90L30
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: BasicL31
+newTheta : newTheta = angle() + Math.PI / 2, 
+result : result = new PolarPoint(this.r, newTheta, ), 
+this.theta : this.theta = 0.0, 
+this.r : this.r = 0.0, 
+
+BLOCK: StarterrorMsgL33
+
+BLOCK: StarterrorMsgL33
+
+BLOCK: BasicL34
+
+BLOCK: StartdistanceL36
+
+BLOCK: StartdistanceL36
+
+BLOCK: BasicL37
+x : x = pt1.xCoordinate() - pt2.xCoordinate(), 
+y : y = pt1.yCoordinate() - pt2.yCoordinate(), 
+dist : dist = Math.sqrt(x * x + y * y, ), 
+
+BLOCK: StartCheckQuadL39
+
+BLOCK: StartCheckQuadL39
+
+BLOCK: BasicL40
+pt2Xpos : pt2Xpos = pt2.xCoordinate() > 0 || pt2.xCoordinate() == 0 && pt2.yCoordinate() < 0, 
+same : same = false, 
+pt1Xpos : pt1Xpos = pt1.xCoordinate() > 0 || pt1.xCoordinate() == 0 && pt1.yCoordinate() < 0, 
+pt1Ypos : pt1Ypos = pt1.yCoordinate() > 0 || pt1.yCoordinate() == 0 && pt1.xCoordinate() > 0, 
+pt2Ypos : pt2Ypos = pt2.yCoordinate() > 0 || pt2.yCoordinate() == 0 && pt2.xCoordinate() > 0, 
+
+BLOCK: trueL42
+pt2Xpos : pt2Xpos = pt2.xCoordinate() > 0 || pt2.xCoordinate() == 0 && pt2.yCoordinate() < 0, 
+same : same = false, 
+pt1Xpos : pt1Xpos = pt1.xCoordinate() > 0 || pt1.xCoordinate() == 0 && pt1.yCoordinate() < 0, 
+pt1Ypos : pt1Ypos = pt1.yCoordinate() > 0 || pt1.yCoordinate() == 0 && pt1.xCoordinate() > 0, 
+pt2Ypos : pt2Ypos = pt2.yCoordinate() > 0 || pt2.yCoordinate() == 0 && pt2.xCoordinate() > 0, 
+
+BLOCK: falseL44
+pt2Xpos : pt2Xpos = pt2.xCoordinate() > 0 || pt2.xCoordinate() == 0 && pt2.yCoordinate() < 0, 
+same : same = false, 
+pt1Xpos : pt1Xpos = pt1.xCoordinate() > 0 || pt1.xCoordinate() == 0 && pt1.yCoordinate() < 0, 
+pt1Ypos : pt1Ypos = pt1.yCoordinate() > 0 || pt1.yCoordinate() == 0 && pt1.xCoordinate() > 0, 
+pt2Ypos : pt2Ypos = pt2.yCoordinate() > 0 || pt2.yCoordinate() == 0 && pt2.xCoordinate() > 0, 
+
+BLOCK: joinL43
+pt2Xpos : pt2Xpos = pt2.xCoordinate() > 0 || pt2.xCoordinate() == 0 && pt2.yCoordinate() < 0, 
+same : same = false, 
+pt1Xpos : pt1Xpos = pt1.xCoordinate() > 0 || pt1.xCoordinate() == 0 && pt1.yCoordinate() < 0, 
+pt1Ypos : pt1Ypos = pt1.yCoordinate() > 0 || pt1.yCoordinate() == 0 && pt1.xCoordinate() > 0, 
+pt2Ypos : pt2Ypos = pt2.yCoordinate() > 0 || pt2.yCoordinate() == 0 && pt2.xCoordinate() > 0, 
+
+BLOCK: StartmainL45
+
+BLOCK: StartmainL45
+
+BLOCK: BasicL46
+yCoor : yCoor = 0.0, 
+dist : dist = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = null, 
+rad : rad = 0.0, 
+xCoor : xCoor = 0.0, 
+choice : choice = scan.nextInt(), 
+theta : theta = 0.0, 
+sameQuadrant : sameQuadrant = false, 
+pt2 : pt2 = null, 
+thetaDeg : thetaDeg = 0.0, 
+
+BLOCK: trueL48
+yCoor : yCoor = scan.nextDouble(), 
+dist : dist = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = new CartesianPoint(xCoor, yCoor, ), 
+rad : rad = 0.0, 
+xCoor : xCoor = scan.nextDouble(), 
+choice : choice = scan.nextInt(), 
+theta : theta = 0.0, 
+sameQuadrant : sameQuadrant = false, 
+pt2 : pt2 = null, 
+thetaDeg : thetaDeg = 0.0, 
+
+BLOCK: falseL50
+yCoor : yCoor = 0.0, 
+dist : dist = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = null, 
+rad : rad = 0.0, 
+xCoor : xCoor = 0.0, 
+choice : choice = scan.nextInt(), 
+theta : theta = 0.0, 
+sameQuadrant : sameQuadrant = false, 
+pt2 : pt2 = null, 
+thetaDeg : thetaDeg = 0.0, 
+
+BLOCK: trueL51
+yCoor : yCoor = 0.0, 
+dist : dist = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = new PolarPoint(rad, theta, ), 
+rad : rad = scan.nextDouble(), 
+xCoor : xCoor = 0.0, 
+theta : theta = Math.toRadians(thetaDeg, ), 
+choice : choice = scan.nextInt(), 
+thetaDeg : thetaDeg = scan.nextDouble(), 
+sameQuadrant : sameQuadrant = false, 
+pt2 : pt2 = null, 
+
+BLOCK: falseL53
+yCoor : yCoor = 0.0, 
+dist : dist = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = new CartesianPoint(0, 0, ), 
+rad : rad = 0.0, 
+xCoor : xCoor = 0.0, 
+choice : choice = scan.nextInt(), 
+theta : theta = 0.0, 
+sameQuadrant : sameQuadrant = false, 
+pt2 : pt2 = null, 
+thetaDeg : thetaDeg = 0.0, 
+
+BLOCK: joinL52
+yCoor : yCoor = 0.0, 
+dist : dist = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = new CartesianPoint(0, 0, ), pt1 = new PolarPoint(rad, theta, ), 
+rad : rad = 0.0, rad = scan.nextDouble(), 
+xCoor : xCoor = 0.0, 
+theta : theta = Math.toRadians(thetaDeg, ), theta = 0.0, 
+choice : choice = scan.nextInt(), 
+thetaDeg : thetaDeg = 0.0, thetaDeg = scan.nextDouble(), 
+sameQuadrant : sameQuadrant = false, 
+pt2 : pt2 = null, 
+
+BLOCK: joinL49
+yCoor : yCoor = scan.nextDouble(), yCoor = 0.0, 
+dist : dist = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = new CartesianPoint(0, 0, ), pt1 = new PolarPoint(rad, theta, ), pt1 = new CartesianPoint(xCoor, yCoor, ), 
+rad : rad = 0.0, rad = scan.nextDouble(), 
+xCoor : xCoor = scan.nextDouble(), xCoor = 0.0, 
+choice : choice = scan.nextInt(), 
+theta : theta = Math.toRadians(thetaDeg, ), theta = 0.0, 
+sameQuadrant : sameQuadrant = false, 
+pt2 : pt2 = null, 
+thetaDeg : thetaDeg = 0.0, thetaDeg = scan.nextDouble(), 
+
+BLOCK: trueL54
+yCoor : yCoor = scan.nextDouble(), 
+dist : dist = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = new CartesianPoint(0, 0, ), pt1 = new PolarPoint(rad, theta, ), pt1 = new CartesianPoint(xCoor, yCoor, ), 
+rad : rad = 0.0, rad = scan.nextDouble(), 
+xCoor : xCoor = scan.nextDouble(), 
+choice : choice = scan.nextInt(), 
+theta : theta = Math.toRadians(thetaDeg, ), theta = 0.0, 
+pt2 : pt2 = new CartesianPoint(xCoor, yCoor, ), 
+sameQuadrant : sameQuadrant = false, 
+thetaDeg : thetaDeg = 0.0, thetaDeg = scan.nextDouble(), 
+
+BLOCK: falseL56
+yCoor : yCoor = scan.nextDouble(), yCoor = 0.0, 
+dist : dist = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = new CartesianPoint(0, 0, ), pt1 = new PolarPoint(rad, theta, ), pt1 = new CartesianPoint(xCoor, yCoor, ), 
+rad : rad = 0.0, rad = scan.nextDouble(), 
+xCoor : xCoor = scan.nextDouble(), xCoor = 0.0, 
+choice : choice = scan.nextInt(), 
+theta : theta = Math.toRadians(thetaDeg, ), theta = 0.0, 
+sameQuadrant : sameQuadrant = false, 
+pt2 : pt2 = null, 
+thetaDeg : thetaDeg = 0.0, thetaDeg = scan.nextDouble(), 
+
+BLOCK: trueL57
+yCoor : yCoor = scan.nextDouble(), yCoor = 0.0, 
+dist : dist = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = new CartesianPoint(0, 0, ), pt1 = new PolarPoint(rad, theta, ), pt1 = new CartesianPoint(xCoor, yCoor, ), 
+rad : rad = scan.nextDouble(), 
+xCoor : xCoor = scan.nextDouble(), xCoor = 0.0, 
+theta : theta = Math.toRadians(thetaDeg, ), 
+choice : choice = scan.nextInt(), 
+pt2 : pt2 = new PolarPoint(rad, theta, ), 
+thetaDeg : thetaDeg = scan.nextDouble(), 
+sameQuadrant : sameQuadrant = false, 
+
+BLOCK: falseL59
+yCoor : yCoor = scan.nextDouble(), yCoor = 0.0, 
+dist : dist = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = new CartesianPoint(0, 0, ), pt1 = new PolarPoint(rad, theta, ), pt1 = new CartesianPoint(xCoor, yCoor, ), 
+rad : rad = 0.0, rad = scan.nextDouble(), 
+xCoor : xCoor = scan.nextDouble(), xCoor = 0.0, 
+choice : choice = scan.nextInt(), 
+theta : theta = Math.toRadians(thetaDeg, ), theta = 0.0, 
+pt2 : pt2 = new CartesianPoint(0, 0, ), 
+sameQuadrant : sameQuadrant = false, 
+thetaDeg : thetaDeg = 0.0, thetaDeg = scan.nextDouble(), 
+
+BLOCK: joinL58
+yCoor : yCoor = scan.nextDouble(), yCoor = 0.0, 
+dist : dist = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = new CartesianPoint(0, 0, ), pt1 = new PolarPoint(rad, theta, ), pt1 = new CartesianPoint(xCoor, yCoor, ), 
+rad : rad = 0.0, rad = scan.nextDouble(), rad = scan.nextDouble(), 
+xCoor : xCoor = scan.nextDouble(), xCoor = 0.0, 
+theta : theta = Math.toRadians(thetaDeg, ), theta = 0.0, theta = Math.toRadians(thetaDeg, ), 
+choice : choice = scan.nextInt(), 
+pt2 : pt2 = new PolarPoint(rad, theta, ), pt2 = new CartesianPoint(0, 0, ), 
+thetaDeg : thetaDeg = 0.0, thetaDeg = scan.nextDouble(), thetaDeg = scan.nextDouble(), 
+sameQuadrant : sameQuadrant = false, 
+
+BLOCK: joinL55
+yCoor : yCoor = scan.nextDouble(), yCoor = scan.nextDouble(), yCoor = 0.0, 
+dist : dist = distance(pt1, pt2, ), 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = new CartesianPoint(0, 0, ), pt1 = new PolarPoint(rad, theta, ), pt1 = new CartesianPoint(xCoor, yCoor, ), 
+rad : rad = 0.0, rad = scan.nextDouble(), rad = scan.nextDouble(), 
+xCoor : xCoor = scan.nextDouble(), xCoor = 0.0, xCoor = scan.nextDouble(), 
+choice : choice = scan.nextInt(), 
+theta : theta = Math.toRadians(thetaDeg, ), theta = 0.0, theta = Math.toRadians(thetaDeg, ), 
+sameQuadrant : sameQuadrant = CheckQuad(pt1, pt2, ), 
+pt2 : pt2 = new PolarPoint(rad, theta, ), pt2 = new CartesianPoint(0, 0, ), pt2 = new CartesianPoint(xCoor, yCoor, ), 
+thetaDeg : thetaDeg = 0.0, thetaDeg = scan.nextDouble(), thetaDeg = scan.nextDouble(), 
+
+BLOCK: trueL60
+yCoor : yCoor = scan.nextDouble(), yCoor = scan.nextDouble(), yCoor = 0.0, 
+dist : dist = distance(pt1, pt2, ), 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = new CartesianPoint(0, 0, ), pt1 = new PolarPoint(rad, theta, ), pt1 = new CartesianPoint(xCoor, yCoor, ), 
+rad : rad = 0.0, rad = scan.nextDouble(), rad = scan.nextDouble(), 
+xCoor : xCoor = scan.nextDouble(), xCoor = 0.0, xCoor = scan.nextDouble(), 
+choice : choice = scan.nextInt(), 
+theta : theta = Math.toRadians(thetaDeg, ), theta = 0.0, theta = Math.toRadians(thetaDeg, ), 
+sameQuadrant : sameQuadrant = CheckQuad(pt1, pt2, ), 
+pt2 : pt2 = new PolarPoint(rad, theta, ), pt2 = new CartesianPoint(0, 0, ), pt2 = new CartesianPoint(xCoor, yCoor, ), 
+thetaDeg : thetaDeg = 0.0, thetaDeg = scan.nextDouble(), thetaDeg = scan.nextDouble(), 
+
+BLOCK: falseL62
+yCoor : yCoor = scan.nextDouble(), yCoor = scan.nextDouble(), yCoor = 0.0, 
+dist : dist = distance(pt1, pt2, ), 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = new CartesianPoint(0, 0, ), pt1 = new PolarPoint(rad, theta, ), pt1 = new CartesianPoint(xCoor, yCoor, ), 
+rad : rad = 0.0, rad = scan.nextDouble(), rad = scan.nextDouble(), 
+xCoor : xCoor = scan.nextDouble(), xCoor = 0.0, xCoor = scan.nextDouble(), 
+choice : choice = scan.nextInt(), 
+theta : theta = Math.toRadians(thetaDeg, ), theta = 0.0, theta = Math.toRadians(thetaDeg, ), 
+sameQuadrant : sameQuadrant = CheckQuad(pt1, pt2, ), 
+pt2 : pt2 = new PolarPoint(rad, theta, ), pt2 = new CartesianPoint(0, 0, ), pt2 = new CartesianPoint(xCoor, yCoor, ), 
+thetaDeg : thetaDeg = 0.0, thetaDeg = scan.nextDouble(), thetaDeg = scan.nextDouble(), 
+
+BLOCK: joinL61
+yCoor : yCoor = scan.nextDouble(), yCoor = scan.nextDouble(), yCoor = 0.0, 
+dist : dist = distance(pt1, pt2, ), 
+scan : scan = new Scanner(System.in, ), 
+pt1 : pt1 = new CartesianPoint(0, 0, ), pt1 = new PolarPoint(rad, theta, ), pt1 = new CartesianPoint(xCoor, yCoor, ), 
+rad : rad = 0.0, rad = scan.nextDouble(), rad = scan.nextDouble(), 
+xCoor : xCoor = scan.nextDouble(), xCoor = 0.0, xCoor = scan.nextDouble(), 
+choice : choice = scan.nextInt(), 
+theta : theta = Math.toRadians(thetaDeg, ), theta = 0.0, theta = Math.toRadians(thetaDeg, ), 
+sameQuadrant : sameQuadrant = CheckQuad(pt1, pt2, ), 
+pt2 : pt2 = new PolarPoint(rad, theta, ), pt2 = new CartesianPoint(0, 0, ), pt2 = new CartesianPoint(xCoor, yCoor, ), 
+thetaDeg : thetaDeg = 0.0, thetaDeg = scan.nextDouble(), thetaDeg = scan.nextDouble(), 
+
+BLOCK: StarttestPolarPointL63
+
+BLOCK: StarttestPolarPointL63
+
+BLOCK: BasicL64
+pt3Rot : pt3Rot = new PolarPoint(-2, 5 * Math.PI / 4, ), 
+pt2Rot : pt2Rot = new PolarPoint(2, -Math.PI / 6, ), 
+pt1 : pt1 = new PolarPoint(1, Math.PI, ), 
+pt2 : pt2 = new PolarPoint(2, -2 * Math.PI / 3, ), 
+pt3 : pt3 = new PolarPoint(-2, 3 * Math.PI / 4, ), 
+pt1Rot : pt1Rot = new PolarPoint(1, 3 * Math.PI / 2, ), 
+
+BLOCK: StartmainL66
+
+BLOCK: StartmainL66
+
+BLOCK: BasicL67
+
+BLOCK: Startconstructor1L69
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: Startconstructor1L69
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL70
+this.x : this.x = x_coor, 
+this.y : this.y = y_coor, 
+
+BLOCK: StartxCoordinateL72
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartxCoordinateL72
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL73
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartyCoordinateL75
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartyCoordinateL75
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL76
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartradiusL78
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartradiusL78
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL79
+radius : radius = 0.0, 
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: trueL81
+radius : radius = 0.0, 
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: falseL83
+radius : radius = Math.sqrt(this.x * this.x + this.y * this.y, ), 
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: joinL82
+radius : radius = 0.0, radius = Math.sqrt(this.x * this.x + this.y * this.y, ), 
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartangleL84
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartangleL84
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL85
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+angle : angle = 0.0, 
+
+BLOCK: trueL87
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+angle : angle = 0.0, 
+
+BLOCK: falseL89
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+angle : angle = Math.atan2(this.y, this.x, ), 
+
+BLOCK: joinL88
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+angle : angle = 0.0, angle = Math.atan2(this.y, this.x, ), 
+
+BLOCK: Startrotate90L90
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: Startrotate90L90
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL91
+this.x : this.x = 0.0, 
+newX : newX = this.y, 
+this.y : this.y = 0.0, 
+result : result = new CartesianPoint(newX, newY, ), 
+newY : newY = this.x, 
+
+BLOCK: StarttestCartesianPointL93
+
+BLOCK: StarttestCartesianPointL93
+
+BLOCK: BasicL94
+pt2 : pt2 = new CartesianPoint(3, 4, ), 
+pt2Rot : pt2Rot = new CartesianPoint(-4, 3, ), 
+pt4 : pt4 = new CartesianPoint(-1, -1, ), 
+pt1 : pt1 = new CartesianPoint(1, 0, ), 
+pt4Rot : pt4Rot = new CartesianPoint(1, -1, ), 
+pt3 : pt3 = new CartesianPoint(0, 0, ), 
+pt1Rot : pt1Rot = new CartesianPoint(0, 1, ), 
+pt3Rot : pt3Rot = new CartesianPoint(0, 0, ), 
+
+BLOCK: StartmainL96
+
+BLOCK: StartmainL96
+
+BLOCK: BasicL97
+
+Unfiltered: 3585
+Filtered: 1
+
+
+Duplicate found: 102_Code/102_hw1/dir04/PointRelation.java lines [50, 122] and 102_Code/102_hw1/dir04/PointRelation.java lines [50, 122]
+102_Code/102_hw1/dir04/PointRelation.java ----------
+50 :	rad = 0.0
+52 :	thetaDeg = 0.0
+53 :	xCoor = 0.0
+54 :	yCoor = 0.0
+56 :	pt2 = null
+67 :	xCoor = scan.nextDouble()
+81 :	theta = Math.toRadians(thetaDeg, )
+83 :	pt1 = new PolarPoint(rad, theta, )
+87 :	pt1 = new CartesianPoint(0, 0, )
+100 :	yCoor = scan.nextDouble()
+107 :	rad = scan.nextDouble()
+113 :	pt2 = new PolarPoint(rad, theta, )
+117 :	pt2 = new CartesianPoint(0, 0, )
+121 :	dist = distance(pt1, pt2, )
+122 :	sameQuadrant = CheckQuad(pt1, pt2, )
+102_Code/102_hw1/dir04/PointRelation.java ----------
+54 :	yCoor = 0.0
+50 :	rad = 0.0
+52 :	thetaDeg = 0.0
+53 :	xCoor = 0.0
+55 :	pt1 = null
+80 :	thetaDeg = scan.nextDouble()
+111 :	theta = Math.toRadians(thetaDeg, )
+113 :	pt2 = new PolarPoint(rad, theta, )
+117 :	pt2 = new CartesianPoint(0, 0, )
+97 :	xCoor = scan.nextDouble()
+70 :	yCoor = scan.nextDouble()
+72 :	pt1 = new CartesianPoint(xCoor, yCoor, )
+87 :	pt1 = new CartesianPoint(0, 0, )
+122 :	sameQuadrant = CheckQuad(pt1, pt2, )
+121 :	dist = distance(pt1, pt2, )
+===========================
+
+
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 13.309 s
+[INFO] Finished at: 2019-05-01T17:14:38-07:00
+[INFO] Final Memory: 36M/1491M
+[INFO] ------------------------------------------------------------------------

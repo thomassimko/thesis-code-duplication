@@ -1,0 +1,7 @@
+digraph G {
+"86 : xdif = pat1.xCoordinate() - pat2.xCoordinate()"
+"86 : xdif = pat1.xCoordinate() - pat2.xCoordinate()" -> "89 : Math.sqrt(xdif * xdif + ydif * ydif, )"
+"87 : ydif = pat1.yCoordinate() - pat2.yCoordinate()"
+"87 : ydif = pat1.yCoordinate() - pat2.yCoordinate()" -> "89 : Math.sqrt(xdif * xdif + ydif * ydif, )"
+"89 : Math.sqrt(xdif * xdif + ydif * ydif, )"
+}

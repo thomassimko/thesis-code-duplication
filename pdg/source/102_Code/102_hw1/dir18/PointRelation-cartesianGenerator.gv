@@ -1,0 +1,18 @@
+digraph G {
+"54 : x = 0"
+"54 : y = 0"
+"56 : System.out.print(\"Enter the x-coordinate: \", )"
+"59 : x = in.nextDouble()"
+"72 : System.out.print(\"Enter the y-coordinate: \", )"
+"63 : System.out.println(\"InputMismatchException \" + e.getMessage(), )"
+"64 : System.exit(1, )"
+"68 : System.out.println(\"NoSuchElementException \" + e.getMessage(), )"
+"69 : System.exit(1, )"
+"75 : y = in.nextDouble()"
+"75 : y = in.nextDouble()" -> "88 : new CartesianPoint(x, y, )"
+"88 : new CartesianPoint(x, y, )"
+"79 : System.out.println(\"InputMismatchException \" + e.getMessage(), )"
+"80 : System.exit(1, )"
+"84 : System.out.println(\"NoSuchElementException \" + e.getMessage(), )"
+"85 : System.exit(1, )"
+}

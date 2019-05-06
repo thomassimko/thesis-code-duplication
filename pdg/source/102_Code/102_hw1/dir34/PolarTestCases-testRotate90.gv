@@ -1,0 +1,9 @@
+digraph G {
+"51 : TacoBell = new PolarPoint(1, 0, )"
+"52 : BellTaco = new PolarPoint(0, 90, )"
+"52 : BellTaco = new PolarPoint(0, 90, )" -> "55 : Check.check(TacoBell.rotate90(), BellTaco, )"
+"53 : AcoTeBle = new PolarPoint(180, 0, )"
+"53 : AcoTeBle = new PolarPoint(180, 0, )" -> "56 : Check.check(BellTaco.rotate90(), AcoTeBle, )"
+"55 : Check.check(TacoBell.rotate90(), BellTaco, )"
+"56 : Check.check(BellTaco.rotate90(), AcoTeBle, )"
+}

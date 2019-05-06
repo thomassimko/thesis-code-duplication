@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.lft = null"
+"4 : this.lft = null" -> "24 : \"(\" + this.lft + \" + \" + this.rht + \")\""
+"4 : this.rht = null"
+"4 : this.rht = null" -> "24 : \"(\" + this.lft + \" + \" + this.rht + \")\""
+"24 : \"(\" + this.lft + \" + \" + this.rht + \")\""
+}

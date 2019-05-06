@@ -1,0 +1,1128 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for thesis:thesis:jar:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.version' for org.junit.jupiter:junit-jupiter-api:jar is either LATEST or RELEASE (both of them are being deprecated) @ line 25, column 22
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building thesis 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default-cli) > validate @ thesis >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default-cli) < validate @ thesis <<<
+[INFO] 
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ thesis ---
+BLOCK: Startconstructor1L0
+this.ang : this.ang = 0.0, 
+this.y : this.y = 0.0, 
+this.rad : this.rad = 0.0, 
+this.nang : this.nang = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: BasicL1
+this.ang : this.ang = angle, 
+this.y : this.y = 0.0, 
+this.rad : this.rad = radius, 
+this.nang : this.nang = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: trueL3
+this.ang : this.ang = this.ang + Math.PI, 
+this.y : this.y = 0.0, 
+this.rad : this.rad = Math.abs(this.rad, ), 
+this.nang : this.nang = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: joinL4
+this.ang : this.ang = angle, this.ang = this.ang + Math.PI, 
+this.y : this.y = 0.0, 
+this.rad : this.rad = Math.abs(this.rad, ), this.rad = radius, 
+this.nang : this.nang = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: trueL5
+this.ang : this.ang = this.ang + Math.PI * 2, 
+this.y : this.y = 0.0, 
+this.rad : this.rad = Math.abs(this.rad, ), this.rad = radius, 
+this.nang : this.nang = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: joinL6
+this.ang : this.ang = angle, this.ang = this.ang + Math.PI * 2, this.ang = this.ang + Math.PI, 
+this.y : this.y = 0.0, 
+this.rad : this.rad = Math.abs(this.rad, ), this.rad = radius, 
+this.nang : this.nang = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: trueL7
+this.ang : this.ang = this.ang - Math.PI * 2, 
+this.y : this.y = 0.0, 
+this.rad : this.rad = Math.abs(this.rad, ), this.rad = radius, 
+this.nang : this.nang = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: joinL8
+this.ang : this.ang = this.ang - Math.PI * 2, this.ang = angle, this.ang = this.ang + Math.PI * 2, this.ang = this.ang + Math.PI, 
+this.y : this.y = 0.0, 
+this.rad : this.rad = Math.abs(this.rad, ), this.rad = radius, 
+this.nang : this.nang = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: StartxCoordinateL9
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.rad : this.rad = 0.0, 
+this.ang : this.ang = 0.0, 
+this.nang : this.nang = 0.0, 
+
+BLOCK: BasicL10
+this.x : this.x = this.rad * Math.cos(this.ang, ), 
+this.y : this.y = 0.0, 
+this.rad : this.rad = 0.0, 
+this.ang : this.ang = 0.0, 
+this.nang : this.nang = 0.0, 
+
+BLOCK: StartyCoordinateL12
+this.y : this.y = 0.0, 
+this.nang : this.nang = 0.0, 
+this.ang : this.ang = 0.0, 
+this.x : this.x = 0.0, 
+this.rad : this.rad = 0.0, 
+
+BLOCK: BasicL13
+this.y : this.y = this.rad * Math.sin(this.ang, ), 
+this.nang : this.nang = 0.0, 
+this.ang : this.ang = 0.0, 
+this.x : this.x = 0.0, 
+this.rad : this.rad = 0.0, 
+
+BLOCK: StartradiusL15
+this.x : this.x = 0.0, 
+this.ang : this.ang = 0.0, 
+this.nang : this.nang = 0.0, 
+this.y : this.y = 0.0, 
+this.rad : this.rad = 0.0, 
+
+BLOCK: BasicL16
+this.x : this.x = 0.0, 
+this.ang : this.ang = 0.0, 
+this.nang : this.nang = 0.0, 
+this.y : this.y = 0.0, 
+this.rad : this.rad = 0.0, 
+
+BLOCK: StartangleL18
+this.x : this.x = 0.0, 
+this.rad : this.rad = 0.0, 
+this.y : this.y = 0.0, 
+this.nang : this.nang = 0.0, 
+this.ang : this.ang = 0.0, 
+
+BLOCK: BasicL19
+this.x : this.x = 0.0, 
+this.rad : this.rad = 0.0, 
+this.y : this.y = 0.0, 
+this.nang : this.nang = 0.0, 
+this.ang : this.ang = 0.0, 
+
+BLOCK: Startrotate90L21
+this.nang : this.nang = 0.0, 
+this.rad : this.rad = 0.0, 
+this.ang : this.ang = 0.0, 
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: BasicL22
+this.nang : this.nang = this.ang + Math.PI / 2, 
+this.rad : this.rad = 0.0, 
+newp : newp = new PolarPoint(this.rad, this.nang, ), 
+this.ang : this.ang = 0.0, 
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: StartdistanceL24
+
+BLOCK: BasicL25
+distance : distance = Math.sqrt(pd1.xCoordinate() - pd2.xCoordinate() * pd1.xCoordinate() - pd2.xCoordinate() + pd1.yCoordinate() - pd2.yCoordinate() * pd1.yCoordinate() - pd2.yCoordinate(), ), 
+
+BLOCK: StartsamequadL27
+
+BLOCK: BasicL28
+
+BLOCK: trueL30
+
+BLOCK: trueL32
+
+BLOCK: falseL34
+
+BLOCK: joinL33
+
+BLOCK: falseL35
+
+BLOCK: joinL31
+
+BLOCK: StartmainL36
+
+BLOCK: BasicL37
+scan : scan = new Scanner(System.in, ), 
+choice : choice = scan.nextDouble(), 
+p1 : p1 = new CartesianPoint(0, 0, ), 
+radius : radius = 0.0, 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+x : x = 0.0, 
+y : y = 0.0, 
+angle : angle = 0.0, 
+
+BLOCK: trueL39
+scan : scan = new Scanner(System.in, ), 
+choice : choice = scan.nextDouble(), 
+p1 : p1 = new CartesianPoint(x, y, ), 
+radius : radius = 0.0, 
+x : x = scan.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+y : y = scan.nextDouble(), 
+angle : angle = 0.0, 
+
+BLOCK: falseL41
+scan : scan = new Scanner(System.in, ), 
+choice : choice = scan.nextDouble(), 
+p1 : p1 = new CartesianPoint(0, 0, ), 
+radius : radius = 0.0, 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+x : x = 0.0, 
+y : y = 0.0, 
+angle : angle = 0.0, 
+
+BLOCK: trueL42
+scan : scan = new Scanner(System.in, ), 
+choice : choice = scan.nextDouble(), 
+p1 : p1 = new CartesianPoint(x, y, ), 
+radius : radius = scan.nextDouble(), 
+x : x = radius * Math.cos(angle, ), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+y : y = radius * Math.sin(angle, ), 
+angle : angle = angle * Math.PI / 180, 
+
+BLOCK: falseL44
+scan : scan = new Scanner(System.in, ), 
+choice : choice = scan.nextDouble(), 
+p1 : p1 = new CartesianPoint(0, 0, ), 
+radius : radius = 0.0, 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+x : x = 0.0, 
+y : y = 0.0, 
+angle : angle = 0.0, 
+
+BLOCK: joinL43
+scan : scan = new Scanner(System.in, ), 
+choice : choice = scan.nextDouble(), 
+p1 : p1 = new CartesianPoint(0, 0, ), p1 = new CartesianPoint(x, y, ), 
+radius : radius = 0.0, radius = scan.nextDouble(), 
+x : x = 0.0, x = radius * Math.cos(angle, ), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+y : y = radius * Math.sin(angle, ), y = 0.0, 
+angle : angle = 0.0, angle = angle * Math.PI / 180, 
+
+BLOCK: joinL40
+scan : scan = new Scanner(System.in, ), 
+choice : choice = scan.nextDouble(), 
+p1 : p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), p1 = new CartesianPoint(x, y, ), 
+radius : radius = 0.0, radius = scan.nextDouble(), 
+x : x = scan.nextDouble(), x = 0.0, x = radius * Math.cos(angle, ), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+y : y = scan.nextDouble(), y = radius * Math.sin(angle, ), y = 0.0, 
+angle : angle = 0.0, angle = angle * Math.PI / 180, 
+
+BLOCK: trueL45
+scan : scan = new Scanner(System.in, ), 
+choice : choice = scan.nextDouble(), 
+p1 : p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), p1 = new CartesianPoint(x, y, ), 
+radius : radius = 0.0, radius = scan.nextDouble(), 
+p2 : p2 = new CartesianPoint(x, y, ), 
+x : x = scan.nextDouble(), 
+y : y = scan.nextDouble(), 
+angle : angle = 0.0, angle = angle * Math.PI / 180, 
+
+BLOCK: falseL47
+scan : scan = new Scanner(System.in, ), 
+choice : choice = scan.nextDouble(), 
+p1 : p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), p1 = new CartesianPoint(x, y, ), 
+radius : radius = 0.0, radius = scan.nextDouble(), 
+x : x = scan.nextDouble(), x = 0.0, x = radius * Math.cos(angle, ), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+y : y = scan.nextDouble(), y = radius * Math.sin(angle, ), y = 0.0, 
+angle : angle = 0.0, angle = angle * Math.PI / 180, 
+
+BLOCK: trueL48
+scan : scan = new Scanner(System.in, ), 
+choice : choice = scan.nextDouble(), 
+p1 : p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), p1 = new CartesianPoint(x, y, ), 
+radius : radius = scan.nextDouble(), 
+p2 : p2 = new CartesianPoint(x, y, ), 
+x : x = radius * Math.cos(angle, ), 
+y : y = radius * Math.sin(angle, ), 
+angle : angle = angle * Math.PI / 180, 
+
+BLOCK: falseL50
+scan : scan = new Scanner(System.in, ), 
+choice : choice = scan.nextDouble(), 
+p1 : p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), p1 = new CartesianPoint(x, y, ), 
+radius : radius = 0.0, radius = scan.nextDouble(), 
+x : x = scan.nextDouble(), x = 0.0, x = radius * Math.cos(angle, ), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+y : y = scan.nextDouble(), y = radius * Math.sin(angle, ), y = 0.0, 
+angle : angle = 0.0, angle = angle * Math.PI / 180, 
+
+BLOCK: joinL49
+scan : scan = new Scanner(System.in, ), 
+choice : choice = scan.nextDouble(), 
+p1 : p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), p1 = new CartesianPoint(x, y, ), 
+radius : radius = 0.0, radius = scan.nextDouble(), radius = scan.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(x, y, ), 
+x : x = radius * Math.cos(angle, ), x = scan.nextDouble(), x = 0.0, x = radius * Math.cos(angle, ), 
+y : y = scan.nextDouble(), y = radius * Math.sin(angle, ), y = 0.0, y = radius * Math.sin(angle, ), 
+angle : angle = 0.0, angle = angle * Math.PI / 180, angle = angle * Math.PI / 180, 
+
+BLOCK: joinL46
+scan : scan = new Scanner(System.in, ), 
+choice : choice = scan.nextDouble(), 
+p1 : p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), p1 = new CartesianPoint(x, y, ), 
+radius : radius = 0.0, radius = scan.nextDouble(), radius = scan.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(x, y, ), p2 = new CartesianPoint(x, y, ), 
+x : x = radius * Math.cos(angle, ), x = scan.nextDouble(), x = 0.0, x = scan.nextDouble(), x = radius * Math.cos(angle, ), 
+y : y = scan.nextDouble(), y = radius * Math.sin(angle, ), y = scan.nextDouble(), y = 0.0, y = radius * Math.sin(angle, ), 
+angle : angle = 0.0, angle = angle * Math.PI / 180, angle = angle * Math.PI / 180, 
+
+BLOCK: StartmainL51
+
+BLOCK: BasicL52
+p1 : p1 = new PolarPoint(1, 0, ), 
+p2 : p2 = p1.rotate90(), 
+p3 : p3 = new PolarPoint(1, Math.PI / 2, ), 
+p4 : p4 = p3.rotate90(), 
+
+BLOCK: Startconstructor1L54
+this.y : this.y = 0.0, 
+this.theta : this.theta = 0.0, 
+this.ny : this.ny = 0.0, 
+this.b : this.b = 0.0, 
+this.a : this.a = 0.0, 
+this.temp : this.temp = 0.0, 
+this.nx : this.nx = 0.0, 
+this.h : this.h = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: BasicL55
+this.y : this.y = y_coord, 
+this.theta : this.theta = 0.0, 
+this.ny : this.ny = 0.0, 
+this.b : this.b = 0.0, 
+this.a : this.a = 0.0, 
+this.temp : this.temp = 0.0, 
+this.x : this.x = x_coord, 
+this.nx : this.nx = 0.0, 
+this.h : this.h = 0.0, 
+
+BLOCK: StartxCoordinateL57
+this.h : this.h = 0.0, 
+this.theta : this.theta = 0.0, 
+this.b : this.b = 0.0, 
+this.a : this.a = 0.0, 
+this.ny : this.ny = 0.0, 
+this.x : this.x = 0.0, 
+this.nx : this.nx = 0.0, 
+this.temp : this.temp = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL58
+this.h : this.h = 0.0, 
+this.theta : this.theta = 0.0, 
+this.b : this.b = 0.0, 
+this.a : this.a = 0.0, 
+this.ny : this.ny = 0.0, 
+this.x : this.x = 0.0, 
+this.nx : this.nx = 0.0, 
+this.temp : this.temp = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartyCoordinateL60
+this.a : this.a = 0.0, 
+this.ny : this.ny = 0.0, 
+this.b : this.b = 0.0, 
+this.h : this.h = 0.0, 
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+this.temp : this.temp = 0.0, 
+this.nx : this.nx = 0.0, 
+this.theta : this.theta = 0.0, 
+
+BLOCK: BasicL61
+this.a : this.a = 0.0, 
+this.ny : this.ny = 0.0, 
+this.b : this.b = 0.0, 
+this.h : this.h = 0.0, 
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+this.temp : this.temp = 0.0, 
+this.nx : this.nx = 0.0, 
+this.theta : this.theta = 0.0, 
+
+BLOCK: StartradiusL63
+this.a : this.a = 0.0, 
+this.nx : this.nx = 0.0, 
+this.temp : this.temp = 0.0, 
+this.b : this.b = 0.0, 
+this.y : this.y = 0.0, 
+this.ny : this.ny = 0.0, 
+this.h : this.h = 0.0, 
+this.theta : this.theta = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: BasicL64
+this.a : this.a = this.x * this.x, 
+this.nx : this.nx = 0.0, 
+this.temp : this.temp = this.a + this.b, 
+this.b : this.b = this.y * this.y, 
+this.y : this.y = 0.0, 
+this.ny : this.ny = 0.0, 
+this.h : this.h = Math.sqrt(this.temp, ), 
+this.theta : this.theta = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: StartangleL66
+this.temp : this.temp = 0.0, 
+this.b : this.b = 0.0, 
+this.x : this.x = 0.0, 
+this.theta : this.theta = 0.0, 
+this.nx : this.nx = 0.0, 
+this.h : this.h = 0.0, 
+this.ny : this.ny = 0.0, 
+this.a : this.a = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL67
+this.temp : this.temp = 0.0, 
+this.b : this.b = 0.0, 
+this.x : this.x = 0.0, 
+this.theta : this.theta = 0.0, 
+this.nx : this.nx = 0.0, 
+this.h : this.h = 0.0, 
+this.ny : this.ny = 0.0, 
+this.a : this.a = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: trueL69
+this.temp : this.temp = 0.0, 
+this.b : this.b = 0.0, 
+this.x : this.x = 0.0, 
+this.theta : this.theta = 0.0, 
+this.nx : this.nx = 0.0, 
+this.h : this.h = 0.0, 
+this.ny : this.ny = 0.0, 
+this.a : this.a = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: joinL70
+this.temp : this.temp = 0.0, 
+this.b : this.b = 0.0, 
+this.x : this.x = 0.0, 
+this.theta : this.theta = Math.atan(this.y / this.x, ), this.theta = 0.0, 
+this.nx : this.nx = 0.0, 
+this.h : this.h = 0.0, 
+this.ny : this.ny = 0.0, 
+this.a : this.a = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: trueL71
+this.temp : this.temp = 0.0, 
+this.b : this.b = 0.0, 
+this.x : this.x = 0.0, 
+this.theta : this.theta = Math.atan(this.y / this.x, ), this.theta = 0.0, 
+this.nx : this.nx = 0.0, 
+this.h : this.h = 0.0, 
+this.ny : this.ny = 0.0, 
+this.a : this.a = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: joinL72
+this.temp : this.temp = 0.0, 
+this.b : this.b = 0.0, 
+this.x : this.x = 0.0, 
+this.theta : this.theta = Math.atan(this.y / this.x, ), 
+this.nx : this.nx = 0.0, 
+this.h : this.h = 0.0, 
+this.ny : this.ny = 0.0, 
+this.a : this.a = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: Startrotate90L73
+this.h : this.h = 0.0, 
+this.a : this.a = 0.0, 
+this.y : this.y = 0.0, 
+this.nx : this.nx = 0.0, 
+this.x : this.x = 0.0, 
+this.b : this.b = 0.0, 
+this.temp : this.temp = 0.0, 
+this.ny : this.ny = 0.0, 
+this.theta : this.theta = 0.0, 
+
+BLOCK: BasicL74
+this.h : this.h = 0.0, 
+this.a : this.a = 0.0, 
+this.y : this.y = 0.0, 
+this.nx : this.nx = Math.sqrt(this.h * this.h + this.ny * this.ny, ), 
+newp : newp = new CartesianPoint(-this.y, this.x, ), 
+this.x : this.x = 0.0, 
+this.b : this.b = 0.0, 
+this.ny : this.ny = this.h * Math.sin(this.theta + Math.PI / 2, ), 
+this.temp : this.temp = 0.0, 
+this.theta : this.theta = 0.0, 
+
+BLOCK: StartmainL76
+
+BLOCK: BasicL77
+p2 : p2 = p1.rotate90(), 
+p5 : p5 = new CartesianPoint(0, 1, ), 
+p3 : p3 = new CartesianPoint(1, 0, ), 
+p1 : p1 = new CartesianPoint(3, 4, ), 
+p4 : p4 = p3.rotate90(), 
+p6 : p6 = p5.rotate90(), 
+
+BLOCK: Startconstructor1L0
+this.ang : this.ang = 0.0, 
+this.y : this.y = 0.0, 
+this.rad : this.rad = 0.0, 
+this.nang : this.nang = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: Startconstructor1L0
+this.ang : this.ang = 0.0, 
+this.y : this.y = 0.0, 
+this.rad : this.rad = 0.0, 
+this.nang : this.nang = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: BasicL1
+this.ang : this.ang = angle, 
+this.y : this.y = 0.0, 
+this.rad : this.rad = radius, 
+this.nang : this.nang = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: trueL3
+this.ang : this.ang = this.ang + Math.PI, 
+this.y : this.y = 0.0, 
+this.rad : this.rad = Math.abs(this.rad, ), 
+this.nang : this.nang = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: joinL4
+this.ang : this.ang = angle, this.ang = this.ang + Math.PI, 
+this.y : this.y = 0.0, 
+this.rad : this.rad = Math.abs(this.rad, ), this.rad = radius, 
+this.nang : this.nang = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: trueL5
+this.ang : this.ang = this.ang + Math.PI * 2, 
+this.y : this.y = 0.0, 
+this.rad : this.rad = Math.abs(this.rad, ), this.rad = radius, 
+this.nang : this.nang = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: joinL6
+this.ang : this.ang = angle, this.ang = this.ang + Math.PI * 2, this.ang = this.ang + Math.PI, 
+this.y : this.y = 0.0, 
+this.rad : this.rad = Math.abs(this.rad, ), this.rad = radius, 
+this.nang : this.nang = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: trueL7
+this.ang : this.ang = this.ang - Math.PI * 2, 
+this.y : this.y = 0.0, 
+this.rad : this.rad = Math.abs(this.rad, ), this.rad = radius, 
+this.nang : this.nang = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: joinL8
+this.ang : this.ang = this.ang - Math.PI * 2, this.ang = angle, this.ang = this.ang + Math.PI * 2, this.ang = this.ang + Math.PI, 
+this.y : this.y = 0.0, 
+this.rad : this.rad = Math.abs(this.rad, ), this.rad = radius, 
+this.nang : this.nang = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: StartxCoordinateL9
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.rad : this.rad = 0.0, 
+this.ang : this.ang = 0.0, 
+this.nang : this.nang = 0.0, 
+
+BLOCK: StartxCoordinateL9
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.rad : this.rad = 0.0, 
+this.ang : this.ang = 0.0, 
+this.nang : this.nang = 0.0, 
+
+BLOCK: BasicL10
+this.x : this.x = this.rad * Math.cos(this.ang, ), 
+this.y : this.y = 0.0, 
+this.rad : this.rad = 0.0, 
+this.ang : this.ang = 0.0, 
+this.nang : this.nang = 0.0, 
+
+BLOCK: StartyCoordinateL12
+this.y : this.y = 0.0, 
+this.nang : this.nang = 0.0, 
+this.ang : this.ang = 0.0, 
+this.x : this.x = 0.0, 
+this.rad : this.rad = 0.0, 
+
+BLOCK: StartyCoordinateL12
+this.y : this.y = 0.0, 
+this.nang : this.nang = 0.0, 
+this.ang : this.ang = 0.0, 
+this.x : this.x = 0.0, 
+this.rad : this.rad = 0.0, 
+
+BLOCK: BasicL13
+this.y : this.y = this.rad * Math.sin(this.ang, ), 
+this.nang : this.nang = 0.0, 
+this.ang : this.ang = 0.0, 
+this.x : this.x = 0.0, 
+this.rad : this.rad = 0.0, 
+
+BLOCK: StartradiusL15
+this.x : this.x = 0.0, 
+this.ang : this.ang = 0.0, 
+this.nang : this.nang = 0.0, 
+this.y : this.y = 0.0, 
+this.rad : this.rad = 0.0, 
+
+BLOCK: StartradiusL15
+this.x : this.x = 0.0, 
+this.ang : this.ang = 0.0, 
+this.nang : this.nang = 0.0, 
+this.y : this.y = 0.0, 
+this.rad : this.rad = 0.0, 
+
+BLOCK: BasicL16
+this.x : this.x = 0.0, 
+this.ang : this.ang = 0.0, 
+this.nang : this.nang = 0.0, 
+this.y : this.y = 0.0, 
+this.rad : this.rad = 0.0, 
+
+BLOCK: StartangleL18
+this.x : this.x = 0.0, 
+this.rad : this.rad = 0.0, 
+this.y : this.y = 0.0, 
+this.nang : this.nang = 0.0, 
+this.ang : this.ang = 0.0, 
+
+BLOCK: StartangleL18
+this.x : this.x = 0.0, 
+this.rad : this.rad = 0.0, 
+this.y : this.y = 0.0, 
+this.nang : this.nang = 0.0, 
+this.ang : this.ang = 0.0, 
+
+BLOCK: BasicL19
+this.x : this.x = 0.0, 
+this.rad : this.rad = 0.0, 
+this.y : this.y = 0.0, 
+this.nang : this.nang = 0.0, 
+this.ang : this.ang = 0.0, 
+
+BLOCK: Startrotate90L21
+this.nang : this.nang = 0.0, 
+this.rad : this.rad = 0.0, 
+this.ang : this.ang = 0.0, 
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: Startrotate90L21
+this.nang : this.nang = 0.0, 
+this.rad : this.rad = 0.0, 
+this.ang : this.ang = 0.0, 
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: BasicL22
+this.nang : this.nang = this.ang + Math.PI / 2, 
+this.rad : this.rad = 0.0, 
+newp : newp = new PolarPoint(this.rad, this.nang, ), 
+this.ang : this.ang = 0.0, 
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: StartdistanceL24
+
+BLOCK: StartdistanceL24
+
+BLOCK: BasicL25
+distance : distance = Math.sqrt(pd1.xCoordinate() - pd2.xCoordinate() * pd1.xCoordinate() - pd2.xCoordinate() + pd1.yCoordinate() - pd2.yCoordinate() * pd1.yCoordinate() - pd2.yCoordinate(), ), 
+
+BLOCK: StartsamequadL27
+
+BLOCK: StartsamequadL27
+
+BLOCK: BasicL28
+
+BLOCK: trueL30
+
+BLOCK: trueL32
+
+BLOCK: falseL34
+
+BLOCK: joinL33
+
+BLOCK: falseL35
+
+BLOCK: joinL31
+
+BLOCK: StartmainL36
+
+BLOCK: StartmainL36
+
+BLOCK: BasicL37
+scan : scan = new Scanner(System.in, ), 
+choice : choice = scan.nextDouble(), 
+p1 : p1 = new CartesianPoint(0, 0, ), 
+radius : radius = 0.0, 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+x : x = 0.0, 
+y : y = 0.0, 
+angle : angle = 0.0, 
+
+BLOCK: trueL39
+scan : scan = new Scanner(System.in, ), 
+choice : choice = scan.nextDouble(), 
+p1 : p1 = new CartesianPoint(x, y, ), 
+radius : radius = 0.0, 
+x : x = scan.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+y : y = scan.nextDouble(), 
+angle : angle = 0.0, 
+
+BLOCK: falseL41
+scan : scan = new Scanner(System.in, ), 
+choice : choice = scan.nextDouble(), 
+p1 : p1 = new CartesianPoint(0, 0, ), 
+radius : radius = 0.0, 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+x : x = 0.0, 
+y : y = 0.0, 
+angle : angle = 0.0, 
+
+BLOCK: trueL42
+scan : scan = new Scanner(System.in, ), 
+choice : choice = scan.nextDouble(), 
+p1 : p1 = new CartesianPoint(x, y, ), 
+radius : radius = scan.nextDouble(), 
+x : x = radius * Math.cos(angle, ), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+y : y = radius * Math.sin(angle, ), 
+angle : angle = angle * Math.PI / 180, 
+
+BLOCK: falseL44
+scan : scan = new Scanner(System.in, ), 
+choice : choice = scan.nextDouble(), 
+p1 : p1 = new CartesianPoint(0, 0, ), 
+radius : radius = 0.0, 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+x : x = 0.0, 
+y : y = 0.0, 
+angle : angle = 0.0, 
+
+BLOCK: joinL43
+scan : scan = new Scanner(System.in, ), 
+choice : choice = scan.nextDouble(), 
+p1 : p1 = new CartesianPoint(0, 0, ), p1 = new CartesianPoint(x, y, ), 
+radius : radius = 0.0, radius = scan.nextDouble(), 
+x : x = 0.0, x = radius * Math.cos(angle, ), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+y : y = radius * Math.sin(angle, ), y = 0.0, 
+angle : angle = 0.0, angle = angle * Math.PI / 180, 
+
+BLOCK: joinL40
+scan : scan = new Scanner(System.in, ), 
+choice : choice = scan.nextDouble(), 
+p1 : p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), p1 = new CartesianPoint(x, y, ), 
+radius : radius = 0.0, radius = scan.nextDouble(), 
+x : x = scan.nextDouble(), x = 0.0, x = radius * Math.cos(angle, ), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+y : y = scan.nextDouble(), y = radius * Math.sin(angle, ), y = 0.0, 
+angle : angle = 0.0, angle = angle * Math.PI / 180, 
+
+BLOCK: trueL45
+scan : scan = new Scanner(System.in, ), 
+choice : choice = scan.nextDouble(), 
+p1 : p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), p1 = new CartesianPoint(x, y, ), 
+radius : radius = 0.0, radius = scan.nextDouble(), 
+p2 : p2 = new CartesianPoint(x, y, ), 
+x : x = scan.nextDouble(), 
+y : y = scan.nextDouble(), 
+angle : angle = 0.0, angle = angle * Math.PI / 180, 
+
+BLOCK: falseL47
+scan : scan = new Scanner(System.in, ), 
+choice : choice = scan.nextDouble(), 
+p1 : p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), p1 = new CartesianPoint(x, y, ), 
+radius : radius = 0.0, radius = scan.nextDouble(), 
+x : x = scan.nextDouble(), x = 0.0, x = radius * Math.cos(angle, ), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+y : y = scan.nextDouble(), y = radius * Math.sin(angle, ), y = 0.0, 
+angle : angle = 0.0, angle = angle * Math.PI / 180, 
+
+BLOCK: trueL48
+scan : scan = new Scanner(System.in, ), 
+choice : choice = scan.nextDouble(), 
+p1 : p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), p1 = new CartesianPoint(x, y, ), 
+radius : radius = scan.nextDouble(), 
+p2 : p2 = new CartesianPoint(x, y, ), 
+x : x = radius * Math.cos(angle, ), 
+y : y = radius * Math.sin(angle, ), 
+angle : angle = angle * Math.PI / 180, 
+
+BLOCK: falseL50
+scan : scan = new Scanner(System.in, ), 
+choice : choice = scan.nextDouble(), 
+p1 : p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), p1 = new CartesianPoint(x, y, ), 
+radius : radius = 0.0, radius = scan.nextDouble(), 
+x : x = scan.nextDouble(), x = 0.0, x = radius * Math.cos(angle, ), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+y : y = scan.nextDouble(), y = radius * Math.sin(angle, ), y = 0.0, 
+angle : angle = 0.0, angle = angle * Math.PI / 180, 
+
+BLOCK: joinL49
+scan : scan = new Scanner(System.in, ), 
+choice : choice = scan.nextDouble(), 
+p1 : p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), p1 = new CartesianPoint(x, y, ), 
+radius : radius = 0.0, radius = scan.nextDouble(), radius = scan.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(x, y, ), 
+x : x = radius * Math.cos(angle, ), x = scan.nextDouble(), x = 0.0, x = radius * Math.cos(angle, ), 
+y : y = scan.nextDouble(), y = radius * Math.sin(angle, ), y = 0.0, y = radius * Math.sin(angle, ), 
+angle : angle = 0.0, angle = angle * Math.PI / 180, angle = angle * Math.PI / 180, 
+
+BLOCK: joinL46
+scan : scan = new Scanner(System.in, ), 
+choice : choice = scan.nextDouble(), 
+p1 : p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), p1 = new CartesianPoint(x, y, ), 
+radius : radius = 0.0, radius = scan.nextDouble(), radius = scan.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(x, y, ), p2 = new CartesianPoint(x, y, ), 
+x : x = radius * Math.cos(angle, ), x = scan.nextDouble(), x = 0.0, x = scan.nextDouble(), x = radius * Math.cos(angle, ), 
+y : y = scan.nextDouble(), y = radius * Math.sin(angle, ), y = scan.nextDouble(), y = 0.0, y = radius * Math.sin(angle, ), 
+angle : angle = 0.0, angle = angle * Math.PI / 180, angle = angle * Math.PI / 180, 
+
+BLOCK: StartmainL51
+
+BLOCK: StartmainL51
+
+BLOCK: BasicL52
+p1 : p1 = new PolarPoint(1, 0, ), 
+p2 : p2 = p1.rotate90(), 
+p3 : p3 = new PolarPoint(1, Math.PI / 2, ), 
+p4 : p4 = p3.rotate90(), 
+
+BLOCK: Startconstructor1L54
+this.y : this.y = 0.0, 
+this.theta : this.theta = 0.0, 
+this.ny : this.ny = 0.0, 
+this.b : this.b = 0.0, 
+this.a : this.a = 0.0, 
+this.temp : this.temp = 0.0, 
+this.nx : this.nx = 0.0, 
+this.h : this.h = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: Startconstructor1L54
+this.y : this.y = 0.0, 
+this.theta : this.theta = 0.0, 
+this.ny : this.ny = 0.0, 
+this.b : this.b = 0.0, 
+this.a : this.a = 0.0, 
+this.temp : this.temp = 0.0, 
+this.nx : this.nx = 0.0, 
+this.h : this.h = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: BasicL55
+this.y : this.y = y_coord, 
+this.theta : this.theta = 0.0, 
+this.ny : this.ny = 0.0, 
+this.b : this.b = 0.0, 
+this.a : this.a = 0.0, 
+this.temp : this.temp = 0.0, 
+this.x : this.x = x_coord, 
+this.nx : this.nx = 0.0, 
+this.h : this.h = 0.0, 
+
+BLOCK: StartxCoordinateL57
+this.h : this.h = 0.0, 
+this.theta : this.theta = 0.0, 
+this.b : this.b = 0.0, 
+this.a : this.a = 0.0, 
+this.ny : this.ny = 0.0, 
+this.x : this.x = 0.0, 
+this.nx : this.nx = 0.0, 
+this.temp : this.temp = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartxCoordinateL57
+this.h : this.h = 0.0, 
+this.theta : this.theta = 0.0, 
+this.b : this.b = 0.0, 
+this.a : this.a = 0.0, 
+this.ny : this.ny = 0.0, 
+this.x : this.x = 0.0, 
+this.nx : this.nx = 0.0, 
+this.temp : this.temp = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL58
+this.h : this.h = 0.0, 
+this.theta : this.theta = 0.0, 
+this.b : this.b = 0.0, 
+this.a : this.a = 0.0, 
+this.ny : this.ny = 0.0, 
+this.x : this.x = 0.0, 
+this.nx : this.nx = 0.0, 
+this.temp : this.temp = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartyCoordinateL60
+this.a : this.a = 0.0, 
+this.ny : this.ny = 0.0, 
+this.b : this.b = 0.0, 
+this.h : this.h = 0.0, 
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+this.temp : this.temp = 0.0, 
+this.nx : this.nx = 0.0, 
+this.theta : this.theta = 0.0, 
+
+BLOCK: StartyCoordinateL60
+this.a : this.a = 0.0, 
+this.ny : this.ny = 0.0, 
+this.b : this.b = 0.0, 
+this.h : this.h = 0.0, 
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+this.temp : this.temp = 0.0, 
+this.nx : this.nx = 0.0, 
+this.theta : this.theta = 0.0, 
+
+BLOCK: BasicL61
+this.a : this.a = 0.0, 
+this.ny : this.ny = 0.0, 
+this.b : this.b = 0.0, 
+this.h : this.h = 0.0, 
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+this.temp : this.temp = 0.0, 
+this.nx : this.nx = 0.0, 
+this.theta : this.theta = 0.0, 
+
+BLOCK: StartradiusL63
+this.a : this.a = 0.0, 
+this.nx : this.nx = 0.0, 
+this.temp : this.temp = 0.0, 
+this.b : this.b = 0.0, 
+this.y : this.y = 0.0, 
+this.ny : this.ny = 0.0, 
+this.h : this.h = 0.0, 
+this.theta : this.theta = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: StartradiusL63
+this.a : this.a = 0.0, 
+this.nx : this.nx = 0.0, 
+this.temp : this.temp = 0.0, 
+this.b : this.b = 0.0, 
+this.y : this.y = 0.0, 
+this.ny : this.ny = 0.0, 
+this.h : this.h = 0.0, 
+this.theta : this.theta = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: BasicL64
+this.a : this.a = this.x * this.x, 
+this.nx : this.nx = 0.0, 
+this.temp : this.temp = this.a + this.b, 
+this.b : this.b = this.y * this.y, 
+this.y : this.y = 0.0, 
+this.ny : this.ny = 0.0, 
+this.h : this.h = Math.sqrt(this.temp, ), 
+this.theta : this.theta = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: StartangleL66
+this.temp : this.temp = 0.0, 
+this.b : this.b = 0.0, 
+this.x : this.x = 0.0, 
+this.theta : this.theta = 0.0, 
+this.nx : this.nx = 0.0, 
+this.h : this.h = 0.0, 
+this.ny : this.ny = 0.0, 
+this.a : this.a = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartangleL66
+this.temp : this.temp = 0.0, 
+this.b : this.b = 0.0, 
+this.x : this.x = 0.0, 
+this.theta : this.theta = 0.0, 
+this.nx : this.nx = 0.0, 
+this.h : this.h = 0.0, 
+this.ny : this.ny = 0.0, 
+this.a : this.a = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: BasicL67
+this.temp : this.temp = 0.0, 
+this.b : this.b = 0.0, 
+this.x : this.x = 0.0, 
+this.theta : this.theta = 0.0, 
+this.nx : this.nx = 0.0, 
+this.h : this.h = 0.0, 
+this.ny : this.ny = 0.0, 
+this.a : this.a = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: trueL69
+this.temp : this.temp = 0.0, 
+this.b : this.b = 0.0, 
+this.x : this.x = 0.0, 
+this.theta : this.theta = 0.0, 
+this.nx : this.nx = 0.0, 
+this.h : this.h = 0.0, 
+this.ny : this.ny = 0.0, 
+this.a : this.a = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: joinL70
+this.temp : this.temp = 0.0, 
+this.b : this.b = 0.0, 
+this.x : this.x = 0.0, 
+this.theta : this.theta = Math.atan(this.y / this.x, ), this.theta = 0.0, 
+this.nx : this.nx = 0.0, 
+this.h : this.h = 0.0, 
+this.ny : this.ny = 0.0, 
+this.a : this.a = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: trueL71
+this.temp : this.temp = 0.0, 
+this.b : this.b = 0.0, 
+this.x : this.x = 0.0, 
+this.theta : this.theta = Math.atan(this.y / this.x, ), this.theta = 0.0, 
+this.nx : this.nx = 0.0, 
+this.h : this.h = 0.0, 
+this.ny : this.ny = 0.0, 
+this.a : this.a = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: joinL72
+this.temp : this.temp = 0.0, 
+this.b : this.b = 0.0, 
+this.x : this.x = 0.0, 
+this.theta : this.theta = Math.atan(this.y / this.x, ), 
+this.nx : this.nx = 0.0, 
+this.h : this.h = 0.0, 
+this.ny : this.ny = 0.0, 
+this.a : this.a = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: Startrotate90L73
+this.h : this.h = 0.0, 
+this.a : this.a = 0.0, 
+this.y : this.y = 0.0, 
+this.nx : this.nx = 0.0, 
+this.x : this.x = 0.0, 
+this.b : this.b = 0.0, 
+this.temp : this.temp = 0.0, 
+this.ny : this.ny = 0.0, 
+this.theta : this.theta = 0.0, 
+
+BLOCK: Startrotate90L73
+this.h : this.h = 0.0, 
+this.a : this.a = 0.0, 
+this.y : this.y = 0.0, 
+this.nx : this.nx = 0.0, 
+this.x : this.x = 0.0, 
+this.b : this.b = 0.0, 
+this.temp : this.temp = 0.0, 
+this.ny : this.ny = 0.0, 
+this.theta : this.theta = 0.0, 
+
+BLOCK: BasicL74
+this.h : this.h = 0.0, 
+this.a : this.a = 0.0, 
+this.y : this.y = 0.0, 
+this.nx : this.nx = Math.sqrt(this.h * this.h + this.ny * this.ny, ), 
+newp : newp = new CartesianPoint(-this.y, this.x, ), 
+this.x : this.x = 0.0, 
+this.b : this.b = 0.0, 
+this.ny : this.ny = this.h * Math.sin(this.theta + Math.PI / 2, ), 
+this.temp : this.temp = 0.0, 
+this.theta : this.theta = 0.0, 
+
+BLOCK: StartmainL76
+
+BLOCK: StartmainL76
+
+BLOCK: BasicL77
+p2 : p2 = p1.rotate90(), 
+p5 : p5 = new CartesianPoint(0, 1, ), 
+p3 : p3 = new CartesianPoint(1, 0, ), 
+p1 : p1 = new CartesianPoint(3, 4, ), 
+p4 : p4 = p3.rotate90(), 
+p6 : p6 = p5.rotate90(), 
+
+Unfiltered: 419
+Filtered: 1
+
+
+Duplicate found: 102_Code/102_hw1/dir03/PointRelation.java lines [38, 98] and 102_Code/102_hw1/dir03/PointRelation.java lines [38, 98]
+102_Code/102_hw1/dir03/PointRelation.java ----------
+38 :	radius = 0.0
+42 :	p1 = new CartesianPoint(0, 0, )
+47 :	x = scan.nextDouble()
+49 :	y = scan.nextDouble()
+50 :	p1 = new CartesianPoint(x, y, )
+59 :	angle = angle * Math.PI / 180
+61 :	y = radius * Math.sin(angle, )
+62 :	p1 = new CartesianPoint(x, y, )
+87 :	angle = angle * Math.PI / 180
+97 :	distance(p1, p2, )
+98 :	samequad(p1, p2, )
+102_Code/102_hw1/dir03/PointRelation.java ----------
+38 :	angle = 0.0
+43 :	p2 = new CartesianPoint(0, 0, )
+77 :	y = scan.nextDouble()
+75 :	x = scan.nextDouble()
+78 :	p2 = new CartesianPoint(x, y, )
+87 :	angle = angle * Math.PI / 180
+88 :	x = radius * Math.cos(angle, )
+90 :	p2 = new CartesianPoint(x, y, )
+59 :	angle = angle * Math.PI / 180
+98 :	samequad(p1, p2, )
+97 :	distance(p1, p2, )
+===========================
+
+
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.328 s
+[INFO] Finished at: 2019-05-01T17:14:24-07:00
+[INFO] Final Memory: 26M/1542M
+[INFO] ------------------------------------------------------------------------

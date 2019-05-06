@@ -1,0 +1,155 @@
+digraph G {
+"105 : user_input = new Scanner(System.in, )"
+"106 : point_type = 0"
+"106 : point_type = 0" -> "117 : point_type = user_input.nextInt()" [style=dashed]
+"107 : p1_x = 0"
+"107 : p1_x = 0" -> "186 : p1_x = user_input.nextDouble()" [style=dashed]
+"107 : p1_x = 0" -> "122 : p1_x = user_input.nextDouble()" [style=dashed]
+"108 : p1_y = 0"
+"108 : p1_y = 0" -> "124 : p1_y = user_input.nextDouble()" [style=dashed]
+"108 : p1_y = 0" -> "188 : p1_y = user_input.nextDouble()" [style=dashed]
+"109 : p2_x = 0"
+"109 : p2_x = 0" -> "157 : p2_x = user_input.nextDouble()" [style=dashed]
+"109 : p2_x = 0" -> "198 : p2_x = user_input.nextDouble()" [style=dashed]
+"109 : p2_x = 0" -> "134 : p2_x = user_input.nextDouble()" [style=dashed]
+"109 : p2_x = 0" -> "221 : p2_x = user_input.nextDouble()" [style=dashed]
+"110 : p2_y = 0"
+"110 : p2_y = 0" -> "136 : p2_y = user_input.nextDouble()" [style=dashed]
+"110 : p2_y = 0" -> "159 : p2_y = user_input.nextDouble()" [style=dashed]
+"110 : p2_y = 0" -> "200 : p2_y = user_input.nextDouble()" [style=dashed]
+"110 : p2_y = 0" -> "223 : p2_y = user_input.nextDouble()" [style=dashed]
+"111 : dist = 0"
+"111 : dist = 0" -> "163 : dist = distance(p1, p2, )" [style=dashed]
+"111 : dist = 0" -> "140 : dist = distance(p1, p2, )" [style=dashed]
+"111 : dist = 0" -> "204 : dist = distance(p1, p2, )" [style=dashed]
+"111 : dist = 0" -> "227 : dist = distance(p1, p2, )" [style=dashed]
+"112 : quad = false"
+"112 : quad = false" -> "141 : quad = quadrant(p1, p2, )" [style=dashed]
+"112 : quad = false" -> "228 : quad = quadrant(p1, p2, )" [style=dashed]
+"112 : quad = false" -> "164 : quad = quadrant(p1, p2, )" [style=dashed]
+"112 : quad = false" -> "205 : quad = quadrant(p1, p2, )" [style=dashed]
+"113 : p1 = new CartesianPoint(0, 0, )"
+"113 : p1 = new CartesianPoint(0, 0, )" -> "126 : p1 = new CartesianPoint(p1_x, p1_y, )" [style=dashed]
+"113 : p1 = new CartesianPoint(0, 0, )" -> "190 : p1 = new PolarPoint(p1_x, p1_y, )" [style=dashed]
+"114 : p2 = new PolarPoint(0, 0, )"
+"114 : p2 = new PolarPoint(0, 0, )" -> "202 : p2 = new CartesianPoint(p2_x, p2_y, )" [style=dashed]
+"114 : p2 = new PolarPoint(0, 0, )" -> "138 : p2 = new CartesianPoint(p2_x, p2_y, )" [style=dashed]
+"114 : p2 = new PolarPoint(0, 0, )" -> "225 : p2 = new PolarPoint(p2_x, p2_y, )" [style=dashed]
+"114 : p2 = new PolarPoint(0, 0, )" -> "161 : p2 = new PolarPoint(p2_x, p2_y, )" [style=dashed]
+"116 : System.out.print(\"Which type of point should be created (1 for Cartesion, 2 for Polar)? \", )"
+"117 : point_type = user_input.nextInt()"
+"117 : point_type = user_input.nextInt()" -> "119 : point_type == 1"
+"117 : point_type = user_input.nextInt()" -> "183 : point_type == 2"
+"117 : point_type = user_input.nextInt()" -> "129 : point_type = user_input.nextInt()" [style=dashed]
+"117 : point_type = user_input.nextInt()" -> "193 : point_type = user_input.nextInt()" [style=dashed]
+"119 : point_type == 1"
+"121 : System.out.print(\"Enter x-coordinate: \", )"
+"122 : p1_x = user_input.nextDouble()"
+"122 : p1_x = user_input.nextDouble()" -> "126 : p1 = new CartesianPoint(p1_x, p1_y, )"
+"123 : System.out.print(\"Enter y-coordinate: \", )"
+"124 : p1_y = user_input.nextDouble()"
+"124 : p1_y = user_input.nextDouble()" -> "126 : p1 = new CartesianPoint(p1_x, p1_y, )"
+"126 : p1 = new CartesianPoint(p1_x, p1_y, )"
+"126 : p1 = new CartesianPoint(p1_x, p1_y, )" -> "141 : quad = quadrant(p1, p2, )"
+"126 : p1 = new CartesianPoint(p1_x, p1_y, )" -> "163 : dist = distance(p1, p2, )"
+"126 : p1 = new CartesianPoint(p1_x, p1_y, )" -> "140 : dist = distance(p1, p2, )"
+"126 : p1 = new CartesianPoint(p1_x, p1_y, )" -> "164 : quad = quadrant(p1, p2, )"
+"128 : System.out.print(\"Which type of point should be created (1 for Cartesion, 2 for Polar)? \", )"
+"129 : point_type = user_input.nextInt()"
+"129 : point_type = user_input.nextInt()" -> "154 : point_type == 2"
+"129 : point_type = user_input.nextInt()" -> "131 : point_type == 1"
+"131 : point_type == 1"
+"133 : System.out.print(\"Enter x-coordinate: \", )"
+"134 : p2_x = user_input.nextDouble()"
+"134 : p2_x = user_input.nextDouble()" -> "138 : p2 = new CartesianPoint(p2_x, p2_y, )"
+"135 : System.out.print(\"Enter y-coordinate: \", )"
+"136 : p2_y = user_input.nextDouble()"
+"136 : p2_y = user_input.nextDouble()" -> "138 : p2 = new CartesianPoint(p2_x, p2_y, )"
+"138 : p2 = new CartesianPoint(p2_x, p2_y, )"
+"138 : p2 = new CartesianPoint(p2_x, p2_y, )" -> "141 : quad = quadrant(p1, p2, )"
+"138 : p2 = new CartesianPoint(p2_x, p2_y, )" -> "140 : dist = distance(p1, p2, )"
+"140 : dist = distance(p1, p2, )"
+"140 : dist = distance(p1, p2, )" -> "143 : System.out.println(\"Distance between points: \" + dist, )"
+"141 : quad = quadrant(p1, p2, )"
+"141 : quad = quadrant(p1, p2, )" -> "144 : quad == true"
+"143 : System.out.println(\"Distance between points: \" + dist, )"
+"144 : quad == true"
+"146 : System.out.println(\"In same quadrant.\", )"
+"150 : System.out.println(\"Not in same quadrant.\", )"
+"154 : point_type == 2"
+"156 : System.out.print(\"Enter radius: \", )"
+"157 : p2_x = user_input.nextDouble()"
+"157 : p2_x = user_input.nextDouble()" -> "161 : p2 = new PolarPoint(p2_x, p2_y, )"
+"158 : System.out.print(\"Enter angle (in degrees): \", )"
+"159 : p2_y = user_input.nextDouble()"
+"159 : p2_y = user_input.nextDouble()" -> "161 : p2 = new PolarPoint(p2_x, p2_y, )"
+"161 : p2 = new PolarPoint(p2_x, p2_y, )"
+"161 : p2 = new PolarPoint(p2_x, p2_y, )" -> "163 : dist = distance(p1, p2, )"
+"161 : p2 = new PolarPoint(p2_x, p2_y, )" -> "164 : quad = quadrant(p1, p2, )"
+"163 : dist = distance(p1, p2, )"
+"163 : dist = distance(p1, p2, )" -> "166 : System.out.println(\"Distance between points: \" + dist, )"
+"164 : quad = quadrant(p1, p2, )"
+"164 : quad = quadrant(p1, p2, )" -> "167 : quad == true"
+"166 : System.out.println(\"Distance between points: \" + dist, )"
+"167 : quad == true"
+"169 : System.out.println(\"In same quadrant.\", )"
+"173 : System.out.println(\"Not in same quadrant.\", )"
+"178 : System.out.println(\"Invalid input.\", )"
+"179 : System.exit(1, )"
+"183 : point_type == 2"
+"185 : System.out.print(\"Enter radius: \", )"
+"186 : p1_x = user_input.nextDouble()"
+"186 : p1_x = user_input.nextDouble()" -> "190 : p1 = new PolarPoint(p1_x, p1_y, )"
+"187 : System.out.print(\"Enter angle (in degrees): \", )"
+"188 : p1_y = user_input.nextDouble()"
+"188 : p1_y = user_input.nextDouble()" -> "190 : p1 = new PolarPoint(p1_x, p1_y, )"
+"190 : p1 = new PolarPoint(p1_x, p1_y, )"
+"190 : p1 = new PolarPoint(p1_x, p1_y, )" -> "228 : quad = quadrant(p1, p2, )"
+"190 : p1 = new PolarPoint(p1_x, p1_y, )" -> "205 : quad = quadrant(p1, p2, )"
+"190 : p1 = new PolarPoint(p1_x, p1_y, )" -> "204 : dist = distance(p1, p2, )"
+"190 : p1 = new PolarPoint(p1_x, p1_y, )" -> "227 : dist = distance(p1, p2, )"
+"192 : System.out.print(\"Which type of point should be created (1 for Cartesion, 2 for Polar)? \", )"
+"193 : point_type = user_input.nextInt()"
+"193 : point_type = user_input.nextInt()" -> "218 : point_type == 2"
+"193 : point_type = user_input.nextInt()" -> "195 : point_type == 1"
+"195 : point_type == 1"
+"197 : System.out.print(\"Enter x-coordinate: \", )"
+"198 : p2_x = user_input.nextDouble()"
+"198 : p2_x = user_input.nextDouble()" -> "202 : p2 = new CartesianPoint(p2_x, p2_y, )"
+"199 : System.out.print(\"Enter y-coordinate: \", )"
+"200 : p2_y = user_input.nextDouble()"
+"200 : p2_y = user_input.nextDouble()" -> "202 : p2 = new CartesianPoint(p2_x, p2_y, )"
+"202 : p2 = new CartesianPoint(p2_x, p2_y, )"
+"202 : p2 = new CartesianPoint(p2_x, p2_y, )" -> "205 : quad = quadrant(p1, p2, )"
+"202 : p2 = new CartesianPoint(p2_x, p2_y, )" -> "204 : dist = distance(p1, p2, )"
+"204 : dist = distance(p1, p2, )"
+"204 : dist = distance(p1, p2, )" -> "207 : System.out.println(\"Distance between points: \" + dist, )"
+"205 : quad = quadrant(p1, p2, )"
+"205 : quad = quadrant(p1, p2, )" -> "208 : quad == true"
+"207 : System.out.println(\"Distance between points: \" + dist, )"
+"208 : quad == true"
+"210 : System.out.println(\"In same quadrant.\", )"
+"214 : System.out.println(\"Not in same quadrant.\", )"
+"218 : point_type == 2"
+"220 : System.out.print(\"Enter radius: \", )"
+"221 : p2_x = user_input.nextDouble()"
+"221 : p2_x = user_input.nextDouble()" -> "225 : p2 = new PolarPoint(p2_x, p2_y, )"
+"222 : System.out.print(\"Enter angle (in degrees): \", )"
+"223 : p2_y = user_input.nextDouble()"
+"223 : p2_y = user_input.nextDouble()" -> "225 : p2 = new PolarPoint(p2_x, p2_y, )"
+"225 : p2 = new PolarPoint(p2_x, p2_y, )"
+"225 : p2 = new PolarPoint(p2_x, p2_y, )" -> "228 : quad = quadrant(p1, p2, )"
+"225 : p2 = new PolarPoint(p2_x, p2_y, )" -> "227 : dist = distance(p1, p2, )"
+"227 : dist = distance(p1, p2, )"
+"227 : dist = distance(p1, p2, )" -> "230 : System.out.println(\"Distance between points: \" + dist, )"
+"228 : quad = quadrant(p1, p2, )"
+"228 : quad = quadrant(p1, p2, )" -> "231 : quad == true"
+"230 : System.out.println(\"Distance between points: \" + dist, )"
+"231 : quad == true"
+"233 : System.out.println(\"In same quadrant.\", )"
+"237 : System.out.println(\"Not in same quadrant.\", )"
+"243 : System.out.println(\"Invalid input\", )"
+"244 : System.exit(1, )"
+"250 : System.out.println(\"Invalid input\", )"
+"251 : System.exit(1, )"
+}

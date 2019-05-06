@@ -1,0 +1,19 @@
+digraph G {
+"7 : distance = 0.0"
+"7 : distance = 0.0" -> "12 : distance = distance(a, b, )" [style=dashed]
+"8 : input = 0"
+"9 : isSame = false"
+"9 : isSame = false" -> "14 : isSame = sameQuadrant(a, b, )" [style=dashed]
+"10 : a = makePoint()"
+"10 : a = makePoint()" -> "12 : distance = distance(a, b, )"
+"10 : a = makePoint()" -> "14 : isSame = sameQuadrant(a, b, )"
+"11 : b = makePoint()"
+"11 : b = makePoint()" -> "12 : distance = distance(a, b, )"
+"11 : b = makePoint()" -> "14 : isSame = sameQuadrant(a, b, )"
+"12 : distance = distance(a, b, )"
+"12 : distance = distance(a, b, )" -> "13 : System.out.println(\"Distance between points: \" + distance, )"
+"13 : System.out.println(\"Distance between points: \" + distance, )"
+"14 : isSame = sameQuadrant(a, b, )"
+"16 : System.out.println(\"In same quadrant.\", )"
+"18 : System.out.println(\"Not in same quadrant\", )"
+}

@@ -1,0 +1,6 @@
+digraph G {
+"107 : a = new DoubleConstantExpression(2, )"
+"107 : a = new DoubleConstantExpression(2, )" -> "108 : e = new NegationExpression(a, )"
+"108 : e = new NegationExpression(a, )"
+"110 : Check.check(e.evaluate(bindings, ), 2.0, )"
+}

@@ -1,0 +1,53 @@
+digraph G {
+"105 : p1x = p1.xCoordinate()"
+"105 : p1x = p1.xCoordinate()" -> "113 : p1x > 0 && p1y >= 0"
+"105 : p1x = p1.xCoordinate()" -> "117 : p1x <= 0 && p1y > 0"
+"105 : p1x = p1.xCoordinate()" -> "121 : p1x < 0 && p1y <= 0"
+"106 : p1y = p1.yCoordinate()"
+"106 : p1y = p1.yCoordinate()" -> "113 : p1x > 0 && p1y >= 0"
+"106 : p1y = p1.yCoordinate()" -> "117 : p1x <= 0 && p1y > 0"
+"106 : p1y = p1.yCoordinate()" -> "121 : p1x < 0 && p1y <= 0"
+"107 : p2x = p2.xCoordinate()"
+"107 : p2x = p2.xCoordinate()" -> "138 : p2x < 0 && p2y <= 0"
+"107 : p2x = p2.xCoordinate()" -> "130 : p2x > 0 && p2y >= 0"
+"107 : p2x = p2.xCoordinate()" -> "134 : p2x <= 0 && p2y > 0"
+"108 : p2y = p2.yCoordinate()"
+"108 : p2y = p2.yCoordinate()" -> "138 : p2x < 0 && p2y <= 0"
+"108 : p2y = p2.yCoordinate()" -> "130 : p2x > 0 && p2y >= 0"
+"108 : p2y = p2.yCoordinate()" -> "134 : p2x <= 0 && p2y > 0"
+"110 : p1quad = 0"
+"110 : p1quad = 0" -> "115 : p1quad = 1" [style=dashed]
+"110 : p1quad = 0" -> "119 : p1quad = 2" [style=dashed]
+"110 : p1quad = 0" -> "123 : p1quad = 3" [style=dashed]
+"110 : p1quad = 0" -> "127 : p1quad = 4" [style=dashed]
+"111 : p2quad = 0"
+"111 : p2quad = 0" -> "132 : p2quad = 1" [style=dashed]
+"111 : p2quad = 0" -> "136 : p2quad = 2" [style=dashed]
+"111 : p2quad = 0" -> "140 : p2quad = 3" [style=dashed]
+"111 : p2quad = 0" -> "144 : p2quad = 4" [style=dashed]
+"113 : p1x > 0 && p1y >= 0"
+"115 : p1quad = 1"
+"115 : p1quad = 1" -> "147 : p1quad == p2quad"
+"117 : p1x <= 0 && p1y > 0"
+"119 : p1quad = 2"
+"119 : p1quad = 2" -> "147 : p1quad == p2quad"
+"121 : p1x < 0 && p1y <= 0"
+"123 : p1quad = 3"
+"123 : p1quad = 3" -> "147 : p1quad == p2quad"
+"127 : p1quad = 4"
+"127 : p1quad = 4" -> "147 : p1quad == p2quad"
+"130 : p2x > 0 && p2y >= 0"
+"132 : p2quad = 1"
+"132 : p2quad = 1" -> "147 : p1quad == p2quad"
+"134 : p2x <= 0 && p2y > 0"
+"136 : p2quad = 2"
+"136 : p2quad = 2" -> "147 : p1quad == p2quad"
+"138 : p2x < 0 && p2y <= 0"
+"140 : p2quad = 3"
+"140 : p2quad = 3" -> "147 : p1quad == p2quad"
+"144 : p2quad = 4"
+"144 : p2quad = 4" -> "147 : p1quad == p2quad"
+"147 : p1quad == p2quad"
+"149 : 1"
+"153 : 0"
+}

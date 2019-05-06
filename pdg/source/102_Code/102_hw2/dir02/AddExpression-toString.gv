@@ -1,0 +1,5 @@
+digraph G {
+"3 : this.lfht = null"
+"3 : this.rht = null"
+"15 : \"(\" + this.lfht.toString() + \" + \" + this.rht.toString() + \")\""
+}

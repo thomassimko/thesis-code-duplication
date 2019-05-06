@@ -1,0 +1,3 @@
+digraph G {
+"7 : Math.sqrt(Math.pow(a.xCoordinate() - b.xCoordinate(), 2, ) + Math.pow(a.yCoordinate() - b.yCoordinate(), 2, ), )"
+}

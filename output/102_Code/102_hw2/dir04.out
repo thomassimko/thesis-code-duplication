@@ -1,0 +1,1966 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for thesis:thesis:jar:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.version' for org.junit.jupiter:junit-jupiter-api:jar is either LATEST or RELEASE (both of them are being deprecated) @ line 25, column 22
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building thesis 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default-cli) > validate @ thesis >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default-cli) < validate @ thesis <<<
+[INFO] 
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ thesis ---
+BLOCK: Startconstructor1L0
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+this.product : this.product = 0.0, 
+
+BLOCK: BasicL1
+this.lft : this.lft = lft, 
+this.rht : this.rht = rht, 
+this.product : this.product = 0.0, 
+
+BLOCK: StartevaluateL3
+this.product : this.product = 0.0, 
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+
+BLOCK: BasicL4
+this.product : this.product = this.lft.evaluate(bindings, ) * this.rht.evaluate(bindings, ), 
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+
+BLOCK: StarttoStringL6
+this.product : this.product = 0.0, 
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: BasicL7
+this.product : this.product = 0.0, 
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: StarttestDoubleConstantExpressionL9
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+
+BLOCK: BasicL10
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+
+BLOCK: StarttestNegationExpressionL12
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+
+BLOCK: BasicL13
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+
+BLOCK: StarttestAddExpressionL15
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+
+BLOCK: BasicL16
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+
+BLOCK: StarttestSubtractExpressionL18
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+
+BLOCK: BasicL19
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+
+BLOCK: StarttestMultiplyExpressionL21
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+
+BLOCK: BasicL22
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+
+BLOCK: StarttestDivideExpressionL24
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+
+BLOCK: BasicL25
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+
+BLOCK: StartmainL27
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+
+BLOCK: BasicL28
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+
+BLOCK: Startconstructor1L30
+this.sum : this.sum = 0.0, 
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: BasicL31
+this.sum : this.sum = 0.0, 
+this.rht : this.rht = rht, 
+this.lft : this.lft = lft, 
+
+BLOCK: StartevaluateL33
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+this.sum : this.sum = 0.0, 
+
+BLOCK: BasicL34
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+this.sum : this.sum = this.lft.evaluate(bindings, ) + this.rht.evaluate(bindings, ), 
+
+BLOCK: StarttoStringL36
+this.rht : this.rht = null, 
+this.sum : this.sum = 0.0, 
+this.lft : this.lft = null, 
+
+BLOCK: BasicL37
+this.rht : this.rht = null, 
+this.sum : this.sum = 0.0, 
+this.lft : this.lft = null, 
+
+BLOCK: StartaddBindingL39
+this.index : this.index = 0, 
+this.tmp : this.tmp = 0, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+
+BLOCK: BasicL40
+this.index : this.index = 0, 
+this.tmp : this.tmp = 0, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+
+BLOCK: ForInitL42
+this.index : this.index = 0, 
+k : k = 0, 
+this.tmp : this.tmp = 0, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+
+BLOCK: ForCondL43
+@temp1 : @temp1 = k, 
+this.index : this.index = 0, 
+k : k = k + 1, k = 0, 
+this.tmp : this.tmp = 1, this.tmp = 0, this.tmp = k, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+
+BLOCK: LoopL44
+@temp1 : @temp1 = k, 
+this.index : this.index = 0, 
+k : k = k + 1, k = 0, 
+this.tmp : this.tmp = 1, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+
+BLOCK: BasicL45
+@temp1 : @temp1 = k, 
+this.index : this.index = 0, 
+k : k = k + 1, k = 0, 
+this.tmp : this.tmp = 1, this.tmp = 0, this.tmp = k, 
+this.awesome : this.awesome = new Binding(id, value, ), 
+this.variables : this.variables = new ArrayList(), 
+
+BLOCK: trueL46
+@temp1 : @temp1 = k, 
+this.index : this.index = 0, 
+k : k = k + 1, k = 0, 
+this.tmp : this.tmp = k, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+
+BLOCK: joinL47
+@temp1 : @temp1 = k, 
+this.index : this.index = 0, 
+k : k = k + 1, 
+this.tmp : this.tmp = 1, this.tmp = k, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+
+BLOCK: trueL48
+@temp1 : @temp1 = k, 
+this.index : this.index = 0, 
+k : k = k + 1, k = 0, 
+this.tmp : this.tmp = 1, this.tmp = 0, this.tmp = k, 
+this.awesome : this.awesome = new Binding(id, value, ), 
+this.variables : this.variables = new ArrayList(), 
+
+BLOCK: falseL50
+@temp1 : @temp1 = k, 
+this.index : this.index = 0, 
+k : k = k + 1, k = 0, 
+this.tmp : this.tmp = 1, this.tmp = 0, this.tmp = k, 
+this.awesome : this.awesome = new Binding(id, value, ), 
+this.variables : this.variables = new ArrayList(), 
+
+BLOCK: joinL49
+@temp1 : @temp1 = k, 
+this.index : this.index = 0, 
+k : k = k + 1, k = 0, 
+this.tmp : this.tmp = 1, this.tmp = 0, this.tmp = k, 
+this.awesome : this.awesome = new Binding(id, value, ), 
+this.variables : this.variables = new ArrayList(), 
+
+BLOCK: StartlookupBindingL51
+this.tmp : this.tmp = 0, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+this.index : this.index = 0, 
+
+BLOCK: BasicL52
+this.tmp : this.tmp = 0, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+this.index : this.index = 0, 
+
+BLOCK: ForInitL54
+this.tmp : this.tmp = 0, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+this.index : this.index = 0, 
+i : i = 0, 
+
+BLOCK: ForCondL55
+this.tmp : this.tmp = 0, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+this.index : this.index = 0, this.index = i, 
+i : i = i + 1, i = 0, 
+@temp2 : @temp2 = i, 
+
+BLOCK: LoopL56
+this.tmp : this.tmp = 0, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+this.index : this.index = 0, this.index = i, 
+i : i = i + 1, i = 0, 
+@temp2 : @temp2 = i, 
+
+BLOCK: BasicL57
+this.tmp : this.tmp = 0, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+this.index : this.index = 0, this.index = i, 
+i : i = i + 1, i = 0, 
+@temp2 : @temp2 = i, 
+
+BLOCK: trueL58
+this.tmp : this.tmp = 0, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+this.index : this.index = i, 
+i : i = i + 1, i = 0, 
+@temp2 : @temp2 = i, 
+
+BLOCK: joinL59
+this.tmp : this.tmp = 0, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+this.index : this.index = 0, this.index = i, 
+i : i = i + 1, 
+@temp2 : @temp2 = i, 
+
+BLOCK: Startconstructor1L60
+this.divide : this.divide = 0.0, 
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+
+BLOCK: BasicL61
+this.divide : this.divide = 0.0, 
+this.lft : this.lft = lft, 
+this.rht : this.rht = rht, 
+
+BLOCK: StartevaluateL63
+this.divide : this.divide = 0.0, 
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+
+BLOCK: BasicL64
+this.divide : this.divide = this.lft.evaluate(bindings, ) / this.rht.evaluate(bindings, ), 
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+
+BLOCK: StarttoStringL66
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+this.divide : this.divide = 0.0, 
+
+BLOCK: BasicL67
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+this.divide : this.divide = 0.0, 
+
+BLOCK: Startconstructor1L69
+this.mI : this.mI = null, 
+this.eval : this.eval = 0.0, 
+
+BLOCK: BasicL70
+this.mI : this.mI = matchIdentifier, 
+this.eval : this.eval = 0.0, 
+
+BLOCK: StartevaluateL72
+this.eval : this.eval = 0.0, 
+this.mI : this.mI = null, 
+
+BLOCK: BasicL73
+this.eval : this.eval = bindings.lookupBinding(this.mI, ), 
+this.mI : this.mI = null, 
+
+BLOCK: StarttoStringL75
+this.eval : this.eval = 0.0, 
+this.mI : this.mI = null, 
+
+BLOCK: BasicL76
+this.eval : this.eval = 0.0, 
+this.mI : this.mI = null, 
+
+BLOCK: Startconstructor1L78
+this.lft : this.lft = null, 
+this.diff : this.diff = 0.0, 
+this.rht : this.rht = null, 
+
+BLOCK: BasicL79
+this.lft : this.lft = lft, 
+this.diff : this.diff = 0.0, 
+this.rht : this.rht = rht, 
+
+BLOCK: StartevaluateL81
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+this.diff : this.diff = 0.0, 
+
+BLOCK: BasicL82
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+this.diff : this.diff = this.lft.evaluate(bindings, ) - this.rht.evaluate(bindings, ), 
+
+BLOCK: StarttoStringL84
+this.lft : this.lft = null, 
+this.diff : this.diff = 0.0, 
+this.rht : this.rht = null, 
+
+BLOCK: BasicL85
+this.lft : this.lft = null, 
+this.diff : this.diff = 0.0, 
+this.rht : this.rht = null, 
+
+BLOCK: Startconstructor1L87
+this.id : this.id = null, 
+this.e : this.e = null, 
+this.val : this.val = 0.0, 
+
+BLOCK: BasicL88
+this.id : this.id = id, 
+this.e : this.e = e, 
+this.val : this.val = 0.0, 
+
+BLOCK: StartevaluateL90
+this.e : this.e = null, 
+this.id : this.id = null, 
+this.val : this.val = 0.0, 
+
+BLOCK: BasicL91
+this.e : this.e = null, 
+this.id : this.id = null, 
+this.val : this.val = this.e.evaluate(bindings, ), 
+
+BLOCK: StarttoStringL93
+this.val : this.val = 0.0, 
+this.e : this.e = null, 
+this.id : this.id = null, 
+
+BLOCK: BasicL94
+this.val : this.val = 0.0, 
+this.e : this.e = null, 
+this.id : this.id = null, 
+
+BLOCK: Startconstructor1L96
+this.e : this.e = null, 
+this.negate : this.negate = 0.0, 
+
+BLOCK: BasicL97
+this.e : this.e = parseUnary, 
+this.negate : this.negate = 0.0, 
+
+BLOCK: StartevaluateL99
+this.negate : this.negate = 0.0, 
+this.e : this.e = null, 
+
+BLOCK: BasicL100
+this.negate : this.negate = this.e.evaluate(bindings, ), 
+this.e : this.e = null, 
+
+BLOCK: StarttoStringL102
+this.negate : this.negate = 0.0, 
+this.e : this.e = null, 
+
+BLOCK: BasicL103
+this.negate : this.negate = 0.0, 
+this.e : this.e = null, 
+
+BLOCK: Startconstructor1L105
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: BasicL106
+this.value : this.value = value, 
+this.id : this.id = id, 
+
+BLOCK: StartgetIdL108
+this.id : this.id = null, 
+this.value : this.value = 0.0, 
+
+BLOCK: BasicL109
+this.id : this.id = null, 
+this.value : this.value = 0.0, 
+
+BLOCK: StartgetValueL111
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: BasicL112
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: Startconstructor1L114
+this.schnyeh : this.schnyeh = 0.0, 
+
+BLOCK: BasicL115
+this.schnyeh : this.schnyeh = parseDouble, 
+
+BLOCK: StartevaluateL117
+this.schnyeh : this.schnyeh = 0.0, 
+
+BLOCK: BasicL118
+this.schnyeh : this.schnyeh = 0.0, 
+
+BLOCK: StarttoStringL120
+this.schnyeh : this.schnyeh = 0.0, 
+
+BLOCK: BasicL121
+this.schnyeh : this.schnyeh = 0.0, 
+
+BLOCK: Startconstructor1L0
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+this.product : this.product = 0.0, 
+
+BLOCK: Startconstructor1L0
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+this.product : this.product = 0.0, 
+
+BLOCK: BasicL1
+this.lft : this.lft = lft, 
+this.rht : this.rht = rht, 
+this.product : this.product = 0.0, 
+
+BLOCK: StartevaluateL3
+this.product : this.product = 0.0, 
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+
+BLOCK: StartevaluateL3
+this.product : this.product = 0.0, 
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+
+BLOCK: BasicL4
+this.product : this.product = this.lft.evaluate(bindings, ) * this.rht.evaluate(bindings, ), 
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+
+BLOCK: StarttoStringL6
+this.product : this.product = 0.0, 
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: StarttoStringL6
+this.product : this.product = 0.0, 
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: BasicL7
+this.product : this.product = 0.0, 
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: StarttestDoubleConstantExpressionL9
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+
+BLOCK: StarttestDoubleConstantExpressionL9
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+
+BLOCK: BasicL10
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+
+BLOCK: StarttestNegationExpressionL12
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+
+BLOCK: StarttestNegationExpressionL12
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+
+BLOCK: BasicL13
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+
+BLOCK: StarttestAddExpressionL15
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+
+BLOCK: StarttestAddExpressionL15
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+
+BLOCK: BasicL16
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+
+BLOCK: StarttestSubtractExpressionL18
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+
+BLOCK: StarttestSubtractExpressionL18
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+
+BLOCK: BasicL19
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+
+BLOCK: StarttestMultiplyExpressionL21
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+
+BLOCK: StarttestMultiplyExpressionL21
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+
+BLOCK: BasicL22
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+
+BLOCK: StarttestDivideExpressionL24
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+
+BLOCK: StarttestDivideExpressionL24
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+
+BLOCK: BasicL25
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+
+BLOCK: StartmainL27
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+
+BLOCK: StartmainL27
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+
+BLOCK: BasicL28
+this.sub3 : this.sub3 = new SubtractExpression(this.aiyah, this.unfortunate, ), 
+this.div2 : this.div2 = new DivideExpression(this.aiyah, this.alive, ), 
+this.add2 : this.add2 = new AddExpression(this.beHappy, this.lionDance, ), 
+this.mul2 : this.mul2 = new MultiplyExpression(this.wotcha, this.beHappy, ), 
+this.lionDance : this.lionDance = new DoubleConstantExpression(4.7, ), 
+this.neg : this.neg = new NegationExpression(this.aiyah, ), 
+this.mul : this.mul = new MultiplyExpression(this.woooaah, this.lionDance, ), 
+this.neg3 : this.neg3 = new NegationExpression(this.alive, ), 
+this.mul3 : this.mul3 = new MultiplyExpression(this.schnyeh, this.drat, ), 
+this.sub2 : this.sub2 = new SubtractExpression(this.woooaah, this.drat, ), 
+this.schnyeh : this.schnyeh = new DoubleConstantExpression(8.3, ), 
+this.drat : this.drat = new DoubleConstantExpression(-2, ), 
+this.DCE : this.DCE = new DoubleConstantExpression(4.93, ), 
+this.unfortunate : this.unfortunate = new DoubleConstantExpression(5.6, ), 
+this.aiyah : this.aiyah = new DoubleConstantExpression(7, ), 
+this.neg2 : this.neg2 = new NegationExpression(this.drat, ), 
+this.alive : this.alive = new DoubleConstantExpression(3.5, ), 
+this.bindings : this.bindings = new VariableBindings(), 
+this.div3 : this.div3 = new DivideExpression(this.alive, this.drat, ), 
+this.div : this.div = new DivideExpression(this.wotcha, this.drat, ), 
+this.wotcha : this.wotcha = new DoubleConstantExpression(9, ), 
+this.add : this.add = new AddExpression(this.unfortunate, this.schnyeh, ), 
+this.add3 : this.add3 = new AddExpression(this.drat, this.aiyah, ), 
+this.woooaah : this.woooaah = new DoubleConstantExpression(6.3, ), 
+this.DCE2 : this.DCE2 = new DoubleConstantExpression(-6.3, ), 
+this.sub : this.sub = new SubtractExpression(this.alive, this.beHappy, ), 
+this.DCE3 : this.DCE3 = new DoubleConstantExpression(3, ), 
+this.beHappy : this.beHappy = new DoubleConstantExpression(6.8, ), 
+
+BLOCK: Startconstructor1L30
+this.sum : this.sum = 0.0, 
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: Startconstructor1L30
+this.sum : this.sum = 0.0, 
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: BasicL31
+this.sum : this.sum = 0.0, 
+this.rht : this.rht = rht, 
+this.lft : this.lft = lft, 
+
+BLOCK: StartevaluateL33
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+this.sum : this.sum = 0.0, 
+
+BLOCK: StartevaluateL33
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+this.sum : this.sum = 0.0, 
+
+BLOCK: BasicL34
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+this.sum : this.sum = this.lft.evaluate(bindings, ) + this.rht.evaluate(bindings, ), 
+
+BLOCK: StarttoStringL36
+this.rht : this.rht = null, 
+this.sum : this.sum = 0.0, 
+this.lft : this.lft = null, 
+
+BLOCK: StarttoStringL36
+this.rht : this.rht = null, 
+this.sum : this.sum = 0.0, 
+this.lft : this.lft = null, 
+
+BLOCK: BasicL37
+this.rht : this.rht = null, 
+this.sum : this.sum = 0.0, 
+this.lft : this.lft = null, 
+
+BLOCK: StartaddBindingL39
+this.index : this.index = 0, 
+this.tmp : this.tmp = 0, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+
+BLOCK: StartaddBindingL39
+this.index : this.index = 0, 
+this.tmp : this.tmp = 0, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+
+BLOCK: BasicL40
+this.index : this.index = 0, 
+this.tmp : this.tmp = 0, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+
+BLOCK: ForInitL42
+this.index : this.index = 0, 
+k : k = 0, 
+this.tmp : this.tmp = 0, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+
+BLOCK: ForCondL43
+@temp1 : @temp1 = k, 
+this.index : this.index = 0, 
+k : k = k + 1, k = 0, 
+this.tmp : this.tmp = 1, this.tmp = 0, this.tmp = k, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+
+BLOCK: LoopL44
+@temp1 : @temp1 = k, 
+this.index : this.index = 0, 
+k : k = k + 1, k = 0, 
+this.tmp : this.tmp = 1, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+
+BLOCK: BasicL45
+@temp1 : @temp1 = k, 
+this.index : this.index = 0, 
+k : k = k + 1, k = 0, 
+this.tmp : this.tmp = 1, this.tmp = 0, this.tmp = k, 
+this.awesome : this.awesome = new Binding(id, value, ), 
+this.variables : this.variables = new ArrayList(), 
+
+BLOCK: trueL46
+@temp1 : @temp1 = k, 
+this.index : this.index = 0, 
+k : k = k + 1, k = 0, 
+this.tmp : this.tmp = k, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+
+BLOCK: joinL47
+@temp1 : @temp1 = k, 
+this.index : this.index = 0, 
+k : k = k + 1, 
+this.tmp : this.tmp = 1, this.tmp = k, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+
+BLOCK: trueL48
+@temp1 : @temp1 = k, 
+this.index : this.index = 0, 
+k : k = k + 1, k = 0, 
+this.tmp : this.tmp = 1, this.tmp = 0, this.tmp = k, 
+this.awesome : this.awesome = new Binding(id, value, ), 
+this.variables : this.variables = new ArrayList(), 
+
+BLOCK: falseL50
+@temp1 : @temp1 = k, 
+this.index : this.index = 0, 
+k : k = k + 1, k = 0, 
+this.tmp : this.tmp = 1, this.tmp = 0, this.tmp = k, 
+this.awesome : this.awesome = new Binding(id, value, ), 
+this.variables : this.variables = new ArrayList(), 
+
+BLOCK: joinL49
+@temp1 : @temp1 = k, 
+this.index : this.index = 0, 
+k : k = k + 1, k = 0, 
+this.tmp : this.tmp = 1, this.tmp = 0, this.tmp = k, 
+this.awesome : this.awesome = new Binding(id, value, ), 
+this.variables : this.variables = new ArrayList(), 
+
+BLOCK: StartlookupBindingL51
+this.tmp : this.tmp = 0, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+this.index : this.index = 0, 
+
+BLOCK: StartlookupBindingL51
+this.tmp : this.tmp = 0, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+this.index : this.index = 0, 
+
+BLOCK: BasicL52
+this.tmp : this.tmp = 0, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+this.index : this.index = 0, 
+
+BLOCK: ForInitL54
+this.tmp : this.tmp = 0, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+this.index : this.index = 0, 
+i : i = 0, 
+
+BLOCK: ForCondL55
+this.tmp : this.tmp = 0, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+this.index : this.index = 0, this.index = i, 
+i : i = i + 1, i = 0, 
+@temp2 : @temp2 = i, 
+
+BLOCK: LoopL56
+this.tmp : this.tmp = 0, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+this.index : this.index = 0, this.index = i, 
+i : i = i + 1, i = 0, 
+@temp2 : @temp2 = i, 
+
+BLOCK: BasicL57
+this.tmp : this.tmp = 0, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+this.index : this.index = 0, this.index = i, 
+i : i = i + 1, i = 0, 
+@temp2 : @temp2 = i, 
+
+BLOCK: trueL58
+this.tmp : this.tmp = 0, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+this.index : this.index = i, 
+i : i = i + 1, i = 0, 
+@temp2 : @temp2 = i, 
+
+BLOCK: joinL59
+this.tmp : this.tmp = 0, 
+this.awesome : this.awesome = null, 
+this.variables : this.variables = new ArrayList(), 
+this.index : this.index = 0, this.index = i, 
+i : i = i + 1, 
+@temp2 : @temp2 = i, 
+
+BLOCK: Startconstructor1L60
+this.divide : this.divide = 0.0, 
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+
+BLOCK: Startconstructor1L60
+this.divide : this.divide = 0.0, 
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+
+BLOCK: BasicL61
+this.divide : this.divide = 0.0, 
+this.lft : this.lft = lft, 
+this.rht : this.rht = rht, 
+
+BLOCK: StartevaluateL63
+this.divide : this.divide = 0.0, 
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+
+BLOCK: StartevaluateL63
+this.divide : this.divide = 0.0, 
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+
+BLOCK: BasicL64
+this.divide : this.divide = this.lft.evaluate(bindings, ) / this.rht.evaluate(bindings, ), 
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+
+BLOCK: StarttoStringL66
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+this.divide : this.divide = 0.0, 
+
+BLOCK: StarttoStringL66
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+this.divide : this.divide = 0.0, 
+
+BLOCK: BasicL67
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+this.divide : this.divide = 0.0, 
+
+BLOCK: Startconstructor1L69
+this.mI : this.mI = null, 
+this.eval : this.eval = 0.0, 
+
+BLOCK: Startconstructor1L69
+this.mI : this.mI = null, 
+this.eval : this.eval = 0.0, 
+
+BLOCK: BasicL70
+this.mI : this.mI = matchIdentifier, 
+this.eval : this.eval = 0.0, 
+
+BLOCK: StartevaluateL72
+this.eval : this.eval = 0.0, 
+this.mI : this.mI = null, 
+
+BLOCK: StartevaluateL72
+this.eval : this.eval = 0.0, 
+this.mI : this.mI = null, 
+
+BLOCK: BasicL73
+this.eval : this.eval = bindings.lookupBinding(this.mI, ), 
+this.mI : this.mI = null, 
+
+BLOCK: StarttoStringL75
+this.eval : this.eval = 0.0, 
+this.mI : this.mI = null, 
+
+BLOCK: StarttoStringL75
+this.eval : this.eval = 0.0, 
+this.mI : this.mI = null, 
+
+BLOCK: BasicL76
+this.eval : this.eval = 0.0, 
+this.mI : this.mI = null, 
+
+BLOCK: Startconstructor1L78
+this.lft : this.lft = null, 
+this.diff : this.diff = 0.0, 
+this.rht : this.rht = null, 
+
+BLOCK: Startconstructor1L78
+this.lft : this.lft = null, 
+this.diff : this.diff = 0.0, 
+this.rht : this.rht = null, 
+
+BLOCK: BasicL79
+this.lft : this.lft = lft, 
+this.diff : this.diff = 0.0, 
+this.rht : this.rht = rht, 
+
+BLOCK: StartevaluateL81
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+this.diff : this.diff = 0.0, 
+
+BLOCK: StartevaluateL81
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+this.diff : this.diff = 0.0, 
+
+BLOCK: BasicL82
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+this.diff : this.diff = this.lft.evaluate(bindings, ) - this.rht.evaluate(bindings, ), 
+
+BLOCK: StarttoStringL84
+this.lft : this.lft = null, 
+this.diff : this.diff = 0.0, 
+this.rht : this.rht = null, 
+
+BLOCK: StarttoStringL84
+this.lft : this.lft = null, 
+this.diff : this.diff = 0.0, 
+this.rht : this.rht = null, 
+
+BLOCK: BasicL85
+this.lft : this.lft = null, 
+this.diff : this.diff = 0.0, 
+this.rht : this.rht = null, 
+
+BLOCK: Startconstructor1L87
+this.id : this.id = null, 
+this.e : this.e = null, 
+this.val : this.val = 0.0, 
+
+BLOCK: Startconstructor1L87
+this.id : this.id = null, 
+this.e : this.e = null, 
+this.val : this.val = 0.0, 
+
+BLOCK: BasicL88
+this.id : this.id = id, 
+this.e : this.e = e, 
+this.val : this.val = 0.0, 
+
+BLOCK: StartevaluateL90
+this.e : this.e = null, 
+this.id : this.id = null, 
+this.val : this.val = 0.0, 
+
+BLOCK: StartevaluateL90
+this.e : this.e = null, 
+this.id : this.id = null, 
+this.val : this.val = 0.0, 
+
+BLOCK: BasicL91
+this.e : this.e = null, 
+this.id : this.id = null, 
+this.val : this.val = this.e.evaluate(bindings, ), 
+
+BLOCK: StarttoStringL93
+this.val : this.val = 0.0, 
+this.e : this.e = null, 
+this.id : this.id = null, 
+
+BLOCK: StarttoStringL93
+this.val : this.val = 0.0, 
+this.e : this.e = null, 
+this.id : this.id = null, 
+
+BLOCK: BasicL94
+this.val : this.val = 0.0, 
+this.e : this.e = null, 
+this.id : this.id = null, 
+
+BLOCK: Startconstructor1L96
+this.e : this.e = null, 
+this.negate : this.negate = 0.0, 
+
+BLOCK: Startconstructor1L96
+this.e : this.e = null, 
+this.negate : this.negate = 0.0, 
+
+BLOCK: BasicL97
+this.e : this.e = parseUnary, 
+this.negate : this.negate = 0.0, 
+
+BLOCK: StartevaluateL99
+this.negate : this.negate = 0.0, 
+this.e : this.e = null, 
+
+BLOCK: StartevaluateL99
+this.negate : this.negate = 0.0, 
+this.e : this.e = null, 
+
+BLOCK: BasicL100
+this.negate : this.negate = this.e.evaluate(bindings, ), 
+this.e : this.e = null, 
+
+BLOCK: StarttoStringL102
+this.negate : this.negate = 0.0, 
+this.e : this.e = null, 
+
+BLOCK: StarttoStringL102
+this.negate : this.negate = 0.0, 
+this.e : this.e = null, 
+
+BLOCK: BasicL103
+this.negate : this.negate = 0.0, 
+this.e : this.e = null, 
+
+BLOCK: Startconstructor1L105
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: Startconstructor1L105
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: BasicL106
+this.value : this.value = value, 
+this.id : this.id = id, 
+
+BLOCK: StartgetIdL108
+this.id : this.id = null, 
+this.value : this.value = 0.0, 
+
+BLOCK: StartgetIdL108
+this.id : this.id = null, 
+this.value : this.value = 0.0, 
+
+BLOCK: BasicL109
+this.id : this.id = null, 
+this.value : this.value = 0.0, 
+
+BLOCK: StartgetValueL111
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: StartgetValueL111
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: BasicL112
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: Startconstructor1L114
+this.schnyeh : this.schnyeh = 0.0, 
+
+BLOCK: Startconstructor1L114
+this.schnyeh : this.schnyeh = 0.0, 
+
+BLOCK: BasicL115
+this.schnyeh : this.schnyeh = parseDouble, 
+
+BLOCK: StartevaluateL117
+this.schnyeh : this.schnyeh = 0.0, 
+
+BLOCK: StartevaluateL117
+this.schnyeh : this.schnyeh = 0.0, 
+
+BLOCK: BasicL118
+this.schnyeh : this.schnyeh = 0.0, 
+
+BLOCK: StarttoStringL120
+this.schnyeh : this.schnyeh = 0.0, 
+
+BLOCK: StarttoStringL120
+this.schnyeh : this.schnyeh = 0.0, 
+
+BLOCK: BasicL121
+this.schnyeh : this.schnyeh = 0.0, 
+

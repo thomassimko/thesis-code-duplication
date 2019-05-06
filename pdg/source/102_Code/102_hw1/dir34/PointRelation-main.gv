@@ -1,0 +1,104 @@
+digraph G {
+"8 : pointype = 0"
+"8 : pointype = 0" -> "24 : pointype = scan.nextInt()" [style=dashed]
+"9 : x = 0.0"
+"9 : x = 0.0" -> "35 : x = scan.nextDouble()" [style=dashed]
+"10 : y = 0.0"
+"10 : y = 0.0" -> "38 : y = scan.nextDouble()" [style=dashed]
+"11 : x2 = 0.0"
+"11 : x2 = 0.0" -> "66 : x2 = scan.nextDouble()" [style=dashed]
+"12 : y2 = 0.0"
+"12 : y2 = 0.0" -> "69 : y2 = scan.nextDouble()" [style=dashed]
+"13 : radius = 0.0"
+"13 : radius = 0.0" -> "45 : radius = scan.nextDouble()" [style=dashed]
+"14 : radius2 = 0.0"
+"14 : radius2 = 0.0" -> "77 : radius2 = scan.nextDouble()" [style=dashed]
+"15 : angle = 0.0"
+"15 : angle = 0.0" -> "48 : angle = scan.nextDouble()" [style=dashed]
+"16 : angle2 = 0.0"
+"16 : angle2 = 0.0" -> "80 : angle2 = scan.nextDouble()" [style=dashed]
+"17 : distance = 0.0"
+"17 : distance = 0.0" -> "85 : distance = Distance(a, b, )" [style=dashed]
+"18 : same = true"
+"18 : same = true" -> "89 : same = Quadrant(a, b, )" [style=dashed]
+"19 : a = new CartesianPoint(0, 0, )"
+"19 : a = new CartesianPoint(0, 0, )" -> "85 : distance = Distance(a, b, )"
+"19 : a = new CartesianPoint(0, 0, )" -> "89 : same = Quadrant(a, b, )"
+"19 : a = new CartesianPoint(0, 0, )" -> "40 : a = new CartesianPoint(x, y, )" [style=dashed]
+"19 : a = new CartesianPoint(0, 0, )" -> "50 : a = new PolarPoint(radius, angle, )" [style=dashed]
+"20 : b = new CartesianPoint(0, 0, )"
+"20 : b = new CartesianPoint(0, 0, )" -> "85 : distance = Distance(a, b, )"
+"20 : b = new CartesianPoint(0, 0, )" -> "89 : same = Quadrant(a, b, )"
+"20 : b = new CartesianPoint(0, 0, )" -> "71 : b = new CartesianPoint(x2, y2, )" [style=dashed]
+"20 : b = new CartesianPoint(0, 0, )" -> "82 : b = new PolarPoint(radius2, angle2, )" [style=dashed]
+"22 : scan = new Scanner(System.in, )"
+"23 : System.out.print(\"Which type of point should be created(1 for Cartesian, 2 for Polar)? \", )"
+"24 : pointype = scan.nextInt()"
+"24 : pointype = scan.nextInt()" -> "26 : pointype != 1 && pointype != 2"
+"24 : pointype = scan.nextInt()" -> "42 : pointype == 2"
+"24 : pointype = scan.nextInt()" -> "32 : pointype == 1"
+"24 : pointype = scan.nextInt()" -> "55 : pointype = scan.nextInt()" [style=dashed]
+"26 : pointype != 1 && pointype != 2"
+"28 : System.out.println(\"Invalid input\", )"
+"29 : System.exit(1, )"
+"32 : pointype == 1"
+"34 : System.out.print(\"Enter x-coordinate: \", )"
+"35 : x = scan.nextDouble()"
+"35 : x = scan.nextDouble()" -> "40 : a = new CartesianPoint(x, y, )"
+"37 : System.out.print(\"Enter y-coordinate: \", )"
+"38 : y = scan.nextDouble()"
+"38 : y = scan.nextDouble()" -> "40 : a = new CartesianPoint(x, y, )"
+"40 : a = new CartesianPoint(x, y, )"
+"40 : a = new CartesianPoint(x, y, )" -> "85 : distance = Distance(a, b, )"
+"40 : a = new CartesianPoint(x, y, )" -> "89 : same = Quadrant(a, b, )"
+"40 : a = new CartesianPoint(x, y, )" -> "50 : a = new PolarPoint(radius, angle, )" [style=dashed]
+"42 : pointype == 2"
+"44 : System.out.print(\"Enter radius: \", )"
+"45 : radius = scan.nextDouble()"
+"45 : radius = scan.nextDouble()" -> "50 : a = new PolarPoint(radius, angle, )"
+"47 : System.out.print(\"Enter angle (in degrees): \", )"
+"48 : angle = scan.nextDouble()"
+"48 : angle = scan.nextDouble()" -> "50 : a = new PolarPoint(radius, angle, )"
+"50 : a = new PolarPoint(radius, angle, )"
+"50 : a = new PolarPoint(radius, angle, )" -> "85 : distance = Distance(a, b, )"
+"50 : a = new PolarPoint(radius, angle, )" -> "89 : same = Quadrant(a, b, )"
+"54 : System.out.print(\"Which type of point should be created(1 for Cartesian, 2 for Polar)? \", )"
+"55 : pointype = scan.nextInt()"
+"55 : pointype = scan.nextInt()" -> "74 : pointype == 2"
+"55 : pointype = scan.nextInt()" -> "57 : pointype != 1 && pointype != 2"
+"55 : pointype = scan.nextInt()" -> "63 : pointype == 1"
+"57 : pointype != 1 && pointype != 2"
+"59 : System.out.println(\"Invalid input\", )"
+"60 : System.exit(1, )"
+"63 : pointype == 1"
+"65 : System.out.print(\"Enter x-coordinate: \", )"
+"66 : x2 = scan.nextDouble()"
+"66 : x2 = scan.nextDouble()" -> "71 : b = new CartesianPoint(x2, y2, )"
+"68 : System.out.print(\"Enter y-coordinate: \", )"
+"69 : y2 = scan.nextDouble()"
+"69 : y2 = scan.nextDouble()" -> "71 : b = new CartesianPoint(x2, y2, )"
+"71 : b = new CartesianPoint(x2, y2, )"
+"71 : b = new CartesianPoint(x2, y2, )" -> "85 : distance = Distance(a, b, )"
+"71 : b = new CartesianPoint(x2, y2, )" -> "89 : same = Quadrant(a, b, )"
+"71 : b = new CartesianPoint(x2, y2, )" -> "82 : b = new PolarPoint(radius2, angle2, )" [style=dashed]
+"74 : pointype == 2"
+"76 : System.out.print(\"Enter radius: \", )"
+"77 : radius2 = scan.nextDouble()"
+"77 : radius2 = scan.nextDouble()" -> "82 : b = new PolarPoint(radius2, angle2, )"
+"79 : System.out.print(\"Enter angle (in degrees): \", )"
+"80 : angle2 = scan.nextDouble()"
+"80 : angle2 = scan.nextDouble()" -> "82 : b = new PolarPoint(radius2, angle2, )"
+"82 : b = new PolarPoint(radius2, angle2, )"
+"82 : b = new PolarPoint(radius2, angle2, )" -> "85 : distance = Distance(a, b, )"
+"82 : b = new PolarPoint(radius2, angle2, )" -> "89 : same = Quadrant(a, b, )"
+"85 : distance = Distance(a, b, )"
+"85 : distance = Distance(a, b, )" -> "87 : System.out.println(\"Distance between points: \" + distance, )"
+"87 : System.out.println(\"Distance between points: \" + distance, )"
+"89 : same = Quadrant(a, b, )"
+"89 : same = Quadrant(a, b, )" -> "94 : same == false"
+"89 : same = Quadrant(a, b, )" -> "90 : same == true"
+"90 : same == true"
+"92 : System.out.println(\"In same quadrant.\", )"
+"94 : same == false"
+"96 : System.out.println(\"Not in same quadrant.\", )"
+}

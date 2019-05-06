@@ -1,0 +1,835 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for thesis:thesis:jar:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.version' for org.junit.jupiter:junit-jupiter-api:jar is either LATEST or RELEASE (both of them are being deprecated) @ line 25, column 22
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building thesis 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default-cli) > validate @ thesis >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default-cli) < validate @ thesis <<<
+[INFO] 
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ thesis ---
+BLOCK: Startconstructor1L0
+this.theta : this.theta = 0, 
+this.rad : this.rad = 0, 
+
+BLOCK: BasicL1
+this.theta : this.theta = 0, 
+this.rad : this.rad = 1, 
+
+BLOCK: Startconstructor2L3
+this.theta : this.theta = 0, 
+this.rad : this.rad = 0, 
+
+BLOCK: BasicL4
+this.theta : this.theta = angle, 
+this.rad : this.rad = Math.abs(radius, ), 
+
+BLOCK: trueL6
+this.theta : this.theta = this.theta + 180, 
+this.rad : this.rad = Math.abs(radius, ), 
+
+BLOCK: joinL7
+this.theta : this.theta = this.theta + 180, this.theta = angle, 
+this.rad : this.rad = Math.abs(radius, ), 
+
+BLOCK: LoopL8
+this.theta : this.theta = this.theta - 360, 
+this.rad : this.rad = Math.abs(radius, ), 
+
+BLOCK: BasicL9
+this.theta : this.theta = this.theta + 180, this.theta = angle, this.theta = this.theta - 360, 
+this.rad : this.rad = Math.abs(radius, ), 
+
+BLOCK: LoopL10
+this.theta : this.theta = this.theta + 360, 
+this.rad : this.rad = Math.abs(radius, ), 
+
+BLOCK: BasicL11
+this.theta : this.theta = Math.toRadians(this.theta, ), 
+this.rad : this.rad = Math.abs(radius, ), 
+
+BLOCK: StartxCoordinateL12
+this.rad : this.rad = 0, 
+this.theta : this.theta = 0, 
+
+BLOCK: BasicL13
+this.rad : this.rad = 0, 
+this.theta : this.theta = 0, 
+
+BLOCK: StartyCoordinateL15
+this.theta : this.theta = 0, 
+this.rad : this.rad = 0, 
+
+BLOCK: BasicL16
+this.theta : this.theta = 0, 
+this.rad : this.rad = 0, 
+
+BLOCK: StartradiusL18
+this.theta : this.theta = 0, 
+this.rad : this.rad = 0, 
+
+BLOCK: BasicL19
+this.theta : this.theta = 0, 
+this.rad : this.rad = 0, 
+
+BLOCK: StartangleL21
+this.rad : this.rad = 0, 
+this.theta : this.theta = 0, 
+
+BLOCK: BasicL22
+this.rad : this.rad = 0, 
+this.theta : this.theta = 0, 
+
+BLOCK: Startrotate90L24
+this.theta : this.theta = 0, 
+this.rad : this.rad = 0, 
+
+BLOCK: BasicL25
+this.theta : this.theta = 0, 
+this.rad : this.rad = 0, 
+
+BLOCK: StartmainL27
+
+BLOCK: BasicL28
+pt1 : pt1 = getPoint(in, ), 
+pt2 : pt2 = getPoint(in, ), 
+in : in = new Scanner(System.in, ), 
+
+BLOCK: trueL30
+pt1 : pt1 = getPoint(in, ), 
+pt2 : pt2 = getPoint(in, ), 
+in : in = new Scanner(System.in, ), 
+
+BLOCK: falseL32
+pt1 : pt1 = getPoint(in, ), 
+pt2 : pt2 = getPoint(in, ), 
+in : in = new Scanner(System.in, ), 
+
+BLOCK: joinL31
+pt1 : pt1 = getPoint(in, ), 
+pt2 : pt2 = getPoint(in, ), 
+in : in = new Scanner(System.in, ), 
+
+BLOCK: StartgetPointL33
+
+BLOCK: BasicL34
+choice : choice = 0, 
+
+BLOCK: BasicL36
+choice : choice = in.nextInt(), 
+
+BLOCK: BasicL37
+choice : choice = in.nextInt(), 
+
+BLOCK: BasicL38
+choice : choice = in.nextInt(), 
+
+BLOCK: BasicL39
+choice : choice = in.nextInt(), 
+
+BLOCK: trueL40
+choice : choice = in.nextInt(), 
+
+BLOCK: falseL42
+choice : choice = in.nextInt(), 
+
+BLOCK: trueL43
+choice : choice = in.nextInt(), 
+
+BLOCK: falseL45
+choice : choice = in.nextInt(), 
+
+BLOCK: joinL44
+choice : choice = in.nextInt(), 
+
+BLOCK: joinL41
+choice : choice = in.nextInt(), 
+
+BLOCK: StartcartesianGeneratorL46
+
+BLOCK: BasicL47
+x : x = 0, 
+y : y = 0, 
+
+BLOCK: BasicL49
+x : x = in.nextDouble(), 
+
+BLOCK: BasicL50
+x : x = in.nextDouble(), 
+
+BLOCK: BasicL51
+x : x = in.nextDouble(), 
+
+BLOCK: BasicL52
+x : x = in.nextDouble(), 
+
+BLOCK: BasicL53
+y : y = in.nextDouble(), 
+
+BLOCK: BasicL54
+y : y = in.nextDouble(), 
+
+BLOCK: BasicL55
+y : y = in.nextDouble(), 
+
+BLOCK: BasicL56
+y : y = in.nextDouble(), 
+
+BLOCK: StartpolarGeneratorL57
+
+BLOCK: BasicL58
+angle : angle = 0, 
+radius : radius = 0, 
+
+BLOCK: BasicL60
+radius : radius = in.nextDouble(), 
+
+BLOCK: BasicL61
+radius : radius = in.nextDouble(), 
+
+BLOCK: BasicL62
+radius : radius = in.nextDouble(), 
+
+BLOCK: BasicL63
+radius : radius = in.nextDouble(), 
+
+BLOCK: BasicL64
+angle : angle = in.nextDouble(), 
+
+BLOCK: BasicL65
+angle : angle = in.nextDouble(), 
+
+BLOCK: BasicL66
+angle : angle = in.nextDouble(), 
+
+BLOCK: BasicL67
+angle : angle = in.nextDouble(), 
+
+BLOCK: StartpointDistanceL68
+
+BLOCK: BasicL69
+dy : dy = y1 - y2, 
+x2 : x2 = pt2.xCoordinate(), 
+dx : dx = x1 - x2, 
+y2 : y2 = pt2.yCoordinate(), 
+x1 : x1 = pt1.xCoordinate(), 
+y1 : y1 = pt1.yCoordinate(), 
+
+BLOCK: StartsameQuadrantL71
+
+BLOCK: BasicL72
+quad2 : quad2 = quadrant(pt2, ), 
+quad1 : quad1 = quadrant(pt1, ), 
+
+BLOCK: trueL74
+quad2 : quad2 = quadrant(pt2, ), 
+quad1 : quad1 = quadrant(pt1, ), 
+
+BLOCK: joinL75
+quad2 : quad2 = quadrant(pt2, ), 
+quad1 : quad1 = quadrant(pt1, ), 
+
+BLOCK: StartquadrantL76
+
+BLOCK: BasicL77
+angle : angle = pt.angle(), 
+quad : quad = 1, 
+
+BLOCK: LoopL79
+angle : angle = angle - 90, 
+quad : quad = quad + 1, 
+@temp1 : @temp1 = quad, 
+
+BLOCK: BasicL80
+angle : angle = pt.angle(), angle = angle - 90, 
+quad : quad = 1, quad = quad + 1, 
+@temp1 : @temp1 = quad, 
+
+BLOCK: StarttestXCoordL81
+
+BLOCK: BasicL82
+pt : pt = new PolarPoint(1.0, 0.0, ), 
+
+BLOCK: StarttestYCoordL84
+
+BLOCK: BasicL85
+pt : pt = new PolarPoint(1.0, 0.0, ), 
+
+BLOCK: StarttestRadiusL87
+
+BLOCK: BasicL88
+pt : pt = new PolarPoint(5.0, -90, ), 
+
+BLOCK: StarttestAngleL90
+
+BLOCK: BasicL91
+pt : pt = new CartesianPoint(0, 0, ), 
+
+BLOCK: StarttestRotate90L93
+
+BLOCK: BasicL94
+pt2 : pt2 = pt.rotate90(), 
+pt1 : pt1 = new PolarPoint(1, 90, ), 
+pt : pt = new PolarPoint(1, 0, ), 
+
+BLOCK: StartmainL96
+
+BLOCK: BasicL97
+
+BLOCK: Startconstructor1L99
+this.y : this.y = 0, 
+this.x : this.x = 0, 
+
+BLOCK: BasicL100
+this.y : this.y = 1, 
+this.x : this.x = 1, 
+
+BLOCK: Startconstructor2L102
+this.x : this.x = 0, 
+this.y : this.y = 0, 
+
+BLOCK: BasicL103
+this.x : this.x = x_coord, 
+this.y : this.y = y_coord, 
+
+BLOCK: StartxCoordinateL105
+this.x : this.x = 0, 
+this.y : this.y = 0, 
+
+BLOCK: BasicL106
+this.x : this.x = 0, 
+this.y : this.y = 0, 
+
+BLOCK: StartyCoordinateL108
+this.y : this.y = 0, 
+this.x : this.x = 0, 
+
+BLOCK: BasicL109
+this.y : this.y = 0, 
+this.x : this.x = 0, 
+
+BLOCK: StartradiusL111
+this.y : this.y = 0, 
+this.x : this.x = 0, 
+
+BLOCK: BasicL112
+this.y : this.y = 0, 
+this.x : this.x = 0, 
+
+BLOCK: StartangleL114
+this.x : this.x = 0, 
+this.y : this.y = 0, 
+
+BLOCK: BasicL115
+this.x : this.x = 0, 
+this.y : this.y = 0, 
+
+BLOCK: Startrotate90L117
+this.y : this.y = 0, 
+this.x : this.x = 0, 
+
+BLOCK: BasicL118
+this.y : this.y = 0, 
+this.x : this.x = 0, 
+
+BLOCK: StarttestXCoordL120
+
+BLOCK: BasicL121
+pt : pt = new CartesianPoint(9.0, 1.0, ), 
+
+BLOCK: StarttestYCoordL123
+
+BLOCK: BasicL124
+pt : pt = new CartesianPoint(1.0, 9.0, ), 
+
+BLOCK: StarttestRadiusL126
+
+BLOCK: BasicL127
+pt : pt = new CartesianPoint(3.0, 4.0, ), 
+
+BLOCK: StarttestAngleL129
+
+BLOCK: BasicL130
+pt : pt = new CartesianPoint(0, 0, ), 
+
+BLOCK: StarttestRotate90L132
+
+BLOCK: BasicL133
+pt1 : pt1 = new CartesianPoint(0, 1, ), 
+pt2 : pt2 = pt.rotate90(), 
+pt : pt = new CartesianPoint(1, 0, ), 
+
+BLOCK: StartmainL135
+
+BLOCK: BasicL136
+
+BLOCK: Startconstructor1L0
+this.theta : this.theta = 0, 
+this.rad : this.rad = 0, 
+
+BLOCK: Startconstructor1L0
+this.theta : this.theta = 0, 
+this.rad : this.rad = 0, 
+
+BLOCK: BasicL1
+this.theta : this.theta = 0, 
+this.rad : this.rad = 1, 
+
+BLOCK: Startconstructor2L3
+this.theta : this.theta = 0, 
+this.rad : this.rad = 0, 
+
+BLOCK: Startconstructor2L3
+this.theta : this.theta = 0, 
+this.rad : this.rad = 0, 
+
+BLOCK: BasicL4
+this.theta : this.theta = angle, 
+this.rad : this.rad = Math.abs(radius, ), 
+
+BLOCK: trueL6
+this.theta : this.theta = this.theta + 180, 
+this.rad : this.rad = Math.abs(radius, ), 
+
+BLOCK: joinL7
+this.theta : this.theta = this.theta + 180, this.theta = angle, 
+this.rad : this.rad = Math.abs(radius, ), 
+
+BLOCK: LoopL8
+this.theta : this.theta = this.theta - 360, 
+this.rad : this.rad = Math.abs(radius, ), 
+
+BLOCK: BasicL9
+this.theta : this.theta = this.theta + 180, this.theta = angle, this.theta = this.theta - 360, 
+this.rad : this.rad = Math.abs(radius, ), 
+
+BLOCK: LoopL10
+this.theta : this.theta = this.theta + 360, 
+this.rad : this.rad = Math.abs(radius, ), 
+
+BLOCK: BasicL11
+this.theta : this.theta = Math.toRadians(this.theta, ), 
+this.rad : this.rad = Math.abs(radius, ), 
+
+BLOCK: StartxCoordinateL12
+this.rad : this.rad = 0, 
+this.theta : this.theta = 0, 
+
+BLOCK: StartxCoordinateL12
+this.rad : this.rad = 0, 
+this.theta : this.theta = 0, 
+
+BLOCK: BasicL13
+this.rad : this.rad = 0, 
+this.theta : this.theta = 0, 
+
+BLOCK: StartyCoordinateL15
+this.theta : this.theta = 0, 
+this.rad : this.rad = 0, 
+
+BLOCK: StartyCoordinateL15
+this.theta : this.theta = 0, 
+this.rad : this.rad = 0, 
+
+BLOCK: BasicL16
+this.theta : this.theta = 0, 
+this.rad : this.rad = 0, 
+
+BLOCK: StartradiusL18
+this.theta : this.theta = 0, 
+this.rad : this.rad = 0, 
+
+BLOCK: StartradiusL18
+this.theta : this.theta = 0, 
+this.rad : this.rad = 0, 
+
+BLOCK: BasicL19
+this.theta : this.theta = 0, 
+this.rad : this.rad = 0, 
+
+BLOCK: StartangleL21
+this.rad : this.rad = 0, 
+this.theta : this.theta = 0, 
+
+BLOCK: StartangleL21
+this.rad : this.rad = 0, 
+this.theta : this.theta = 0, 
+
+BLOCK: BasicL22
+this.rad : this.rad = 0, 
+this.theta : this.theta = 0, 
+
+BLOCK: Startrotate90L24
+this.theta : this.theta = 0, 
+this.rad : this.rad = 0, 
+
+BLOCK: Startrotate90L24
+this.theta : this.theta = 0, 
+this.rad : this.rad = 0, 
+
+BLOCK: BasicL25
+this.theta : this.theta = 0, 
+this.rad : this.rad = 0, 
+
+BLOCK: StartmainL27
+
+BLOCK: StartmainL27
+
+BLOCK: BasicL28
+pt1 : pt1 = getPoint(in, ), 
+pt2 : pt2 = getPoint(in, ), 
+in : in = new Scanner(System.in, ), 
+
+BLOCK: trueL30
+pt1 : pt1 = getPoint(in, ), 
+pt2 : pt2 = getPoint(in, ), 
+in : in = new Scanner(System.in, ), 
+
+BLOCK: falseL32
+pt1 : pt1 = getPoint(in, ), 
+pt2 : pt2 = getPoint(in, ), 
+in : in = new Scanner(System.in, ), 
+
+BLOCK: joinL31
+pt1 : pt1 = getPoint(in, ), 
+pt2 : pt2 = getPoint(in, ), 
+in : in = new Scanner(System.in, ), 
+
+BLOCK: StartgetPointL33
+
+BLOCK: StartgetPointL33
+
+BLOCK: BasicL34
+choice : choice = 0, 
+
+BLOCK: BasicL36
+choice : choice = in.nextInt(), 
+
+BLOCK: BasicL37
+choice : choice = in.nextInt(), 
+
+BLOCK: BasicL38
+choice : choice = in.nextInt(), 
+
+BLOCK: BasicL39
+choice : choice = in.nextInt(), 
+
+BLOCK: trueL40
+choice : choice = in.nextInt(), 
+
+BLOCK: falseL42
+choice : choice = in.nextInt(), 
+
+BLOCK: trueL43
+choice : choice = in.nextInt(), 
+
+BLOCK: falseL45
+choice : choice = in.nextInt(), 
+
+BLOCK: joinL44
+choice : choice = in.nextInt(), 
+
+BLOCK: joinL41
+choice : choice = in.nextInt(), 
+
+BLOCK: StartcartesianGeneratorL46
+
+BLOCK: StartcartesianGeneratorL46
+
+BLOCK: BasicL47
+x : x = 0, 
+y : y = 0, 
+
+BLOCK: BasicL49
+x : x = in.nextDouble(), 
+
+BLOCK: BasicL50
+x : x = in.nextDouble(), 
+
+BLOCK: BasicL51
+x : x = in.nextDouble(), 
+
+BLOCK: BasicL52
+x : x = in.nextDouble(), 
+
+BLOCK: BasicL53
+y : y = in.nextDouble(), 
+
+BLOCK: BasicL54
+y : y = in.nextDouble(), 
+
+BLOCK: BasicL55
+y : y = in.nextDouble(), 
+
+BLOCK: BasicL56
+y : y = in.nextDouble(), 
+
+BLOCK: StartpolarGeneratorL57
+
+BLOCK: StartpolarGeneratorL57
+
+BLOCK: BasicL58
+angle : angle = 0, 
+radius : radius = 0, 
+
+BLOCK: BasicL60
+radius : radius = in.nextDouble(), 
+
+BLOCK: BasicL61
+radius : radius = in.nextDouble(), 
+
+BLOCK: BasicL62
+radius : radius = in.nextDouble(), 
+
+BLOCK: BasicL63
+radius : radius = in.nextDouble(), 
+
+BLOCK: BasicL64
+angle : angle = in.nextDouble(), 
+
+BLOCK: BasicL65
+angle : angle = in.nextDouble(), 
+
+BLOCK: BasicL66
+angle : angle = in.nextDouble(), 
+
+BLOCK: BasicL67
+angle : angle = in.nextDouble(), 
+
+BLOCK: StartpointDistanceL68
+
+BLOCK: StartpointDistanceL68
+
+BLOCK: BasicL69
+dy : dy = y1 - y2, 
+x2 : x2 = pt2.xCoordinate(), 
+dx : dx = x1 - x2, 
+y2 : y2 = pt2.yCoordinate(), 
+x1 : x1 = pt1.xCoordinate(), 
+y1 : y1 = pt1.yCoordinate(), 
+
+BLOCK: StartsameQuadrantL71
+
+BLOCK: StartsameQuadrantL71
+
+BLOCK: BasicL72
+quad2 : quad2 = quadrant(pt2, ), 
+quad1 : quad1 = quadrant(pt1, ), 
+
+BLOCK: trueL74
+quad2 : quad2 = quadrant(pt2, ), 
+quad1 : quad1 = quadrant(pt1, ), 
+
+BLOCK: joinL75
+quad2 : quad2 = quadrant(pt2, ), 
+quad1 : quad1 = quadrant(pt1, ), 
+
+BLOCK: StartquadrantL76
+
+BLOCK: StartquadrantL76
+
+BLOCK: BasicL77
+angle : angle = pt.angle(), 
+quad : quad = 1, 
+
+BLOCK: LoopL79
+angle : angle = angle - 90, 
+quad : quad = quad + 1, 
+@temp1 : @temp1 = quad, 
+
+BLOCK: BasicL80
+angle : angle = pt.angle(), angle = angle - 90, 
+quad : quad = 1, quad = quad + 1, 
+@temp1 : @temp1 = quad, 
+
+BLOCK: StarttestXCoordL81
+
+BLOCK: StarttestXCoordL81
+
+BLOCK: BasicL82
+pt : pt = new PolarPoint(1.0, 0.0, ), 
+
+BLOCK: StarttestYCoordL84
+
+BLOCK: StarttestYCoordL84
+
+BLOCK: BasicL85
+pt : pt = new PolarPoint(1.0, 0.0, ), 
+
+BLOCK: StarttestRadiusL87
+
+BLOCK: StarttestRadiusL87
+
+BLOCK: BasicL88
+pt : pt = new PolarPoint(5.0, -90, ), 
+
+BLOCK: StarttestAngleL90
+
+BLOCK: StarttestAngleL90
+
+BLOCK: BasicL91
+pt : pt = new CartesianPoint(0, 0, ), 
+
+BLOCK: StarttestRotate90L93
+
+BLOCK: StarttestRotate90L93
+
+BLOCK: BasicL94
+pt2 : pt2 = pt.rotate90(), 
+pt1 : pt1 = new PolarPoint(1, 90, ), 
+pt : pt = new PolarPoint(1, 0, ), 
+
+BLOCK: StartmainL96
+
+BLOCK: StartmainL96
+
+BLOCK: BasicL97
+
+BLOCK: Startconstructor1L99
+this.y : this.y = 0, 
+this.x : this.x = 0, 
+
+BLOCK: Startconstructor1L99
+this.y : this.y = 0, 
+this.x : this.x = 0, 
+
+BLOCK: BasicL100
+this.y : this.y = 1, 
+this.x : this.x = 1, 
+
+BLOCK: Startconstructor2L102
+this.x : this.x = 0, 
+this.y : this.y = 0, 
+
+BLOCK: Startconstructor2L102
+this.x : this.x = 0, 
+this.y : this.y = 0, 
+
+BLOCK: BasicL103
+this.x : this.x = x_coord, 
+this.y : this.y = y_coord, 
+
+BLOCK: StartxCoordinateL105
+this.x : this.x = 0, 
+this.y : this.y = 0, 
+
+BLOCK: StartxCoordinateL105
+this.x : this.x = 0, 
+this.y : this.y = 0, 
+
+BLOCK: BasicL106
+this.x : this.x = 0, 
+this.y : this.y = 0, 
+
+BLOCK: StartyCoordinateL108
+this.y : this.y = 0, 
+this.x : this.x = 0, 
+
+BLOCK: StartyCoordinateL108
+this.y : this.y = 0, 
+this.x : this.x = 0, 
+
+BLOCK: BasicL109
+this.y : this.y = 0, 
+this.x : this.x = 0, 
+
+BLOCK: StartradiusL111
+this.y : this.y = 0, 
+this.x : this.x = 0, 
+
+BLOCK: StartradiusL111
+this.y : this.y = 0, 
+this.x : this.x = 0, 
+
+BLOCK: BasicL112
+this.y : this.y = 0, 
+this.x : this.x = 0, 
+
+BLOCK: StartangleL114
+this.x : this.x = 0, 
+this.y : this.y = 0, 
+
+BLOCK: StartangleL114
+this.x : this.x = 0, 
+this.y : this.y = 0, 
+
+BLOCK: BasicL115
+this.x : this.x = 0, 
+this.y : this.y = 0, 
+
+BLOCK: Startrotate90L117
+this.y : this.y = 0, 
+this.x : this.x = 0, 
+
+BLOCK: Startrotate90L117
+this.y : this.y = 0, 
+this.x : this.x = 0, 
+
+BLOCK: BasicL118
+this.y : this.y = 0, 
+this.x : this.x = 0, 
+
+BLOCK: StarttestXCoordL120
+
+BLOCK: StarttestXCoordL120
+
+BLOCK: BasicL121
+pt : pt = new CartesianPoint(9.0, 1.0, ), 
+
+BLOCK: StarttestYCoordL123
+
+BLOCK: StarttestYCoordL123
+
+BLOCK: BasicL124
+pt : pt = new CartesianPoint(1.0, 9.0, ), 
+
+BLOCK: StarttestRadiusL126
+
+BLOCK: StarttestRadiusL126
+
+BLOCK: BasicL127
+pt : pt = new CartesianPoint(3.0, 4.0, ), 
+
+BLOCK: StarttestAngleL129
+
+BLOCK: StarttestAngleL129
+
+BLOCK: BasicL130
+pt : pt = new CartesianPoint(0, 0, ), 
+
+BLOCK: StarttestRotate90L132
+
+BLOCK: StarttestRotate90L132
+
+BLOCK: BasicL133
+pt1 : pt1 = new CartesianPoint(0, 1, ), 
+pt2 : pt2 = pt.rotate90(), 
+pt : pt = new CartesianPoint(1, 0, ), 
+
+BLOCK: StartmainL135
+
+BLOCK: StartmainL135
+
+BLOCK: BasicL136
+
+Unfiltered: 0
+Filtered: 0
+
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.216 s
+[INFO] Finished at: 2019-05-01T17:13:27-07:00
+[INFO] Final Memory: 22M/1217M
+[INFO] ------------------------------------------------------------------------

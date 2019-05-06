@@ -1,0 +1,9 @@
+digraph G {
+"4 : this.r = 0.0"
+"4 : this.r = 0.0" -> "20 : this.r < 0.0"
+"4 : this.a = 0.0"
+"4 : this.a = 0.0" -> "22 : this.a = this.a + 180.0"
+"4 : this.a = 0.0" -> "22 : this.a = this.a + 180.0" [style=dashed]
+"20 : this.r < 0.0"
+"22 : this.a = this.a + 180.0"
+}

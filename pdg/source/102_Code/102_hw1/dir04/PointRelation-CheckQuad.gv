@@ -1,0 +1,14 @@
+digraph G {
+"28 : same = false"
+"30 : pt1Xpos = pt1.xCoordinate() > 0 || pt1.xCoordinate() == 0 && pt1.yCoordinate() < 0"
+"30 : pt1Xpos = pt1.xCoordinate() > 0 || pt1.xCoordinate() == 0 && pt1.yCoordinate() < 0" -> "35 : pt1Xpos == pt2Xpos && pt1Ypos == pt2Ypos"
+"31 : pt1Ypos = pt1.yCoordinate() > 0 || pt1.yCoordinate() == 0 && pt1.xCoordinate() > 0"
+"31 : pt1Ypos = pt1.yCoordinate() > 0 || pt1.yCoordinate() == 0 && pt1.xCoordinate() > 0" -> "35 : pt1Xpos == pt2Xpos && pt1Ypos == pt2Ypos"
+"32 : pt2Xpos = pt2.xCoordinate() > 0 || pt2.xCoordinate() == 0 && pt2.yCoordinate() < 0"
+"32 : pt2Xpos = pt2.xCoordinate() > 0 || pt2.xCoordinate() == 0 && pt2.yCoordinate() < 0" -> "35 : pt1Xpos == pt2Xpos && pt1Ypos == pt2Ypos"
+"33 : pt2Ypos = pt2.yCoordinate() > 0 || pt2.yCoordinate() == 0 && pt2.xCoordinate() > 0"
+"33 : pt2Ypos = pt2.yCoordinate() > 0 || pt2.yCoordinate() == 0 && pt2.xCoordinate() > 0" -> "35 : pt1Xpos == pt2Xpos && pt1Ypos == pt2Ypos"
+"35 : pt1Xpos == pt2Xpos && pt1Ypos == pt2Ypos"
+"37 : true"
+"41 : false"
+}

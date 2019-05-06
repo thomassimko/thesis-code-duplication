@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.rad = 0"
+"4 : this.rad = 0" -> "37 : this.rad * Math.cos(this.theta, )"
+"5 : this.theta = 0"
+"5 : this.theta = 0" -> "37 : this.rad * Math.cos(this.theta, )"
+"37 : this.rad * Math.cos(this.theta, )"
+}

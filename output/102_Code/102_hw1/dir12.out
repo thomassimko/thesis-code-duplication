@@ -1,0 +1,2045 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for thesis:thesis:jar:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.version' for org.junit.jupiter:junit-jupiter-api:jar is either LATEST or RELEASE (both of them are being deprecated) @ line 25, column 22
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building thesis 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default-cli) > validate @ thesis >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default-cli) < validate @ thesis <<<
+[INFO] 
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ thesis ---
+BLOCK: Startconstructor1L0
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL1
+this.radius : this.radius = 0, 
+this.angle : this.angle = 0, 
+
+BLOCK: Startconstructor2L3
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: BasicL4
+this.angle : this.angle = angle, 
+this.radius : this.radius = radius, 
+
+BLOCK: trueL6
+this.angle : this.angle = this.angle - 180.0, 
+this.radius : this.radius = this.radius * 1, 
+
+BLOCK: joinL7
+this.angle : this.angle = angle, this.angle = this.angle - 180.0, 
+this.radius : this.radius = this.radius * 1, this.radius = radius, 
+
+BLOCK: trueL8
+this.angle : this.angle = this.angle + 360, 
+this.radius : this.radius = this.radius * 1, this.radius = radius, 
+
+BLOCK: joinL9
+this.angle : this.angle = this.angle + 360, this.angle = angle, this.angle = this.angle - 180.0, 
+this.radius : this.radius = this.radius * 1, this.radius = radius, 
+
+BLOCK: StartxCoordinateL10
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: BasicL11
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: StartyCoordinateL13
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL14
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartradiusL16
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL17
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartangleL19
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: BasicL20
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: Startrotate90L22
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: BasicL23
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: StartdistanceL25
+
+BLOCK: BasicL26
+
+BLOCK: StartquadrantL28
+
+BLOCK: BasicL29
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, 
+p1_y : p1_y = false, 
+p1_x : p1_x = false, 
+p2_quad : p2_quad = 0, 
+p2_y : p2_y = false, 
+
+BLOCK: trueL31
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, 
+p1_y : p1_y = false, 
+p1_x : p1_x = true, 
+p2_quad : p2_quad = 0, 
+p2_y : p2_y = false, 
+
+BLOCK: falseL33
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, 
+p1_y : p1_y = false, 
+p1_x : p1_x = false, 
+p2_quad : p2_quad = 0, 
+p2_y : p2_y = false, 
+
+BLOCK: joinL32
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, 
+p1_y : p1_y = false, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 0, 
+p2_y : p2_y = false, 
+
+BLOCK: trueL34
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, 
+p1_y : p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 0, 
+p2_y : p2_y = false, 
+
+BLOCK: falseL36
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, 
+p1_y : p1_y = false, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 0, 
+p2_y : p2_y = false, 
+
+BLOCK: joinL35
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 0, 
+p2_y : p2_y = false, 
+
+BLOCK: trueL37
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 0, 
+p2_y : p2_y = false, 
+
+BLOCK: falseL39
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 0, 
+p2_y : p2_y = false, 
+
+BLOCK: joinL38
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 0, 
+p2_y : p2_y = false, 
+
+BLOCK: trueL40
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: falseL42
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: joinL41
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: trueL43
+p1_quad : p1_quad = 1, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: falseL45
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: trueL46
+p1_quad : p1_quad = 2, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: falseL48
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: trueL49
+p1_quad : p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: falseL51
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: trueL52
+p1_quad : p1_quad = 4, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: falseL54
+p1_quad : p1_quad = 1, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: joinL53
+p1_quad : p1_quad = 4, p1_quad = 1, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: joinL50
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: joinL47
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: joinL44
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: trueL55
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 1, 
+p2_y : p2_y = true, p2_y = false, 
+
+BLOCK: falseL57
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: trueL58
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 2, 
+p2_y : p2_y = true, p2_y = false, 
+
+BLOCK: falseL60
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: trueL61
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 3, 
+p2_y : p2_y = true, p2_y = false, 
+
+BLOCK: falseL63
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: trueL64
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 4, 
+p2_y : p2_y = true, p2_y = false, 
+
+BLOCK: falseL66
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 1, 
+p2_y : p2_y = true, p2_y = false, 
+
+BLOCK: joinL65
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 4, p2_quad = 1, 
+p2_y : p2_y = true, p2_y = false, 
+
+BLOCK: joinL62
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 4, p2_quad = 1, p2_quad = 3, 
+p2_y : p2_y = true, p2_y = false, 
+
+BLOCK: joinL59
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 2, p2_quad = 4, p2_quad = 1, p2_quad = 3, 
+p2_y : p2_y = true, p2_y = false, 
+
+BLOCK: joinL56
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 2, p2_quad = 4, p2_quad = 1, p2_quad = 1, p2_quad = 3, 
+p2_y : p2_y = true, p2_y = false, 
+
+BLOCK: trueL67
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 2, p2_quad = 4, p2_quad = 1, p2_quad = 1, p2_quad = 3, 
+p2_y : p2_y = true, p2_y = false, 
+
+BLOCK: falseL69
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 2, p2_quad = 4, p2_quad = 1, p2_quad = 1, p2_quad = 3, 
+p2_y : p2_y = true, p2_y = false, 
+
+BLOCK: joinL68
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 2, p2_quad = 4, p2_quad = 1, p2_quad = 1, p2_quad = 3, 
+p2_y : p2_y = true, p2_y = false, 
+
+BLOCK: StartmainL70
+
+BLOCK: BasicL71
+p2_x : p2_x = 0, 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = 0, 
+quad : quad = false, 
+p1_y : p1_y = 0, 
+dist : dist = 0, 
+p1 : p1 = new CartesianPoint(0, 0, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = 0, 
+
+BLOCK: trueL73
+p2_x : p2_x = 0, 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = 0, 
+p1_y : p1_y = user_input.nextDouble(), 
+quad : quad = false, 
+dist : dist = 0, 
+p1 : p1 = new CartesianPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: trueL75
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new CartesianPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new CartesianPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: trueL77
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new CartesianPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new CartesianPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: falseL79
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new CartesianPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new CartesianPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: joinL78
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new CartesianPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new CartesianPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: falseL80
+p2_x : p2_x = 0, 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = 0, 
+p1_y : p1_y = user_input.nextDouble(), 
+quad : quad = false, 
+dist : dist = 0, 
+p1 : p1 = new CartesianPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: trueL81
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new CartesianPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: trueL83
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new CartesianPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: falseL85
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new CartesianPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: joinL84
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new CartesianPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: falseL86
+p2_x : p2_x = 0, 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = 0, 
+p1_y : p1_y = user_input.nextDouble(), 
+quad : quad = false, 
+dist : dist = 0, 
+p1 : p1 = new CartesianPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: joinL82
+p2_x : p2_x = user_input.nextDouble(), p2_x = 0, 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), p2_y = 0, 
+quad : quad = false, quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), dist = 0, 
+p1 : p1 = new CartesianPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(p2_x, p2_y, ), p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: joinL76
+p2_x : p2_x = user_input.nextDouble(), p2_x = 0, p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), p2_y = user_input.nextDouble(), p2_y = 0, 
+quad : quad = quadrant(p1, p2, ), quad = false, quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), dist = distance(p1, p2, ), dist = 0, 
+p1 : p1 = new CartesianPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new CartesianPoint(p2_x, p2_y, ), p2 = new PolarPoint(p2_x, p2_y, ), p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: falseL87
+p2_x : p2_x = 0, 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = 0, 
+quad : quad = false, 
+p1_y : p1_y = 0, 
+dist : dist = 0, 
+p1 : p1 = new CartesianPoint(0, 0, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = 0, 
+
+BLOCK: trueL88
+p2_x : p2_x = 0, 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = 0, 
+p1_y : p1_y = user_input.nextDouble(), 
+quad : quad = false, 
+dist : dist = 0, 
+p1 : p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: trueL90
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new CartesianPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: trueL92
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new CartesianPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: falseL94
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new CartesianPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: joinL93
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new CartesianPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: falseL95
+p2_x : p2_x = 0, 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = 0, 
+p1_y : p1_y = user_input.nextDouble(), 
+quad : quad = false, 
+dist : dist = 0, 
+p1 : p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: trueL96
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: trueL98
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: falseL100
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: joinL99
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: falseL101
+p2_x : p2_x = 0, 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = 0, 
+p1_y : p1_y = user_input.nextDouble(), 
+quad : quad = false, 
+dist : dist = 0, 
+p1 : p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: joinL97
+p2_x : p2_x = 0, p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = 0, p2_y = user_input.nextDouble(), 
+quad : quad = false, quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = 0, dist = distance(p1, p2, ), 
+p1 : p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(p2_x, p2_y, ), p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: joinL91
+p2_x : p2_x = user_input.nextDouble(), p2_x = 0, p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = 0, p2_y = user_input.nextDouble(), p2_y = user_input.nextDouble(), 
+quad : quad = false, quad = quadrant(p1, p2, ), quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), dist = 0, dist = distance(p1, p2, ), 
+p1 : p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new CartesianPoint(p2_x, p2_y, ), p2 = new PolarPoint(p2_x, p2_y, ), p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: falseL102
+p2_x : p2_x = 0, 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = 0, 
+quad : quad = false, 
+p1_y : p1_y = 0, 
+dist : dist = 0, 
+p1 : p1 = new CartesianPoint(0, 0, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = 0, 
+
+BLOCK: joinL89
+p2_x : p2_x = user_input.nextDouble(), p2_x = 0, p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = 0, p2_y = user_input.nextDouble(), p2_y = user_input.nextDouble(), 
+quad : quad = false, quad = quadrant(p1, p2, ), quad = quadrant(p1, p2, ), 
+p1_y : p1_y = 0, p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), dist = 0, dist = distance(p1, p2, ), 
+p1 : p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), point_type = user_input.nextInt(), 
+p2 : p2 = new CartesianPoint(p2_x, p2_y, ), p2 = new PolarPoint(p2_x, p2_y, ), p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = 0, p1_x = user_input.nextDouble(), 
+
+BLOCK: joinL74
+p2_x : p2_x = user_input.nextDouble(), p2_x = 0, p2_x = user_input.nextDouble(), p2_x = user_input.nextDouble(), p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), p2_y = user_input.nextDouble(), p2_y = 0, p2_y = user_input.nextDouble(), p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), quad = false, quad = quadrant(p1, p2, ), quad = quadrant(p1, p2, ), quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), p1_y = 0, p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), dist = distance(p1, p2, ), dist = 0, dist = distance(p1, p2, ), dist = distance(p1, p2, ), 
+p1 : p1 = new CartesianPoint(0, 0, ), p1 = new CartesianPoint(p1_x, p1_y, ), p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), point_type = user_input.nextInt(), point_type = user_input.nextInt(), 
+p2 : p2 = new CartesianPoint(p2_x, p2_y, ), p2 = new CartesianPoint(p2_x, p2_y, ), p2 = new PolarPoint(p2_x, p2_y, ), p2 = new PolarPoint(p2_x, p2_y, ), p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = 0, p1_x = user_input.nextDouble(), p1_x = user_input.nextDouble(), 
+
+BLOCK: StartmainL103
+
+BLOCK: BasicL104
+p1 : p1 = new PolarPoint(0, 0, ), 
+p4 : p4 = new PolarPoint(5.0, -302.67517, ), 
+p2r : p2r = p2.rotate90(), 
+p3 : p3 = new PolarPoint(-5.0, 237.32484, ), 
+p2 : p2 = new PolarPoint(5.0, 53.130104, ), 
+p1r : p1r = p1.rotate90(), 
+
+BLOCK: Startconstructor1L106
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: BasicL107
+this.y_coord : this.y_coord = 0, 
+this.x_coord : this.x_coord = 0, 
+
+BLOCK: Startconstructor2L109
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: BasicL110
+this.y_coord : this.y_coord = y_coord, 
+this.x_coord : this.x_coord = x_coord, 
+
+BLOCK: StartxCoordinateL112
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: BasicL113
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: StartyCoordinateL115
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: BasicL116
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: StartradiusL118
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: BasicL119
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: StartangleL121
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: BasicL122
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: Startrotate90L124
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: BasicL125
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: trueL127
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: falseL129
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: trueL130
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: falseL132
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: trueL133
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: falseL135
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: trueL136
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: falseL138
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: joinL137
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: joinL134
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: joinL131
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: joinL128
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: StartmainL139
+
+BLOCK: BasicL140
+test2 : test2 = new CartesianPoint(3, 4, ), 
+test2r : test2r = test2.rotate90(), 
+test1 : test1 = new CartesianPoint(0, 0, ), 
+test1r : test1r = test1.rotate90(), 
+
+BLOCK: Startconstructor1L0
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: Startconstructor1L0
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL1
+this.radius : this.radius = 0, 
+this.angle : this.angle = 0, 
+
+BLOCK: Startconstructor2L3
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: Startconstructor2L3
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: BasicL4
+this.angle : this.angle = angle, 
+this.radius : this.radius = radius, 
+
+BLOCK: trueL6
+this.angle : this.angle = this.angle - 180.0, 
+this.radius : this.radius = this.radius * 1, 
+
+BLOCK: joinL7
+this.angle : this.angle = angle, this.angle = this.angle - 180.0, 
+this.radius : this.radius = this.radius * 1, this.radius = radius, 
+
+BLOCK: trueL8
+this.angle : this.angle = this.angle + 360, 
+this.radius : this.radius = this.radius * 1, this.radius = radius, 
+
+BLOCK: joinL9
+this.angle : this.angle = this.angle + 360, this.angle = angle, this.angle = this.angle - 180.0, 
+this.radius : this.radius = this.radius * 1, this.radius = radius, 
+
+BLOCK: StartxCoordinateL10
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: StartxCoordinateL10
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: BasicL11
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: StartyCoordinateL13
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartyCoordinateL13
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL14
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartradiusL16
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartradiusL16
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL17
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartangleL19
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: StartangleL19
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: BasicL20
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: Startrotate90L22
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: Startrotate90L22
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: BasicL23
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: StartdistanceL25
+
+BLOCK: StartdistanceL25
+
+BLOCK: BasicL26
+
+BLOCK: StartquadrantL28
+
+BLOCK: StartquadrantL28
+
+BLOCK: BasicL29
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, 
+p1_y : p1_y = false, 
+p1_x : p1_x = false, 
+p2_quad : p2_quad = 0, 
+p2_y : p2_y = false, 
+
+BLOCK: trueL31
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, 
+p1_y : p1_y = false, 
+p1_x : p1_x = true, 
+p2_quad : p2_quad = 0, 
+p2_y : p2_y = false, 
+
+BLOCK: falseL33
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, 
+p1_y : p1_y = false, 
+p1_x : p1_x = false, 
+p2_quad : p2_quad = 0, 
+p2_y : p2_y = false, 
+
+BLOCK: joinL32
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, 
+p1_y : p1_y = false, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 0, 
+p2_y : p2_y = false, 
+
+BLOCK: trueL34
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, 
+p1_y : p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 0, 
+p2_y : p2_y = false, 
+
+BLOCK: falseL36
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, 
+p1_y : p1_y = false, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 0, 
+p2_y : p2_y = false, 
+
+BLOCK: joinL35
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 0, 
+p2_y : p2_y = false, 
+
+BLOCK: trueL37
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 0, 
+p2_y : p2_y = false, 
+
+BLOCK: falseL39
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 0, 
+p2_y : p2_y = false, 
+
+BLOCK: joinL38
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 0, 
+p2_y : p2_y = false, 
+
+BLOCK: trueL40
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: falseL42
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: joinL41
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: trueL43
+p1_quad : p1_quad = 1, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: falseL45
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: trueL46
+p1_quad : p1_quad = 2, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: falseL48
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: trueL49
+p1_quad : p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: falseL51
+p1_quad : p1_quad = 0, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: trueL52
+p1_quad : p1_quad = 4, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: falseL54
+p1_quad : p1_quad = 1, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: joinL53
+p1_quad : p1_quad = 4, p1_quad = 1, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: joinL50
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: joinL47
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: joinL44
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: trueL55
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 1, 
+p2_y : p2_y = true, p2_y = false, 
+
+BLOCK: falseL57
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: trueL58
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 2, 
+p2_y : p2_y = true, p2_y = false, 
+
+BLOCK: falseL60
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: trueL61
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 3, 
+p2_y : p2_y = true, p2_y = false, 
+
+BLOCK: falseL63
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_y : p2_y = true, p2_y = false, 
+p2_quad : p2_quad = 0, 
+
+BLOCK: trueL64
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 4, 
+p2_y : p2_y = true, p2_y = false, 
+
+BLOCK: falseL66
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 1, 
+p2_y : p2_y = true, p2_y = false, 
+
+BLOCK: joinL65
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 4, p2_quad = 1, 
+p2_y : p2_y = true, p2_y = false, 
+
+BLOCK: joinL62
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 4, p2_quad = 1, p2_quad = 3, 
+p2_y : p2_y = true, p2_y = false, 
+
+BLOCK: joinL59
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 2, p2_quad = 4, p2_quad = 1, p2_quad = 3, 
+p2_y : p2_y = true, p2_y = false, 
+
+BLOCK: joinL56
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 2, p2_quad = 4, p2_quad = 1, p2_quad = 1, p2_quad = 3, 
+p2_y : p2_y = true, p2_y = false, 
+
+BLOCK: trueL67
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 2, p2_quad = 4, p2_quad = 1, p2_quad = 1, p2_quad = 3, 
+p2_y : p2_y = true, p2_y = false, 
+
+BLOCK: falseL69
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 2, p2_quad = 4, p2_quad = 1, p2_quad = 1, p2_quad = 3, 
+p2_y : p2_y = true, p2_y = false, 
+
+BLOCK: joinL68
+p1_quad : p1_quad = 4, p1_quad = 1, p1_quad = 1, p1_quad = 2, p1_quad = 3, 
+p2_x : p2_x = false, p2_x = true, 
+p1_y : p1_y = false, p1_y = true, 
+p1_x : p1_x = false, p1_x = true, 
+p2_quad : p2_quad = 2, p2_quad = 4, p2_quad = 1, p2_quad = 1, p2_quad = 3, 
+p2_y : p2_y = true, p2_y = false, 
+
+BLOCK: StartmainL70
+
+BLOCK: StartmainL70
+
+BLOCK: BasicL71
+p2_x : p2_x = 0, 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = 0, 
+quad : quad = false, 
+p1_y : p1_y = 0, 
+dist : dist = 0, 
+p1 : p1 = new CartesianPoint(0, 0, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = 0, 
+
+BLOCK: trueL73
+p2_x : p2_x = 0, 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = 0, 
+p1_y : p1_y = user_input.nextDouble(), 
+quad : quad = false, 
+dist : dist = 0, 
+p1 : p1 = new CartesianPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: trueL75
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new CartesianPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new CartesianPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: trueL77
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new CartesianPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new CartesianPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: falseL79
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new CartesianPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new CartesianPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: joinL78
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new CartesianPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new CartesianPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: falseL80
+p2_x : p2_x = 0, 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = 0, 
+p1_y : p1_y = user_input.nextDouble(), 
+quad : quad = false, 
+dist : dist = 0, 
+p1 : p1 = new CartesianPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: trueL81
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new CartesianPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: trueL83
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new CartesianPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: falseL85
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new CartesianPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: joinL84
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new CartesianPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: falseL86
+p2_x : p2_x = 0, 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = 0, 
+p1_y : p1_y = user_input.nextDouble(), 
+quad : quad = false, 
+dist : dist = 0, 
+p1 : p1 = new CartesianPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: joinL82
+p2_x : p2_x = user_input.nextDouble(), p2_x = 0, 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), p2_y = 0, 
+quad : quad = false, quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), dist = 0, 
+p1 : p1 = new CartesianPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(p2_x, p2_y, ), p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: joinL76
+p2_x : p2_x = user_input.nextDouble(), p2_x = 0, p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), p2_y = user_input.nextDouble(), p2_y = 0, 
+quad : quad = quadrant(p1, p2, ), quad = false, quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), dist = distance(p1, p2, ), dist = 0, 
+p1 : p1 = new CartesianPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new CartesianPoint(p2_x, p2_y, ), p2 = new PolarPoint(p2_x, p2_y, ), p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: falseL87
+p2_x : p2_x = 0, 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = 0, 
+quad : quad = false, 
+p1_y : p1_y = 0, 
+dist : dist = 0, 
+p1 : p1 = new CartesianPoint(0, 0, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = 0, 
+
+BLOCK: trueL88
+p2_x : p2_x = 0, 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = 0, 
+p1_y : p1_y = user_input.nextDouble(), 
+quad : quad = false, 
+dist : dist = 0, 
+p1 : p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: trueL90
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new CartesianPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: trueL92
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new CartesianPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: falseL94
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new CartesianPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: joinL93
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new CartesianPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: falseL95
+p2_x : p2_x = 0, 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = 0, 
+p1_y : p1_y = user_input.nextDouble(), 
+quad : quad = false, 
+dist : dist = 0, 
+p1 : p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: trueL96
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: trueL98
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: falseL100
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: joinL99
+p2_x : p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), 
+p1 : p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(p2_x, p2_y, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: falseL101
+p2_x : p2_x = 0, 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = 0, 
+p1_y : p1_y = user_input.nextDouble(), 
+quad : quad = false, 
+dist : dist = 0, 
+p1 : p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: joinL97
+p2_x : p2_x = 0, p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = 0, p2_y = user_input.nextDouble(), 
+quad : quad = false, quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = 0, dist = distance(p1, p2, ), 
+p1 : p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(p2_x, p2_y, ), p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: joinL91
+p2_x : p2_x = user_input.nextDouble(), p2_x = 0, p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = 0, p2_y = user_input.nextDouble(), p2_y = user_input.nextDouble(), 
+quad : quad = false, quad = quadrant(p1, p2, ), quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), dist = 0, dist = distance(p1, p2, ), 
+p1 : p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new CartesianPoint(p2_x, p2_y, ), p2 = new PolarPoint(p2_x, p2_y, ), p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = user_input.nextDouble(), 
+
+BLOCK: falseL102
+p2_x : p2_x = 0, 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = 0, 
+quad : quad = false, 
+p1_y : p1_y = 0, 
+dist : dist = 0, 
+p1 : p1 = new CartesianPoint(0, 0, ), 
+point_type : point_type = user_input.nextInt(), 
+p2 : p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = 0, 
+
+BLOCK: joinL89
+p2_x : p2_x = user_input.nextDouble(), p2_x = 0, p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = 0, p2_y = user_input.nextDouble(), p2_y = user_input.nextDouble(), 
+quad : quad = false, quad = quadrant(p1, p2, ), quad = quadrant(p1, p2, ), 
+p1_y : p1_y = 0, p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), dist = 0, dist = distance(p1, p2, ), 
+p1 : p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), point_type = user_input.nextInt(), 
+p2 : p2 = new CartesianPoint(p2_x, p2_y, ), p2 = new PolarPoint(p2_x, p2_y, ), p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = 0, p1_x = user_input.nextDouble(), 
+
+BLOCK: joinL74
+p2_x : p2_x = user_input.nextDouble(), p2_x = 0, p2_x = user_input.nextDouble(), p2_x = user_input.nextDouble(), p2_x = user_input.nextDouble(), 
+user_input : user_input = new Scanner(System.in, ), 
+p2_y : p2_y = user_input.nextDouble(), p2_y = user_input.nextDouble(), p2_y = 0, p2_y = user_input.nextDouble(), p2_y = user_input.nextDouble(), 
+quad : quad = quadrant(p1, p2, ), quad = false, quad = quadrant(p1, p2, ), quad = quadrant(p1, p2, ), quad = quadrant(p1, p2, ), 
+p1_y : p1_y = user_input.nextDouble(), p1_y = 0, p1_y = user_input.nextDouble(), 
+dist : dist = distance(p1, p2, ), dist = distance(p1, p2, ), dist = 0, dist = distance(p1, p2, ), dist = distance(p1, p2, ), 
+p1 : p1 = new CartesianPoint(0, 0, ), p1 = new CartesianPoint(p1_x, p1_y, ), p1 = new PolarPoint(p1_x, p1_y, ), 
+point_type : point_type = user_input.nextInt(), point_type = user_input.nextInt(), point_type = user_input.nextInt(), 
+p2 : p2 = new CartesianPoint(p2_x, p2_y, ), p2 = new CartesianPoint(p2_x, p2_y, ), p2 = new PolarPoint(p2_x, p2_y, ), p2 = new PolarPoint(p2_x, p2_y, ), p2 = new PolarPoint(0, 0, ), 
+p1_x : p1_x = 0, p1_x = user_input.nextDouble(), p1_x = user_input.nextDouble(), 
+
+BLOCK: StartmainL103
+
+BLOCK: StartmainL103
+
+BLOCK: BasicL104
+p1 : p1 = new PolarPoint(0, 0, ), 
+p4 : p4 = new PolarPoint(5.0, -302.67517, ), 
+p2r : p2r = p2.rotate90(), 
+p3 : p3 = new PolarPoint(-5.0, 237.32484, ), 
+p2 : p2 = new PolarPoint(5.0, 53.130104, ), 
+p1r : p1r = p1.rotate90(), 
+
+BLOCK: Startconstructor1L106
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: Startconstructor1L106
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: BasicL107
+this.y_coord : this.y_coord = 0, 
+this.x_coord : this.x_coord = 0, 
+
+BLOCK: Startconstructor2L109
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: Startconstructor2L109
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: BasicL110
+this.y_coord : this.y_coord = y_coord, 
+this.x_coord : this.x_coord = x_coord, 
+
+BLOCK: StartxCoordinateL112
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: StartxCoordinateL112
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: BasicL113
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: StartyCoordinateL115
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: StartyCoordinateL115
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: BasicL116
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: StartradiusL118
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: StartradiusL118
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: BasicL119
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: StartangleL121
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: StartangleL121
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: BasicL122
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: Startrotate90L124
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: Startrotate90L124
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: BasicL125
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: trueL127
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: falseL129
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: trueL130
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: falseL132
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: trueL133
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: falseL135
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: trueL136
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: falseL138
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: joinL137
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: joinL134
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: joinL131
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: joinL128
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: StartmainL139
+
+BLOCK: StartmainL139
+
+BLOCK: BasicL140
+test2 : test2 = new CartesianPoint(3, 4, ), 
+test2r : test2r = test2.rotate90(), 
+test1 : test1 = new CartesianPoint(0, 0, ), 
+test1r : test1r = test1.rotate90(), 
+
+Unfiltered: 35371
+Filtered: 6
+
+
+Duplicate found: 102_Code/102_hw1/dir12/PointRelation.java lines [109, 231] and 102_Code/102_hw1/dir12/PointRelation.java lines [111, 230]
+102_Code/102_hw1/dir12/PointRelation.java ----------
+109 :	p2_x = 0
+122 :	p1_x = user_input.nextDouble()
+124 :	p1_y = user_input.nextDouble()
+126 :	p1 = new CartesianPoint(p1_x, p1_y, )
+138 :	p2 = new CartesianPoint(p2_x, p2_y, )
+141 :	quad = quadrant(p1, p2, )
+200 :	p2_y = user_input.nextDouble()
+207 :	System.out.println("Distance between points: " + dist, )
+208 :	quad == true
+227 :	dist = distance(p1, p2, )
+231 :	quad == true
+102_Code/102_hw1/dir12/PointRelation.java ----------
+111 :	dist = 0
+188 :	p1_y = user_input.nextDouble()
+186 :	p1_x = user_input.nextDouble()
+190 :	p1 = new PolarPoint(p1_x, p1_y, )
+225 :	p2 = new PolarPoint(p2_x, p2_y, )
+228 :	quad = quadrant(p1, p2, )
+124 :	p1_y = user_input.nextDouble()
+230 :	System.out.println("Distance between points: " + dist, )
+144 :	quad == true
+164 :	quad = quadrant(p1, p2, )
+208 :	quad == true
+===========================
+
+
+
+Duplicate found: 102_Code/102_hw1/dir12/PointRelation.java lines [109, 231] and 102_Code/102_hw1/dir12/PointRelation.java lines [111, 231]
+102_Code/102_hw1/dir12/PointRelation.java ----------
+109 :	p2_x = 0
+122 :	p1_x = user_input.nextDouble()
+124 :	p1_y = user_input.nextDouble()
+126 :	p1 = new CartesianPoint(p1_x, p1_y, )
+138 :	p2 = new CartesianPoint(p2_x, p2_y, )
+141 :	quad = quadrant(p1, p2, )
+200 :	p2_y = user_input.nextDouble()
+207 :	System.out.println("Distance between points: " + dist, )
+208 :	quad == true
+227 :	dist = distance(p1, p2, )
+231 :	quad == true
+102_Code/102_hw1/dir12/PointRelation.java ----------
+111 :	dist = 0
+188 :	p1_y = user_input.nextDouble()
+186 :	p1_x = user_input.nextDouble()
+190 :	p1 = new PolarPoint(p1_x, p1_y, )
+202 :	p2 = new CartesianPoint(p2_x, p2_y, )
+205 :	quad = quadrant(p1, p2, )
+124 :	p1_y = user_input.nextDouble()
+230 :	System.out.println("Distance between points: " + dist, )
+231 :	quad == true
+164 :	quad = quadrant(p1, p2, )
+144 :	quad == true
+===========================
+
+
+
+Duplicate found: 102_Code/102_hw1/dir12/PointRelation.java lines [107, 231] and 102_Code/102_hw1/dir12/PointRelation.java lines [107, 230]
+102_Code/102_hw1/dir12/PointRelation.java ----------
+107 :	p1_x = 0
+109 :	p2_x = 0
+124 :	p1_y = user_input.nextDouble()
+126 :	p1 = new CartesianPoint(p1_x, p1_y, )
+138 :	p2 = new CartesianPoint(p2_x, p2_y, )
+141 :	quad = quadrant(p1, p2, )
+200 :	p2_y = user_input.nextDouble()
+207 :	System.out.println("Distance between points: " + dist, )
+208 :	quad == true
+227 :	dist = distance(p1, p2, )
+231 :	quad == true
+102_Code/102_hw1/dir12/PointRelation.java ----------
+111 :	dist = 0
+107 :	p1_x = 0
+188 :	p1_y = user_input.nextDouble()
+190 :	p1 = new PolarPoint(p1_x, p1_y, )
+225 :	p2 = new PolarPoint(p2_x, p2_y, )
+228 :	quad = quadrant(p1, p2, )
+124 :	p1_y = user_input.nextDouble()
+230 :	System.out.println("Distance between points: " + dist, )
+144 :	quad == true
+164 :	quad = quadrant(p1, p2, )
+208 :	quad == true
+===========================
+
+
+
+Duplicate found: 102_Code/102_hw1/dir12/PointRelation.java lines [107, 231] and 102_Code/102_hw1/dir12/PointRelation.java lines [107, 231]
+102_Code/102_hw1/dir12/PointRelation.java ----------
+107 :	p1_x = 0
+109 :	p2_x = 0
+124 :	p1_y = user_input.nextDouble()
+126 :	p1 = new CartesianPoint(p1_x, p1_y, )
+138 :	p2 = new CartesianPoint(p2_x, p2_y, )
+141 :	quad = quadrant(p1, p2, )
+200 :	p2_y = user_input.nextDouble()
+207 :	System.out.println("Distance between points: " + dist, )
+208 :	quad == true
+227 :	dist = distance(p1, p2, )
+231 :	quad == true
+102_Code/102_hw1/dir12/PointRelation.java ----------
+111 :	dist = 0
+107 :	p1_x = 0
+188 :	p1_y = user_input.nextDouble()
+190 :	p1 = new PolarPoint(p1_x, p1_y, )
+202 :	p2 = new CartesianPoint(p2_x, p2_y, )
+205 :	quad = quadrant(p1, p2, )
+124 :	p1_y = user_input.nextDouble()
+230 :	System.out.println("Distance between points: " + dist, )
+231 :	quad == true
+164 :	quad = quadrant(p1, p2, )
+144 :	quad == true
+===========================
+
+
+
+Duplicate found: 102_Code/102_hw1/dir12/PointRelation.java lines [12, 84] and 102_Code/102_hw1/dir12/PointRelation.java lines [12, 84]
+102_Code/102_hw1/dir12/PointRelation.java ----------
+12 :	p2_y = false
+35 :	p2_x = true
+39 :	p2_x = false
+44 :	p2_y = true
+48 :	p2_y = false
+72 :	p2_x == true && p2_y == true
+76 :	p2_x == false && p2_y == true
+80 :	p2_x == false && p2_y == false
+84 :	p2_x == true && p2_y == false
+102_Code/102_hw1/dir12/PointRelation.java ----------
+12 :	p2_x = false
+48 :	p2_y = false
+44 :	p2_y = true
+39 :	p2_x = false
+35 :	p2_x = true
+80 :	p2_x == false && p2_y == false
+72 :	p2_x == true && p2_y == true
+84 :	p2_x == true && p2_y == false
+76 :	p2_x == false && p2_y == true
+===========================
+
+
+
+Duplicate found: 102_Code/102_hw1/dir12/PointRelation.java lines [13, 69] and 102_Code/102_hw1/dir12/PointRelation.java lines [13, 90]
+102_Code/102_hw1/dir12/PointRelation.java ----------
+13 :	p1_quad = 0
+53 :	p1_quad = 1
+57 :	p1_quad = 2
+61 :	p1_quad = 3
+65 :	p1_quad = 4
+69 :	p1_quad = 1
+102_Code/102_hw1/dir12/PointRelation.java ----------
+13 :	p2_quad = 0
+90 :	p2_quad = 1
+78 :	p2_quad = 2
+74 :	p2_quad = 1
+86 :	p2_quad = 4
+82 :	p2_quad = 3
+===========================
+
+
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:02 min
+[INFO] Finished at: 2019-05-01T17:10:34-07:00
+[INFO] Final Memory: 42M/1753M
+[INFO] ------------------------------------------------------------------------

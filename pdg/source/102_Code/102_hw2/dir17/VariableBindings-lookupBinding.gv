@@ -1,0 +1,9 @@
+digraph G {
+"7 : this.bindings = null"
+"26 : b = null"
+"27 : index = searchBindings(id, )"
+"27 : index = searchBindings(id, )" -> "29 : index >= 0"
+"29 : index >= 0"
+"30 : value()"
+"32 : new UnboundIdentifierException(\"Unbound identifier\" + id, )"
+}

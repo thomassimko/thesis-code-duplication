@@ -29,7 +29,7 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
         if(ctx.assignment() != null) {
             return handleAssignment(ctx.assignment());
         } else if (ctx.classInstanceCreationExpression() != null) {
-
+            //TODO: instance creation
         } else if (ctx.methodInvocation() != null) {
             return handleMethodInvocation(ctx.methodInvocation());
         } else if (ctx.postDecrementExpression() != null) {
@@ -59,7 +59,7 @@ public class MyExpressionVisitor extends Java8BaseVisitor<Expression> {
         }
 
         if(ctx.primary() != null) {
-            System.err.println("ctx primary in method call: " + ctx.getText());
+            leftSide = Driver.primaryVisitor.visitPrimary(ctx.primary());
         }
         if (ctx.typeName() != null) {
             leftSide = Driver.leftHandSideVisitor.visitTypeName(ctx.typeName());

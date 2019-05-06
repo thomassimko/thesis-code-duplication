@@ -1,0 +1,8 @@
+digraph G {
+"3 : this.pt = new CartesianPoint(3.0, 4.0, )"
+"4 : this.pt1 = new CartesianPoint(1.0, 2.0, )"
+"5 : this.pt2 = new CartesianPoint(1.0, 5.0, )"
+"9 : Check.check(this.pt.xCoordinate(), 3.0, )"
+"10 : Check.check(this.pt1.xCoordinate(), 1.0, )"
+"11 : Check.check(this.pt2.xCoordinate(), 1.0, )"
+}

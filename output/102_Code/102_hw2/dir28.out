@@ -1,0 +1,720 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for thesis:thesis:jar:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.version' for org.junit.jupiter:junit-jupiter-api:jar is either LATEST or RELEASE (both of them are being deprecated) @ line 25, column 22
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building thesis 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default-cli) > validate @ thesis >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default-cli) < validate @ thesis <<<
+[INFO] 
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ thesis ---
+BLOCK: Startconstructor1L0
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: BasicL1
+this.r : this.r = rht, 
+this.l : this.l = lft, 
+
+BLOCK: StartevaluateL3
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: BasicL4
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: StarttoStringL6
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: BasicL7
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: StartmainL9
+
+BLOCK: BasicL10
+n2 : n2 = new NegationExpression(e2, ), 
+e3 : e3 = new DoubleConstantExpression(125, ), 
+e1 : e1 = new DoubleConstantExpression(3.4, ), 
+b3 : b3 = new VariableBindings(), 
+b2 : b2 = new VariableBindings(), 
+e2 : e2 = new DoubleConstantExpression(-5.6, ), 
+n1 : n1 = new NegationExpression(e1, ), 
+n3 : n3 = new NegationExpression(e3, ), 
+b1 : b1 = new VariableBindings(), 
+
+BLOCK: Startconstructor1L12
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: BasicL13
+this.l : this.l = lft, 
+this.r : this.r = rht, 
+
+BLOCK: StartevaluateL15
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: BasicL16
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: StarttoStringL18
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: BasicL19
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: StartaddBindingL21
+this.bindings : this.bindings = new ArrayList(), 
+
+BLOCK: BasicL22
+this.bindings : this.bindings = new ArrayList(), 
+
+BLOCK: ForInitL24
+i : i = 0, 
+this.bindings : this.bindings = new ArrayList(), 
+
+BLOCK: ForCondL25
+i : i = 0, i = i + 1, 
+this.bindings : this.bindings = new ArrayList(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: LoopL26
+i : i = 0, i = i + 1, 
+this.bindings : this.bindings = new ArrayList(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: BasicL27
+i : i = 0, i = i + 1, 
+this.bindings : this.bindings = new ArrayList(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: trueL28
+i : i = 0, i = i + 1, 
+this.bindings : this.bindings = new ArrayList(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: joinL29
+i : i = i + 1, 
+this.bindings : this.bindings = new ArrayList(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: StartlookupBindingL30
+this.bindings : this.bindings = new ArrayList(), 
+
+BLOCK: BasicL31
+this.bindings : this.bindings = new ArrayList(), 
+
+BLOCK: ForInitL33
+this.bindings : this.bindings = new ArrayList(), 
+i : i = 0, 
+
+BLOCK: ForCondL34
+this.bindings : this.bindings = new ArrayList(), 
+@temp2 : @temp2 = i, 
+i : i = 0, i = i + 1, 
+
+BLOCK: LoopL35
+this.bindings : this.bindings = new ArrayList(), 
+@temp2 : @temp2 = i, 
+i : i = 0, i = i + 1, 
+
+BLOCK: BasicL36
+this.bindings : this.bindings = new ArrayList(), 
+@temp2 : @temp2 = i, 
+i : i = 0, i = i + 1, 
+
+BLOCK: trueL37
+this.bindings : this.bindings = new ArrayList(), 
+@temp2 : @temp2 = i, 
+i : i = 0, i = i + 1, 
+
+BLOCK: joinL38
+this.bindings : this.bindings = new ArrayList(), 
+@temp2 : @temp2 = i, 
+i : i = i + 1, 
+
+BLOCK: Startconstructor1L39
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: BasicL40
+this.r : this.r = rht, 
+this.l : this.l = lft, 
+
+BLOCK: StartevaluateL42
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: BasicL43
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: StarttoStringL45
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: BasicL46
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: Startconstructor1L48
+this.s : this.s = null, 
+
+BLOCK: BasicL49
+this.s : this.s = id, 
+
+BLOCK: StartevaluateL51
+this.s : this.s = null, 
+
+BLOCK: BasicL52
+this.s : this.s = null, 
+
+BLOCK: StarttoStringL54
+this.s : this.s = null, 
+
+BLOCK: BasicL55
+this.s : this.s = null, 
+
+BLOCK: Startconstructor1L57
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: BasicL58
+this.r : this.r = rht, 
+this.l : this.l = lft, 
+
+BLOCK: StartevaluateL60
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: BasicL61
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: StarttoStringL63
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: BasicL64
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: Startconstructor1L66
+this.var : this.var = null, 
+this.expression : this.expression = null, 
+
+BLOCK: BasicL67
+this.var : this.var = id, 
+this.expression : this.expression = e, 
+
+BLOCK: StartevaluateL69
+this.expression : this.expression = null, 
+this.var : this.var = null, 
+
+BLOCK: BasicL70
+this.expression : this.expression = null, 
+this.var : this.var = null, 
+
+BLOCK: StarttoStringL72
+this.var : this.var = null, 
+this.expression : this.expression = null, 
+
+BLOCK: BasicL73
+this.var : this.var = null, 
+this.expression : this.expression = null, 
+
+BLOCK: Startconstructor1L75
+this.expression : this.expression = null, 
+
+BLOCK: BasicL76
+this.expression : this.expression = e, 
+
+BLOCK: StartevaluateL78
+this.expression : this.expression = null, 
+
+BLOCK: BasicL79
+this.expression : this.expression = null, 
+
+BLOCK: StarttoStringL81
+this.expression : this.expression = null, 
+
+BLOCK: BasicL82
+this.expression : this.expression = null, 
+
+BLOCK: Startconstructor1L84
+this.v : this.v = 0.0, 
+this.s : this.s = null, 
+
+BLOCK: BasicL85
+this.v : this.v = value, 
+this.s : this.s = id, 
+
+BLOCK: StartgetIdL87
+this.v : this.v = 0.0, 
+this.s : this.s = null, 
+
+BLOCK: BasicL88
+this.v : this.v = 0.0, 
+this.s : this.s = null, 
+
+BLOCK: StartgetValueL90
+this.s : this.s = null, 
+this.v : this.v = 0.0, 
+
+BLOCK: BasicL91
+this.s : this.s = null, 
+this.v : this.v = 0.0, 
+
+BLOCK: StartchangeValueL93
+this.s : this.s = null, 
+this.v : this.v = 0.0, 
+
+BLOCK: BasicL94
+this.s : this.s = null, 
+this.v : this.v = newValue, 
+
+BLOCK: Startconstructor1L96
+this.v : this.v = 0.0, 
+
+BLOCK: BasicL97
+this.v : this.v = value, 
+
+BLOCK: StartevaluateL99
+this.v : this.v = 0.0, 
+
+BLOCK: BasicL100
+this.v : this.v = 0.0, 
+
+BLOCK: StarttoStringL102
+this.v : this.v = 0.0, 
+
+BLOCK: BasicL103
+this.v : this.v = 0.0, 
+
+BLOCK: Startconstructor1L0
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: Startconstructor1L0
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: BasicL1
+this.r : this.r = rht, 
+this.l : this.l = lft, 
+
+BLOCK: StartevaluateL3
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: StartevaluateL3
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: BasicL4
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: StarttoStringL6
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: StarttoStringL6
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: BasicL7
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: StartmainL9
+
+BLOCK: StartmainL9
+
+BLOCK: BasicL10
+n2 : n2 = new NegationExpression(e2, ), 
+e3 : e3 = new DoubleConstantExpression(125, ), 
+e1 : e1 = new DoubleConstantExpression(3.4, ), 
+b3 : b3 = new VariableBindings(), 
+b2 : b2 = new VariableBindings(), 
+e2 : e2 = new DoubleConstantExpression(-5.6, ), 
+n1 : n1 = new NegationExpression(e1, ), 
+n3 : n3 = new NegationExpression(e3, ), 
+b1 : b1 = new VariableBindings(), 
+
+BLOCK: Startconstructor1L12
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: Startconstructor1L12
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: BasicL13
+this.l : this.l = lft, 
+this.r : this.r = rht, 
+
+BLOCK: StartevaluateL15
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: StartevaluateL15
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: BasicL16
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: StarttoStringL18
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: StarttoStringL18
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: BasicL19
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: StartaddBindingL21
+this.bindings : this.bindings = new ArrayList(), 
+
+BLOCK: StartaddBindingL21
+this.bindings : this.bindings = new ArrayList(), 
+
+BLOCK: BasicL22
+this.bindings : this.bindings = new ArrayList(), 
+
+BLOCK: ForInitL24
+i : i = 0, 
+this.bindings : this.bindings = new ArrayList(), 
+
+BLOCK: ForCondL25
+i : i = 0, i = i + 1, 
+this.bindings : this.bindings = new ArrayList(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: LoopL26
+i : i = 0, i = i + 1, 
+this.bindings : this.bindings = new ArrayList(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: BasicL27
+i : i = 0, i = i + 1, 
+this.bindings : this.bindings = new ArrayList(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: trueL28
+i : i = 0, i = i + 1, 
+this.bindings : this.bindings = new ArrayList(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: joinL29
+i : i = i + 1, 
+this.bindings : this.bindings = new ArrayList(), 
+@temp1 : @temp1 = i, 
+
+BLOCK: StartlookupBindingL30
+this.bindings : this.bindings = new ArrayList(), 
+
+BLOCK: StartlookupBindingL30
+this.bindings : this.bindings = new ArrayList(), 
+
+BLOCK: BasicL31
+this.bindings : this.bindings = new ArrayList(), 
+
+BLOCK: ForInitL33
+this.bindings : this.bindings = new ArrayList(), 
+i : i = 0, 
+
+BLOCK: ForCondL34
+this.bindings : this.bindings = new ArrayList(), 
+@temp2 : @temp2 = i, 
+i : i = 0, i = i + 1, 
+
+BLOCK: LoopL35
+this.bindings : this.bindings = new ArrayList(), 
+@temp2 : @temp2 = i, 
+i : i = 0, i = i + 1, 
+
+BLOCK: BasicL36
+this.bindings : this.bindings = new ArrayList(), 
+@temp2 : @temp2 = i, 
+i : i = 0, i = i + 1, 
+
+BLOCK: trueL37
+this.bindings : this.bindings = new ArrayList(), 
+@temp2 : @temp2 = i, 
+i : i = 0, i = i + 1, 
+
+BLOCK: joinL38
+this.bindings : this.bindings = new ArrayList(), 
+@temp2 : @temp2 = i, 
+i : i = i + 1, 
+
+BLOCK: Startconstructor1L39
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: Startconstructor1L39
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: BasicL40
+this.r : this.r = rht, 
+this.l : this.l = lft, 
+
+BLOCK: StartevaluateL42
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: StartevaluateL42
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: BasicL43
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: StarttoStringL45
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: StarttoStringL45
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: BasicL46
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: Startconstructor1L48
+this.s : this.s = null, 
+
+BLOCK: Startconstructor1L48
+this.s : this.s = null, 
+
+BLOCK: BasicL49
+this.s : this.s = id, 
+
+BLOCK: StartevaluateL51
+this.s : this.s = null, 
+
+BLOCK: StartevaluateL51
+this.s : this.s = null, 
+
+BLOCK: BasicL52
+this.s : this.s = null, 
+
+BLOCK: StarttoStringL54
+this.s : this.s = null, 
+
+BLOCK: StarttoStringL54
+this.s : this.s = null, 
+
+BLOCK: BasicL55
+this.s : this.s = null, 
+
+BLOCK: Startconstructor1L57
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: Startconstructor1L57
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: BasicL58
+this.r : this.r = rht, 
+this.l : this.l = lft, 
+
+BLOCK: StartevaluateL60
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: StartevaluateL60
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: BasicL61
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: StarttoStringL63
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: StarttoStringL63
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: BasicL64
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: Startconstructor1L66
+this.var : this.var = null, 
+this.expression : this.expression = null, 
+
+BLOCK: Startconstructor1L66
+this.var : this.var = null, 
+this.expression : this.expression = null, 
+
+BLOCK: BasicL67
+this.var : this.var = id, 
+this.expression : this.expression = e, 
+
+BLOCK: StartevaluateL69
+this.expression : this.expression = null, 
+this.var : this.var = null, 
+
+BLOCK: StartevaluateL69
+this.expression : this.expression = null, 
+this.var : this.var = null, 
+
+BLOCK: BasicL70
+this.expression : this.expression = null, 
+this.var : this.var = null, 
+
+BLOCK: StarttoStringL72
+this.var : this.var = null, 
+this.expression : this.expression = null, 
+
+BLOCK: StarttoStringL72
+this.var : this.var = null, 
+this.expression : this.expression = null, 
+
+BLOCK: BasicL73
+this.var : this.var = null, 
+this.expression : this.expression = null, 
+
+BLOCK: Startconstructor1L75
+this.expression : this.expression = null, 
+
+BLOCK: Startconstructor1L75
+this.expression : this.expression = null, 
+
+BLOCK: BasicL76
+this.expression : this.expression = e, 
+
+BLOCK: StartevaluateL78
+this.expression : this.expression = null, 
+
+BLOCK: StartevaluateL78
+this.expression : this.expression = null, 
+
+BLOCK: BasicL79
+this.expression : this.expression = null, 
+
+BLOCK: StarttoStringL81
+this.expression : this.expression = null, 
+
+BLOCK: StarttoStringL81
+this.expression : this.expression = null, 
+
+BLOCK: BasicL82
+this.expression : this.expression = null, 
+
+BLOCK: Startconstructor1L84
+this.v : this.v = 0.0, 
+this.s : this.s = null, 
+
+BLOCK: Startconstructor1L84
+this.v : this.v = 0.0, 
+this.s : this.s = null, 
+
+BLOCK: BasicL85
+this.v : this.v = value, 
+this.s : this.s = id, 
+
+BLOCK: StartgetIdL87
+this.v : this.v = 0.0, 
+this.s : this.s = null, 
+
+BLOCK: StartgetIdL87
+this.v : this.v = 0.0, 
+this.s : this.s = null, 
+
+BLOCK: BasicL88
+this.v : this.v = 0.0, 
+this.s : this.s = null, 
+
+BLOCK: StartgetValueL90
+this.s : this.s = null, 
+this.v : this.v = 0.0, 
+
+BLOCK: StartgetValueL90
+this.s : this.s = null, 
+this.v : this.v = 0.0, 
+
+BLOCK: BasicL91
+this.s : this.s = null, 
+this.v : this.v = 0.0, 
+
+BLOCK: StartchangeValueL93
+this.s : this.s = null, 
+this.v : this.v = 0.0, 
+
+BLOCK: StartchangeValueL93
+this.s : this.s = null, 
+this.v : this.v = 0.0, 
+
+BLOCK: BasicL94
+this.s : this.s = null, 
+this.v : this.v = newValue, 
+
+BLOCK: Startconstructor1L96
+this.v : this.v = 0.0, 
+
+BLOCK: Startconstructor1L96
+this.v : this.v = 0.0, 
+
+BLOCK: BasicL97
+this.v : this.v = value, 
+
+BLOCK: StartevaluateL99
+this.v : this.v = 0.0, 
+
+BLOCK: StartevaluateL99
+this.v : this.v = 0.0, 
+
+BLOCK: BasicL100
+this.v : this.v = 0.0, 
+
+BLOCK: StarttoStringL102
+this.v : this.v = 0.0, 
+
+BLOCK: StarttoStringL102
+this.v : this.v = 0.0, 
+
+BLOCK: BasicL103
+this.v : this.v = 0.0, 
+
+Unfiltered: 0
+Filtered: 0
+
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.054 s
+[INFO] Finished at: 2019-05-01T17:16:15-07:00
+[INFO] Final Memory: 23M/1215M
+[INFO] ------------------------------------------------------------------------

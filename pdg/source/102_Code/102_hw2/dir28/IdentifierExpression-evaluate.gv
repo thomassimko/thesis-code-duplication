@@ -1,0 +1,5 @@
+digraph G {
+"4 : this.s = null"
+"4 : this.s = null" -> "11 : bindings.lookupBinding(this.s, )"
+"11 : bindings.lookupBinding(this.s, )"
+}

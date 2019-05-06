@@ -1,0 +1,134 @@
+digraph G {
+"10 : type = 0"
+"10 : type = 0" -> "23 : type = scanner.nextInt()" [style=dashed]
+"11 : quadrant = 0"
+"11 : quadrant = 0" -> "112 : quadrant = calcQuadrant(a, b, )" [style=dashed]
+"12 : x = 0.0"
+"12 : x = 0.0" -> "89 : x = scanner.nextDouble()" [style=dashed]
+"12 : x = 0.0" -> "35 : x = scanner.nextDouble()" [style=dashed]
+"12 : x = 0.0" -> "31 : x = 0" [style=dashed]
+"13 : y = 0.0"
+"13 : y = 0.0" -> "42 : y = 0" [style=dashed]
+"13 : y = 0.0" -> "91 : y = scanner.nextDouble()" [style=dashed]
+"13 : y = 0.0" -> "46 : y = scanner.nextDouble()" [style=dashed]
+"14 : r = 0.0"
+"14 : r = 0.0" -> "57 : r = 0" [style=dashed]
+"14 : r = 0.0" -> "97 : r = scanner.nextDouble()" [style=dashed]
+"14 : r = 0.0" -> "61 : r = scanner.nextDouble()" [style=dashed]
+"15 : angle = 0.0"
+"15 : angle = 0.0" -> "72 : angle = scanner.nextDouble()" [style=dashed]
+"15 : angle = 0.0" -> "68 : angle = 0" [style=dashed]
+"15 : angle = 0.0" -> "99 : angle = scanner.nextDouble()" [style=dashed]
+"16 : distance = 0.0"
+"16 : distance = 0.0" -> "110 : distance = calcDistance(a, b, )" [style=dashed]
+"17 : a = null"
+"17 : a = null" -> "48 : a = new CartesianPoint(x, y, )" [style=dashed]
+"17 : a = null" -> "81 : a = null" [style=dashed]
+"17 : a = null" -> "75 : a = new PolarPoint(r, angle, )" [style=dashed]
+"18 : b = null"
+"18 : b = null" -> "107 : b = null" [style=dashed]
+"18 : b = null" -> "101 : b = new PolarPoint(r, angle, )" [style=dashed]
+"18 : b = null" -> "92 : b = new CartesianPoint(x, y, )" [style=dashed]
+"20 : scanner = new Scanner(System.in, )"
+"22 : System.out.print(\"Which type of point should be created (1 for Cartesian, 2 for Polar)? \", )"
+"23 : type = scanner.nextInt()"
+"23 : type = scanner.nextInt()" -> "50 : type == 2"
+"23 : type = scanner.nextInt()" -> "24 : type == 1"
+"23 : type = scanner.nextInt()" -> "85 : type = scanner.nextInt()" [style=dashed]
+"24 : type == 1"
+"26 : System.out.print(\"Enter x-coordinate: \", )"
+"27 : scanner.hasNextDouble()"
+"29 : System.out.println(\"Error\", )"
+"30 : System.exit(1, )"
+"31 : x = 0"
+"31 : x = 0" -> "48 : a = new CartesianPoint(x, y, )"
+"31 : x = 0" -> "89 : x = scanner.nextDouble()" [style=dashed]
+"35 : x = scanner.nextDouble()"
+"35 : x = scanner.nextDouble()" -> "48 : a = new CartesianPoint(x, y, )"
+"35 : x = scanner.nextDouble()" -> "89 : x = scanner.nextDouble()" [style=dashed]
+"37 : System.out.print(\"Enter y-coordinate: \", )"
+"38 : scanner.hasNextDouble()"
+"40 : System.out.println(\"Error\", )"
+"41 : System.exit(1, )"
+"42 : y = 0"
+"42 : y = 0" -> "48 : a = new CartesianPoint(x, y, )"
+"42 : y = 0" -> "91 : y = scanner.nextDouble()" [style=dashed]
+"46 : y = scanner.nextDouble()"
+"46 : y = scanner.nextDouble()" -> "48 : a = new CartesianPoint(x, y, )"
+"46 : y = scanner.nextDouble()" -> "91 : y = scanner.nextDouble()" [style=dashed]
+"48 : a = new CartesianPoint(x, y, )"
+"48 : a = new CartesianPoint(x, y, )" -> "110 : distance = calcDistance(a, b, )"
+"48 : a = new CartesianPoint(x, y, )" -> "112 : quadrant = calcQuadrant(a, b, )"
+"50 : type == 2"
+"52 : System.out.print(\"Enter radius: \", )"
+"53 : scanner.hasNextDouble()"
+"55 : System.out.println(\"Error\", )"
+"56 : System.exit(1, )"
+"57 : r = 0"
+"57 : r = 0" -> "75 : a = new PolarPoint(r, angle, )"
+"57 : r = 0" -> "97 : r = scanner.nextDouble()" [style=dashed]
+"61 : r = scanner.nextDouble()"
+"61 : r = scanner.nextDouble()" -> "75 : a = new PolarPoint(r, angle, )"
+"61 : r = scanner.nextDouble()" -> "97 : r = scanner.nextDouble()" [style=dashed]
+"63 : System.out.print(\"Enter angle (in degrees): \", )"
+"64 : scanner.hasNextDouble()"
+"66 : System.out.println(\"Error\", )"
+"67 : System.exit(1, )"
+"68 : angle = 0"
+"68 : angle = 0" -> "75 : a = new PolarPoint(r, angle, )"
+"68 : angle = 0" -> "99 : angle = scanner.nextDouble()" [style=dashed]
+"72 : angle = scanner.nextDouble()"
+"72 : angle = scanner.nextDouble()" -> "73 : angle = angle * Math.PI / 180"
+"72 : angle = scanner.nextDouble()" -> "73 : angle = angle * Math.PI / 180" [style=dashed]
+"73 : angle = angle * Math.PI / 180"
+"73 : angle = angle * Math.PI / 180" -> "75 : a = new PolarPoint(r, angle, )"
+"73 : angle = angle * Math.PI / 180" -> "99 : angle = scanner.nextDouble()" [style=dashed]
+"75 : a = new PolarPoint(r, angle, )"
+"75 : a = new PolarPoint(r, angle, )" -> "110 : distance = calcDistance(a, b, )"
+"75 : a = new PolarPoint(r, angle, )" -> "112 : quadrant = calcQuadrant(a, b, )"
+"79 : System.out.println(\"Error\", )"
+"80 : System.exit(1, )"
+"81 : a = null"
+"81 : a = null" -> "110 : distance = calcDistance(a, b, )"
+"81 : a = null" -> "112 : quadrant = calcQuadrant(a, b, )"
+"84 : System.out.print(\"Which type of point should be created (1 for Cartesian, 2 for Polar)? \", )"
+"85 : type = scanner.nextInt()"
+"85 : type = scanner.nextInt()" -> "94 : type == 2"
+"85 : type = scanner.nextInt()" -> "86 : type == 1"
+"86 : type == 1"
+"88 : System.out.print(\"Enter x-coordinate: \", )"
+"89 : x = scanner.nextDouble()"
+"89 : x = scanner.nextDouble()" -> "92 : b = new CartesianPoint(x, y, )"
+"90 : System.out.print(\"Enter y-coordinate: \", )"
+"91 : y = scanner.nextDouble()"
+"91 : y = scanner.nextDouble()" -> "92 : b = new CartesianPoint(x, y, )"
+"92 : b = new CartesianPoint(x, y, )"
+"92 : b = new CartesianPoint(x, y, )" -> "110 : distance = calcDistance(a, b, )"
+"92 : b = new CartesianPoint(x, y, )" -> "112 : quadrant = calcQuadrant(a, b, )"
+"94 : type == 2"
+"96 : System.out.print(\"Enter radius: \", )"
+"97 : r = scanner.nextDouble()"
+"97 : r = scanner.nextDouble()" -> "101 : b = new PolarPoint(r, angle, )"
+"98 : System.out.print(\"Enter angle (in degrees): \", )"
+"99 : angle = scanner.nextDouble()"
+"99 : angle = scanner.nextDouble()" -> "100 : angle = angle * Math.PI / 180"
+"99 : angle = scanner.nextDouble()" -> "100 : angle = angle * Math.PI / 180" [style=dashed]
+"100 : angle = angle * Math.PI / 180"
+"100 : angle = angle * Math.PI / 180" -> "101 : b = new PolarPoint(r, angle, )"
+"101 : b = new PolarPoint(r, angle, )"
+"101 : b = new PolarPoint(r, angle, )" -> "110 : distance = calcDistance(a, b, )"
+"101 : b = new PolarPoint(r, angle, )" -> "112 : quadrant = calcQuadrant(a, b, )"
+"105 : System.out.println(\"Error\", )"
+"106 : System.exit(1, )"
+"107 : b = null"
+"107 : b = null" -> "110 : distance = calcDistance(a, b, )"
+"107 : b = null" -> "112 : quadrant = calcQuadrant(a, b, )"
+"110 : distance = calcDistance(a, b, )"
+"110 : distance = calcDistance(a, b, )" -> "111 : System.out.println(\"Distance between points: \" + distance, )"
+"111 : System.out.println(\"Distance between points: \" + distance, )"
+"112 : quadrant = calcQuadrant(a, b, )"
+"112 : quadrant = calcQuadrant(a, b, )" -> "113 : quadrant == 1"
+"113 : quadrant == 1"
+"114 : System.out.println(\"In same quadrant.\", )"
+"116 : System.out.println(\"Not in same quadrant.\", )"
+}

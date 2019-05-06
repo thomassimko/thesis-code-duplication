@@ -1,0 +1,29 @@
+Script started on Wed 04 Jan 2012 05:34:41 PM PST
+]0;rolong@302x30: /home/rolong[?1034h[01;32mrolong@302x30[00m:[01;34m~[00m $ pwd
+/home/rolong
+]0;rolong@302x30: /home/rolong[01;32mrolong@302x30[00m:[01;34m~[00m $ whoami
+rolong
+]0;rolong@302x30: /home/rolong[01;32mrolong@302x30[00m:[01;34m~[00m $ hostname
+302x30
+]0;rolong@302x30: /home/rolong[01;32mrolong@302x30[00m:[01;34m~[00m $ ls
+Desktop    Downloads  Pictures	Templates   Videos
+Documents  Music      Public	typescript
+]0;rolong@302x30: /home/rolong[01;32mrolong@302x30[00m:[01;34m~[00m $ mkdir cpe101
+]0;rolong@302x30: /home/rolong[01;32mrolong@302x30[00m:[01;34m~[00m $ ls
+cpe101	 Documents  Music     Public	 typescript
+Desktop  Downloads  Pictures  Templates  Videos
+]0;rolong@302x30: /home/rolong[01;32mrolong@302x30[00m:[01;34m~[00m $ cd cpe101
+]0;rolong@302x30: /home/rolong/cpe101[01;32mrolong@302x30[00m:[01;34m~/cpe101[00m $ pwd
+/home/rolong/cpe101
+]0;rolong@302x30: /home/rolong/cpe101[01;32mrolong@302x30[00m:[01;34m~/cpe101[00m $ ls
+]0;rolong@302x30: /home/rolong/cpe101[01;32mrolong@302x30[00m:[01;34m~/cpe101[00m $ touch junk.file
+]0;rolong@302x30: /home/rolong/cpe101[01;32mrolong@302x30[00m:[01;34m~/cpe101[00m $ ls
+junk.file
+]0;rolong@302x30: /home/rolong/cpe101[01;32mrolong@302x30[00m:[01;34m~/cpe101[00m $ pwd
+/home/rolong/cpe101
+]0;rolong@302x30: /home/rolong/cpe101[01;32mrolong@302x30[00m:[01;34m~/cpe101[00m $ cd ..
+]0;rolong@302x30: /home/rolong[01;32mrolong@302x30[00m:[01;34m~[00m $ pwd
+/home/rolong
+]0;rolong@302x30: /home/rolong[01;32mrolong@302x30[00m:[01;34m~[00m $ exit
+
+Script done on Wed 04 Jan 2012 05:35:29 PM PST

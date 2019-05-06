@@ -1,0 +1,7 @@
+digraph G {
+"7 : this.bindval = 0.0"
+"8 : this.bindlist = new ArrayList()"
+"11 : bin = new Binding(id, value, )"
+"11 : bin = new Binding(id, value, )" -> "12 : this.bindlist.add(bin, )"
+"12 : this.bindlist.add(bin, )"
+}

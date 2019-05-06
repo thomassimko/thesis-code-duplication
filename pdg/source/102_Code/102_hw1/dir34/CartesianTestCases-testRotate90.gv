@@ -1,0 +1,9 @@
+digraph G {
+"41 : TacoBell = new CartesianPoint(1, 0, )"
+"42 : BellTaco = new CartesianPoint(0, 1, )"
+"42 : BellTaco = new CartesianPoint(0, 1, )" -> "45 : Check.check(TacoBell.rotate90(), BellTaco, )"
+"43 : AcoTeBle = new CartesianPoint(-1, 0, )"
+"43 : AcoTeBle = new CartesianPoint(-1, 0, )" -> "46 : Check.check(BellTaco.rotate90(), AcoTeBle, )"
+"45 : Check.check(TacoBell.rotate90(), BellTaco, )"
+"46 : Check.check(BellTaco.rotate90(), AcoTeBle, )"
+}

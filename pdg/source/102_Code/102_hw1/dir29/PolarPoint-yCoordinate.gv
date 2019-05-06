@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.r = 0.0"
+"4 : this.r = 0.0" -> "16 : this.r * Math.sin(this.a * Math.PI / 180.0, )"
+"4 : this.a = 0.0"
+"4 : this.a = 0.0" -> "16 : this.r * Math.sin(this.a * Math.PI / 180.0, )"
+"16 : this.r * Math.sin(this.a * Math.PI / 180.0, )"
+}

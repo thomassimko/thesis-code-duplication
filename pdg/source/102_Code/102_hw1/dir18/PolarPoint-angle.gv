@@ -1,0 +1,6 @@
+digraph G {
+"4 : this.rad = 0"
+"5 : this.theta = 0"
+"5 : this.theta = 0" -> "52 : Math.toDegrees(this.theta, )"
+"52 : Math.toDegrees(this.theta, )"
+}

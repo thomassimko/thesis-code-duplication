@@ -1,0 +1,1422 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for thesis:thesis:jar:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.version' for org.junit.jupiter:junit-jupiter-api:jar is either LATEST or RELEASE (both of them are being deprecated) @ line 25, column 22
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building thesis 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default-cli) > validate @ thesis >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default-cli) < validate @ thesis <<<
+[INFO] 
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ thesis ---
+BLOCK: Startconstructor1L0
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL1
+this.radius : this.radius = radius, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: trueL3
+this.radius : this.radius = radius, 
+this.angle : this.angle = angle + Math.PI, 
+
+BLOCK: joinL4
+this.radius : this.radius = radius, this.radius = radius, 
+this.angle : this.angle = angle, 
+
+BLOCK: trueL5
+this.radius : this.radius = radius, this.radius = radius, 
+this.angle : this.angle = angle + 2 * Math.PI, 
+
+BLOCK: joinL6
+this.radius : this.radius = radius, this.radius = radius, 
+this.angle : this.angle = angle, this.angle = angle + 2 * Math.PI, 
+
+BLOCK: StartxCoordinateL7
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: BasicL8
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: StartyCoordinateL10
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: BasicL11
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: StartradiusL13
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: BasicL14
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: StartangleL16
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: BasicL17
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: Startrotate90L19
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL20
+this.radius : this.radius = 0.0, 
+r : r = this.radius, 
+a : a = this.angle + 1.0 / 2.0 * Math.PI, 
+p : p = new PolarPoint(r, a, ), 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartdistanceL22
+
+BLOCK: BasicL23
+d : d = Math.sqrt(Math.pow(a.xCoordinate() - b.xCoordinate(), 2, ) + Math.pow(a.yCoordinate() - b.yCoordinate(), 2, ), ), 
+
+BLOCK: StartsameQuadL25
+
+BLOCK: BasicL26
+l : l = ', 
+k : k = ', 
+i : i = ', 
+j : j = ', 
+
+BLOCK: trueL28
+l : l = ', 
+k : k = ', 
+i : i = ', 
+j : j = ', 
+
+BLOCK: joinL29
+l : l = ', 
+k : k = ', 
+i : i = ', i = ', 
+j : j = ', 
+
+BLOCK: trueL30
+l : l = ', 
+k : k = ', 
+i : i = ', i = ', 
+j : j = ', 
+
+BLOCK: joinL31
+l : l = ', 
+k : k = ', 
+i : i = ', i = ', 
+j : j = ', j = ', 
+
+BLOCK: trueL32
+l : l = ', 
+k : k = ', 
+i : i = ', i = ', 
+j : j = ', j = ', 
+
+BLOCK: joinL33
+l : l = ', 
+k : k = ', k = ', 
+i : i = ', i = ', 
+j : j = ', j = ', 
+
+BLOCK: trueL34
+l : l = ', 
+k : k = ', k = ', 
+i : i = ', i = ', 
+j : j = ', j = ', 
+
+BLOCK: joinL35
+l : l = ', l = ', 
+k : k = ', k = ', 
+i : i = ', i = ', 
+j : j = ', j = ', 
+
+BLOCK: trueL36
+l : l = ', l = ', 
+k : k = ', 
+i : i = ', 
+j : j = ', j = ', 
+
+BLOCK: falseL38
+l : l = ', l = ', 
+k : k = ', k = ', 
+i : i = ', i = ', 
+j : j = ', j = ', 
+
+BLOCK: trueL39
+l : l = ', l = ', 
+k : k = ', 
+i : i = ', 
+j : j = ', j = ', 
+
+BLOCK: joinL40
+l : l = ', l = ', 
+k : k = ', k = ', k = ', 
+i : i = ', i = ', i = ', 
+j : j = ', j = ', 
+
+BLOCK: joinL37
+l : l = ', l = ', 
+k : k = ', k = ', k = ', k = ', 
+i : i = ', i = ', i = ', i = ', 
+j : j = ', j = ', 
+
+BLOCK: trueL41
+l : l = ', 
+k : k = ', k = ', k = ', k = ', 
+i : i = ', i = ', i = ', i = ', 
+j : j = ', 
+
+BLOCK: falseL43
+l : l = ', l = ', 
+k : k = ', k = ', k = ', k = ', 
+i : i = ', i = ', i = ', i = ', 
+j : j = ', j = ', 
+
+BLOCK: trueL44
+l : l = ', l = ', 
+k : k = ', 
+i : i = ', 
+j : j = ', j = ', 
+
+BLOCK: joinL45
+l : l = ', l = ', 
+k : k = ', k = ', k = ', k = ', k = ', 
+i : i = ', i = ', i = ', i = ', i = ', 
+j : j = ', j = ', 
+
+BLOCK: joinL42
+l : l = ', l = ', l = ', 
+k : k = ', k = ', k = ', k = ', k = ', 
+i : i = ', i = ', i = ', i = ', i = ', 
+j : j = ', j = ', j = ', 
+
+BLOCK: trueL46
+l : l = ', l = ', l = ', 
+k : k = ', 
+i : i = ', 
+j : j = ', j = ', j = ', 
+
+BLOCK: falseL48
+l : l = ', l = ', l = ', 
+k : k = ', k = ', k = ', k = ', k = ', 
+i : i = ', i = ', i = ', i = ', i = ', 
+j : j = ', j = ', j = ', 
+
+BLOCK: trueL49
+l : l = ', l = ', l = ', 
+k : k = ', 
+i : i = ', 
+j : j = ', j = ', j = ', 
+
+BLOCK: joinL50
+l : l = ', l = ', l = ', 
+k : k = ', k = ', k = ', k = ', k = ', k = ', 
+i : i = ', i = ', i = ', i = ', i = ', i = ', 
+j : j = ', j = ', j = ', 
+
+BLOCK: joinL47
+l : l = ', l = ', l = ', 
+k : k = ', k = ', k = ', k = ', k = ', k = ', k = ', 
+i : i = ', i = ', i = ', i = ', i = ', i = ', i = ', 
+j : j = ', j = ', j = ', 
+
+BLOCK: trueL51
+l : l = ', l = ', l = ', 
+k : k = ', 
+i : i = ', 
+j : j = ', j = ', j = ', 
+
+BLOCK: falseL53
+l : l = ', l = ', l = ', 
+k : k = ', k = ', k = ', k = ', k = ', k = ', k = ', 
+i : i = ', i = ', i = ', i = ', i = ', i = ', i = ', 
+j : j = ', j = ', j = ', 
+
+BLOCK: trueL54
+l : l = ', l = ', l = ', 
+k : k = ', 
+i : i = ', 
+j : j = ', j = ', j = ', 
+
+BLOCK: joinL55
+l : l = ', l = ', l = ', 
+k : k = ', k = ', k = ', k = ', k = ', k = ', k = ', k = ', 
+i : i = ', i = ', i = ', i = ', i = ', i = ', i = ', i = ', 
+j : j = ', j = ', j = ', 
+
+BLOCK: joinL52
+l : l = ', l = ', l = ', 
+k : k = ', k = ', k = ', k = ', k = ', k = ', k = ', k = ', k = ', 
+i : i = ', i = ', i = ', i = ', i = ', i = ', i = ', i = ', i = ', 
+j : j = ', j = ', j = ', 
+
+BLOCK: trueL56
+l : l = ', l = ', l = ', 
+k : k = ', k = ', k = ', k = ', k = ', k = ', k = ', k = ', k = ', 
+i : i = ', i = ', i = ', i = ', i = ', i = ', i = ', i = ', i = ', 
+j : j = ', j = ', j = ', 
+
+BLOCK: falseL58
+l : l = ', l = ', l = ', 
+k : k = ', k = ', k = ', k = ', k = ', k = ', k = ', k = ', k = ', 
+i : i = ', i = ', i = ', i = ', i = ', i = ', i = ', i = ', i = ', 
+j : j = ', j = ', j = ', 
+
+BLOCK: joinL57
+l : l = ', l = ', l = ', 
+k : k = ', k = ', k = ', k = ', k = ', k = ', k = ', k = ', k = ', 
+i : i = ', i = ', i = ', i = ', i = ', i = ', i = ', i = ', i = ', 
+j : j = ', j = ', j = ', 
+
+BLOCK: StartmainL59
+
+BLOCK: BasicL60
+r2 : r2 = 0.0, 
+a1 : a1 = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+x1 : x1 = 0.0, 
+d1 : d1 = 0.0, 
+pt2 : pt2 = new CartesianPoint(0.0, 0.0, ), 
+pt1 : pt1 = new CartesianPoint(0.0, 0.0, ), 
+r1 : r1 = 0.0, 
+y1 : y1 = 0.0, 
+a2 : a2 = 0.0, 
+y2 : y2 = 0.0, 
+choice1 : choice1 = scan.nextInt(), 
+x2 : x2 = 0.0, 
+
+BLOCK: trueL62
+r2 : r2 = 0.0, 
+a1 : a1 = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+x1 : x1 = scan.nextDouble(), 
+d1 : d1 = 0.0, 
+pt1 : pt1 = new CartesianPoint(x1, y1, ), 
+pt2 : pt2 = new CartesianPoint(0.0, 0.0, ), 
+r1 : r1 = 0.0, 
+y1 : y1 = scan.nextDouble(), 
+a2 : a2 = 0.0, 
+y2 : y2 = 0.0, 
+choice1 : choice1 = scan.nextInt(), 
+x2 : x2 = 0.0, 
+
+BLOCK: falseL64
+r2 : r2 = 0.0, 
+a1 : a1 = a1 * Math.PI / 180.0, 
+scan : scan = new Scanner(System.in, ), 
+x1 : x1 = 0.0, 
+d1 : d1 = 0.0, 
+pt1 : pt1 = new PolarPoint(r1, a1, ), 
+r1 : r1 = scan.nextDouble(), 
+pt2 : pt2 = new CartesianPoint(0.0, 0.0, ), 
+y1 : y1 = 0.0, 
+a2 : a2 = 0.0, 
+y2 : y2 = 0.0, 
+choice1 : choice1 = scan.nextInt(), 
+x2 : x2 = 0.0, 
+
+BLOCK: joinL63
+r2 : r2 = 0.0, 
+a1 : a1 = a1 * Math.PI / 180.0, a1 = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+choice2 : choice2 = scan.nextInt(), 
+x1 : x1 = scan.nextDouble(), x1 = 0.0, 
+d1 : d1 = 0.0, 
+pt1 : pt1 = new PolarPoint(r1, a1, ), pt1 = new CartesianPoint(x1, y1, ), 
+pt2 : pt2 = new CartesianPoint(0.0, 0.0, ), 
+r1 : r1 = 0.0, r1 = scan.nextDouble(), 
+y1 : y1 = scan.nextDouble(), y1 = 0.0, 
+a2 : a2 = 0.0, 
+y2 : y2 = 0.0, 
+choice1 : choice1 = scan.nextInt(), 
+x2 : x2 = 0.0, 
+
+BLOCK: trueL65
+r2 : r2 = 0.0, 
+a1 : a1 = a1 * Math.PI / 180.0, a1 = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+choice2 : choice2 = scan.nextInt(), 
+x1 : x1 = scan.nextDouble(), x1 = 0.0, 
+d1 : d1 = 0.0, 
+pt2 : pt2 = new CartesianPoint(x2, y2, ), 
+pt1 : pt1 = new PolarPoint(r1, a1, ), pt1 = new CartesianPoint(x1, y1, ), 
+r1 : r1 = 0.0, r1 = scan.nextDouble(), 
+y1 : y1 = scan.nextDouble(), y1 = 0.0, 
+a2 : a2 = 0.0, 
+y2 : y2 = scan.nextDouble(), 
+choice1 : choice1 = scan.nextInt(), 
+x2 : x2 = scan.nextDouble(), 
+
+BLOCK: falseL67
+r2 : r2 = scan.nextDouble(), 
+a1 : a1 = a1 * Math.PI / 180.0, a1 = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+choice2 : choice2 = scan.nextInt(), 
+x1 : x1 = scan.nextDouble(), x1 = 0.0, 
+d1 : d1 = 0.0, 
+pt2 : pt2 = new PolarPoint(r2, a2, ), 
+pt1 : pt1 = new PolarPoint(r1, a1, ), pt1 = new CartesianPoint(x1, y1, ), 
+r1 : r1 = 0.0, r1 = scan.nextDouble(), 
+y1 : y1 = scan.nextDouble(), y1 = 0.0, 
+a2 : a2 = a2 * Math.PI / 180.0, 
+y2 : y2 = 0.0, 
+choice1 : choice1 = scan.nextInt(), 
+x2 : x2 = 0.0, 
+
+BLOCK: joinL66
+r2 : r2 = scan.nextDouble(), r2 = 0.0, 
+a1 : a1 = a1 * Math.PI / 180.0, a1 = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+choice2 : choice2 = scan.nextInt(), 
+same : same = sameQuad(pt1, pt2, ), 
+x1 : x1 = scan.nextDouble(), x1 = 0.0, 
+d1 : d1 = distance(pt1, pt2, ), 
+pt2 : pt2 = new PolarPoint(r2, a2, ), pt2 = new CartesianPoint(x2, y2, ), 
+pt1 : pt1 = new PolarPoint(r1, a1, ), pt1 = new CartesianPoint(x1, y1, ), 
+r1 : r1 = 0.0, r1 = scan.nextDouble(), 
+y1 : y1 = scan.nextDouble(), y1 = 0.0, 
+a2 : a2 = 0.0, a2 = a2 * Math.PI / 180.0, 
+y2 : y2 = scan.nextDouble(), y2 = 0.0, 
+choice1 : choice1 = scan.nextInt(), 
+x2 : x2 = 0.0, x2 = scan.nextDouble(), 
+
+BLOCK: trueL68
+r2 : r2 = scan.nextDouble(), r2 = 0.0, 
+a1 : a1 = a1 * Math.PI / 180.0, a1 = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+choice2 : choice2 = scan.nextInt(), 
+same : same = sameQuad(pt1, pt2, ), 
+x1 : x1 = scan.nextDouble(), x1 = 0.0, 
+d1 : d1 = distance(pt1, pt2, ), 
+pt2 : pt2 = new PolarPoint(r2, a2, ), pt2 = new CartesianPoint(x2, y2, ), 
+pt1 : pt1 = new PolarPoint(r1, a1, ), pt1 = new CartesianPoint(x1, y1, ), 
+r1 : r1 = 0.0, r1 = scan.nextDouble(), 
+y1 : y1 = scan.nextDouble(), y1 = 0.0, 
+a2 : a2 = 0.0, a2 = a2 * Math.PI / 180.0, 
+y2 : y2 = scan.nextDouble(), y2 = 0.0, 
+choice1 : choice1 = scan.nextInt(), 
+x2 : x2 = 0.0, x2 = scan.nextDouble(), 
+
+BLOCK: falseL70
+r2 : r2 = scan.nextDouble(), r2 = 0.0, 
+a1 : a1 = a1 * Math.PI / 180.0, a1 = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+choice2 : choice2 = scan.nextInt(), 
+same : same = sameQuad(pt1, pt2, ), 
+x1 : x1 = scan.nextDouble(), x1 = 0.0, 
+d1 : d1 = distance(pt1, pt2, ), 
+pt2 : pt2 = new PolarPoint(r2, a2, ), pt2 = new CartesianPoint(x2, y2, ), 
+pt1 : pt1 = new PolarPoint(r1, a1, ), pt1 = new CartesianPoint(x1, y1, ), 
+r1 : r1 = 0.0, r1 = scan.nextDouble(), 
+y1 : y1 = scan.nextDouble(), y1 = 0.0, 
+a2 : a2 = 0.0, a2 = a2 * Math.PI / 180.0, 
+y2 : y2 = scan.nextDouble(), y2 = 0.0, 
+choice1 : choice1 = scan.nextInt(), 
+x2 : x2 = 0.0, x2 = scan.nextDouble(), 
+
+BLOCK: joinL69
+r2 : r2 = scan.nextDouble(), r2 = 0.0, 
+a1 : a1 = a1 * Math.PI / 180.0, a1 = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+choice2 : choice2 = scan.nextInt(), 
+same : same = sameQuad(pt1, pt2, ), 
+x1 : x1 = scan.nextDouble(), x1 = 0.0, 
+d1 : d1 = distance(pt1, pt2, ), 
+pt2 : pt2 = new PolarPoint(r2, a2, ), pt2 = new CartesianPoint(x2, y2, ), 
+pt1 : pt1 = new PolarPoint(r1, a1, ), pt1 = new CartesianPoint(x1, y1, ), 
+r1 : r1 = 0.0, r1 = scan.nextDouble(), 
+y1 : y1 = scan.nextDouble(), y1 = 0.0, 
+a2 : a2 = 0.0, a2 = a2 * Math.PI / 180.0, 
+y2 : y2 = scan.nextDouble(), y2 = 0.0, 
+choice1 : choice1 = scan.nextInt(), 
+x2 : x2 = 0.0, x2 = scan.nextDouble(), 
+
+BLOCK: StarttestRadiusL71
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+
+BLOCK: BasicL72
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+
+BLOCK: StarttestAngleL74
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+
+BLOCK: BasicL75
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+
+BLOCK: StarttestXCoordL77
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+
+BLOCK: BasicL78
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+
+BLOCK: StarttestYCoordL80
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+
+BLOCK: BasicL81
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+
+BLOCK: StarttestRotate90L83
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+
+BLOCK: BasicL84
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+
+BLOCK: StartmainL86
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+
+BLOCK: BasicL87
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+
+BLOCK: Startconstructor1L89
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: BasicL90
+this.y_coord : this.y_coord = y_coord, 
+this.x_coord : this.x_coord = x_coord, 
+
+BLOCK: StartxCoordinateL92
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: BasicL93
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: StartyCoordinateL95
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: BasicL96
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: StartradiusL98
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: BasicL99
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: StartangleL101
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: BasicL102
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: Startrotate90L104
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: BasicL105
+pt : pt = new CartesianPoint(x, y, ), 
+x : x = this.y_coord, 
+this.x_coord : this.x_coord = 0.0, 
+y : y = this.x_coord, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: StarttestXCoordinateL107
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+
+BLOCK: BasicL108
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+
+BLOCK: StarttestYCoordinateL110
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+
+BLOCK: BasicL111
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+
+BLOCK: StarttestRadiusL113
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+
+BLOCK: BasicL114
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+
+BLOCK: StarttestAngleL116
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+
+BLOCK: BasicL117
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+
+BLOCK: StarttestRotate90L119
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+
+BLOCK: BasicL120
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+
+BLOCK: StartmainL122
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+
+BLOCK: BasicL123
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+
+BLOCK: Startconstructor1L0
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: Startconstructor1L0
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL1
+this.radius : this.radius = radius, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: trueL3
+this.radius : this.radius = radius, 
+this.angle : this.angle = angle + Math.PI, 
+
+BLOCK: joinL4
+this.radius : this.radius = radius, this.radius = radius, 
+this.angle : this.angle = angle, 
+
+BLOCK: trueL5
+this.radius : this.radius = radius, this.radius = radius, 
+this.angle : this.angle = angle + 2 * Math.PI, 
+
+BLOCK: joinL6
+this.radius : this.radius = radius, this.radius = radius, 
+this.angle : this.angle = angle, this.angle = angle + 2 * Math.PI, 
+
+BLOCK: StartxCoordinateL7
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: StartxCoordinateL7
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: BasicL8
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: StartyCoordinateL10
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: StartyCoordinateL10
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: BasicL11
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: StartradiusL13
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: StartradiusL13
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: BasicL14
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: StartangleL16
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: StartangleL16
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: BasicL17
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+
+BLOCK: Startrotate90L19
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: Startrotate90L19
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: BasicL20
+this.radius : this.radius = 0.0, 
+r : r = this.radius, 
+a : a = this.angle + 1.0 / 2.0 * Math.PI, 
+p : p = new PolarPoint(r, a, ), 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartdistanceL22
+
+BLOCK: StartdistanceL22
+
+BLOCK: BasicL23
+d : d = Math.sqrt(Math.pow(a.xCoordinate() - b.xCoordinate(), 2, ) + Math.pow(a.yCoordinate() - b.yCoordinate(), 2, ), ), 
+
+BLOCK: StartsameQuadL25
+
+BLOCK: StartsameQuadL25
+
+BLOCK: BasicL26
+l : l = ', 
+k : k = ', 
+i : i = ', 
+j : j = ', 
+
+BLOCK: trueL28
+l : l = ', 
+k : k = ', 
+i : i = ', 
+j : j = ', 
+
+BLOCK: joinL29
+l : l = ', 
+k : k = ', 
+i : i = ', i = ', 
+j : j = ', 
+
+BLOCK: trueL30
+l : l = ', 
+k : k = ', 
+i : i = ', i = ', 
+j : j = ', 
+
+BLOCK: joinL31
+l : l = ', 
+k : k = ', 
+i : i = ', i = ', 
+j : j = ', j = ', 
+
+BLOCK: trueL32
+l : l = ', 
+k : k = ', 
+i : i = ', i = ', 
+j : j = ', j = ', 
+
+BLOCK: joinL33
+l : l = ', 
+k : k = ', k = ', 
+i : i = ', i = ', 
+j : j = ', j = ', 
+
+BLOCK: trueL34
+l : l = ', 
+k : k = ', k = ', 
+i : i = ', i = ', 
+j : j = ', j = ', 
+
+BLOCK: joinL35
+l : l = ', l = ', 
+k : k = ', k = ', 
+i : i = ', i = ', 
+j : j = ', j = ', 
+
+BLOCK: trueL36
+l : l = ', l = ', 
+k : k = ', 
+i : i = ', 
+j : j = ', j = ', 
+
+BLOCK: falseL38
+l : l = ', l = ', 
+k : k = ', k = ', 
+i : i = ', i = ', 
+j : j = ', j = ', 
+
+BLOCK: trueL39
+l : l = ', l = ', 
+k : k = ', 
+i : i = ', 
+j : j = ', j = ', 
+
+BLOCK: joinL40
+l : l = ', l = ', 
+k : k = ', k = ', k = ', 
+i : i = ', i = ', i = ', 
+j : j = ', j = ', 
+
+BLOCK: joinL37
+l : l = ', l = ', 
+k : k = ', k = ', k = ', k = ', 
+i : i = ', i = ', i = ', i = ', 
+j : j = ', j = ', 
+
+BLOCK: trueL41
+l : l = ', 
+k : k = ', k = ', k = ', k = ', 
+i : i = ', i = ', i = ', i = ', 
+j : j = ', 
+
+BLOCK: falseL43
+l : l = ', l = ', 
+k : k = ', k = ', k = ', k = ', 
+i : i = ', i = ', i = ', i = ', 
+j : j = ', j = ', 
+
+BLOCK: trueL44
+l : l = ', l = ', 
+k : k = ', 
+i : i = ', 
+j : j = ', j = ', 
+
+BLOCK: joinL45
+l : l = ', l = ', 
+k : k = ', k = ', k = ', k = ', k = ', 
+i : i = ', i = ', i = ', i = ', i = ', 
+j : j = ', j = ', 
+
+BLOCK: joinL42
+l : l = ', l = ', l = ', 
+k : k = ', k = ', k = ', k = ', k = ', 
+i : i = ', i = ', i = ', i = ', i = ', 
+j : j = ', j = ', j = ', 
+
+BLOCK: trueL46
+l : l = ', l = ', l = ', 
+k : k = ', 
+i : i = ', 
+j : j = ', j = ', j = ', 
+
+BLOCK: falseL48
+l : l = ', l = ', l = ', 
+k : k = ', k = ', k = ', k = ', k = ', 
+i : i = ', i = ', i = ', i = ', i = ', 
+j : j = ', j = ', j = ', 
+
+BLOCK: trueL49
+l : l = ', l = ', l = ', 
+k : k = ', 
+i : i = ', 
+j : j = ', j = ', j = ', 
+
+BLOCK: joinL50
+l : l = ', l = ', l = ', 
+k : k = ', k = ', k = ', k = ', k = ', k = ', 
+i : i = ', i = ', i = ', i = ', i = ', i = ', 
+j : j = ', j = ', j = ', 
+
+BLOCK: joinL47
+l : l = ', l = ', l = ', 
+k : k = ', k = ', k = ', k = ', k = ', k = ', k = ', 
+i : i = ', i = ', i = ', i = ', i = ', i = ', i = ', 
+j : j = ', j = ', j = ', 
+
+BLOCK: trueL51
+l : l = ', l = ', l = ', 
+k : k = ', 
+i : i = ', 
+j : j = ', j = ', j = ', 
+
+BLOCK: falseL53
+l : l = ', l = ', l = ', 
+k : k = ', k = ', k = ', k = ', k = ', k = ', k = ', 
+i : i = ', i = ', i = ', i = ', i = ', i = ', i = ', 
+j : j = ', j = ', j = ', 
+
+BLOCK: trueL54
+l : l = ', l = ', l = ', 
+k : k = ', 
+i : i = ', 
+j : j = ', j = ', j = ', 
+
+BLOCK: joinL55
+l : l = ', l = ', l = ', 
+k : k = ', k = ', k = ', k = ', k = ', k = ', k = ', k = ', 
+i : i = ', i = ', i = ', i = ', i = ', i = ', i = ', i = ', 
+j : j = ', j = ', j = ', 
+
+BLOCK: joinL52
+l : l = ', l = ', l = ', 
+k : k = ', k = ', k = ', k = ', k = ', k = ', k = ', k = ', k = ', 
+i : i = ', i = ', i = ', i = ', i = ', i = ', i = ', i = ', i = ', 
+j : j = ', j = ', j = ', 
+
+BLOCK: trueL56
+l : l = ', l = ', l = ', 
+k : k = ', k = ', k = ', k = ', k = ', k = ', k = ', k = ', k = ', 
+i : i = ', i = ', i = ', i = ', i = ', i = ', i = ', i = ', i = ', 
+j : j = ', j = ', j = ', 
+
+BLOCK: falseL58
+l : l = ', l = ', l = ', 
+k : k = ', k = ', k = ', k = ', k = ', k = ', k = ', k = ', k = ', 
+i : i = ', i = ', i = ', i = ', i = ', i = ', i = ', i = ', i = ', 
+j : j = ', j = ', j = ', 
+
+BLOCK: joinL57
+l : l = ', l = ', l = ', 
+k : k = ', k = ', k = ', k = ', k = ', k = ', k = ', k = ', k = ', 
+i : i = ', i = ', i = ', i = ', i = ', i = ', i = ', i = ', i = ', 
+j : j = ', j = ', j = ', 
+
+BLOCK: StartmainL59
+
+BLOCK: StartmainL59
+
+BLOCK: BasicL60
+r2 : r2 = 0.0, 
+a1 : a1 = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+x1 : x1 = 0.0, 
+d1 : d1 = 0.0, 
+pt2 : pt2 = new CartesianPoint(0.0, 0.0, ), 
+pt1 : pt1 = new CartesianPoint(0.0, 0.0, ), 
+r1 : r1 = 0.0, 
+y1 : y1 = 0.0, 
+a2 : a2 = 0.0, 
+y2 : y2 = 0.0, 
+choice1 : choice1 = scan.nextInt(), 
+x2 : x2 = 0.0, 
+
+BLOCK: trueL62
+r2 : r2 = 0.0, 
+a1 : a1 = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+x1 : x1 = scan.nextDouble(), 
+d1 : d1 = 0.0, 
+pt1 : pt1 = new CartesianPoint(x1, y1, ), 
+pt2 : pt2 = new CartesianPoint(0.0, 0.0, ), 
+r1 : r1 = 0.0, 
+y1 : y1 = scan.nextDouble(), 
+a2 : a2 = 0.0, 
+y2 : y2 = 0.0, 
+choice1 : choice1 = scan.nextInt(), 
+x2 : x2 = 0.0, 
+
+BLOCK: falseL64
+r2 : r2 = 0.0, 
+a1 : a1 = a1 * Math.PI / 180.0, 
+scan : scan = new Scanner(System.in, ), 
+x1 : x1 = 0.0, 
+d1 : d1 = 0.0, 
+pt1 : pt1 = new PolarPoint(r1, a1, ), 
+r1 : r1 = scan.nextDouble(), 
+pt2 : pt2 = new CartesianPoint(0.0, 0.0, ), 
+y1 : y1 = 0.0, 
+a2 : a2 = 0.0, 
+y2 : y2 = 0.0, 
+choice1 : choice1 = scan.nextInt(), 
+x2 : x2 = 0.0, 
+
+BLOCK: joinL63
+r2 : r2 = 0.0, 
+a1 : a1 = a1 * Math.PI / 180.0, a1 = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+choice2 : choice2 = scan.nextInt(), 
+x1 : x1 = scan.nextDouble(), x1 = 0.0, 
+d1 : d1 = 0.0, 
+pt1 : pt1 = new PolarPoint(r1, a1, ), pt1 = new CartesianPoint(x1, y1, ), 
+pt2 : pt2 = new CartesianPoint(0.0, 0.0, ), 
+r1 : r1 = 0.0, r1 = scan.nextDouble(), 
+y1 : y1 = scan.nextDouble(), y1 = 0.0, 
+a2 : a2 = 0.0, 
+y2 : y2 = 0.0, 
+choice1 : choice1 = scan.nextInt(), 
+x2 : x2 = 0.0, 
+
+BLOCK: trueL65
+r2 : r2 = 0.0, 
+a1 : a1 = a1 * Math.PI / 180.0, a1 = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+choice2 : choice2 = scan.nextInt(), 
+x1 : x1 = scan.nextDouble(), x1 = 0.0, 
+d1 : d1 = 0.0, 
+pt2 : pt2 = new CartesianPoint(x2, y2, ), 
+pt1 : pt1 = new PolarPoint(r1, a1, ), pt1 = new CartesianPoint(x1, y1, ), 
+r1 : r1 = 0.0, r1 = scan.nextDouble(), 
+y1 : y1 = scan.nextDouble(), y1 = 0.0, 
+a2 : a2 = 0.0, 
+y2 : y2 = scan.nextDouble(), 
+choice1 : choice1 = scan.nextInt(), 
+x2 : x2 = scan.nextDouble(), 
+
+BLOCK: falseL67
+r2 : r2 = scan.nextDouble(), 
+a1 : a1 = a1 * Math.PI / 180.0, a1 = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+choice2 : choice2 = scan.nextInt(), 
+x1 : x1 = scan.nextDouble(), x1 = 0.0, 
+d1 : d1 = 0.0, 
+pt2 : pt2 = new PolarPoint(r2, a2, ), 
+pt1 : pt1 = new PolarPoint(r1, a1, ), pt1 = new CartesianPoint(x1, y1, ), 
+r1 : r1 = 0.0, r1 = scan.nextDouble(), 
+y1 : y1 = scan.nextDouble(), y1 = 0.0, 
+a2 : a2 = a2 * Math.PI / 180.0, 
+y2 : y2 = 0.0, 
+choice1 : choice1 = scan.nextInt(), 
+x2 : x2 = 0.0, 
+
+BLOCK: joinL66
+r2 : r2 = scan.nextDouble(), r2 = 0.0, 
+a1 : a1 = a1 * Math.PI / 180.0, a1 = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+choice2 : choice2 = scan.nextInt(), 
+same : same = sameQuad(pt1, pt2, ), 
+x1 : x1 = scan.nextDouble(), x1 = 0.0, 
+d1 : d1 = distance(pt1, pt2, ), 
+pt2 : pt2 = new PolarPoint(r2, a2, ), pt2 = new CartesianPoint(x2, y2, ), 
+pt1 : pt1 = new PolarPoint(r1, a1, ), pt1 = new CartesianPoint(x1, y1, ), 
+r1 : r1 = 0.0, r1 = scan.nextDouble(), 
+y1 : y1 = scan.nextDouble(), y1 = 0.0, 
+a2 : a2 = 0.0, a2 = a2 * Math.PI / 180.0, 
+y2 : y2 = scan.nextDouble(), y2 = 0.0, 
+choice1 : choice1 = scan.nextInt(), 
+x2 : x2 = 0.0, x2 = scan.nextDouble(), 
+
+BLOCK: trueL68
+r2 : r2 = scan.nextDouble(), r2 = 0.0, 
+a1 : a1 = a1 * Math.PI / 180.0, a1 = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+choice2 : choice2 = scan.nextInt(), 
+same : same = sameQuad(pt1, pt2, ), 
+x1 : x1 = scan.nextDouble(), x1 = 0.0, 
+d1 : d1 = distance(pt1, pt2, ), 
+pt2 : pt2 = new PolarPoint(r2, a2, ), pt2 = new CartesianPoint(x2, y2, ), 
+pt1 : pt1 = new PolarPoint(r1, a1, ), pt1 = new CartesianPoint(x1, y1, ), 
+r1 : r1 = 0.0, r1 = scan.nextDouble(), 
+y1 : y1 = scan.nextDouble(), y1 = 0.0, 
+a2 : a2 = 0.0, a2 = a2 * Math.PI / 180.0, 
+y2 : y2 = scan.nextDouble(), y2 = 0.0, 
+choice1 : choice1 = scan.nextInt(), 
+x2 : x2 = 0.0, x2 = scan.nextDouble(), 
+
+BLOCK: falseL70
+r2 : r2 = scan.nextDouble(), r2 = 0.0, 
+a1 : a1 = a1 * Math.PI / 180.0, a1 = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+choice2 : choice2 = scan.nextInt(), 
+same : same = sameQuad(pt1, pt2, ), 
+x1 : x1 = scan.nextDouble(), x1 = 0.0, 
+d1 : d1 = distance(pt1, pt2, ), 
+pt2 : pt2 = new PolarPoint(r2, a2, ), pt2 = new CartesianPoint(x2, y2, ), 
+pt1 : pt1 = new PolarPoint(r1, a1, ), pt1 = new CartesianPoint(x1, y1, ), 
+r1 : r1 = 0.0, r1 = scan.nextDouble(), 
+y1 : y1 = scan.nextDouble(), y1 = 0.0, 
+a2 : a2 = 0.0, a2 = a2 * Math.PI / 180.0, 
+y2 : y2 = scan.nextDouble(), y2 = 0.0, 
+choice1 : choice1 = scan.nextInt(), 
+x2 : x2 = 0.0, x2 = scan.nextDouble(), 
+
+BLOCK: joinL69
+r2 : r2 = scan.nextDouble(), r2 = 0.0, 
+a1 : a1 = a1 * Math.PI / 180.0, a1 = 0.0, 
+scan : scan = new Scanner(System.in, ), 
+choice2 : choice2 = scan.nextInt(), 
+same : same = sameQuad(pt1, pt2, ), 
+x1 : x1 = scan.nextDouble(), x1 = 0.0, 
+d1 : d1 = distance(pt1, pt2, ), 
+pt2 : pt2 = new PolarPoint(r2, a2, ), pt2 = new CartesianPoint(x2, y2, ), 
+pt1 : pt1 = new PolarPoint(r1, a1, ), pt1 = new CartesianPoint(x1, y1, ), 
+r1 : r1 = 0.0, r1 = scan.nextDouble(), 
+y1 : y1 = scan.nextDouble(), y1 = 0.0, 
+a2 : a2 = 0.0, a2 = a2 * Math.PI / 180.0, 
+y2 : y2 = scan.nextDouble(), y2 = 0.0, 
+choice1 : choice1 = scan.nextInt(), 
+x2 : x2 = 0.0, x2 = scan.nextDouble(), 
+
+BLOCK: StarttestRadiusL71
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+
+BLOCK: StarttestRadiusL71
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+
+BLOCK: BasicL72
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+
+BLOCK: StarttestAngleL74
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+
+BLOCK: StarttestAngleL74
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+
+BLOCK: BasicL75
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+
+BLOCK: StarttestXCoordL77
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+
+BLOCK: StarttestXCoordL77
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+
+BLOCK: BasicL78
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+
+BLOCK: StarttestYCoordL80
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+
+BLOCK: StarttestYCoordL80
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+
+BLOCK: BasicL81
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+
+BLOCK: StarttestRotate90L83
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+
+BLOCK: StarttestRotate90L83
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+
+BLOCK: BasicL84
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+
+BLOCK: StartmainL86
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+
+BLOCK: StartmainL86
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+
+BLOCK: BasicL87
+this.pt2 : this.pt2 = new PolarPoint(0.0, Math.PI, ), 
+this.pt1 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, ), 
+this.pt : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, ), 
+
+BLOCK: Startconstructor1L89
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: Startconstructor1L89
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: BasicL90
+this.y_coord : this.y_coord = y_coord, 
+this.x_coord : this.x_coord = x_coord, 
+
+BLOCK: StartxCoordinateL92
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: StartxCoordinateL92
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: BasicL93
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: StartyCoordinateL95
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: StartyCoordinateL95
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: BasicL96
+this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
+
+BLOCK: StartradiusL98
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: StartradiusL98
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: BasicL99
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: StartangleL101
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: StartangleL101
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: BasicL102
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: Startrotate90L104
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: Startrotate90L104
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: BasicL105
+pt : pt = new CartesianPoint(x, y, ), 
+x : x = this.y_coord, 
+this.x_coord : this.x_coord = 0.0, 
+y : y = this.x_coord, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: StarttestXCoordinateL107
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+
+BLOCK: StarttestXCoordinateL107
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+
+BLOCK: BasicL108
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+
+BLOCK: StarttestYCoordinateL110
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+
+BLOCK: StarttestYCoordinateL110
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+
+BLOCK: BasicL111
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+
+BLOCK: StarttestRadiusL113
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+
+BLOCK: StarttestRadiusL113
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+
+BLOCK: BasicL114
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+
+BLOCK: StarttestAngleL116
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+
+BLOCK: StarttestAngleL116
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+
+BLOCK: BasicL117
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+
+BLOCK: StarttestRotate90L119
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+
+BLOCK: StarttestRotate90L119
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+
+BLOCK: BasicL120
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+
+BLOCK: StartmainL122
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+
+BLOCK: StartmainL122
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+
+BLOCK: BasicL123
+this.pt : this.pt = new CartesianPoint(3.0, 4.0, ), 
+this.pt1 : this.pt1 = new CartesianPoint(1.0, 2.0, ), 
+this.pt2 : this.pt2 = new CartesianPoint(1.0, 5.0, ), 
+
+Unfiltered: 253147
+Filtered: 3
+
+
+Duplicate found: 102_Code/102_hw1/dir05/PointRelation.java lines [14, 69] and 102_Code/102_hw1/dir05/PointRelation.java lines [14, 68]
+102_Code/102_hw1/dir05/PointRelation.java ----------
+14 :	k = '
+17 :	i = '
+25 :	k = '
+34 :	k = '
+39 :	k = '
+49 :	k = '
+54 :	k = '
+59 :	k = '
+64 :	k = '
+68 :	i = '
+69 :	k = '
+102_Code/102_hw1/dir05/PointRelation.java ----------
+14 :	i = '
+14 :	j = '
+17 :	i = '
+33 :	i = '
+38 :	i = '
+48 :	i = '
+53 :	i = '
+58 :	i = '
+63 :	i = '
+21 :	j = '
+68 :	i = '
+===========================
+
+
+
+Duplicate found: 102_Code/102_hw1/dir05/PointRelation.java lines [14, 69] and 102_Code/102_hw1/dir05/PointRelation.java lines [14, 69]
+102_Code/102_hw1/dir05/PointRelation.java ----------
+14 :	k = '
+17 :	i = '
+25 :	k = '
+34 :	k = '
+39 :	k = '
+49 :	k = '
+54 :	k = '
+59 :	k = '
+64 :	k = '
+68 :	i = '
+69 :	k = '
+102_Code/102_hw1/dir05/PointRelation.java ----------
+14 :	i = '
+54 :	k = '
+17 :	i = '
+33 :	i = '
+38 :	i = '
+48 :	i = '
+53 :	i = '
+58 :	i = '
+63 :	i = '
+69 :	k = '
+68 :	i = '
+===========================
+
+
+
+Duplicate found: 102_Code/102_hw1/dir05/PointRelation.java lines [83, 122] and 102_Code/102_hw1/dir05/PointRelation.java lines [83, 103]
+102_Code/102_hw1/dir05/PointRelation.java ----------
+83 :	y2 = 0.0
+85 :	pt2 = new CartesianPoint(0.0, 0.0, )
+110 :	x2 = scan.nextDouble()
+112 :	y2 = scan.nextDouble()
+113 :	pt2 = new CartesianPoint(x2, y2, )
+122 :	pt2 = new PolarPoint(r2, a2, )
+102_Code/102_hw1/dir05/PointRelation.java ----------
+83 :	x1 = 0.0
+84 :	pt1 = new CartesianPoint(0.0, 0.0, )
+93 :	y1 = scan.nextDouble()
+91 :	x1 = scan.nextDouble()
+94 :	pt1 = new CartesianPoint(x1, y1, )
+103 :	pt1 = new PolarPoint(r1, a1, )
+===========================
+
+
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 12.311 s
+[INFO] Finished at: 2019-05-01T17:13:40-07:00
+[INFO] Final Memory: 27M/1482M
+[INFO] ------------------------------------------------------------------------

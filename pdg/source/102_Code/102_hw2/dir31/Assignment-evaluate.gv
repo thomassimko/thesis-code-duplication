@@ -1,0 +1,8 @@
+digraph G {
+"4 : this.id = null"
+"4 : this.id = null" -> "16 : bindings.addBinding(this.id, val, )"
+"5 : this.e = null"
+"15 : val = this.e.evaluate(bindings, )"
+"15 : val = this.e.evaluate(bindings, )" -> "16 : bindings.addBinding(this.id, val, )"
+"16 : bindings.addBinding(this.id, val, )"
+}

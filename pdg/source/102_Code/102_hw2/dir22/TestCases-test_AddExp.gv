@@ -1,0 +1,8 @@
+digraph G {
+"18 : lft = new DoubleConstantExpression(5.0, )"
+"18 : lft = new DoubleConstantExpression(5.0, )" -> "20 : AE = new AddExpression(lft, rht, )"
+"19 : rht = new DoubleConstantExpression(7.0, )"
+"19 : rht = new DoubleConstantExpression(7.0, )" -> "20 : AE = new AddExpression(lft, rht, )"
+"20 : AE = new AddExpression(lft, rht, )"
+"21 : Check.check(AE.evaluate(new VariableBindings(), ), 12.0, )"
+}

@@ -1,0 +1,14 @@
+digraph G {
+"31 : System.out.println(\"Which type of point should be created? (1 for Cartesian, 2 for Polar)\", )"
+"32 : input = new Scanner(System.in, )"
+"34 : choice = input.nextInt()"
+"34 : choice = input.nextInt()" -> "40 : choice == 2"
+"34 : choice = input.nextInt()" -> "36 : choice == 1"
+"36 : choice == 1"
+"38 : getCartesian()"
+"40 : choice == 2"
+"42 : getPolar()"
+"46 : System.out.println(\"Option must be either 1 or 2.\", )"
+"47 : System.exit(1, )"
+"49 : null"
+}

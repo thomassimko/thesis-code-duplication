@@ -1,0 +1,1578 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for thesis:thesis:jar:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.version' for org.junit.jupiter:junit-jupiter-api:jar is either LATEST or RELEASE (both of them are being deprecated) @ line 25, column 22
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building thesis 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default-cli) > validate @ thesis >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default-cli) < validate @ thesis <<<
+[INFO] 
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ thesis ---
+BLOCK: Startconstructor1L0
+
+BLOCK: BasicL1
+
+BLOCK: StartcompareL3
+
+BLOCK: BasicL4
+
+BLOCK: Startconstructor1L6
+
+BLOCK: BasicL7
+
+BLOCK: StartcompareL9
+
+BLOCK: BasicL10
+
+BLOCK: Startconstructor1L12
+this.comp2 : this.comp2 = null, 
+this.comp1 : this.comp1 = null, 
+
+BLOCK: BasicL13
+this.comp2 : this.comp2 = comp2, 
+this.comp1 : this.comp1 = comp1, 
+
+BLOCK: StartcompareL15
+this.comp2 : this.comp2 = null, 
+this.comp1 : this.comp1 = null, 
+
+BLOCK: BasicL16
+firstComparison : firstComparison = this.comp1.compare(o1, o2, ), 
+this.comp2 : this.comp2 = null, 
+this.comp1 : this.comp1 = null, 
+
+BLOCK: trueL18
+firstComparison : firstComparison = this.comp1.compare(o1, o2, ), 
+this.comp2 : this.comp2 = null, 
+this.comp1 : this.comp1 = null, 
+
+BLOCK: joinL19
+firstComparison : firstComparison = this.comp1.compare(o1, o2, ), 
+this.comp2 : this.comp2 = null, 
+this.comp1 : this.comp1 = null, 
+
+BLOCK: Startconstructor1L20
+
+BLOCK: BasicL21
+
+BLOCK: StartcompareL23
+
+BLOCK: BasicL24
+
+BLOCK: trueL26
+
+BLOCK: falseL28
+
+BLOCK: trueL29
+
+BLOCK: joinL30
+
+BLOCK: joinL27
+
+BLOCK: Startconstructor1L31
+this.amountPaid : this.amountPaid = 0.0, 
+this.category : this.category = null, 
+this.date : this.date = null, 
+this.payee : this.payee = null, 
+
+BLOCK: BasicL32
+this.amountPaid : this.amountPaid = amountPaid, 
+this.category : this.category = category, 
+this.date : this.date = date, 
+this.payee : this.payee = payee, 
+
+BLOCK: StartgetTypeL34
+this.date : this.date = null, 
+this.payee : this.payee = null, 
+this.category : this.category = null, 
+this.amountPaid : this.amountPaid = 0.0, 
+
+BLOCK: BasicL35
+this.date : this.date = null, 
+this.payee : this.payee = null, 
+this.category : this.category = null, 
+this.amountPaid : this.amountPaid = 0.0, 
+
+BLOCK: StartgetDateL37
+this.payee : this.payee = null, 
+this.category : this.category = null, 
+this.amountPaid : this.amountPaid = 0.0, 
+this.date : this.date = null, 
+
+BLOCK: BasicL38
+this.payee : this.payee = null, 
+this.category : this.category = null, 
+this.amountPaid : this.amountPaid = 0.0, 
+this.date : this.date = null, 
+
+BLOCK: StartgetCategoryL40
+this.date : this.date = null, 
+this.payee : this.payee = null, 
+this.category : this.category = null, 
+this.amountPaid : this.amountPaid = 0.0, 
+
+BLOCK: BasicL41
+this.date : this.date = null, 
+this.payee : this.payee = null, 
+this.category : this.category = null, 
+this.amountPaid : this.amountPaid = 0.0, 
+
+BLOCK: StartgetPayeeL43
+this.payee : this.payee = null, 
+this.category : this.category = null, 
+this.date : this.date = null, 
+this.amountPaid : this.amountPaid = 0.0, 
+
+BLOCK: BasicL44
+this.payee : this.payee = null, 
+this.category : this.category = null, 
+this.date : this.date = null, 
+this.amountPaid : this.amountPaid = 0.0, 
+
+BLOCK: StartgetAmountPaidL46
+this.payee : this.payee = null, 
+this.category : this.category = null, 
+this.amountPaid : this.amountPaid = 0.0, 
+this.date : this.date = null, 
+
+BLOCK: BasicL47
+this.payee : this.payee = null, 
+this.category : this.category = null, 
+this.amountPaid : this.amountPaid = 0.0, 
+this.date : this.date = null, 
+
+BLOCK: Startconstructor1L49
+
+BLOCK: BasicL50
+
+BLOCK: StartcompareL52
+
+BLOCK: BasicL53
+
+BLOCK: trueL55
+
+BLOCK: falseL57
+
+BLOCK: trueL58
+
+BLOCK: joinL59
+
+BLOCK: joinL56
+
+BLOCK: StartmainL60
+
+BLOCK: BasicL61
+out : out = null, 
+s : s = null, 
+expenseList : expenseList = new ArrayList(), 
+error : error = false, 
+scan : scan = new Scanner(System.in, ), 
+
+BLOCK: BasicL63
+category : category = null, 
+amount : amount = 0.0, 
+payee : payee = null, 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+remainingAmount : remainingAmount = 0.0, 
+date : date = null, 
+
+BLOCK: BasicL64
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+str : str = s.nextLine(), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+
+BLOCK: LoopL65
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+str : str = s.nextLine(), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+
+BLOCK: BasicL66
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+str : str = s.nextLine(), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+
+BLOCK: trueL67
+category : category = s.nextLine(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), 
+payee : payee = s.nextLine(), 
+str : str = s.nextLine(), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+date : date = df.parse(s.nextLine(), ), 
+
+BLOCK: falseL69
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+str : str = s.nextLine(), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+
+BLOCK: trueL70
+category : category = s.nextLine(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), 
+payee : payee = s.nextLine(), 
+str : str = s.nextLine(), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+remainingAmount : remainingAmount = Double.parseDouble(s.nextLine(), ), 
+date : date = df.parse(s.nextLine(), ), 
+
+BLOCK: joinL71
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+str : str = s.nextLine(), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+
+BLOCK: joinL68
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+str : str = s.nextLine(), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+
+BLOCK: BasicL72
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+str : str = s.nextLine(), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+
+BLOCK: BasicL73
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+str : str = s.nextLine(), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+
+BLOCK: trueL74
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+str : str = s.nextLine(), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+
+BLOCK: joinL75
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+choice : choice = 0, 
+str : str = s.nextLine(), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+
+BLOCK: LoopL76
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+strOut : strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s (%s) [%s]", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, ), strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s [%s]", expPayee, expAmount.toString(), expCategory, ), strOut = null, 
+expenseList : expenseList = listNew, expenseList = listNew, 
+expPayee : expPayee = exp.getPayee(), 
+exp : exp = expenseList, 
+expRemaining : expRemaining = getRemainingAmount(), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+expDate : expDate = exp.getDate(), 
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+remainingAmount : remainingAmount = Double.parseDouble(scan.next(), ), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+expCategory : expCategory = exp.getCategory(), 
+out : out = new FileWriter("StoredExpenses", ), 
+choice : choice = Integer.parseInt(scan.next(), ), 
+str : str = s.nextLine(), 
+listNew : listNew = new ArrayList(), 
+expAmount : expAmount = exp.getAmountPaid(), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+exp : exp = expenseList, 
+listNew : listNew = new ArrayList(), 
+
+BLOCK: BasicL77
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+strOut : strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s (%s) [%s]", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, ), strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s [%s]", expPayee, expAmount.toString(), expCategory, ), strOut = null, 
+expenseList : expenseList = listNew, expenseList = listNew, 
+expPayee : expPayee = exp.getPayee(), 
+exp : exp = expenseList, 
+expRemaining : expRemaining = getRemainingAmount(), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+expDate : expDate = exp.getDate(), 
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+remainingAmount : remainingAmount = Double.parseDouble(scan.next(), ), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+expCategory : expCategory = exp.getCategory(), 
+out : out = new FileWriter("StoredExpenses", ), 
+choice : choice = Integer.parseInt(scan.next(), ), choice = 0, 
+str : str = s.nextLine(), 
+listNew : listNew = new ArrayList(), 
+expAmount : expAmount = exp.getAmountPaid(), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+exp : exp = expenseList, 
+listNew : listNew = new ArrayList(), 
+
+BLOCK: trueL78
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+strOut : strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s (%s) [%s]", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, ), strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s [%s]", expPayee, expAmount.toString(), expCategory, ), strOut = null, 
+expenseList : expenseList = listNew, expenseList = listNew, 
+expPayee : expPayee = exp.getPayee(), 
+exp : exp = expenseList, 
+expRemaining : expRemaining = getRemainingAmount(), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+expDate : expDate = exp.getDate(), 
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+remainingAmount : remainingAmount = Double.parseDouble(scan.next(), ), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+expCategory : expCategory = exp.getCategory(), 
+out : out = new FileWriter("StoredExpenses", ), 
+choice : choice = Integer.parseInt(scan.next(), ), 
+str : str = s.nextLine(), 
+listNew : listNew = new ArrayList(), 
+expAmount : expAmount = exp.getAmountPaid(), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+exp : exp = expenseList, 
+listNew : listNew = new ArrayList(), 
+
+BLOCK: joinL79
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+strOut : strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s (%s) [%s]", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, ), strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s [%s]", expPayee, expAmount.toString(), expCategory, ), strOut = null, 
+expenseList : expenseList = listNew, expenseList = listNew, 
+expPayee : expPayee = exp.getPayee(), 
+exp : exp = expenseList, 
+expRemaining : expRemaining = getRemainingAmount(), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+expDate : expDate = exp.getDate(), 
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+remainingAmount : remainingAmount = Double.parseDouble(scan.next(), ), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+expCategory : expCategory = exp.getCategory(), 
+out : out = new FileWriter("StoredExpenses", ), 
+choice : choice = Integer.parseInt(scan.next(), ), 
+str : str = s.nextLine(), 
+listNew : listNew = new ArrayList(), 
+expAmount : expAmount = exp.getAmountPaid(), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+exp : exp = expenseList, 
+listNew : listNew = new ArrayList(), 
+
+BLOCK: LoopL82
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+strOut : strOut = null, 
+expenseList : expenseList = listNew, expenseList = listNew, 
+expPayee : expPayee = exp.getPayee(), 
+exp : exp = expenseList, 
+expRemaining : expRemaining = getRemainingAmount(), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+expDate : expDate = exp.getDate(), 
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+remainingAmount : remainingAmount = Double.parseDouble(scan.next(), ), 
+expCategory : expCategory = exp.getCategory(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+out : out = new FileWriter("StoredExpenses", ), 
+choice : choice = Integer.parseInt(scan.next(), ), 
+str : str = s.nextLine(), 
+listNew : listNew = new ArrayList(), 
+expAmount : expAmount = exp.getAmountPaid(), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+exp : exp = expenseList, 
+listNew : listNew = new ArrayList(), 
+
+BLOCK: BasicL83
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+strOut : strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s (%s) [%s]", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, ), strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s [%s]", expPayee, expAmount.toString(), expCategory, ), strOut = null, 
+expenseList : expenseList = listNew, expenseList = listNew, 
+expPayee : expPayee = exp.getPayee(), 
+exp : exp = expenseList, 
+expRemaining : expRemaining = getRemainingAmount(), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+expDate : expDate = exp.getDate(), 
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+remainingAmount : remainingAmount = Double.parseDouble(scan.next(), ), 
+expCategory : expCategory = exp.getCategory(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+out : out = new FileWriter("StoredExpenses", ), 
+choice : choice = Integer.parseInt(scan.next(), ), 
+str : str = s.nextLine(), 
+listNew : listNew = new ArrayList(), 
+expAmount : expAmount = exp.getAmountPaid(), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+exp : exp = expenseList, 
+listNew : listNew = new ArrayList(), 
+
+BLOCK: trueL84
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+strOut : strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s (%s) [%s]", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, ), 
+expenseList : expenseList = listNew, expenseList = listNew, 
+expRemaining : expRemaining = getRemainingAmount(), 
+expPayee : expPayee = exp.getPayee(), 
+exp : exp = expenseList, 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+expDate : expDate = exp.getDate(), 
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+remainingAmount : remainingAmount = Double.parseDouble(scan.next(), ), 
+expCategory : expCategory = exp.getCategory(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+out : out = new FileWriter("StoredExpenses", ), 
+choice : choice = Integer.parseInt(scan.next(), ), 
+str : str = s.nextLine(), 
+listNew : listNew = new ArrayList(), 
+expAmount : expAmount = exp.getAmountPaid(), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+exp : exp = expenseList, 
+listNew : listNew = new ArrayList(), 
+
+BLOCK: falseL86
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+strOut : strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s [%s]", expPayee, expAmount.toString(), expCategory, ), 
+expenseList : expenseList = listNew, expenseList = listNew, 
+expPayee : expPayee = exp.getPayee(), 
+exp : exp = expenseList, 
+expRemaining : expRemaining = getRemainingAmount(), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+expDate : expDate = exp.getDate(), 
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+remainingAmount : remainingAmount = Double.parseDouble(scan.next(), ), 
+expCategory : expCategory = exp.getCategory(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+out : out = new FileWriter("StoredExpenses", ), 
+choice : choice = Integer.parseInt(scan.next(), ), 
+str : str = s.nextLine(), 
+listNew : listNew = new ArrayList(), 
+expAmount : expAmount = exp.getAmountPaid(), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+exp : exp = expenseList, 
+listNew : listNew = new ArrayList(), 
+
+BLOCK: joinL85
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+strOut : strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s (%s) [%s]", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, ), strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s [%s]", expPayee, expAmount.toString(), expCategory, ), 
+expenseList : expenseList = listNew, expenseList = listNew, 
+expRemaining : expRemaining = getRemainingAmount(), 
+expPayee : expPayee = exp.getPayee(), 
+exp : exp = expenseList, 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+expDate : expDate = exp.getDate(), 
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+remainingAmount : remainingAmount = Double.parseDouble(scan.next(), ), 
+expCategory : expCategory = exp.getCategory(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+out : out = new FileWriter("StoredExpenses", ), 
+choice : choice = Integer.parseInt(scan.next(), ), 
+str : str = s.nextLine(), 
+listNew : listNew = new ArrayList(), 
+expAmount : expAmount = exp.getAmountPaid(), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+exp : exp = expenseList, 
+listNew : listNew = new ArrayList(), 
+
+BLOCK: trueL88
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+strOut : strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s (%s) [%s]", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, ), strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s [%s]", expPayee, expAmount.toString(), expCategory, ), strOut = null, 
+expenseList : expenseList = listNew, 
+expPayee : expPayee = exp.getPayee(), 
+exp : exp = expenseList, 
+expRemaining : expRemaining = getRemainingAmount(), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+expDate : expDate = exp.getDate(), 
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+remainingAmount : remainingAmount = Double.parseDouble(scan.next(), ), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+expCategory : expCategory = exp.getCategory(), 
+out : out = new FileWriter("StoredExpenses", ), 
+choice : choice = Integer.parseInt(scan.next(), ), 
+str : str = s.nextLine(), 
+listNew : listNew = new ArrayList(), 
+expAmount : expAmount = exp.getAmountPaid(), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+exp : exp = expenseList, 
+listNew : listNew = new ArrayList(), 
+
+BLOCK: falseL90
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+strOut : strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s (%s) [%s]", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, ), strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s [%s]", expPayee, expAmount.toString(), expCategory, ), strOut = null, 
+expenseList : expenseList = listNew, 
+expPayee : expPayee = exp.getPayee(), 
+exp : exp = expenseList, 
+expRemaining : expRemaining = getRemainingAmount(), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+expDate : expDate = exp.getDate(), 
+remainingAmount : remainingAmount = Double.parseDouble(scan.next(), ), 
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+expCategory : expCategory = exp.getCategory(), 
+out : out = new FileWriter("StoredExpenses", ), 
+choice : choice = Integer.parseInt(scan.next(), ), 
+str : str = s.nextLine(), 
+listNew : listNew = new ArrayList(), 
+expAmount : expAmount = exp.getAmountPaid(), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+exp : exp = expenseList, 
+listNew : listNew = new ArrayList(), 
+
+BLOCK: joinL89
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+strOut : strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s (%s) [%s]", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, ), strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s [%s]", expPayee, expAmount.toString(), expCategory, ), strOut = null, 
+expenseList : expenseList = listNew, expenseList = listNew, 
+expPayee : expPayee = exp.getPayee(), 
+exp : exp = expenseList, 
+expRemaining : expRemaining = getRemainingAmount(), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+expDate : expDate = exp.getDate(), 
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+remainingAmount : remainingAmount = Double.parseDouble(scan.next(), ), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+expCategory : expCategory = exp.getCategory(), 
+out : out = new FileWriter("StoredExpenses", ), 
+choice : choice = Integer.parseInt(scan.next(), ), 
+str : str = s.nextLine(), 
+listNew : listNew = new ArrayList(), 
+expAmount : expAmount = exp.getAmountPaid(), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+exp : exp = expenseList, 
+listNew : listNew = new ArrayList(), 
+
+BLOCK: BasicL93
+out : out = new FileWriter("StoredExpenses", ), 
+
+BLOCK: BasicL94
+out : out = new FileWriter("StoredExpenses", ), 
+exp : exp = expenseList, 
+
+BLOCK: LoopL95
+out : out = new FileWriter("StoredExpenses", ), 
+exp : exp = expenseList, 
+
+BLOCK: BasicL96
+out : out = new FileWriter("StoredExpenses", ), 
+exp : exp = expenseList, 
+
+BLOCK: trueL97
+out : out = new FileWriter("StoredExpenses", ), 
+exp : exp = expenseList, 
+
+BLOCK: falseL99
+out : out = new FileWriter("StoredExpenses", ), 
+exp : exp = expenseList, 
+
+BLOCK: joinL98
+out : out = new FileWriter("StoredExpenses", ), 
+exp : exp = expenseList, 
+
+BLOCK: BasicL100
+out : out = new FileWriter("StoredExpenses", ), 
+exp : exp = expenseList, 
+
+BLOCK: trueL101
+out : out = new FileWriter("StoredExpenses", ), 
+exp : exp = expenseList, 
+
+BLOCK: joinL102
+out : out = new FileWriter("StoredExpenses", ), 
+exp : exp = expenseList, 
+
+BLOCK: StartcomparatorBuilderL103
+
+BLOCK: BasicL104
+
+BLOCK: trueL106
+c : c = new ExpenseDateComparator(), 
+
+BLOCK: falseL108
+
+BLOCK: trueL109
+c : c = new ExpenseAmountComparator(), 
+
+BLOCK: falseL111
+
+BLOCK: trueL112
+c : c = new ExpenseCategoryComparator(), 
+
+BLOCK: falseL114
+
+BLOCK: trueL115
+c : c = new ExpensePayeeComparator(), 
+
+BLOCK: joinL116
+c : c = new ExpenseCategoryComparator(), 
+c : c = new ExpenseAmountComparator(), 
+c : c = new ExpenseDateComparator(), 
+c : c = new ExpensePayeeComparator(), 
+
+BLOCK: joinL113
+c : c = new ExpenseCategoryComparator(), 
+c : c = new ExpenseAmountComparator(), 
+c : c = new ExpenseDateComparator(), 
+c : c = new ExpensePayeeComparator(), 
+
+BLOCK: joinL110
+c : c = new ExpenseCategoryComparator(), 
+c : c = new ExpenseAmountComparator(), 
+c : c = new ExpenseDateComparator(), 
+c : c = new ExpensePayeeComparator(), 
+
+BLOCK: joinL107
+c : c = new ExpenseCategoryComparator(), 
+c : c = new ExpenseAmountComparator(), 
+c : c = new ExpenseDateComparator(), 
+c : c = new ExpensePayeeComparator(), 
+
+BLOCK: StartrecursiveComparatorL117
+
+BLOCK: BasicL118
+comp : comp = comparatorBuilder(compArr[i], ), 
+
+BLOCK: trueL120
+comp : comp = comparatorBuilder(compArr[i], ), 
+
+BLOCK: joinL121
+comp : comp = comparatorBuilder(compArr[i], ), 
+
+BLOCK: Startconstructor1L122
+this.remainingAmount : this.remainingAmount = 0.0, 
+
+BLOCK: BasicL123
+this.remainingAmount : this.remainingAmount = remainingAmount, 
+
+BLOCK: StartgetRemainingAmountL125
+this.remainingAmount : this.remainingAmount = 0.0, 
+
+BLOCK: BasicL126
+this.remainingAmount : this.remainingAmount = 0.0, 
+
+BLOCK: Startconstructor1L0
+
+BLOCK: Startconstructor1L0
+
+BLOCK: BasicL1
+
+BLOCK: StartcompareL3
+
+BLOCK: StartcompareL3
+
+BLOCK: BasicL4
+
+BLOCK: Startconstructor1L6
+
+BLOCK: Startconstructor1L6
+
+BLOCK: BasicL7
+
+BLOCK: StartcompareL9
+
+BLOCK: StartcompareL9
+
+BLOCK: BasicL10
+
+BLOCK: Startconstructor1L12
+this.comp2 : this.comp2 = null, 
+this.comp1 : this.comp1 = null, 
+
+BLOCK: Startconstructor1L12
+this.comp2 : this.comp2 = null, 
+this.comp1 : this.comp1 = null, 
+
+BLOCK: BasicL13
+this.comp2 : this.comp2 = comp2, 
+this.comp1 : this.comp1 = comp1, 
+
+BLOCK: StartcompareL15
+this.comp2 : this.comp2 = null, 
+this.comp1 : this.comp1 = null, 
+
+BLOCK: StartcompareL15
+this.comp2 : this.comp2 = null, 
+this.comp1 : this.comp1 = null, 
+
+BLOCK: BasicL16
+firstComparison : firstComparison = this.comp1.compare(o1, o2, ), 
+this.comp2 : this.comp2 = null, 
+this.comp1 : this.comp1 = null, 
+
+BLOCK: trueL18
+firstComparison : firstComparison = this.comp1.compare(o1, o2, ), 
+this.comp2 : this.comp2 = null, 
+this.comp1 : this.comp1 = null, 
+
+BLOCK: joinL19
+firstComparison : firstComparison = this.comp1.compare(o1, o2, ), 
+this.comp2 : this.comp2 = null, 
+this.comp1 : this.comp1 = null, 
+
+BLOCK: Startconstructor1L20
+
+BLOCK: Startconstructor1L20
+
+BLOCK: BasicL21
+
+BLOCK: StartcompareL23
+
+BLOCK: StartcompareL23
+
+BLOCK: BasicL24
+
+BLOCK: trueL26
+
+BLOCK: falseL28
+
+BLOCK: trueL29
+
+BLOCK: joinL30
+
+BLOCK: joinL27
+
+BLOCK: Startconstructor1L31
+this.amountPaid : this.amountPaid = 0.0, 
+this.category : this.category = null, 
+this.date : this.date = null, 
+this.payee : this.payee = null, 
+
+BLOCK: Startconstructor1L31
+this.amountPaid : this.amountPaid = 0.0, 
+this.category : this.category = null, 
+this.date : this.date = null, 
+this.payee : this.payee = null, 
+
+BLOCK: BasicL32
+this.amountPaid : this.amountPaid = amountPaid, 
+this.category : this.category = category, 
+this.date : this.date = date, 
+this.payee : this.payee = payee, 
+
+BLOCK: StartgetTypeL34
+this.date : this.date = null, 
+this.payee : this.payee = null, 
+this.category : this.category = null, 
+this.amountPaid : this.amountPaid = 0.0, 
+
+BLOCK: StartgetTypeL34
+this.date : this.date = null, 
+this.payee : this.payee = null, 
+this.category : this.category = null, 
+this.amountPaid : this.amountPaid = 0.0, 
+
+BLOCK: BasicL35
+this.date : this.date = null, 
+this.payee : this.payee = null, 
+this.category : this.category = null, 
+this.amountPaid : this.amountPaid = 0.0, 
+
+BLOCK: StartgetDateL37
+this.payee : this.payee = null, 
+this.category : this.category = null, 
+this.amountPaid : this.amountPaid = 0.0, 
+this.date : this.date = null, 
+
+BLOCK: StartgetDateL37
+this.payee : this.payee = null, 
+this.category : this.category = null, 
+this.amountPaid : this.amountPaid = 0.0, 
+this.date : this.date = null, 
+
+BLOCK: BasicL38
+this.payee : this.payee = null, 
+this.category : this.category = null, 
+this.amountPaid : this.amountPaid = 0.0, 
+this.date : this.date = null, 
+
+BLOCK: StartgetCategoryL40
+this.date : this.date = null, 
+this.payee : this.payee = null, 
+this.category : this.category = null, 
+this.amountPaid : this.amountPaid = 0.0, 
+
+BLOCK: StartgetCategoryL40
+this.date : this.date = null, 
+this.payee : this.payee = null, 
+this.category : this.category = null, 
+this.amountPaid : this.amountPaid = 0.0, 
+
+BLOCK: BasicL41
+this.date : this.date = null, 
+this.payee : this.payee = null, 
+this.category : this.category = null, 
+this.amountPaid : this.amountPaid = 0.0, 
+
+BLOCK: StartgetPayeeL43
+this.payee : this.payee = null, 
+this.category : this.category = null, 
+this.date : this.date = null, 
+this.amountPaid : this.amountPaid = 0.0, 
+
+BLOCK: StartgetPayeeL43
+this.payee : this.payee = null, 
+this.category : this.category = null, 
+this.date : this.date = null, 
+this.amountPaid : this.amountPaid = 0.0, 
+
+BLOCK: BasicL44
+this.payee : this.payee = null, 
+this.category : this.category = null, 
+this.date : this.date = null, 
+this.amountPaid : this.amountPaid = 0.0, 
+
+BLOCK: StartgetAmountPaidL46
+this.payee : this.payee = null, 
+this.category : this.category = null, 
+this.amountPaid : this.amountPaid = 0.0, 
+this.date : this.date = null, 
+
+BLOCK: StartgetAmountPaidL46
+this.payee : this.payee = null, 
+this.category : this.category = null, 
+this.amountPaid : this.amountPaid = 0.0, 
+this.date : this.date = null, 
+
+BLOCK: BasicL47
+this.payee : this.payee = null, 
+this.category : this.category = null, 
+this.amountPaid : this.amountPaid = 0.0, 
+this.date : this.date = null, 
+
+BLOCK: Startconstructor1L49
+
+BLOCK: Startconstructor1L49
+
+BLOCK: BasicL50
+
+BLOCK: StartcompareL52
+
+BLOCK: StartcompareL52
+
+BLOCK: BasicL53
+
+BLOCK: trueL55
+
+BLOCK: falseL57
+
+BLOCK: trueL58
+
+BLOCK: joinL59
+
+BLOCK: joinL56
+
+BLOCK: StartmainL60
+
+BLOCK: StartmainL60
+
+BLOCK: BasicL61
+out : out = null, 
+s : s = null, 
+expenseList : expenseList = new ArrayList(), 
+error : error = false, 
+scan : scan = new Scanner(System.in, ), 
+
+BLOCK: BasicL63
+category : category = null, 
+amount : amount = 0.0, 
+payee : payee = null, 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+remainingAmount : remainingAmount = 0.0, 
+date : date = null, 
+
+BLOCK: BasicL64
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+str : str = s.nextLine(), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+
+BLOCK: LoopL65
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+str : str = s.nextLine(), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+
+BLOCK: BasicL66
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+str : str = s.nextLine(), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+
+BLOCK: trueL67
+category : category = s.nextLine(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), 
+payee : payee = s.nextLine(), 
+str : str = s.nextLine(), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+date : date = df.parse(s.nextLine(), ), 
+
+BLOCK: falseL69
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+str : str = s.nextLine(), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+
+BLOCK: trueL70
+category : category = s.nextLine(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), 
+payee : payee = s.nextLine(), 
+str : str = s.nextLine(), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+remainingAmount : remainingAmount = Double.parseDouble(s.nextLine(), ), 
+date : date = df.parse(s.nextLine(), ), 
+
+BLOCK: joinL71
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+str : str = s.nextLine(), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+
+BLOCK: joinL68
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+str : str = s.nextLine(), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+
+BLOCK: BasicL72
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+str : str = s.nextLine(), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+
+BLOCK: BasicL73
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+str : str = s.nextLine(), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+
+BLOCK: trueL74
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+str : str = s.nextLine(), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+
+BLOCK: joinL75
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+choice : choice = 0, 
+str : str = s.nextLine(), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+
+BLOCK: LoopL76
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+strOut : strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s (%s) [%s]", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, ), strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s [%s]", expPayee, expAmount.toString(), expCategory, ), strOut = null, 
+expenseList : expenseList = listNew, expenseList = listNew, 
+expPayee : expPayee = exp.getPayee(), 
+exp : exp = expenseList, 
+expRemaining : expRemaining = getRemainingAmount(), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+expDate : expDate = exp.getDate(), 
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+remainingAmount : remainingAmount = Double.parseDouble(scan.next(), ), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+expCategory : expCategory = exp.getCategory(), 
+out : out = new FileWriter("StoredExpenses", ), 
+choice : choice = Integer.parseInt(scan.next(), ), 
+str : str = s.nextLine(), 
+listNew : listNew = new ArrayList(), 
+expAmount : expAmount = exp.getAmountPaid(), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+exp : exp = expenseList, 
+listNew : listNew = new ArrayList(), 
+
+BLOCK: BasicL77
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+strOut : strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s (%s) [%s]", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, ), strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s [%s]", expPayee, expAmount.toString(), expCategory, ), strOut = null, 
+expenseList : expenseList = listNew, expenseList = listNew, 
+expPayee : expPayee = exp.getPayee(), 
+exp : exp = expenseList, 
+expRemaining : expRemaining = getRemainingAmount(), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+expDate : expDate = exp.getDate(), 
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+remainingAmount : remainingAmount = Double.parseDouble(scan.next(), ), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+expCategory : expCategory = exp.getCategory(), 
+out : out = new FileWriter("StoredExpenses", ), 
+choice : choice = Integer.parseInt(scan.next(), ), choice = 0, 
+str : str = s.nextLine(), 
+listNew : listNew = new ArrayList(), 
+expAmount : expAmount = exp.getAmountPaid(), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+exp : exp = expenseList, 
+listNew : listNew = new ArrayList(), 
+
+BLOCK: trueL78
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+strOut : strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s (%s) [%s]", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, ), strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s [%s]", expPayee, expAmount.toString(), expCategory, ), strOut = null, 
+expenseList : expenseList = listNew, expenseList = listNew, 
+expPayee : expPayee = exp.getPayee(), 
+exp : exp = expenseList, 
+expRemaining : expRemaining = getRemainingAmount(), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+expDate : expDate = exp.getDate(), 
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+remainingAmount : remainingAmount = Double.parseDouble(scan.next(), ), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+expCategory : expCategory = exp.getCategory(), 
+out : out = new FileWriter("StoredExpenses", ), 
+choice : choice = Integer.parseInt(scan.next(), ), 
+str : str = s.nextLine(), 
+listNew : listNew = new ArrayList(), 
+expAmount : expAmount = exp.getAmountPaid(), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+exp : exp = expenseList, 
+listNew : listNew = new ArrayList(), 
+
+BLOCK: joinL79
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+strOut : strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s (%s) [%s]", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, ), strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s [%s]", expPayee, expAmount.toString(), expCategory, ), strOut = null, 
+expenseList : expenseList = listNew, expenseList = listNew, 
+expPayee : expPayee = exp.getPayee(), 
+exp : exp = expenseList, 
+expRemaining : expRemaining = getRemainingAmount(), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+expDate : expDate = exp.getDate(), 
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+remainingAmount : remainingAmount = Double.parseDouble(scan.next(), ), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+expCategory : expCategory = exp.getCategory(), 
+out : out = new FileWriter("StoredExpenses", ), 
+choice : choice = Integer.parseInt(scan.next(), ), 
+str : str = s.nextLine(), 
+listNew : listNew = new ArrayList(), 
+expAmount : expAmount = exp.getAmountPaid(), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+exp : exp = expenseList, 
+listNew : listNew = new ArrayList(), 
+
+BLOCK: LoopL82
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+strOut : strOut = null, 
+expenseList : expenseList = listNew, expenseList = listNew, 
+expPayee : expPayee = exp.getPayee(), 
+exp : exp = expenseList, 
+expRemaining : expRemaining = getRemainingAmount(), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+expDate : expDate = exp.getDate(), 
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+remainingAmount : remainingAmount = Double.parseDouble(scan.next(), ), 
+expCategory : expCategory = exp.getCategory(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+out : out = new FileWriter("StoredExpenses", ), 
+choice : choice = Integer.parseInt(scan.next(), ), 
+str : str = s.nextLine(), 
+listNew : listNew = new ArrayList(), 
+expAmount : expAmount = exp.getAmountPaid(), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+exp : exp = expenseList, 
+listNew : listNew = new ArrayList(), 
+
+BLOCK: BasicL83
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+strOut : strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s (%s) [%s]", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, ), strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s [%s]", expPayee, expAmount.toString(), expCategory, ), strOut = null, 
+expenseList : expenseList = listNew, expenseList = listNew, 
+expPayee : expPayee = exp.getPayee(), 
+exp : exp = expenseList, 
+expRemaining : expRemaining = getRemainingAmount(), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+expDate : expDate = exp.getDate(), 
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+remainingAmount : remainingAmount = Double.parseDouble(scan.next(), ), 
+expCategory : expCategory = exp.getCategory(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+out : out = new FileWriter("StoredExpenses", ), 
+choice : choice = Integer.parseInt(scan.next(), ), 
+str : str = s.nextLine(), 
+listNew : listNew = new ArrayList(), 
+expAmount : expAmount = exp.getAmountPaid(), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+exp : exp = expenseList, 
+listNew : listNew = new ArrayList(), 
+
+BLOCK: trueL84
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+strOut : strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s (%s) [%s]", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, ), 
+expenseList : expenseList = listNew, expenseList = listNew, 
+expRemaining : expRemaining = getRemainingAmount(), 
+expPayee : expPayee = exp.getPayee(), 
+exp : exp = expenseList, 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+expDate : expDate = exp.getDate(), 
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+remainingAmount : remainingAmount = Double.parseDouble(scan.next(), ), 
+expCategory : expCategory = exp.getCategory(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+out : out = new FileWriter("StoredExpenses", ), 
+choice : choice = Integer.parseInt(scan.next(), ), 
+str : str = s.nextLine(), 
+listNew : listNew = new ArrayList(), 
+expAmount : expAmount = exp.getAmountPaid(), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+exp : exp = expenseList, 
+listNew : listNew = new ArrayList(), 
+
+BLOCK: falseL86
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+strOut : strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s [%s]", expPayee, expAmount.toString(), expCategory, ), 
+expenseList : expenseList = listNew, expenseList = listNew, 
+expPayee : expPayee = exp.getPayee(), 
+exp : exp = expenseList, 
+expRemaining : expRemaining = getRemainingAmount(), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+expDate : expDate = exp.getDate(), 
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+remainingAmount : remainingAmount = Double.parseDouble(scan.next(), ), 
+expCategory : expCategory = exp.getCategory(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+out : out = new FileWriter("StoredExpenses", ), 
+choice : choice = Integer.parseInt(scan.next(), ), 
+str : str = s.nextLine(), 
+listNew : listNew = new ArrayList(), 
+expAmount : expAmount = exp.getAmountPaid(), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+exp : exp = expenseList, 
+listNew : listNew = new ArrayList(), 
+
+BLOCK: joinL85
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+strOut : strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s (%s) [%s]", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, ), strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s [%s]", expPayee, expAmount.toString(), expCategory, ), 
+expenseList : expenseList = listNew, expenseList = listNew, 
+expRemaining : expRemaining = getRemainingAmount(), 
+expPayee : expPayee = exp.getPayee(), 
+exp : exp = expenseList, 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+expDate : expDate = exp.getDate(), 
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+remainingAmount : remainingAmount = Double.parseDouble(scan.next(), ), 
+expCategory : expCategory = exp.getCategory(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+out : out = new FileWriter("StoredExpenses", ), 
+choice : choice = Integer.parseInt(scan.next(), ), 
+str : str = s.nextLine(), 
+listNew : listNew = new ArrayList(), 
+expAmount : expAmount = exp.getAmountPaid(), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+exp : exp = expenseList, 
+listNew : listNew = new ArrayList(), 
+
+BLOCK: trueL88
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+strOut : strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s (%s) [%s]", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, ), strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s [%s]", expPayee, expAmount.toString(), expCategory, ), strOut = null, 
+expenseList : expenseList = listNew, 
+expPayee : expPayee = exp.getPayee(), 
+exp : exp = expenseList, 
+expRemaining : expRemaining = getRemainingAmount(), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+expDate : expDate = exp.getDate(), 
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+remainingAmount : remainingAmount = Double.parseDouble(scan.next(), ), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+expCategory : expCategory = exp.getCategory(), 
+out : out = new FileWriter("StoredExpenses", ), 
+choice : choice = Integer.parseInt(scan.next(), ), 
+str : str = s.nextLine(), 
+listNew : listNew = new ArrayList(), 
+expAmount : expAmount = exp.getAmountPaid(), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+exp : exp = expenseList, 
+listNew : listNew = new ArrayList(), 
+
+BLOCK: falseL90
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+strOut : strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s (%s) [%s]", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, ), strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s [%s]", expPayee, expAmount.toString(), expCategory, ), strOut = null, 
+expenseList : expenseList = listNew, 
+expPayee : expPayee = exp.getPayee(), 
+exp : exp = expenseList, 
+expRemaining : expRemaining = getRemainingAmount(), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+expDate : expDate = exp.getDate(), 
+remainingAmount : remainingAmount = Double.parseDouble(scan.next(), ), 
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+expCategory : expCategory = exp.getCategory(), 
+out : out = new FileWriter("StoredExpenses", ), 
+choice : choice = Integer.parseInt(scan.next(), ), 
+str : str = s.nextLine(), 
+listNew : listNew = new ArrayList(), 
+expAmount : expAmount = exp.getAmountPaid(), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+exp : exp = expenseList, 
+listNew : listNew = new ArrayList(), 
+
+BLOCK: joinL89
+payee : payee = s.nextLine(), payee = s.nextLine(), payee = null, 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+strOut : strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s (%s) [%s]", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, ), strOut = String.format("%1$2tm/%<2td/%<tY ", expDate, ) + String.format("%-15.15s %10s [%s]", expPayee, expAmount.toString(), expCategory, ), strOut = null, 
+expenseList : expenseList = listNew, expenseList = listNew, 
+expPayee : expPayee = exp.getPayee(), 
+exp : exp = expenseList, 
+expRemaining : expRemaining = getRemainingAmount(), 
+date : date = df.parse(s.nextLine(), ), date = null, date = df.parse(s.nextLine(), ), 
+expDate : expDate = exp.getDate(), 
+category : category = s.nextLine(), category = null, category = s.nextLine(), 
+remainingAmount : remainingAmount = Double.parseDouble(scan.next(), ), 
+amount : amount = Double.parseDouble(s.nextLine(), ), amount = 0.0, amount = Double.parseDouble(s.nextLine(), ), 
+expCategory : expCategory = exp.getCategory(), 
+out : out = new FileWriter("StoredExpenses", ), 
+choice : choice = Integer.parseInt(scan.next(), ), 
+str : str = s.nextLine(), 
+listNew : listNew = new ArrayList(), 
+expAmount : expAmount = exp.getAmountPaid(), 
+s : s = new Scanner(new BufferedReader(new FileReader("StoredExpenses", ), ), ), 
+df : df = new SimpleDateFormat("MM/dd/yyyy", ), 
+error : error = true, error = true, 
+remainingAmount : remainingAmount = 0.0, remainingAmount = Double.parseDouble(s.nextLine(), ), 
+exp : exp = expenseList, 
+listNew : listNew = new ArrayList(), 
+
+BLOCK: BasicL93
+out : out = new FileWriter("StoredExpenses", ), 
+
+BLOCK: BasicL94
+out : out = new FileWriter("StoredExpenses", ), 
+exp : exp = expenseList, 
+
+BLOCK: LoopL95
+out : out = new FileWriter("StoredExpenses", ), 
+exp : exp = expenseList, 
+
+BLOCK: BasicL96
+out : out = new FileWriter("StoredExpenses", ), 
+exp : exp = expenseList, 
+
+BLOCK: trueL97
+out : out = new FileWriter("StoredExpenses", ), 
+exp : exp = expenseList, 
+
+BLOCK: falseL99
+out : out = new FileWriter("StoredExpenses", ), 
+exp : exp = expenseList, 
+
+BLOCK: joinL98
+out : out = new FileWriter("StoredExpenses", ), 
+exp : exp = expenseList, 
+
+BLOCK: BasicL100
+out : out = new FileWriter("StoredExpenses", ), 
+exp : exp = expenseList, 
+
+BLOCK: trueL101
+out : out = new FileWriter("StoredExpenses", ), 
+exp : exp = expenseList, 
+
+BLOCK: joinL102
+out : out = new FileWriter("StoredExpenses", ), 
+exp : exp = expenseList, 
+
+BLOCK: StartcomparatorBuilderL103
+
+BLOCK: StartcomparatorBuilderL103
+
+BLOCK: BasicL104
+
+BLOCK: trueL106
+c : c = new ExpenseDateComparator(), 
+
+BLOCK: falseL108
+
+BLOCK: trueL109
+c : c = new ExpenseAmountComparator(), 
+
+BLOCK: falseL111
+
+BLOCK: trueL112
+c : c = new ExpenseCategoryComparator(), 
+
+BLOCK: falseL114
+
+BLOCK: trueL115
+c : c = new ExpensePayeeComparator(), 
+
+BLOCK: joinL116
+c : c = new ExpenseCategoryComparator(), 
+c : c = new ExpenseAmountComparator(), 
+c : c = new ExpenseDateComparator(), 
+c : c = new ExpensePayeeComparator(), 
+
+BLOCK: joinL113
+c : c = new ExpenseCategoryComparator(), 
+c : c = new ExpenseAmountComparator(), 
+c : c = new ExpenseDateComparator(), 
+c : c = new ExpensePayeeComparator(), 
+
+BLOCK: joinL110
+c : c = new ExpenseCategoryComparator(), 
+c : c = new ExpenseAmountComparator(), 
+c : c = new ExpenseDateComparator(), 
+c : c = new ExpensePayeeComparator(), 
+
+BLOCK: joinL107
+c : c = new ExpenseCategoryComparator(), 
+c : c = new ExpenseAmountComparator(), 
+c : c = new ExpenseDateComparator(), 
+c : c = new ExpensePayeeComparator(), 
+
+BLOCK: StartrecursiveComparatorL117
+
+BLOCK: StartrecursiveComparatorL117
+
+BLOCK: BasicL118
+comp : comp = comparatorBuilder(compArr[i], ), 
+
+BLOCK: trueL120
+comp : comp = comparatorBuilder(compArr[i], ), 
+
+BLOCK: joinL121
+comp : comp = comparatorBuilder(compArr[i], ), 
+
+BLOCK: Startconstructor1L122
+this.remainingAmount : this.remainingAmount = 0.0, 
+
+BLOCK: Startconstructor1L122
+this.remainingAmount : this.remainingAmount = 0.0, 
+
+BLOCK: BasicL123
+this.remainingAmount : this.remainingAmount = remainingAmount, 
+
+BLOCK: StartgetRemainingAmountL125
+this.remainingAmount : this.remainingAmount = 0.0, 
+
+BLOCK: StartgetRemainingAmountL125
+this.remainingAmount : this.remainingAmount = 0.0, 
+
+BLOCK: BasicL126
+this.remainingAmount : this.remainingAmount = 0.0, 
+
+Unfiltered: 24
+Filtered: 1
+
+
+Duplicate found: 102_Code/102_hw4/dir29/Expensify.java lines [28, 53] and 102_Code/102_hw4/dir29/Expensify.java lines [29, 53]
+102_Code/102_hw4/dir29/Expensify.java ----------
+28 :	category = null
+30 :	amount = 0.0
+31 :	remainingAmount = 0.0
+41 :	category = s.nextLine()
+43 :	amount = Double.parseDouble(s.nextLine(), )
+49 :	date = df.parse(s.nextLine(), )
+51 :	payee = s.nextLine()
+53 :	remainingAmount = Double.parseDouble(s.nextLine(), )
+102_Code/102_hw4/dir29/Expensify.java ----------
+29 :	payee = null
+31 :	remainingAmount = 0.0
+30 :	amount = 0.0
+51 :	payee = s.nextLine()
+53 :	remainingAmount = Double.parseDouble(s.nextLine(), )
+40 :	date = df.parse(s.nextLine(), )
+50 :	category = s.nextLine()
+52 :	amount = Double.parseDouble(s.nextLine(), )
+===========================
+
+
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.787 s
+[INFO] Finished at: 2019-05-01T18:11:51-07:00
+[INFO] Final Memory: 30M/1593M
+[INFO] ------------------------------------------------------------------------

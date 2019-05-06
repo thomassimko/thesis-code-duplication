@@ -1,0 +1,54 @@
+digraph G {
+"5 : s = new Scanner(System.in, )"
+"6 : points = {2, }"
+"7 : i = 0"
+"7 : i = 0" -> "7 : i < 2"
+"7 : i = 0" -> "29 : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), )"
+"7 : i = 0" -> "7 : i = i + 1"
+"7 : i = 0" -> "20 : points[i] = new CartesianPoint(x, s.nextDouble(), )"
+"7 : i = 0" -> "7 : @temp1 = i"
+"7 : i = 0" -> "7 : i = i + 1" [style=dashed]
+"7 : i < 2"
+"8 : System.out.print(\"Which type of point should be created (1 for Cartesion, 2 for Polar)? \", )"
+"9 : s.hasNextInt()"
+"34 : points[0] == null || points[1] == null"
+"11 : choice = s.nextInt()"
+"11 : choice = s.nextInt()" -> "21 : choice == 2"
+"11 : choice = s.nextInt()" -> "12 : choice == 1"
+"11 : choice = s.nextInt()" -> "11 : choice = s.nextInt()" [style=dashed]
+"12 : choice == 1"
+"13 : System.out.print(\"Enter x-coordinate: \", )"
+"14 : s.hasNextDouble()"
+"16 : x = s.nextDouble()"
+"16 : x = s.nextDouble()" -> "20 : points[i] = new CartesianPoint(x, s.nextDouble(), )"
+"16 : x = s.nextDouble()" -> "16 : x = s.nextDouble()" [style=dashed]
+"17 : System.out.print(\"Enter y-coordinate: \", )"
+"18 : s.hasNextDouble()"
+"20 : points[i] = new CartesianPoint(x, s.nextDouble(), )"
+"20 : points[i] = new CartesianPoint(x, s.nextDouble(), )" -> "20 : points[i] = new CartesianPoint(x, s.nextDouble(), )" [style=dashed]
+"21 : choice == 2"
+"22 : System.out.print(\"Enter radius: \", )"
+"23 : s.hasNextDouble()"
+"25 : radius = s.nextDouble()"
+"25 : radius = s.nextDouble()" -> "29 : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), )"
+"25 : radius = s.nextDouble()" -> "25 : radius = s.nextDouble()" [style=dashed]
+"26 : System.out.print(\"Enter angle (in degrees): \", )"
+"27 : s.hasNextDouble()"
+"29 : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), )"
+"29 : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), )" -> "29 : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), )" [style=dashed]
+"7 : @temp1 = i"
+"7 : @temp1 = i" -> "7 : @temp1 = i" [style=dashed]
+"7 : i = i + 1"
+"7 : i = i + 1" -> "7 : i < 2"
+"7 : i = i + 1" -> "29 : points[i] = new PolarPoint(radius, Math.toRadians(s.nextDouble(), ), )"
+"7 : i = i + 1" -> "7 : i = i + 1"
+"7 : i = i + 1" -> "20 : points[i] = new CartesianPoint(x, s.nextDouble(), )"
+"7 : i = i + 1" -> "7 : @temp1 = i"
+"7 : i = i + 1" -> "7 : i = i + 1" [style=dashed]
+"35 : System.out.println(\"Invalid input.\", )"
+"36 : System.exit(1, )"
+"38 : System.out.println(\"Distance between points: \" + distance(points[0], points[1], ), )"
+"39 : quadrant(points[0], ) == quadrant(points[1], )"
+"40 : System.out.println(\"In same quadrant.\", )"
+"42 : System.out.println(\"Not in same quadrant.\", )"
+}

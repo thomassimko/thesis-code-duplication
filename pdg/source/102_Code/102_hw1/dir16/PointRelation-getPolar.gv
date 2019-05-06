@@ -1,0 +1,13 @@
+digraph G {
+"67 : coordinates = new Scanner(System.in, )"
+"69 : System.out.println(\"Enter radius: \", )"
+"70 : rad = coordinates.nextDouble()"
+"70 : rad = coordinates.nextDouble()" -> "77 : new PolarPoint(rad, angle, )"
+"72 : System.out.println(\"Enter angle (in degrees): \", )"
+"73 : angle = coordinates.nextDouble()"
+"73 : angle = coordinates.nextDouble()" -> "75 : angle = angle / 180 * Math.PI"
+"73 : angle = coordinates.nextDouble()" -> "75 : angle = angle / 180 * Math.PI" [style=dashed]
+"75 : angle = angle / 180 * Math.PI"
+"75 : angle = angle / 180 * Math.PI" -> "77 : new PolarPoint(rad, angle, )"
+"77 : new PolarPoint(rad, angle, )"
+}

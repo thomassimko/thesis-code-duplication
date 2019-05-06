@@ -1,0 +1,4 @@
+digraph G {
+"27 : Tacobell = new CartesianPoint(4, 3, )"
+"29 : Check.check(Tacobell.radius(), 5, )"
+}

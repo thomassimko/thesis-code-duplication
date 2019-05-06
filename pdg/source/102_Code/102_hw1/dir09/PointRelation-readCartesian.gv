@@ -1,0 +1,15 @@
+digraph G {
+"5 : this.scan = new Scanner(System.in, )"
+"15 : System.out.print(\"Enter x-coordinate: \", )"
+"16 : this.scan.hasNextDouble() == true"
+"18 : x = this.scan.nextDouble()"
+"18 : x = this.scan.nextDouble()" -> "23 : new CartesianPoint(x, y, )"
+"19 : System.out.print(\"Enter y-coordinate: \", )"
+"20 : this.scan.hasNextDouble() == true"
+"22 : y = this.scan.nextDouble()"
+"22 : y = this.scan.nextDouble()" -> "23 : new CartesianPoint(x, y, )"
+"23 : new CartesianPoint(x, y, )"
+"25 : exitError()"
+"27 : exitError()"
+"29 : new CartesianPoint(0, 0, )"
+}

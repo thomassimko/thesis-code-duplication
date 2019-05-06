@@ -4,450 +4,172 @@ Startconstructor1L0 -> BasicL1
 BasicL1 -> Startconstructor1L0 [style=dashed]
 BasicL1 -> EndL2
 EndL2 -> BasicL1 [style=dashed]
-Startconstructor2L3 -> BasicL4
-BasicL4 -> Startconstructor2L3 [style=dashed]
+StartcompareL3 -> BasicL4
+BasicL4 -> StartcompareL3 [style=dashed]
 BasicL4 -> EndL5
 EndL5 -> BasicL4 [style=dashed]
-StartdoSomethingL6 -> BasicL7
-BasicL7 -> StartdoSomethingL6 [style=dashed]
+Startconstructor1L6 -> BasicL7
+BasicL7 -> Startconstructor1L6 [style=dashed]
 BasicL7 -> EndL8
 EndL8 -> BasicL7 [style=dashed]
-StarttestingMethodParamsL9 -> BasicL10
-BasicL10 -> StarttestingMethodParamsL9 [style=dashed]
+StartcompareL9 -> BasicL10
+BasicL10 -> StartcompareL9 [style=dashed]
 BasicL10 -> EndL11
 EndL11 -> BasicL10 [style=dashed]
-StartmainL12 -> BasicL13
-BasicL13 -> StartmainL12 [style=dashed]
-BasicL13 -> trueL15
-trueL15 -> BasicL13 [style=dashed]
-trueL15 -> joinL16
-joinL16 -> trueL15 [style=dashed]
-joinL16 -> BasicL13 [style=dashed]
-joinL16 -> trueL17
-trueL17 -> joinL16 [style=dashed]
-trueL17 -> joinL18
-joinL18 -> trueL17 [style=dashed]
-joinL18 -> falseL19 [style=dashed]
-joinL18 -> myLabelL20
-myLabelL20 -> joinL18 [style=dashed]
-myLabelL20 -> LoopL21 [style=dashed]
-myLabelL20 -> LoopL21
-LoopL21 -> myLabelL20 [style=dashed]
-LoopL21 -> LoopL21 [style=dashed]
-LoopL21 -> myLabelL20
-LoopL21 -> LoopL21
-LoopL21 -> BasicL22
-BasicL22 -> myLabelL20 [style=dashed]
-BasicL22 -> LoopL21 [style=dashed]
-BasicL22 -> trueL23
-trueL23 -> BasicL22 [style=dashed]
-trueL23 -> joinL24
-joinL24 -> trueL23 [style=dashed]
-joinL24 -> BasicL22 [style=dashed]
-joinL24 -> LoopL25
-LoopL25 -> joinL24 [style=dashed]
-LoopL25 -> LoopL25 [style=dashed]
-LoopL25 -> BasicL26
-BasicL26 -> LoopL25 [style=dashed]
-BasicL26 -> EndL14
-EndL14 -> BasicL26 [style=dashed]
-LoopL25 -> LoopL25
-BasicL22 -> joinL24
-myLabelL20 -> BasicL22
-joinL16 -> falseL19
-falseL19 -> joinL16 [style=dashed]
-falseL19 -> joinL18
-BasicL13 -> joinL16
-StartgetNumL27 -> BasicL28
-BasicL28 -> StartgetNumL27 [style=dashed]
-BasicL28 -> ForInitL30
-ForInitL30 -> BasicL28 [style=dashed]
-ForInitL30 -> ForCondL31
-ForCondL31 -> ForInitL30 [style=dashed]
-ForCondL31 -> joinL35 [style=dashed]
-ForCondL31 -> LoopL32
-LoopL32 -> ForCondL31 [style=dashed]
-LoopL32 -> trueL34
-trueL34 -> LoopL32 [style=dashed]
-trueL34 -> joinL35
-joinL35 -> trueL34 [style=dashed]
-joinL35 -> falseL36 [style=dashed]
-joinL35 -> ForCondL31
-LoopL32 -> falseL36
-falseL36 -> LoopL32 [style=dashed]
-falseL36 -> joinL35
-ForCondL31 -> BasicL33
-BasicL33 -> ForCondL31 [style=dashed]
-BasicL33 -> EndL29
-EndL29 -> BasicL33 [style=dashed]
-StartgetArrayL37 -> BasicL38
-BasicL38 -> StartgetArrayL37 [style=dashed]
+Startconstructor1L12 -> BasicL13
+BasicL13 -> Startconstructor1L12 [style=dashed]
+BasicL13 -> EndL14
+EndL14 -> BasicL13 [style=dashed]
+StartcompareL15 -> BasicL16
+BasicL16 -> StartcompareL15 [style=dashed]
+BasicL16 -> trueL18
+trueL18 -> BasicL16 [style=dashed]
+trueL18 -> EndL17
+EndL17 -> trueL18 [style=dashed]
+EndL17 -> joinL19 [style=dashed]
+EndL17 -> joinL19
+joinL19 -> EndL17 [style=dashed]
+joinL19 -> BasicL16 [style=dashed]
+joinL19 -> EndL17
+BasicL16 -> joinL19
+Startconstructor1L20 -> BasicL21
+BasicL21 -> Startconstructor1L20 [style=dashed]
+BasicL21 -> EndL22
+EndL22 -> BasicL21 [style=dashed]
+StartcompareL23 -> BasicL24
+BasicL24 -> StartcompareL23 [style=dashed]
+BasicL24 -> trueL26
+trueL26 -> BasicL24 [style=dashed]
+trueL26 -> EndL25
+EndL25 -> trueL26 [style=dashed]
+EndL25 -> trueL29 [style=dashed]
+EndL25 -> joinL27 [style=dashed]
+EndL25 -> joinL27
+joinL27 -> EndL25 [style=dashed]
+joinL27 -> joinL30 [style=dashed]
+joinL27 -> EndL25
+EndL25 -> joinL30
+joinL30 -> EndL25 [style=dashed]
+joinL30 -> falseL28 [style=dashed]
+joinL30 -> joinL27
+BasicL24 -> falseL28
+falseL28 -> BasicL24 [style=dashed]
+falseL28 -> trueL29
+trueL29 -> falseL28 [style=dashed]
+trueL29 -> EndL25
+falseL28 -> joinL30
+Startconstructor1L31 -> BasicL32
+BasicL32 -> Startconstructor1L31 [style=dashed]
+BasicL32 -> EndL33
+EndL33 -> BasicL32 [style=dashed]
+StartgetTypeL34 -> BasicL35
+BasicL35 -> StartgetTypeL34 [style=dashed]
+BasicL35 -> EndL36
+EndL36 -> BasicL35 [style=dashed]
+StartgetDateL37 -> BasicL38
+BasicL38 -> StartgetDateL37 [style=dashed]
 BasicL38 -> EndL39
 EndL39 -> BasicL38 [style=dashed]
-StartmethodWithManyArgsL40 -> BasicL41
-BasicL41 -> StartmethodWithManyArgsL40 [style=dashed]
-BasicL41 -> trueL43
-trueL43 -> BasicL41 [style=dashed]
-trueL43 -> joinL44
-joinL44 -> trueL43 [style=dashed]
-joinL44 -> BasicL41 [style=dashed]
-joinL44 -> EndL42
-EndL42 -> joinL44 [style=dashed]
-BasicL41 -> joinL44
-StartcheckPlanarL45 -> BasicL46
-BasicL46 -> StartcheckPlanarL45 [style=dashed]
-BasicL46 -> trueL48
-trueL48 -> BasicL46 [style=dashed]
-trueL48 -> joinL49
-joinL49 -> trueL48 [style=dashed]
-joinL49 -> BasicL46 [style=dashed]
-joinL49 -> trueL50
-trueL50 -> joinL49 [style=dashed]
-trueL50 -> joinL51
-joinL51 -> trueL50 [style=dashed]
-joinL51 -> joinL49 [style=dashed]
-joinL51 -> EndL47
-EndL47 -> joinL51 [style=dashed]
-joinL49 -> joinL51
-BasicL46 -> joinL49
-StartcyclicL52 -> BasicL53
-BasicL53 -> StartcyclicL52 [style=dashed]
-BasicL53 -> ForInitL55
-ForInitL55 -> BasicL53 [style=dashed]
-ForInitL55 -> ForCondL56
-ForCondL56 -> ForInitL55 [style=dashed]
-ForCondL56 -> LoopL57 [style=dashed]
-ForCondL56 -> LoopL57
-LoopL57 -> ForCondL56 [style=dashed]
-LoopL57 -> ForCondL56
-ForCondL56 -> BasicL58
-BasicL58 -> ForCondL56 [style=dashed]
-BasicL58 -> EndL54
-EndL54 -> BasicL58 [style=dashed]
-StartprintL59 -> BasicL60
-BasicL60 -> StartprintL59 [style=dashed]
-BasicL60 -> LoopL62
-LoopL62 -> BasicL60 [style=dashed]
-LoopL62 -> LoopL62 [style=dashed]
-LoopL62 -> LoopL62
-LoopL62 -> BasicL63
-BasicL63 -> BasicL60 [style=dashed]
-BasicL63 -> LoopL62 [style=dashed]
-BasicL63 -> EndL61
-EndL61 -> BasicL63 [style=dashed]
-BasicL60 -> BasicL63
-Starttest1L64 -> BasicL65
-BasicL65 -> Starttest1L64 [style=dashed]
-BasicL65 -> ForInitL67
-ForInitL67 -> BasicL65 [style=dashed]
-ForInitL67 -> ForCondL68
-ForCondL68 -> ForInitL67 [style=dashed]
-ForCondL68 -> LoopL69 [style=dashed]
-ForCondL68 -> LoopL69
-LoopL69 -> ForCondL68 [style=dashed]
-LoopL69 -> ForCondL68
-ForCondL68 -> BasicL70
-BasicL70 -> ForCondL68 [style=dashed]
-BasicL70 -> EndL66
-EndL66 -> BasicL70 [style=dashed]
-Starttest2L71 -> BasicL72
-BasicL72 -> Starttest2L71 [style=dashed]
-BasicL72 -> ForInitL74
-ForInitL74 -> BasicL72 [style=dashed]
-ForInitL74 -> ForCondL75
-ForCondL75 -> ForInitL74 [style=dashed]
-ForCondL75 -> LoopL76 [style=dashed]
-ForCondL75 -> LoopL76
-LoopL76 -> ForCondL75 [style=dashed]
-LoopL76 -> ForCondL75
-ForCondL75 -> BasicL77
-BasicL77 -> ForCondL75 [style=dashed]
-BasicL77 -> EndL73
-EndL73 -> BasicL77 [style=dashed]
-Starttest1L78 -> BasicL79
-BasicL79 -> Starttest1L78 [style=dashed]
-BasicL79 -> ForInitL81
-ForInitL81 -> BasicL79 [style=dashed]
-ForInitL81 -> ForCondL82
-ForCondL82 -> ForInitL81 [style=dashed]
-ForCondL82 -> LoopL83 [style=dashed]
-ForCondL82 -> LoopL83
-LoopL83 -> ForCondL82 [style=dashed]
-LoopL83 -> ForCondL82
-ForCondL82 -> BasicL84
-BasicL84 -> ForCondL82 [style=dashed]
-BasicL84 -> EndL80
-EndL80 -> BasicL84 [style=dashed]
-Starttest2L85 -> BasicL86
-BasicL86 -> Starttest2L85 [style=dashed]
-BasicL86 -> ForInitL88
-ForInitL88 -> BasicL86 [style=dashed]
-ForInitL88 -> ForCondL89
-ForCondL89 -> ForInitL88 [style=dashed]
-ForCondL89 -> LoopL90 [style=dashed]
-ForCondL89 -> LoopL90
-LoopL90 -> ForCondL89 [style=dashed]
-LoopL90 -> ForCondL89
-ForCondL89 -> BasicL91
-BasicL91 -> ForCondL89 [style=dashed]
-BasicL91 -> EndL87
-EndL87 -> BasicL91 [style=dashed]
-StartdoSomething1L92 -> BasicL93
-BasicL93 -> StartdoSomething1L92 [style=dashed]
-BasicL93 -> EndL94
-EndL94 -> BasicL93 [style=dashed]
-StartdoSomething2L95 -> BasicL96
-BasicL96 -> StartdoSomething2L95 [style=dashed]
-BasicL96 -> EndL97
-EndL97 -> BasicL96 [style=dashed]
-Starttest1L98 -> BasicL99
-BasicL99 -> Starttest1L98 [style=dashed]
-BasicL99 -> ForInitL101
-ForInitL101 -> BasicL99 [style=dashed]
-ForInitL101 -> ForCondL102
-ForCondL102 -> ForInitL101 [style=dashed]
-ForCondL102 -> LoopL103 [style=dashed]
-ForCondL102 -> LoopL103
-LoopL103 -> ForCondL102 [style=dashed]
-LoopL103 -> ForCondL102
-ForCondL102 -> BasicL104
-BasicL104 -> ForCondL102 [style=dashed]
-BasicL104 -> EndL100
-EndL100 -> BasicL104 [style=dashed]
-Starttest2L105 -> BasicL106
-BasicL106 -> Starttest2L105 [style=dashed]
-BasicL106 -> ForInitL108
-ForInitL108 -> BasicL106 [style=dashed]
-ForInitL108 -> ForCondL109
-ForCondL109 -> ForInitL108 [style=dashed]
-ForCondL109 -> LoopL110 [style=dashed]
-ForCondL109 -> LoopL110
-LoopL110 -> ForCondL109 [style=dashed]
-LoopL110 -> ForCondL109
-ForCondL109 -> BasicL111
-BasicL111 -> ForCondL109 [style=dashed]
-BasicL111 -> EndL107
-EndL107 -> BasicL111 [style=dashed]
-Starttest1L112 -> BasicL113
-BasicL113 -> Starttest1L112 [style=dashed]
-BasicL113 -> ForInitL115
-ForInitL115 -> BasicL113 [style=dashed]
-ForInitL115 -> ForCondL116
-ForCondL116 -> ForInitL115 [style=dashed]
-ForCondL116 -> LoopL117 [style=dashed]
-ForCondL116 -> LoopL117
-LoopL117 -> ForCondL116 [style=dashed]
-LoopL117 -> ForCondL116
-ForCondL116 -> BasicL118
-BasicL118 -> ForCondL116 [style=dashed]
-BasicL118 -> EndL114
-EndL114 -> BasicL118 [style=dashed]
-Starttest2L119 -> BasicL120
-BasicL120 -> Starttest2L119 [style=dashed]
-BasicL120 -> ForInitL122
-ForInitL122 -> BasicL120 [style=dashed]
-ForInitL122 -> ForCondL123
-ForCondL123 -> ForInitL122 [style=dashed]
-ForCondL123 -> LoopL124 [style=dashed]
-ForCondL123 -> LoopL124
-LoopL124 -> ForCondL123 [style=dashed]
-LoopL124 -> ForCondL123
-ForCondL123 -> BasicL125
-BasicL125 -> ForCondL123 [style=dashed]
-BasicL125 -> EndL121
-EndL121 -> BasicL125 [style=dashed]
-Starttest1L126 -> BasicL127
-BasicL127 -> Starttest1L126 [style=dashed]
-BasicL127 -> ForInitL129
-ForInitL129 -> BasicL127 [style=dashed]
-ForInitL129 -> ForCondL130
-ForCondL130 -> ForInitL129 [style=dashed]
-ForCondL130 -> LoopL131 [style=dashed]
-ForCondL130 -> LoopL131
-LoopL131 -> ForCondL130 [style=dashed]
-LoopL131 -> ForCondL130
-ForCondL130 -> BasicL132
-BasicL132 -> ForCondL130 [style=dashed]
-BasicL132 -> EndL128
-EndL128 -> BasicL132 [style=dashed]
-Starttest2L133 -> BasicL134
-BasicL134 -> Starttest2L133 [style=dashed]
-BasicL134 -> ForInitL136
-ForInitL136 -> BasicL134 [style=dashed]
-ForInitL136 -> ForCondL137
-ForCondL137 -> ForInitL136 [style=dashed]
-ForCondL137 -> LoopL138 [style=dashed]
-ForCondL137 -> LoopL138
-LoopL138 -> ForCondL137 [style=dashed]
-LoopL138 -> ForCondL137
-ForCondL137 -> BasicL139
-BasicL139 -> ForCondL137 [style=dashed]
-BasicL139 -> EndL135
-EndL135 -> BasicL139 [style=dashed]
-Starttest1L140 -> BasicL141
-BasicL141 -> Starttest1L140 [style=dashed]
-BasicL141 -> ForInitL143
-ForInitL143 -> BasicL141 [style=dashed]
-ForInitL143 -> ForCondL144
-ForCondL144 -> ForInitL143 [style=dashed]
-ForCondL144 -> LoopL145 [style=dashed]
-ForCondL144 -> LoopL145
-LoopL145 -> ForCondL144 [style=dashed]
-LoopL145 -> ForCondL144
-ForCondL144 -> BasicL146
-BasicL146 -> ForCondL144 [style=dashed]
-BasicL146 -> EndL142
-EndL142 -> BasicL146 [style=dashed]
-Starttest2L147 -> BasicL148
-BasicL148 -> Starttest2L147 [style=dashed]
-BasicL148 -> ForInitL150
-ForInitL150 -> BasicL148 [style=dashed]
-ForInitL150 -> ForCondL151
-ForCondL151 -> ForInitL150 [style=dashed]
-ForCondL151 -> LoopL152 [style=dashed]
-ForCondL151 -> LoopL152
-LoopL152 -> ForCondL151 [style=dashed]
-LoopL152 -> ForCondL151
-ForCondL151 -> BasicL153
-BasicL153 -> ForCondL151 [style=dashed]
-BasicL153 -> EndL149
-EndL149 -> BasicL153 [style=dashed]
-Starttest1L154 -> BasicL155
-BasicL155 -> Starttest1L154 [style=dashed]
-BasicL155 -> ForInitL157
-ForInitL157 -> BasicL155 [style=dashed]
-ForInitL157 -> ForCondL158
-ForCondL158 -> ForInitL157 [style=dashed]
-ForCondL158 -> LoopL159 [style=dashed]
-ForCondL158 -> LoopL159
-LoopL159 -> ForCondL158 [style=dashed]
-LoopL159 -> ForCondL158
-ForCondL158 -> BasicL160
-BasicL160 -> ForCondL158 [style=dashed]
-BasicL160 -> EndL156
-EndL156 -> BasicL160 [style=dashed]
-Starttest2L161 -> BasicL162
-BasicL162 -> Starttest2L161 [style=dashed]
-BasicL162 -> ForInitL164
-ForInitL164 -> BasicL162 [style=dashed]
-ForInitL164 -> ForCondL165
-ForCondL165 -> ForInitL164 [style=dashed]
-ForCondL165 -> LoopL166 [style=dashed]
-ForCondL165 -> LoopL166
-LoopL166 -> ForCondL165 [style=dashed]
-LoopL166 -> ForCondL165
-ForCondL165 -> BasicL167
-BasicL167 -> ForCondL165 [style=dashed]
-BasicL167 -> EndL163
-EndL163 -> BasicL167 [style=dashed]
-Starttest1L168 -> BasicL169
-BasicL169 -> Starttest1L168 [style=dashed]
-BasicL169 -> ForInitL171
-ForInitL171 -> BasicL169 [style=dashed]
-ForInitL171 -> ForCondL172
-ForCondL172 -> ForInitL171 [style=dashed]
-ForCondL172 -> LoopL173 [style=dashed]
-ForCondL172 -> LoopL173
-LoopL173 -> ForCondL172 [style=dashed]
-LoopL173 -> ForCondL172
-ForCondL172 -> BasicL174
-BasicL174 -> ForCondL172 [style=dashed]
-BasicL174 -> EndL170
-EndL170 -> BasicL174 [style=dashed]
-Starttest2L175 -> BasicL176
-BasicL176 -> Starttest2L175 [style=dashed]
-BasicL176 -> ForInitL178
-ForInitL178 -> BasicL176 [style=dashed]
-ForInitL178 -> ForCondL179
-ForCondL179 -> ForInitL178 [style=dashed]
-ForCondL179 -> LoopL180 [style=dashed]
-ForCondL179 -> LoopL180
-LoopL180 -> ForCondL179 [style=dashed]
-LoopL180 -> ForCondL179
-ForCondL179 -> BasicL181
-BasicL181 -> ForCondL179 [style=dashed]
-BasicL181 -> EndL177
-EndL177 -> BasicL181 [style=dashed]
-Starttest1L182 -> BasicL183
-BasicL183 -> Starttest1L182 [style=dashed]
-BasicL183 -> ForInitL185
-ForInitL185 -> BasicL183 [style=dashed]
-ForInitL185 -> ForCondL186
-ForCondL186 -> ForInitL185 [style=dashed]
-ForCondL186 -> LoopL187 [style=dashed]
-ForCondL186 -> LoopL187
-LoopL187 -> ForCondL186 [style=dashed]
-LoopL187 -> ForCondL186
-ForCondL186 -> BasicL188
-BasicL188 -> ForCondL186 [style=dashed]
-BasicL188 -> EndL184
-EndL184 -> BasicL188 [style=dashed]
-Starttest2L189 -> BasicL190
-BasicL190 -> Starttest2L189 [style=dashed]
-BasicL190 -> ForInitL192
-ForInitL192 -> BasicL190 [style=dashed]
-ForInitL192 -> ForCondL193
-ForCondL193 -> ForInitL192 [style=dashed]
-ForCondL193 -> LoopL194 [style=dashed]
-ForCondL193 -> LoopL194
-LoopL194 -> ForCondL193 [style=dashed]
-LoopL194 -> ForCondL193
-ForCondL193 -> BasicL195
-BasicL195 -> ForCondL193 [style=dashed]
-BasicL195 -> EndL191
-EndL191 -> BasicL195 [style=dashed]
-Starttest1L196 -> BasicL197
-BasicL197 -> Starttest1L196 [style=dashed]
-BasicL197 -> ForInitL199
-ForInitL199 -> BasicL197 [style=dashed]
-ForInitL199 -> ForCondL200
-ForCondL200 -> ForInitL199 [style=dashed]
-ForCondL200 -> LoopL201 [style=dashed]
-ForCondL200 -> LoopL201
-LoopL201 -> ForCondL200 [style=dashed]
-LoopL201 -> ForCondL200
-ForCondL200 -> BasicL202
-BasicL202 -> ForCondL200 [style=dashed]
-BasicL202 -> EndL198
-EndL198 -> BasicL202 [style=dashed]
-Starttest2L203 -> BasicL204
-BasicL204 -> Starttest2L203 [style=dashed]
-BasicL204 -> ForInitL206
-ForInitL206 -> BasicL204 [style=dashed]
-ForInitL206 -> ForCondL207
-ForCondL207 -> ForInitL206 [style=dashed]
-ForCondL207 -> LoopL208 [style=dashed]
-ForCondL207 -> LoopL208
-LoopL208 -> ForCondL207 [style=dashed]
-LoopL208 -> ForCondL207
-ForCondL207 -> BasicL209
-BasicL209 -> ForCondL207 [style=dashed]
-BasicL209 -> EndL205
-EndL205 -> BasicL209 [style=dashed]
-Starttest1L210 -> BasicL211
-BasicL211 -> Starttest1L210 [style=dashed]
-BasicL211 -> ForInitL213
-ForInitL213 -> BasicL211 [style=dashed]
-ForInitL213 -> ForCondL214
-ForCondL214 -> ForInitL213 [style=dashed]
-ForCondL214 -> LoopL215 [style=dashed]
-ForCondL214 -> LoopL215
-LoopL215 -> ForCondL214 [style=dashed]
-LoopL215 -> ForCondL214
-ForCondL214 -> BasicL216
-BasicL216 -> ForCondL214 [style=dashed]
-BasicL216 -> EndL212
-EndL212 -> BasicL216 [style=dashed]
-Starttest2L217 -> BasicL218
-BasicL218 -> Starttest2L217 [style=dashed]
-BasicL218 -> LoopL220
-LoopL220 -> BasicL218 [style=dashed]
-LoopL220 -> LoopL220 [style=dashed]
-LoopL220 -> LoopL220
-LoopL220 -> BasicL221
-BasicL221 -> BasicL218 [style=dashed]
-BasicL221 -> LoopL220 [style=dashed]
-BasicL221 -> EndL219
-EndL219 -> BasicL221 [style=dashed]
-BasicL218 -> BasicL221
+StartgetCategoryL40 -> BasicL41
+BasicL41 -> StartgetCategoryL40 [style=dashed]
+BasicL41 -> EndL42
+EndL42 -> BasicL41 [style=dashed]
+StartgetPayeeL43 -> BasicL44
+BasicL44 -> StartgetPayeeL43 [style=dashed]
+BasicL44 -> EndL45
+EndL45 -> BasicL44 [style=dashed]
+StartgetAmountPaidL46 -> BasicL47
+BasicL47 -> StartgetAmountPaidL46 [style=dashed]
+BasicL47 -> EndL48
+EndL48 -> BasicL47 [style=dashed]
+Startconstructor1L49 -> BasicL50
+BasicL50 -> Startconstructor1L49 [style=dashed]
+BasicL50 -> EndL51
+EndL51 -> BasicL50 [style=dashed]
+StartcompareL52 -> BasicL53
+BasicL53 -> StartcompareL52 [style=dashed]
+BasicL53 -> trueL55
+trueL55 -> BasicL53 [style=dashed]
+trueL55 -> EndL54
+EndL54 -> trueL55 [style=dashed]
+EndL54 -> trueL58 [style=dashed]
+EndL54 -> joinL56 [style=dashed]
+EndL54 -> joinL56
+joinL56 -> EndL54 [style=dashed]
+joinL56 -> joinL59 [style=dashed]
+joinL56 -> EndL54
+EndL54 -> joinL59
+joinL59 -> EndL54 [style=dashed]
+joinL59 -> falseL57 [style=dashed]
+joinL59 -> joinL56
+BasicL53 -> falseL57
+falseL57 -> BasicL53 [style=dashed]
+falseL57 -> trueL58
+trueL58 -> falseL57 [style=dashed]
+trueL58 -> EndL54
+falseL57 -> joinL59
+StartmainL60 -> BasicL61
+BasicL61 -> StartmainL60 [style=dashed]
+StartcomparatorBuilderL103 -> BasicL104
+BasicL104 -> StartcomparatorBuilderL103 [style=dashed]
+BasicL104 -> trueL106
+trueL106 -> BasicL104 [style=dashed]
+trueL106 -> EndL105
+EndL105 -> trueL106 [style=dashed]
+EndL105 -> trueL109 [style=dashed]
+EndL105 -> trueL112 [style=dashed]
+EndL105 -> trueL115 [style=dashed]
+EndL105 -> joinL107 [style=dashed]
+EndL105 -> joinL107
+joinL107 -> EndL105 [style=dashed]
+joinL107 -> joinL110 [style=dashed]
+joinL107 -> EndL105
+EndL105 -> joinL110
+joinL110 -> EndL105 [style=dashed]
+joinL110 -> joinL113 [style=dashed]
+joinL110 -> joinL107
+EndL105 -> joinL113
+joinL113 -> EndL105 [style=dashed]
+joinL113 -> joinL116 [style=dashed]
+joinL113 -> joinL110
+EndL105 -> joinL116
+joinL116 -> EndL105 [style=dashed]
+joinL116 -> falseL114 [style=dashed]
+joinL116 -> joinL113
+BasicL104 -> falseL108
+falseL108 -> BasicL104 [style=dashed]
+falseL108 -> trueL109
+trueL109 -> falseL108 [style=dashed]
+trueL109 -> EndL105
+falseL108 -> falseL111
+falseL111 -> falseL108 [style=dashed]
+falseL111 -> trueL112
+trueL112 -> falseL111 [style=dashed]
+trueL112 -> EndL105
+falseL111 -> falseL114
+falseL114 -> falseL111 [style=dashed]
+falseL114 -> trueL115
+trueL115 -> falseL114 [style=dashed]
+trueL115 -> EndL105
+falseL114 -> joinL116
+StartrecursiveComparatorL117 -> BasicL118
+BasicL118 -> StartrecursiveComparatorL117 [style=dashed]
+BasicL118 -> trueL120
+trueL120 -> BasicL118 [style=dashed]
+trueL120 -> EndL119
+EndL119 -> trueL120 [style=dashed]
+EndL119 -> joinL121 [style=dashed]
+EndL119 -> joinL121
+joinL121 -> EndL119 [style=dashed]
+joinL121 -> BasicL118 [style=dashed]
+joinL121 -> EndL119
+BasicL118 -> joinL121
+Startconstructor1L122 -> BasicL123
+BasicL123 -> Startconstructor1L122 [style=dashed]
+BasicL123 -> EndL124
+EndL124 -> BasicL123 [style=dashed]
+StartgetRemainingAmountL125 -> BasicL126
+BasicL126 -> StartgetRemainingAmountL125 [style=dashed]
+BasicL126 -> EndL127
+EndL127 -> BasicL126 [style=dashed]
 }

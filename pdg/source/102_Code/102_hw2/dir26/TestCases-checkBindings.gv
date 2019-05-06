@@ -1,0 +1,15 @@
+digraph G {
+"4 : this.a = new DoubleConstantExpression(1.0, )"
+"5 : this.b = new DoubleConstantExpression(1.2, )"
+"6 : this.c = new DoubleConstantExpression(2.2, )"
+"7 : this.d = new DoubleConstantExpression(-8.0, )"
+"9 : this.binding = new VariableBindings()"
+"65 : this.binding.addBinding(\"a\", 0.1, )"
+"66 : this.binding.addBinding(\"b\", 0.2, )"
+"67 : this.binding.addBinding(\"c\", 20, )"
+"69 : Check.check(this.binding.lookupBinding(\"a\", ), 0.1, )"
+"70 : Check.check(this.binding.lookupBinding(\"b\", ), 0.2, )"
+"71 : Check.check(this.binding.lookupBinding(\"c\", ), 20, )"
+"73 : this.binding.lookupBinding(\"d\", )"
+"75 : Check.check(e.getMessage(), \"unbound identifier: d\", )"
+}

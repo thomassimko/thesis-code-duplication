@@ -1,0 +1,9 @@
+digraph G {
+"5 : this.list = new ArrayList()"
+"5 : this.list = new ArrayList()" -> "23 : b = this.list"
+"23 : b = this.list"
+"23 : b = this.list" -> "23 : b = this.list" [style=dashed]
+"24 : equals(id, )"
+"28 : new UnboundIdentifierException(\"unbound identifier: \" + id, )"
+"25 : b.getValue()"
+}

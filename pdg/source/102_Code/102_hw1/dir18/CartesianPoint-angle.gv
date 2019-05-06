@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.x = 0"
+"4 : this.x = 0" -> "36 : Math.toDegrees(Math.atan2(this.y, this.x, ), )"
+"5 : this.y = 0"
+"5 : this.y = 0" -> "36 : Math.toDegrees(Math.atan2(this.y, this.x, ), )"
+"36 : Math.toDegrees(Math.atan2(this.y, this.x, ), )"
+}

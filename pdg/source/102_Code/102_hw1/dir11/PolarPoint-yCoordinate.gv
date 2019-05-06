@@ -1,0 +1,9 @@
+digraph G {
+"6 : this.rad = 0.0"
+"6 : this.rad = 0.0" -> "35 : y_coordinate = this.rad * Math.sin(this.ang, )"
+"7 : this.ang = 0.0"
+"7 : this.ang = 0.0" -> "35 : y_coordinate = this.rad * Math.sin(this.ang, )"
+"34 : y_coordinate = 0.0"
+"34 : y_coordinate = 0.0" -> "35 : y_coordinate = this.rad * Math.sin(this.ang, )" [style=dashed]
+"35 : y_coordinate = this.rad * Math.sin(this.ang, )"
+}

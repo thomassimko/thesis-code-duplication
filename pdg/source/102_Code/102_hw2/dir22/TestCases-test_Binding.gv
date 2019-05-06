@@ -1,0 +1,4 @@
+digraph G {
+"46 : bin = new Binding(\"pi\", 3.14, )"
+"47 : Check.check(bin.getval(), 3.14, )"
+}

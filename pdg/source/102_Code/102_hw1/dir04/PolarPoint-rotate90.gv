@@ -1,0 +1,12 @@
+digraph G {
+"4 : this.r = 0.0"
+"4 : this.r = 0.0" -> "83 : result = new PolarPoint(this.r, newTheta, )"
+"5 : this.theta = 0.0"
+"78 : result = null"
+"78 : result = null" -> "83 : result = new PolarPoint(this.r, newTheta, )" [style=dashed]
+"79 : newTheta = 0.0"
+"79 : newTheta = 0.0" -> "81 : newTheta = angle() + Math.PI / 2" [style=dashed]
+"81 : newTheta = angle() + Math.PI / 2"
+"81 : newTheta = angle() + Math.PI / 2" -> "83 : result = new PolarPoint(this.r, newTheta, )"
+"83 : result = new PolarPoint(this.r, newTheta, )"
+}

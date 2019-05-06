@@ -1,0 +1,7 @@
+digraph G {
+"12 : after(o2.getDate(), )"
+"13 : 1"
+"14 : before(o2.getDate(), )"
+"15 : 1"
+"17 : 0"
+}

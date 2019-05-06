@@ -1,0 +1,8 @@
+digraph G {
+"4 : this.rad = 0"
+"4 : this.rad = 0" -> "9 : this.rad = 1" [style=dashed]
+"5 : this.theta = 0"
+"5 : this.theta = 0" -> "10 : this.theta = 0" [style=dashed]
+"9 : this.rad = 1"
+"10 : this.theta = 0"
+}

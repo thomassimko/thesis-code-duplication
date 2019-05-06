@@ -1,0 +1,713 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for thesis:thesis:jar:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.version' for org.junit.jupiter:junit-jupiter-api:jar is either LATEST or RELEASE (both of them are being deprecated) @ line 25, column 22
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building thesis 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default-cli) > validate @ thesis >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default-cli) < validate @ thesis <<<
+[INFO] 
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ thesis ---
+BLOCK: Startconstructor1L0
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: BasicL1
+this.l : this.l = lft, 
+this.r : this.r = rht, 
+
+BLOCK: StartevaluateL3
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: BasicL4
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: StarttoStringL6
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: BasicL7
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: StartmainL9
+
+BLOCK: BasicL10
+c : c = new SubtractExpression(one, two, ), 
+bound : bound = new VariableBindings(), 
+two : two = new DoubleConstantExpression(5, ), 
+g : g = new IdentifierExpression("B", ), 
+setter : setter = new Assignment("A", new DoubleConstantExpression(2, ), ), 
+e : e = new DivideExpression(one, two, ), 
+d : d = new MultiplyExpression(one, two, ), 
+b : b = new AddExpression(one, two, ), 
+a : a = new NegationExpression(one, ), 
+f : f = new IdentifierExpression("A", ), 
+one : one = new DoubleConstantExpression(4, ), 
+
+BLOCK: BasicL12
+
+BLOCK: BasicL13
+
+BLOCK: BasicL14
+
+BLOCK: Startconstructor1L15
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: BasicL16
+this.r : this.r = rht, 
+this.l : this.l = lft, 
+
+BLOCK: StartevaluateL18
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: BasicL19
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: StarttoStringL21
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: BasicL22
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: StartaddBindingL24
+this.expression : this.expression = new ArrayList(), 
+
+BLOCK: BasicL25
+this.expression : this.expression = new ArrayList(), 
+
+BLOCK: StartlookupBindingL27
+this.expression : this.expression = new ArrayList(), 
+
+BLOCK: BasicL28
+this.expression : this.expression = new ArrayList(), 
+
+BLOCK: LoopL30
+this.expression : this.expression = new ArrayList(), 
+b : b = this.expression, 
+
+BLOCK: BasicL31
+this.expression : this.expression = new ArrayList(), 
+b : b = this.expression, 
+
+BLOCK: trueL32
+this.expression : this.expression = new ArrayList(), 
+b : b = this.expression, 
+
+BLOCK: joinL33
+this.expression : this.expression = new ArrayList(), 
+b : b = this.expression, 
+
+BLOCK: Startconstructor1L34
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: BasicL35
+this.l : this.l = lft, 
+this.r : this.r = rht, 
+
+BLOCK: StartevaluateL37
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: BasicL38
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: StarttoStringL40
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: BasicL41
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: Startconstructor1L43
+this.identity : this.identity = null, 
+
+BLOCK: BasicL44
+this.identity : this.identity = identifier, 
+
+BLOCK: StartevaluateL46
+this.identity : this.identity = null, 
+
+BLOCK: BasicL47
+this.identity : this.identity = null, 
+
+BLOCK: StarttoStringL49
+this.identity : this.identity = null, 
+
+BLOCK: BasicL50
+this.identity : this.identity = null, 
+
+BLOCK: Startconstructor1L52
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: BasicL53
+this.l : this.l = lft, 
+this.r : this.r = rht, 
+
+BLOCK: StartevaluateL55
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: BasicL56
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: StarttoStringL58
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: BasicL59
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: Startconstructor1L61
+this.id : this.id = null, 
+this.expression : this.expression = null, 
+
+BLOCK: BasicL62
+this.id : this.id = id, 
+this.expression : this.expression = e, 
+
+BLOCK: StartevaluateL64
+this.expression : this.expression = null, 
+this.id : this.id = null, 
+
+BLOCK: BasicL65
+this.expression : this.expression = null, 
+this.id : this.id = null, 
+
+BLOCK: StarttoStringL67
+this.expression : this.expression = null, 
+this.id : this.id = null, 
+
+BLOCK: BasicL68
+this.expression : this.expression = null, 
+this.id : this.id = null, 
+
+BLOCK: Startconstructor1L70
+this.neg : this.neg = null, 
+
+BLOCK: BasicL71
+this.neg : this.neg = e, 
+
+BLOCK: StartevaluateL73
+this.neg : this.neg = null, 
+
+BLOCK: BasicL74
+this.neg : this.neg = null, 
+
+BLOCK: StarttoStringL76
+this.neg : this.neg = null, 
+
+BLOCK: BasicL77
+this.neg : this.neg = null, 
+
+BLOCK: Startconstructor1L79
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: BasicL80
+this.value : this.value = value, 
+this.id : this.id = id, 
+
+BLOCK: StartgetIDL82
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: BasicL83
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: StartgetValueL85
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: BasicL86
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: Startconstructor1L88
+this.v : this.v = 0.0, 
+
+BLOCK: BasicL89
+this.v : this.v = value, 
+
+BLOCK: StartevaluateL91
+this.v : this.v = 0.0, 
+
+BLOCK: BasicL92
+this.v : this.v = 0.0, 
+
+BLOCK: StarttoStringL94
+this.v : this.v = 0.0, 
+
+BLOCK: BasicL95
+this.v : this.v = 0.0, 
+
+BLOCK: Startconstructor1L0
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: Startconstructor1L0
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: BasicL1
+this.l : this.l = lft, 
+this.r : this.r = rht, 
+
+BLOCK: StartevaluateL3
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: StartevaluateL3
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: BasicL4
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: StarttoStringL6
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: StarttoStringL6
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: BasicL7
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: StartmainL9
+
+BLOCK: StartmainL9
+
+BLOCK: BasicL10
+c : c = new SubtractExpression(one, two, ), 
+bound : bound = new VariableBindings(), 
+two : two = new DoubleConstantExpression(5, ), 
+g : g = new IdentifierExpression("B", ), 
+setter : setter = new Assignment("A", new DoubleConstantExpression(2, ), ), 
+e : e = new DivideExpression(one, two, ), 
+d : d = new MultiplyExpression(one, two, ), 
+b : b = new AddExpression(one, two, ), 
+a : a = new NegationExpression(one, ), 
+f : f = new IdentifierExpression("A", ), 
+one : one = new DoubleConstantExpression(4, ), 
+
+BLOCK: BasicL12
+
+BLOCK: BasicL13
+
+BLOCK: BasicL14
+
+BLOCK: Startconstructor1L15
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: Startconstructor1L15
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: BasicL16
+this.r : this.r = rht, 
+this.l : this.l = lft, 
+
+BLOCK: StartevaluateL18
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: StartevaluateL18
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: BasicL19
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: StarttoStringL21
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: StarttoStringL21
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: BasicL22
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: StartaddBindingL24
+this.expression : this.expression = new ArrayList(), 
+
+BLOCK: StartaddBindingL24
+this.expression : this.expression = new ArrayList(), 
+
+BLOCK: BasicL25
+this.expression : this.expression = new ArrayList(), 
+
+BLOCK: StartlookupBindingL27
+this.expression : this.expression = new ArrayList(), 
+
+BLOCK: StartlookupBindingL27
+this.expression : this.expression = new ArrayList(), 
+
+BLOCK: BasicL28
+this.expression : this.expression = new ArrayList(), 
+
+BLOCK: LoopL30
+this.expression : this.expression = new ArrayList(), 
+b : b = this.expression, 
+
+BLOCK: BasicL31
+this.expression : this.expression = new ArrayList(), 
+b : b = this.expression, 
+
+BLOCK: trueL32
+this.expression : this.expression = new ArrayList(), 
+b : b = this.expression, 
+
+BLOCK: joinL33
+this.expression : this.expression = new ArrayList(), 
+b : b = this.expression, 
+
+BLOCK: Startconstructor1L34
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: Startconstructor1L34
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: BasicL35
+this.l : this.l = lft, 
+this.r : this.r = rht, 
+
+BLOCK: StartevaluateL37
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: StartevaluateL37
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: BasicL38
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: StarttoStringL40
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: StarttoStringL40
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: BasicL41
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: Startconstructor1L43
+this.identity : this.identity = null, 
+
+BLOCK: Startconstructor1L43
+this.identity : this.identity = null, 
+
+BLOCK: BasicL44
+this.identity : this.identity = identifier, 
+
+BLOCK: StartevaluateL46
+this.identity : this.identity = null, 
+
+BLOCK: StartevaluateL46
+this.identity : this.identity = null, 
+
+BLOCK: BasicL47
+this.identity : this.identity = null, 
+
+BLOCK: StarttoStringL49
+this.identity : this.identity = null, 
+
+BLOCK: StarttoStringL49
+this.identity : this.identity = null, 
+
+BLOCK: BasicL50
+this.identity : this.identity = null, 
+
+BLOCK: Startconstructor1L52
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: Startconstructor1L52
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: BasicL53
+this.l : this.l = lft, 
+this.r : this.r = rht, 
+
+BLOCK: StartevaluateL55
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: StartevaluateL55
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: BasicL56
+this.l : this.l = null, 
+this.r : this.r = null, 
+
+BLOCK: StarttoStringL58
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: StarttoStringL58
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: BasicL59
+this.r : this.r = null, 
+this.l : this.l = null, 
+
+BLOCK: Startconstructor1L61
+this.id : this.id = null, 
+this.expression : this.expression = null, 
+
+BLOCK: Startconstructor1L61
+this.id : this.id = null, 
+this.expression : this.expression = null, 
+
+BLOCK: BasicL62
+this.id : this.id = id, 
+this.expression : this.expression = e, 
+
+BLOCK: StartevaluateL64
+this.expression : this.expression = null, 
+this.id : this.id = null, 
+
+BLOCK: StartevaluateL64
+this.expression : this.expression = null, 
+this.id : this.id = null, 
+
+BLOCK: BasicL65
+this.expression : this.expression = null, 
+this.id : this.id = null, 
+
+BLOCK: StarttoStringL67
+this.expression : this.expression = null, 
+this.id : this.id = null, 
+
+BLOCK: StarttoStringL67
+this.expression : this.expression = null, 
+this.id : this.id = null, 
+
+BLOCK: BasicL68
+this.expression : this.expression = null, 
+this.id : this.id = null, 
+
+BLOCK: Startconstructor1L70
+this.neg : this.neg = null, 
+
+BLOCK: Startconstructor1L70
+this.neg : this.neg = null, 
+
+BLOCK: BasicL71
+this.neg : this.neg = e, 
+
+BLOCK: StartevaluateL73
+this.neg : this.neg = null, 
+
+BLOCK: StartevaluateL73
+this.neg : this.neg = null, 
+
+BLOCK: BasicL74
+this.neg : this.neg = null, 
+
+BLOCK: StarttoStringL76
+this.neg : this.neg = null, 
+
+BLOCK: StarttoStringL76
+this.neg : this.neg = null, 
+
+BLOCK: BasicL77
+this.neg : this.neg = null, 
+
+BLOCK: Startconstructor1L79
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: Startconstructor1L79
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: BasicL80
+this.value : this.value = value, 
+this.id : this.id = id, 
+
+BLOCK: StartgetIDL82
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: StartgetIDL82
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: BasicL83
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: StartgetValueL85
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: StartgetValueL85
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: BasicL86
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: Startconstructor1L88
+this.v : this.v = 0.0, 
+
+BLOCK: Startconstructor1L88
+this.v : this.v = 0.0, 
+
+BLOCK: BasicL89
+this.v : this.v = value, 
+
+BLOCK: StartevaluateL91
+this.v : this.v = 0.0, 
+
+BLOCK: StartevaluateL91
+this.v : this.v = 0.0, 
+
+BLOCK: BasicL92
+this.v : this.v = 0.0, 
+
+BLOCK: StarttoStringL94
+this.v : this.v = 0.0, 
+
+BLOCK: StarttoStringL94
+this.v : this.v = 0.0, 
+
+BLOCK: BasicL95
+this.v : this.v = 0.0, 
+
+Unfiltered: 387
+Filtered: 3
+
+
+Duplicate found: 102_Code/102_hw2/dir13/TestCases.java lines [6, 24] and 102_Code/102_hw2/dir13/TestCases.java lines [6, 23]
+102_Code/102_hw2/dir13/TestCases.java ----------
+6 :	two = null
+7 :	one = new DoubleConstantExpression(4, )
+8 :	two = new DoubleConstantExpression(5, )
+14 :	b = new AddExpression(one, two, )
+15 :	c = new SubtractExpression(one, two, )
+16 :	d = new MultiplyExpression(one, two, )
+17 :	e = new DivideExpression(one, two, )
+21 :	System.out.println("" + b + " = " + b.evaluate(bound, ), )
+23 :	System.out.println("" + d + " = " + d.evaluate(bound, ), )
+24 :	System.out.println("" + e + " = " + e.evaluate(bound, ), )
+102_Code/102_hw2/dir13/TestCases.java ----------
+6 :	one = null
+8 :	two = new DoubleConstantExpression(5, )
+7 :	one = new DoubleConstantExpression(4, )
+16 :	d = new MultiplyExpression(one, two, )
+17 :	e = new DivideExpression(one, two, )
+15 :	c = new SubtractExpression(one, two, )
+14 :	b = new AddExpression(one, two, )
+23 :	System.out.println("" + d + " = " + d.evaluate(bound, ), )
+22 :	System.out.println("" + c + " = " + c.evaluate(bound, ), )
+21 :	System.out.println("" + b + " = " + b.evaluate(bound, ), )
+===========================
+
+
+
+Duplicate found: 102_Code/102_hw2/dir13/TestCases.java lines [7, 24] and 102_Code/102_hw2/dir13/TestCases.java lines [7, 24]
+102_Code/102_hw2/dir13/TestCases.java ----------
+7 :	one = new DoubleConstantExpression(4, )
+8 :	two = new DoubleConstantExpression(5, )
+14 :	b = new AddExpression(one, two, )
+15 :	c = new SubtractExpression(one, two, )
+16 :	d = new MultiplyExpression(one, two, )
+17 :	e = new DivideExpression(one, two, )
+21 :	System.out.println("" + b + " = " + b.evaluate(bound, ), )
+22 :	System.out.println("" + c + " = " + c.evaluate(bound, ), )
+23 :	System.out.println("" + d + " = " + d.evaluate(bound, ), )
+24 :	System.out.println("" + e + " = " + e.evaluate(bound, ), )
+102_Code/102_hw2/dir13/TestCases.java ----------
+8 :	two = new DoubleConstantExpression(5, )
+7 :	one = new DoubleConstantExpression(4, )
+16 :	d = new MultiplyExpression(one, two, )
+17 :	e = new DivideExpression(one, two, )
+15 :	c = new SubtractExpression(one, two, )
+14 :	b = new AddExpression(one, two, )
+23 :	System.out.println("" + d + " = " + d.evaluate(bound, ), )
+24 :	System.out.println("" + e + " = " + e.evaluate(bound, ), )
+22 :	System.out.println("" + c + " = " + c.evaluate(bound, ), )
+21 :	System.out.println("" + b + " = " + b.evaluate(bound, ), )
+===========================
+
+
+
+Duplicate found: 102_Code/102_hw2/dir13/TestCases.java lines [6, 24] and 102_Code/102_hw2/dir13/TestCases.java lines [6, 24]
+102_Code/102_hw2/dir13/TestCases.java ----------
+6 :	two = null
+7 :	one = new DoubleConstantExpression(4, )
+8 :	two = new DoubleConstantExpression(5, )
+14 :	b = new AddExpression(one, two, )
+15 :	c = new SubtractExpression(one, two, )
+16 :	d = new MultiplyExpression(one, two, )
+17 :	e = new DivideExpression(one, two, )
+21 :	System.out.println("" + b + " = " + b.evaluate(bound, ), )
+23 :	System.out.println("" + d + " = " + d.evaluate(bound, ), )
+24 :	System.out.println("" + e + " = " + e.evaluate(bound, ), )
+102_Code/102_hw2/dir13/TestCases.java ----------
+6 :	one = null
+8 :	two = new DoubleConstantExpression(5, )
+7 :	one = new DoubleConstantExpression(4, )
+16 :	d = new MultiplyExpression(one, two, )
+14 :	b = new AddExpression(one, two, )
+17 :	e = new DivideExpression(one, two, )
+15 :	c = new SubtractExpression(one, two, )
+23 :	System.out.println("" + d + " = " + d.evaluate(bound, ), )
+24 :	System.out.println("" + e + " = " + e.evaluate(bound, ), )
+22 :	System.out.println("" + c + " = " + c.evaluate(bound, ), )
+===========================
+
+
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.836 s
+[INFO] Finished at: 2019-05-01T17:14:51-07:00
+[INFO] Final Memory: 15M/689M
+[INFO] ------------------------------------------------------------------------

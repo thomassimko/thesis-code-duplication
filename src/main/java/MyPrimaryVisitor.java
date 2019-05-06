@@ -1,4 +1,5 @@
 import ast.ClassObject;
+import ast.Method;
 import ast.expressions.*;
 import ast.expressions.left.ArrayAccessExpression;
 import ast.expressions.left.Identifier;
@@ -196,11 +197,6 @@ public class MyPrimaryVisitor extends Java8BaseVisitor<Expression> {
 
     public Expression handleArrayAccess_lfno_primary(Java8Parser.ArrayAccess_lfno_primaryContext ctx) {
 
-//        (	expressionName '[' expression ']'
-//                |	primaryNoNewArray_lfno_primary_lfno_arrayAccess_lfno_primary '[' expression ']'
-//		)
-//        (	primaryNoNewArray_lfno_primary_lf_arrayAccess_lfno_primary '[' expression ']'
-//		)*
         Expression left = null;
         List<Expression> accessor = new ArrayList<Expression>();
         for(Java8Parser.ExpressionContext exp: ctx.expression()) {
@@ -214,10 +210,6 @@ public class MyPrimaryVisitor extends Java8BaseVisitor<Expression> {
         }
         return new ArrayAccessExpression(Driver.currentFileName, ctx.start.getLine(), left, accessor);
 
-        //System.err.println("Found arrayAccess_lfno_primary");
-
-        //return null;
-        //ctx.
     }
 
     public Expression handlePrimaryNoNewArray_lfno_primary_lfno_arrayAccess_lfno_primary(Java8Parser.PrimaryNoNewArray_lfno_primary_lfno_arrayAccess_lfno_primaryContext ctx) {
@@ -300,12 +292,30 @@ public class MyPrimaryVisitor extends Java8BaseVisitor<Expression> {
             String id = ctx.fieldAccess_lf_primary().Identifier().getText();
             return new LeftIdDot(Driver.currentFileName, ctx.start.getLine(), id, in);
         } else if(ctx.methodInvocation_lf_primary() != null) {
-            System.err.println("ctx.methodInvocation_lf_primary()");
+            return this.handleMethodInvocation_lf_primary(ctx.methodInvocation_lf_primary());
         } else if(ctx.methodReference_lf_primary() != null) {
             System.err.println("ctx.methodReference_lf_primary()");
         }
         System.err.println("No primary found for PrimaryNoNewArray_lf_primaryContext");
         return null;
+    }
+
+    public Expression handleMethodInvocation_lf_primary(Java8Parser.MethodInvocation_lf_primaryContext ctx) {
+        List<Expression> args = new ArrayList<Expression>();
+        Identifier methodName = null;
+        Expression leftSide = null;
+
+
+        if(ctx.argumentList() != null) {
+            for(Java8Parser.ExpressionContext arg: ctx.argumentList().expression()) {
+                args.add(Driver.expressionVisitor.visitExpression(arg));
+            }
+        }
+        if(ctx.Identifier() != null) {
+            methodName = new Identifier(Driver.currentFileName, ctx.start.getLine(), ctx.Identifier().getText());
+        }
+
+        return new CallExpression(Driver.currentFileName, ctx.start.getLine(), methodName, args, leftSide);
     }
 
 

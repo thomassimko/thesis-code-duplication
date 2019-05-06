@@ -1,0 +1,9 @@
+digraph G {
+"145 : quad1 = quadrant(pt1, )"
+"145 : quad1 = quadrant(pt1, )" -> "148 : quad1 == quad2"
+"146 : quad2 = quadrant(pt2, )"
+"146 : quad2 = quadrant(pt2, )" -> "148 : quad1 == quad2"
+"148 : quad1 == quad2"
+"149 : true"
+"150 : false"
+}

@@ -1,0 +1,180 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for thesis:thesis:jar:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.version' for org.junit.jupiter:junit-jupiter-api:jar is either LATEST or RELEASE (both of them are being deprecated) @ line 25, column 22
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building thesis 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default-cli) > validate @ thesis >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default-cli) < validate @ thesis <<<
+[INFO] 
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ thesis ---
+BLOCK: Starttest1L0
+
+BLOCK: BasicL1
+count : count = 0, 
+sum : sum = 0, 
+
+BLOCK: ForInitL3
+count : count = 0, 
+i : i = 0, 
+sum : sum = 0, 
+
+BLOCK: ForCondL4
+count : count = 0, count = count + 1, 
+@temp2 : @temp2 = i, 
+i : i = 0, i = i + 1, 
+@temp1 : @temp1 = count, 
+sum : sum = sum + arr[i], sum = 0, 
+
+BLOCK: LoopL5
+@temp2 : @temp2 = i, 
+count : count = count + 1, 
+i : i = i + 1, 
+@temp1 : @temp1 = count, 
+sum : sum = sum + arr[i], 
+
+BLOCK: BasicL6
+average : average = sum * 1.0 / count, 
+count : count = 0, count = count + 1, 
+@temp2 : @temp2 = i, 
+i : i = 0, i = i + 1, 
+@temp1 : @temp1 = count, 
+sum : sum = sum + arr[i], sum = 0, 
+
+BLOCK: Starttest2L7
+
+BLOCK: BasicL8
+count : count = 0, 
+sum : sum = 0, 
+
+BLOCK: ForInitL10
+count : count = 0, 
+sum : sum = 0, 
+i : i = 0, 
+
+BLOCK: ForCondL11
+count : count = count + 1, count = 0, 
+sum : sum = 0, sum = sum + arr[i], 
+@temp3 : @temp3 = i, 
+i : i = 0, i = i + 1, 
+
+BLOCK: LoopL12
+count : count = count + 1, 
+sum : sum = sum + arr[i], 
+@temp3 : @temp3 = i, 
+i : i = i + 1, 
+
+BLOCK: BasicL13
+count : count = count + 1, count = 0, 
+sum : sum = 0, sum = sum + arr[i], 
+@temp3 : @temp3 = i, 
+i : i = 0, i = i + 1, 
+average : average = sum * 1.0 / count, 
+
+BLOCK: Starttest1L0
+
+BLOCK: Starttest1L0
+
+BLOCK: BasicL1
+count : count = 0, 
+sum : sum = 0, 
+
+BLOCK: ForInitL3
+count : count = 0, 
+i : i = 0, 
+sum : sum = 0, 
+
+BLOCK: ForCondL4
+count : count = 0, count = count + 1, 
+@temp2 : @temp2 = i, 
+i : i = 0, i = i + 1, 
+@temp1 : @temp1 = count, 
+sum : sum = sum + arr[i], sum = 0, 
+
+BLOCK: LoopL5
+@temp2 : @temp2 = i, 
+count : count = count + 1, 
+i : i = i + 1, 
+@temp1 : @temp1 = count, 
+sum : sum = sum + arr[i], 
+
+BLOCK: BasicL6
+average : average = sum * 1.0 / count, 
+count : count = 0, count = count + 1, 
+@temp2 : @temp2 = i, 
+i : i = 0, i = i + 1, 
+@temp1 : @temp1 = count, 
+sum : sum = sum + arr[i], sum = 0, 
+
+BLOCK: Starttest2L7
+
+BLOCK: Starttest2L7
+
+BLOCK: BasicL8
+count : count = 0, 
+sum : sum = 0, 
+
+BLOCK: ForInitL10
+count : count = 0, 
+sum : sum = 0, 
+i : i = 0, 
+
+BLOCK: ForCondL11
+count : count = count + 1, count = 0, 
+sum : sum = 0, sum = sum + arr[i], 
+@temp3 : @temp3 = i, 
+i : i = 0, i = i + 1, 
+
+BLOCK: LoopL12
+count : count = count + 1, 
+sum : sum = sum + arr[i], 
+@temp3 : @temp3 = i, 
+i : i = i + 1, 
+
+BLOCK: BasicL13
+count : count = count + 1, count = 0, 
+sum : sum = 0, sum = sum + arr[i], 
+@temp3 : @temp3 = i, 
+i : i = 0, i = i + 1, 
+average : average = sum * 1.0 / count, 
+
+Unfiltered: 141
+Filtered: 1
+
+
+Duplicate found: testFiles/TestCases/TestCase4/TestCase4.java lines [11, 19] and testFiles/TestCases/TestCase4/TestCase4.java lines [27, 35]
+testFiles/TestCases/TestCase4/TestCase4.java ----------
+11 :	sum = 0
+12 :	count = 0
+14 :	i = 0
+15 :	sum = sum + arr[i]
+16 :	count = count + 1
+19 :	average = sum * 1.0 / count
+testFiles/TestCases/TestCase4/TestCase4.java ----------
+27 :	sum = 0
+28 :	count = 0
+30 :	@temp3 = i
+31 :	sum = sum + arr[i]
+32 :	count = count + 1
+35 :	average = sum * 1.0 / count
+===========================
+
+
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.153 s
+[INFO] Finished at: 2019-05-01T17:07:46-07:00
+[INFO] Final Memory: 11M/437M
+[INFO] ------------------------------------------------------------------------

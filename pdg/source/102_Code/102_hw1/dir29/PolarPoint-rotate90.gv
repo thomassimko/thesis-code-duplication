@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.r = 0.0"
+"4 : this.r = 0.0" -> "40 : p = new PolarPoint(this.r, this.a + 90.0, )"
+"4 : this.a = 0.0"
+"4 : this.a = 0.0" -> "40 : p = new PolarPoint(this.r, this.a + 90.0, )"
+"40 : p = new PolarPoint(this.r, this.a + 90.0, )"
+}

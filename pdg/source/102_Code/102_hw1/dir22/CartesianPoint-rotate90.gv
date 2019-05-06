@@ -1,0 +1,17 @@
+digraph G {
+"3 : this.xCoordinate = 0.0"
+"3 : this.xCoordinate = 0.0" -> "27 : y = this.yCoordinate * Math.sin(Math.atan(this.yCoordinate / this.xCoordinate, ) + Math.PI / 2, )"
+"3 : this.xCoordinate = 0.0" -> "26 : x = this.xCoordinate * Math.cos(Math.atan(this.yCoordinate / this.xCoordinate, ) + Math.PI / 2, )"
+"3 : this.yCoordinate = 0.0"
+"3 : this.yCoordinate = 0.0" -> "27 : y = this.yCoordinate * Math.sin(Math.atan(this.yCoordinate / this.xCoordinate, ) + Math.PI / 2, )"
+"3 : this.yCoordinate = 0.0" -> "26 : x = this.xCoordinate * Math.cos(Math.atan(this.yCoordinate / this.xCoordinate, ) + Math.PI / 2, )"
+"25 : x = 0.0"
+"25 : x = 0.0" -> "26 : x = this.xCoordinate * Math.cos(Math.atan(this.yCoordinate / this.xCoordinate, ) + Math.PI / 2, )" [style=dashed]
+"25 : y = 0.0"
+"25 : y = 0.0" -> "27 : y = this.yCoordinate * Math.sin(Math.atan(this.yCoordinate / this.xCoordinate, ) + Math.PI / 2, )" [style=dashed]
+"26 : x = this.xCoordinate * Math.cos(Math.atan(this.yCoordinate / this.xCoordinate, ) + Math.PI / 2, )"
+"26 : x = this.xCoordinate * Math.cos(Math.atan(this.yCoordinate / this.xCoordinate, ) + Math.PI / 2, )" -> "28 : new CartesianPoint(x, y, )"
+"27 : y = this.yCoordinate * Math.sin(Math.atan(this.yCoordinate / this.xCoordinate, ) + Math.PI / 2, )"
+"27 : y = this.yCoordinate * Math.sin(Math.atan(this.yCoordinate / this.xCoordinate, ) + Math.PI / 2, )" -> "28 : new CartesianPoint(x, y, )"
+"28 : new CartesianPoint(x, y, )"
+}

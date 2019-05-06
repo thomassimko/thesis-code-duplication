@@ -1,0 +1,6 @@
+digraph G {
+"3 : this.id = null"
+"4 : this.value = 0.0"
+"4 : this.value = 0.0" -> "24 : this.value = value" [style=dashed]
+"24 : this.value = value"
+}

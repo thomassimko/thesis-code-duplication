@@ -1,0 +1,16 @@
+digraph G {
+"4 : this.a = new DoubleConstantExpression(1.0, )"
+"5 : this.b = new DoubleConstantExpression(1.2, )"
+"6 : this.c = new DoubleConstantExpression(2.2, )"
+"7 : this.d = new DoubleConstantExpression(-8.0, )"
+"9 : this.binding = new VariableBindings()"
+"101 : checkDoubleConstantExpression()"
+"102 : checkNegationExpression()"
+"103 : checkAddExpression()"
+"104 : checkSubtractExpression()"
+"105 : checkMultiplyExpression()"
+"106 : checkDivideExpression()"
+"107 : checkBindings()"
+"108 : checkAssignment()"
+"109 : checkIdentifierExpression()"
+}

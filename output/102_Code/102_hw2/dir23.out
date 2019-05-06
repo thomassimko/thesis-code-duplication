@@ -1,0 +1,793 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for thesis:thesis:jar:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.version' for org.junit.jupiter:junit-jupiter-api:jar is either LATEST or RELEASE (both of them are being deprecated) @ line 25, column 22
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building thesis 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> exec-maven-plugin:1.2.1:java (default-cli) > validate @ thesis >>>
+[INFO] 
+[INFO] <<< exec-maven-plugin:1.2.1:java (default-cli) < validate @ thesis <<<
+[INFO] 
+[INFO] 
+[INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ thesis ---
+BLOCK: Startconstructor1L0
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: BasicL1
+this.rht : this.rht = rht, 
+this.lft : this.lft = lft, 
+
+BLOCK: StartevaluateL3
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: BasicL4
+product : product = left * right, 
+right : right = evaluate(binding, ), 
+left : left = evaluate(binding, ), 
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: StarttoStringL6
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: BasicL7
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: StarttestL9
+
+BLOCK: BasicL10
+e01 : e01 = new MultiplyExpression(new IdentifierExpression("a", ), new IdentifierExpression("b", ), ), 
+e4 : e4 = new AddExpression(new NegationExpression(new DoubleConstantExpression(4, ), ), new NegationExpression(new DoubleConstantExpression(6, ), ), ), 
+e51 : e51 = new DoubleConstantExpression(-0.33, ), 
+e42 : e42 = new DivideExpression(new DoubleConstantExpression(1, ), new DoubleConstantExpression(2, ), ), 
+e10 : e10 = new SubtractExpression(new NegationExpression(new DoubleConstantExpression(5, ), ), new NegationExpression(new DoubleConstantExpression(10, ), ), ), 
+e44 : e44 = new DivideExpression(new DoubleConstantExpression(1, ), new DoubleConstantExpression(0.5, ), ), 
+e52 : e52 = new DoubleConstantExpression(0, ), 
+e1 : e1 = new AddExpression(new DoubleConstantExpression(1, ), new DoubleConstantExpression(2, ), ), 
+e28 : e28 = new MultiplyExpression(new NegationExpression(new DoubleConstantExpression(3, ), ), new NegationExpression(new DoubleConstantExpression(2, ), ), ), 
+a1 : a1 = new Assignment("a", new DoubleConstantExpression(2, ), ), 
+e60 : e60 = new NegationExpression(new DoubleConstantExpression(-1, ), ), 
+e27 : e27 = new MultiplyExpression(new DoubleConstantExpression(8, ), new NegationExpression(new DoubleConstantExpression(1, ), ), ), 
+e23 : e23 = new MultiplyExpression(new DoubleConstantExpression(0, ), new DoubleConstantExpression(0, ), ), 
+e5 : e5 = new AddExpression(new DoubleConstantExpression(0, ), new DoubleConstantExpression(0, ), ), 
+e37 : e37 = new DivideExpression(new DoubleConstantExpression(6, ), new DoubleConstantExpression(1, ), ), 
+e02 : e02 = new DivideExpression(new IdentifierExpression("a", ), new IdentifierExpression("b", ), ), 
+e40 : e40 = new DivideExpression(new NegationExpression(new DoubleConstantExpression(6, ), ), new NegationExpression(new DoubleConstantExpression(1, ), ), ), 
+e04 : e04 = new AddExpression(new IdentifierExpression("a", ), new IdentifierExpression("b", ), ), 
+e2 : e2 = new AddExpression(new NegationExpression(new DoubleConstantExpression(2, ), ), new DoubleConstantExpression(1, ), ), 
+e12 : e12 = new SubtractExpression(new DoubleConstantExpression(3, ), new DoubleConstantExpression(8, ), ), 
+e50 : e50 = new DoubleConstantExpression(0.563, ), 
+e58 : e58 = new NegationExpression(new DoubleConstantExpression(0, ), ), 
+e38 : e38 = new DivideExpression(new NegationExpression(new DoubleConstantExpression(6, ), ), new DoubleConstantExpression(1, ), ), 
+e46 : e46 = new DivideExpression(new DoubleConstantExpression(0.5, ), new DoubleConstantExpression(0.5, ), ), 
+e3 : e3 = new AddExpression(new DoubleConstantExpression(1, ), new NegationExpression(new DoubleConstantExpression(4, ), ), ), 
+e53 : e53 = new DoubleConstantExpression(0.66667, ), 
+e43 : e43 = new DivideExpression(new DoubleConstantExpression(0, ), new DoubleConstantExpression(4.5, ), ), 
+e22 : e22 = new MultiplyExpression(new DoubleConstantExpression(4, ), new DoubleConstantExpression(4, ), ), 
+e26 : e26 = new MultiplyExpression(new NegationExpression(new DoubleConstantExpression(5, ), ), new DoubleConstantExpression(4, ), ), 
+e41 : e41 = new DivideExpression(new DoubleConstantExpression(10, ), new DoubleConstantExpression(5, ), ), 
+e20 : e20 = new MultiplyExpression(new DoubleConstantExpression(1, ), new DoubleConstantExpression(1, ), ), 
+e39 : e39 = new DivideExpression(new DoubleConstantExpression(6, ), new NegationExpression(new DoubleConstantExpression(1, ), ), ), 
+e11 : e11 = new SubtractExpression(new DoubleConstantExpression(7, ), new NegationExpression(new DoubleConstantExpression(3, ), ), ), 
+e25 : e25 = new MultiplyExpression(new DoubleConstantExpression(0, ), new DoubleConstantExpression(9, ), ), 
+e21 : e21 = new MultiplyExpression(new DoubleConstantExpression(2, ), new DoubleConstantExpression(5, ), ), 
+b1 : b1 = new VariableBindings(), 
+e62 : e62 = new NegationExpression(new DoubleConstantExpression(-0.5, ), ), 
+e13 : e13 = new SubtractExpression(new DoubleConstantExpression(0, ), new DoubleConstantExpression(0, ), ), 
+e59 : e59 = new NegationExpression(new DoubleConstantExpression(1, ), ), 
+a2 : a2 = new Assignment("b", new NegationExpression(new DoubleConstantExpression(2, ), ), ), 
+e9 : e9 = new SubtractExpression(new NegationExpression(new DoubleConstantExpression(1, ), ), new DoubleConstantExpression(0, ), ), 
+e8 : e8 = new SubtractExpression(new DoubleConstantExpression(4, ), new DoubleConstantExpression(2, ), ), 
+e45 : e45 = new DivideExpression(new DoubleConstantExpression(1.5, ), new DoubleConstantExpression(3.4, ), ), 
+e03 : e03 = new SubtractExpression(new IdentifierExpression("a", ), new IdentifierExpression("b", ), ), 
+e7 : e7 = new AddExpression(new DoubleConstantExpression(1.6, ), new DoubleConstantExpression(3.9, ), ), 
+e24 : e24 = new MultiplyExpression(new DoubleConstantExpression(2, ), new DoubleConstantExpression(0, ), ), 
+e6 : e6 = new AddExpression(new DoubleConstantExpression(0.5, ), new DoubleConstantExpression(0.5, ), ), 
+e61 : e61 = new NegationExpression(new DoubleConstantExpression(0.5, ), ), 
+
+BLOCK: StartmainL12
+
+BLOCK: BasicL13
+
+BLOCK: Startconstructor1L15
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+
+BLOCK: BasicL16
+this.lft : this.lft = lft, 
+this.rht : this.rht = rht, 
+
+BLOCK: StartevaluateL18
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: BasicL19
+right : right = evaluate(binding, ), 
+this.rht : this.rht = null, 
+sum : sum = left + right, 
+this.lft : this.lft = null, 
+left : left = evaluate(binding, ), 
+
+BLOCK: StarttoStringL21
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+
+BLOCK: BasicL22
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+
+BLOCK: Startconstructor1L24
+this.bindingList : this.bindingList = null, 
+
+BLOCK: BasicL25
+this.bindingList : this.bindingList = new ArrayList(), 
+
+BLOCK: StartaddBindingL27
+this.bindingList : this.bindingList = null, 
+
+BLOCK: BasicL28
+this.bindingList : this.bindingList = null, 
+
+BLOCK: StartlookupBindingL30
+this.bindingList : this.bindingList = null, 
+
+BLOCK: BasicL31
+this.bindingList : this.bindingList = null, 
+
+BLOCK: ForInitL33
+i : i = 0, 
+this.bindingList : this.bindingList = null, 
+
+BLOCK: ForCondL34
+b1 : b1 = this.bindingList.get(i, ), 
+i : i = 0, i = i + 1, 
+@temp1 : @temp1 = i, 
+s1 : s1 = b1.getId(), 
+this.bindingList : this.bindingList = null, 
+
+BLOCK: LoopL35
+b1 : b1 = this.bindingList.get(i, ), 
+i : i = 0, i = i + 1, 
+s1 : s1 = b1.getId(), 
+@temp1 : @temp1 = i, 
+this.bindingList : this.bindingList = null, 
+
+BLOCK: BasicL36
+b1 : b1 = this.bindingList.get(i, ), 
+i : i = 0, i = i + 1, 
+@temp1 : @temp1 = i, 
+s1 : s1 = b1.getId(), 
+this.bindingList : this.bindingList = null, 
+
+BLOCK: trueL37
+b1 : b1 = this.bindingList.get(i, ), 
+i : i = 0, i = i + 1, 
+s1 : s1 = b1.getId(), 
+@temp1 : @temp1 = i, 
+this.bindingList : this.bindingList = null, 
+
+BLOCK: joinL38
+b1 : b1 = this.bindingList.get(i, ), 
+i : i = i + 1, 
+@temp1 : @temp1 = i, 
+s1 : s1 = b1.getId(), 
+this.bindingList : this.bindingList = null, 
+
+BLOCK: Startconstructor1L39
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: BasicL40
+this.rht : this.rht = rht, 
+this.lft : this.lft = lft, 
+
+BLOCK: StartevaluateL42
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+
+BLOCK: BasicL43
+this.lft : this.lft = null, 
+dividend : dividend = evaluate(binding, ), 
+divisor : divisor = evaluate(binding, ), 
+this.rht : this.rht = null, 
+quotient : quotient = divisor / dividend, 
+
+BLOCK: StarttoStringL45
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: BasicL46
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: Startconstructor1L48
+this.id : this.id = null, 
+
+BLOCK: BasicL49
+this.id : this.id = id, 
+
+BLOCK: StartevaluateL51
+this.id : this.id = null, 
+
+BLOCK: BasicL52
+this.id : this.id = null, 
+value : value = bindings.lookupBinding(this.id, ), 
+
+BLOCK: StarttoStringL54
+this.id : this.id = null, 
+
+BLOCK: BasicL55
+this.id : this.id = null, 
+
+BLOCK: Startconstructor1L57
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: BasicL58
+this.rht : this.rht = rht, 
+this.lft : this.lft = lft, 
+
+BLOCK: StartevaluateL60
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: BasicL61
+right : right = evaluate(binding, ), 
+this.rht : this.rht = null, 
+left : left = evaluate(binding, ), 
+this.lft : this.lft = null, 
+difference : difference = left - right, 
+
+BLOCK: StarttoStringL63
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: BasicL64
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: Startconstructor1L66
+this.id : this.id = null, 
+this.e : this.e = null, 
+
+BLOCK: BasicL67
+this.id : this.id = id, 
+this.e : this.e = e, 
+
+BLOCK: StartevaluateL69
+this.e : this.e = null, 
+this.id : this.id = null, 
+
+BLOCK: BasicL70
+this.e : this.e = null, 
+this.id : this.id = null, 
+a1 : a1 = evaluate(binding, ), 
+
+BLOCK: StarttoStringL72
+this.id : this.id = null, 
+this.e : this.e = null, 
+
+BLOCK: BasicL73
+this.id : this.id = null, 
+this.e : this.e = null, 
+
+BLOCK: Startconstructor1L75
+this.e : this.e = null, 
+
+BLOCK: BasicL76
+this.e : this.e = e, 
+
+BLOCK: StartevaluateL78
+this.e : this.e = null, 
+
+BLOCK: BasicL79
+this.e : this.e = null, 
+
+BLOCK: StarttoStringL81
+this.e : this.e = null, 
+
+BLOCK: BasicL82
+this.e : this.e = null, 
+
+BLOCK: Startconstructor1L84
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: BasicL85
+this.value : this.value = value, 
+this.id : this.id = id, 
+
+BLOCK: StartgetValueL87
+this.id : this.id = null, 
+this.value : this.value = 0.0, 
+
+BLOCK: BasicL88
+this.id : this.id = null, 
+this.value : this.value = 0.0, 
+
+BLOCK: StartgetIdL90
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: BasicL91
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: Startconstructor1L93
+this.value : this.value = 0.0, 
+
+BLOCK: BasicL94
+this.value : this.value = value, 
+
+BLOCK: StartevaluateL96
+this.value : this.value = 0.0, 
+
+BLOCK: BasicL97
+this.value : this.value = 0.0, 
+
+BLOCK: StarttoStringL99
+this.value : this.value = 0.0, 
+
+BLOCK: BasicL100
+this.value : this.value = 0.0, 
+
+BLOCK: Startconstructor1L0
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: Startconstructor1L0
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: BasicL1
+this.rht : this.rht = rht, 
+this.lft : this.lft = lft, 
+
+BLOCK: StartevaluateL3
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: StartevaluateL3
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: BasicL4
+product : product = left * right, 
+right : right = evaluate(binding, ), 
+left : left = evaluate(binding, ), 
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: StarttoStringL6
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: StarttoStringL6
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: BasicL7
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: StarttestL9
+
+BLOCK: StarttestL9
+
+BLOCK: BasicL10
+e01 : e01 = new MultiplyExpression(new IdentifierExpression("a", ), new IdentifierExpression("b", ), ), 
+e4 : e4 = new AddExpression(new NegationExpression(new DoubleConstantExpression(4, ), ), new NegationExpression(new DoubleConstantExpression(6, ), ), ), 
+e51 : e51 = new DoubleConstantExpression(-0.33, ), 
+e42 : e42 = new DivideExpression(new DoubleConstantExpression(1, ), new DoubleConstantExpression(2, ), ), 
+e10 : e10 = new SubtractExpression(new NegationExpression(new DoubleConstantExpression(5, ), ), new NegationExpression(new DoubleConstantExpression(10, ), ), ), 
+e44 : e44 = new DivideExpression(new DoubleConstantExpression(1, ), new DoubleConstantExpression(0.5, ), ), 
+e52 : e52 = new DoubleConstantExpression(0, ), 
+e1 : e1 = new AddExpression(new DoubleConstantExpression(1, ), new DoubleConstantExpression(2, ), ), 
+e28 : e28 = new MultiplyExpression(new NegationExpression(new DoubleConstantExpression(3, ), ), new NegationExpression(new DoubleConstantExpression(2, ), ), ), 
+a1 : a1 = new Assignment("a", new DoubleConstantExpression(2, ), ), 
+e60 : e60 = new NegationExpression(new DoubleConstantExpression(-1, ), ), 
+e27 : e27 = new MultiplyExpression(new DoubleConstantExpression(8, ), new NegationExpression(new DoubleConstantExpression(1, ), ), ), 
+e23 : e23 = new MultiplyExpression(new DoubleConstantExpression(0, ), new DoubleConstantExpression(0, ), ), 
+e5 : e5 = new AddExpression(new DoubleConstantExpression(0, ), new DoubleConstantExpression(0, ), ), 
+e37 : e37 = new DivideExpression(new DoubleConstantExpression(6, ), new DoubleConstantExpression(1, ), ), 
+e02 : e02 = new DivideExpression(new IdentifierExpression("a", ), new IdentifierExpression("b", ), ), 
+e40 : e40 = new DivideExpression(new NegationExpression(new DoubleConstantExpression(6, ), ), new NegationExpression(new DoubleConstantExpression(1, ), ), ), 
+e04 : e04 = new AddExpression(new IdentifierExpression("a", ), new IdentifierExpression("b", ), ), 
+e2 : e2 = new AddExpression(new NegationExpression(new DoubleConstantExpression(2, ), ), new DoubleConstantExpression(1, ), ), 
+e12 : e12 = new SubtractExpression(new DoubleConstantExpression(3, ), new DoubleConstantExpression(8, ), ), 
+e50 : e50 = new DoubleConstantExpression(0.563, ), 
+e58 : e58 = new NegationExpression(new DoubleConstantExpression(0, ), ), 
+e38 : e38 = new DivideExpression(new NegationExpression(new DoubleConstantExpression(6, ), ), new DoubleConstantExpression(1, ), ), 
+e46 : e46 = new DivideExpression(new DoubleConstantExpression(0.5, ), new DoubleConstantExpression(0.5, ), ), 
+e3 : e3 = new AddExpression(new DoubleConstantExpression(1, ), new NegationExpression(new DoubleConstantExpression(4, ), ), ), 
+e53 : e53 = new DoubleConstantExpression(0.66667, ), 
+e43 : e43 = new DivideExpression(new DoubleConstantExpression(0, ), new DoubleConstantExpression(4.5, ), ), 
+e22 : e22 = new MultiplyExpression(new DoubleConstantExpression(4, ), new DoubleConstantExpression(4, ), ), 
+e26 : e26 = new MultiplyExpression(new NegationExpression(new DoubleConstantExpression(5, ), ), new DoubleConstantExpression(4, ), ), 
+e41 : e41 = new DivideExpression(new DoubleConstantExpression(10, ), new DoubleConstantExpression(5, ), ), 
+e20 : e20 = new MultiplyExpression(new DoubleConstantExpression(1, ), new DoubleConstantExpression(1, ), ), 
+e39 : e39 = new DivideExpression(new DoubleConstantExpression(6, ), new NegationExpression(new DoubleConstantExpression(1, ), ), ), 
+e11 : e11 = new SubtractExpression(new DoubleConstantExpression(7, ), new NegationExpression(new DoubleConstantExpression(3, ), ), ), 
+e25 : e25 = new MultiplyExpression(new DoubleConstantExpression(0, ), new DoubleConstantExpression(9, ), ), 
+e21 : e21 = new MultiplyExpression(new DoubleConstantExpression(2, ), new DoubleConstantExpression(5, ), ), 
+b1 : b1 = new VariableBindings(), 
+e62 : e62 = new NegationExpression(new DoubleConstantExpression(-0.5, ), ), 
+e13 : e13 = new SubtractExpression(new DoubleConstantExpression(0, ), new DoubleConstantExpression(0, ), ), 
+e59 : e59 = new NegationExpression(new DoubleConstantExpression(1, ), ), 
+a2 : a2 = new Assignment("b", new NegationExpression(new DoubleConstantExpression(2, ), ), ), 
+e9 : e9 = new SubtractExpression(new NegationExpression(new DoubleConstantExpression(1, ), ), new DoubleConstantExpression(0, ), ), 
+e8 : e8 = new SubtractExpression(new DoubleConstantExpression(4, ), new DoubleConstantExpression(2, ), ), 
+e45 : e45 = new DivideExpression(new DoubleConstantExpression(1.5, ), new DoubleConstantExpression(3.4, ), ), 
+e03 : e03 = new SubtractExpression(new IdentifierExpression("a", ), new IdentifierExpression("b", ), ), 
+e7 : e7 = new AddExpression(new DoubleConstantExpression(1.6, ), new DoubleConstantExpression(3.9, ), ), 
+e24 : e24 = new MultiplyExpression(new DoubleConstantExpression(2, ), new DoubleConstantExpression(0, ), ), 
+e6 : e6 = new AddExpression(new DoubleConstantExpression(0.5, ), new DoubleConstantExpression(0.5, ), ), 
+e61 : e61 = new NegationExpression(new DoubleConstantExpression(0.5, ), ), 
+
+BLOCK: StartmainL12
+
+BLOCK: StartmainL12
+
+BLOCK: BasicL13
+
+BLOCK: Startconstructor1L15
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+
+BLOCK: Startconstructor1L15
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+
+BLOCK: BasicL16
+this.lft : this.lft = lft, 
+this.rht : this.rht = rht, 
+
+BLOCK: StartevaluateL18
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: StartevaluateL18
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: BasicL19
+right : right = evaluate(binding, ), 
+this.rht : this.rht = null, 
+sum : sum = left + right, 
+this.lft : this.lft = null, 
+left : left = evaluate(binding, ), 
+
+BLOCK: StarttoStringL21
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+
+BLOCK: StarttoStringL21
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+
+BLOCK: BasicL22
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+
+BLOCK: Startconstructor1L24
+this.bindingList : this.bindingList = null, 
+
+BLOCK: Startconstructor1L24
+this.bindingList : this.bindingList = null, 
+
+BLOCK: BasicL25
+this.bindingList : this.bindingList = new ArrayList(), 
+
+BLOCK: StartaddBindingL27
+this.bindingList : this.bindingList = null, 
+
+BLOCK: StartaddBindingL27
+this.bindingList : this.bindingList = null, 
+
+BLOCK: BasicL28
+this.bindingList : this.bindingList = null, 
+
+BLOCK: StartlookupBindingL30
+this.bindingList : this.bindingList = null, 
+
+BLOCK: StartlookupBindingL30
+this.bindingList : this.bindingList = null, 
+
+BLOCK: BasicL31
+this.bindingList : this.bindingList = null, 
+
+BLOCK: ForInitL33
+i : i = 0, 
+this.bindingList : this.bindingList = null, 
+
+BLOCK: ForCondL34
+b1 : b1 = this.bindingList.get(i, ), 
+i : i = 0, i = i + 1, 
+@temp1 : @temp1 = i, 
+s1 : s1 = b1.getId(), 
+this.bindingList : this.bindingList = null, 
+
+BLOCK: LoopL35
+b1 : b1 = this.bindingList.get(i, ), 
+i : i = 0, i = i + 1, 
+s1 : s1 = b1.getId(), 
+@temp1 : @temp1 = i, 
+this.bindingList : this.bindingList = null, 
+
+BLOCK: BasicL36
+b1 : b1 = this.bindingList.get(i, ), 
+i : i = 0, i = i + 1, 
+@temp1 : @temp1 = i, 
+s1 : s1 = b1.getId(), 
+this.bindingList : this.bindingList = null, 
+
+BLOCK: trueL37
+b1 : b1 = this.bindingList.get(i, ), 
+i : i = 0, i = i + 1, 
+s1 : s1 = b1.getId(), 
+@temp1 : @temp1 = i, 
+this.bindingList : this.bindingList = null, 
+
+BLOCK: joinL38
+b1 : b1 = this.bindingList.get(i, ), 
+i : i = i + 1, 
+@temp1 : @temp1 = i, 
+s1 : s1 = b1.getId(), 
+this.bindingList : this.bindingList = null, 
+
+BLOCK: Startconstructor1L39
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: Startconstructor1L39
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: BasicL40
+this.rht : this.rht = rht, 
+this.lft : this.lft = lft, 
+
+BLOCK: StartevaluateL42
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+
+BLOCK: StartevaluateL42
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+
+BLOCK: BasicL43
+this.lft : this.lft = null, 
+dividend : dividend = evaluate(binding, ), 
+divisor : divisor = evaluate(binding, ), 
+this.rht : this.rht = null, 
+quotient : quotient = divisor / dividend, 
+
+BLOCK: StarttoStringL45
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: StarttoStringL45
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: BasicL46
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: Startconstructor1L48
+this.id : this.id = null, 
+
+BLOCK: Startconstructor1L48
+this.id : this.id = null, 
+
+BLOCK: BasicL49
+this.id : this.id = id, 
+
+BLOCK: StartevaluateL51
+this.id : this.id = null, 
+
+BLOCK: StartevaluateL51
+this.id : this.id = null, 
+
+BLOCK: BasicL52
+this.id : this.id = null, 
+value : value = bindings.lookupBinding(this.id, ), 
+
+BLOCK: StarttoStringL54
+this.id : this.id = null, 
+
+BLOCK: StarttoStringL54
+this.id : this.id = null, 
+
+BLOCK: BasicL55
+this.id : this.id = null, 
+
+BLOCK: Startconstructor1L57
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: Startconstructor1L57
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: BasicL58
+this.rht : this.rht = rht, 
+this.lft : this.lft = lft, 
+
+BLOCK: StartevaluateL60
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: StartevaluateL60
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: BasicL61
+right : right = evaluate(binding, ), 
+this.rht : this.rht = null, 
+left : left = evaluate(binding, ), 
+this.lft : this.lft = null, 
+difference : difference = left - right, 
+
+BLOCK: StarttoStringL63
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: StarttoStringL63
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: BasicL64
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: Startconstructor1L66
+this.id : this.id = null, 
+this.e : this.e = null, 
+
+BLOCK: Startconstructor1L66
+this.id : this.id = null, 
+this.e : this.e = null, 
+
+BLOCK: BasicL67
+this.id : this.id = id, 
+this.e : this.e = e, 
+
+BLOCK: StartevaluateL69
+this.e : this.e = null, 
+this.id : this.id = null, 
+
+BLOCK: StartevaluateL69
+this.e : this.e = null, 
+this.id : this.id = null, 
+
+BLOCK: BasicL70
+this.e : this.e = null, 
+this.id : this.id = null, 
+a1 : a1 = evaluate(binding, ), 
+
+BLOCK: StarttoStringL72
+this.id : this.id = null, 
+this.e : this.e = null, 
+
+BLOCK: StarttoStringL72
+this.id : this.id = null, 
+this.e : this.e = null, 
+
+BLOCK: BasicL73
+this.id : this.id = null, 
+this.e : this.e = null, 
+
+BLOCK: Startconstructor1L75
+this.e : this.e = null, 
+
+BLOCK: Startconstructor1L75
+this.e : this.e = null, 
+
+BLOCK: BasicL76
+this.e : this.e = e, 
+
+BLOCK: StartevaluateL78
+this.e : this.e = null, 
+
+BLOCK: StartevaluateL78
+this.e : this.e = null, 
+
+BLOCK: BasicL79
+this.e : this.e = null, 
+
+BLOCK: StarttoStringL81
+this.e : this.e = null, 
+
+BLOCK: StarttoStringL81
+this.e : this.e = null, 
+
+BLOCK: BasicL82
+this.e : this.e = null, 
+
+BLOCK: Startconstructor1L84
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: Startconstructor1L84
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: BasicL85
+this.value : this.value = value, 
+this.id : this.id = id, 
+
+BLOCK: StartgetValueL87
+this.id : this.id = null, 
+this.value : this.value = 0.0, 
+
+BLOCK: StartgetValueL87
+this.id : this.id = null, 
+this.value : this.value = 0.0, 
+
+BLOCK: BasicL88
+this.id : this.id = null, 
+this.value : this.value = 0.0, 
+
+BLOCK: StartgetIdL90
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: StartgetIdL90
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: BasicL91
+this.value : this.value = 0.0, 
+this.id : this.id = null, 
+
+BLOCK: Startconstructor1L93
+this.value : this.value = 0.0, 
+
+BLOCK: Startconstructor1L93
+this.value : this.value = 0.0, 
+
+BLOCK: BasicL94
+this.value : this.value = value, 
+
+BLOCK: StartevaluateL96
+this.value : this.value = 0.0, 
+
+BLOCK: StartevaluateL96
+this.value : this.value = 0.0, 
+
+BLOCK: BasicL97
+this.value : this.value = 0.0, 
+
+BLOCK: StarttoStringL99
+this.value : this.value = 0.0, 
+
+BLOCK: StarttoStringL99
+this.value : this.value = 0.0, 
+
+BLOCK: BasicL100
+this.value : this.value = 0.0, 
+
+Unfiltered: 0
+Filtered: 0
+
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 19.811 s
+[INFO] Finished at: 2019-05-01T17:15:28-07:00
+[INFO] Final Memory: 8M/388M
+[INFO] ------------------------------------------------------------------------

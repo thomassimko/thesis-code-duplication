@@ -1,33 +1,33 @@
 digraph G {
 "17 : sum = 0"
-"17 : sum = 0" -> "25 : average = sum * 1.0 / count"
 "17 : sum = 0" -> "21 : sum = sum + arr[i]"
+"17 : sum = 0" -> "25 : average = sum * 1.0 / count"
 "17 : sum = 0" -> "21 : sum = sum + arr[i]" [style=dashed]
 "18 : count = 0"
-"18 : count = 0" -> "25 : average = sum * 1.0 / count"
 "18 : count = 0" -> "22 : count = doSomething1(count, )"
+"18 : count = 0" -> "25 : average = sum * 1.0 / count"
 "18 : count = 0" -> "22 : count = doSomething1(count, )" [style=dashed]
 "20 : i = 0"
-"20 : i = 0" -> "20 : @temp14 = i"
 "20 : i = 0" -> "20 : i = i + 1"
 "20 : i = 0" -> "20 : i < 3"
+"20 : i = 0" -> "20 : @temp1 = i"
 "20 : i = 0" -> "21 : sum = sum + arr[i]"
 "20 : i = 0" -> "20 : i = i + 1" [style=dashed]
 "20 : i < 3"
 "21 : sum = sum + arr[i]"
-"21 : sum = sum + arr[i]" -> "25 : average = sum * 1.0 / count"
 "21 : sum = sum + arr[i]" -> "21 : sum = sum + arr[i]"
+"21 : sum = sum + arr[i]" -> "25 : average = sum * 1.0 / count"
 "21 : sum = sum + arr[i]" -> "21 : sum = sum + arr[i]" [style=dashed]
 "22 : count = doSomething1(count, )"
-"22 : count = doSomething1(count, )" -> "25 : average = sum * 1.0 / count"
 "22 : count = doSomething1(count, )" -> "22 : count = doSomething1(count, )"
+"22 : count = doSomething1(count, )" -> "25 : average = sum * 1.0 / count"
 "22 : count = doSomething1(count, )" -> "22 : count = doSomething1(count, )" [style=dashed]
-"20 : @temp14 = i"
-"20 : @temp14 = i" -> "20 : @temp14 = i" [style=dashed]
+"20 : @temp1 = i"
+"20 : @temp1 = i" -> "20 : @temp1 = i" [style=dashed]
 "20 : i = i + 1"
-"20 : i = i + 1" -> "20 : @temp14 = i"
 "20 : i = i + 1" -> "20 : i = i + 1"
 "20 : i = i + 1" -> "20 : i < 3"
+"20 : i = i + 1" -> "20 : @temp1 = i"
 "20 : i = i + 1" -> "21 : sum = sum + arr[i]"
 "20 : i = i + 1" -> "20 : i = i + 1" [style=dashed]
 "25 : average = sum * 1.0 / count"

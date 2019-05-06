@@ -1,0 +1,25 @@
+digraph G {
+"10 : this.bList = null"
+"21 : check = true"
+"21 : check = true" -> "28 : check = false" [style=dashed]
+"22 : i = 0"
+"22 : i = 0" -> "22 : i = i + 1"
+"22 : i = 0" -> "22 : @temp1 = i"
+"22 : i = 0" -> "22 : i < this.bList.size()"
+"22 : i = 0" -> "22 : i = i + 1" [style=dashed]
+"22 : i < this.bList.size()"
+"24 : equals(id, )"
+"26 : setValue(value, )"
+"27 : System.out.print(\"set \" + id + \" = \", )"
+"28 : check = false"
+"28 : check = false" -> "28 : check = false" [style=dashed]
+"22 : @temp1 = i"
+"22 : @temp1 = i" -> "22 : @temp1 = i" [style=dashed]
+"22 : i = i + 1"
+"22 : i = i + 1" -> "22 : i = i + 1"
+"22 : i = i + 1" -> "22 : @temp1 = i"
+"22 : i = i + 1" -> "22 : i < this.bList.size()"
+"22 : i = i + 1" -> "22 : i = i + 1" [style=dashed]
+"33 : this.bList.add(new Binding(id, value, ), )"
+"34 : System.out.print(\"set \" + id + \" = \", )"
+}

@@ -1,0 +1,13 @@
+digraph G {
+"51 : x = 0.0"
+"51 : x = 0.0" -> "53 : x = s.nextDouble()" [style=dashed]
+"51 : y = 0.0"
+"51 : y = 0.0" -> "55 : y = s.nextDouble()" [style=dashed]
+"52 : System.out.print(\"Enter x-coordinate: \", )"
+"53 : x = s.nextDouble()"
+"53 : x = s.nextDouble()" -> "56 : new CartesianPoint(x, y, )"
+"54 : System.out.print(\"Enter y-coordinate: \", )"
+"55 : y = s.nextDouble()"
+"55 : y = s.nextDouble()" -> "56 : new CartesianPoint(x, y, )"
+"56 : new CartesianPoint(x, y, )"
+}

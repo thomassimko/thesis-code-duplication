@@ -1,0 +1,11 @@
+digraph G {
+"3 : this.pt = new PolarPoint(1.0, 2.0 * Math.PI, )"
+"4 : this.pt1 = new PolarPoint(4.0, -45 * Math.PI / 180.0, )"
+"5 : this.pt2 = new PolarPoint(0.0, Math.PI, )"
+"33 : Check.check(radius(), 1.0, )"
+"34 : Check.check(angle(), 2.0 * Math.PI + 1.0 / 2.0 * Math.PI, )"
+"35 : Check.check(radius(), 4.0, )"
+"36 : Check.check(angle(), 7.0 * Math.PI / 4.0 + 1.0 / 2.0 * Math.PI, )"
+"37 : Check.check(radius(), 0.0, )"
+"38 : Check.check(angle(), Math.PI + 1.0 / 2.0 * Math.PI, )"
+}

@@ -1,0 +1,15 @@
+digraph G {
+"5 : this.x = 0.0"
+"5 : this.x = 0.0" -> "61 : x2 = this.x"
+"6 : this.y = 0.0"
+"6 : this.y = 0.0" -> "60 : y2 = this.y"
+"59 : y2 = 0.0"
+"59 : y2 = 0.0" -> "60 : y2 = this.y" [style=dashed]
+"59 : x2 = 0.0"
+"59 : x2 = 0.0" -> "61 : x2 = this.x" [style=dashed]
+"60 : y2 = this.y"
+"60 : y2 = this.y" -> "63 : new CartesianPoint(-y2, x2, )"
+"61 : x2 = this.x"
+"61 : x2 = this.x" -> "63 : new CartesianPoint(-y2, x2, )"
+"63 : new CartesianPoint(-y2, x2, )"
+}

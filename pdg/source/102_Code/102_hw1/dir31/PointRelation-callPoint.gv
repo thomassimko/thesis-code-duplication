@@ -1,0 +1,37 @@
+digraph G {
+"30 : x = 0.0"
+"30 : x = 0.0" -> "47 : x = scan.nextDouble()" [style=dashed]
+"30 : x = 0.0" -> "37 : x = scan.nextDouble()" [style=dashed]
+"30 : y = 0.0"
+"30 : y = 0.0" -> "50 : y = scan.nextDouble()" [style=dashed]
+"30 : y = 0.0" -> "40 : y = scan.nextDouble()" [style=dashed]
+"30 : ans = 0.0"
+"30 : ans = 0.0" -> "33 : ans = scan.nextInt()" [style=dashed]
+"31 : scan = new Scanner(System.in, )"
+"31 : scan = new Scanner(System.in, )" -> "35 : scan = new Scanner(System.in, )" [style=dashed]
+"31 : scan = new Scanner(System.in, )" -> "45 : scan = new Scanner(System.in, )" [style=dashed]
+"32 : System.out.print(\"Which type of point should be created (1 for Cartesian, 2 for Polar)?\", )"
+"33 : ans = scan.nextInt()"
+"33 : ans = scan.nextInt()" -> "34 : ans == 1"
+"34 : ans == 1"
+"35 : scan = new Scanner(System.in, )"
+"35 : scan = new Scanner(System.in, )" -> "38 : scan = new Scanner(System.in, )" [style=dashed]
+"36 : System.out.print(\"Enter x-coordinate:\", )"
+"37 : x = scan.nextDouble()"
+"37 : x = scan.nextDouble()" -> "42 : new CartesianPoint(x, y, )"
+"38 : scan = new Scanner(System.in, )"
+"39 : System.out.print(\"Enter y-coordinate:\", )"
+"40 : y = scan.nextDouble()"
+"40 : y = scan.nextDouble()" -> "42 : new CartesianPoint(x, y, )"
+"42 : new CartesianPoint(x, y, )"
+"45 : scan = new Scanner(System.in, )"
+"45 : scan = new Scanner(System.in, )" -> "48 : scan = new Scanner(System.in, )" [style=dashed]
+"46 : System.out.print(\"Enter radius:\", )"
+"47 : x = scan.nextDouble()"
+"47 : x = scan.nextDouble()" -> "52 : new PolarPoint(x, y, )"
+"48 : scan = new Scanner(System.in, )"
+"49 : System.out.print(\"Enter angle(in degrees):\", )"
+"50 : y = scan.nextDouble()"
+"50 : y = scan.nextDouble()" -> "52 : new PolarPoint(x, y, )"
+"52 : new PolarPoint(x, y, )"
+}

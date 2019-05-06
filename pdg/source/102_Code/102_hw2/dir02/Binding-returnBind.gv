@@ -1,0 +1,4 @@
+digraph G {
+"3 : this.bindVar = null"
+"4 : this.bindNum = 0.0"
+}

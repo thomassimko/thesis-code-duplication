@@ -1,0 +1,6 @@
+digraph G {
+"51 : e = new DoubleConstantExpression(1.312, )"
+"51 : e = new DoubleConstantExpression(1.312, )" -> "52 : Ass = new Assignment(\"wut?\", e, )"
+"52 : Ass = new Assignment(\"wut?\", e, )"
+"53 : Check.check(Ass.evaluate(new VariableBindings(), ), 1.312, )"
+}

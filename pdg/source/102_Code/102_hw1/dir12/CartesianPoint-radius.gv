@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.x_coord = 0.0"
+"4 : this.x_coord = 0.0" -> "33 : Math.sqrt(this.x_coord * this.x_coord + this.y_coord * this.y_coord, )"
+"4 : this.y_coord = 0.0"
+"4 : this.y_coord = 0.0" -> "33 : Math.sqrt(this.x_coord * this.x_coord + this.y_coord * this.y_coord, )"
+"33 : Math.sqrt(this.x_coord * this.x_coord + this.y_coord * this.y_coord, )"
+}

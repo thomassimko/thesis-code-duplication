@@ -1,0 +1,7 @@
+digraph G {
+"57 : VB = new VariableBindings()"
+"57 : VB = new VariableBindings()" -> "60 : Check.check(IE.evaluate(VB, ), 3.4, )"
+"58 : VB.addBinding(\"LULZ\", 3.4, )"
+"59 : IE = new IdentifierExpression(\"LULZ\", )"
+"60 : Check.check(IE.evaluate(VB, ), 3.4, )"
+}

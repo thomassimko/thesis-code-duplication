@@ -1,0 +1,7 @@
+digraph G {
+"12 : o1.getAmountPaid() > o2.getAmountPaid()"
+"13 : 1"
+"14 : o1.getAmountPaid() < o2.getAmountPaid()"
+"15 : 1"
+"17 : 0"
+}

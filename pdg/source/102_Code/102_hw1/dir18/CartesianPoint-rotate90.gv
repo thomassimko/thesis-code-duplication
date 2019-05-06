@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.x = 0"
+"4 : this.x = 0" -> "41 : new CartesianPoint(-1 * this.y, this.x, )"
+"5 : this.y = 0"
+"5 : this.y = 0" -> "41 : new CartesianPoint(-1 * this.y, this.x, )"
+"41 : new CartesianPoint(-1 * this.y, this.x, )"
+}

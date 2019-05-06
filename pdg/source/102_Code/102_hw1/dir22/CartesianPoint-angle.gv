@@ -1,0 +1,11 @@
+digraph G {
+"3 : this.xCoordinate = 0.0"
+"3 : this.xCoordinate = 0.0" -> "19 : Math.atan(this.yCoordinate / this.xCoordinate, ) > 999999999"
+"3 : this.xCoordinate = 0.0" -> "20 : Math.atan(this.yCoordinate / this.xCoordinate, )"
+"3 : this.yCoordinate = 0.0"
+"3 : this.yCoordinate = 0.0" -> "19 : Math.atan(this.yCoordinate / this.xCoordinate, ) > 999999999"
+"3 : this.yCoordinate = 0.0" -> "20 : Math.atan(this.yCoordinate / this.xCoordinate, )"
+"19 : Math.atan(this.yCoordinate / this.xCoordinate, ) > 999999999"
+"20 : Math.atan(this.yCoordinate / this.xCoordinate, )"
+"22 : 0.0"
+}

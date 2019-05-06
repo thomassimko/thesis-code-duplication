@@ -1,0 +1,27 @@
+digraph G {
+"3 : this.xCoordinate = 0.0"
+"4 : this.yCoordinate = 0.0"
+"5 : this.radius = 0.0"
+"5 : this.radius = 0.0" -> "51 : rot_90radius = this.radius"
+"6 : this.angle = 0.0"
+"6 : this.angle = 0.0" -> "50 : rot_90angle = this.angle + Math.PI / 2"
+"45 : rot_90x_coord = 0.0"
+"45 : rot_90x_coord = 0.0" -> "52 : rot_90x_coord = Math.cos(rot_90angle, ) * rot_90radius" [style=dashed]
+"46 : rot_90y_coord = 0.0"
+"46 : rot_90y_coord = 0.0" -> "53 : rot_90y_coord = Math.sin(rot_90angle, ) * rot_90radius" [style=dashed]
+"47 : rot_90radius = 0.0"
+"47 : rot_90radius = 0.0" -> "51 : rot_90radius = this.radius" [style=dashed]
+"48 : rot_90angle = 0.0"
+"48 : rot_90angle = 0.0" -> "50 : rot_90angle = this.angle + Math.PI / 2" [style=dashed]
+"50 : rot_90angle = this.angle + Math.PI / 2"
+"50 : rot_90angle = this.angle + Math.PI / 2" -> "52 : rot_90x_coord = Math.cos(rot_90angle, ) * rot_90radius"
+"50 : rot_90angle = this.angle + Math.PI / 2" -> "53 : rot_90y_coord = Math.sin(rot_90angle, ) * rot_90radius"
+"51 : rot_90radius = this.radius"
+"51 : rot_90radius = this.radius" -> "52 : rot_90x_coord = Math.cos(rot_90angle, ) * rot_90radius"
+"51 : rot_90radius = this.radius" -> "53 : rot_90y_coord = Math.sin(rot_90angle, ) * rot_90radius"
+"52 : rot_90x_coord = Math.cos(rot_90angle, ) * rot_90radius"
+"52 : rot_90x_coord = Math.cos(rot_90angle, ) * rot_90radius" -> "55 : rot_90point = new CartesianPoint(rot_90x_coord, rot_90y_coord, )"
+"53 : rot_90y_coord = Math.sin(rot_90angle, ) * rot_90radius"
+"53 : rot_90y_coord = Math.sin(rot_90angle, ) * rot_90radius" -> "55 : rot_90point = new CartesianPoint(rot_90x_coord, rot_90y_coord, )"
+"55 : rot_90point = new CartesianPoint(rot_90x_coord, rot_90y_coord, )"
+}
