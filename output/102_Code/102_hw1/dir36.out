@@ -19,82 +19,82 @@
 [INFO] 
 [INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ thesis ---
 BLOCK: Startconstructor1L0
-this.rad : this.rad = 0.0, 
 this.ang : this.ang = 0.0, 
+this.rad : this.rad = 0.0, 
 
 BLOCK: BasicL1
-this.rad : this.rad = 0.0, 
 this.ang : this.ang = 0.0, 
+this.rad : this.rad = 0.0, 
 
 BLOCK: trueL3
-this.rad : this.rad = radius, 
 this.ang : this.ang = 0.0, 
+this.rad : this.rad = radius, 
 
 BLOCK: trueL5
-this.rad : this.rad = radius, 
 this.ang : this.ang = Math.PI + angle, 
+this.rad : this.rad = radius, 
 
 BLOCK: trueL7
-this.rad : this.rad = radius, 
 this.ang : this.ang = this.ang - 2 * Math.PI, 
+this.rad : this.rad = radius, 
 
 BLOCK: joinL8
+this.ang : this.ang = this.ang - 2 * Math.PI, this.ang = Math.PI + angle, 
 this.rad : this.rad = radius, 
-this.ang : this.ang = Math.PI + angle, this.ang = this.ang - 2 * Math.PI, 
 
 BLOCK: falseL9
-this.rad : this.rad = radius, 
 this.ang : this.ang = Math.PI + angle, 
+this.rad : this.rad = radius, 
 
 BLOCK: trueL10
-this.rad : this.rad = radius, 
 this.ang : this.ang = this.ang - 2 * Math.PI, 
+this.rad : this.rad = radius, 
 
 BLOCK: joinL11
-this.rad : this.rad = radius, 
 this.ang : this.ang = Math.PI + angle, this.ang = this.ang - 2 * Math.PI, 
+this.rad : this.rad = radius, 
 
 BLOCK: joinL6
+this.ang : this.ang = this.ang - 2 * Math.PI, this.ang = Math.PI + angle, this.ang = Math.PI + angle, this.ang = this.ang - 2 * Math.PI, 
 this.rad : this.rad = radius, 
-this.ang : this.ang = Math.PI + angle, this.ang = this.ang - 2 * Math.PI, this.ang = Math.PI + angle, this.ang = this.ang - 2 * Math.PI, 
 
 BLOCK: falseL12
-this.rad : this.rad = radius, 
 this.ang : this.ang = 0.0, 
+this.rad : this.rad = radius, 
 
 BLOCK: trueL13
-this.rad : this.rad = radius, 
 this.ang : this.ang = 2 * Math.PI + angle, 
+this.rad : this.rad = radius, 
 
 BLOCK: falseL15
-this.rad : this.rad = radius, 
 this.ang : this.ang = angle, 
+this.rad : this.rad = radius, 
 
 BLOCK: joinL14
+this.ang : this.ang = angle, this.ang = 2 * Math.PI + angle, 
 this.rad : this.rad = radius, 
-this.ang : this.ang = 2 * Math.PI + angle, this.ang = angle, 
 
 BLOCK: joinL4
+this.ang : this.ang = this.ang - 2 * Math.PI, this.ang = Math.PI + angle, this.ang = Math.PI + angle, this.ang = angle, this.ang = this.ang - 2 * Math.PI, this.ang = 2 * Math.PI + angle, 
 this.rad : this.rad = radius, this.rad = radius, 
-this.ang : this.ang = Math.PI + angle, this.ang = this.ang - 2 * Math.PI, this.ang = Math.PI + angle, this.ang = 2 * Math.PI + angle, this.ang = angle, this.ang = this.ang - 2 * Math.PI, 
 
 BLOCK: StartxCoordinateL16
-this.ang : this.ang = 0.0, 
 this.rad : this.rad = 0.0, 
+this.ang : this.ang = 0.0, 
 
 BLOCK: BasicL17
-this.ang : this.ang = 0.0, 
-x : x = Math.cos(this.ang, ) * this.rad, 
 this.rad : this.rad = 0.0, 
+x : x = Math.cos(this.ang, ) * this.rad, 
+this.ang : this.ang = 0.0, 
 
 BLOCK: StartyCoordinateL19
 this.ang : this.ang = 0.0, 
 this.rad : this.rad = 0.0, 
 
 BLOCK: BasicL20
-y : y = Math.sin(this.ang, ) * this.rad, 
 this.ang : this.ang = 0.0, 
 this.rad : this.rad = 0.0, 
+y : y = Math.sin(this.ang, ) * this.rad, 
 
 BLOCK: StartradiusL22
 this.rad : this.rad = 0.0, 
@@ -105,247 +105,247 @@ this.rad : this.rad = 0.0,
 this.ang : this.ang = 0.0, 
 
 BLOCK: StartangleL25
-this.ang : this.ang = 0.0, 
 this.rad : this.rad = 0.0, 
+this.ang : this.ang = 0.0, 
 
 BLOCK: BasicL26
-this.ang : this.ang = 0.0, 
 this.rad : this.rad = 0.0, 
+this.ang : this.ang = 0.0, 
 
 BLOCK: Startrotate90L28
 this.ang : this.ang = 0.0, 
 this.rad : this.rad = 0.0, 
 
 BLOCK: BasicL29
-this.ang : this.ang = 0.0, 
 ang2 : ang2 = this.ang + Math.PI / 2, 
+this.ang : this.ang = 0.0, 
 this.rad : this.rad = 0.0, 
 
 BLOCK: trueL31
-this.ang : this.ang = 0.0, 
 ang2 : ang2 = ang2 - 2 * Math.PI, 
+this.ang : this.ang = 0.0, 
 this.rad : this.rad = 0.0, 
 
 BLOCK: joinL32
-this.ang : this.ang = 0.0, 
 ang2 : ang2 = this.ang + Math.PI / 2, ang2 = ang2 - 2 * Math.PI, 
+this.ang : this.ang = 0.0, 
 this.rad : this.rad = 0.0, 
 
 BLOCK: StartmainL33
 
 BLOCK: BasicL34
-point1 : point1 = null, 
-radius : radius = 0, 
-y_coord : y_coord = 0, 
+x_coord : x_coord = 0, 
+in : in = new Scanner(System.in, ), 
 distance2 : distance2 = 0.0, 
+result : result = in.nextInt(), 
 result2 : result2 = 0, 
 degree2 : degree2 = 0.0, 
-in : in = new Scanner(System.in, ), 
-result : result = in.nextInt(), 
-x_coord : x_coord = 0, 
-degree : degree = 0, 
+point1 : point1 = null, 
+y_coord : y_coord = 0, 
 point2 : point2 = null, 
+radius : radius = 0, 
+degree : degree = 0, 
 
 BLOCK: trueL36
+x_coord : x_coord = in.nextInt(), 
+in : in = new Scanner(System.in, ), 
+distance2 : distance2 = 0.0, 
+result : result = in.nextInt(), 
+result2 : result2 = 0, 
+degree2 : degree2 = 0.0, 
 point1 : point1 = new CartesianPoint(x_coord, y_coord, ), 
 y_coord : y_coord = in.nextInt(), 
-radius : radius = 0, 
-distance2 : distance2 = 0.0, 
-result2 : result2 = 0, 
-degree2 : degree2 = 0.0, 
-in : in = new Scanner(System.in, ), 
-x_coord : x_coord = in.nextInt(), 
-result : result = in.nextInt(), 
-degree : degree = 0, 
 point2 : point2 = null, 
+radius : radius = 0, 
+degree : degree = 0, 
 
 BLOCK: falseL38
-point1 : point1 = null, 
-radius : radius = 0, 
-y_coord : y_coord = 0, 
+x_coord : x_coord = 0, 
+in : in = new Scanner(System.in, ), 
 distance2 : distance2 = 0.0, 
+result : result = in.nextInt(), 
 result2 : result2 = 0, 
 degree2 : degree2 = 0.0, 
-in : in = new Scanner(System.in, ), 
-result : result = in.nextInt(), 
-x_coord : x_coord = 0, 
-degree : degree = 0, 
+point1 : point1 = null, 
+y_coord : y_coord = 0, 
 point2 : point2 = null, 
+radius : radius = 0, 
+degree : degree = 0, 
 
 BLOCK: trueL39
-point1 : point1 = new PolarPoint(radius, degree2, ), 
-radius : radius = in.nextInt(), 
-y_coord : y_coord = 0, 
+x_coord : x_coord = 0, 
+in : in = new Scanner(System.in, ), 
 distance2 : distance2 = 0.0, 
 degree2 : degree2 = degree * Math.PI / 180, 
-result2 : result2 = 0, 
-in : in = new Scanner(System.in, ), 
-degree : degree = in.nextInt(), 
 result : result = in.nextInt(), 
-x_coord : x_coord = 0, 
+result2 : result2 = 0, 
+point1 : point1 = new PolarPoint(radius, degree2, ), 
+y_coord : y_coord = 0, 
 point2 : point2 = null, 
+degree : degree = in.nextInt(), 
+radius : radius = in.nextInt(), 
 
 BLOCK: falseL41
-point1 : point1 = null, 
-radius : radius = 0, 
-y_coord : y_coord = 0, 
+x_coord : x_coord = 0, 
+in : in = new Scanner(System.in, ), 
 distance2 : distance2 = 0.0, 
+result : result = in.nextInt(), 
 result2 : result2 = 0, 
 degree2 : degree2 = 0.0, 
-in : in = new Scanner(System.in, ), 
-result : result = in.nextInt(), 
-x_coord : x_coord = 0, 
-degree : degree = 0, 
+point1 : point1 = null, 
+y_coord : y_coord = 0, 
 point2 : point2 = null, 
+radius : radius = 0, 
+degree : degree = 0, 
 
 BLOCK: joinL40
-point1 : point1 = new PolarPoint(radius, degree2, ), point1 = null, point1 = new CartesianPoint(x_coord, y_coord, ), 
-radius : radius = in.nextInt(), radius = 0, radius = in.nextInt(), 
-y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
-distance2 : distance2 = distance(point1, point2, ), distance2 = 0.0, 
-degree2 : degree2 = degree * Math.PI / 180, degree2 = 0.0, degree2 = degree * Math.PI / 180, 
-result2 : result2 = 0, result2 = samequad(point1, point2, ), 
+x_coord : x_coord = 0, x_coord = in.nextInt(), x_coord = in.nextInt(), 
 in : in = new Scanner(System.in, ), 
-degree : degree = 0, degree = in.nextInt(), degree = in.nextInt(), 
+distance2 : distance2 = 0.0, distance2 = distance(point1, point2, ), 
+degree2 : degree2 = 0.0, degree2 = degree * Math.PI / 180, degree2 = degree * Math.PI / 180, 
 result : result = in.nextInt(), result = in.nextInt(), 
-x_coord : x_coord = in.nextInt(), x_coord = 0, x_coord = in.nextInt(), 
-point2 : point2 = null, point2 = new CartesianPoint(x_coord, y_coord, ), point2 = new PolarPoint(radius, degree2, ), 
+result2 : result2 = 0, result2 = samequad(point1, point2, ), 
+point1 : point1 = new PolarPoint(radius, degree2, ), point1 = new CartesianPoint(x_coord, y_coord, ), point1 = null, 
+y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
+point2 : point2 = new CartesianPoint(x_coord, y_coord, ), point2 = null, point2 = new PolarPoint(radius, degree2, ), 
+degree : degree = 0, degree = in.nextInt(), degree = in.nextInt(), 
+radius : radius = 0, radius = in.nextInt(), radius = in.nextInt(), 
 
 BLOCK: joinL37
-point1 : point1 = new PolarPoint(radius, degree2, ), point1 = null, point1 = new CartesianPoint(x_coord, y_coord, ), 
-y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
-radius : radius = in.nextInt(), radius = 0, radius = in.nextInt(), 
-distance2 : distance2 = distance(point1, point2, ), distance2 = 0.0, 
-result2 : result2 = 0, result2 = samequad(point1, point2, ), 
-degree2 : degree2 = degree * Math.PI / 180, degree2 = 0.0, degree2 = degree * Math.PI / 180, 
+x_coord : x_coord = 0, x_coord = in.nextInt(), x_coord = in.nextInt(), 
 in : in = new Scanner(System.in, ), 
+distance2 : distance2 = 0.0, distance2 = distance(point1, point2, ), 
 result : result = in.nextInt(), 
-x_coord : x_coord = in.nextInt(), x_coord = 0, x_coord = in.nextInt(), 
+result2 : result2 = 0, result2 = samequad(point1, point2, ), 
+degree2 : degree2 = 0.0, degree2 = degree * Math.PI / 180, degree2 = degree * Math.PI / 180, 
+point1 : point1 = new PolarPoint(radius, degree2, ), point1 = new CartesianPoint(x_coord, y_coord, ), point1 = null, 
+y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
+point2 : point2 = new CartesianPoint(x_coord, y_coord, ), point2 = null, point2 = new PolarPoint(radius, degree2, ), 
+radius : radius = 0, radius = in.nextInt(), radius = in.nextInt(), 
 degree : degree = 0, degree = in.nextInt(), degree = in.nextInt(), 
-point2 : point2 = null, point2 = new CartesianPoint(x_coord, y_coord, ), point2 = new PolarPoint(radius, degree2, ), 
 
 BLOCK: trueL42
-y_coord : y_coord = in.nextInt(), 
-point1 : point1 = new PolarPoint(radius, degree2, ), point1 = null, point1 = new CartesianPoint(x_coord, y_coord, ), 
-radius : radius = in.nextInt(), radius = 0, radius = in.nextInt(), 
-distance2 : distance2 = distance(point1, point2, ), distance2 = 0.0, 
-result2 : result2 = 0, result2 = samequad(point1, point2, ), 
-degree2 : degree2 = degree * Math.PI / 180, degree2 = 0.0, degree2 = degree * Math.PI / 180, 
-in : in = new Scanner(System.in, ), 
 x_coord : x_coord = in.nextInt(), 
+in : in = new Scanner(System.in, ), 
+distance2 : distance2 = 0.0, distance2 = distance(point1, point2, ), 
 result : result = in.nextInt(), 
-degree : degree = 0, degree = in.nextInt(), degree = in.nextInt(), 
+result2 : result2 = 0, result2 = samequad(point1, point2, ), 
+degree2 : degree2 = 0.0, degree2 = degree * Math.PI / 180, degree2 = degree * Math.PI / 180, 
+point1 : point1 = new PolarPoint(radius, degree2, ), point1 = new CartesianPoint(x_coord, y_coord, ), point1 = null, 
+y_coord : y_coord = in.nextInt(), 
 point2 : point2 = new CartesianPoint(x_coord, y_coord, ), 
+radius : radius = 0, radius = in.nextInt(), radius = in.nextInt(), 
+degree : degree = 0, degree = in.nextInt(), degree = in.nextInt(), 
 
 BLOCK: falseL44
-point1 : point1 = new PolarPoint(radius, degree2, ), point1 = null, point1 = new CartesianPoint(x_coord, y_coord, ), 
-y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
-radius : radius = in.nextInt(), radius = 0, radius = in.nextInt(), 
-distance2 : distance2 = distance(point1, point2, ), distance2 = 0.0, 
-result2 : result2 = 0, result2 = samequad(point1, point2, ), 
-degree2 : degree2 = degree * Math.PI / 180, degree2 = 0.0, degree2 = degree * Math.PI / 180, 
+x_coord : x_coord = 0, x_coord = in.nextInt(), x_coord = in.nextInt(), 
 in : in = new Scanner(System.in, ), 
+distance2 : distance2 = 0.0, distance2 = distance(point1, point2, ), 
 result : result = in.nextInt(), 
-x_coord : x_coord = in.nextInt(), x_coord = 0, x_coord = in.nextInt(), 
+result2 : result2 = 0, result2 = samequad(point1, point2, ), 
+degree2 : degree2 = 0.0, degree2 = degree * Math.PI / 180, degree2 = degree * Math.PI / 180, 
+point1 : point1 = new PolarPoint(radius, degree2, ), point1 = new CartesianPoint(x_coord, y_coord, ), point1 = null, 
+y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
+point2 : point2 = new CartesianPoint(x_coord, y_coord, ), point2 = null, point2 = new PolarPoint(radius, degree2, ), 
+radius : radius = 0, radius = in.nextInt(), radius = in.nextInt(), 
 degree : degree = 0, degree = in.nextInt(), degree = in.nextInt(), 
-point2 : point2 = null, point2 = new CartesianPoint(x_coord, y_coord, ), point2 = new PolarPoint(radius, degree2, ), 
 
 BLOCK: trueL45
-radius : radius = in.nextInt(), 
-point1 : point1 = new PolarPoint(radius, degree2, ), point1 = null, point1 = new CartesianPoint(x_coord, y_coord, ), 
-y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
-distance2 : distance2 = distance(point1, point2, ), distance2 = 0.0, 
-degree2 : degree2 = degree * Math.PI / 180, 
-result2 : result2 = 0, result2 = samequad(point1, point2, ), 
+x_coord : x_coord = 0, x_coord = in.nextInt(), x_coord = in.nextInt(), 
 in : in = new Scanner(System.in, ), 
-degree : degree = in.nextInt(), 
+distance2 : distance2 = 0.0, distance2 = distance(point1, point2, ), 
+degree2 : degree2 = degree * Math.PI / 180, 
 result : result = in.nextInt(), 
-x_coord : x_coord = in.nextInt(), x_coord = 0, x_coord = in.nextInt(), 
+result2 : result2 = 0, result2 = samequad(point1, point2, ), 
+point1 : point1 = new PolarPoint(radius, degree2, ), point1 = new CartesianPoint(x_coord, y_coord, ), point1 = null, 
+y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
 point2 : point2 = new PolarPoint(radius, degree2, ), 
+degree : degree = in.nextInt(), 
+radius : radius = in.nextInt(), 
 
 BLOCK: falseL47
-point1 : point1 = new PolarPoint(radius, degree2, ), point1 = null, point1 = new CartesianPoint(x_coord, y_coord, ), 
-y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
-radius : radius = in.nextInt(), radius = 0, radius = in.nextInt(), 
-distance2 : distance2 = distance(point1, point2, ), distance2 = 0.0, 
-result2 : result2 = 0, result2 = samequad(point1, point2, ), 
-degree2 : degree2 = degree * Math.PI / 180, degree2 = 0.0, degree2 = degree * Math.PI / 180, 
+x_coord : x_coord = 0, x_coord = in.nextInt(), x_coord = in.nextInt(), 
 in : in = new Scanner(System.in, ), 
+distance2 : distance2 = 0.0, distance2 = distance(point1, point2, ), 
 result : result = in.nextInt(), 
-x_coord : x_coord = in.nextInt(), x_coord = 0, x_coord = in.nextInt(), 
+result2 : result2 = 0, result2 = samequad(point1, point2, ), 
+degree2 : degree2 = 0.0, degree2 = degree * Math.PI / 180, degree2 = degree * Math.PI / 180, 
+point1 : point1 = new PolarPoint(radius, degree2, ), point1 = new CartesianPoint(x_coord, y_coord, ), point1 = null, 
+y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
+point2 : point2 = new CartesianPoint(x_coord, y_coord, ), point2 = null, point2 = new PolarPoint(radius, degree2, ), 
+radius : radius = 0, radius = in.nextInt(), radius = in.nextInt(), 
 degree : degree = 0, degree = in.nextInt(), degree = in.nextInt(), 
-point2 : point2 = null, point2 = new CartesianPoint(x_coord, y_coord, ), point2 = new PolarPoint(radius, degree2, ), 
 
 BLOCK: joinL46
-radius : radius = in.nextInt(), radius = 0, radius = in.nextInt(), 
-point1 : point1 = new PolarPoint(radius, degree2, ), point1 = null, point1 = new CartesianPoint(x_coord, y_coord, ), 
-y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
-distance2 : distance2 = distance(point1, point2, ), distance2 = 0.0, 
-degree2 : degree2 = degree * Math.PI / 180, degree2 = 0.0, degree2 = degree * Math.PI / 180, 
-result2 : result2 = 0, result2 = samequad(point1, point2, ), 
+x_coord : x_coord = 0, x_coord = in.nextInt(), x_coord = in.nextInt(), 
 in : in = new Scanner(System.in, ), 
-degree : degree = 0, degree = in.nextInt(), degree = in.nextInt(), 
+distance2 : distance2 = 0.0, distance2 = distance(point1, point2, ), 
+degree2 : degree2 = 0.0, degree2 = degree * Math.PI / 180, degree2 = degree * Math.PI / 180, 
 result : result = in.nextInt(), result = in.nextInt(), 
-x_coord : x_coord = in.nextInt(), x_coord = 0, x_coord = in.nextInt(), 
-point2 : point2 = null, point2 = new CartesianPoint(x_coord, y_coord, ), point2 = new PolarPoint(radius, degree2, ), 
+result2 : result2 = 0, result2 = samequad(point1, point2, ), 
+point1 : point1 = new PolarPoint(radius, degree2, ), point1 = new CartesianPoint(x_coord, y_coord, ), point1 = null, 
+y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
+point2 : point2 = new CartesianPoint(x_coord, y_coord, ), point2 = null, point2 = new PolarPoint(radius, degree2, ), 
+degree : degree = 0, degree = in.nextInt(), degree = in.nextInt(), 
+radius : radius = 0, radius = in.nextInt(), radius = in.nextInt(), 
 
 BLOCK: joinL43
-y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
-point1 : point1 = new PolarPoint(radius, degree2, ), point1 = null, point1 = new CartesianPoint(x_coord, y_coord, ), 
-radius : radius = in.nextInt(), radius = 0, radius = in.nextInt(), 
+x_coord : x_coord = in.nextInt(), x_coord = 0, x_coord = in.nextInt(), 
+in : in = new Scanner(System.in, ), 
 distance2 : distance2 = distance(point1, point2, ), 
 result2 : result2 = samequad(point1, point2, ), 
-degree2 : degree2 = degree * Math.PI / 180, degree2 = 0.0, degree2 = degree * Math.PI / 180, 
-in : in = new Scanner(System.in, ), 
-x_coord : x_coord = in.nextInt(), x_coord = 0, x_coord = in.nextInt(), 
 result : result = in.nextInt(), result = in.nextInt(), 
+degree2 : degree2 = 0.0, degree2 = degree * Math.PI / 180, degree2 = degree * Math.PI / 180, 
+point1 : point1 = new PolarPoint(radius, degree2, ), point1 = new CartesianPoint(x_coord, y_coord, ), point1 = null, 
+y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
+point2 : point2 = new CartesianPoint(x_coord, y_coord, ), point2 = null, point2 = new PolarPoint(radius, degree2, ), 
+radius : radius = 0, radius = in.nextInt(), radius = in.nextInt(), 
 degree : degree = 0, degree = in.nextInt(), degree = in.nextInt(), 
-point2 : point2 = null, point2 = new CartesianPoint(x_coord, y_coord, ), point2 = new PolarPoint(radius, degree2, ), 
 
 BLOCK: trueL48
-y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
-point1 : point1 = new PolarPoint(radius, degree2, ), point1 = null, point1 = new CartesianPoint(x_coord, y_coord, ), 
-radius : radius = in.nextInt(), radius = 0, radius = in.nextInt(), 
+x_coord : x_coord = in.nextInt(), x_coord = 0, x_coord = in.nextInt(), 
+in : in = new Scanner(System.in, ), 
 distance2 : distance2 = distance(point1, point2, ), 
 result2 : result2 = samequad(point1, point2, ), 
-degree2 : degree2 = degree * Math.PI / 180, degree2 = 0.0, degree2 = degree * Math.PI / 180, 
-in : in = new Scanner(System.in, ), 
-x_coord : x_coord = in.nextInt(), x_coord = 0, x_coord = in.nextInt(), 
 result : result = in.nextInt(), result = in.nextInt(), 
+degree2 : degree2 = 0.0, degree2 = degree * Math.PI / 180, degree2 = degree * Math.PI / 180, 
+point1 : point1 = new PolarPoint(radius, degree2, ), point1 = new CartesianPoint(x_coord, y_coord, ), point1 = null, 
+y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
+point2 : point2 = new CartesianPoint(x_coord, y_coord, ), point2 = null, point2 = new PolarPoint(radius, degree2, ), 
+radius : radius = 0, radius = in.nextInt(), radius = in.nextInt(), 
 degree : degree = 0, degree = in.nextInt(), degree = in.nextInt(), 
-point2 : point2 = null, point2 = new CartesianPoint(x_coord, y_coord, ), point2 = new PolarPoint(radius, degree2, ), 
 
 BLOCK: falseL50
-y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
-point1 : point1 = new PolarPoint(radius, degree2, ), point1 = null, point1 = new CartesianPoint(x_coord, y_coord, ), 
-radius : radius = in.nextInt(), radius = 0, radius = in.nextInt(), 
+x_coord : x_coord = in.nextInt(), x_coord = 0, x_coord = in.nextInt(), 
+in : in = new Scanner(System.in, ), 
 distance2 : distance2 = distance(point1, point2, ), 
 result2 : result2 = samequad(point1, point2, ), 
-degree2 : degree2 = degree * Math.PI / 180, degree2 = 0.0, degree2 = degree * Math.PI / 180, 
-in : in = new Scanner(System.in, ), 
-x_coord : x_coord = in.nextInt(), x_coord = 0, x_coord = in.nextInt(), 
 result : result = in.nextInt(), result = in.nextInt(), 
+degree2 : degree2 = 0.0, degree2 = degree * Math.PI / 180, degree2 = degree * Math.PI / 180, 
+point1 : point1 = new PolarPoint(radius, degree2, ), point1 = new CartesianPoint(x_coord, y_coord, ), point1 = null, 
+y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
+point2 : point2 = new CartesianPoint(x_coord, y_coord, ), point2 = null, point2 = new PolarPoint(radius, degree2, ), 
+radius : radius = 0, radius = in.nextInt(), radius = in.nextInt(), 
 degree : degree = 0, degree = in.nextInt(), degree = in.nextInt(), 
-point2 : point2 = null, point2 = new CartesianPoint(x_coord, y_coord, ), point2 = new PolarPoint(radius, degree2, ), 
 
 BLOCK: joinL49
-y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
-point1 : point1 = new PolarPoint(radius, degree2, ), point1 = null, point1 = new CartesianPoint(x_coord, y_coord, ), 
-radius : radius = in.nextInt(), radius = 0, radius = in.nextInt(), 
+x_coord : x_coord = in.nextInt(), x_coord = 0, x_coord = in.nextInt(), 
+in : in = new Scanner(System.in, ), 
 distance2 : distance2 = distance(point1, point2, ), 
 result2 : result2 = samequad(point1, point2, ), 
-degree2 : degree2 = degree * Math.PI / 180, degree2 = 0.0, degree2 = degree * Math.PI / 180, 
-in : in = new Scanner(System.in, ), 
-x_coord : x_coord = in.nextInt(), x_coord = 0, x_coord = in.nextInt(), 
 result : result = in.nextInt(), result = in.nextInt(), 
+degree2 : degree2 = 0.0, degree2 = degree * Math.PI / 180, degree2 = degree * Math.PI / 180, 
+point1 : point1 = new PolarPoint(radius, degree2, ), point1 = new CartesianPoint(x_coord, y_coord, ), point1 = null, 
+y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
+point2 : point2 = new CartesianPoint(x_coord, y_coord, ), point2 = null, point2 = new PolarPoint(radius, degree2, ), 
+radius : radius = 0, radius = in.nextInt(), radius = in.nextInt(), 
 degree : degree = 0, degree = in.nextInt(), degree = in.nextInt(), 
-point2 : point2 = null, point2 = new CartesianPoint(x_coord, y_coord, ), point2 = new PolarPoint(radius, degree2, ), 
 
 BLOCK: StartdistanceL51
 
 BLOCK: BasicL52
-distance_y : distance_y = pointA.yCoordinate() - pointB.yCoordinate(), 
 distance_x : distance_x = pointA.xCoordinate() - pointB.xCoordinate(), 
+distance_y : distance_y = pointA.yCoordinate() - pointB.yCoordinate(), 
 distance : distance = Math.sqrt(distance_x * distance_x + distance_y * distance_y, ), 
 
 BLOCK: StartsamequadL54
@@ -379,14 +379,14 @@ BLOCK: joinL58
 BLOCK: StarttestPolarPointL69
 
 BLOCK: BasicL70
-point6 : point6 = new PolarPoint(5.6, 2.35629, ), 
 point5 : point5 = new PolarPoint(0, 0, ), 
+point3 : point3 = new PolarPoint(18.6, -0.785398, ), 
+point1 : point1 = new PolarPoint(1.4142, 0.785398, ), 
 point4 : point4 = new PolarPoint(-18.6, -1.0471, ), 
 point7 : point7 = new PolarPoint(3.5, 4.18879, ), 
-point1 : point1 = new PolarPoint(1.4142, 0.785398, ), 
 point2 : point2 = new PolarPoint(-1.4142, 0.785398, ), 
 point8 : point8 = new PolarPoint(6.3, 5.235988, ), 
-point3 : point3 = new PolarPoint(18.6, -0.785398, ), 
+point6 : point6 = new PolarPoint(5.6, 2.35629, ), 
 
 BLOCK: StartmainL72
 
@@ -409,186 +409,186 @@ this.y : this.y = 0.0,
 this.x : this.x = 0.0, 
 
 BLOCK: StartyCoordinateL81
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: BasicL82
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: StartradiusL84
 this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
 
 BLOCK: BasicL85
+distance : distance = Math.sqrt(this.x * this.x + this.y * this.y, ), 
 this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
-distance : distance = Math.sqrt(this.x * this.x + this.y * this.y, ), 
 
 BLOCK: StartangleL87
 this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
 
 BLOCK: BasicL88
+ang : ang = 0, 
 this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
-ang : ang = 0, 
 
 BLOCK: trueL90
+ang : ang = Math.atan2(this.y, this.x, ), 
 this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
-ang : ang = Math.atan2(this.y, this.x, ), 
 
 BLOCK: falseL92
+ang : ang = 0, 
 this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
-ang : ang = 0, 
 
 BLOCK: trueL93
+ang : ang = Math.atan2(this.y, this.x, ), 
 this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
-ang : ang = Math.atan2(this.y, this.x, ), 
 
 BLOCK: falseL95
+ang : ang = 0, 
 this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
-ang : ang = 0, 
 
 BLOCK: trueL96
+ang : ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, 
 this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
-ang : ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, 
 
 BLOCK: falseL98
+ang : ang = 0, 
 this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
-ang : ang = 0, 
 
 BLOCK: trueL99
+ang : ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, 
 this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
-ang : ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, 
 
 BLOCK: joinL100
+ang : ang = 0, ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, 
 this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
-ang : ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, ang = 0, 
 
 BLOCK: joinL97
+ang : ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, ang = 0, ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, 
 this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
-ang : ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, ang = 0, 
 
 BLOCK: joinL94
+ang : ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, ang = Math.atan2(this.y, this.x, ), ang = 0, ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, 
 this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
-ang : ang = Math.atan2(this.y, this.x, ), ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, ang = 0, 
 
 BLOCK: joinL91
+ang : ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, ang = Math.atan2(this.y, this.x, ), ang = 0, ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, ang = Math.atan2(this.y, this.x, ), 
 this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
-ang : ang = Math.atan2(this.y, this.x, ), ang = Math.atan2(this.y, this.x, ), ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, ang = 0, 
 
 BLOCK: Startrotate90L101
 this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
 
 BLOCK: BasicL102
-this.y : this.y = 0.0, 
 x2 : x2 = this.x, 
-y2 : y2 = this.y, 
+this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+y2 : y2 = this.y, 
 
 BLOCK: StarttestCartesianPointL104
 
 BLOCK: BasicL105
-point3 : point3 = new CartesianPoint(18.6, 10.3, ), 
-point1 : point1 = new CartesianPoint(0.5, 3.0, ), 
 point2 : point2 = new CartesianPoint(6.4, 2.5, ), 
+point4 : point4 = new CartesianPoint(-1.6, 5.3, ), 
 point6 : point6 = new CartesianPoint(-18.6, -10.3, ), 
 point5 : point5 = new CartesianPoint(8.1, -10.3, ), 
-point4 : point4 = new CartesianPoint(-1.6, 5.3, ), 
+point3 : point3 = new CartesianPoint(18.6, 10.3, ), 
+point1 : point1 = new CartesianPoint(0.5, 3.0, ), 
 
 BLOCK: StartmainL107
 
 BLOCK: BasicL108
 
 BLOCK: Startconstructor1L0
-this.rad : this.rad = 0.0, 
 this.ang : this.ang = 0.0, 
+this.rad : this.rad = 0.0, 
 
 BLOCK: Startconstructor1L0
-this.rad : this.rad = 0.0, 
 this.ang : this.ang = 0.0, 
+this.rad : this.rad = 0.0, 
 
 BLOCK: BasicL1
-this.rad : this.rad = 0.0, 
 this.ang : this.ang = 0.0, 
+this.rad : this.rad = 0.0, 
 
 BLOCK: trueL3
-this.rad : this.rad = radius, 
 this.ang : this.ang = 0.0, 
+this.rad : this.rad = radius, 
 
 BLOCK: trueL5
-this.rad : this.rad = radius, 
 this.ang : this.ang = Math.PI + angle, 
+this.rad : this.rad = radius, 
 
 BLOCK: trueL7
-this.rad : this.rad = radius, 
 this.ang : this.ang = this.ang - 2 * Math.PI, 
+this.rad : this.rad = radius, 
 
 BLOCK: joinL8
+this.ang : this.ang = this.ang - 2 * Math.PI, this.ang = Math.PI + angle, 
 this.rad : this.rad = radius, 
-this.ang : this.ang = Math.PI + angle, this.ang = this.ang - 2 * Math.PI, 
 
 BLOCK: falseL9
-this.rad : this.rad = radius, 
 this.ang : this.ang = Math.PI + angle, 
+this.rad : this.rad = radius, 
 
 BLOCK: trueL10
-this.rad : this.rad = radius, 
 this.ang : this.ang = this.ang - 2 * Math.PI, 
+this.rad : this.rad = radius, 
 
 BLOCK: joinL11
-this.rad : this.rad = radius, 
 this.ang : this.ang = Math.PI + angle, this.ang = this.ang - 2 * Math.PI, 
+this.rad : this.rad = radius, 
 
 BLOCK: joinL6
+this.ang : this.ang = this.ang - 2 * Math.PI, this.ang = Math.PI + angle, this.ang = Math.PI + angle, this.ang = this.ang - 2 * Math.PI, 
 this.rad : this.rad = radius, 
-this.ang : this.ang = Math.PI + angle, this.ang = this.ang - 2 * Math.PI, this.ang = Math.PI + angle, this.ang = this.ang - 2 * Math.PI, 
 
 BLOCK: falseL12
-this.rad : this.rad = radius, 
 this.ang : this.ang = 0.0, 
+this.rad : this.rad = radius, 
 
 BLOCK: trueL13
-this.rad : this.rad = radius, 
 this.ang : this.ang = 2 * Math.PI + angle, 
+this.rad : this.rad = radius, 
 
 BLOCK: falseL15
-this.rad : this.rad = radius, 
 this.ang : this.ang = angle, 
+this.rad : this.rad = radius, 
 
 BLOCK: joinL14
+this.ang : this.ang = angle, this.ang = 2 * Math.PI + angle, 
 this.rad : this.rad = radius, 
-this.ang : this.ang = 2 * Math.PI + angle, this.ang = angle, 
 
 BLOCK: joinL4
+this.ang : this.ang = this.ang - 2 * Math.PI, this.ang = Math.PI + angle, this.ang = Math.PI + angle, this.ang = angle, this.ang = this.ang - 2 * Math.PI, this.ang = 2 * Math.PI + angle, 
 this.rad : this.rad = radius, this.rad = radius, 
-this.ang : this.ang = Math.PI + angle, this.ang = this.ang - 2 * Math.PI, this.ang = Math.PI + angle, this.ang = 2 * Math.PI + angle, this.ang = angle, this.ang = this.ang - 2 * Math.PI, 
 
 BLOCK: StartxCoordinateL16
-this.ang : this.ang = 0.0, 
 this.rad : this.rad = 0.0, 
+this.ang : this.ang = 0.0, 
 
 BLOCK: StartxCoordinateL16
-this.ang : this.ang = 0.0, 
 this.rad : this.rad = 0.0, 
+this.ang : this.ang = 0.0, 
 
 BLOCK: BasicL17
-this.ang : this.ang = 0.0, 
-x : x = Math.cos(this.ang, ) * this.rad, 
 this.rad : this.rad = 0.0, 
+x : x = Math.cos(this.ang, ) * this.rad, 
+this.ang : this.ang = 0.0, 
 
 BLOCK: StartyCoordinateL19
 this.ang : this.ang = 0.0, 
@@ -599,9 +599,9 @@ this.ang : this.ang = 0.0,
 this.rad : this.rad = 0.0, 
 
 BLOCK: BasicL20
-y : y = Math.sin(this.ang, ) * this.rad, 
 this.ang : this.ang = 0.0, 
 this.rad : this.rad = 0.0, 
+y : y = Math.sin(this.ang, ) * this.rad, 
 
 BLOCK: StartradiusL22
 this.rad : this.rad = 0.0, 
@@ -616,16 +616,16 @@ this.rad : this.rad = 0.0,
 this.ang : this.ang = 0.0, 
 
 BLOCK: StartangleL25
-this.ang : this.ang = 0.0, 
 this.rad : this.rad = 0.0, 
+this.ang : this.ang = 0.0, 
 
 BLOCK: StartangleL25
-this.ang : this.ang = 0.0, 
 this.rad : this.rad = 0.0, 
+this.ang : this.ang = 0.0, 
 
 BLOCK: BasicL26
-this.ang : this.ang = 0.0, 
 this.rad : this.rad = 0.0, 
+this.ang : this.ang = 0.0, 
 
 BLOCK: Startrotate90L28
 this.ang : this.ang = 0.0, 
@@ -636,18 +636,18 @@ this.ang : this.ang = 0.0,
 this.rad : this.rad = 0.0, 
 
 BLOCK: BasicL29
-this.ang : this.ang = 0.0, 
 ang2 : ang2 = this.ang + Math.PI / 2, 
+this.ang : this.ang = 0.0, 
 this.rad : this.rad = 0.0, 
 
 BLOCK: trueL31
-this.ang : this.ang = 0.0, 
 ang2 : ang2 = ang2 - 2 * Math.PI, 
+this.ang : this.ang = 0.0, 
 this.rad : this.rad = 0.0, 
 
 BLOCK: joinL32
-this.ang : this.ang = 0.0, 
 ang2 : ang2 = this.ang + Math.PI / 2, ang2 = ang2 - 2 * Math.PI, 
+this.ang : this.ang = 0.0, 
 this.rad : this.rad = 0.0, 
 
 BLOCK: StartmainL33
@@ -655,220 +655,220 @@ BLOCK: StartmainL33
 BLOCK: StartmainL33
 
 BLOCK: BasicL34
-point1 : point1 = null, 
-radius : radius = 0, 
-y_coord : y_coord = 0, 
+x_coord : x_coord = 0, 
+in : in = new Scanner(System.in, ), 
 distance2 : distance2 = 0.0, 
+result : result = in.nextInt(), 
 result2 : result2 = 0, 
 degree2 : degree2 = 0.0, 
-in : in = new Scanner(System.in, ), 
-result : result = in.nextInt(), 
-x_coord : x_coord = 0, 
-degree : degree = 0, 
+point1 : point1 = null, 
+y_coord : y_coord = 0, 
 point2 : point2 = null, 
+radius : radius = 0, 
+degree : degree = 0, 
 
 BLOCK: trueL36
+x_coord : x_coord = in.nextInt(), 
+in : in = new Scanner(System.in, ), 
+distance2 : distance2 = 0.0, 
+result : result = in.nextInt(), 
+result2 : result2 = 0, 
+degree2 : degree2 = 0.0, 
 point1 : point1 = new CartesianPoint(x_coord, y_coord, ), 
 y_coord : y_coord = in.nextInt(), 
-radius : radius = 0, 
-distance2 : distance2 = 0.0, 
-result2 : result2 = 0, 
-degree2 : degree2 = 0.0, 
-in : in = new Scanner(System.in, ), 
-x_coord : x_coord = in.nextInt(), 
-result : result = in.nextInt(), 
-degree : degree = 0, 
 point2 : point2 = null, 
+radius : radius = 0, 
+degree : degree = 0, 
 
 BLOCK: falseL38
-point1 : point1 = null, 
-radius : radius = 0, 
-y_coord : y_coord = 0, 
+x_coord : x_coord = 0, 
+in : in = new Scanner(System.in, ), 
 distance2 : distance2 = 0.0, 
+result : result = in.nextInt(), 
 result2 : result2 = 0, 
 degree2 : degree2 = 0.0, 
-in : in = new Scanner(System.in, ), 
-result : result = in.nextInt(), 
-x_coord : x_coord = 0, 
-degree : degree = 0, 
+point1 : point1 = null, 
+y_coord : y_coord = 0, 
 point2 : point2 = null, 
+radius : radius = 0, 
+degree : degree = 0, 
 
 BLOCK: trueL39
-point1 : point1 = new PolarPoint(radius, degree2, ), 
-radius : radius = in.nextInt(), 
-y_coord : y_coord = 0, 
+x_coord : x_coord = 0, 
+in : in = new Scanner(System.in, ), 
 distance2 : distance2 = 0.0, 
 degree2 : degree2 = degree * Math.PI / 180, 
-result2 : result2 = 0, 
-in : in = new Scanner(System.in, ), 
-degree : degree = in.nextInt(), 
 result : result = in.nextInt(), 
-x_coord : x_coord = 0, 
+result2 : result2 = 0, 
+point1 : point1 = new PolarPoint(radius, degree2, ), 
+y_coord : y_coord = 0, 
 point2 : point2 = null, 
+degree : degree = in.nextInt(), 
+radius : radius = in.nextInt(), 
 
 BLOCK: falseL41
-point1 : point1 = null, 
-radius : radius = 0, 
-y_coord : y_coord = 0, 
+x_coord : x_coord = 0, 
+in : in = new Scanner(System.in, ), 
 distance2 : distance2 = 0.0, 
+result : result = in.nextInt(), 
 result2 : result2 = 0, 
 degree2 : degree2 = 0.0, 
-in : in = new Scanner(System.in, ), 
-result : result = in.nextInt(), 
-x_coord : x_coord = 0, 
-degree : degree = 0, 
+point1 : point1 = null, 
+y_coord : y_coord = 0, 
 point2 : point2 = null, 
+radius : radius = 0, 
+degree : degree = 0, 
 
 BLOCK: joinL40
-point1 : point1 = new PolarPoint(radius, degree2, ), point1 = null, point1 = new CartesianPoint(x_coord, y_coord, ), 
-radius : radius = in.nextInt(), radius = 0, radius = in.nextInt(), 
-y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
-distance2 : distance2 = distance(point1, point2, ), distance2 = 0.0, 
-degree2 : degree2 = degree * Math.PI / 180, degree2 = 0.0, degree2 = degree * Math.PI / 180, 
-result2 : result2 = 0, result2 = samequad(point1, point2, ), 
+x_coord : x_coord = 0, x_coord = in.nextInt(), x_coord = in.nextInt(), 
 in : in = new Scanner(System.in, ), 
-degree : degree = 0, degree = in.nextInt(), degree = in.nextInt(), 
+distance2 : distance2 = 0.0, distance2 = distance(point1, point2, ), 
+degree2 : degree2 = 0.0, degree2 = degree * Math.PI / 180, degree2 = degree * Math.PI / 180, 
 result : result = in.nextInt(), result = in.nextInt(), 
-x_coord : x_coord = in.nextInt(), x_coord = 0, x_coord = in.nextInt(), 
-point2 : point2 = null, point2 = new CartesianPoint(x_coord, y_coord, ), point2 = new PolarPoint(radius, degree2, ), 
+result2 : result2 = 0, result2 = samequad(point1, point2, ), 
+point1 : point1 = new PolarPoint(radius, degree2, ), point1 = new CartesianPoint(x_coord, y_coord, ), point1 = null, 
+y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
+point2 : point2 = new CartesianPoint(x_coord, y_coord, ), point2 = null, point2 = new PolarPoint(radius, degree2, ), 
+degree : degree = 0, degree = in.nextInt(), degree = in.nextInt(), 
+radius : radius = 0, radius = in.nextInt(), radius = in.nextInt(), 
 
 BLOCK: joinL37
-point1 : point1 = new PolarPoint(radius, degree2, ), point1 = null, point1 = new CartesianPoint(x_coord, y_coord, ), 
-y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
-radius : radius = in.nextInt(), radius = 0, radius = in.nextInt(), 
-distance2 : distance2 = distance(point1, point2, ), distance2 = 0.0, 
-result2 : result2 = 0, result2 = samequad(point1, point2, ), 
-degree2 : degree2 = degree * Math.PI / 180, degree2 = 0.0, degree2 = degree * Math.PI / 180, 
+x_coord : x_coord = 0, x_coord = in.nextInt(), x_coord = in.nextInt(), 
 in : in = new Scanner(System.in, ), 
+distance2 : distance2 = 0.0, distance2 = distance(point1, point2, ), 
 result : result = in.nextInt(), 
-x_coord : x_coord = in.nextInt(), x_coord = 0, x_coord = in.nextInt(), 
+result2 : result2 = 0, result2 = samequad(point1, point2, ), 
+degree2 : degree2 = 0.0, degree2 = degree * Math.PI / 180, degree2 = degree * Math.PI / 180, 
+point1 : point1 = new PolarPoint(radius, degree2, ), point1 = new CartesianPoint(x_coord, y_coord, ), point1 = null, 
+y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
+point2 : point2 = new CartesianPoint(x_coord, y_coord, ), point2 = null, point2 = new PolarPoint(radius, degree2, ), 
+radius : radius = 0, radius = in.nextInt(), radius = in.nextInt(), 
 degree : degree = 0, degree = in.nextInt(), degree = in.nextInt(), 
-point2 : point2 = null, point2 = new CartesianPoint(x_coord, y_coord, ), point2 = new PolarPoint(radius, degree2, ), 
 
 BLOCK: trueL42
-y_coord : y_coord = in.nextInt(), 
-point1 : point1 = new PolarPoint(radius, degree2, ), point1 = null, point1 = new CartesianPoint(x_coord, y_coord, ), 
-radius : radius = in.nextInt(), radius = 0, radius = in.nextInt(), 
-distance2 : distance2 = distance(point1, point2, ), distance2 = 0.0, 
-result2 : result2 = 0, result2 = samequad(point1, point2, ), 
-degree2 : degree2 = degree * Math.PI / 180, degree2 = 0.0, degree2 = degree * Math.PI / 180, 
-in : in = new Scanner(System.in, ), 
 x_coord : x_coord = in.nextInt(), 
+in : in = new Scanner(System.in, ), 
+distance2 : distance2 = 0.0, distance2 = distance(point1, point2, ), 
 result : result = in.nextInt(), 
-degree : degree = 0, degree = in.nextInt(), degree = in.nextInt(), 
+result2 : result2 = 0, result2 = samequad(point1, point2, ), 
+degree2 : degree2 = 0.0, degree2 = degree * Math.PI / 180, degree2 = degree * Math.PI / 180, 
+point1 : point1 = new PolarPoint(radius, degree2, ), point1 = new CartesianPoint(x_coord, y_coord, ), point1 = null, 
+y_coord : y_coord = in.nextInt(), 
 point2 : point2 = new CartesianPoint(x_coord, y_coord, ), 
+radius : radius = 0, radius = in.nextInt(), radius = in.nextInt(), 
+degree : degree = 0, degree = in.nextInt(), degree = in.nextInt(), 
 
 BLOCK: falseL44
-point1 : point1 = new PolarPoint(radius, degree2, ), point1 = null, point1 = new CartesianPoint(x_coord, y_coord, ), 
-y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
-radius : radius = in.nextInt(), radius = 0, radius = in.nextInt(), 
-distance2 : distance2 = distance(point1, point2, ), distance2 = 0.0, 
-result2 : result2 = 0, result2 = samequad(point1, point2, ), 
-degree2 : degree2 = degree * Math.PI / 180, degree2 = 0.0, degree2 = degree * Math.PI / 180, 
+x_coord : x_coord = 0, x_coord = in.nextInt(), x_coord = in.nextInt(), 
 in : in = new Scanner(System.in, ), 
+distance2 : distance2 = 0.0, distance2 = distance(point1, point2, ), 
 result : result = in.nextInt(), 
-x_coord : x_coord = in.nextInt(), x_coord = 0, x_coord = in.nextInt(), 
+result2 : result2 = 0, result2 = samequad(point1, point2, ), 
+degree2 : degree2 = 0.0, degree2 = degree * Math.PI / 180, degree2 = degree * Math.PI / 180, 
+point1 : point1 = new PolarPoint(radius, degree2, ), point1 = new CartesianPoint(x_coord, y_coord, ), point1 = null, 
+y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
+point2 : point2 = new CartesianPoint(x_coord, y_coord, ), point2 = null, point2 = new PolarPoint(radius, degree2, ), 
+radius : radius = 0, radius = in.nextInt(), radius = in.nextInt(), 
 degree : degree = 0, degree = in.nextInt(), degree = in.nextInt(), 
-point2 : point2 = null, point2 = new CartesianPoint(x_coord, y_coord, ), point2 = new PolarPoint(radius, degree2, ), 
 
 BLOCK: trueL45
-radius : radius = in.nextInt(), 
-point1 : point1 = new PolarPoint(radius, degree2, ), point1 = null, point1 = new CartesianPoint(x_coord, y_coord, ), 
-y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
-distance2 : distance2 = distance(point1, point2, ), distance2 = 0.0, 
-degree2 : degree2 = degree * Math.PI / 180, 
-result2 : result2 = 0, result2 = samequad(point1, point2, ), 
+x_coord : x_coord = 0, x_coord = in.nextInt(), x_coord = in.nextInt(), 
 in : in = new Scanner(System.in, ), 
-degree : degree = in.nextInt(), 
+distance2 : distance2 = 0.0, distance2 = distance(point1, point2, ), 
+degree2 : degree2 = degree * Math.PI / 180, 
 result : result = in.nextInt(), 
-x_coord : x_coord = in.nextInt(), x_coord = 0, x_coord = in.nextInt(), 
+result2 : result2 = 0, result2 = samequad(point1, point2, ), 
+point1 : point1 = new PolarPoint(radius, degree2, ), point1 = new CartesianPoint(x_coord, y_coord, ), point1 = null, 
+y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
 point2 : point2 = new PolarPoint(radius, degree2, ), 
+degree : degree = in.nextInt(), 
+radius : radius = in.nextInt(), 
 
 BLOCK: falseL47
-point1 : point1 = new PolarPoint(radius, degree2, ), point1 = null, point1 = new CartesianPoint(x_coord, y_coord, ), 
-y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
-radius : radius = in.nextInt(), radius = 0, radius = in.nextInt(), 
-distance2 : distance2 = distance(point1, point2, ), distance2 = 0.0, 
-result2 : result2 = 0, result2 = samequad(point1, point2, ), 
-degree2 : degree2 = degree * Math.PI / 180, degree2 = 0.0, degree2 = degree * Math.PI / 180, 
+x_coord : x_coord = 0, x_coord = in.nextInt(), x_coord = in.nextInt(), 
 in : in = new Scanner(System.in, ), 
+distance2 : distance2 = 0.0, distance2 = distance(point1, point2, ), 
 result : result = in.nextInt(), 
-x_coord : x_coord = in.nextInt(), x_coord = 0, x_coord = in.nextInt(), 
+result2 : result2 = 0, result2 = samequad(point1, point2, ), 
+degree2 : degree2 = 0.0, degree2 = degree * Math.PI / 180, degree2 = degree * Math.PI / 180, 
+point1 : point1 = new PolarPoint(radius, degree2, ), point1 = new CartesianPoint(x_coord, y_coord, ), point1 = null, 
+y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
+point2 : point2 = new CartesianPoint(x_coord, y_coord, ), point2 = null, point2 = new PolarPoint(radius, degree2, ), 
+radius : radius = 0, radius = in.nextInt(), radius = in.nextInt(), 
 degree : degree = 0, degree = in.nextInt(), degree = in.nextInt(), 
-point2 : point2 = null, point2 = new CartesianPoint(x_coord, y_coord, ), point2 = new PolarPoint(radius, degree2, ), 
 
 BLOCK: joinL46
-radius : radius = in.nextInt(), radius = 0, radius = in.nextInt(), 
-point1 : point1 = new PolarPoint(radius, degree2, ), point1 = null, point1 = new CartesianPoint(x_coord, y_coord, ), 
-y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
-distance2 : distance2 = distance(point1, point2, ), distance2 = 0.0, 
-degree2 : degree2 = degree * Math.PI / 180, degree2 = 0.0, degree2 = degree * Math.PI / 180, 
-result2 : result2 = 0, result2 = samequad(point1, point2, ), 
+x_coord : x_coord = 0, x_coord = in.nextInt(), x_coord = in.nextInt(), 
 in : in = new Scanner(System.in, ), 
-degree : degree = 0, degree = in.nextInt(), degree = in.nextInt(), 
+distance2 : distance2 = 0.0, distance2 = distance(point1, point2, ), 
+degree2 : degree2 = 0.0, degree2 = degree * Math.PI / 180, degree2 = degree * Math.PI / 180, 
 result : result = in.nextInt(), result = in.nextInt(), 
-x_coord : x_coord = in.nextInt(), x_coord = 0, x_coord = in.nextInt(), 
-point2 : point2 = null, point2 = new CartesianPoint(x_coord, y_coord, ), point2 = new PolarPoint(radius, degree2, ), 
+result2 : result2 = 0, result2 = samequad(point1, point2, ), 
+point1 : point1 = new PolarPoint(radius, degree2, ), point1 = new CartesianPoint(x_coord, y_coord, ), point1 = null, 
+y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
+point2 : point2 = new CartesianPoint(x_coord, y_coord, ), point2 = null, point2 = new PolarPoint(radius, degree2, ), 
+degree : degree = 0, degree = in.nextInt(), degree = in.nextInt(), 
+radius : radius = 0, radius = in.nextInt(), radius = in.nextInt(), 
 
 BLOCK: joinL43
-y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
-point1 : point1 = new PolarPoint(radius, degree2, ), point1 = null, point1 = new CartesianPoint(x_coord, y_coord, ), 
-radius : radius = in.nextInt(), radius = 0, radius = in.nextInt(), 
+x_coord : x_coord = in.nextInt(), x_coord = 0, x_coord = in.nextInt(), 
+in : in = new Scanner(System.in, ), 
 distance2 : distance2 = distance(point1, point2, ), 
 result2 : result2 = samequad(point1, point2, ), 
-degree2 : degree2 = degree * Math.PI / 180, degree2 = 0.0, degree2 = degree * Math.PI / 180, 
-in : in = new Scanner(System.in, ), 
-x_coord : x_coord = in.nextInt(), x_coord = 0, x_coord = in.nextInt(), 
 result : result = in.nextInt(), result = in.nextInt(), 
+degree2 : degree2 = 0.0, degree2 = degree * Math.PI / 180, degree2 = degree * Math.PI / 180, 
+point1 : point1 = new PolarPoint(radius, degree2, ), point1 = new CartesianPoint(x_coord, y_coord, ), point1 = null, 
+y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
+point2 : point2 = new CartesianPoint(x_coord, y_coord, ), point2 = null, point2 = new PolarPoint(radius, degree2, ), 
+radius : radius = 0, radius = in.nextInt(), radius = in.nextInt(), 
 degree : degree = 0, degree = in.nextInt(), degree = in.nextInt(), 
-point2 : point2 = null, point2 = new CartesianPoint(x_coord, y_coord, ), point2 = new PolarPoint(radius, degree2, ), 
 
 BLOCK: trueL48
-y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
-point1 : point1 = new PolarPoint(radius, degree2, ), point1 = null, point1 = new CartesianPoint(x_coord, y_coord, ), 
-radius : radius = in.nextInt(), radius = 0, radius = in.nextInt(), 
+x_coord : x_coord = in.nextInt(), x_coord = 0, x_coord = in.nextInt(), 
+in : in = new Scanner(System.in, ), 
 distance2 : distance2 = distance(point1, point2, ), 
 result2 : result2 = samequad(point1, point2, ), 
-degree2 : degree2 = degree * Math.PI / 180, degree2 = 0.0, degree2 = degree * Math.PI / 180, 
-in : in = new Scanner(System.in, ), 
-x_coord : x_coord = in.nextInt(), x_coord = 0, x_coord = in.nextInt(), 
 result : result = in.nextInt(), result = in.nextInt(), 
+degree2 : degree2 = 0.0, degree2 = degree * Math.PI / 180, degree2 = degree * Math.PI / 180, 
+point1 : point1 = new PolarPoint(radius, degree2, ), point1 = new CartesianPoint(x_coord, y_coord, ), point1 = null, 
+y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
+point2 : point2 = new CartesianPoint(x_coord, y_coord, ), point2 = null, point2 = new PolarPoint(radius, degree2, ), 
+radius : radius = 0, radius = in.nextInt(), radius = in.nextInt(), 
 degree : degree = 0, degree = in.nextInt(), degree = in.nextInt(), 
-point2 : point2 = null, point2 = new CartesianPoint(x_coord, y_coord, ), point2 = new PolarPoint(radius, degree2, ), 
 
 BLOCK: falseL50
-y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
-point1 : point1 = new PolarPoint(radius, degree2, ), point1 = null, point1 = new CartesianPoint(x_coord, y_coord, ), 
-radius : radius = in.nextInt(), radius = 0, radius = in.nextInt(), 
+x_coord : x_coord = in.nextInt(), x_coord = 0, x_coord = in.nextInt(), 
+in : in = new Scanner(System.in, ), 
 distance2 : distance2 = distance(point1, point2, ), 
 result2 : result2 = samequad(point1, point2, ), 
-degree2 : degree2 = degree * Math.PI / 180, degree2 = 0.0, degree2 = degree * Math.PI / 180, 
-in : in = new Scanner(System.in, ), 
-x_coord : x_coord = in.nextInt(), x_coord = 0, x_coord = in.nextInt(), 
 result : result = in.nextInt(), result = in.nextInt(), 
+degree2 : degree2 = 0.0, degree2 = degree * Math.PI / 180, degree2 = degree * Math.PI / 180, 
+point1 : point1 = new PolarPoint(radius, degree2, ), point1 = new CartesianPoint(x_coord, y_coord, ), point1 = null, 
+y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
+point2 : point2 = new CartesianPoint(x_coord, y_coord, ), point2 = null, point2 = new PolarPoint(radius, degree2, ), 
+radius : radius = 0, radius = in.nextInt(), radius = in.nextInt(), 
 degree : degree = 0, degree = in.nextInt(), degree = in.nextInt(), 
-point2 : point2 = null, point2 = new CartesianPoint(x_coord, y_coord, ), point2 = new PolarPoint(radius, degree2, ), 
 
 BLOCK: joinL49
-y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
-point1 : point1 = new PolarPoint(radius, degree2, ), point1 = null, point1 = new CartesianPoint(x_coord, y_coord, ), 
-radius : radius = in.nextInt(), radius = 0, radius = in.nextInt(), 
+x_coord : x_coord = in.nextInt(), x_coord = 0, x_coord = in.nextInt(), 
+in : in = new Scanner(System.in, ), 
 distance2 : distance2 = distance(point1, point2, ), 
 result2 : result2 = samequad(point1, point2, ), 
-degree2 : degree2 = degree * Math.PI / 180, degree2 = 0.0, degree2 = degree * Math.PI / 180, 
-in : in = new Scanner(System.in, ), 
-x_coord : x_coord = in.nextInt(), x_coord = 0, x_coord = in.nextInt(), 
 result : result = in.nextInt(), result = in.nextInt(), 
+degree2 : degree2 = 0.0, degree2 = degree * Math.PI / 180, degree2 = degree * Math.PI / 180, 
+point1 : point1 = new PolarPoint(radius, degree2, ), point1 = new CartesianPoint(x_coord, y_coord, ), point1 = null, 
+y_coord : y_coord = in.nextInt(), y_coord = in.nextInt(), y_coord = 0, 
+point2 : point2 = new CartesianPoint(x_coord, y_coord, ), point2 = null, point2 = new PolarPoint(radius, degree2, ), 
+radius : radius = 0, radius = in.nextInt(), radius = in.nextInt(), 
 degree : degree = 0, degree = in.nextInt(), degree = in.nextInt(), 
-point2 : point2 = null, point2 = new CartesianPoint(x_coord, y_coord, ), point2 = new PolarPoint(radius, degree2, ), 
 
 BLOCK: StartdistanceL51
 
 BLOCK: StartdistanceL51
 
 BLOCK: BasicL52
-distance_y : distance_y = pointA.yCoordinate() - pointB.yCoordinate(), 
 distance_x : distance_x = pointA.xCoordinate() - pointB.xCoordinate(), 
+distance_y : distance_y = pointA.yCoordinate() - pointB.yCoordinate(), 
 distance : distance = Math.sqrt(distance_x * distance_x + distance_y * distance_y, ), 
 
 BLOCK: StartsamequadL54
@@ -906,14 +906,14 @@ BLOCK: StarttestPolarPointL69
 BLOCK: StarttestPolarPointL69
 
 BLOCK: BasicL70
-point6 : point6 = new PolarPoint(5.6, 2.35629, ), 
 point5 : point5 = new PolarPoint(0, 0, ), 
+point3 : point3 = new PolarPoint(18.6, -0.785398, ), 
+point1 : point1 = new PolarPoint(1.4142, 0.785398, ), 
 point4 : point4 = new PolarPoint(-18.6, -1.0471, ), 
 point7 : point7 = new PolarPoint(3.5, 4.18879, ), 
-point1 : point1 = new PolarPoint(1.4142, 0.785398, ), 
 point2 : point2 = new PolarPoint(-1.4142, 0.785398, ), 
 point8 : point8 = new PolarPoint(6.3, 5.235988, ), 
-point3 : point3 = new PolarPoint(18.6, -0.785398, ), 
+point6 : point6 = new PolarPoint(5.6, 2.35629, ), 
 
 BLOCK: StartmainL72
 
@@ -946,16 +946,16 @@ this.y : this.y = 0.0,
 this.x : this.x = 0.0, 
 
 BLOCK: StartyCoordinateL81
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: StartyCoordinateL81
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: BasicL82
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: StartradiusL84
 this.x : this.x = 0.0, 
@@ -966,9 +966,9 @@ this.x : this.x = 0.0,
 this.y : this.y = 0.0, 
 
 BLOCK: BasicL85
+distance : distance = Math.sqrt(this.x * this.x + this.y * this.y, ), 
 this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
-distance : distance = Math.sqrt(this.x * this.x + this.y * this.y, ), 
 
 BLOCK: StartangleL87
 this.x : this.x = 0.0, 
@@ -979,64 +979,64 @@ this.x : this.x = 0.0,
 this.y : this.y = 0.0, 
 
 BLOCK: BasicL88
+ang : ang = 0, 
 this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
-ang : ang = 0, 
 
 BLOCK: trueL90
+ang : ang = Math.atan2(this.y, this.x, ), 
 this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
-ang : ang = Math.atan2(this.y, this.x, ), 
 
 BLOCK: falseL92
+ang : ang = 0, 
 this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
-ang : ang = 0, 
 
 BLOCK: trueL93
+ang : ang = Math.atan2(this.y, this.x, ), 
 this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
-ang : ang = Math.atan2(this.y, this.x, ), 
 
 BLOCK: falseL95
+ang : ang = 0, 
 this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
-ang : ang = 0, 
 
 BLOCK: trueL96
+ang : ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, 
 this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
-ang : ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, 
 
 BLOCK: falseL98
+ang : ang = 0, 
 this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
-ang : ang = 0, 
 
 BLOCK: trueL99
+ang : ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, 
 this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
-ang : ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, 
 
 BLOCK: joinL100
+ang : ang = 0, ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, 
 this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
-ang : ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, ang = 0, 
 
 BLOCK: joinL97
+ang : ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, ang = 0, ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, 
 this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
-ang : ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, ang = 0, 
 
 BLOCK: joinL94
+ang : ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, ang = Math.atan2(this.y, this.x, ), ang = 0, ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, 
 this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
-ang : ang = Math.atan2(this.y, this.x, ), ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, ang = 0, 
 
 BLOCK: joinL91
+ang : ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, ang = Math.atan2(this.y, this.x, ), ang = 0, ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, ang = Math.atan2(this.y, this.x, ), 
 this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
-ang : ang = Math.atan2(this.y, this.x, ), ang = Math.atan2(this.y, this.x, ), ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, ang = Math.atan2(this.y, this.x, ) + 2 * Math.PI, ang = 0, 
 
 BLOCK: Startrotate90L101
 this.y : this.y = 0.0, 
@@ -1047,22 +1047,22 @@ this.y : this.y = 0.0,
 this.x : this.x = 0.0, 
 
 BLOCK: BasicL102
-this.y : this.y = 0.0, 
 x2 : x2 = this.x, 
-y2 : y2 = this.y, 
+this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+y2 : y2 = this.y, 
 
 BLOCK: StarttestCartesianPointL104
 
 BLOCK: StarttestCartesianPointL104
 
 BLOCK: BasicL105
-point3 : point3 = new CartesianPoint(18.6, 10.3, ), 
-point1 : point1 = new CartesianPoint(0.5, 3.0, ), 
 point2 : point2 = new CartesianPoint(6.4, 2.5, ), 
+point4 : point4 = new CartesianPoint(-1.6, 5.3, ), 
 point6 : point6 = new CartesianPoint(-18.6, -10.3, ), 
 point5 : point5 = new CartesianPoint(8.1, -10.3, ), 
-point4 : point4 = new CartesianPoint(-1.6, 5.3, ), 
+point3 : point3 = new CartesianPoint(18.6, 10.3, ), 
+point1 : point1 = new CartesianPoint(0.5, 3.0, ), 
 
 BLOCK: StartmainL107
 
@@ -1070,33 +1070,27 @@ BLOCK: StartmainL107
 
 BLOCK: BasicL108
 
-Unfiltered: 521
+Unfiltered: 2
 Filtered: 1
 
 
-Duplicate found: 102_Code/102_hw1/dir36/PointRelation.java lines [8, 74] and 102_Code/102_hw1/dir36/PointRelation.java lines [8, 74]
+Duplicate found: 102_Code/102_hw1/dir36/PointRelation.java lines [7, 51] and 102_Code/102_hw1/dir36/PointRelation.java lines [7, 62]
 102_Code/102_hw1/dir36/PointRelation.java ----------
-8 :	y_coord = 0
-9 :	point1 = null
-19 :	x_coord = in.nextInt()
+7 :	distance2 = 0.0
+8 :	degree = 0
 29 :	radius = in.nextInt()
-32 :	degree2 = degree * Math.PI / 180
+31 :	degree = in.nextInt()
 33 :	point1 = new PolarPoint(radius, degree2, )
 50 :	y_coord = in.nextInt()
-60 :	degree = in.nextInt()
-71 :	distance2 = distance(point1, point2, )
-74 :	result2 = samequad(point1, point2, )
+51 :	point2 = new CartesianPoint(x_coord, y_coord, )
 102_Code/102_hw1/dir36/PointRelation.java ----------
-8 :	degree = 0
-10 :	point2 = null
-31 :	degree = in.nextInt()
-58 :	radius = in.nextInt()
-61 :	degree2 = degree * Math.PI / 180
-62 :	point2 = new PolarPoint(radius, degree2, )
-48 :	x_coord = in.nextInt()
+7 :	degree2 = 0.0
+8 :	radius = 0
 21 :	y_coord = in.nextInt()
-74 :	result2 = samequad(point1, point2, )
-71 :	distance2 = distance(point1, point2, )
+48 :	x_coord = in.nextInt()
+22 :	point1 = new CartesianPoint(x_coord, y_coord, )
+58 :	radius = in.nextInt()
+62 :	point2 = new PolarPoint(radius, degree2, )
 ===========================
 
 
@@ -1104,7 +1098,7 @@ Duplicate found: 102_Code/102_hw1/dir36/PointRelation.java lines [8, 74] and 102
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 10.403 s
-[INFO] Finished at: 2019-05-01T17:11:36-07:00
-[INFO] Final Memory: 26M/1530M
+[INFO] Total time: 8.770 s
+[INFO] Finished at: 2019-05-06T19:52:10-07:00
+[INFO] Final Memory: 19M/1430M
 [INFO] ------------------------------------------------------------------------

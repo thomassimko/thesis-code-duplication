@@ -29,62 +29,62 @@ BLOCK: BasicL4
 BLOCK: Starttest1L6
 
 BLOCK: BasicL7
-sum : sum = 0, 
 count : count = 0, 
+sum : sum = 0, 
 
 BLOCK: ForInitL9
-i : i = 0, 
-sum : sum = 0, 
 count : count = 0, 
+sum : sum = 0, 
+i : i = 0, 
 
 BLOCK: ForCondL10
-i : i = i + 1, i = 0, 
+count : count = doSomething1(count, ), count = 0, 
 sum : sum = 0, sum = sum + arr[i], 
-count : count = 0, count = doSomething1(count, ), 
 @temp1 : @temp1 = i, 
+i : i = i + 1, i = 0, 
 
 BLOCK: LoopL11
-i : i = i + 1, 
-sum : sum = sum + arr[i], 
 count : count = doSomething1(count, ), 
+sum : sum = sum + arr[i], 
 @temp1 : @temp1 = i, 
+i : i = i + 1, 
 
 BLOCK: BasicL12
-i : i = i + 1, i = 0, 
-sum : sum = 0, sum = sum + arr[i], 
-count : count = 0, count = doSomething1(count, ), 
 average : average = sum * 1.0 / count, 
+count : count = doSomething1(count, ), count = 0, 
+sum : sum = 0, sum = sum + arr[i], 
 @temp1 : @temp1 = i, 
+i : i = i + 1, i = 0, 
 
 BLOCK: Starttest2L13
 
 BLOCK: BasicL14
-sum : sum = 0, 
 count : count = 0, 
+sum : sum = 0, 
 
 BLOCK: ForInitL16
+count : count = 0, 
 sum : sum = 0, 
 i : i = 0, 
-count : count = 0, 
 
 BLOCK: ForCondL17
-@temp2 : @temp2 = i, 
+count : count = 0, count = doSomething2(count, ), 
 sum : sum = 0, sum = sum + arr[i], 
-i : i = 0, i = i + 1, 
-count : count = doSomething2(count, ), count = 0, 
+@temp2 : @temp2 = i, 
+i : i = i + 1, i = 0, 
 
 BLOCK: LoopL18
-@temp2 : @temp2 = i, 
-sum : sum = sum + arr[i], 
-i : i = i + 1, 
 count : count = doSomething2(count, ), 
+sum : sum = sum + arr[i], 
+@temp2 : @temp2 = i, 
+i : i = i + 1, 
 
 BLOCK: BasicL19
-@temp2 : @temp2 = i, 
-sum : sum = 0, sum = sum + arr[i], 
-i : i = 0, i = i + 1, 
+count : count = 0, count = doSomething2(count, ), 
 average : average = sum * 1.0 / count, 
-count : count = doSomething2(count, ), count = 0, 
+sum : sum = 0, sum = sum + arr[i], 
+@temp2 : @temp2 = i, 
+i : i = i + 1, i = 0, 
 
 BLOCK: StartdoSomething1L0
 
@@ -103,66 +103,66 @@ BLOCK: Starttest1L6
 BLOCK: Starttest1L6
 
 BLOCK: BasicL7
-sum : sum = 0, 
 count : count = 0, 
+sum : sum = 0, 
 
 BLOCK: ForInitL9
-i : i = 0, 
-sum : sum = 0, 
 count : count = 0, 
+sum : sum = 0, 
+i : i = 0, 
 
 BLOCK: ForCondL10
-i : i = i + 1, i = 0, 
+count : count = doSomething1(count, ), count = 0, 
 sum : sum = 0, sum = sum + arr[i], 
-count : count = 0, count = doSomething1(count, ), 
 @temp1 : @temp1 = i, 
+i : i = i + 1, i = 0, 
 
 BLOCK: LoopL11
-i : i = i + 1, 
-sum : sum = sum + arr[i], 
 count : count = doSomething1(count, ), 
+sum : sum = sum + arr[i], 
 @temp1 : @temp1 = i, 
+i : i = i + 1, 
 
 BLOCK: BasicL12
-i : i = i + 1, i = 0, 
-sum : sum = 0, sum = sum + arr[i], 
-count : count = 0, count = doSomething1(count, ), 
 average : average = sum * 1.0 / count, 
+count : count = doSomething1(count, ), count = 0, 
+sum : sum = 0, sum = sum + arr[i], 
 @temp1 : @temp1 = i, 
+i : i = i + 1, i = 0, 
 
 BLOCK: Starttest2L13
 
 BLOCK: Starttest2L13
 
 BLOCK: BasicL14
-sum : sum = 0, 
 count : count = 0, 
+sum : sum = 0, 
 
 BLOCK: ForInitL16
+count : count = 0, 
 sum : sum = 0, 
 i : i = 0, 
-count : count = 0, 
 
 BLOCK: ForCondL17
-@temp2 : @temp2 = i, 
+count : count = 0, count = doSomething2(count, ), 
 sum : sum = 0, sum = sum + arr[i], 
-i : i = 0, i = i + 1, 
-count : count = doSomething2(count, ), count = 0, 
+@temp2 : @temp2 = i, 
+i : i = i + 1, i = 0, 
 
 BLOCK: LoopL18
-@temp2 : @temp2 = i, 
-sum : sum = sum + arr[i], 
-i : i = i + 1, 
 count : count = doSomething2(count, ), 
+sum : sum = sum + arr[i], 
+@temp2 : @temp2 = i, 
+i : i = i + 1, 
 
 BLOCK: BasicL19
-@temp2 : @temp2 = i, 
-sum : sum = 0, sum = sum + arr[i], 
-i : i = 0, i = i + 1, 
+count : count = 0, count = doSomething2(count, ), 
 average : average = sum * 1.0 / count, 
-count : count = doSomething2(count, ), count = 0, 
+sum : sum = 0, sum = sum + arr[i], 
+@temp2 : @temp2 = i, 
+i : i = i + 1, i = 0, 
 
-Unfiltered: 237
+Unfiltered: 217
 Filtered: 1
 
 
@@ -177,7 +177,7 @@ testFiles/TestCases/TestCase5/TestCase5.java ----------
 testFiles/TestCases/TestCase5/TestCase5.java ----------
 31 :	sum = 0
 32 :	count = 0
-34 :	i = 0
+34 :	i = i + 1
 35 :	sum = sum + arr[i]
 36 :	count = doSomething2(count, )
 39 :	average = sum * 1.0 / count
@@ -188,7 +188,7 @@ testFiles/TestCases/TestCase5/TestCase5.java ----------
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 1.169 s
-[INFO] Finished at: 2019-05-01T17:07:48-07:00
+[INFO] Total time: 1.001 s
+[INFO] Finished at: 2019-05-06T19:46:56-07:00
 [INFO] Final Memory: 11M/437M
 [INFO] ------------------------------------------------------------------------

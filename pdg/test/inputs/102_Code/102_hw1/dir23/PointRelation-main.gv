@@ -1,0 +1,88 @@
+digraph G {
+"72 : in = new Scanner(System.in, )"
+"73 : distance = 0.0"
+"73 : distance = 0.0" -> "129 : distance = calcDist(pt1, pt2, )" [style=dashed]
+"74 : SameQuad = false"
+"74 : SameQuad = false" -> "131 : SameQuad = inSameQuadrant(pt1, pt2, )" [style=dashed]
+"75 : pt1 = null"
+"75 : pt1 = null" -> "131 : SameQuad = inSameQuadrant(pt1, pt2, )"
+"75 : pt1 = null" -> "129 : distance = calcDist(pt1, pt2, )"
+"75 : pt1 = null" -> "86 : pt1 = new CartesianPoint(a1, b1, )" [style=dashed]
+"75 : pt1 = null" -> "94 : pt1 = new PolarPoint(a1, b1, )" [style=dashed]
+"76 : pt2 = null"
+"76 : pt2 = null" -> "131 : SameQuad = inSameQuadrant(pt1, pt2, )"
+"76 : pt2 = null" -> "129 : distance = calcDist(pt1, pt2, )"
+"76 : pt2 = null" -> "119 : pt2 = new PolarPoint(rad2, deg2, )" [style=dashed]
+"76 : pt2 = null" -> "111 : pt2 = new CartesianPoint(x2, y2, )" [style=dashed]
+"78 : System.out.println(\"Which type of point should be created (1 for Cartesian, 2 for Polar)?\", )"
+"79 : command1 = in.nextInt()"
+"79 : command1 = in.nextInt()" -> "80 : command1 == 1"
+"79 : command1 = in.nextInt()" -> "88 : command1 == 2"
+"80 : command1 == 1"
+"82 : System.out.println(\"Enter x-coordinate: \", )"
+"83 : a1 = in.nextDouble()"
+"83 : a1 = in.nextDouble()" -> "86 : pt1 = new CartesianPoint(a1, b1, )"
+"84 : System.out.println(\"Enter y-coordinate: \", )"
+"85 : b1 = in.nextDouble()"
+"85 : b1 = in.nextDouble()" -> "86 : pt1 = new CartesianPoint(a1, b1, )"
+"86 : pt1 = new CartesianPoint(a1, b1, )"
+"86 : pt1 = new CartesianPoint(a1, b1, )" -> "131 : SameQuad = inSameQuadrant(pt1, pt2, )"
+"86 : pt1 = new CartesianPoint(a1, b1, )" -> "129 : distance = calcDist(pt1, pt2, )"
+"88 : command1 == 2"
+"90 : System.out.println(\"Enter radius: \", )"
+"91 : a1 = in.nextDouble()"
+"91 : a1 = in.nextDouble()" -> "94 : pt1 = new PolarPoint(a1, b1, )"
+"92 : System.out.println(\"Enter angle (in degrees): \", )"
+"93 : b1 = in.nextDouble() * 180 / Math.PI"
+"93 : b1 = in.nextDouble() * 180 / Math.PI" -> "94 : pt1 = new PolarPoint(a1, b1, )"
+"94 : pt1 = new PolarPoint(a1, b1, )"
+"94 : pt1 = new PolarPoint(a1, b1, )" -> "131 : SameQuad = inSameQuadrant(pt1, pt2, )"
+"94 : pt1 = new PolarPoint(a1, b1, )" -> "129 : distance = calcDist(pt1, pt2, )"
+"98 : System.out.println(\"ERROR: BAD COMMAND INPUT!\", )"
+"99 : System.exit(1, )"
+"103 : System.out.println(\"Which type of point should be created (1 for Cartesian, 2 for Polar)?\", )"
+"104 : command2 = in.nextInt()"
+"104 : command2 = in.nextInt()" -> "105 : command2 == 1"
+"104 : command2 = in.nextInt()" -> "113 : command2 == 2"
+"104 : command2 = in.nextInt()" -> "104 : command2 = in.nextInt()" [style=dashed]
+"105 : command2 == 1"
+"107 : System.out.println(\"Enter x-coordinate: \", )"
+"108 : x2 = in.nextDouble()"
+"108 : x2 = in.nextDouble()" -> "111 : pt2 = new CartesianPoint(x2, y2, )"
+"108 : x2 = in.nextDouble()" -> "108 : x2 = in.nextDouble()" [style=dashed]
+"109 : System.out.println(\"Enter y-coordinate: \", )"
+"110 : y2 = in.nextDouble()"
+"110 : y2 = in.nextDouble()" -> "111 : pt2 = new CartesianPoint(x2, y2, )"
+"110 : y2 = in.nextDouble()" -> "110 : y2 = in.nextDouble()" [style=dashed]
+"111 : pt2 = new CartesianPoint(x2, y2, )"
+"111 : pt2 = new CartesianPoint(x2, y2, )" -> "131 : SameQuad = inSameQuadrant(pt1, pt2, )"
+"111 : pt2 = new CartesianPoint(x2, y2, )" -> "129 : distance = calcDist(pt1, pt2, )"
+"111 : pt2 = new CartesianPoint(x2, y2, )" -> "119 : pt2 = new PolarPoint(rad2, deg2, )" [style=dashed]
+"111 : pt2 = new CartesianPoint(x2, y2, )" -> "111 : pt2 = new CartesianPoint(x2, y2, )" [style=dashed]
+"113 : command2 == 2"
+"115 : System.out.println(\"Enter radius: \", )"
+"116 : rad2 = in.nextDouble()"
+"116 : rad2 = in.nextDouble()" -> "119 : pt2 = new PolarPoint(rad2, deg2, )"
+"116 : rad2 = in.nextDouble()" -> "116 : rad2 = in.nextDouble()" [style=dashed]
+"117 : System.out.println(\"Enter angle (in degrees): \", )"
+"118 : deg2 = in.nextDouble() * 180 / Math.PI"
+"118 : deg2 = in.nextDouble() * 180 / Math.PI" -> "119 : pt2 = new PolarPoint(rad2, deg2, )"
+"118 : deg2 = in.nextDouble() * 180 / Math.PI" -> "118 : deg2 = in.nextDouble() * 180 / Math.PI" [style=dashed]
+"119 : pt2 = new PolarPoint(rad2, deg2, )"
+"119 : pt2 = new PolarPoint(rad2, deg2, )" -> "131 : SameQuad = inSameQuadrant(pt1, pt2, )"
+"119 : pt2 = new PolarPoint(rad2, deg2, )" -> "129 : distance = calcDist(pt1, pt2, )"
+"119 : pt2 = new PolarPoint(rad2, deg2, )" -> "119 : pt2 = new PolarPoint(rad2, deg2, )" [style=dashed]
+"119 : pt2 = new PolarPoint(rad2, deg2, )" -> "111 : pt2 = new CartesianPoint(x2, y2, )" [style=dashed]
+"123 : System.out.println(\"ERROR: BAD COMMAND INPUT!\", )"
+"124 : System.exit(1, )"
+"129 : distance = calcDist(pt1, pt2, )"
+"129 : distance = calcDist(pt1, pt2, )" -> "130 : System.out.println(\"Distance between points: \" + distance, )"
+"129 : distance = calcDist(pt1, pt2, )" -> "129 : distance = calcDist(pt1, pt2, )" [style=dashed]
+"130 : System.out.println(\"Distance between points: \" + distance, )"
+"131 : SameQuad = inSameQuadrant(pt1, pt2, )"
+"131 : SameQuad = inSameQuadrant(pt1, pt2, )" -> "132 : SameQuad == true"
+"131 : SameQuad = inSameQuadrant(pt1, pt2, )" -> "131 : SameQuad = inSameQuadrant(pt1, pt2, )" [style=dashed]
+"132 : SameQuad == true"
+"134 : System.out.println(\"In same quadrant\", )"
+"138 : System.out.println(\"Not in same quadrant\", )"
+}

@@ -27,12 +27,12 @@ this.lht : this.lht = lht,
 this.rht : this.rht = rht, 
 
 BLOCK: StartevaluateL3
-this.rht : this.rht = null, 
 this.lht : this.lht = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL4
-this.rht : this.rht = null, 
 this.lht : this.lht = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StarttoStringL6
 this.rht : this.rht = null, 
@@ -45,20 +45,20 @@ this.lht : this.lht = null,
 BLOCK: StartmainL9
 
 BLOCK: BasicL10
-two : two = new DoubleConstantExpression(2.0, ), 
-one : one = new DoubleConstantExpression(1.0, ), 
-x : x = new Assignment("x", new DoubleConstantExpression(7.0, ), ), 
-four : four = new DoubleConstantExpression(4.0, ), 
-div : div = new DivideExpression(four, two, ), 
-idx : idx = new IdentifierExpression("x", ), 
-Mult : Mult = new MultiplyExpression(three, four, ), 
-three : three = new DoubleConstantExpression(3.0, ), 
-add : add = new AddExpression(one, two, ), 
-subtract : subtract = new SubtractExpression(two, one, ), 
 y : y = new Assignment("y", new DoubleConstantExpression(6.0, ), ), 
-comp : comp = new AddExpression(one, Mult, ), 
-neg : neg = new NegationExpression(one, ), 
 binder : binder = new VariableBindings(), 
+two : two = new DoubleConstantExpression(2.0, ), 
+neg : neg = new NegationExpression(one, ), 
+div : div = new DivideExpression(four, two, ), 
+four : four = new DoubleConstantExpression(4.0, ), 
+three : three = new DoubleConstantExpression(3.0, ), 
+Mult : Mult = new MultiplyExpression(three, four, ), 
+subtract : subtract = new SubtractExpression(two, one, ), 
+add : add = new AddExpression(one, two, ), 
+one : one = new DoubleConstantExpression(1.0, ), 
+comp : comp = new AddExpression(one, Mult, ), 
+idx : idx = new IdentifierExpression("x", ), 
+x : x = new Assignment("x", new DoubleConstantExpression(7.0, ), ), 
 
 BLOCK: Startconstructor1L12
 this.rht : this.rht = null, 
@@ -69,20 +69,20 @@ this.rht : this.rht = rht,
 this.lht : this.lht = lht, 
 
 BLOCK: StartevaluateL15
-this.rht : this.rht = null, 
 this.lht : this.lht = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL16
-this.rht : this.rht = null, 
 this.lht : this.lht = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StarttoStringL18
-this.rht : this.rht = null, 
 this.lht : this.lht = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL19
-this.rht : this.rht = null, 
 this.lht : this.lht = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StartaddBindingL21
 this.binds : this.binds = new ArrayList(), 
@@ -116,8 +116,8 @@ this.binds : this.binds = new ArrayList(),
 
 BLOCK: joinL29
 i : i = i + 1, 
-this.binds : this.binds = new ArrayList(), 
 @temp1 : @temp1 = i, 
+this.binds : this.binds = new ArrayList(), 
 
 BLOCK: StartlookupBindingL30
 this.binds : this.binds = new ArrayList(), 
@@ -130,29 +130,29 @@ this.binds : this.binds = new ArrayList(),
 i : i = 0, 
 
 BLOCK: ForCondL34
-@temp2 : @temp2 = i, 
 this.binds : this.binds = new ArrayList(), 
 i : i = i + 1, i = 0, 
+@temp2 : @temp2 = i, 
 
 BLOCK: LoopL35
-@temp2 : @temp2 = i, 
 this.binds : this.binds = new ArrayList(), 
 i : i = i + 1, i = 0, 
+@temp2 : @temp2 = i, 
 
 BLOCK: BasicL36
-@temp2 : @temp2 = i, 
 this.binds : this.binds = new ArrayList(), 
 i : i = i + 1, i = 0, 
+@temp2 : @temp2 = i, 
 
 BLOCK: trueL37
-@temp2 : @temp2 = i, 
 this.binds : this.binds = new ArrayList(), 
 i : i = i + 1, i = 0, 
+@temp2 : @temp2 = i, 
 
 BLOCK: joinL38
-@temp2 : @temp2 = i, 
 this.binds : this.binds = new ArrayList(), 
 i : i = i + 1, 
+@temp2 : @temp2 = i, 
 
 BLOCK: Startconstructor1L39
 this.rht : this.rht = null, 
@@ -171,12 +171,12 @@ this.rht : this.rht = null,
 this.lht : this.lht = null, 
 
 BLOCK: StarttoStringL45
-this.rht : this.rht = null, 
 this.lht : this.lht = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL46
-this.rht : this.rht = null, 
 this.lht : this.lht = null, 
+this.rht : this.rht = null, 
 
 BLOCK: Startconstructor1L48
 this.id : this.id = null, 
@@ -255,20 +255,20 @@ BLOCK: ForInitL88
 i : i = 0, 
 
 BLOCK: ForCondL89
-i : i = i + 1, i = 0, 
 @temp4 : @temp4 = i, 
+i : i = i + 1, i = 0, 
 
 BLOCK: LoopL90
-i : i = i + 1, 
 @temp4 : @temp4 = i, 
+i : i = i + 1, 
 
 BLOCK: BasicL91
-i : i = i + 1, i = 0, 
 @temp4 : @temp4 = i, 
+i : i = i + 1, i = 0, 
 
 BLOCK: joinL86
-i : i = i + 1, i = 0, 
 @temp4 : @temp4 = i, 
+i : i = i + 1, i = 0, 
 
 BLOCK: StartcheckL92
 
@@ -309,20 +309,20 @@ BLOCK: ForInitL108
 i : i = 0, 
 
 BLOCK: ForCondL109
-i : i = 0, i = i + 1, 
 @temp6 : @temp6 = i, 
+i : i = 0, i = i + 1, 
 
 BLOCK: LoopL110
-i : i = i + 1, 
 @temp6 : @temp6 = i, 
+i : i = i + 1, 
 
 BLOCK: BasicL111
-i : i = 0, i = i + 1, 
 @temp6 : @temp6 = i, 
+i : i = 0, i = i + 1, 
 
 BLOCK: joinL106
-i : i = 0, i = i + 1, 
 @temp6 : @temp6 = i, 
+i : i = 0, i = i + 1, 
 
 BLOCK: StartcheckL112
 
@@ -470,12 +470,12 @@ BLOCK: BasicL179
 this.value : this.value = null, 
 
 BLOCK: Startconstructor1L181
-this.value : this.value = 0.0, 
 this.id : this.id = null, 
+this.value : this.value = 0.0, 
 
 BLOCK: BasicL182
-this.value : this.value = value, 
 this.id : this.id = id, 
+this.value : this.value = value, 
 
 BLOCK: StartnameL184
 this.value : this.value = 0.0, 
@@ -486,12 +486,12 @@ this.value : this.value = 0.0,
 this.id : this.id = null, 
 
 BLOCK: StartvalL187
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: BasicL188
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: StartsetValL190
 this.value : this.value = 0.0, 
@@ -532,16 +532,16 @@ this.lht : this.lht = lht,
 this.rht : this.rht = rht, 
 
 BLOCK: StartevaluateL3
-this.rht : this.rht = null, 
 this.lht : this.lht = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StartevaluateL3
-this.rht : this.rht = null, 
 this.lht : this.lht = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL4
-this.rht : this.rht = null, 
 this.lht : this.lht = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StarttoStringL6
 this.rht : this.rht = null, 
@@ -560,20 +560,20 @@ BLOCK: StartmainL9
 BLOCK: StartmainL9
 
 BLOCK: BasicL10
-two : two = new DoubleConstantExpression(2.0, ), 
-one : one = new DoubleConstantExpression(1.0, ), 
-x : x = new Assignment("x", new DoubleConstantExpression(7.0, ), ), 
-four : four = new DoubleConstantExpression(4.0, ), 
-div : div = new DivideExpression(four, two, ), 
-idx : idx = new IdentifierExpression("x", ), 
-Mult : Mult = new MultiplyExpression(three, four, ), 
-three : three = new DoubleConstantExpression(3.0, ), 
-add : add = new AddExpression(one, two, ), 
-subtract : subtract = new SubtractExpression(two, one, ), 
 y : y = new Assignment("y", new DoubleConstantExpression(6.0, ), ), 
-comp : comp = new AddExpression(one, Mult, ), 
-neg : neg = new NegationExpression(one, ), 
 binder : binder = new VariableBindings(), 
+two : two = new DoubleConstantExpression(2.0, ), 
+neg : neg = new NegationExpression(one, ), 
+div : div = new DivideExpression(four, two, ), 
+four : four = new DoubleConstantExpression(4.0, ), 
+three : three = new DoubleConstantExpression(3.0, ), 
+Mult : Mult = new MultiplyExpression(three, four, ), 
+subtract : subtract = new SubtractExpression(two, one, ), 
+add : add = new AddExpression(one, two, ), 
+one : one = new DoubleConstantExpression(1.0, ), 
+comp : comp = new AddExpression(one, Mult, ), 
+idx : idx = new IdentifierExpression("x", ), 
+x : x = new Assignment("x", new DoubleConstantExpression(7.0, ), ), 
 
 BLOCK: Startconstructor1L12
 this.rht : this.rht = null, 
@@ -588,28 +588,28 @@ this.rht : this.rht = rht,
 this.lht : this.lht = lht, 
 
 BLOCK: StartevaluateL15
-this.rht : this.rht = null, 
 this.lht : this.lht = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StartevaluateL15
-this.rht : this.rht = null, 
 this.lht : this.lht = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL16
-this.rht : this.rht = null, 
 this.lht : this.lht = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StarttoStringL18
-this.rht : this.rht = null, 
 this.lht : this.lht = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StarttoStringL18
-this.rht : this.rht = null, 
 this.lht : this.lht = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL19
-this.rht : this.rht = null, 
 this.lht : this.lht = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StartaddBindingL21
 this.binds : this.binds = new ArrayList(), 
@@ -646,8 +646,8 @@ this.binds : this.binds = new ArrayList(),
 
 BLOCK: joinL29
 i : i = i + 1, 
-this.binds : this.binds = new ArrayList(), 
 @temp1 : @temp1 = i, 
+this.binds : this.binds = new ArrayList(), 
 
 BLOCK: StartlookupBindingL30
 this.binds : this.binds = new ArrayList(), 
@@ -663,29 +663,29 @@ this.binds : this.binds = new ArrayList(),
 i : i = 0, 
 
 BLOCK: ForCondL34
-@temp2 : @temp2 = i, 
 this.binds : this.binds = new ArrayList(), 
 i : i = i + 1, i = 0, 
+@temp2 : @temp2 = i, 
 
 BLOCK: LoopL35
-@temp2 : @temp2 = i, 
 this.binds : this.binds = new ArrayList(), 
 i : i = i + 1, i = 0, 
+@temp2 : @temp2 = i, 
 
 BLOCK: BasicL36
-@temp2 : @temp2 = i, 
 this.binds : this.binds = new ArrayList(), 
 i : i = i + 1, i = 0, 
+@temp2 : @temp2 = i, 
 
 BLOCK: trueL37
-@temp2 : @temp2 = i, 
 this.binds : this.binds = new ArrayList(), 
 i : i = i + 1, i = 0, 
+@temp2 : @temp2 = i, 
 
 BLOCK: joinL38
-@temp2 : @temp2 = i, 
 this.binds : this.binds = new ArrayList(), 
 i : i = i + 1, 
+@temp2 : @temp2 = i, 
 
 BLOCK: Startconstructor1L39
 this.rht : this.rht = null, 
@@ -712,16 +712,16 @@ this.rht : this.rht = null,
 this.lht : this.lht = null, 
 
 BLOCK: StarttoStringL45
-this.rht : this.rht = null, 
 this.lht : this.lht = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StarttoStringL45
-this.rht : this.rht = null, 
 this.lht : this.lht = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL46
-this.rht : this.rht = null, 
 this.lht : this.lht = null, 
+this.rht : this.rht = null, 
 
 BLOCK: Startconstructor1L48
 this.id : this.id = null, 
@@ -823,20 +823,20 @@ BLOCK: ForInitL88
 i : i = 0, 
 
 BLOCK: ForCondL89
-i : i = i + 1, i = 0, 
 @temp4 : @temp4 = i, 
+i : i = i + 1, i = 0, 
 
 BLOCK: LoopL90
-i : i = i + 1, 
 @temp4 : @temp4 = i, 
+i : i = i + 1, 
 
 BLOCK: BasicL91
-i : i = i + 1, i = 0, 
 @temp4 : @temp4 = i, 
+i : i = i + 1, i = 0, 
 
 BLOCK: joinL86
-i : i = i + 1, i = 0, 
 @temp4 : @temp4 = i, 
+i : i = i + 1, i = 0, 
 
 BLOCK: StartcheckL92
 
@@ -881,20 +881,20 @@ BLOCK: ForInitL108
 i : i = 0, 
 
 BLOCK: ForCondL109
-i : i = 0, i = i + 1, 
 @temp6 : @temp6 = i, 
+i : i = 0, i = i + 1, 
 
 BLOCK: LoopL110
-i : i = i + 1, 
 @temp6 : @temp6 = i, 
+i : i = i + 1, 
 
 BLOCK: BasicL111
-i : i = 0, i = i + 1, 
 @temp6 : @temp6 = i, 
+i : i = 0, i = i + 1, 
 
 BLOCK: joinL106
-i : i = 0, i = i + 1, 
 @temp6 : @temp6 = i, 
+i : i = 0, i = i + 1, 
 
 BLOCK: StartcheckL112
 
@@ -1095,16 +1095,16 @@ BLOCK: BasicL179
 this.value : this.value = null, 
 
 BLOCK: Startconstructor1L181
-this.value : this.value = 0.0, 
 this.id : this.id = null, 
+this.value : this.value = 0.0, 
 
 BLOCK: Startconstructor1L181
-this.value : this.value = 0.0, 
 this.id : this.id = null, 
+this.value : this.value = 0.0, 
 
 BLOCK: BasicL182
-this.value : this.value = value, 
 this.id : this.id = id, 
+this.value : this.value = value, 
 
 BLOCK: StartnameL184
 this.value : this.value = 0.0, 
@@ -1119,16 +1119,16 @@ this.value : this.value = 0.0,
 this.id : this.id = null, 
 
 BLOCK: StartvalL187
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: StartvalL187
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: BasicL188
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: StartsetValL190
 this.value : this.value = 0.0, 
@@ -1169,7 +1169,7 @@ this.value : this.value = 0.0,
 BLOCK: BasicL200
 this.value : this.value = 0.0, 
 
-Unfiltered: 10
+Unfiltered: 5
 Filtered: 1
 
 
@@ -1178,7 +1178,7 @@ Duplicate found: 102_Code/102_hw2/dir01/TestCases.java lines [8, 44] and 102_Cod
 8 :	two = new DoubleConstantExpression(2.0, )
 9 :	three = new DoubleConstantExpression(3.0, )
 10 :	four = new DoubleConstantExpression(4.0, )
-35 :	add = new AddExpression(one, two, )
+38 :	subtract = new SubtractExpression(two, one, )
 41 :	Mult = new MultiplyExpression(three, four, )
 44 :	div = new DivideExpression(four, two, )
 102_Code/102_hw2/dir01/TestCases.java ----------
@@ -1187,7 +1187,7 @@ Duplicate found: 102_Code/102_hw2/dir01/TestCases.java lines [8, 44] and 102_Cod
 8 :	two = new DoubleConstantExpression(2.0, )
 50 :	comp = new AddExpression(one, Mult, )
 44 :	div = new DivideExpression(four, two, )
-35 :	add = new AddExpression(one, two, )
+38 :	subtract = new SubtractExpression(two, one, )
 ===========================
 
 
@@ -1195,7 +1195,7 @@ Duplicate found: 102_Code/102_hw2/dir01/TestCases.java lines [8, 44] and 102_Cod
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 4.691 s
-[INFO] Finished at: 2019-05-01T17:15:34-07:00
-[INFO] Final Memory: 36M/1472M
+[INFO] Total time: 4.796 s
+[INFO] Finished at: 2019-05-06T19:56:33-07:00
+[INFO] Final Memory: 37M/1472M
 [INFO] ------------------------------------------------------------------------

@@ -1,13 +1,13 @@
 digraph G {
 "16 : pt1QuadLoc = 0"
-"16 : pt1QuadLoc = 0" -> "36 : pt1QuadLoc = 3" [style=dashed]
-"16 : pt1QuadLoc = 0" -> "32 : pt1QuadLoc = 4" [style=dashed]
 "16 : pt1QuadLoc = 0" -> "21 : pt1QuadLoc = 1" [style=dashed]
 "16 : pt1QuadLoc = 0" -> "41 : pt1QuadLoc = 0" [style=dashed]
+"16 : pt1QuadLoc = 0" -> "32 : pt1QuadLoc = 4" [style=dashed]
+"16 : pt1QuadLoc = 0" -> "36 : pt1QuadLoc = 3" [style=dashed]
 "16 : pt1QuadLoc = 0" -> "25 : pt1QuadLoc = 2" [style=dashed]
 "16 : pt2QuadLoc = 0"
-"16 : pt2QuadLoc = 0" -> "67 : pt2QuadLoc = 0" [style=dashed]
 "16 : pt2QuadLoc = 0" -> "51 : pt2QuadLoc = 2" [style=dashed]
+"16 : pt2QuadLoc = 0" -> "67 : pt2QuadLoc = 0" [style=dashed]
 "16 : pt2QuadLoc = 0" -> "58 : pt2QuadLoc = 4" [style=dashed]
 "16 : pt2QuadLoc = 0" -> "47 : pt2QuadLoc = 1" [style=dashed]
 "16 : pt2QuadLoc = 0" -> "62 : pt2QuadLoc = 3" [style=dashed]

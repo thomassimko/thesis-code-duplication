@@ -32,11 +32,12 @@ public class Driver {
     static final MyLiteralVisitor literalVisitor = new MyLiteralVisitor();
 
     static String currentFileName = null;
-    static boolean checkLiterals = false;
 
     public static void main(String[] args) {
 
         String directory = args[0];
+
+        ArgumentHandler.parseArgs(args);
 
         List<Mapping> mappings = Driver.run(directory);
 
@@ -62,9 +63,9 @@ public class Driver {
         writeExpressionsToFile(allBlocks);
 
         generateReachingDefinitions(allBlocks, starts);
-        printReachingDefinitions(allBlocks);
+        //printReachingDefinitions(allBlocks);
 
-        printPDG(starts);
+        //printPDG(starts);
 
         return GraphComparison.compareGraphs(allExp);
     }

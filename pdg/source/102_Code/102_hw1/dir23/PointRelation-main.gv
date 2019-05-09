@@ -42,8 +42,8 @@ digraph G {
 "99 : System.exit(1, )"
 "103 : System.out.println(\"Which type of point should be created (1 for Cartesian, 2 for Polar)?\", )"
 "104 : command2 = in.nextInt()"
-"104 : command2 = in.nextInt()" -> "105 : command2 == 1"
 "104 : command2 = in.nextInt()" -> "113 : command2 == 2"
+"104 : command2 = in.nextInt()" -> "105 : command2 == 1"
 "104 : command2 = in.nextInt()" -> "104 : command2 = in.nextInt()" [style=dashed]
 "105 : command2 == 1"
 "107 : System.out.println(\"Enter x-coordinate: \", )"

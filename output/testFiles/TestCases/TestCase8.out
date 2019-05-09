@@ -21,140 +21,140 @@
 BLOCK: Starttest1L0
 
 BLOCK: BasicL1
-count : count = 0, 
 sum : sum = 0, 
+count : count = 0, 
 
 BLOCK: ForInitL3
-count : count = 0, 
-i : i = 0, 
 sum : sum = 0, 
+i : i = 0, 
+count : count = 0, 
 
 BLOCK: ForCondL4
-count : count = count + 1, count = 0, 
-i : i = i + 1, i = 0, 
 @temp1 : @temp1 = count, 
-@temp2 : @temp2 = i, 
 sum : sum = 0, sum = sum + arr[i] + 3, 
+i : i = 0, i = i + 1, 
+count : count = count + 1, count = 0, 
+@temp2 : @temp2 = i, 
 
 BLOCK: LoopL5
-count : count = count + 1, 
-i : i = i + 1, 
 @temp1 : @temp1 = count, 
-@temp2 : @temp2 = i, 
 sum : sum = sum + arr[i] + 3, 
+i : i = i + 1, 
+@temp2 : @temp2 = i, 
+count : count = count + 1, 
 
 BLOCK: BasicL6
-count : count = count + 1, count = 0, 
-average : average = sum * 1.0 / count, 
-i : i = i + 1, i = 0, 
 @temp1 : @temp1 = count, 
-@temp2 : @temp2 = i, 
+average : average = sum * 1.0 / count, 
 sum : sum = 0, sum = sum + arr[i] + 3, 
+i : i = 0, i = i + 1, 
+count : count = count + 1, count = 0, 
+@temp2 : @temp2 = i, 
 
 BLOCK: Starttest2L7
 
 BLOCK: BasicL8
-count : count = 0, 
 sum : sum = 0, 
+count : count = 0, 
 
 BLOCK: ForInitL10
-count : count = 0, 
 i : i = 0, 
 sum : sum = 0, 
+count : count = 0, 
 
 BLOCK: ForCondL11
-count : count = count + 1, count = 0, 
 @temp3 : @temp3 = count, 
-i : i = 0, i = i + 1, 
-sum : sum = 0, sum = 3 + sum + arr[i], 
+i : i = i + 1, i = 0, 
+sum : sum = 3 + sum + arr[i], sum = 0, 
 @temp4 : @temp4 = i, 
+count : count = 0, count = count + 1, 
 
 BLOCK: LoopL12
-count : count = count + 1, 
 @temp3 : @temp3 = count, 
 i : i = i + 1, 
 sum : sum = 3 + sum + arr[i], 
 @temp4 : @temp4 = i, 
+count : count = count + 1, 
 
 BLOCK: BasicL13
-count : count = count + 1, count = 0, 
 @temp3 : @temp3 = count, 
-i : i = 0, i = i + 1, 
-sum : sum = 0, sum = 3 + sum + arr[i], 
-@temp4 : @temp4 = i, 
 average : average = sum * 1.0 / count, 
+i : i = i + 1, i = 0, 
+sum : sum = 3 + sum + arr[i], sum = 0, 
+@temp4 : @temp4 = i, 
+count : count = 0, count = count + 1, 
 
 BLOCK: Starttest1L0
 
 BLOCK: Starttest1L0
 
 BLOCK: BasicL1
-count : count = 0, 
 sum : sum = 0, 
+count : count = 0, 
 
 BLOCK: ForInitL3
-count : count = 0, 
-i : i = 0, 
 sum : sum = 0, 
+i : i = 0, 
+count : count = 0, 
 
 BLOCK: ForCondL4
-count : count = count + 1, count = 0, 
-i : i = i + 1, i = 0, 
 @temp1 : @temp1 = count, 
-@temp2 : @temp2 = i, 
 sum : sum = 0, sum = sum + arr[i] + 3, 
+i : i = 0, i = i + 1, 
+count : count = count + 1, count = 0, 
+@temp2 : @temp2 = i, 
 
 BLOCK: LoopL5
-count : count = count + 1, 
-i : i = i + 1, 
 @temp1 : @temp1 = count, 
-@temp2 : @temp2 = i, 
 sum : sum = sum + arr[i] + 3, 
+i : i = i + 1, 
+@temp2 : @temp2 = i, 
+count : count = count + 1, 
 
 BLOCK: BasicL6
-count : count = count + 1, count = 0, 
-average : average = sum * 1.0 / count, 
-i : i = i + 1, i = 0, 
 @temp1 : @temp1 = count, 
-@temp2 : @temp2 = i, 
+average : average = sum * 1.0 / count, 
 sum : sum = 0, sum = sum + arr[i] + 3, 
+i : i = 0, i = i + 1, 
+count : count = count + 1, count = 0, 
+@temp2 : @temp2 = i, 
 
 BLOCK: Starttest2L7
 
 BLOCK: Starttest2L7
 
 BLOCK: BasicL8
-count : count = 0, 
 sum : sum = 0, 
+count : count = 0, 
 
 BLOCK: ForInitL10
-count : count = 0, 
 i : i = 0, 
 sum : sum = 0, 
+count : count = 0, 
 
 BLOCK: ForCondL11
-count : count = count + 1, count = 0, 
 @temp3 : @temp3 = count, 
-i : i = 0, i = i + 1, 
-sum : sum = 0, sum = 3 + sum + arr[i], 
+i : i = i + 1, i = 0, 
+sum : sum = 3 + sum + arr[i], sum = 0, 
 @temp4 : @temp4 = i, 
+count : count = 0, count = count + 1, 
 
 BLOCK: LoopL12
-count : count = count + 1, 
 @temp3 : @temp3 = count, 
 i : i = i + 1, 
 sum : sum = 3 + sum + arr[i], 
 @temp4 : @temp4 = i, 
+count : count = count + 1, 
 
 BLOCK: BasicL13
-count : count = count + 1, count = 0, 
 @temp3 : @temp3 = count, 
-i : i = 0, i = i + 1, 
-sum : sum = 0, sum = 3 + sum + arr[i], 
-@temp4 : @temp4 = i, 
 average : average = sum * 1.0 / count, 
+i : i = i + 1, i = 0, 
+sum : sum = 3 + sum + arr[i], sum = 0, 
+@temp4 : @temp4 = i, 
+count : count = 0, count = count + 1, 
 
-Unfiltered: 61
+Unfiltered: 28
 Filtered: 1
 
 
@@ -162,14 +162,14 @@ Duplicate found: testFiles/TestCases/TestCase8/TestCase8.java lines [9, 17] and 
 testFiles/TestCases/TestCase8/TestCase8.java ----------
 9 :	sum = 0
 10 :	count = 0
-12 :	i = i + 1
-14 :	@temp1 = count
+12 :	@temp2 = i
+14 :	count = count + 1
 17 :	average = sum * 1.0 / count
 testFiles/TestCases/TestCase8/TestCase8.java ----------
 25 :	sum = 0
 26 :	count = 0
-28 :	i < 3
-30 :	count = count + 1
+28 :	i = 0
+30 :	@temp3 = count
 33 :	average = sum * 1.0 / count
 ===========================
 
@@ -178,7 +178,7 @@ testFiles/TestCases/TestCase8/TestCase8.java ----------
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 1.207 s
-[INFO] Finished at: 2019-05-01T17:08:02-07:00
+[INFO] Total time: 1.072 s
+[INFO] Finished at: 2019-05-06T19:47:09-07:00
 [INFO] Final Memory: 11M/437M
 [INFO] ------------------------------------------------------------------------

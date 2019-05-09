@@ -27,12 +27,12 @@ this.e2 : this.e2 = rht,
 this.e1 : this.e1 = lft, 
 
 BLOCK: StartevaluateL3
-this.e2 : this.e2 = null, 
 this.e1 : this.e1 = null, 
+this.e2 : this.e2 = null, 
 
 BLOCK: BasicL4
-this.e2 : this.e2 = null, 
 this.e1 : this.e1 = null, 
+this.e2 : this.e2 = null, 
 
 BLOCK: StarttoStringL6
 this.e2 : this.e2 = null, 
@@ -45,21 +45,21 @@ this.e1 : this.e1 = null,
 BLOCK: StartmainL9
 
 BLOCK: BasicL10
-assignTest : assignTest = new Assignment("blub", exp2, ), 
-exp2 : exp2 = new DoubleConstantExpression(2.5, ), 
 exp1 : exp1 = new DoubleConstantExpression(1.0, ), 
-exp3 : exp3 = new DoubleConstantExpression(-1.2, ), 
 bTest : bTest = new VariableBindings(), 
-expTest : expTest = new IdentifierExpression("b", ), 
+exp3 : exp3 = new DoubleConstantExpression(-1.2, ), 
+assignTest : assignTest = new Assignment("blub", exp2, ), 
 exp4 : exp4 = new DoubleConstantExpression(-5.0, ), 
+expTest : expTest = new IdentifierExpression("b", ), 
+exp2 : exp2 = new DoubleConstantExpression(2.5, ), 
 
 BLOCK: Startconstructor1L12
-this.e2 : this.e2 = null, 
 this.e1 : this.e1 = null, 
+this.e2 : this.e2 = null, 
 
 BLOCK: BasicL13
-this.e2 : this.e2 = rht, 
 this.e1 : this.e1 = lft, 
+this.e2 : this.e2 = rht, 
 
 BLOCK: StartevaluateL15
 this.e2 : this.e2 = null, 
@@ -70,12 +70,12 @@ this.e2 : this.e2 = null,
 this.e1 : this.e1 = null, 
 
 BLOCK: StarttoStringL18
-this.e2 : this.e2 = null, 
 this.e1 : this.e1 = null, 
+this.e2 : this.e2 = null, 
 
 BLOCK: BasicL19
-this.e2 : this.e2 = null, 
 this.e1 : this.e1 = null, 
+this.e2 : this.e2 = null, 
 
 BLOCK: Startconstructor1L21
 this.bindingList : this.bindingList = null, 
@@ -93,67 +93,67 @@ BLOCK: StartlookupBindingL27
 this.bindingList : this.bindingList = null, 
 
 BLOCK: BasicL28
+check : check = 0, 
 this.bindingList : this.bindingList = null, 
 answer : answer = 0.0, 
-check : check = 0, 
 
 BLOCK: LoopL30
+check : check = 0, check = 1, 
 this.bindingList : this.bindingList = null, 
 answer : answer = binding.getValue(), answer = 0.0, 
 binding : binding = this.bindingList, 
-check : check = 0, check = 1, 
 
 BLOCK: BasicL31
+check : check = 0, check = 1, 
 this.bindingList : this.bindingList = null, 
 answer : answer = binding.getValue(), answer = 0.0, 
 binding : binding = this.bindingList, 
-check : check = 0, check = 1, 
 
 BLOCK: trueL32
+check : check = 1, 
 this.bindingList : this.bindingList = null, 
 answer : answer = binding.getValue(), 
 binding : binding = this.bindingList, 
-check : check = 1, 
 
 BLOCK: joinL33
+check : check = 0, check = 1, 
 this.bindingList : this.bindingList = null, 
 answer : answer = binding.getValue(), answer = 0.0, 
 binding : binding = this.bindingList, 
-check : check = 0, check = 1, 
 
 BLOCK: trueL34
+check : check = 0, check = 1, 
 this.bindingList : this.bindingList = null, 
 answer : answer = binding.getValue(), answer = 0.0, 
 binding : binding = this.bindingList, 
-check : check = 0, check = 1, 
 
 BLOCK: falseL36
+check : check = 0, check = 1, 
 this.bindingList : this.bindingList = null, 
 answer : answer = binding.getValue(), answer = 0.0, 
 binding : binding = this.bindingList, 
-check : check = 0, check = 1, 
 
 BLOCK: joinL35
+check : check = 0, check = 1, 
 this.bindingList : this.bindingList = null, 
 answer : answer = binding.getValue(), answer = 0.0, 
 binding : binding = this.bindingList, 
-check : check = 0, check = 1, 
 
 BLOCK: Startconstructor1L37
-this.e1 : this.e1 = null, 
 this.e2 : this.e2 = null, 
+this.e1 : this.e1 = null, 
 
 BLOCK: BasicL38
-this.e1 : this.e1 = lft, 
 this.e2 : this.e2 = rht, 
+this.e1 : this.e1 = lft, 
 
 BLOCK: StartevaluateL40
-this.e1 : this.e1 = null, 
 this.e2 : this.e2 = null, 
+this.e1 : this.e1 = null, 
 
 BLOCK: BasicL41
-this.e1 : this.e1 = null, 
 this.e2 : this.e2 = null, 
+this.e1 : this.e1 = null, 
 
 BLOCK: StarttoStringL43
 this.e1 : this.e1 = null, 
@@ -190,12 +190,12 @@ this.e2 : this.e2 = rht,
 this.e1 : this.e1 = lft, 
 
 BLOCK: StartevaluateL58
-this.e1 : this.e1 = null, 
 this.e2 : this.e2 = null, 
+this.e1 : this.e1 = null, 
 
 BLOCK: BasicL59
-this.e1 : this.e1 = null, 
 this.e2 : this.e2 = null, 
+this.e1 : this.e1 = null, 
 
 BLOCK: StarttoStringL61
 this.e2 : this.e2 = null, 
@@ -206,28 +206,28 @@ this.e2 : this.e2 = null,
 this.e1 : this.e1 = null, 
 
 BLOCK: Startconstructor1L64
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: BasicL65
-this.e : this.e = e, 
 this.id : this.id = id, 
+this.e : this.e = e, 
 
 BLOCK: StartevaluateL67
-this.id : this.id = null, 
 this.e : this.e = null, 
+this.id : this.id = null, 
 
 BLOCK: BasicL68
-this.id : this.id = null, 
 this.e : this.e = null, 
+this.id : this.id = null, 
 
 BLOCK: StarttoStringL70
-this.id : this.id = null, 
 this.e : this.e = null, 
+this.id : this.id = null, 
 
 BLOCK: BasicL71
-this.id : this.id = null, 
 this.e : this.e = null, 
+this.id : this.id = null, 
 
 BLOCK: Startconstructor1L73
 this.e : this.e = null, 
@@ -248,20 +248,20 @@ BLOCK: BasicL80
 this.e : this.e = null, 
 
 BLOCK: Startconstructor1L82
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: BasicL83
-this.id : this.id = id, 
 this.value : this.value = value, 
+this.id : this.id = id, 
 
 BLOCK: StartgetIdL85
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: BasicL86
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: StartgetValueL88
 this.value : this.value = 0.0, 
@@ -302,16 +302,16 @@ this.e2 : this.e2 = rht,
 this.e1 : this.e1 = lft, 
 
 BLOCK: StartevaluateL3
-this.e2 : this.e2 = null, 
 this.e1 : this.e1 = null, 
+this.e2 : this.e2 = null, 
 
 BLOCK: StartevaluateL3
-this.e2 : this.e2 = null, 
 this.e1 : this.e1 = null, 
+this.e2 : this.e2 = null, 
 
 BLOCK: BasicL4
-this.e2 : this.e2 = null, 
 this.e1 : this.e1 = null, 
+this.e2 : this.e2 = null, 
 
 BLOCK: StarttoStringL6
 this.e2 : this.e2 = null, 
@@ -330,25 +330,25 @@ BLOCK: StartmainL9
 BLOCK: StartmainL9
 
 BLOCK: BasicL10
-assignTest : assignTest = new Assignment("blub", exp2, ), 
-exp2 : exp2 = new DoubleConstantExpression(2.5, ), 
 exp1 : exp1 = new DoubleConstantExpression(1.0, ), 
-exp3 : exp3 = new DoubleConstantExpression(-1.2, ), 
 bTest : bTest = new VariableBindings(), 
-expTest : expTest = new IdentifierExpression("b", ), 
+exp3 : exp3 = new DoubleConstantExpression(-1.2, ), 
+assignTest : assignTest = new Assignment("blub", exp2, ), 
 exp4 : exp4 = new DoubleConstantExpression(-5.0, ), 
+expTest : expTest = new IdentifierExpression("b", ), 
+exp2 : exp2 = new DoubleConstantExpression(2.5, ), 
 
 BLOCK: Startconstructor1L12
-this.e2 : this.e2 = null, 
 this.e1 : this.e1 = null, 
+this.e2 : this.e2 = null, 
 
 BLOCK: Startconstructor1L12
-this.e2 : this.e2 = null, 
 this.e1 : this.e1 = null, 
+this.e2 : this.e2 = null, 
 
 BLOCK: BasicL13
-this.e2 : this.e2 = rht, 
 this.e1 : this.e1 = lft, 
+this.e2 : this.e2 = rht, 
 
 BLOCK: StartevaluateL15
 this.e2 : this.e2 = null, 
@@ -363,16 +363,16 @@ this.e2 : this.e2 = null,
 this.e1 : this.e1 = null, 
 
 BLOCK: StarttoStringL18
-this.e2 : this.e2 = null, 
 this.e1 : this.e1 = null, 
+this.e2 : this.e2 = null, 
 
 BLOCK: StarttoStringL18
-this.e2 : this.e2 = null, 
 this.e1 : this.e1 = null, 
+this.e2 : this.e2 = null, 
 
 BLOCK: BasicL19
-this.e2 : this.e2 = null, 
 this.e1 : this.e1 = null, 
+this.e2 : this.e2 = null, 
 
 BLOCK: Startconstructor1L21
 this.bindingList : this.bindingList = null, 
@@ -399,75 +399,75 @@ BLOCK: StartlookupBindingL27
 this.bindingList : this.bindingList = null, 
 
 BLOCK: BasicL28
+check : check = 0, 
 this.bindingList : this.bindingList = null, 
 answer : answer = 0.0, 
-check : check = 0, 
 
 BLOCK: LoopL30
+check : check = 0, check = 1, 
 this.bindingList : this.bindingList = null, 
 answer : answer = binding.getValue(), answer = 0.0, 
 binding : binding = this.bindingList, 
-check : check = 0, check = 1, 
 
 BLOCK: BasicL31
+check : check = 0, check = 1, 
 this.bindingList : this.bindingList = null, 
 answer : answer = binding.getValue(), answer = 0.0, 
 binding : binding = this.bindingList, 
-check : check = 0, check = 1, 
 
 BLOCK: trueL32
+check : check = 1, 
 this.bindingList : this.bindingList = null, 
 answer : answer = binding.getValue(), 
 binding : binding = this.bindingList, 
-check : check = 1, 
 
 BLOCK: joinL33
+check : check = 0, check = 1, 
 this.bindingList : this.bindingList = null, 
 answer : answer = binding.getValue(), answer = 0.0, 
 binding : binding = this.bindingList, 
-check : check = 0, check = 1, 
 
 BLOCK: trueL34
+check : check = 0, check = 1, 
 this.bindingList : this.bindingList = null, 
 answer : answer = binding.getValue(), answer = 0.0, 
 binding : binding = this.bindingList, 
-check : check = 0, check = 1, 
 
 BLOCK: falseL36
+check : check = 0, check = 1, 
 this.bindingList : this.bindingList = null, 
 answer : answer = binding.getValue(), answer = 0.0, 
 binding : binding = this.bindingList, 
-check : check = 0, check = 1, 
 
 BLOCK: joinL35
+check : check = 0, check = 1, 
 this.bindingList : this.bindingList = null, 
 answer : answer = binding.getValue(), answer = 0.0, 
 binding : binding = this.bindingList, 
-check : check = 0, check = 1, 
 
 BLOCK: Startconstructor1L37
-this.e1 : this.e1 = null, 
 this.e2 : this.e2 = null, 
+this.e1 : this.e1 = null, 
 
 BLOCK: Startconstructor1L37
-this.e1 : this.e1 = null, 
 this.e2 : this.e2 = null, 
+this.e1 : this.e1 = null, 
 
 BLOCK: BasicL38
-this.e1 : this.e1 = lft, 
 this.e2 : this.e2 = rht, 
+this.e1 : this.e1 = lft, 
 
 BLOCK: StartevaluateL40
-this.e1 : this.e1 = null, 
 this.e2 : this.e2 = null, 
+this.e1 : this.e1 = null, 
 
 BLOCK: StartevaluateL40
-this.e1 : this.e1 = null, 
 this.e2 : this.e2 = null, 
+this.e1 : this.e1 = null, 
 
 BLOCK: BasicL41
-this.e1 : this.e1 = null, 
 this.e2 : this.e2 = null, 
+this.e1 : this.e1 = null, 
 
 BLOCK: StarttoStringL43
 this.e1 : this.e1 = null, 
@@ -521,16 +521,16 @@ this.e2 : this.e2 = rht,
 this.e1 : this.e1 = lft, 
 
 BLOCK: StartevaluateL58
-this.e1 : this.e1 = null, 
 this.e2 : this.e2 = null, 
+this.e1 : this.e1 = null, 
 
 BLOCK: StartevaluateL58
-this.e1 : this.e1 = null, 
 this.e2 : this.e2 = null, 
+this.e1 : this.e1 = null, 
 
 BLOCK: BasicL59
-this.e1 : this.e1 = null, 
 this.e2 : this.e2 = null, 
+this.e1 : this.e1 = null, 
 
 BLOCK: StarttoStringL61
 this.e2 : this.e2 = null, 
@@ -545,40 +545,40 @@ this.e2 : this.e2 = null,
 this.e1 : this.e1 = null, 
 
 BLOCK: Startconstructor1L64
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: Startconstructor1L64
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: BasicL65
-this.e : this.e = e, 
 this.id : this.id = id, 
+this.e : this.e = e, 
 
 BLOCK: StartevaluateL67
-this.id : this.id = null, 
 this.e : this.e = null, 
+this.id : this.id = null, 
 
 BLOCK: StartevaluateL67
-this.id : this.id = null, 
 this.e : this.e = null, 
+this.id : this.id = null, 
 
 BLOCK: BasicL68
-this.id : this.id = null, 
 this.e : this.e = null, 
+this.id : this.id = null, 
 
 BLOCK: StarttoStringL70
-this.id : this.id = null, 
 this.e : this.e = null, 
+this.id : this.id = null, 
 
 BLOCK: StarttoStringL70
-this.id : this.id = null, 
 this.e : this.e = null, 
+this.id : this.id = null, 
 
 BLOCK: BasicL71
-this.id : this.id = null, 
 this.e : this.e = null, 
+this.id : this.id = null, 
 
 BLOCK: Startconstructor1L73
 this.e : this.e = null, 
@@ -608,28 +608,28 @@ BLOCK: BasicL80
 this.e : this.e = null, 
 
 BLOCK: Startconstructor1L82
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: Startconstructor1L82
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: BasicL83
-this.id : this.id = id, 
 this.value : this.value = value, 
+this.id : this.id = id, 
 
 BLOCK: StartgetIdL85
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: StartgetIdL85
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: BasicL86
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: StartgetValueL88
 this.value : this.value = 0.0, 
@@ -670,47 +670,14 @@ this.x : this.x = 0.0,
 BLOCK: BasicL98
 this.x : this.x = 0.0, 
 
-Unfiltered: 242
-Filtered: 1
-
-
-Duplicate found: 102_Code/102_hw2/dir08/TestCases.java lines [14, 64] and 102_Code/102_hw2/dir08/TestCases.java lines [14, 64]
-102_Code/102_hw2/dir08/TestCases.java ----------
-14 :	exp1 = new DoubleConstantExpression(1.0, )
-15 :	exp2 = new DoubleConstantExpression(2.5, )
-16 :	exp3 = new DoubleConstantExpression(-1.2, )
-19 :	assignTest = null
-28 :	expTest = null
-38 :	expTest = new AddExpression(exp1, exp2, )
-40 :	expTest = new AddExpression(exp1, exp4, )
-43 :	expTest = new SubtractExpression(exp2, exp1, )
-50 :	expTest = new MultiplyExpression(exp2, exp3, )
-53 :	expTest = new DivideExpression(exp2, exp1, )
-58 :	expTest = new IdentifierExpression("a", )
-60 :	expTest = new IdentifierExpression("d", )
-64 :	expTest = new IdentifierExpression("b", )
-102_Code/102_hw2/dir08/TestCases.java ----------
-15 :	exp2 = new DoubleConstantExpression(2.5, )
-14 :	exp1 = new DoubleConstantExpression(1.0, )
-17 :	exp4 = new DoubleConstantExpression(-5.0, )
-28 :	expTest = null
-19 :	assignTest = null
-48 :	expTest = new MultiplyExpression(exp1, exp2, )
-50 :	expTest = new MultiplyExpression(exp2, exp3, )
-53 :	expTest = new DivideExpression(exp2, exp1, )
-40 :	expTest = new AddExpression(exp1, exp4, )
-43 :	expTest = new SubtractExpression(exp2, exp1, )
-62 :	expTest = new IdentifierExpression("c", )
-64 :	expTest = new IdentifierExpression("b", )
-58 :	expTest = new IdentifierExpression("a", )
-===========================
-
+Unfiltered: 0
+Filtered: 0
 
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 5.504 s
-[INFO] Finished at: 2019-05-01T17:15:45-07:00
-[INFO] Final Memory: 20M/1495M
+[INFO] Total time: 4.439 s
+[INFO] Finished at: 2019-05-06T19:56:43-07:00
+[INFO] Final Memory: 24M/1497M
 [INFO] ------------------------------------------------------------------------

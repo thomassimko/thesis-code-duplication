@@ -1,12 +1,12 @@
 digraph G {
 "5 : this.rad = 0.0"
-"5 : this.rad = 0.0" -> "31 : this.rad = radius" [style=dashed]
 "5 : this.rad = 0.0" -> "12 : this.rad = radius" [style=dashed]
+"5 : this.rad = 0.0" -> "31 : this.rad = radius" [style=dashed]
 "6 : this.ang = 0.0"
-"6 : this.ang = 0.0" -> "15 : this.ang = Math.PI + angle" [style=dashed]
 "6 : this.ang = 0.0" -> "23 : this.ang = Math.PI + angle" [style=dashed]
-"6 : this.ang = 0.0" -> "34 : this.ang = 2 * Math.PI + angle" [style=dashed]
+"6 : this.ang = 0.0" -> "15 : this.ang = Math.PI + angle" [style=dashed]
 "6 : this.ang = 0.0" -> "38 : this.ang = angle" [style=dashed]
+"6 : this.ang = 0.0" -> "34 : this.ang = 2 * Math.PI + angle" [style=dashed]
 "10 : radius < 0"
 "12 : this.rad = radius"
 "13 : angle < 0"

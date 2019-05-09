@@ -4,8 +4,8 @@ digraph G {
 "6 : this.ang = 0.0"
 "6 : this.ang = 0.0" -> "62 : ang2 = this.ang + Math.PI / 2"
 "62 : ang2 = this.ang + Math.PI / 2"
-"62 : ang2 = this.ang + Math.PI / 2" -> "67 : new PolarPoint(this.rad, ang2, )"
 "62 : ang2 = this.ang + Math.PI / 2" -> "63 : ang2 >= 2 * Math.PI"
+"62 : ang2 = this.ang + Math.PI / 2" -> "67 : new PolarPoint(this.rad, ang2, )"
 "62 : ang2 = this.ang + Math.PI / 2" -> "65 : ang2 = ang2 - 2 * Math.PI"
 "62 : ang2 = this.ang + Math.PI / 2" -> "65 : ang2 = ang2 - 2 * Math.PI" [style=dashed]
 "63 : ang2 >= 2 * Math.PI"

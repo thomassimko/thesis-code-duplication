@@ -19,72 +19,72 @@
 [INFO] 
 [INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ thesis ---
 BLOCK: Startconstructor1L0
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: BasicL1
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: trueL3
-radius : radius = radius * 1.0, 
+this.angle : this.angle = 0.0, 
 angle : angle = angle + Math.PI, 
 this.radius : this.radius = 0.0, 
-this.angle : this.angle = 0.0, 
+radius : radius = radius * 1.0, 
 
 BLOCK: joinL4
-radius : radius = radius * 1.0, 
+this.angle : this.angle = 0.0, 
 angle : angle = angle + Math.PI, 
 this.radius : this.radius = 0.0, 
-this.angle : this.angle = 0.0, 
+radius : radius = radius * 1.0, 
 
 BLOCK: trueL5
-radius : radius = radius * 1.0, 
+this.angle : this.angle = 0.0, 
 angle : angle = angle + Math.PI, 
 this.radius : this.radius = 0.0, 
-this.angle : this.angle = 0.0, 
+radius : radius = radius * 1.0, 
 
 BLOCK: LoopL7
-radius : radius = radius * 1.0, 
+this.angle : this.angle = 0.0, 
 angle : angle = angle + 2 * Math.PI, 
 this.radius : this.radius = 0.0, 
-this.angle : this.angle = 0.0, 
+radius : radius = radius * 1.0, 
 
 BLOCK: BasicL8
-radius : radius = radius * 1.0, 
-angle : angle = angle + 2 * Math.PI, angle = angle + Math.PI, 
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+angle : angle = angle + Math.PI, angle = angle + 2 * Math.PI, 
+this.radius : this.radius = 0.0, 
+radius : radius = radius * 1.0, 
 
 BLOCK: joinL6
-radius : radius = radius * 1.0, 
-angle : angle = angle + 2 * Math.PI, angle = angle + Math.PI, 
-this.radius : this.radius = radius, 
 this.angle : this.angle = angle, 
+this.radius : this.radius = radius, 
+angle : angle = angle + Math.PI, angle = angle + 2 * Math.PI, 
+radius : radius = radius * 1.0, 
 
 BLOCK: StartxCoordinateL9
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: BasicL10
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: StartyCoordinateL12
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: BasicL13
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: StartradiusL15
-this.angle : this.angle = 0.0, 
 this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
 
 BLOCK: BasicL16
-this.angle : this.angle = 0.0, 
 this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
 
 BLOCK: StartangleL18
 this.radius : this.radius = 0.0, 
@@ -95,152 +95,152 @@ this.radius : this.radius = 0.0,
 this.angle : this.angle = 0.0, 
 
 BLOCK: Startrotate90L21
-this.angle : this.angle = 0.0, 
 this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
 
 BLOCK: BasicL22
-angle90 : angle90 = this.angle + Math.PI / 2, 
-this.angle : this.angle = 0.0, 
 this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+angle90 : angle90 = this.angle + Math.PI / 2, 
 radius90 : radius90 = 0.0, 
 
 BLOCK: StartmainL24
 
 BLOCK: BasicL25
-p2 : p2 = new CartesianPoint(0, 0, ), 
 p1 : p1 = new CartesianPoint(0, 0, ), 
 scanner : scanner = new Scanner(System.in, ), 
 pType1 : pType1 = scanner.nextInt(), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
 
 BLOCK: trueL27
-p1 : p1 = new CartesianPoint(xp1, yp1, ), 
-p2 : p2 = new CartesianPoint(0, 0, ), 
-scanner : scanner = new Scanner(System.in, ), 
 yp1 : yp1 = scanner.nextDouble(), 
 xp1 : xp1 = scanner.nextDouble(), 
+p1 : p1 = new CartesianPoint(xp1, yp1, ), 
+scanner : scanner = new Scanner(System.in, ), 
 pType1 : pType1 = scanner.nextInt(), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
 
 BLOCK: falseL29
-p2 : p2 = new CartesianPoint(0, 0, ), 
 p1 : p1 = new CartesianPoint(0, 0, ), 
 scanner : scanner = new Scanner(System.in, ), 
 pType1 : pType1 = scanner.nextInt(), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
 
 BLOCK: trueL30
-p1 : p1 = new PolarPoint(rp1, ap1, ), 
-p2 : p2 = new CartesianPoint(0, 0, ), 
-scanner : scanner = new Scanner(System.in, ), 
 rp1 : rp1 = scanner.nextDouble(), 
-pType1 : pType1 = scanner.nextInt(), 
 ap1 : ap1 = scanner.nextDouble() * Math.PI / 180, 
+p1 : p1 = new PolarPoint(rp1, ap1, ), 
+scanner : scanner = new Scanner(System.in, ), 
+pType1 : pType1 = scanner.nextInt(), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
 
 BLOCK: falseL32
-p2 : p2 = new CartesianPoint(0, 0, ), 
 p1 : p1 = new CartesianPoint(0, 0, ), 
 scanner : scanner = new Scanner(System.in, ), 
 pType1 : pType1 = scanner.nextInt(), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
 
 BLOCK: joinL31
-p1 : p1 = new PolarPoint(rp1, ap1, ), p1 = new CartesianPoint(0, 0, ), 
-p2 : p2 = new CartesianPoint(0, 0, ), 
-scanner : scanner = new Scanner(System.in, ), 
 rp1 : rp1 = scanner.nextDouble(), 
-pType1 : pType1 = scanner.nextInt(), 
 ap1 : ap1 = scanner.nextDouble() * Math.PI / 180, 
+p1 : p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(rp1, ap1, ), 
+scanner : scanner = new Scanner(System.in, ), 
+pType1 : pType1 = scanner.nextInt(), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
 
 BLOCK: joinL28
-p1 : p1 = new CartesianPoint(xp1, yp1, ), p1 = new PolarPoint(rp1, ap1, ), p1 = new CartesianPoint(0, 0, ), 
-p2 : p2 = new CartesianPoint(0, 0, ), 
-scanner : scanner = new Scanner(System.in, ), 
 rp1 : rp1 = scanner.nextDouble(), 
+pType2 : pType2 = scanner.nextInt(), 
 yp1 : yp1 = scanner.nextDouble(), 
 xp1 : xp1 = scanner.nextDouble(), 
-pType2 : pType2 = scanner.nextInt(), 
-pType1 : pType1 = scanner.nextInt(), 
 ap1 : ap1 = scanner.nextDouble() * Math.PI / 180, 
+p1 : p1 = new CartesianPoint(xp1, yp1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(rp1, ap1, ), 
+scanner : scanner = new Scanner(System.in, ), 
+pType1 : pType1 = scanner.nextInt(), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
 
 BLOCK: trueL33
-p2 : p2 = new CartesianPoint(xp2, yp2, ), 
-p1 : p1 = new CartesianPoint(xp1, yp1, ), p1 = new PolarPoint(rp1, ap1, ), p1 = new CartesianPoint(0, 0, ), 
-yp2 : yp2 = scanner.nextDouble(), 
-scanner : scanner = new Scanner(System.in, ), 
-rp1 : rp1 = scanner.nextDouble(), 
-yp1 : yp1 = scanner.nextDouble(), 
-xp1 : xp1 = scanner.nextDouble(), 
 xp2 : xp2 = scanner.nextDouble(), 
+rp1 : rp1 = scanner.nextDouble(), 
 pType2 : pType2 = scanner.nextInt(), 
-pType1 : pType1 = scanner.nextInt(), 
+yp1 : yp1 = scanner.nextDouble(), 
+yp2 : yp2 = scanner.nextDouble(), 
+xp1 : xp1 = scanner.nextDouble(), 
 ap1 : ap1 = scanner.nextDouble() * Math.PI / 180, 
+p1 : p1 = new CartesianPoint(xp1, yp1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(rp1, ap1, ), 
+scanner : scanner = new Scanner(System.in, ), 
+p2 : p2 = new CartesianPoint(xp2, yp2, ), 
+pType1 : pType1 = scanner.nextInt(), 
 
 BLOCK: falseL35
-p1 : p1 = new CartesianPoint(xp1, yp1, ), p1 = new PolarPoint(rp1, ap1, ), p1 = new CartesianPoint(0, 0, ), 
-p2 : p2 = new CartesianPoint(0, 0, ), 
-scanner : scanner = new Scanner(System.in, ), 
 rp1 : rp1 = scanner.nextDouble(), 
+pType2 : pType2 = scanner.nextInt(), 
 yp1 : yp1 = scanner.nextDouble(), 
 xp1 : xp1 = scanner.nextDouble(), 
-pType2 : pType2 = scanner.nextInt(), 
-pType1 : pType1 = scanner.nextInt(), 
 ap1 : ap1 = scanner.nextDouble() * Math.PI / 180, 
+p1 : p1 = new CartesianPoint(xp1, yp1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(rp1, ap1, ), 
+scanner : scanner = new Scanner(System.in, ), 
+pType1 : pType1 = scanner.nextInt(), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
 
 BLOCK: trueL36
-p2 : p2 = new PolarPoint(rp2, ap2, ), 
-p1 : p1 = new CartesianPoint(xp1, yp1, ), p1 = new PolarPoint(rp1, ap1, ), p1 = new CartesianPoint(0, 0, ), 
-scanner : scanner = new Scanner(System.in, ), 
 rp1 : rp1 = scanner.nextDouble(), 
-yp1 : yp1 = scanner.nextDouble(), 
-xp1 : xp1 = scanner.nextDouble(), 
 rp2 : rp2 = scanner.nextDouble(), 
 pType2 : pType2 = scanner.nextInt(), 
-pType1 : pType1 = scanner.nextInt(), 
-ap2 : ap2 = scanner.nextDouble() * Math.PI / 180, 
+yp1 : yp1 = scanner.nextDouble(), 
+xp1 : xp1 = scanner.nextDouble(), 
 ap1 : ap1 = scanner.nextDouble() * Math.PI / 180, 
+p1 : p1 = new CartesianPoint(xp1, yp1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(rp1, ap1, ), 
+scanner : scanner = new Scanner(System.in, ), 
+p2 : p2 = new PolarPoint(rp2, ap2, ), 
+ap2 : ap2 = scanner.nextDouble() * Math.PI / 180, 
+pType1 : pType1 = scanner.nextInt(), 
 
 BLOCK: falseL38
-p1 : p1 = new CartesianPoint(xp1, yp1, ), p1 = new PolarPoint(rp1, ap1, ), p1 = new CartesianPoint(0, 0, ), 
-p2 : p2 = new CartesianPoint(0, 0, ), 
-scanner : scanner = new Scanner(System.in, ), 
 rp1 : rp1 = scanner.nextDouble(), 
+pType2 : pType2 = scanner.nextInt(), 
 yp1 : yp1 = scanner.nextDouble(), 
 xp1 : xp1 = scanner.nextDouble(), 
-pType2 : pType2 = scanner.nextInt(), 
-pType1 : pType1 = scanner.nextInt(), 
 ap1 : ap1 = scanner.nextDouble() * Math.PI / 180, 
+p1 : p1 = new CartesianPoint(xp1, yp1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(rp1, ap1, ), 
+scanner : scanner = new Scanner(System.in, ), 
+pType1 : pType1 = scanner.nextInt(), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
 
 BLOCK: joinL37
-p2 : p2 = new CartesianPoint(0, 0, ), p2 = new PolarPoint(rp2, ap2, ), 
-p1 : p1 = new CartesianPoint(xp1, yp1, ), p1 = new PolarPoint(rp1, ap1, ), p1 = new CartesianPoint(0, 0, ), 
-scanner : scanner = new Scanner(System.in, ), 
 rp1 : rp1 = scanner.nextDouble(), 
-yp1 : yp1 = scanner.nextDouble(), 
-xp1 : xp1 = scanner.nextDouble(), 
 rp2 : rp2 = scanner.nextDouble(), 
 pType2 : pType2 = scanner.nextInt(), 
-pType1 : pType1 = scanner.nextInt(), 
-ap2 : ap2 = scanner.nextDouble() * Math.PI / 180, 
+yp1 : yp1 = scanner.nextDouble(), 
+xp1 : xp1 = scanner.nextDouble(), 
 ap1 : ap1 = scanner.nextDouble() * Math.PI / 180, 
+p1 : p1 = new CartesianPoint(xp1, yp1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(rp1, ap1, ), 
+scanner : scanner = new Scanner(System.in, ), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new PolarPoint(rp2, ap2, ), 
+ap2 : ap2 = scanner.nextDouble() * Math.PI / 180, 
+pType1 : pType1 = scanner.nextInt(), 
 
 BLOCK: joinL34
-p2 : p2 = new CartesianPoint(xp2, yp2, ), p2 = new CartesianPoint(0, 0, ), p2 = new PolarPoint(rp2, ap2, ), 
-p1 : p1 = new CartesianPoint(xp1, yp1, ), p1 = new PolarPoint(rp1, ap1, ), p1 = new CartesianPoint(0, 0, ), 
+xp2 : xp2 = scanner.nextDouble(), 
+rp1 : rp1 = scanner.nextDouble(), 
+coordDistance : coordDistance = distance(p1, p2, ), 
+pType2 : pType2 = scanner.nextInt(), 
 yp2 : yp2 = scanner.nextDouble(), 
 scanner : scanner = new Scanner(System.in, ), 
-yp1 : yp1 = scanner.nextDouble(), 
-xp2 : xp2 = scanner.nextDouble(), 
 rp2 : rp2 = scanner.nextDouble(), 
-pType1 : pType1 = scanner.nextInt(), 
-ap1 : ap1 = scanner.nextDouble() * Math.PI / 180, 
-rp1 : rp1 = scanner.nextDouble(), 
+yp1 : yp1 = scanner.nextDouble(), 
 xp1 : xp1 = scanner.nextDouble(), 
-pType2 : pType2 = scanner.nextInt(), 
-coordDistance : coordDistance = distance(p1, p2, ), 
+ap1 : ap1 = scanner.nextDouble() * Math.PI / 180, 
+p1 : p1 = new CartesianPoint(xp1, yp1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(rp1, ap1, ), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(xp2, yp2, ), p2 = new PolarPoint(rp2, ap2, ), 
+pType1 : pType1 = scanner.nextInt(), 
 ap2 : ap2 = scanner.nextDouble() * Math.PI / 180, 
 
 BLOCK: StartdistanceL39
 
 BLOCK: BasicL40
-ydif : ydif = pat1.yCoordinate() - pat2.yCoordinate(), 
 xdif : xdif = pat1.xCoordinate() - pat2.xCoordinate(), 
+ydif : ydif = pat1.yCoordinate() - pat2.yCoordinate(), 
 
 BLOCK: StartquadrantL42
 
@@ -282,96 +282,96 @@ pete1 : pete1 = 5,
 
 BLOCK: joinL55
 pete2 : pete2 = 0, 
-pete1 : pete1 = 5, pete1 = 4, 
+pete1 : pete1 = 4, pete1 = 5, 
 
 BLOCK: joinL52
 pete2 : pete2 = 0, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, 
+pete1 : pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: joinL49
 pete2 : pete2 = 0, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, 
+pete1 : pete1 = 2, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: joinL46
 pete2 : pete2 = 0, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: trueL57
 pete2 : pete2 = 1, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: falseL59
 pete2 : pete2 = 0, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: trueL60
 pete2 : pete2 = 2, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: falseL62
 pete2 : pete2 = 0, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: trueL63
 pete2 : pete2 = 3, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: falseL65
 pete2 : pete2 = 0, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: trueL66
 pete2 : pete2 = 4, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: falseL68
 pete2 : pete2 = 5, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: joinL67
 pete2 : pete2 = 5, pete2 = 4, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: joinL64
-pete2 : pete2 = 5, pete2 = 3, pete2 = 4, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete2 : pete2 = 5, pete2 = 4, pete2 = 3, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: joinL61
-pete2 : pete2 = 5, pete2 = 2, pete2 = 3, pete2 = 4, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete2 : pete2 = 2, pete2 = 5, pete2 = 4, pete2 = 3, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: joinL58
-pete2 : pete2 = 5, pete2 = 1, pete2 = 2, pete2 = 3, pete2 = 4, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete2 : pete2 = 1, pete2 = 2, pete2 = 5, pete2 = 4, pete2 = 3, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: trueL69
-pete2 : pete2 = 5, pete2 = 1, pete2 = 2, pete2 = 3, pete2 = 4, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete2 : pete2 = 1, pete2 = 2, pete2 = 5, pete2 = 4, pete2 = 3, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: falseL71
-pete2 : pete2 = 5, pete2 = 1, pete2 = 2, pete2 = 3, pete2 = 4, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete2 : pete2 = 1, pete2 = 2, pete2 = 5, pete2 = 4, pete2 = 3, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: joinL70
-pete2 : pete2 = 5, pete2 = 1, pete2 = 2, pete2 = 3, pete2 = 4, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete2 : pete2 = 1, pete2 = 2, pete2 = 5, pete2 = 4, pete2 = 3, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: StartmainL72
 
 BLOCK: BasicL73
 pt4 : pt4 = new PolarPoint(0.0, 0.0, ), 
-pt3 : pt3 = new PolarPoint(-1.0, Math.PI * 5 / 4, ), 
-pt1 : pt1 = new PolarPoint(1.0, Math.PI, ), 
 pt2 : pt2 = new PolarPoint(5.0, Math.PI / 2, ), 
 pt5 : pt5 = new PolarPoint(1.0, Math.PI * 7 / 4, ), 
+pt3 : pt3 = new PolarPoint(-1.0, Math.PI * 5 / 4, ), 
+pt1 : pt1 = new PolarPoint(1.0, Math.PI, ), 
 
 BLOCK: Startconstructor1L75
-this.xCord : this.xCord = 0.0, 
 this.yCord : this.yCord = 0.0, 
+this.xCord : this.xCord = 0.0, 
 
 BLOCK: BasicL76
-this.xCord : this.xCord = x_coord, 
 this.yCord : this.yCord = y_coord, 
+this.xCord : this.xCord = x_coord, 
 
 BLOCK: StartxCoordinateL78
 this.yCord : this.yCord = 0.0, 
@@ -390,123 +390,123 @@ this.yCord : this.yCord = 0.0,
 this.xCord : this.xCord = 0.0, 
 
 BLOCK: StartradiusL84
-this.yCord : this.yCord = 0.0, 
 this.xCord : this.xCord = 0.0, 
+this.yCord : this.yCord = 0.0, 
 
 BLOCK: BasicL85
-this.yCord : this.yCord = 0.0, 
 this.xCord : this.xCord = 0.0, 
+this.yCord : this.yCord = 0.0, 
 
 BLOCK: StartangleL87
-this.yCord : this.yCord = 0.0, 
 this.xCord : this.xCord = 0.0, 
+this.yCord : this.yCord = 0.0, 
 
 BLOCK: BasicL88
-this.yCord : this.yCord = 0.0, 
 this.xCord : this.xCord = 0.0, 
+this.yCord : this.yCord = 0.0, 
 
 BLOCK: Startrotate90L90
 this.yCord : this.yCord = 0.0, 
 this.xCord : this.xCord = 0.0, 
 
 BLOCK: BasicL91
-this.yCord : this.yCord = 0.0, 
-x90 : x90 = this.yCord * 1, 
-this.xCord : this.xCord = 0.0, 
 y90 : y90 = this.xCord, 
+x90 : x90 = this.yCord * 1, 
+this.yCord : this.yCord = 0.0, 
+this.xCord : this.xCord = 0.0, 
 
 BLOCK: StartmainL93
 
 BLOCK: BasicL94
 pt5 : pt5 = new CartesianPoint(-2.5, -7.0, ), 
 pt1 : pt1 = new CartesianPoint(1.0, 1.0, ), 
+pt4 : pt4 = new CartesianPoint(0.0, 0.0, ), 
 pt2 : pt2 = new CartesianPoint(5.0, 2.0, ), 
 pt3 : pt3 = new CartesianPoint(1.5, 3.0, ), 
-pt4 : pt4 = new CartesianPoint(0.0, 0.0, ), 
 
 BLOCK: Startconstructor1L0
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: Startconstructor1L0
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: BasicL1
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: trueL3
-radius : radius = radius * 1.0, 
+this.angle : this.angle = 0.0, 
 angle : angle = angle + Math.PI, 
 this.radius : this.radius = 0.0, 
-this.angle : this.angle = 0.0, 
+radius : radius = radius * 1.0, 
 
 BLOCK: joinL4
-radius : radius = radius * 1.0, 
+this.angle : this.angle = 0.0, 
 angle : angle = angle + Math.PI, 
 this.radius : this.radius = 0.0, 
-this.angle : this.angle = 0.0, 
+radius : radius = radius * 1.0, 
 
 BLOCK: trueL5
-radius : radius = radius * 1.0, 
+this.angle : this.angle = 0.0, 
 angle : angle = angle + Math.PI, 
 this.radius : this.radius = 0.0, 
-this.angle : this.angle = 0.0, 
+radius : radius = radius * 1.0, 
 
 BLOCK: LoopL7
-radius : radius = radius * 1.0, 
+this.angle : this.angle = 0.0, 
 angle : angle = angle + 2 * Math.PI, 
 this.radius : this.radius = 0.0, 
-this.angle : this.angle = 0.0, 
+radius : radius = radius * 1.0, 
 
 BLOCK: BasicL8
-radius : radius = radius * 1.0, 
-angle : angle = angle + 2 * Math.PI, angle = angle + Math.PI, 
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+angle : angle = angle + Math.PI, angle = angle + 2 * Math.PI, 
+this.radius : this.radius = 0.0, 
+radius : radius = radius * 1.0, 
 
 BLOCK: joinL6
-radius : radius = radius * 1.0, 
-angle : angle = angle + 2 * Math.PI, angle = angle + Math.PI, 
-this.radius : this.radius = radius, 
 this.angle : this.angle = angle, 
+this.radius : this.radius = radius, 
+angle : angle = angle + Math.PI, angle = angle + 2 * Math.PI, 
+radius : radius = radius * 1.0, 
 
 BLOCK: StartxCoordinateL9
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: StartxCoordinateL9
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: BasicL10
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: StartyCoordinateL12
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: StartyCoordinateL12
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: BasicL13
-this.radius : this.radius = 0.0, 
-this.angle : this.angle = 0.0, 
-
-BLOCK: StartradiusL15
 this.angle : this.angle = 0.0, 
 this.radius : this.radius = 0.0, 
 
 BLOCK: StartradiusL15
-this.angle : this.angle = 0.0, 
 this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+
+BLOCK: StartradiusL15
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
 
 BLOCK: BasicL16
-this.angle : this.angle = 0.0, 
 this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
 
 BLOCK: StartangleL18
 this.radius : this.radius = 0.0, 
@@ -521,17 +521,17 @@ this.radius : this.radius = 0.0,
 this.angle : this.angle = 0.0, 
 
 BLOCK: Startrotate90L21
-this.angle : this.angle = 0.0, 
 this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
 
 BLOCK: Startrotate90L21
-this.angle : this.angle = 0.0, 
 this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
 
 BLOCK: BasicL22
-angle90 : angle90 = this.angle + Math.PI / 2, 
-this.angle : this.angle = 0.0, 
 this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+angle90 : angle90 = this.angle + Math.PI / 2, 
 radius90 : radius90 = 0.0, 
 
 BLOCK: StartmainL24
@@ -539,133 +539,133 @@ BLOCK: StartmainL24
 BLOCK: StartmainL24
 
 BLOCK: BasicL25
-p2 : p2 = new CartesianPoint(0, 0, ), 
 p1 : p1 = new CartesianPoint(0, 0, ), 
 scanner : scanner = new Scanner(System.in, ), 
 pType1 : pType1 = scanner.nextInt(), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
 
 BLOCK: trueL27
-p1 : p1 = new CartesianPoint(xp1, yp1, ), 
-p2 : p2 = new CartesianPoint(0, 0, ), 
-scanner : scanner = new Scanner(System.in, ), 
 yp1 : yp1 = scanner.nextDouble(), 
 xp1 : xp1 = scanner.nextDouble(), 
+p1 : p1 = new CartesianPoint(xp1, yp1, ), 
+scanner : scanner = new Scanner(System.in, ), 
 pType1 : pType1 = scanner.nextInt(), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
 
 BLOCK: falseL29
-p2 : p2 = new CartesianPoint(0, 0, ), 
 p1 : p1 = new CartesianPoint(0, 0, ), 
 scanner : scanner = new Scanner(System.in, ), 
 pType1 : pType1 = scanner.nextInt(), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
 
 BLOCK: trueL30
-p1 : p1 = new PolarPoint(rp1, ap1, ), 
-p2 : p2 = new CartesianPoint(0, 0, ), 
-scanner : scanner = new Scanner(System.in, ), 
 rp1 : rp1 = scanner.nextDouble(), 
-pType1 : pType1 = scanner.nextInt(), 
 ap1 : ap1 = scanner.nextDouble() * Math.PI / 180, 
+p1 : p1 = new PolarPoint(rp1, ap1, ), 
+scanner : scanner = new Scanner(System.in, ), 
+pType1 : pType1 = scanner.nextInt(), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
 
 BLOCK: falseL32
-p2 : p2 = new CartesianPoint(0, 0, ), 
 p1 : p1 = new CartesianPoint(0, 0, ), 
 scanner : scanner = new Scanner(System.in, ), 
 pType1 : pType1 = scanner.nextInt(), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
 
 BLOCK: joinL31
-p1 : p1 = new PolarPoint(rp1, ap1, ), p1 = new CartesianPoint(0, 0, ), 
-p2 : p2 = new CartesianPoint(0, 0, ), 
-scanner : scanner = new Scanner(System.in, ), 
 rp1 : rp1 = scanner.nextDouble(), 
-pType1 : pType1 = scanner.nextInt(), 
 ap1 : ap1 = scanner.nextDouble() * Math.PI / 180, 
+p1 : p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(rp1, ap1, ), 
+scanner : scanner = new Scanner(System.in, ), 
+pType1 : pType1 = scanner.nextInt(), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
 
 BLOCK: joinL28
-p1 : p1 = new CartesianPoint(xp1, yp1, ), p1 = new PolarPoint(rp1, ap1, ), p1 = new CartesianPoint(0, 0, ), 
-p2 : p2 = new CartesianPoint(0, 0, ), 
-scanner : scanner = new Scanner(System.in, ), 
 rp1 : rp1 = scanner.nextDouble(), 
+pType2 : pType2 = scanner.nextInt(), 
 yp1 : yp1 = scanner.nextDouble(), 
 xp1 : xp1 = scanner.nextDouble(), 
-pType2 : pType2 = scanner.nextInt(), 
-pType1 : pType1 = scanner.nextInt(), 
 ap1 : ap1 = scanner.nextDouble() * Math.PI / 180, 
+p1 : p1 = new CartesianPoint(xp1, yp1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(rp1, ap1, ), 
+scanner : scanner = new Scanner(System.in, ), 
+pType1 : pType1 = scanner.nextInt(), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
 
 BLOCK: trueL33
-p2 : p2 = new CartesianPoint(xp2, yp2, ), 
-p1 : p1 = new CartesianPoint(xp1, yp1, ), p1 = new PolarPoint(rp1, ap1, ), p1 = new CartesianPoint(0, 0, ), 
-yp2 : yp2 = scanner.nextDouble(), 
-scanner : scanner = new Scanner(System.in, ), 
-rp1 : rp1 = scanner.nextDouble(), 
-yp1 : yp1 = scanner.nextDouble(), 
-xp1 : xp1 = scanner.nextDouble(), 
 xp2 : xp2 = scanner.nextDouble(), 
+rp1 : rp1 = scanner.nextDouble(), 
 pType2 : pType2 = scanner.nextInt(), 
-pType1 : pType1 = scanner.nextInt(), 
+yp1 : yp1 = scanner.nextDouble(), 
+yp2 : yp2 = scanner.nextDouble(), 
+xp1 : xp1 = scanner.nextDouble(), 
 ap1 : ap1 = scanner.nextDouble() * Math.PI / 180, 
+p1 : p1 = new CartesianPoint(xp1, yp1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(rp1, ap1, ), 
+scanner : scanner = new Scanner(System.in, ), 
+p2 : p2 = new CartesianPoint(xp2, yp2, ), 
+pType1 : pType1 = scanner.nextInt(), 
 
 BLOCK: falseL35
-p1 : p1 = new CartesianPoint(xp1, yp1, ), p1 = new PolarPoint(rp1, ap1, ), p1 = new CartesianPoint(0, 0, ), 
-p2 : p2 = new CartesianPoint(0, 0, ), 
-scanner : scanner = new Scanner(System.in, ), 
 rp1 : rp1 = scanner.nextDouble(), 
+pType2 : pType2 = scanner.nextInt(), 
 yp1 : yp1 = scanner.nextDouble(), 
 xp1 : xp1 = scanner.nextDouble(), 
-pType2 : pType2 = scanner.nextInt(), 
-pType1 : pType1 = scanner.nextInt(), 
 ap1 : ap1 = scanner.nextDouble() * Math.PI / 180, 
+p1 : p1 = new CartesianPoint(xp1, yp1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(rp1, ap1, ), 
+scanner : scanner = new Scanner(System.in, ), 
+pType1 : pType1 = scanner.nextInt(), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
 
 BLOCK: trueL36
-p2 : p2 = new PolarPoint(rp2, ap2, ), 
-p1 : p1 = new CartesianPoint(xp1, yp1, ), p1 = new PolarPoint(rp1, ap1, ), p1 = new CartesianPoint(0, 0, ), 
-scanner : scanner = new Scanner(System.in, ), 
 rp1 : rp1 = scanner.nextDouble(), 
-yp1 : yp1 = scanner.nextDouble(), 
-xp1 : xp1 = scanner.nextDouble(), 
 rp2 : rp2 = scanner.nextDouble(), 
 pType2 : pType2 = scanner.nextInt(), 
-pType1 : pType1 = scanner.nextInt(), 
-ap2 : ap2 = scanner.nextDouble() * Math.PI / 180, 
+yp1 : yp1 = scanner.nextDouble(), 
+xp1 : xp1 = scanner.nextDouble(), 
 ap1 : ap1 = scanner.nextDouble() * Math.PI / 180, 
+p1 : p1 = new CartesianPoint(xp1, yp1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(rp1, ap1, ), 
+scanner : scanner = new Scanner(System.in, ), 
+p2 : p2 = new PolarPoint(rp2, ap2, ), 
+ap2 : ap2 = scanner.nextDouble() * Math.PI / 180, 
+pType1 : pType1 = scanner.nextInt(), 
 
 BLOCK: falseL38
-p1 : p1 = new CartesianPoint(xp1, yp1, ), p1 = new PolarPoint(rp1, ap1, ), p1 = new CartesianPoint(0, 0, ), 
-p2 : p2 = new CartesianPoint(0, 0, ), 
-scanner : scanner = new Scanner(System.in, ), 
 rp1 : rp1 = scanner.nextDouble(), 
+pType2 : pType2 = scanner.nextInt(), 
 yp1 : yp1 = scanner.nextDouble(), 
 xp1 : xp1 = scanner.nextDouble(), 
-pType2 : pType2 = scanner.nextInt(), 
-pType1 : pType1 = scanner.nextInt(), 
 ap1 : ap1 = scanner.nextDouble() * Math.PI / 180, 
+p1 : p1 = new CartesianPoint(xp1, yp1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(rp1, ap1, ), 
+scanner : scanner = new Scanner(System.in, ), 
+pType1 : pType1 = scanner.nextInt(), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
 
 BLOCK: joinL37
-p2 : p2 = new CartesianPoint(0, 0, ), p2 = new PolarPoint(rp2, ap2, ), 
-p1 : p1 = new CartesianPoint(xp1, yp1, ), p1 = new PolarPoint(rp1, ap1, ), p1 = new CartesianPoint(0, 0, ), 
-scanner : scanner = new Scanner(System.in, ), 
 rp1 : rp1 = scanner.nextDouble(), 
-yp1 : yp1 = scanner.nextDouble(), 
-xp1 : xp1 = scanner.nextDouble(), 
 rp2 : rp2 = scanner.nextDouble(), 
 pType2 : pType2 = scanner.nextInt(), 
-pType1 : pType1 = scanner.nextInt(), 
-ap2 : ap2 = scanner.nextDouble() * Math.PI / 180, 
+yp1 : yp1 = scanner.nextDouble(), 
+xp1 : xp1 = scanner.nextDouble(), 
 ap1 : ap1 = scanner.nextDouble() * Math.PI / 180, 
+p1 : p1 = new CartesianPoint(xp1, yp1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(rp1, ap1, ), 
+scanner : scanner = new Scanner(System.in, ), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new PolarPoint(rp2, ap2, ), 
+ap2 : ap2 = scanner.nextDouble() * Math.PI / 180, 
+pType1 : pType1 = scanner.nextInt(), 
 
 BLOCK: joinL34
-p2 : p2 = new CartesianPoint(xp2, yp2, ), p2 = new CartesianPoint(0, 0, ), p2 = new PolarPoint(rp2, ap2, ), 
-p1 : p1 = new CartesianPoint(xp1, yp1, ), p1 = new PolarPoint(rp1, ap1, ), p1 = new CartesianPoint(0, 0, ), 
+xp2 : xp2 = scanner.nextDouble(), 
+rp1 : rp1 = scanner.nextDouble(), 
+coordDistance : coordDistance = distance(p1, p2, ), 
+pType2 : pType2 = scanner.nextInt(), 
 yp2 : yp2 = scanner.nextDouble(), 
 scanner : scanner = new Scanner(System.in, ), 
-yp1 : yp1 = scanner.nextDouble(), 
-xp2 : xp2 = scanner.nextDouble(), 
 rp2 : rp2 = scanner.nextDouble(), 
-pType1 : pType1 = scanner.nextInt(), 
-ap1 : ap1 = scanner.nextDouble() * Math.PI / 180, 
-rp1 : rp1 = scanner.nextDouble(), 
+yp1 : yp1 = scanner.nextDouble(), 
 xp1 : xp1 = scanner.nextDouble(), 
-pType2 : pType2 = scanner.nextInt(), 
-coordDistance : coordDistance = distance(p1, p2, ), 
+ap1 : ap1 = scanner.nextDouble() * Math.PI / 180, 
+p1 : p1 = new CartesianPoint(xp1, yp1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(rp1, ap1, ), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(xp2, yp2, ), p2 = new PolarPoint(rp2, ap2, ), 
+pType1 : pType1 = scanner.nextInt(), 
 ap2 : ap2 = scanner.nextDouble() * Math.PI / 180, 
 
 BLOCK: StartdistanceL39
@@ -673,8 +673,8 @@ BLOCK: StartdistanceL39
 BLOCK: StartdistanceL39
 
 BLOCK: BasicL40
-ydif : ydif = pat1.yCoordinate() - pat2.yCoordinate(), 
 xdif : xdif = pat1.xCoordinate() - pat2.xCoordinate(), 
+ydif : ydif = pat1.yCoordinate() - pat2.yCoordinate(), 
 
 BLOCK: StartquadrantL42
 
@@ -718,79 +718,79 @@ pete1 : pete1 = 5,
 
 BLOCK: joinL55
 pete2 : pete2 = 0, 
-pete1 : pete1 = 5, pete1 = 4, 
+pete1 : pete1 = 4, pete1 = 5, 
 
 BLOCK: joinL52
 pete2 : pete2 = 0, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, 
+pete1 : pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: joinL49
 pete2 : pete2 = 0, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, 
+pete1 : pete1 = 2, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: joinL46
 pete2 : pete2 = 0, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: trueL57
 pete2 : pete2 = 1, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: falseL59
 pete2 : pete2 = 0, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: trueL60
 pete2 : pete2 = 2, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: falseL62
 pete2 : pete2 = 0, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: trueL63
 pete2 : pete2 = 3, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: falseL65
 pete2 : pete2 = 0, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: trueL66
 pete2 : pete2 = 4, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: falseL68
 pete2 : pete2 = 5, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: joinL67
 pete2 : pete2 = 5, pete2 = 4, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: joinL64
-pete2 : pete2 = 5, pete2 = 3, pete2 = 4, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete2 : pete2 = 5, pete2 = 4, pete2 = 3, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: joinL61
-pete2 : pete2 = 5, pete2 = 2, pete2 = 3, pete2 = 4, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete2 : pete2 = 2, pete2 = 5, pete2 = 4, pete2 = 3, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: joinL58
-pete2 : pete2 = 5, pete2 = 1, pete2 = 2, pete2 = 3, pete2 = 4, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete2 : pete2 = 1, pete2 = 2, pete2 = 5, pete2 = 4, pete2 = 3, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: trueL69
-pete2 : pete2 = 5, pete2 = 1, pete2 = 2, pete2 = 3, pete2 = 4, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete2 : pete2 = 1, pete2 = 2, pete2 = 5, pete2 = 4, pete2 = 3, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: falseL71
-pete2 : pete2 = 5, pete2 = 1, pete2 = 2, pete2 = 3, pete2 = 4, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete2 : pete2 = 1, pete2 = 2, pete2 = 5, pete2 = 4, pete2 = 3, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: joinL70
-pete2 : pete2 = 5, pete2 = 1, pete2 = 2, pete2 = 3, pete2 = 4, 
-pete1 : pete1 = 5, pete1 = 3, pete1 = 4, pete1 = 2, pete1 = 1, 
+pete2 : pete2 = 1, pete2 = 2, pete2 = 5, pete2 = 4, pete2 = 3, 
+pete1 : pete1 = 2, pete1 = 1, pete1 = 4, pete1 = 5, pete1 = 3, 
 
 BLOCK: StartmainL72
 
@@ -798,22 +798,22 @@ BLOCK: StartmainL72
 
 BLOCK: BasicL73
 pt4 : pt4 = new PolarPoint(0.0, 0.0, ), 
-pt3 : pt3 = new PolarPoint(-1.0, Math.PI * 5 / 4, ), 
-pt1 : pt1 = new PolarPoint(1.0, Math.PI, ), 
 pt2 : pt2 = new PolarPoint(5.0, Math.PI / 2, ), 
 pt5 : pt5 = new PolarPoint(1.0, Math.PI * 7 / 4, ), 
+pt3 : pt3 = new PolarPoint(-1.0, Math.PI * 5 / 4, ), 
+pt1 : pt1 = new PolarPoint(1.0, Math.PI, ), 
 
 BLOCK: Startconstructor1L75
-this.xCord : this.xCord = 0.0, 
 this.yCord : this.yCord = 0.0, 
+this.xCord : this.xCord = 0.0, 
 
 BLOCK: Startconstructor1L75
-this.xCord : this.xCord = 0.0, 
 this.yCord : this.yCord = 0.0, 
+this.xCord : this.xCord = 0.0, 
 
 BLOCK: BasicL76
-this.xCord : this.xCord = x_coord, 
 this.yCord : this.yCord = y_coord, 
+this.xCord : this.xCord = x_coord, 
 
 BLOCK: StartxCoordinateL78
 this.yCord : this.yCord = 0.0, 
@@ -840,28 +840,28 @@ this.yCord : this.yCord = 0.0,
 this.xCord : this.xCord = 0.0, 
 
 BLOCK: StartradiusL84
-this.yCord : this.yCord = 0.0, 
 this.xCord : this.xCord = 0.0, 
+this.yCord : this.yCord = 0.0, 
 
 BLOCK: StartradiusL84
-this.yCord : this.yCord = 0.0, 
 this.xCord : this.xCord = 0.0, 
+this.yCord : this.yCord = 0.0, 
 
 BLOCK: BasicL85
-this.yCord : this.yCord = 0.0, 
 this.xCord : this.xCord = 0.0, 
+this.yCord : this.yCord = 0.0, 
 
 BLOCK: StartangleL87
-this.yCord : this.yCord = 0.0, 
 this.xCord : this.xCord = 0.0, 
+this.yCord : this.yCord = 0.0, 
 
 BLOCK: StartangleL87
-this.yCord : this.yCord = 0.0, 
 this.xCord : this.xCord = 0.0, 
+this.yCord : this.yCord = 0.0, 
 
 BLOCK: BasicL88
-this.yCord : this.yCord = 0.0, 
 this.xCord : this.xCord = 0.0, 
+this.yCord : this.yCord = 0.0, 
 
 BLOCK: Startrotate90L90
 this.yCord : this.yCord = 0.0, 
@@ -872,10 +872,10 @@ this.yCord : this.yCord = 0.0,
 this.xCord : this.xCord = 0.0, 
 
 BLOCK: BasicL91
-this.yCord : this.yCord = 0.0, 
-x90 : x90 = this.yCord * 1, 
-this.xCord : this.xCord = 0.0, 
 y90 : y90 = this.xCord, 
+x90 : x90 = this.yCord * 1, 
+this.yCord : this.yCord = 0.0, 
+this.xCord : this.xCord = 0.0, 
 
 BLOCK: StartmainL93
 
@@ -884,91 +884,29 @@ BLOCK: StartmainL93
 BLOCK: BasicL94
 pt5 : pt5 = new CartesianPoint(-2.5, -7.0, ), 
 pt1 : pt1 = new CartesianPoint(1.0, 1.0, ), 
+pt4 : pt4 = new CartesianPoint(0.0, 0.0, ), 
 pt2 : pt2 = new CartesianPoint(5.0, 2.0, ), 
 pt3 : pt3 = new CartesianPoint(1.5, 3.0, ), 
-pt4 : pt4 = new CartesianPoint(0.0, 0.0, ), 
 
-Unfiltered: 75852
-Filtered: 3
-
-
-Duplicate found: 102_Code/102_hw1/dir21/PointRelation.java lines [8, 68] and 102_Code/102_hw1/dir21/PointRelation.java lines [9, 63]
-102_Code/102_hw1/dir21/PointRelation.java ----------
-8 :	p1 = new CartesianPoint(0, 0, )
-19 :	xp1 = scanner.nextDouble()
-22 :	yp1 = scanner.nextDouble()
-24 :	p1 = new CartesianPoint(xp1, yp1, )
-31 :	rp1 = scanner.nextDouble()
-54 :	yp2 = scanner.nextDouble()
-56 :	p2 = new CartesianPoint(xp2, yp2, )
-63 :	rp2 = scanner.nextDouble()
-66 :	ap2 = scanner.nextDouble() * Math.PI / 180
-68 :	p2 = new PolarPoint(rp2, ap2, )
-102_Code/102_hw1/dir21/PointRelation.java ----------
-9 :	p2 = new CartesianPoint(0, 0, )
-51 :	xp2 = scanner.nextDouble()
-54 :	yp2 = scanner.nextDouble()
-56 :	p2 = new CartesianPoint(xp2, yp2, )
-63 :	rp2 = scanner.nextDouble()
-19 :	xp1 = scanner.nextDouble()
-24 :	p1 = new CartesianPoint(xp1, yp1, )
-31 :	rp1 = scanner.nextDouble()
-34 :	ap1 = scanner.nextDouble() * Math.PI / 180
-36 :	p1 = new PolarPoint(rp1, ap1, )
-===========================
+Unfiltered: 360
+Filtered: 1
 
 
-
-Duplicate found: 102_Code/102_hw1/dir21/PointRelation.java lines [8, 68] and 102_Code/102_hw1/dir21/PointRelation.java lines [9, 68]
-102_Code/102_hw1/dir21/PointRelation.java ----------
-8 :	p1 = new CartesianPoint(0, 0, )
-19 :	xp1 = scanner.nextDouble()
-31 :	rp1 = scanner.nextDouble()
-34 :	ap1 = scanner.nextDouble() * Math.PI / 180
-36 :	p1 = new PolarPoint(rp1, ap1, )
-54 :	yp2 = scanner.nextDouble()
-56 :	p2 = new CartesianPoint(xp2, yp2, )
-63 :	rp2 = scanner.nextDouble()
-66 :	ap2 = scanner.nextDouble() * Math.PI / 180
-68 :	p2 = new PolarPoint(rp2, ap2, )
-102_Code/102_hw1/dir21/PointRelation.java ----------
-9 :	p2 = new CartesianPoint(0, 0, )
-54 :	yp2 = scanner.nextDouble()
-63 :	rp2 = scanner.nextDouble()
-66 :	ap2 = scanner.nextDouble() * Math.PI / 180
-68 :	p2 = new PolarPoint(rp2, ap2, )
-19 :	xp1 = scanner.nextDouble()
-24 :	p1 = new CartesianPoint(xp1, yp1, )
-31 :	rp1 = scanner.nextDouble()
-34 :	ap1 = scanner.nextDouble() * Math.PI / 180
-36 :	p1 = new PolarPoint(rp1, ap1, )
-===========================
-
-
-
-Duplicate found: 102_Code/102_hw1/dir21/PointRelation.java lines [95, 134] and 102_Code/102_hw1/dir21/PointRelation.java lines [95, 134]
-102_Code/102_hw1/dir21/PointRelation.java ----------
-95 :	pete2 = 0
-99 :	pete1 = 1
-103 :	pete1 = 2
-111 :	pete1 = 4
-114 :	pete1 = 5
-119 :	pete2 = 1
-123 :	pete2 = 2
-127 :	pete2 = 3
-131 :	pete2 = 4
-134 :	pete2 = 5
+Duplicate found: 102_Code/102_hw1/dir21/PointRelation.java lines [95, 114] and 102_Code/102_hw1/dir21/PointRelation.java lines [95, 134]
 102_Code/102_hw1/dir21/PointRelation.java ----------
 95 :	pete1 = 0
-127 :	pete2 = 3
-123 :	pete2 = 2
-134 :	pete2 = 5
-119 :	pete2 = 1
-107 :	pete1 = 3
-103 :	pete1 = 2
 99 :	pete1 = 1
+103 :	pete1 = 2
+107 :	pete1 = 3
 111 :	pete1 = 4
 114 :	pete1 = 5
+102_Code/102_hw1/dir21/PointRelation.java ----------
+95 :	pete2 = 0
+131 :	pete2 = 4
+123 :	pete2 = 2
+119 :	pete2 = 1
+127 :	pete2 = 3
+134 :	pete2 = 5
 ===========================
 
 
@@ -976,7 +914,7 @@ Duplicate found: 102_Code/102_hw1/dir21/PointRelation.java lines [95, 134] and 1
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 7.720 s
-[INFO] Finished at: 2019-05-01T17:12:21-07:00
-[INFO] Final Memory: 19M/1385M
+[INFO] Total time: 6.790 s
+[INFO] Finished at: 2019-05-06T19:53:08-07:00
+[INFO] Final Memory: 22M/1002M
 [INFO] ------------------------------------------------------------------------

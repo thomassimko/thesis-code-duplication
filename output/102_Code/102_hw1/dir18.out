@@ -19,12 +19,12 @@
 [INFO] 
 [INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ thesis ---
 BLOCK: Startconstructor1L0
-this.theta : this.theta = 0, 
 this.rad : this.rad = 0, 
+this.theta : this.theta = 0, 
 
 BLOCK: BasicL1
-this.theta : this.theta = 0, 
 this.rad : this.rad = 1, 
+this.theta : this.theta = 0, 
 
 BLOCK: Startconstructor2L3
 this.theta : this.theta = 0, 
@@ -39,7 +39,7 @@ this.theta : this.theta = this.theta + 180,
 this.rad : this.rad = Math.abs(radius, ), 
 
 BLOCK: joinL7
-this.theta : this.theta = this.theta + 180, this.theta = angle, 
+this.theta : this.theta = angle, this.theta = this.theta + 180, 
 this.rad : this.rad = Math.abs(radius, ), 
 
 BLOCK: LoopL8
@@ -47,7 +47,7 @@ this.theta : this.theta = this.theta - 360,
 this.rad : this.rad = Math.abs(radius, ), 
 
 BLOCK: BasicL9
-this.theta : this.theta = this.theta + 180, this.theta = angle, this.theta = this.theta - 360, 
+this.theta : this.theta = angle, this.theta = this.theta + 180, this.theta = this.theta - 360, 
 this.rad : this.rad = Math.abs(radius, ), 
 
 BLOCK: LoopL10
@@ -67,28 +67,28 @@ this.rad : this.rad = 0,
 this.theta : this.theta = 0, 
 
 BLOCK: StartyCoordinateL15
-this.theta : this.theta = 0, 
 this.rad : this.rad = 0, 
+this.theta : this.theta = 0, 
 
 BLOCK: BasicL16
-this.theta : this.theta = 0, 
 this.rad : this.rad = 0, 
+this.theta : this.theta = 0, 
 
 BLOCK: StartradiusL18
-this.theta : this.theta = 0, 
 this.rad : this.rad = 0, 
+this.theta : this.theta = 0, 
 
 BLOCK: BasicL19
-this.theta : this.theta = 0, 
 this.rad : this.rad = 0, 
+this.theta : this.theta = 0, 
 
 BLOCK: StartangleL21
-this.rad : this.rad = 0, 
 this.theta : this.theta = 0, 
+this.rad : this.rad = 0, 
 
 BLOCK: BasicL22
-this.rad : this.rad = 0, 
 this.theta : this.theta = 0, 
+this.rad : this.rad = 0, 
 
 BLOCK: Startrotate90L24
 this.theta : this.theta = 0, 
@@ -101,24 +101,24 @@ this.rad : this.rad = 0,
 BLOCK: StartmainL27
 
 BLOCK: BasicL28
+in : in = new Scanner(System.in, ), 
 pt1 : pt1 = getPoint(in, ), 
 pt2 : pt2 = getPoint(in, ), 
-in : in = new Scanner(System.in, ), 
 
 BLOCK: trueL30
+in : in = new Scanner(System.in, ), 
 pt1 : pt1 = getPoint(in, ), 
 pt2 : pt2 = getPoint(in, ), 
-in : in = new Scanner(System.in, ), 
 
 BLOCK: falseL32
+in : in = new Scanner(System.in, ), 
 pt1 : pt1 = getPoint(in, ), 
 pt2 : pt2 = getPoint(in, ), 
-in : in = new Scanner(System.in, ), 
 
 BLOCK: joinL31
+in : in = new Scanner(System.in, ), 
 pt1 : pt1 = getPoint(in, ), 
 pt2 : pt2 = getPoint(in, ), 
-in : in = new Scanner(System.in, ), 
 
 BLOCK: StartgetPointL33
 
@@ -158,8 +158,8 @@ choice : choice = in.nextInt(),
 BLOCK: StartcartesianGeneratorL46
 
 BLOCK: BasicL47
-x : x = 0, 
 y : y = 0, 
+x : x = 0, 
 
 BLOCK: BasicL49
 x : x = in.nextDouble(), 
@@ -218,12 +218,12 @@ angle : angle = in.nextDouble(),
 BLOCK: StartpointDistanceL68
 
 BLOCK: BasicL69
-dy : dy = y1 - y2, 
 x2 : x2 = pt2.xCoordinate(), 
 dx : dx = x1 - x2, 
 y2 : y2 = pt2.yCoordinate(), 
-x1 : x1 = pt1.xCoordinate(), 
 y1 : y1 = pt1.yCoordinate(), 
+x1 : x1 = pt1.xCoordinate(), 
+dy : dy = y1 - y2, 
 
 BLOCK: StartsameQuadrantL71
 
@@ -242,17 +242,17 @@ quad1 : quad1 = quadrant(pt1, ),
 BLOCK: StartquadrantL76
 
 BLOCK: BasicL77
-angle : angle = pt.angle(), 
 quad : quad = 1, 
+angle : angle = pt.angle(), 
 
 BLOCK: LoopL79
-angle : angle = angle - 90, 
 quad : quad = quad + 1, 
+angle : angle = angle - 90, 
 @temp1 : @temp1 = quad, 
 
 BLOCK: BasicL80
-angle : angle = pt.angle(), angle = angle - 90, 
 quad : quad = 1, quad = quad + 1, 
+angle : angle = angle - 90, angle = pt.angle(), 
 @temp1 : @temp1 = quad, 
 
 BLOCK: StarttestXCoordL81
@@ -287,12 +287,12 @@ BLOCK: StartmainL96
 BLOCK: BasicL97
 
 BLOCK: Startconstructor1L99
-this.y : this.y = 0, 
 this.x : this.x = 0, 
+this.y : this.y = 0, 
 
 BLOCK: BasicL100
-this.y : this.y = 1, 
 this.x : this.x = 1, 
+this.y : this.y = 1, 
 
 BLOCK: Startconstructor2L102
 this.x : this.x = 0, 
@@ -303,12 +303,12 @@ this.x : this.x = x_coord,
 this.y : this.y = y_coord, 
 
 BLOCK: StartxCoordinateL105
-this.x : this.x = 0, 
 this.y : this.y = 0, 
+this.x : this.x = 0, 
 
 BLOCK: BasicL106
-this.x : this.x = 0, 
 this.y : this.y = 0, 
+this.x : this.x = 0, 
 
 BLOCK: StartyCoordinateL108
 this.y : this.y = 0, 
@@ -327,20 +327,20 @@ this.y : this.y = 0,
 this.x : this.x = 0, 
 
 BLOCK: StartangleL114
-this.x : this.x = 0, 
 this.y : this.y = 0, 
+this.x : this.x = 0, 
 
 BLOCK: BasicL115
-this.x : this.x = 0, 
 this.y : this.y = 0, 
+this.x : this.x = 0, 
 
 BLOCK: Startrotate90L117
-this.y : this.y = 0, 
 this.x : this.x = 0, 
+this.y : this.y = 0, 
 
 BLOCK: BasicL118
-this.y : this.y = 0, 
 this.x : this.x = 0, 
+this.y : this.y = 0, 
 
 BLOCK: StarttestXCoordL120
 
@@ -366,24 +366,24 @@ BLOCK: StarttestRotate90L132
 
 BLOCK: BasicL133
 pt1 : pt1 = new CartesianPoint(0, 1, ), 
-pt2 : pt2 = pt.rotate90(), 
 pt : pt = new CartesianPoint(1, 0, ), 
+pt2 : pt2 = pt.rotate90(), 
 
 BLOCK: StartmainL135
 
 BLOCK: BasicL136
 
 BLOCK: Startconstructor1L0
-this.theta : this.theta = 0, 
 this.rad : this.rad = 0, 
+this.theta : this.theta = 0, 
 
 BLOCK: Startconstructor1L0
-this.theta : this.theta = 0, 
 this.rad : this.rad = 0, 
+this.theta : this.theta = 0, 
 
 BLOCK: BasicL1
-this.theta : this.theta = 0, 
 this.rad : this.rad = 1, 
+this.theta : this.theta = 0, 
 
 BLOCK: Startconstructor2L3
 this.theta : this.theta = 0, 
@@ -402,7 +402,7 @@ this.theta : this.theta = this.theta + 180,
 this.rad : this.rad = Math.abs(radius, ), 
 
 BLOCK: joinL7
-this.theta : this.theta = this.theta + 180, this.theta = angle, 
+this.theta : this.theta = angle, this.theta = this.theta + 180, 
 this.rad : this.rad = Math.abs(radius, ), 
 
 BLOCK: LoopL8
@@ -410,7 +410,7 @@ this.theta : this.theta = this.theta - 360,
 this.rad : this.rad = Math.abs(radius, ), 
 
 BLOCK: BasicL9
-this.theta : this.theta = this.theta + 180, this.theta = angle, this.theta = this.theta - 360, 
+this.theta : this.theta = angle, this.theta = this.theta + 180, this.theta = this.theta - 360, 
 this.rad : this.rad = Math.abs(radius, ), 
 
 BLOCK: LoopL10
@@ -434,40 +434,40 @@ this.rad : this.rad = 0,
 this.theta : this.theta = 0, 
 
 BLOCK: StartyCoordinateL15
-this.theta : this.theta = 0, 
 this.rad : this.rad = 0, 
+this.theta : this.theta = 0, 
 
 BLOCK: StartyCoordinateL15
-this.theta : this.theta = 0, 
 this.rad : this.rad = 0, 
+this.theta : this.theta = 0, 
 
 BLOCK: BasicL16
-this.theta : this.theta = 0, 
 this.rad : this.rad = 0, 
+this.theta : this.theta = 0, 
 
 BLOCK: StartradiusL18
-this.theta : this.theta = 0, 
 this.rad : this.rad = 0, 
+this.theta : this.theta = 0, 
 
 BLOCK: StartradiusL18
-this.theta : this.theta = 0, 
 this.rad : this.rad = 0, 
+this.theta : this.theta = 0, 
 
 BLOCK: BasicL19
-this.theta : this.theta = 0, 
-this.rad : this.rad = 0, 
-
-BLOCK: StartangleL21
 this.rad : this.rad = 0, 
 this.theta : this.theta = 0, 
 
 BLOCK: StartangleL21
-this.rad : this.rad = 0, 
 this.theta : this.theta = 0, 
+this.rad : this.rad = 0, 
+
+BLOCK: StartangleL21
+this.theta : this.theta = 0, 
+this.rad : this.rad = 0, 
 
 BLOCK: BasicL22
-this.rad : this.rad = 0, 
 this.theta : this.theta = 0, 
+this.rad : this.rad = 0, 
 
 BLOCK: Startrotate90L24
 this.theta : this.theta = 0, 
@@ -486,24 +486,24 @@ BLOCK: StartmainL27
 BLOCK: StartmainL27
 
 BLOCK: BasicL28
+in : in = new Scanner(System.in, ), 
 pt1 : pt1 = getPoint(in, ), 
 pt2 : pt2 = getPoint(in, ), 
-in : in = new Scanner(System.in, ), 
 
 BLOCK: trueL30
+in : in = new Scanner(System.in, ), 
 pt1 : pt1 = getPoint(in, ), 
 pt2 : pt2 = getPoint(in, ), 
-in : in = new Scanner(System.in, ), 
 
 BLOCK: falseL32
+in : in = new Scanner(System.in, ), 
 pt1 : pt1 = getPoint(in, ), 
 pt2 : pt2 = getPoint(in, ), 
-in : in = new Scanner(System.in, ), 
 
 BLOCK: joinL31
+in : in = new Scanner(System.in, ), 
 pt1 : pt1 = getPoint(in, ), 
 pt2 : pt2 = getPoint(in, ), 
-in : in = new Scanner(System.in, ), 
 
 BLOCK: StartgetPointL33
 
@@ -547,8 +547,8 @@ BLOCK: StartcartesianGeneratorL46
 BLOCK: StartcartesianGeneratorL46
 
 BLOCK: BasicL47
-x : x = 0, 
 y : y = 0, 
+x : x = 0, 
 
 BLOCK: BasicL49
 x : x = in.nextDouble(), 
@@ -611,12 +611,12 @@ BLOCK: StartpointDistanceL68
 BLOCK: StartpointDistanceL68
 
 BLOCK: BasicL69
-dy : dy = y1 - y2, 
 x2 : x2 = pt2.xCoordinate(), 
 dx : dx = x1 - x2, 
 y2 : y2 = pt2.yCoordinate(), 
-x1 : x1 = pt1.xCoordinate(), 
 y1 : y1 = pt1.yCoordinate(), 
+x1 : x1 = pt1.xCoordinate(), 
+dy : dy = y1 - y2, 
 
 BLOCK: StartsameQuadrantL71
 
@@ -639,17 +639,17 @@ BLOCK: StartquadrantL76
 BLOCK: StartquadrantL76
 
 BLOCK: BasicL77
-angle : angle = pt.angle(), 
 quad : quad = 1, 
+angle : angle = pt.angle(), 
 
 BLOCK: LoopL79
-angle : angle = angle - 90, 
 quad : quad = quad + 1, 
+angle : angle = angle - 90, 
 @temp1 : @temp1 = quad, 
 
 BLOCK: BasicL80
-angle : angle = pt.angle(), angle = angle - 90, 
 quad : quad = 1, quad = quad + 1, 
+angle : angle = angle - 90, angle = pt.angle(), 
 @temp1 : @temp1 = quad, 
 
 BLOCK: StarttestXCoordL81
@@ -696,16 +696,16 @@ BLOCK: StartmainL96
 BLOCK: BasicL97
 
 BLOCK: Startconstructor1L99
-this.y : this.y = 0, 
 this.x : this.x = 0, 
+this.y : this.y = 0, 
 
 BLOCK: Startconstructor1L99
-this.y : this.y = 0, 
 this.x : this.x = 0, 
+this.y : this.y = 0, 
 
 BLOCK: BasicL100
-this.y : this.y = 1, 
 this.x : this.x = 1, 
+this.y : this.y = 1, 
 
 BLOCK: Startconstructor2L102
 this.x : this.x = 0, 
@@ -720,16 +720,16 @@ this.x : this.x = x_coord,
 this.y : this.y = y_coord, 
 
 BLOCK: StartxCoordinateL105
-this.x : this.x = 0, 
 this.y : this.y = 0, 
+this.x : this.x = 0, 
 
 BLOCK: StartxCoordinateL105
-this.x : this.x = 0, 
 this.y : this.y = 0, 
+this.x : this.x = 0, 
 
 BLOCK: BasicL106
-this.x : this.x = 0, 
 this.y : this.y = 0, 
+this.x : this.x = 0, 
 
 BLOCK: StartyCoordinateL108
 this.y : this.y = 0, 
@@ -756,28 +756,28 @@ this.y : this.y = 0,
 this.x : this.x = 0, 
 
 BLOCK: StartangleL114
-this.x : this.x = 0, 
 this.y : this.y = 0, 
+this.x : this.x = 0, 
 
 BLOCK: StartangleL114
-this.x : this.x = 0, 
 this.y : this.y = 0, 
+this.x : this.x = 0, 
 
 BLOCK: BasicL115
-this.x : this.x = 0, 
-this.y : this.y = 0, 
-
-BLOCK: Startrotate90L117
 this.y : this.y = 0, 
 this.x : this.x = 0, 
 
 BLOCK: Startrotate90L117
-this.y : this.y = 0, 
 this.x : this.x = 0, 
+this.y : this.y = 0, 
+
+BLOCK: Startrotate90L117
+this.x : this.x = 0, 
+this.y : this.y = 0, 
 
 BLOCK: BasicL118
-this.y : this.y = 0, 
 this.x : this.x = 0, 
+this.y : this.y = 0, 
 
 BLOCK: StarttestXCoordL120
 
@@ -813,8 +813,8 @@ BLOCK: StarttestRotate90L132
 
 BLOCK: BasicL133
 pt1 : pt1 = new CartesianPoint(0, 1, ), 
-pt2 : pt2 = pt.rotate90(), 
 pt : pt = new CartesianPoint(1, 0, ), 
+pt2 : pt2 = pt.rotate90(), 
 
 BLOCK: StartmainL135
 
@@ -829,7 +829,7 @@ Filtered: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 3.216 s
-[INFO] Finished at: 2019-05-01T17:13:27-07:00
-[INFO] Final Memory: 22M/1217M
+[INFO] Total time: 3.099 s
+[INFO] Finished at: 2019-05-06T19:54:11-07:00
+[INFO] Final Memory: 22M/1216M
 [INFO] ------------------------------------------------------------------------

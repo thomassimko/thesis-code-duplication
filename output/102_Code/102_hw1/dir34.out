@@ -27,8 +27,8 @@ this.angle : this.angle = 0.0,
 this.radius : this.radius = Math.abs(radius, ), 
 
 BLOCK: trueL3
-angle : angle = angle + 180, 
 this.angle : this.angle = 0.0, 
+angle : angle = angle + 180, 
 this.radius : this.radius = Math.abs(radius, ), 
 
 BLOCK: falseL5
@@ -36,18 +36,18 @@ this.angle : this.angle = angle,
 this.radius : this.radius = Math.abs(radius, ), 
 
 BLOCK: joinL4
-angle : angle = angle + 180, 
 this.angle : this.angle = 0.0, this.angle = angle, 
+angle : angle = angle + 180, 
 this.radius : this.radius = Math.abs(radius, ), 
 
 BLOCK: LoopL6
-angle : angle = angle + 180, 
 this.angle : this.angle = this.angle + 360, 
+angle : angle = angle + 180, 
 this.radius : this.radius = Math.abs(radius, ), 
 
 BLOCK: BasicL7
+this.angle : this.angle = 0.0, this.angle = this.angle + 360, this.angle = angle, 
 angle : angle = angle + 180, 
-this.angle : this.angle = 0.0, this.angle = angle, this.angle = this.angle + 360, 
 this.radius : this.radius = Math.abs(radius, ), 
 
 BLOCK: StartxCoordinateL8
@@ -59,12 +59,12 @@ this.radius : this.radius = 0.0,
 this.angle : this.angle = 0.0, 
 
 BLOCK: StartyCoordinateL11
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: BasicL12
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: StartangleL14
 this.radius : this.radius = 0.0, 
@@ -94,339 +94,339 @@ BLOCK: StartmainL23
 
 BLOCK: BasicL24
 same : same = true, 
-y : y = 0.0, 
+radius : radius = 0.0, 
 a : a = new CartesianPoint(0, 0, ), 
+x2 : x2 = 0.0, 
+pointype : pointype = scan.nextInt(), 
 angle : angle = 0.0, 
 y2 : y2 = 0.0, 
-x2 : x2 = 0.0, 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, 
 distance : distance = 0.0, 
-radius2 : radius2 = 0.0, 
-angle2 : angle2 = 0.0, 
 x : x = 0.0, 
-pointype : pointype = scan.nextInt(), 
+angle2 : angle2 = 0.0, 
+radius2 : radius2 = 0.0, 
 b : b = new CartesianPoint(0, 0, ), 
+y : y = 0.0, 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: trueL26
 same : same = true, 
-y : y = 0.0, 
+radius : radius = 0.0, 
 a : a = new CartesianPoint(0, 0, ), 
+x2 : x2 = 0.0, 
+pointype : pointype = scan.nextInt(), 
 angle : angle = 0.0, 
 y2 : y2 = 0.0, 
-x2 : x2 = 0.0, 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, 
 distance : distance = 0.0, 
-radius2 : radius2 = 0.0, 
-angle2 : angle2 = 0.0, 
 x : x = 0.0, 
-pointype : pointype = scan.nextInt(), 
+angle2 : angle2 = 0.0, 
+radius2 : radius2 = 0.0, 
 b : b = new CartesianPoint(0, 0, ), 
+y : y = 0.0, 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: joinL27
 same : same = true, 
-y : y = 0.0, 
+radius : radius = 0.0, 
 a : a = new CartesianPoint(0, 0, ), 
+x2 : x2 = 0.0, 
+pointype : pointype = scan.nextInt(), 
 angle : angle = 0.0, 
 y2 : y2 = 0.0, 
-x2 : x2 = 0.0, 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, 
 distance : distance = 0.0, 
-radius2 : radius2 = 0.0, 
-angle2 : angle2 = 0.0, 
 x : x = 0.0, 
-pointype : pointype = scan.nextInt(), 
+angle2 : angle2 = 0.0, 
+radius2 : radius2 = 0.0, 
 b : b = new CartesianPoint(0, 0, ), 
+y : y = 0.0, 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: trueL28
-y : y = scan.nextDouble(), 
 same : same = true, 
+radius : radius = 0.0, 
 a : a = new CartesianPoint(x, y, ), 
+x2 : x2 = 0.0, 
+pointype : pointype = scan.nextInt(), 
 angle : angle = 0.0, 
 y2 : y2 = 0.0, 
-x2 : x2 = 0.0, 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, 
-distance : distance = 0.0, 
-radius2 : radius2 = 0.0, 
-angle2 : angle2 = 0.0, 
 x : x = scan.nextDouble(), 
-pointype : pointype = scan.nextInt(), 
+distance : distance = 0.0, 
+angle2 : angle2 = 0.0, 
+radius2 : radius2 = 0.0, 
+y : y = scan.nextDouble(), 
 b : b = new CartesianPoint(0, 0, ), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: joinL29
-y : y = 0.0, y = scan.nextDouble(), 
 same : same = true, 
+radius : radius = 0.0, 
 a : a = new CartesianPoint(x, y, ), a = new CartesianPoint(0, 0, ), 
+x2 : x2 = 0.0, 
+pointype : pointype = scan.nextInt(), 
 angle : angle = 0.0, 
 y2 : y2 = 0.0, 
-x2 : x2 = 0.0, 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, 
+x : x = scan.nextDouble(), x = 0.0, 
 distance : distance = 0.0, 
-radius2 : radius2 = 0.0, 
 angle2 : angle2 = 0.0, 
-x : x = 0.0, x = scan.nextDouble(), 
-pointype : pointype = scan.nextInt(), 
+radius2 : radius2 = 0.0, 
+y : y = 0.0, y = scan.nextDouble(), 
 b : b = new CartesianPoint(0, 0, ), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: trueL30
-y : y = 0.0, y = scan.nextDouble(), 
 same : same = true, 
+radius : radius = scan.nextDouble(), 
 a : a = new PolarPoint(radius, angle, ), 
+x2 : x2 = 0.0, 
+pointype : pointype = scan.nextInt(), 
 angle : angle = scan.nextDouble(), 
 y2 : y2 = 0.0, 
-x2 : x2 = 0.0, 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = scan.nextDouble(), 
+x : x = scan.nextDouble(), x = 0.0, 
 distance : distance = 0.0, 
-radius2 : radius2 = 0.0, 
 angle2 : angle2 = 0.0, 
-x : x = 0.0, x = scan.nextDouble(), 
-pointype : pointype = scan.nextInt(), 
+radius2 : radius2 = 0.0, 
+y : y = 0.0, y = scan.nextDouble(), 
 b : b = new CartesianPoint(0, 0, ), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: joinL31
-y : y = 0.0, y = scan.nextDouble(), 
 same : same = true, 
-a : a = new CartesianPoint(x, y, ), a = new PolarPoint(radius, angle, ), a = new CartesianPoint(0, 0, ), 
-angle : angle = 0.0, angle = scan.nextDouble(), 
-y2 : y2 = 0.0, 
+radius : radius = scan.nextDouble(), radius = 0.0, 
+a : a = new PolarPoint(radius, angle, ), a = new CartesianPoint(x, y, ), a = new CartesianPoint(0, 0, ), 
 x2 : x2 = 0.0, 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, radius = scan.nextDouble(), 
-distance : distance = 0.0, 
-radius2 : radius2 = 0.0, 
-angle2 : angle2 = 0.0, 
-x : x = 0.0, x = scan.nextDouble(), 
 pointype : pointype = scan.nextInt(), 
+angle : angle = scan.nextDouble(), angle = 0.0, 
+y2 : y2 = 0.0, 
+x : x = scan.nextDouble(), x = 0.0, 
+distance : distance = 0.0, 
+angle2 : angle2 = 0.0, 
+radius2 : radius2 = 0.0, 
+y : y = 0.0, y = scan.nextDouble(), 
 b : b = new CartesianPoint(0, 0, ), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: trueL32
-y : y = 0.0, y = scan.nextDouble(), 
 same : same = true, 
-a : a = new CartesianPoint(x, y, ), a = new PolarPoint(radius, angle, ), a = new CartesianPoint(0, 0, ), 
-angle : angle = 0.0, angle = scan.nextDouble(), 
-y2 : y2 = 0.0, 
+radius : radius = scan.nextDouble(), radius = 0.0, 
+a : a = new PolarPoint(radius, angle, ), a = new CartesianPoint(x, y, ), a = new CartesianPoint(0, 0, ), 
 x2 : x2 = 0.0, 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, radius = scan.nextDouble(), 
-distance : distance = 0.0, 
-radius2 : radius2 = 0.0, 
-angle2 : angle2 = 0.0, 
-x : x = 0.0, x = scan.nextDouble(), 
 pointype : pointype = scan.nextInt(), 
+angle : angle = scan.nextDouble(), angle = 0.0, 
+y2 : y2 = 0.0, 
+x : x = scan.nextDouble(), x = 0.0, 
+distance : distance = 0.0, 
+angle2 : angle2 = 0.0, 
+radius2 : radius2 = 0.0, 
+y : y = 0.0, y = scan.nextDouble(), 
 b : b = new CartesianPoint(0, 0, ), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: joinL33
-y : y = 0.0, y = scan.nextDouble(), 
 same : same = true, 
-a : a = new CartesianPoint(x, y, ), a = new PolarPoint(radius, angle, ), a = new CartesianPoint(0, 0, ), 
-angle : angle = 0.0, angle = scan.nextDouble(), 
-y2 : y2 = 0.0, 
+radius : radius = scan.nextDouble(), radius = 0.0, 
+a : a = new PolarPoint(radius, angle, ), a = new CartesianPoint(x, y, ), a = new CartesianPoint(0, 0, ), 
 x2 : x2 = 0.0, 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, radius = scan.nextDouble(), 
-distance : distance = 0.0, 
-radius2 : radius2 = 0.0, 
-angle2 : angle2 = 0.0, 
-x : x = 0.0, x = scan.nextDouble(), 
 pointype : pointype = scan.nextInt(), 
+angle : angle = scan.nextDouble(), angle = 0.0, 
+y2 : y2 = 0.0, 
+x : x = scan.nextDouble(), x = 0.0, 
+distance : distance = 0.0, 
+angle2 : angle2 = 0.0, 
+radius2 : radius2 = 0.0, 
+y : y = 0.0, y = scan.nextDouble(), 
 b : b = new CartesianPoint(0, 0, ), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: trueL34
-y : y = 0.0, y = scan.nextDouble(), 
 same : same = true, 
-a : a = new CartesianPoint(x, y, ), a = new PolarPoint(radius, angle, ), a = new CartesianPoint(0, 0, ), 
-y2 : y2 = scan.nextDouble(), 
+radius : radius = scan.nextDouble(), radius = 0.0, 
+a : a = new PolarPoint(radius, angle, ), a = new CartesianPoint(x, y, ), a = new CartesianPoint(0, 0, ), 
 x2 : x2 = scan.nextDouble(), 
-angle : angle = 0.0, angle = scan.nextDouble(), 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, radius = scan.nextDouble(), 
-distance : distance = 0.0, 
-radius2 : radius2 = 0.0, 
-angle2 : angle2 = 0.0, 
-x : x = 0.0, x = scan.nextDouble(), 
 pointype : pointype = scan.nextInt(), 
+y2 : y2 = scan.nextDouble(), 
+angle : angle = scan.nextDouble(), angle = 0.0, 
+x : x = scan.nextDouble(), x = 0.0, 
+distance : distance = 0.0, 
+angle2 : angle2 = 0.0, 
+radius2 : radius2 = 0.0, 
 b : b = new CartesianPoint(x2, y2, ), 
+y : y = 0.0, y = scan.nextDouble(), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: joinL35
-y : y = 0.0, y = scan.nextDouble(), 
 same : same = true, 
-a : a = new CartesianPoint(x, y, ), a = new PolarPoint(radius, angle, ), a = new CartesianPoint(0, 0, ), 
-y2 : y2 = scan.nextDouble(), y2 = 0.0, 
-x2 : x2 = 0.0, x2 = scan.nextDouble(), 
-angle : angle = 0.0, angle = scan.nextDouble(), 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, radius = scan.nextDouble(), 
-distance : distance = 0.0, 
-radius2 : radius2 = 0.0, 
-angle2 : angle2 = 0.0, 
-x : x = 0.0, x = scan.nextDouble(), 
+radius : radius = scan.nextDouble(), radius = 0.0, 
+a : a = new PolarPoint(radius, angle, ), a = new CartesianPoint(x, y, ), a = new CartesianPoint(0, 0, ), 
+x2 : x2 = scan.nextDouble(), x2 = 0.0, 
 pointype : pointype = scan.nextInt(), 
-b : b = new CartesianPoint(0, 0, ), b = new CartesianPoint(x2, y2, ), 
+y2 : y2 = scan.nextDouble(), y2 = 0.0, 
+angle : angle = scan.nextDouble(), angle = 0.0, 
+x : x = scan.nextDouble(), x = 0.0, 
+distance : distance = 0.0, 
+angle2 : angle2 = 0.0, 
+radius2 : radius2 = 0.0, 
+b : b = new CartesianPoint(x2, y2, ), b = new CartesianPoint(0, 0, ), 
+y : y = 0.0, y = scan.nextDouble(), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: trueL36
-y : y = 0.0, y = scan.nextDouble(), 
 same : same = true, 
-a : a = new CartesianPoint(x, y, ), a = new PolarPoint(radius, angle, ), a = new CartesianPoint(0, 0, ), 
-y2 : y2 = scan.nextDouble(), y2 = 0.0, 
-x2 : x2 = 0.0, x2 = scan.nextDouble(), 
-angle : angle = 0.0, angle = scan.nextDouble(), 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, radius = scan.nextDouble(), 
-distance : distance = 0.0, 
-radius2 : radius2 = scan.nextDouble(), 
-angle2 : angle2 = scan.nextDouble(), 
-x : x = 0.0, x = scan.nextDouble(), 
+radius : radius = scan.nextDouble(), radius = 0.0, 
+a : a = new PolarPoint(radius, angle, ), a = new CartesianPoint(x, y, ), a = new CartesianPoint(0, 0, ), 
+x2 : x2 = scan.nextDouble(), x2 = 0.0, 
 pointype : pointype = scan.nextInt(), 
+y2 : y2 = scan.nextDouble(), y2 = 0.0, 
+angle : angle = scan.nextDouble(), angle = 0.0, 
+x : x = scan.nextDouble(), x = 0.0, 
+distance : distance = 0.0, 
+angle2 : angle2 = scan.nextDouble(), 
+radius2 : radius2 = scan.nextDouble(), 
 b : b = new PolarPoint(radius2, angle2, ), 
+y : y = 0.0, y = scan.nextDouble(), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: joinL37
 same : same = Quadrant(a, b, ), 
-y : y = 0.0, y = scan.nextDouble(), 
-a : a = new CartesianPoint(x, y, ), a = new PolarPoint(radius, angle, ), a = new CartesianPoint(0, 0, ), 
-y2 : y2 = scan.nextDouble(), y2 = 0.0, 
-x2 : x2 = 0.0, x2 = scan.nextDouble(), 
-angle : angle = 0.0, angle = scan.nextDouble(), 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, radius = scan.nextDouble(), 
-distance : distance = Distance(a, b, ), 
-radius2 : radius2 = 0.0, radius2 = scan.nextDouble(), 
-angle2 : angle2 = 0.0, angle2 = scan.nextDouble(), 
-x : x = 0.0, x = scan.nextDouble(), 
+radius : radius = scan.nextDouble(), radius = 0.0, 
+a : a = new PolarPoint(radius, angle, ), a = new CartesianPoint(x, y, ), a = new CartesianPoint(0, 0, ), 
+x2 : x2 = scan.nextDouble(), x2 = 0.0, 
 pointype : pointype = scan.nextInt(), 
-b : b = new CartesianPoint(0, 0, ), b = new PolarPoint(radius2, angle2, ), b = new CartesianPoint(x2, y2, ), 
+y2 : y2 = scan.nextDouble(), y2 = 0.0, 
+angle : angle = scan.nextDouble(), angle = 0.0, 
+distance : distance = Distance(a, b, ), 
+x : x = scan.nextDouble(), x = 0.0, 
+angle2 : angle2 = 0.0, angle2 = scan.nextDouble(), 
+radius2 : radius2 = 0.0, radius2 = scan.nextDouble(), 
+b : b = new CartesianPoint(x2, y2, ), b = new PolarPoint(radius2, angle2, ), b = new CartesianPoint(0, 0, ), 
+y : y = 0.0, y = scan.nextDouble(), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: trueL38
 same : same = Quadrant(a, b, ), 
-y : y = 0.0, y = scan.nextDouble(), 
-a : a = new CartesianPoint(x, y, ), a = new PolarPoint(radius, angle, ), a = new CartesianPoint(0, 0, ), 
-y2 : y2 = scan.nextDouble(), y2 = 0.0, 
-x2 : x2 = 0.0, x2 = scan.nextDouble(), 
-angle : angle = 0.0, angle = scan.nextDouble(), 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, radius = scan.nextDouble(), 
-distance : distance = Distance(a, b, ), 
-radius2 : radius2 = 0.0, radius2 = scan.nextDouble(), 
-angle2 : angle2 = 0.0, angle2 = scan.nextDouble(), 
-x : x = 0.0, x = scan.nextDouble(), 
+radius : radius = scan.nextDouble(), radius = 0.0, 
+a : a = new PolarPoint(radius, angle, ), a = new CartesianPoint(x, y, ), a = new CartesianPoint(0, 0, ), 
+x2 : x2 = scan.nextDouble(), x2 = 0.0, 
 pointype : pointype = scan.nextInt(), 
-b : b = new CartesianPoint(0, 0, ), b = new PolarPoint(radius2, angle2, ), b = new CartesianPoint(x2, y2, ), 
+y2 : y2 = scan.nextDouble(), y2 = 0.0, 
+angle : angle = scan.nextDouble(), angle = 0.0, 
+distance : distance = Distance(a, b, ), 
+x : x = scan.nextDouble(), x = 0.0, 
+angle2 : angle2 = 0.0, angle2 = scan.nextDouble(), 
+radius2 : radius2 = 0.0, radius2 = scan.nextDouble(), 
+b : b = new CartesianPoint(x2, y2, ), b = new PolarPoint(radius2, angle2, ), b = new CartesianPoint(0, 0, ), 
+y : y = 0.0, y = scan.nextDouble(), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: joinL39
 same : same = Quadrant(a, b, ), 
-y : y = 0.0, y = scan.nextDouble(), 
-a : a = new CartesianPoint(x, y, ), a = new PolarPoint(radius, angle, ), a = new CartesianPoint(0, 0, ), 
-y2 : y2 = scan.nextDouble(), y2 = 0.0, 
-x2 : x2 = 0.0, x2 = scan.nextDouble(), 
-angle : angle = 0.0, angle = scan.nextDouble(), 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, radius = scan.nextDouble(), 
-distance : distance = Distance(a, b, ), 
-radius2 : radius2 = 0.0, radius2 = scan.nextDouble(), 
-angle2 : angle2 = 0.0, angle2 = scan.nextDouble(), 
-x : x = 0.0, x = scan.nextDouble(), 
+radius : radius = scan.nextDouble(), radius = 0.0, 
+a : a = new PolarPoint(radius, angle, ), a = new CartesianPoint(x, y, ), a = new CartesianPoint(0, 0, ), 
+x2 : x2 = scan.nextDouble(), x2 = 0.0, 
 pointype : pointype = scan.nextInt(), 
-b : b = new CartesianPoint(0, 0, ), b = new PolarPoint(radius2, angle2, ), b = new CartesianPoint(x2, y2, ), 
+y2 : y2 = scan.nextDouble(), y2 = 0.0, 
+angle : angle = scan.nextDouble(), angle = 0.0, 
+distance : distance = Distance(a, b, ), 
+x : x = scan.nextDouble(), x = 0.0, 
+angle2 : angle2 = 0.0, angle2 = scan.nextDouble(), 
+radius2 : radius2 = 0.0, radius2 = scan.nextDouble(), 
+b : b = new CartesianPoint(x2, y2, ), b = new PolarPoint(radius2, angle2, ), b = new CartesianPoint(0, 0, ), 
+y : y = 0.0, y = scan.nextDouble(), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: trueL40
 same : same = Quadrant(a, b, ), 
-y : y = 0.0, y = scan.nextDouble(), 
-a : a = new CartesianPoint(x, y, ), a = new PolarPoint(radius, angle, ), a = new CartesianPoint(0, 0, ), 
-y2 : y2 = scan.nextDouble(), y2 = 0.0, 
-x2 : x2 = 0.0, x2 = scan.nextDouble(), 
-angle : angle = 0.0, angle = scan.nextDouble(), 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, radius = scan.nextDouble(), 
-distance : distance = Distance(a, b, ), 
-radius2 : radius2 = 0.0, radius2 = scan.nextDouble(), 
-angle2 : angle2 = 0.0, angle2 = scan.nextDouble(), 
-x : x = 0.0, x = scan.nextDouble(), 
+radius : radius = scan.nextDouble(), radius = 0.0, 
+a : a = new PolarPoint(radius, angle, ), a = new CartesianPoint(x, y, ), a = new CartesianPoint(0, 0, ), 
+x2 : x2 = scan.nextDouble(), x2 = 0.0, 
 pointype : pointype = scan.nextInt(), 
-b : b = new CartesianPoint(0, 0, ), b = new PolarPoint(radius2, angle2, ), b = new CartesianPoint(x2, y2, ), 
+y2 : y2 = scan.nextDouble(), y2 = 0.0, 
+angle : angle = scan.nextDouble(), angle = 0.0, 
+distance : distance = Distance(a, b, ), 
+x : x = scan.nextDouble(), x = 0.0, 
+angle2 : angle2 = 0.0, angle2 = scan.nextDouble(), 
+radius2 : radius2 = 0.0, radius2 = scan.nextDouble(), 
+b : b = new CartesianPoint(x2, y2, ), b = new PolarPoint(radius2, angle2, ), b = new CartesianPoint(0, 0, ), 
+y : y = 0.0, y = scan.nextDouble(), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: joinL41
 same : same = Quadrant(a, b, ), 
-y : y = 0.0, y = scan.nextDouble(), 
-a : a = new CartesianPoint(x, y, ), a = new PolarPoint(radius, angle, ), a = new CartesianPoint(0, 0, ), 
-y2 : y2 = scan.nextDouble(), y2 = 0.0, 
-x2 : x2 = 0.0, x2 = scan.nextDouble(), 
-angle : angle = 0.0, angle = scan.nextDouble(), 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, radius = scan.nextDouble(), 
-distance : distance = Distance(a, b, ), 
-radius2 : radius2 = 0.0, radius2 = scan.nextDouble(), 
-angle2 : angle2 = 0.0, angle2 = scan.nextDouble(), 
-x : x = 0.0, x = scan.nextDouble(), 
+radius : radius = scan.nextDouble(), radius = 0.0, 
+a : a = new PolarPoint(radius, angle, ), a = new CartesianPoint(x, y, ), a = new CartesianPoint(0, 0, ), 
+x2 : x2 = scan.nextDouble(), x2 = 0.0, 
 pointype : pointype = scan.nextInt(), 
-b : b = new CartesianPoint(0, 0, ), b = new PolarPoint(radius2, angle2, ), b = new CartesianPoint(x2, y2, ), 
+y2 : y2 = scan.nextDouble(), y2 = 0.0, 
+angle : angle = scan.nextDouble(), angle = 0.0, 
+distance : distance = Distance(a, b, ), 
+x : x = scan.nextDouble(), x = 0.0, 
+angle2 : angle2 = 0.0, angle2 = scan.nextDouble(), 
+radius2 : radius2 = 0.0, radius2 = scan.nextDouble(), 
+b : b = new CartesianPoint(x2, y2, ), b = new PolarPoint(radius2, angle2, ), b = new CartesianPoint(0, 0, ), 
+y : y = 0.0, y = scan.nextDouble(), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: StartQuadrantL42
 
 BLOCK: BasicL43
 x2 : x2 = b.xCoordinate(), 
-y2 : y2 = b.yCoordinate(), 
-y1 : y1 = a.yCoordinate(), 
 same : same = false, 
+y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
 x1 : x1 = a.xCoordinate(), 
 
 BLOCK: trueL45
 x2 : x2 = b.xCoordinate(), 
-y2 : y2 = b.yCoordinate(), 
 same : same = true, 
 y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
 x1 : x1 = a.xCoordinate(), 
 
 BLOCK: joinL46
 x2 : x2 = b.xCoordinate(), 
-y2 : y2 = b.yCoordinate(), 
 same : same = false, same = true, 
 y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
 x1 : x1 = a.xCoordinate(), 
 
 BLOCK: trueL47
 x2 : x2 = b.xCoordinate(), 
-y2 : y2 = b.yCoordinate(), 
 same : same = true, 
 y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
 x1 : x1 = a.xCoordinate(), 
 
 BLOCK: joinL48
 x2 : x2 = b.xCoordinate(), 
-y2 : y2 = b.yCoordinate(), 
-same : same = false, same = true, same = true, 
+same : same = true, same = false, same = true, 
 y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
 x1 : x1 = a.xCoordinate(), 
 
 BLOCK: trueL49
 x2 : x2 = b.xCoordinate(), 
-y2 : y2 = b.yCoordinate(), 
 same : same = true, 
 y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
 x1 : x1 = a.xCoordinate(), 
 
 BLOCK: joinL50
 x2 : x2 = b.xCoordinate(), 
-y2 : y2 = b.yCoordinate(), 
 same : same = true, same = false, same = true, same = true, 
 y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
 x1 : x1 = a.xCoordinate(), 
 
 BLOCK: trueL51
 x2 : x2 = b.xCoordinate(), 
-y2 : y2 = b.yCoordinate(), 
 same : same = true, 
 y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
 x1 : x1 = a.xCoordinate(), 
 
 BLOCK: joinL52
 x2 : x2 = b.xCoordinate(), 
-y2 : y2 = b.yCoordinate(), 
-same : same = true, same = true, same = false, same = true, same = true, 
+same : same = true, same = false, same = true, same = true, same = true, 
 y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
 x1 : x1 = a.xCoordinate(), 
 
 BLOCK: StartDistanceL53
@@ -435,8 +435,8 @@ BLOCK: BasicL54
 distance : distance = Math.sqrt(x2 - x1 * x2 - x1 + y2 - y1 * y2 - y1, ), 
 y1 : y1 = a.yCoordinate(), 
 x2 : x2 = b.xCoordinate(), 
-y2 : y2 = b.yCoordinate(), 
 x1 : x1 = a.xCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
 
 BLOCK: StartmainL56
 
@@ -445,8 +445,8 @@ BLOCK: BasicL57
 BLOCK: StarttestXCoordinateL59
 
 BLOCK: BasicL60
-Belltaco : Belltaco = new PolarPoint(5, 90, ), 
 Tacobell : Tacobell = new PolarPoint(1, 0, ), 
+Belltaco : Belltaco = new PolarPoint(5, 90, ), 
 
 BLOCK: StarttestYCoordinateL62
 
@@ -463,9 +463,9 @@ Belltaco : Belltaco = new PolarPoint(53, 2, ),
 BLOCK: StarttestAngleL68
 
 BLOCK: BasicL69
-Belltaco : Belltaco = new PolarPoint(5, 125, ), 
-Tacobell : Tacobell = new PolarPoint(0, 1, ), 
 Yelle : Yelle = new PolarPoint(4, 24, ), 
+Tacobell : Tacobell = new PolarPoint(0, 1, ), 
+Belltaco : Belltaco = new PolarPoint(5, 125, ), 
 
 BLOCK: StarttestRotate90L71
 
@@ -491,36 +491,36 @@ this.y_coord : this.y_coord = 0.0,
 this.x_coord : this.x_coord = 0.0, 
 
 BLOCK: StartyCoordinateL80
-this.x_coord : this.x_coord = 0.0, 
 this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
 
 BLOCK: BasicL81
-this.x_coord : this.x_coord = 0.0, 
 this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
 
 BLOCK: StartradiusL83
-this.x_coord : this.x_coord = 0.0, 
 this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
 
 BLOCK: BasicL84
-this.x_coord : this.x_coord = 0.0, 
 this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
 
 BLOCK: StartangleL86
-this.x_coord : this.x_coord = 0.0, 
 this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
 
 BLOCK: BasicL87
-this.x_coord : this.x_coord = 0.0, 
 this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
 
 BLOCK: Startrotate90L89
-this.y_coord : this.y_coord = 0.0, 
 this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
 
 BLOCK: BasicL90
-this.y_coord : this.y_coord = 0.0, 
 this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
 
 BLOCK: StartmainL92
 
@@ -549,8 +549,8 @@ Tacobell : Tacobell = new CartesianPoint(0, 1, ),
 BLOCK: StarttestRotate90L107
 
 BLOCK: BasicL108
-BellTaco : BellTaco = new CartesianPoint(0, 1, ), 
 AcoTeBle : AcoTeBle = new CartesianPoint(-1, 0, ), 
+BellTaco : BellTaco = new CartesianPoint(0, 1, ), 
 TacoBell : TacoBell = new CartesianPoint(1, 0, ), 
 
 BLOCK: Startconstructor1L0
@@ -566,8 +566,8 @@ this.angle : this.angle = 0.0,
 this.radius : this.radius = Math.abs(radius, ), 
 
 BLOCK: trueL3
-angle : angle = angle + 180, 
 this.angle : this.angle = 0.0, 
+angle : angle = angle + 180, 
 this.radius : this.radius = Math.abs(radius, ), 
 
 BLOCK: falseL5
@@ -575,18 +575,18 @@ this.angle : this.angle = angle,
 this.radius : this.radius = Math.abs(radius, ), 
 
 BLOCK: joinL4
-angle : angle = angle + 180, 
 this.angle : this.angle = 0.0, this.angle = angle, 
+angle : angle = angle + 180, 
 this.radius : this.radius = Math.abs(radius, ), 
 
 BLOCK: LoopL6
-angle : angle = angle + 180, 
 this.angle : this.angle = this.angle + 360, 
+angle : angle = angle + 180, 
 this.radius : this.radius = Math.abs(radius, ), 
 
 BLOCK: BasicL7
+this.angle : this.angle = 0.0, this.angle = this.angle + 360, this.angle = angle, 
 angle : angle = angle + 180, 
-this.angle : this.angle = 0.0, this.angle = angle, this.angle = this.angle + 360, 
 this.radius : this.radius = Math.abs(radius, ), 
 
 BLOCK: StartxCoordinateL8
@@ -602,16 +602,16 @@ this.radius : this.radius = 0.0,
 this.angle : this.angle = 0.0, 
 
 BLOCK: StartyCoordinateL11
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: StartyCoordinateL11
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: BasicL12
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: StartangleL14
 this.radius : this.radius = 0.0, 
@@ -655,275 +655,275 @@ BLOCK: StartmainL23
 
 BLOCK: BasicL24
 same : same = true, 
-y : y = 0.0, 
+radius : radius = 0.0, 
 a : a = new CartesianPoint(0, 0, ), 
+x2 : x2 = 0.0, 
+pointype : pointype = scan.nextInt(), 
 angle : angle = 0.0, 
 y2 : y2 = 0.0, 
-x2 : x2 = 0.0, 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, 
 distance : distance = 0.0, 
-radius2 : radius2 = 0.0, 
-angle2 : angle2 = 0.0, 
 x : x = 0.0, 
-pointype : pointype = scan.nextInt(), 
+angle2 : angle2 = 0.0, 
+radius2 : radius2 = 0.0, 
 b : b = new CartesianPoint(0, 0, ), 
+y : y = 0.0, 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: trueL26
 same : same = true, 
-y : y = 0.0, 
+radius : radius = 0.0, 
 a : a = new CartesianPoint(0, 0, ), 
+x2 : x2 = 0.0, 
+pointype : pointype = scan.nextInt(), 
 angle : angle = 0.0, 
 y2 : y2 = 0.0, 
-x2 : x2 = 0.0, 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, 
 distance : distance = 0.0, 
-radius2 : radius2 = 0.0, 
-angle2 : angle2 = 0.0, 
 x : x = 0.0, 
-pointype : pointype = scan.nextInt(), 
+angle2 : angle2 = 0.0, 
+radius2 : radius2 = 0.0, 
 b : b = new CartesianPoint(0, 0, ), 
+y : y = 0.0, 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: joinL27
 same : same = true, 
-y : y = 0.0, 
+radius : radius = 0.0, 
 a : a = new CartesianPoint(0, 0, ), 
+x2 : x2 = 0.0, 
+pointype : pointype = scan.nextInt(), 
 angle : angle = 0.0, 
 y2 : y2 = 0.0, 
-x2 : x2 = 0.0, 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, 
 distance : distance = 0.0, 
-radius2 : radius2 = 0.0, 
-angle2 : angle2 = 0.0, 
 x : x = 0.0, 
-pointype : pointype = scan.nextInt(), 
+angle2 : angle2 = 0.0, 
+radius2 : radius2 = 0.0, 
 b : b = new CartesianPoint(0, 0, ), 
+y : y = 0.0, 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: trueL28
-y : y = scan.nextDouble(), 
 same : same = true, 
+radius : radius = 0.0, 
 a : a = new CartesianPoint(x, y, ), 
+x2 : x2 = 0.0, 
+pointype : pointype = scan.nextInt(), 
 angle : angle = 0.0, 
 y2 : y2 = 0.0, 
-x2 : x2 = 0.0, 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, 
-distance : distance = 0.0, 
-radius2 : radius2 = 0.0, 
-angle2 : angle2 = 0.0, 
 x : x = scan.nextDouble(), 
-pointype : pointype = scan.nextInt(), 
+distance : distance = 0.0, 
+angle2 : angle2 = 0.0, 
+radius2 : radius2 = 0.0, 
+y : y = scan.nextDouble(), 
 b : b = new CartesianPoint(0, 0, ), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: joinL29
-y : y = 0.0, y = scan.nextDouble(), 
 same : same = true, 
+radius : radius = 0.0, 
 a : a = new CartesianPoint(x, y, ), a = new CartesianPoint(0, 0, ), 
+x2 : x2 = 0.0, 
+pointype : pointype = scan.nextInt(), 
 angle : angle = 0.0, 
 y2 : y2 = 0.0, 
-x2 : x2 = 0.0, 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, 
+x : x = scan.nextDouble(), x = 0.0, 
 distance : distance = 0.0, 
-radius2 : radius2 = 0.0, 
 angle2 : angle2 = 0.0, 
-x : x = 0.0, x = scan.nextDouble(), 
-pointype : pointype = scan.nextInt(), 
+radius2 : radius2 = 0.0, 
+y : y = 0.0, y = scan.nextDouble(), 
 b : b = new CartesianPoint(0, 0, ), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: trueL30
-y : y = 0.0, y = scan.nextDouble(), 
 same : same = true, 
+radius : radius = scan.nextDouble(), 
 a : a = new PolarPoint(radius, angle, ), 
+x2 : x2 = 0.0, 
+pointype : pointype = scan.nextInt(), 
 angle : angle = scan.nextDouble(), 
 y2 : y2 = 0.0, 
-x2 : x2 = 0.0, 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = scan.nextDouble(), 
+x : x = scan.nextDouble(), x = 0.0, 
 distance : distance = 0.0, 
-radius2 : radius2 = 0.0, 
 angle2 : angle2 = 0.0, 
-x : x = 0.0, x = scan.nextDouble(), 
-pointype : pointype = scan.nextInt(), 
+radius2 : radius2 = 0.0, 
+y : y = 0.0, y = scan.nextDouble(), 
 b : b = new CartesianPoint(0, 0, ), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: joinL31
-y : y = 0.0, y = scan.nextDouble(), 
 same : same = true, 
-a : a = new CartesianPoint(x, y, ), a = new PolarPoint(radius, angle, ), a = new CartesianPoint(0, 0, ), 
-angle : angle = 0.0, angle = scan.nextDouble(), 
-y2 : y2 = 0.0, 
+radius : radius = scan.nextDouble(), radius = 0.0, 
+a : a = new PolarPoint(radius, angle, ), a = new CartesianPoint(x, y, ), a = new CartesianPoint(0, 0, ), 
 x2 : x2 = 0.0, 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, radius = scan.nextDouble(), 
-distance : distance = 0.0, 
-radius2 : radius2 = 0.0, 
-angle2 : angle2 = 0.0, 
-x : x = 0.0, x = scan.nextDouble(), 
 pointype : pointype = scan.nextInt(), 
+angle : angle = scan.nextDouble(), angle = 0.0, 
+y2 : y2 = 0.0, 
+x : x = scan.nextDouble(), x = 0.0, 
+distance : distance = 0.0, 
+angle2 : angle2 = 0.0, 
+radius2 : radius2 = 0.0, 
+y : y = 0.0, y = scan.nextDouble(), 
 b : b = new CartesianPoint(0, 0, ), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: trueL32
-y : y = 0.0, y = scan.nextDouble(), 
 same : same = true, 
-a : a = new CartesianPoint(x, y, ), a = new PolarPoint(radius, angle, ), a = new CartesianPoint(0, 0, ), 
-angle : angle = 0.0, angle = scan.nextDouble(), 
-y2 : y2 = 0.0, 
+radius : radius = scan.nextDouble(), radius = 0.0, 
+a : a = new PolarPoint(radius, angle, ), a = new CartesianPoint(x, y, ), a = new CartesianPoint(0, 0, ), 
 x2 : x2 = 0.0, 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, radius = scan.nextDouble(), 
-distance : distance = 0.0, 
-radius2 : radius2 = 0.0, 
-angle2 : angle2 = 0.0, 
-x : x = 0.0, x = scan.nextDouble(), 
 pointype : pointype = scan.nextInt(), 
+angle : angle = scan.nextDouble(), angle = 0.0, 
+y2 : y2 = 0.0, 
+x : x = scan.nextDouble(), x = 0.0, 
+distance : distance = 0.0, 
+angle2 : angle2 = 0.0, 
+radius2 : radius2 = 0.0, 
+y : y = 0.0, y = scan.nextDouble(), 
 b : b = new CartesianPoint(0, 0, ), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: joinL33
-y : y = 0.0, y = scan.nextDouble(), 
 same : same = true, 
-a : a = new CartesianPoint(x, y, ), a = new PolarPoint(radius, angle, ), a = new CartesianPoint(0, 0, ), 
-angle : angle = 0.0, angle = scan.nextDouble(), 
-y2 : y2 = 0.0, 
+radius : radius = scan.nextDouble(), radius = 0.0, 
+a : a = new PolarPoint(radius, angle, ), a = new CartesianPoint(x, y, ), a = new CartesianPoint(0, 0, ), 
 x2 : x2 = 0.0, 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, radius = scan.nextDouble(), 
-distance : distance = 0.0, 
-radius2 : radius2 = 0.0, 
-angle2 : angle2 = 0.0, 
-x : x = 0.0, x = scan.nextDouble(), 
 pointype : pointype = scan.nextInt(), 
+angle : angle = scan.nextDouble(), angle = 0.0, 
+y2 : y2 = 0.0, 
+x : x = scan.nextDouble(), x = 0.0, 
+distance : distance = 0.0, 
+angle2 : angle2 = 0.0, 
+radius2 : radius2 = 0.0, 
+y : y = 0.0, y = scan.nextDouble(), 
 b : b = new CartesianPoint(0, 0, ), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: trueL34
-y : y = 0.0, y = scan.nextDouble(), 
 same : same = true, 
-a : a = new CartesianPoint(x, y, ), a = new PolarPoint(radius, angle, ), a = new CartesianPoint(0, 0, ), 
-y2 : y2 = scan.nextDouble(), 
+radius : radius = scan.nextDouble(), radius = 0.0, 
+a : a = new PolarPoint(radius, angle, ), a = new CartesianPoint(x, y, ), a = new CartesianPoint(0, 0, ), 
 x2 : x2 = scan.nextDouble(), 
-angle : angle = 0.0, angle = scan.nextDouble(), 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, radius = scan.nextDouble(), 
-distance : distance = 0.0, 
-radius2 : radius2 = 0.0, 
-angle2 : angle2 = 0.0, 
-x : x = 0.0, x = scan.nextDouble(), 
 pointype : pointype = scan.nextInt(), 
+y2 : y2 = scan.nextDouble(), 
+angle : angle = scan.nextDouble(), angle = 0.0, 
+x : x = scan.nextDouble(), x = 0.0, 
+distance : distance = 0.0, 
+angle2 : angle2 = 0.0, 
+radius2 : radius2 = 0.0, 
 b : b = new CartesianPoint(x2, y2, ), 
+y : y = 0.0, y = scan.nextDouble(), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: joinL35
-y : y = 0.0, y = scan.nextDouble(), 
 same : same = true, 
-a : a = new CartesianPoint(x, y, ), a = new PolarPoint(radius, angle, ), a = new CartesianPoint(0, 0, ), 
-y2 : y2 = scan.nextDouble(), y2 = 0.0, 
-x2 : x2 = 0.0, x2 = scan.nextDouble(), 
-angle : angle = 0.0, angle = scan.nextDouble(), 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, radius = scan.nextDouble(), 
-distance : distance = 0.0, 
-radius2 : radius2 = 0.0, 
-angle2 : angle2 = 0.0, 
-x : x = 0.0, x = scan.nextDouble(), 
+radius : radius = scan.nextDouble(), radius = 0.0, 
+a : a = new PolarPoint(radius, angle, ), a = new CartesianPoint(x, y, ), a = new CartesianPoint(0, 0, ), 
+x2 : x2 = scan.nextDouble(), x2 = 0.0, 
 pointype : pointype = scan.nextInt(), 
-b : b = new CartesianPoint(0, 0, ), b = new CartesianPoint(x2, y2, ), 
+y2 : y2 = scan.nextDouble(), y2 = 0.0, 
+angle : angle = scan.nextDouble(), angle = 0.0, 
+x : x = scan.nextDouble(), x = 0.0, 
+distance : distance = 0.0, 
+angle2 : angle2 = 0.0, 
+radius2 : radius2 = 0.0, 
+b : b = new CartesianPoint(x2, y2, ), b = new CartesianPoint(0, 0, ), 
+y : y = 0.0, y = scan.nextDouble(), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: trueL36
-y : y = 0.0, y = scan.nextDouble(), 
 same : same = true, 
-a : a = new CartesianPoint(x, y, ), a = new PolarPoint(radius, angle, ), a = new CartesianPoint(0, 0, ), 
-y2 : y2 = scan.nextDouble(), y2 = 0.0, 
-x2 : x2 = 0.0, x2 = scan.nextDouble(), 
-angle : angle = 0.0, angle = scan.nextDouble(), 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, radius = scan.nextDouble(), 
-distance : distance = 0.0, 
-radius2 : radius2 = scan.nextDouble(), 
-angle2 : angle2 = scan.nextDouble(), 
-x : x = 0.0, x = scan.nextDouble(), 
+radius : radius = scan.nextDouble(), radius = 0.0, 
+a : a = new PolarPoint(radius, angle, ), a = new CartesianPoint(x, y, ), a = new CartesianPoint(0, 0, ), 
+x2 : x2 = scan.nextDouble(), x2 = 0.0, 
 pointype : pointype = scan.nextInt(), 
+y2 : y2 = scan.nextDouble(), y2 = 0.0, 
+angle : angle = scan.nextDouble(), angle = 0.0, 
+x : x = scan.nextDouble(), x = 0.0, 
+distance : distance = 0.0, 
+angle2 : angle2 = scan.nextDouble(), 
+radius2 : radius2 = scan.nextDouble(), 
 b : b = new PolarPoint(radius2, angle2, ), 
+y : y = 0.0, y = scan.nextDouble(), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: joinL37
 same : same = Quadrant(a, b, ), 
-y : y = 0.0, y = scan.nextDouble(), 
-a : a = new CartesianPoint(x, y, ), a = new PolarPoint(radius, angle, ), a = new CartesianPoint(0, 0, ), 
-y2 : y2 = scan.nextDouble(), y2 = 0.0, 
-x2 : x2 = 0.0, x2 = scan.nextDouble(), 
-angle : angle = 0.0, angle = scan.nextDouble(), 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, radius = scan.nextDouble(), 
-distance : distance = Distance(a, b, ), 
-radius2 : radius2 = 0.0, radius2 = scan.nextDouble(), 
-angle2 : angle2 = 0.0, angle2 = scan.nextDouble(), 
-x : x = 0.0, x = scan.nextDouble(), 
+radius : radius = scan.nextDouble(), radius = 0.0, 
+a : a = new PolarPoint(radius, angle, ), a = new CartesianPoint(x, y, ), a = new CartesianPoint(0, 0, ), 
+x2 : x2 = scan.nextDouble(), x2 = 0.0, 
 pointype : pointype = scan.nextInt(), 
-b : b = new CartesianPoint(0, 0, ), b = new PolarPoint(radius2, angle2, ), b = new CartesianPoint(x2, y2, ), 
+y2 : y2 = scan.nextDouble(), y2 = 0.0, 
+angle : angle = scan.nextDouble(), angle = 0.0, 
+distance : distance = Distance(a, b, ), 
+x : x = scan.nextDouble(), x = 0.0, 
+angle2 : angle2 = 0.0, angle2 = scan.nextDouble(), 
+radius2 : radius2 = 0.0, radius2 = scan.nextDouble(), 
+b : b = new CartesianPoint(x2, y2, ), b = new PolarPoint(radius2, angle2, ), b = new CartesianPoint(0, 0, ), 
+y : y = 0.0, y = scan.nextDouble(), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: trueL38
 same : same = Quadrant(a, b, ), 
-y : y = 0.0, y = scan.nextDouble(), 
-a : a = new CartesianPoint(x, y, ), a = new PolarPoint(radius, angle, ), a = new CartesianPoint(0, 0, ), 
-y2 : y2 = scan.nextDouble(), y2 = 0.0, 
-x2 : x2 = 0.0, x2 = scan.nextDouble(), 
-angle : angle = 0.0, angle = scan.nextDouble(), 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, radius = scan.nextDouble(), 
-distance : distance = Distance(a, b, ), 
-radius2 : radius2 = 0.0, radius2 = scan.nextDouble(), 
-angle2 : angle2 = 0.0, angle2 = scan.nextDouble(), 
-x : x = 0.0, x = scan.nextDouble(), 
+radius : radius = scan.nextDouble(), radius = 0.0, 
+a : a = new PolarPoint(radius, angle, ), a = new CartesianPoint(x, y, ), a = new CartesianPoint(0, 0, ), 
+x2 : x2 = scan.nextDouble(), x2 = 0.0, 
 pointype : pointype = scan.nextInt(), 
-b : b = new CartesianPoint(0, 0, ), b = new PolarPoint(radius2, angle2, ), b = new CartesianPoint(x2, y2, ), 
+y2 : y2 = scan.nextDouble(), y2 = 0.0, 
+angle : angle = scan.nextDouble(), angle = 0.0, 
+distance : distance = Distance(a, b, ), 
+x : x = scan.nextDouble(), x = 0.0, 
+angle2 : angle2 = 0.0, angle2 = scan.nextDouble(), 
+radius2 : radius2 = 0.0, radius2 = scan.nextDouble(), 
+b : b = new CartesianPoint(x2, y2, ), b = new PolarPoint(radius2, angle2, ), b = new CartesianPoint(0, 0, ), 
+y : y = 0.0, y = scan.nextDouble(), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: joinL39
 same : same = Quadrant(a, b, ), 
-y : y = 0.0, y = scan.nextDouble(), 
-a : a = new CartesianPoint(x, y, ), a = new PolarPoint(radius, angle, ), a = new CartesianPoint(0, 0, ), 
-y2 : y2 = scan.nextDouble(), y2 = 0.0, 
-x2 : x2 = 0.0, x2 = scan.nextDouble(), 
-angle : angle = 0.0, angle = scan.nextDouble(), 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, radius = scan.nextDouble(), 
-distance : distance = Distance(a, b, ), 
-radius2 : radius2 = 0.0, radius2 = scan.nextDouble(), 
-angle2 : angle2 = 0.0, angle2 = scan.nextDouble(), 
-x : x = 0.0, x = scan.nextDouble(), 
+radius : radius = scan.nextDouble(), radius = 0.0, 
+a : a = new PolarPoint(radius, angle, ), a = new CartesianPoint(x, y, ), a = new CartesianPoint(0, 0, ), 
+x2 : x2 = scan.nextDouble(), x2 = 0.0, 
 pointype : pointype = scan.nextInt(), 
-b : b = new CartesianPoint(0, 0, ), b = new PolarPoint(radius2, angle2, ), b = new CartesianPoint(x2, y2, ), 
+y2 : y2 = scan.nextDouble(), y2 = 0.0, 
+angle : angle = scan.nextDouble(), angle = 0.0, 
+distance : distance = Distance(a, b, ), 
+x : x = scan.nextDouble(), x = 0.0, 
+angle2 : angle2 = 0.0, angle2 = scan.nextDouble(), 
+radius2 : radius2 = 0.0, radius2 = scan.nextDouble(), 
+b : b = new CartesianPoint(x2, y2, ), b = new PolarPoint(radius2, angle2, ), b = new CartesianPoint(0, 0, ), 
+y : y = 0.0, y = scan.nextDouble(), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: trueL40
 same : same = Quadrant(a, b, ), 
-y : y = 0.0, y = scan.nextDouble(), 
-a : a = new CartesianPoint(x, y, ), a = new PolarPoint(radius, angle, ), a = new CartesianPoint(0, 0, ), 
-y2 : y2 = scan.nextDouble(), y2 = 0.0, 
-x2 : x2 = 0.0, x2 = scan.nextDouble(), 
-angle : angle = 0.0, angle = scan.nextDouble(), 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, radius = scan.nextDouble(), 
-distance : distance = Distance(a, b, ), 
-radius2 : radius2 = 0.0, radius2 = scan.nextDouble(), 
-angle2 : angle2 = 0.0, angle2 = scan.nextDouble(), 
-x : x = 0.0, x = scan.nextDouble(), 
+radius : radius = scan.nextDouble(), radius = 0.0, 
+a : a = new PolarPoint(radius, angle, ), a = new CartesianPoint(x, y, ), a = new CartesianPoint(0, 0, ), 
+x2 : x2 = scan.nextDouble(), x2 = 0.0, 
 pointype : pointype = scan.nextInt(), 
-b : b = new CartesianPoint(0, 0, ), b = new PolarPoint(radius2, angle2, ), b = new CartesianPoint(x2, y2, ), 
+y2 : y2 = scan.nextDouble(), y2 = 0.0, 
+angle : angle = scan.nextDouble(), angle = 0.0, 
+distance : distance = Distance(a, b, ), 
+x : x = scan.nextDouble(), x = 0.0, 
+angle2 : angle2 = 0.0, angle2 = scan.nextDouble(), 
+radius2 : radius2 = 0.0, radius2 = scan.nextDouble(), 
+b : b = new CartesianPoint(x2, y2, ), b = new PolarPoint(radius2, angle2, ), b = new CartesianPoint(0, 0, ), 
+y : y = 0.0, y = scan.nextDouble(), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: joinL41
 same : same = Quadrant(a, b, ), 
-y : y = 0.0, y = scan.nextDouble(), 
-a : a = new CartesianPoint(x, y, ), a = new PolarPoint(radius, angle, ), a = new CartesianPoint(0, 0, ), 
-y2 : y2 = scan.nextDouble(), y2 = 0.0, 
-x2 : x2 = 0.0, x2 = scan.nextDouble(), 
-angle : angle = 0.0, angle = scan.nextDouble(), 
-scan : scan = new Scanner(System.in, ), 
-radius : radius = 0.0, radius = scan.nextDouble(), 
-distance : distance = Distance(a, b, ), 
-radius2 : radius2 = 0.0, radius2 = scan.nextDouble(), 
-angle2 : angle2 = 0.0, angle2 = scan.nextDouble(), 
-x : x = 0.0, x = scan.nextDouble(), 
+radius : radius = scan.nextDouble(), radius = 0.0, 
+a : a = new PolarPoint(radius, angle, ), a = new CartesianPoint(x, y, ), a = new CartesianPoint(0, 0, ), 
+x2 : x2 = scan.nextDouble(), x2 = 0.0, 
 pointype : pointype = scan.nextInt(), 
-b : b = new CartesianPoint(0, 0, ), b = new PolarPoint(radius2, angle2, ), b = new CartesianPoint(x2, y2, ), 
+y2 : y2 = scan.nextDouble(), y2 = 0.0, 
+angle : angle = scan.nextDouble(), angle = 0.0, 
+distance : distance = Distance(a, b, ), 
+x : x = scan.nextDouble(), x = 0.0, 
+angle2 : angle2 = 0.0, angle2 = scan.nextDouble(), 
+radius2 : radius2 = 0.0, radius2 = scan.nextDouble(), 
+b : b = new CartesianPoint(x2, y2, ), b = new PolarPoint(radius2, angle2, ), b = new CartesianPoint(0, 0, ), 
+y : y = 0.0, y = scan.nextDouble(), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: StartQuadrantL42
 
@@ -931,65 +931,65 @@ BLOCK: StartQuadrantL42
 
 BLOCK: BasicL43
 x2 : x2 = b.xCoordinate(), 
-y2 : y2 = b.yCoordinate(), 
-y1 : y1 = a.yCoordinate(), 
 same : same = false, 
+y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
 x1 : x1 = a.xCoordinate(), 
 
 BLOCK: trueL45
 x2 : x2 = b.xCoordinate(), 
-y2 : y2 = b.yCoordinate(), 
 same : same = true, 
 y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
 x1 : x1 = a.xCoordinate(), 
 
 BLOCK: joinL46
 x2 : x2 = b.xCoordinate(), 
-y2 : y2 = b.yCoordinate(), 
 same : same = false, same = true, 
 y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
 x1 : x1 = a.xCoordinate(), 
 
 BLOCK: trueL47
 x2 : x2 = b.xCoordinate(), 
-y2 : y2 = b.yCoordinate(), 
 same : same = true, 
 y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
 x1 : x1 = a.xCoordinate(), 
 
 BLOCK: joinL48
 x2 : x2 = b.xCoordinate(), 
-y2 : y2 = b.yCoordinate(), 
-same : same = false, same = true, same = true, 
+same : same = true, same = false, same = true, 
 y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
 x1 : x1 = a.xCoordinate(), 
 
 BLOCK: trueL49
 x2 : x2 = b.xCoordinate(), 
-y2 : y2 = b.yCoordinate(), 
 same : same = true, 
 y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
 x1 : x1 = a.xCoordinate(), 
 
 BLOCK: joinL50
 x2 : x2 = b.xCoordinate(), 
-y2 : y2 = b.yCoordinate(), 
 same : same = true, same = false, same = true, same = true, 
 y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
 x1 : x1 = a.xCoordinate(), 
 
 BLOCK: trueL51
 x2 : x2 = b.xCoordinate(), 
-y2 : y2 = b.yCoordinate(), 
 same : same = true, 
 y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
 x1 : x1 = a.xCoordinate(), 
 
 BLOCK: joinL52
 x2 : x2 = b.xCoordinate(), 
-y2 : y2 = b.yCoordinate(), 
-same : same = true, same = true, same = false, same = true, same = true, 
+same : same = true, same = false, same = true, same = true, same = true, 
 y1 : y1 = a.yCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
 x1 : x1 = a.xCoordinate(), 
 
 BLOCK: StartDistanceL53
@@ -1000,8 +1000,8 @@ BLOCK: BasicL54
 distance : distance = Math.sqrt(x2 - x1 * x2 - x1 + y2 - y1 * y2 - y1, ), 
 y1 : y1 = a.yCoordinate(), 
 x2 : x2 = b.xCoordinate(), 
-y2 : y2 = b.yCoordinate(), 
 x1 : x1 = a.xCoordinate(), 
+y2 : y2 = b.yCoordinate(), 
 
 BLOCK: StartmainL56
 
@@ -1014,8 +1014,8 @@ BLOCK: StarttestXCoordinateL59
 BLOCK: StarttestXCoordinateL59
 
 BLOCK: BasicL60
-Belltaco : Belltaco = new PolarPoint(5, 90, ), 
 Tacobell : Tacobell = new PolarPoint(1, 0, ), 
+Belltaco : Belltaco = new PolarPoint(5, 90, ), 
 
 BLOCK: StarttestYCoordinateL62
 
@@ -1038,9 +1038,9 @@ BLOCK: StarttestAngleL68
 BLOCK: StarttestAngleL68
 
 BLOCK: BasicL69
-Belltaco : Belltaco = new PolarPoint(5, 125, ), 
-Tacobell : Tacobell = new PolarPoint(0, 1, ), 
 Yelle : Yelle = new PolarPoint(4, 24, ), 
+Tacobell : Tacobell = new PolarPoint(0, 1, ), 
+Belltaco : Belltaco = new PolarPoint(5, 125, ), 
 
 BLOCK: StarttestRotate90L71
 
@@ -1076,52 +1076,52 @@ this.y_coord : this.y_coord = 0.0,
 this.x_coord : this.x_coord = 0.0, 
 
 BLOCK: StartyCoordinateL80
-this.x_coord : this.x_coord = 0.0, 
 this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
 
 BLOCK: StartyCoordinateL80
-this.x_coord : this.x_coord = 0.0, 
 this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
 
 BLOCK: BasicL81
-this.x_coord : this.x_coord = 0.0, 
 this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
 
 BLOCK: StartradiusL83
-this.x_coord : this.x_coord = 0.0, 
 this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
 
 BLOCK: StartradiusL83
-this.x_coord : this.x_coord = 0.0, 
 this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
 
 BLOCK: BasicL84
-this.x_coord : this.x_coord = 0.0, 
 this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
 
 BLOCK: StartangleL86
-this.x_coord : this.x_coord = 0.0, 
 this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
 
 BLOCK: StartangleL86
-this.x_coord : this.x_coord = 0.0, 
 this.y_coord : this.y_coord = 0.0, 
+this.x_coord : this.x_coord = 0.0, 
 
 BLOCK: BasicL87
-this.x_coord : this.x_coord = 0.0, 
-this.y_coord : this.y_coord = 0.0, 
-
-BLOCK: Startrotate90L89
 this.y_coord : this.y_coord = 0.0, 
 this.x_coord : this.x_coord = 0.0, 
 
 BLOCK: Startrotate90L89
-this.y_coord : this.y_coord = 0.0, 
 this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
+
+BLOCK: Startrotate90L89
+this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
 
 BLOCK: BasicL90
-this.y_coord : this.y_coord = 0.0, 
 this.x_coord : this.x_coord = 0.0, 
+this.y_coord : this.y_coord = 0.0, 
 
 BLOCK: StartmainL92
 
@@ -1162,36 +1162,36 @@ BLOCK: StarttestRotate90L107
 BLOCK: StarttestRotate90L107
 
 BLOCK: BasicL108
-BellTaco : BellTaco = new CartesianPoint(0, 1, ), 
 AcoTeBle : AcoTeBle = new CartesianPoint(-1, 0, ), 
+BellTaco : BellTaco = new CartesianPoint(0, 1, ), 
 TacoBell : TacoBell = new CartesianPoint(1, 0, ), 
 
-Unfiltered: 116
+Unfiltered: 1779
 Filtered: 1
 
 
-Duplicate found: 102_Code/102_hw1/dir34/PointRelation.java lines [11, 85] and 102_Code/102_hw1/dir34/PointRelation.java lines [9, 89]
+Duplicate found: 102_Code/102_hw1/dir34/PointRelation.java lines [10, 85] and 102_Code/102_hw1/dir34/PointRelation.java lines [9, 89]
 102_Code/102_hw1/dir34/PointRelation.java ----------
+10 :	y = 0.0
 11 :	x2 = 0.0
-20 :	b = new CartesianPoint(0, 0, )
 35 :	x = scan.nextDouble()
 40 :	a = new CartesianPoint(x, y, )
-48 :	angle = scan.nextDouble()
+45 :	radius = scan.nextDouble()
 50 :	a = new PolarPoint(radius, angle, )
-66 :	x2 = scan.nextDouble()
-69 :	y2 = scan.nextDouble()
-71 :	b = new CartesianPoint(x2, y2, )
-85 :	distance = Distance(a, b, )
-102_Code/102_hw1/dir34/PointRelation.java ----------
-9 :	x = 0.0
-19 :	a = new CartesianPoint(0, 0, )
-66 :	x2 = scan.nextDouble()
 71 :	b = new CartesianPoint(x2, y2, )
 77 :	radius2 = scan.nextDouble()
 82 :	b = new PolarPoint(radius2, angle2, )
-35 :	x = scan.nextDouble()
-38 :	y = scan.nextDouble()
+85 :	distance = Distance(a, b, )
+102_Code/102_hw1/dir34/PointRelation.java ----------
+9 :	x = 0.0
+17 :	distance = 0.0
+69 :	y2 = scan.nextDouble()
+71 :	b = new CartesianPoint(x2, y2, )
+77 :	radius2 = scan.nextDouble()
+82 :	b = new PolarPoint(radius2, angle2, )
 40 :	a = new CartesianPoint(x, y, )
+45 :	radius = scan.nextDouble()
+50 :	a = new PolarPoint(radius, angle, )
 89 :	same = Quadrant(a, b, )
 ===========================
 
@@ -1200,7 +1200,7 @@ Duplicate found: 102_Code/102_hw1/dir34/PointRelation.java lines [11, 85] and 10
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 5.513 s
-[INFO] Finished at: 2019-05-01T17:13:53-07:00
-[INFO] Final Memory: 33M/1508M
+[INFO] Total time: 8.191 s
+[INFO] Finished at: 2019-05-06T19:54:50-07:00
+[INFO] Final Memory: 18M/1300M
 [INFO] ------------------------------------------------------------------------

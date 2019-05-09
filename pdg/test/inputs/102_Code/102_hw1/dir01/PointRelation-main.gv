@@ -1,0 +1,23 @@
+digraph G {
+"83 : dist = 0.0"
+"83 : dist = 0.0" -> "91 : dist = distance(a, b, )" [style=dashed]
+"85 : a = null"
+"85 : a = null" -> "88 : a = makePoint()" [style=dashed]
+"86 : b = null"
+"86 : b = null" -> "89 : b = makePoint()" [style=dashed]
+"88 : a = makePoint()"
+"88 : a = makePoint()" -> "91 : dist = distance(a, b, )"
+"88 : a = makePoint()" -> "100 : isSameQuad(a, b, )"
+"89 : b = makePoint()"
+"89 : b = makePoint()" -> "91 : dist = distance(a, b, )"
+"89 : b = makePoint()" -> "100 : isSameQuad(a, b, )"
+"91 : dist = distance(a, b, )"
+"91 : dist = distance(a, b, )" -> "98 : System.out.println(\"Distance between points: \" + dist, )"
+"91 : dist = distance(a, b, )" -> "92 : dist < 0.001"
+"92 : dist < 0.001"
+"94 : System.out.println(\"Distance between points: 0.0\", )"
+"98 : System.out.println(\"Distance between points: \" + dist, )"
+"100 : isSameQuad(a, b, )"
+"102 : System.out.println(\"In same quadrant\", )"
+"106 : System.out.println(\"Not in same quadrant\", )"
+}

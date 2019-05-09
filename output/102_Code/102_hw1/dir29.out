@@ -35,12 +35,12 @@ this.a : this.a = 0.0,
 this.r : this.r = 0.0, 
 
 BLOCK: StartyCoordinateL6
-this.a : this.a = 0.0, 
 this.r : this.r = 0.0, 
+this.a : this.a = 0.0, 
 
 BLOCK: BasicL7
-this.a : this.a = 0.0, 
 this.r : this.r = 0.0, 
+this.a : this.a = 0.0, 
 
 BLOCK: StartradiusL9
 this.r : this.r = 0.0, 
@@ -60,7 +60,7 @@ this.a : this.a = 0.0,
 
 BLOCK: joinL13
 this.r : this.r = 0.0, 
-this.a : this.a = 0.0, this.a = this.a + 180.0, 
+this.a : this.a = this.a + 180.0, this.a = 0.0, 
 
 BLOCK: StartangleL15
 this.r : this.r = 0.0, 
@@ -76,200 +76,200 @@ this.a : this.a = this.a + 360.0,
 
 BLOCK: BasicL19
 this.r : this.r = 0.0, 
-this.a : this.a = this.a + 360.0, this.a = 0.0, 
+this.a : this.a = 0.0, this.a = this.a + 360.0, 
 
 BLOCK: Startrotate90L20
-this.r : this.r = 0.0, 
 this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
 
 BLOCK: BasicL21
-this.r : this.r = 0.0, 
-this.a : this.a = 0.0, 
 p : p = new PolarPoint(this.r, this.a + 90.0, ), 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
 
 BLOCK: StartmainL23
 
 BLOCK: BasicL24
 type1 : type1 = in.nextInt(), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new CartesianPoint(0.0, 0.0, ), 
 p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
+p1 : p1 = new CartesianPoint(0.0, 0.0, ), 
+in : in = new Scanner(System.in, ), 
 
 BLOCK: trueL26
 type1 : type1 = in.nextInt(), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new CartesianPoint(0.0, 0.0, ), 
 p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
+p1 : p1 = new CartesianPoint(0.0, 0.0, ), 
+in : in = new Scanner(System.in, ), 
 
 BLOCK: trueL28
-type1 : type1 = in.nextInt(), 
-y1 : y1 = in.nextDouble(), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new CartesianPoint(x1, y1, ), 
-p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
 x1 : x1 = in.nextDouble(), 
+y1 : y1 = in.nextDouble(), 
+type1 : type1 = in.nextInt(), 
+p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
+p1 : p1 = new CartesianPoint(x1, y1, ), 
+in : in = new Scanner(System.in, ), 
 
 BLOCK: falseL30
+a1 : a1 = in.nextDouble(), 
 type1 : type1 = in.nextInt(), 
+p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
+p1 : p1 = new PolarPoint(r1, a1, ), 
 r1 : r1 = in.nextDouble(), 
 in : in = new Scanner(System.in, ), 
-p1 : p1 = new PolarPoint(r1, a1, ), 
-a1 : a1 = in.nextDouble(), 
-p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
 
 BLOCK: joinL29
-type1 : type1 = in.nextInt(), 
-y1 : y1 = in.nextDouble(), 
-r1 : r1 = in.nextDouble(), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(x1, y1, ), 
-p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
 a1 : a1 = in.nextDouble(), 
 x1 : x1 = in.nextDouble(), 
+y1 : y1 = in.nextDouble(), 
+type1 : type1 = in.nextInt(), 
+p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
+p1 : p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(x1, y1, ), 
+in : in = new Scanner(System.in, ), 
+r1 : r1 = in.nextDouble(), 
 
 BLOCK: falseL31
 type1 : type1 = in.nextInt(), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new CartesianPoint(0.0, 0.0, ), 
 p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
+p1 : p1 = new CartesianPoint(0.0, 0.0, ), 
+in : in = new Scanner(System.in, ), 
 
 BLOCK: joinL27
-type1 : type1 = in.nextInt(), 
-y1 : y1 = in.nextDouble(), 
-r1 : r1 = in.nextDouble(), 
 type2 : type2 = in.nextInt(), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new CartesianPoint(0.0, 0.0, ), p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(x1, y1, ), 
-p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
 a1 : a1 = in.nextDouble(), 
 x1 : x1 = in.nextDouble(), 
+y1 : y1 = in.nextDouble(), 
+type1 : type1 = in.nextInt(), 
+p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
+p1 : p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(0.0, 0.0, ), p1 = new CartesianPoint(x1, y1, ), 
+in : in = new Scanner(System.in, ), 
+r1 : r1 = in.nextDouble(), 
 
 BLOCK: trueL32
-type1 : type1 = in.nextInt(), 
-y1 : y1 = in.nextDouble(), 
-r1 : r1 = in.nextDouble(), 
 type2 : type2 = in.nextInt(), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new CartesianPoint(0.0, 0.0, ), p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(x1, y1, ), 
-p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
 a1 : a1 = in.nextDouble(), 
 x1 : x1 = in.nextDouble(), 
+y1 : y1 = in.nextDouble(), 
+type1 : type1 = in.nextInt(), 
+p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
+p1 : p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(0.0, 0.0, ), p1 = new CartesianPoint(x1, y1, ), 
+in : in = new Scanner(System.in, ), 
+r1 : r1 = in.nextDouble(), 
 
 BLOCK: trueL34
-x2 : x2 = in.nextDouble(), 
-type1 : type1 = in.nextInt(), 
-y1 : y1 = in.nextDouble(), 
-r1 : r1 = in.nextDouble(), 
 y2 : y2 = in.nextDouble(), 
+x2 : x2 = in.nextDouble(), 
 type2 : type2 = in.nextInt(), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new CartesianPoint(0.0, 0.0, ), p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(x1, y1, ), 
-p2 : p2 = new CartesianPoint(x2, y2, ), 
 a1 : a1 = in.nextDouble(), 
 x1 : x1 = in.nextDouble(), 
+y1 : y1 = in.nextDouble(), 
+type1 : type1 = in.nextInt(), 
+p2 : p2 = new CartesianPoint(x2, y2, ), 
+p1 : p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(0.0, 0.0, ), p1 = new CartesianPoint(x1, y1, ), 
+in : in = new Scanner(System.in, ), 
+r1 : r1 = in.nextDouble(), 
 
 BLOCK: falseL36
-r2 : r2 = in.nextDouble(), 
-type1 : type1 = in.nextInt(), 
-y1 : y1 = in.nextDouble(), 
-r1 : r1 = in.nextDouble(), 
 type2 : type2 = in.nextInt(), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new CartesianPoint(0.0, 0.0, ), p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(x1, y1, ), 
-p2 : p2 = new PolarPoint(r2, a2, ), 
-a2 : a2 = in.nextDouble(), 
+r2 : r2 = in.nextDouble(), 
 a1 : a1 = in.nextDouble(), 
+a2 : a2 = in.nextDouble(), 
 x1 : x1 = in.nextDouble(), 
+y1 : y1 = in.nextDouble(), 
+type1 : type1 = in.nextInt(), 
+p2 : p2 = new PolarPoint(r2, a2, ), 
+p1 : p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(0.0, 0.0, ), p1 = new CartesianPoint(x1, y1, ), 
+in : in = new Scanner(System.in, ), 
+r1 : r1 = in.nextDouble(), 
 
 BLOCK: joinL35
-x2 : x2 = in.nextDouble(), 
-type1 : type1 = in.nextInt(), 
-r2 : r2 = in.nextDouble(), 
-r1 : r1 = in.nextDouble(), 
-y2 : y2 = in.nextDouble(), 
-type2 : type2 = in.nextInt(), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new CartesianPoint(0.0, 0.0, ), p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(x1, y1, ), 
-p2 : p2 = new PolarPoint(r2, a2, ), p2 = new CartesianPoint(x2, y2, ), 
 a1 : a1 = in.nextDouble(), 
-a2 : a2 = in.nextDouble(), 
-x1 : x1 = in.nextDouble(), 
+r2 : r2 = in.nextDouble(), 
 y1 : y1 = in.nextDouble(), 
+type1 : type1 = in.nextInt(), 
+in : in = new Scanner(System.in, ), 
+y2 : y2 = in.nextDouble(), 
+x2 : x2 = in.nextDouble(), 
+type2 : type2 = in.nextInt(), 
+x1 : x1 = in.nextDouble(), 
+a2 : a2 = in.nextDouble(), 
+p2 : p2 = new PolarPoint(r2, a2, ), p2 = new CartesianPoint(x2, y2, ), 
+p1 : p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(0.0, 0.0, ), p1 = new CartesianPoint(x1, y1, ), 
+r1 : r1 = in.nextDouble(), 
 
 BLOCK: falseL37
-type1 : type1 = in.nextInt(), 
-y1 : y1 = in.nextDouble(), 
-r1 : r1 = in.nextDouble(), 
 type2 : type2 = in.nextInt(), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new CartesianPoint(0.0, 0.0, ), p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(x1, y1, ), 
-p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
 a1 : a1 = in.nextDouble(), 
 x1 : x1 = in.nextDouble(), 
+y1 : y1 = in.nextDouble(), 
+type1 : type1 = in.nextInt(), 
+p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
+p1 : p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(0.0, 0.0, ), p1 = new CartesianPoint(x1, y1, ), 
+in : in = new Scanner(System.in, ), 
+r1 : r1 = in.nextDouble(), 
 
 BLOCK: joinL33
-x2 : x2 = in.nextDouble(), 
-type1 : type1 = in.nextInt(), 
-r2 : r2 = in.nextDouble(), 
-r1 : r1 = in.nextDouble(), 
-y2 : y2 = in.nextDouble(), 
-type2 : type2 = in.nextInt(), 
-distance : distance = distanceBetween(p1, p2, ), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new CartesianPoint(0.0, 0.0, ), p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(x1, y1, ), 
-p2 : p2 = new PolarPoint(r2, a2, ), p2 = new CartesianPoint(0.0, 0.0, ), p2 = new CartesianPoint(x2, y2, ), 
 a1 : a1 = in.nextDouble(), 
-a2 : a2 = in.nextDouble(), 
-x1 : x1 = in.nextDouble(), 
+r2 : r2 = in.nextDouble(), 
 y1 : y1 = in.nextDouble(), 
+type1 : type1 = in.nextInt(), 
+in : in = new Scanner(System.in, ), 
+y2 : y2 = in.nextDouble(), 
+x2 : x2 = in.nextDouble(), 
+type2 : type2 = in.nextInt(), 
+x1 : x1 = in.nextDouble(), 
+a2 : a2 = in.nextDouble(), 
+distance : distance = distanceBetween(p1, p2, ), 
+p2 : p2 = new PolarPoint(r2, a2, ), p2 = new CartesianPoint(0.0, 0.0, ), p2 = new CartesianPoint(x2, y2, ), 
+p1 : p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(0.0, 0.0, ), p1 = new CartesianPoint(x1, y1, ), 
+r1 : r1 = in.nextDouble(), 
 
 BLOCK: trueL38
-x2 : x2 = in.nextDouble(), 
-type1 : type1 = in.nextInt(), 
-r2 : r2 = in.nextDouble(), 
-r1 : r1 = in.nextDouble(), 
-y2 : y2 = in.nextDouble(), 
-type2 : type2 = in.nextInt(), 
-distance : distance = distanceBetween(p1, p2, ), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new CartesianPoint(0.0, 0.0, ), p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(x1, y1, ), 
-p2 : p2 = new PolarPoint(r2, a2, ), p2 = new CartesianPoint(0.0, 0.0, ), p2 = new CartesianPoint(x2, y2, ), 
 a1 : a1 = in.nextDouble(), 
-a2 : a2 = in.nextDouble(), 
-x1 : x1 = in.nextDouble(), 
+r2 : r2 = in.nextDouble(), 
 y1 : y1 = in.nextDouble(), 
+type1 : type1 = in.nextInt(), 
+in : in = new Scanner(System.in, ), 
+y2 : y2 = in.nextDouble(), 
+x2 : x2 = in.nextDouble(), 
+type2 : type2 = in.nextInt(), 
+x1 : x1 = in.nextDouble(), 
+a2 : a2 = in.nextDouble(), 
+distance : distance = distanceBetween(p1, p2, ), 
+p2 : p2 = new PolarPoint(r2, a2, ), p2 = new CartesianPoint(0.0, 0.0, ), p2 = new CartesianPoint(x2, y2, ), 
+p1 : p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(0.0, 0.0, ), p1 = new CartesianPoint(x1, y1, ), 
+r1 : r1 = in.nextDouble(), 
 
 BLOCK: falseL40
-x2 : x2 = in.nextDouble(), 
-type1 : type1 = in.nextInt(), 
-r2 : r2 = in.nextDouble(), 
-r1 : r1 = in.nextDouble(), 
-y2 : y2 = in.nextDouble(), 
-type2 : type2 = in.nextInt(), 
-distance : distance = distanceBetween(p1, p2, ), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new CartesianPoint(0.0, 0.0, ), p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(x1, y1, ), 
-p2 : p2 = new PolarPoint(r2, a2, ), p2 = new CartesianPoint(0.0, 0.0, ), p2 = new CartesianPoint(x2, y2, ), 
 a1 : a1 = in.nextDouble(), 
-a2 : a2 = in.nextDouble(), 
-x1 : x1 = in.nextDouble(), 
+r2 : r2 = in.nextDouble(), 
 y1 : y1 = in.nextDouble(), 
+type1 : type1 = in.nextInt(), 
+in : in = new Scanner(System.in, ), 
+y2 : y2 = in.nextDouble(), 
+x2 : x2 = in.nextDouble(), 
+type2 : type2 = in.nextInt(), 
+x1 : x1 = in.nextDouble(), 
+a2 : a2 = in.nextDouble(), 
+distance : distance = distanceBetween(p1, p2, ), 
+p2 : p2 = new PolarPoint(r2, a2, ), p2 = new CartesianPoint(0.0, 0.0, ), p2 = new CartesianPoint(x2, y2, ), 
+p1 : p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(0.0, 0.0, ), p1 = new CartesianPoint(x1, y1, ), 
+r1 : r1 = in.nextDouble(), 
 
 BLOCK: joinL39
-x2 : x2 = in.nextDouble(), 
-type1 : type1 = in.nextInt(), 
-r2 : r2 = in.nextDouble(), 
-r1 : r1 = in.nextDouble(), 
-y2 : y2 = in.nextDouble(), 
-type2 : type2 = in.nextInt(), 
-distance : distance = distanceBetween(p1, p2, ), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new CartesianPoint(0.0, 0.0, ), p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(x1, y1, ), 
-p2 : p2 = new PolarPoint(r2, a2, ), p2 = new CartesianPoint(0.0, 0.0, ), p2 = new CartesianPoint(x2, y2, ), 
 a1 : a1 = in.nextDouble(), 
-a2 : a2 = in.nextDouble(), 
-x1 : x1 = in.nextDouble(), 
+r2 : r2 = in.nextDouble(), 
 y1 : y1 = in.nextDouble(), 
+type1 : type1 = in.nextInt(), 
+in : in = new Scanner(System.in, ), 
+y2 : y2 = in.nextDouble(), 
+x2 : x2 = in.nextDouble(), 
+type2 : type2 = in.nextInt(), 
+x1 : x1 = in.nextDouble(), 
+a2 : a2 = in.nextDouble(), 
+distance : distance = distanceBetween(p1, p2, ), 
+p2 : p2 = new PolarPoint(r2, a2, ), p2 = new CartesianPoint(0.0, 0.0, ), p2 = new CartesianPoint(x2, y2, ), 
+p1 : p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(0.0, 0.0, ), p1 = new CartesianPoint(x1, y1, ), 
+r1 : r1 = in.nextDouble(), 
 
 BLOCK: StartdistanceBetweenL41
 
@@ -312,14 +312,14 @@ BLOCK: joinL51
 BLOCK: StartmainL62
 
 BLOCK: BasicL63
-p3 : p3 = new PolarPoint(0.0, -405.0, ), 
-p901 : p901 = p1.rotate90(), 
-p : p = new PolarPoint(2.828427, 45.0, ), 
-p903 : p903 = p3.rotate90(), 
 p902 : p902 = p2.rotate90(), 
-p2 : p2 = new PolarPoint(-5.0, -45.0, ), 
 p1 : p1 = new PolarPoint(3.1622777, 71.565, ), 
 p90 : p90 = p.rotate90(), 
+p2 : p2 = new PolarPoint(-5.0, -45.0, ), 
+p903 : p903 = p3.rotate90(), 
+p901 : p901 = p1.rotate90(), 
+p3 : p3 = new PolarPoint(0.0, -405.0, ), 
+p : p = new PolarPoint(2.828427, 45.0, ), 
 
 BLOCK: Startconstructor1L65
 this.y : this.y = 0.0, 
@@ -338,47 +338,47 @@ this.x : this.x = 0.0,
 this.y : this.y = 0.0, 
 
 BLOCK: StartyCoordinateL71
-this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
 
 BLOCK: BasicL72
-this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
 
 BLOCK: StartradiusL74
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: BasicL75
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: StartangleL77
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: BasicL78
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: Startrotate90L80
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: BasicL81
-this.y : this.y = 0.0, 
-p : p = new CartesianPoint(-this.y, this.x, ), 
 this.x : this.x = 0.0, 
+p : p = new CartesianPoint(-this.y, this.x, ), 
+this.y : this.y = 0.0, 
 
 BLOCK: StartmainL83
 
 BLOCK: BasicL84
-p90 : p90 = p.rotate90(), 
-p901 : p901 = p1.rotate90(), 
 p902 : p902 = p2.rotate90(), 
-p : p = new CartesianPoint(2.0, 2.0, ), 
-p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
 p1 : p1 = new CartesianPoint(1.0, 3.0, ), 
+p901 : p901 = p1.rotate90(), 
+p : p = new CartesianPoint(2.0, 2.0, ), 
+p90 : p90 = p.rotate90(), 
+p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
 
 BLOCK: Startconstructor1L0
 this.a : this.a = 0.0, 
@@ -405,16 +405,16 @@ this.a : this.a = 0.0,
 this.r : this.r = 0.0, 
 
 BLOCK: StartyCoordinateL6
-this.a : this.a = 0.0, 
 this.r : this.r = 0.0, 
+this.a : this.a = 0.0, 
 
 BLOCK: StartyCoordinateL6
-this.a : this.a = 0.0, 
 this.r : this.r = 0.0, 
+this.a : this.a = 0.0, 
 
 BLOCK: BasicL7
-this.a : this.a = 0.0, 
 this.r : this.r = 0.0, 
+this.a : this.a = 0.0, 
 
 BLOCK: StartradiusL9
 this.r : this.r = 0.0, 
@@ -438,7 +438,7 @@ this.a : this.a = 0.0,
 
 BLOCK: joinL13
 this.r : this.r = 0.0, 
-this.a : this.a = 0.0, this.a = this.a + 180.0, 
+this.a : this.a = this.a + 180.0, this.a = 0.0, 
 
 BLOCK: StartangleL15
 this.r : this.r = 0.0, 
@@ -458,20 +458,20 @@ this.a : this.a = this.a + 360.0,
 
 BLOCK: BasicL19
 this.r : this.r = 0.0, 
-this.a : this.a = this.a + 360.0, this.a = 0.0, 
+this.a : this.a = 0.0, this.a = this.a + 360.0, 
 
 BLOCK: Startrotate90L20
-this.r : this.r = 0.0, 
 this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
 
 BLOCK: Startrotate90L20
-this.r : this.r = 0.0, 
 this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
 
 BLOCK: BasicL21
-this.r : this.r = 0.0, 
-this.a : this.a = 0.0, 
 p : p = new PolarPoint(this.r, this.a + 90.0, ), 
+this.a : this.a = 0.0, 
+this.r : this.r = 0.0, 
 
 BLOCK: StartmainL23
 
@@ -479,185 +479,185 @@ BLOCK: StartmainL23
 
 BLOCK: BasicL24
 type1 : type1 = in.nextInt(), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new CartesianPoint(0.0, 0.0, ), 
 p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
+p1 : p1 = new CartesianPoint(0.0, 0.0, ), 
+in : in = new Scanner(System.in, ), 
 
 BLOCK: trueL26
 type1 : type1 = in.nextInt(), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new CartesianPoint(0.0, 0.0, ), 
 p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
+p1 : p1 = new CartesianPoint(0.0, 0.0, ), 
+in : in = new Scanner(System.in, ), 
 
 BLOCK: trueL28
-type1 : type1 = in.nextInt(), 
-y1 : y1 = in.nextDouble(), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new CartesianPoint(x1, y1, ), 
-p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
 x1 : x1 = in.nextDouble(), 
+y1 : y1 = in.nextDouble(), 
+type1 : type1 = in.nextInt(), 
+p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
+p1 : p1 = new CartesianPoint(x1, y1, ), 
+in : in = new Scanner(System.in, ), 
 
 BLOCK: falseL30
+a1 : a1 = in.nextDouble(), 
 type1 : type1 = in.nextInt(), 
+p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
+p1 : p1 = new PolarPoint(r1, a1, ), 
 r1 : r1 = in.nextDouble(), 
 in : in = new Scanner(System.in, ), 
-p1 : p1 = new PolarPoint(r1, a1, ), 
-a1 : a1 = in.nextDouble(), 
-p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
 
 BLOCK: joinL29
-type1 : type1 = in.nextInt(), 
-y1 : y1 = in.nextDouble(), 
-r1 : r1 = in.nextDouble(), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(x1, y1, ), 
-p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
 a1 : a1 = in.nextDouble(), 
 x1 : x1 = in.nextDouble(), 
+y1 : y1 = in.nextDouble(), 
+type1 : type1 = in.nextInt(), 
+p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
+p1 : p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(x1, y1, ), 
+in : in = new Scanner(System.in, ), 
+r1 : r1 = in.nextDouble(), 
 
 BLOCK: falseL31
 type1 : type1 = in.nextInt(), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new CartesianPoint(0.0, 0.0, ), 
 p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
+p1 : p1 = new CartesianPoint(0.0, 0.0, ), 
+in : in = new Scanner(System.in, ), 
 
 BLOCK: joinL27
-type1 : type1 = in.nextInt(), 
-y1 : y1 = in.nextDouble(), 
-r1 : r1 = in.nextDouble(), 
 type2 : type2 = in.nextInt(), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new CartesianPoint(0.0, 0.0, ), p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(x1, y1, ), 
-p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
 a1 : a1 = in.nextDouble(), 
 x1 : x1 = in.nextDouble(), 
+y1 : y1 = in.nextDouble(), 
+type1 : type1 = in.nextInt(), 
+p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
+p1 : p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(0.0, 0.0, ), p1 = new CartesianPoint(x1, y1, ), 
+in : in = new Scanner(System.in, ), 
+r1 : r1 = in.nextDouble(), 
 
 BLOCK: trueL32
-type1 : type1 = in.nextInt(), 
-y1 : y1 = in.nextDouble(), 
-r1 : r1 = in.nextDouble(), 
 type2 : type2 = in.nextInt(), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new CartesianPoint(0.0, 0.0, ), p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(x1, y1, ), 
-p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
 a1 : a1 = in.nextDouble(), 
 x1 : x1 = in.nextDouble(), 
+y1 : y1 = in.nextDouble(), 
+type1 : type1 = in.nextInt(), 
+p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
+p1 : p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(0.0, 0.0, ), p1 = new CartesianPoint(x1, y1, ), 
+in : in = new Scanner(System.in, ), 
+r1 : r1 = in.nextDouble(), 
 
 BLOCK: trueL34
-x2 : x2 = in.nextDouble(), 
-type1 : type1 = in.nextInt(), 
-y1 : y1 = in.nextDouble(), 
-r1 : r1 = in.nextDouble(), 
 y2 : y2 = in.nextDouble(), 
+x2 : x2 = in.nextDouble(), 
 type2 : type2 = in.nextInt(), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new CartesianPoint(0.0, 0.0, ), p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(x1, y1, ), 
-p2 : p2 = new CartesianPoint(x2, y2, ), 
 a1 : a1 = in.nextDouble(), 
 x1 : x1 = in.nextDouble(), 
+y1 : y1 = in.nextDouble(), 
+type1 : type1 = in.nextInt(), 
+p2 : p2 = new CartesianPoint(x2, y2, ), 
+p1 : p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(0.0, 0.0, ), p1 = new CartesianPoint(x1, y1, ), 
+in : in = new Scanner(System.in, ), 
+r1 : r1 = in.nextDouble(), 
 
 BLOCK: falseL36
-r2 : r2 = in.nextDouble(), 
-type1 : type1 = in.nextInt(), 
-y1 : y1 = in.nextDouble(), 
-r1 : r1 = in.nextDouble(), 
 type2 : type2 = in.nextInt(), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new CartesianPoint(0.0, 0.0, ), p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(x1, y1, ), 
-p2 : p2 = new PolarPoint(r2, a2, ), 
-a2 : a2 = in.nextDouble(), 
+r2 : r2 = in.nextDouble(), 
 a1 : a1 = in.nextDouble(), 
+a2 : a2 = in.nextDouble(), 
 x1 : x1 = in.nextDouble(), 
+y1 : y1 = in.nextDouble(), 
+type1 : type1 = in.nextInt(), 
+p2 : p2 = new PolarPoint(r2, a2, ), 
+p1 : p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(0.0, 0.0, ), p1 = new CartesianPoint(x1, y1, ), 
+in : in = new Scanner(System.in, ), 
+r1 : r1 = in.nextDouble(), 
 
 BLOCK: joinL35
-x2 : x2 = in.nextDouble(), 
-type1 : type1 = in.nextInt(), 
-r2 : r2 = in.nextDouble(), 
-r1 : r1 = in.nextDouble(), 
-y2 : y2 = in.nextDouble(), 
-type2 : type2 = in.nextInt(), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new CartesianPoint(0.0, 0.0, ), p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(x1, y1, ), 
-p2 : p2 = new PolarPoint(r2, a2, ), p2 = new CartesianPoint(x2, y2, ), 
 a1 : a1 = in.nextDouble(), 
-a2 : a2 = in.nextDouble(), 
-x1 : x1 = in.nextDouble(), 
+r2 : r2 = in.nextDouble(), 
 y1 : y1 = in.nextDouble(), 
+type1 : type1 = in.nextInt(), 
+in : in = new Scanner(System.in, ), 
+y2 : y2 = in.nextDouble(), 
+x2 : x2 = in.nextDouble(), 
+type2 : type2 = in.nextInt(), 
+x1 : x1 = in.nextDouble(), 
+a2 : a2 = in.nextDouble(), 
+p2 : p2 = new PolarPoint(r2, a2, ), p2 = new CartesianPoint(x2, y2, ), 
+p1 : p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(0.0, 0.0, ), p1 = new CartesianPoint(x1, y1, ), 
+r1 : r1 = in.nextDouble(), 
 
 BLOCK: falseL37
-type1 : type1 = in.nextInt(), 
-y1 : y1 = in.nextDouble(), 
-r1 : r1 = in.nextDouble(), 
 type2 : type2 = in.nextInt(), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new CartesianPoint(0.0, 0.0, ), p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(x1, y1, ), 
-p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
 a1 : a1 = in.nextDouble(), 
 x1 : x1 = in.nextDouble(), 
+y1 : y1 = in.nextDouble(), 
+type1 : type1 = in.nextInt(), 
+p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
+p1 : p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(0.0, 0.0, ), p1 = new CartesianPoint(x1, y1, ), 
+in : in = new Scanner(System.in, ), 
+r1 : r1 = in.nextDouble(), 
 
 BLOCK: joinL33
-x2 : x2 = in.nextDouble(), 
-type1 : type1 = in.nextInt(), 
-r2 : r2 = in.nextDouble(), 
-r1 : r1 = in.nextDouble(), 
-y2 : y2 = in.nextDouble(), 
-type2 : type2 = in.nextInt(), 
-distance : distance = distanceBetween(p1, p2, ), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new CartesianPoint(0.0, 0.0, ), p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(x1, y1, ), 
-p2 : p2 = new PolarPoint(r2, a2, ), p2 = new CartesianPoint(0.0, 0.0, ), p2 = new CartesianPoint(x2, y2, ), 
 a1 : a1 = in.nextDouble(), 
-a2 : a2 = in.nextDouble(), 
-x1 : x1 = in.nextDouble(), 
+r2 : r2 = in.nextDouble(), 
 y1 : y1 = in.nextDouble(), 
+type1 : type1 = in.nextInt(), 
+in : in = new Scanner(System.in, ), 
+y2 : y2 = in.nextDouble(), 
+x2 : x2 = in.nextDouble(), 
+type2 : type2 = in.nextInt(), 
+x1 : x1 = in.nextDouble(), 
+a2 : a2 = in.nextDouble(), 
+distance : distance = distanceBetween(p1, p2, ), 
+p2 : p2 = new PolarPoint(r2, a2, ), p2 = new CartesianPoint(0.0, 0.0, ), p2 = new CartesianPoint(x2, y2, ), 
+p1 : p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(0.0, 0.0, ), p1 = new CartesianPoint(x1, y1, ), 
+r1 : r1 = in.nextDouble(), 
 
 BLOCK: trueL38
-x2 : x2 = in.nextDouble(), 
-type1 : type1 = in.nextInt(), 
-r2 : r2 = in.nextDouble(), 
-r1 : r1 = in.nextDouble(), 
-y2 : y2 = in.nextDouble(), 
-type2 : type2 = in.nextInt(), 
-distance : distance = distanceBetween(p1, p2, ), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new CartesianPoint(0.0, 0.0, ), p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(x1, y1, ), 
-p2 : p2 = new PolarPoint(r2, a2, ), p2 = new CartesianPoint(0.0, 0.0, ), p2 = new CartesianPoint(x2, y2, ), 
 a1 : a1 = in.nextDouble(), 
-a2 : a2 = in.nextDouble(), 
-x1 : x1 = in.nextDouble(), 
+r2 : r2 = in.nextDouble(), 
 y1 : y1 = in.nextDouble(), 
+type1 : type1 = in.nextInt(), 
+in : in = new Scanner(System.in, ), 
+y2 : y2 = in.nextDouble(), 
+x2 : x2 = in.nextDouble(), 
+type2 : type2 = in.nextInt(), 
+x1 : x1 = in.nextDouble(), 
+a2 : a2 = in.nextDouble(), 
+distance : distance = distanceBetween(p1, p2, ), 
+p2 : p2 = new PolarPoint(r2, a2, ), p2 = new CartesianPoint(0.0, 0.0, ), p2 = new CartesianPoint(x2, y2, ), 
+p1 : p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(0.0, 0.0, ), p1 = new CartesianPoint(x1, y1, ), 
+r1 : r1 = in.nextDouble(), 
 
 BLOCK: falseL40
-x2 : x2 = in.nextDouble(), 
-type1 : type1 = in.nextInt(), 
-r2 : r2 = in.nextDouble(), 
-r1 : r1 = in.nextDouble(), 
-y2 : y2 = in.nextDouble(), 
-type2 : type2 = in.nextInt(), 
-distance : distance = distanceBetween(p1, p2, ), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new CartesianPoint(0.0, 0.0, ), p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(x1, y1, ), 
-p2 : p2 = new PolarPoint(r2, a2, ), p2 = new CartesianPoint(0.0, 0.0, ), p2 = new CartesianPoint(x2, y2, ), 
 a1 : a1 = in.nextDouble(), 
-a2 : a2 = in.nextDouble(), 
-x1 : x1 = in.nextDouble(), 
+r2 : r2 = in.nextDouble(), 
 y1 : y1 = in.nextDouble(), 
+type1 : type1 = in.nextInt(), 
+in : in = new Scanner(System.in, ), 
+y2 : y2 = in.nextDouble(), 
+x2 : x2 = in.nextDouble(), 
+type2 : type2 = in.nextInt(), 
+x1 : x1 = in.nextDouble(), 
+a2 : a2 = in.nextDouble(), 
+distance : distance = distanceBetween(p1, p2, ), 
+p2 : p2 = new PolarPoint(r2, a2, ), p2 = new CartesianPoint(0.0, 0.0, ), p2 = new CartesianPoint(x2, y2, ), 
+p1 : p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(0.0, 0.0, ), p1 = new CartesianPoint(x1, y1, ), 
+r1 : r1 = in.nextDouble(), 
 
 BLOCK: joinL39
-x2 : x2 = in.nextDouble(), 
-type1 : type1 = in.nextInt(), 
-r2 : r2 = in.nextDouble(), 
-r1 : r1 = in.nextDouble(), 
-y2 : y2 = in.nextDouble(), 
-type2 : type2 = in.nextInt(), 
-distance : distance = distanceBetween(p1, p2, ), 
-in : in = new Scanner(System.in, ), 
-p1 : p1 = new CartesianPoint(0.0, 0.0, ), p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(x1, y1, ), 
-p2 : p2 = new PolarPoint(r2, a2, ), p2 = new CartesianPoint(0.0, 0.0, ), p2 = new CartesianPoint(x2, y2, ), 
 a1 : a1 = in.nextDouble(), 
-a2 : a2 = in.nextDouble(), 
-x1 : x1 = in.nextDouble(), 
+r2 : r2 = in.nextDouble(), 
 y1 : y1 = in.nextDouble(), 
+type1 : type1 = in.nextInt(), 
+in : in = new Scanner(System.in, ), 
+y2 : y2 = in.nextDouble(), 
+x2 : x2 = in.nextDouble(), 
+type2 : type2 = in.nextInt(), 
+x1 : x1 = in.nextDouble(), 
+a2 : a2 = in.nextDouble(), 
+distance : distance = distanceBetween(p1, p2, ), 
+p2 : p2 = new PolarPoint(r2, a2, ), p2 = new CartesianPoint(0.0, 0.0, ), p2 = new CartesianPoint(x2, y2, ), 
+p1 : p1 = new PolarPoint(r1, a1, ), p1 = new CartesianPoint(0.0, 0.0, ), p1 = new CartesianPoint(x1, y1, ), 
+r1 : r1 = in.nextDouble(), 
 
 BLOCK: StartdistanceBetweenL41
 
@@ -706,14 +706,14 @@ BLOCK: StartmainL62
 BLOCK: StartmainL62
 
 BLOCK: BasicL63
-p3 : p3 = new PolarPoint(0.0, -405.0, ), 
-p901 : p901 = p1.rotate90(), 
-p : p = new PolarPoint(2.828427, 45.0, ), 
-p903 : p903 = p3.rotate90(), 
 p902 : p902 = p2.rotate90(), 
-p2 : p2 = new PolarPoint(-5.0, -45.0, ), 
 p1 : p1 = new PolarPoint(3.1622777, 71.565, ), 
 p90 : p90 = p.rotate90(), 
+p2 : p2 = new PolarPoint(-5.0, -45.0, ), 
+p903 : p903 = p3.rotate90(), 
+p901 : p901 = p1.rotate90(), 
+p3 : p3 = new PolarPoint(0.0, -405.0, ), 
+p : p = new PolarPoint(2.828427, 45.0, ), 
 
 BLOCK: Startconstructor1L65
 this.y : this.y = 0.0, 
@@ -740,120 +740,73 @@ this.x : this.x = 0.0,
 this.y : this.y = 0.0, 
 
 BLOCK: StartyCoordinateL71
-this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
 
 BLOCK: StartyCoordinateL71
-this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
 
 BLOCK: BasicL72
-this.x : this.x = 0.0, 
-this.y : this.y = 0.0, 
-
-BLOCK: StartradiusL74
 this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
 
 BLOCK: StartradiusL74
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartradiusL74
+this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: BasicL75
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: StartangleL77
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: StartangleL77
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: BasicL78
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: Startrotate90L80
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: Startrotate90L80
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: BasicL81
-this.y : this.y = 0.0, 
-p : p = new CartesianPoint(-this.y, this.x, ), 
 this.x : this.x = 0.0, 
+p : p = new CartesianPoint(-this.y, this.x, ), 
+this.y : this.y = 0.0, 
 
 BLOCK: StartmainL83
 
 BLOCK: StartmainL83
 
 BLOCK: BasicL84
-p90 : p90 = p.rotate90(), 
-p901 : p901 = p1.rotate90(), 
 p902 : p902 = p2.rotate90(), 
-p : p = new CartesianPoint(2.0, 2.0, ), 
-p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
 p1 : p1 = new CartesianPoint(1.0, 3.0, ), 
+p901 : p901 = p1.rotate90(), 
+p : p = new CartesianPoint(2.0, 2.0, ), 
+p90 : p90 = p.rotate90(), 
+p2 : p2 = new CartesianPoint(0.0, 0.0, ), 
 
-Unfiltered: 6268
-Filtered: 3
-
-
-Duplicate found: 102_Code/102_hw1/dir29/PointRelation.java lines [9, 53] and 102_Code/102_hw1/dir29/PointRelation.java lines [8, 51]
-102_Code/102_hw1/dir29/PointRelation.java ----------
-9 :	p2 = new CartesianPoint(0.0, 0.0, )
-17 :	x1 = in.nextDouble()
-19 :	y1 = in.nextDouble()
-27 :	a1 = in.nextDouble()
-43 :	x2 = in.nextDouble()
-45 :	y2 = in.nextDouble()
-46 :	p2 = new CartesianPoint(x2, y2, )
-53 :	a2 = in.nextDouble()
-102_Code/102_hw1/dir29/PointRelation.java ----------
-8 :	p1 = new CartesianPoint(0.0, 0.0, )
-25 :	r1 = in.nextDouble()
-27 :	a1 = in.nextDouble()
-51 :	r2 = in.nextDouble()
-17 :	x1 = in.nextDouble()
-19 :	y1 = in.nextDouble()
-20 :	p1 = new CartesianPoint(x1, y1, )
-45 :	y2 = in.nextDouble()
-===========================
-
-
-
-Duplicate found: 102_Code/102_hw1/dir29/PointRelation.java lines [9, 53] and 102_Code/102_hw1/dir29/PointRelation.java lines [8, 53]
-102_Code/102_hw1/dir29/PointRelation.java ----------
-9 :	p2 = new CartesianPoint(0.0, 0.0, )
-17 :	x1 = in.nextDouble()
-19 :	y1 = in.nextDouble()
-27 :	a1 = in.nextDouble()
-43 :	x2 = in.nextDouble()
-45 :	y2 = in.nextDouble()
-46 :	p2 = new CartesianPoint(x2, y2, )
-53 :	a2 = in.nextDouble()
-102_Code/102_hw1/dir29/PointRelation.java ----------
-8 :	p1 = new CartesianPoint(0.0, 0.0, )
-25 :	r1 = in.nextDouble()
-27 :	a1 = in.nextDouble()
-53 :	a2 = in.nextDouble()
-19 :	y1 = in.nextDouble()
-17 :	x1 = in.nextDouble()
-20 :	p1 = new CartesianPoint(x1, y1, )
-45 :	y2 = in.nextDouble()
-===========================
-
+Unfiltered: 1440
+Filtered: 1
 
 
 Duplicate found: 102_Code/102_hw1/dir29/PointRelation.java lines [9, 54] and 102_Code/102_hw1/dir29/PointRelation.java lines [8, 53]
 102_Code/102_hw1/dir29/PointRelation.java ----------
 9 :	p2 = new CartesianPoint(0.0, 0.0, )
-17 :	x1 = in.nextDouble()
 19 :	y1 = in.nextDouble()
 43 :	x2 = in.nextDouble()
 45 :	y2 = in.nextDouble()
@@ -862,12 +815,11 @@ Duplicate found: 102_Code/102_hw1/dir29/PointRelation.java lines [9, 54] and 102
 54 :	p2 = new PolarPoint(r2, a2, )
 102_Code/102_hw1/dir29/PointRelation.java ----------
 8 :	p1 = new CartesianPoint(0.0, 0.0, )
-51 :	r2 = in.nextDouble()
-25 :	r1 = in.nextDouble()
-53 :	a2 = in.nextDouble()
 27 :	a1 = in.nextDouble()
-19 :	y1 = in.nextDouble()
+53 :	a2 = in.nextDouble()
+25 :	r1 = in.nextDouble()
 17 :	x1 = in.nextDouble()
+19 :	y1 = in.nextDouble()
 20 :	p1 = new CartesianPoint(x1, y1, )
 ===========================
 
@@ -876,7 +828,7 @@ Duplicate found: 102_Code/102_hw1/dir29/PointRelation.java lines [9, 54] and 102
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 16.743 s
-[INFO] Finished at: 2019-05-01T17:13:15-07:00
-[INFO] Final Memory: 37M/1554M
+[INFO] Total time: 14.975 s
+[INFO] Finished at: 2019-05-06T19:54:00-07:00
+[INFO] Final Memory: 25M/1435M
 [INFO] ------------------------------------------------------------------------

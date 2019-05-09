@@ -1,0 +1,15 @@
+digraph G {
+"125 : a.xCoordinate() >= 0 && b.xCoordinate() >= 0"
+"126 : a.yCoordinate() >= 0 && b.yCoordinate() >= 0"
+"127 : 1"
+"128 : a.xCoordinate() <= 0 && b.xCoordinate() <= 0"
+"129 : a.yCoordinate() >= 0 && b.yCoordinate() >= 0"
+"130 : 1"
+"131 : a.xCoordinate() <= 0 && b.xCoordinate() <= 0"
+"132 : a.yCoordinate() <= 0 && b.yCoordinate() <= 0"
+"133 : 1"
+"134 : a.xCoordinate() >= 0 && b.xCoordinate() >= 0"
+"135 : a.yCoordinate() <= 0 && b.yCoordinate() <= 0"
+"136 : 1"
+"137 : 0"
+}

@@ -19,94 +19,94 @@
 [INFO] 
 [INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ thesis ---
 BLOCK: Startconstructor1L0
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL1
-this.right : this.right = rht, 
 this.left : this.left = lft, 
+this.right : this.right = rht, 
 
 BLOCK: StartevaluateL3
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL4
-y : y = this.right.evaluate(binding, ), 
+this.left : this.left = null, 
 multiply : multiply = x * y, 
 this.right : this.right = null, 
-this.left : this.left = null, 
+y : y = this.right.evaluate(binding, ), 
 x : x = this.left.evaluate(binding, ), 
 
 BLOCK: StarttoStringL6
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: BasicL7
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: StartmainL9
 
 BLOCK: BasicL10
-ex25 : ex25 = new SubtractExpression(new NegationExpression(new DoubleConstantExpression(-3, ), ), new NegationExpression(new DoubleConstantExpression(12, ), ), ), 
-ex8 : ex8 = new DivideExpression(new DoubleConstantExpression(0, ), new DoubleConstantExpression(3.2, ), ), 
-ex2 : ex2 = new MultiplyExpression(new MultiplyExpression(new IdentifierExpression("p", ), new IdentifierExpression("r", ), ), new DoubleConstantExpression(2, ), ), 
-ex23 : ex23 = new SubtractExpression(new NegationExpression(new DoubleConstantExpression(3, ), ), new NegationExpression(new DoubleConstantExpression(12, ), ), ), 
-a2 : a2 = new Assignment("r", new NegationExpression(new DoubleConstantExpression(10, ), ), ), 
-ex16 : ex16 = new MultiplyExpression(new NegationExpression(new DoubleConstantExpression(4, ), ), new DoubleConstantExpression(7, ), ), 
-ex3 : ex3 = new DivideExpression(new DoubleConstantExpression(90, ), new NegationExpression(new DoubleConstantExpression(9, ), ), ), 
-ex18 : ex18 = new DivideExpression(new DoubleConstantExpression(10, ), new NegationExpression(new DoubleConstantExpression(5, ), ), ), 
-ex11 : ex11 = new AddExpression(new NegationExpression(new DoubleConstantExpression(4, ), ), new NegationExpression(new DoubleConstantExpression(7, ), ), ), 
-ex21 : ex21 = new SubtractExpression(new DoubleConstantExpression(3, ), new DoubleConstantExpression(12, ), ), 
-ex26 : ex26 = new SubtractExpression(new IdentifierExpression("p", ), new IdentifierExpression("r", ), ), 
-ex6 : ex6 = new SubtractExpression(new AddExpression(new DoubleConstantExpression(1, ), new MultiplyExpression(new DoubleConstantExpression(2, ), new DoubleConstantExpression(3, ), ), ), new MultiplyExpression(new DoubleConstantExpression(4, ), new DoubleConstantExpression(17, ), ), ), 
-ex22 : ex22 = new SubtractExpression(new DoubleConstantExpression(3, ), new NegationExpression(new DoubleConstantExpression(12, ), ), ), 
-ex13 : ex13 = new MultiplyExpression(new DoubleConstantExpression(4, ), new DoubleConstantExpression(7, ), ), 
-ex24 : ex24 = new SubtractExpression(new NegationExpression(new DoubleConstantExpression(3, ), ), new DoubleConstantExpression(12, ), ), 
-ex19 : ex19 = new DivideExpression(new NegationExpression(new DoubleConstantExpression(10, ), ), new NegationExpression(new DoubleConstantExpression(5, ), ), ), 
-a1 : a1 = new Assignment("p", new DoubleConstantExpression(4, ), ), 
-ex7 : ex7 = new IdentifierExpression("p", ), 
-ex27 : ex27 = new AddExpression(new IdentifierExpression("p", ), new IdentifierExpression("r", ), ), 
-b1 : b1 = new VariableBindings(), 
-ex5 : ex5 = new MultiplyExpression(new DoubleConstantExpression(1.7, ), new DoubleConstantExpression(3.2, ), ), 
-ex20 : ex20 = new DivideExpression(new NegationExpression(new DoubleConstantExpression(10, ), ), new DoubleConstantExpression(5, ), ), 
-ex28 : ex28 = new MultiplyExpression(new IdentifierExpression("p", ), new IdentifierExpression("r", ), ), 
-ex12 : ex12 = new AddExpression(new NegationExpression(new DoubleConstantExpression(4, ), ), new DoubleConstantExpression(7, ), ), 
-ex14 : ex14 = new MultiplyExpression(new DoubleConstantExpression(4, ), new NegationExpression(new DoubleConstantExpression(7, ), ), ), 
-ex9 : ex9 = new AddExpression(new DoubleConstantExpression(4, ), new DoubleConstantExpression(7, ), ), 
-ex1 : ex1 = new AddExpression(new DoubleConstantExpression(1, ), new DoubleConstantExpression(2, ), ), 
-ex10 : ex10 = new AddExpression(new DoubleConstantExpression(4, ), new NegationExpression(new DoubleConstantExpression(7, ), ), ), 
-ex29 : ex29 = new DivideExpression(new IdentifierExpression("p", ), new IdentifierExpression("r", ), ), 
-ex4 : ex4 = new SubtractExpression(new DoubleConstantExpression(4, ), new NegationExpression(new DoubleConstantExpression(8, ), ), ), 
-ex15 : ex15 = new MultiplyExpression(new NegationExpression(new DoubleConstantExpression(4, ), ), new NegationExpression(new DoubleConstantExpression(7, ), ), ), 
 ex17 : ex17 = new DivideExpression(new DoubleConstantExpression(10, ), new DoubleConstantExpression(5, ), ), 
+ex13 : ex13 = new MultiplyExpression(new DoubleConstantExpression(4, ), new DoubleConstantExpression(7, ), ), 
+ex16 : ex16 = new MultiplyExpression(new NegationExpression(new DoubleConstantExpression(4, ), ), new DoubleConstantExpression(7, ), ), 
+ex10 : ex10 = new AddExpression(new DoubleConstantExpression(4, ), new NegationExpression(new DoubleConstantExpression(7, ), ), ), 
+a2 : a2 = new Assignment("r", new NegationExpression(new DoubleConstantExpression(10, ), ), ), 
+ex11 : ex11 = new AddExpression(new NegationExpression(new DoubleConstantExpression(4, ), ), new NegationExpression(new DoubleConstantExpression(7, ), ), ), 
+ex9 : ex9 = new AddExpression(new DoubleConstantExpression(4, ), new DoubleConstantExpression(7, ), ), 
+ex27 : ex27 = new AddExpression(new IdentifierExpression("p", ), new IdentifierExpression("r", ), ), 
+a1 : a1 = new Assignment("p", new DoubleConstantExpression(4, ), ), 
+ex3 : ex3 = new DivideExpression(new DoubleConstantExpression(90, ), new NegationExpression(new DoubleConstantExpression(9, ), ), ), 
+ex26 : ex26 = new SubtractExpression(new IdentifierExpression("p", ), new IdentifierExpression("r", ), ), 
+ex23 : ex23 = new SubtractExpression(new NegationExpression(new DoubleConstantExpression(3, ), ), new NegationExpression(new DoubleConstantExpression(12, ), ), ), 
+ex25 : ex25 = new SubtractExpression(new NegationExpression(new DoubleConstantExpression(-3, ), ), new NegationExpression(new DoubleConstantExpression(12, ), ), ), 
+ex18 : ex18 = new DivideExpression(new DoubleConstantExpression(10, ), new NegationExpression(new DoubleConstantExpression(5, ), ), ), 
+ex22 : ex22 = new SubtractExpression(new DoubleConstantExpression(3, ), new NegationExpression(new DoubleConstantExpression(12, ), ), ), 
+ex15 : ex15 = new MultiplyExpression(new NegationExpression(new DoubleConstantExpression(4, ), ), new NegationExpression(new DoubleConstantExpression(7, ), ), ), 
+ex4 : ex4 = new SubtractExpression(new DoubleConstantExpression(4, ), new NegationExpression(new DoubleConstantExpression(8, ), ), ), 
+ex2 : ex2 = new MultiplyExpression(new MultiplyExpression(new IdentifierExpression("p", ), new IdentifierExpression("r", ), ), new DoubleConstantExpression(2, ), ), 
+ex19 : ex19 = new DivideExpression(new NegationExpression(new DoubleConstantExpression(10, ), ), new NegationExpression(new DoubleConstantExpression(5, ), ), ), 
+ex29 : ex29 = new DivideExpression(new IdentifierExpression("p", ), new IdentifierExpression("r", ), ), 
+ex24 : ex24 = new SubtractExpression(new NegationExpression(new DoubleConstantExpression(3, ), ), new DoubleConstantExpression(12, ), ), 
+ex14 : ex14 = new MultiplyExpression(new DoubleConstantExpression(4, ), new NegationExpression(new DoubleConstantExpression(7, ), ), ), 
+ex6 : ex6 = new SubtractExpression(new AddExpression(new DoubleConstantExpression(1, ), new MultiplyExpression(new DoubleConstantExpression(2, ), new DoubleConstantExpression(3, ), ), ), new MultiplyExpression(new DoubleConstantExpression(4, ), new DoubleConstantExpression(17, ), ), ), 
+ex28 : ex28 = new MultiplyExpression(new IdentifierExpression("p", ), new IdentifierExpression("r", ), ), 
+b1 : b1 = new VariableBindings(), 
+ex20 : ex20 = new DivideExpression(new NegationExpression(new DoubleConstantExpression(10, ), ), new DoubleConstantExpression(5, ), ), 
+ex8 : ex8 = new DivideExpression(new DoubleConstantExpression(0, ), new DoubleConstantExpression(3.2, ), ), 
+ex5 : ex5 = new MultiplyExpression(new DoubleConstantExpression(1.7, ), new DoubleConstantExpression(3.2, ), ), 
+ex12 : ex12 = new AddExpression(new NegationExpression(new DoubleConstantExpression(4, ), ), new DoubleConstantExpression(7, ), ), 
+ex1 : ex1 = new AddExpression(new DoubleConstantExpression(1, ), new DoubleConstantExpression(2, ), ), 
+ex21 : ex21 = new SubtractExpression(new DoubleConstantExpression(3, ), new DoubleConstantExpression(12, ), ), 
+ex7 : ex7 = new IdentifierExpression("p", ), 
 
 BLOCK: Startconstructor1L12
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: BasicL13
-this.left : this.left = lft, 
 this.right : this.right = rht, 
+this.left : this.left = lft, 
 
 BLOCK: StartevaluateL15
 this.right : this.right = null, 
 this.left : this.left = null, 
 
 BLOCK: BasicL16
-x : x = this.left.evaluate(binding, ), 
 this.right : this.right = null, 
-y : y = this.right.evaluate(binding, ), 
+x : x = this.left.evaluate(binding, ), 
 this.left : this.left = null, 
 add : add = x + y, 
+y : y = this.right.evaluate(binding, ), 
 
 BLOCK: StarttoStringL18
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL19
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: Startconstructor1L21
 this.bindingList : this.bindingList = null, 
@@ -127,62 +127,62 @@ BLOCK: BasicL28
 this.bindingList : this.bindingList = null, 
 
 BLOCK: ForInitL30
-this.bindingList : this.bindingList = null, 
 i : i = 0, 
+this.bindingList : this.bindingList = null, 
 
 BLOCK: ForCondL31
-b2 : b2 = b1.getId(), 
+i : i = i + 1, i = 0, 
+b1 : b1 = this.bindingList.get(i, ), 
 this.bindingList : this.bindingList = null, 
 @temp1 : @temp1 = i, 
-b1 : b1 = this.bindingList.get(i, ), 
-i : i = 0, i = i + 1, 
+b2 : b2 = b1.getId(), 
 
 BLOCK: LoopL32
-b2 : b2 = b1.getId(), 
+i : i = i + 1, i = 0, 
+b1 : b1 = this.bindingList.get(i, ), 
 this.bindingList : this.bindingList = null, 
 @temp1 : @temp1 = i, 
-b1 : b1 = this.bindingList.get(i, ), 
-i : i = 0, i = i + 1, 
+b2 : b2 = b1.getId(), 
 
 BLOCK: BasicL33
-b2 : b2 = b1.getId(), 
+i : i = i + 1, i = 0, 
+b1 : b1 = this.bindingList.get(i, ), 
 this.bindingList : this.bindingList = null, 
 @temp1 : @temp1 = i, 
-b1 : b1 = this.bindingList.get(i, ), 
-i : i = 0, i = i + 1, 
+b2 : b2 = b1.getId(), 
 
 BLOCK: trueL34
-b2 : b2 = b1.getId(), 
+i : i = i + 1, i = 0, 
+b1 : b1 = this.bindingList.get(i, ), 
 this.bindingList : this.bindingList = null, 
 @temp1 : @temp1 = i, 
-b1 : b1 = this.bindingList.get(i, ), 
-i : i = 0, i = i + 1, 
+b2 : b2 = b1.getId(), 
 
 BLOCK: joinL35
-b2 : b2 = b1.getId(), 
+i : i = i + 1, 
+b1 : b1 = this.bindingList.get(i, ), 
 this.bindingList : this.bindingList = null, 
 @temp1 : @temp1 = i, 
-b1 : b1 = this.bindingList.get(i, ), 
-i : i = i + 1, 
+b2 : b2 = b1.getId(), 
 
 BLOCK: Startconstructor1L36
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL37
-this.right : this.right = rht, 
 this.left : this.left = lft, 
+this.right : this.right = rht, 
 
 BLOCK: StartevaluateL39
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: BasicL40
-x : x = this.left.evaluate(binding, ), 
 y : y = this.right.evaluate(binding, ), 
+this.right : this.right = null, 
+x : x = this.left.evaluate(binding, ), 
 divide : divide = x / y, 
 this.left : this.left = null, 
-this.right : this.right = null, 
 
 BLOCK: StarttoStringL42
 this.left : this.left = null, 
@@ -202,8 +202,8 @@ BLOCK: StartevaluateL48
 this.iden : this.iden = null, 
 
 BLOCK: BasicL49
-value : value = bindings.lookupBinding(this.iden, ), 
 this.iden : this.iden = null, 
+value : value = bindings.lookupBinding(this.iden, ), 
 
 BLOCK: StarttoStringL51
 this.iden : this.iden = null, 
@@ -225,18 +225,18 @@ this.right : this.right = null,
 
 BLOCK: BasicL58
 this.left : this.left = null, 
-this.right : this.right = null, 
 x : x = this.left.evaluate(binding, ), 
-y : y = this.right.evaluate(binding, ), 
 subtract : subtract = x - y, 
+y : y = this.right.evaluate(binding, ), 
+this.right : this.right = null, 
 
 BLOCK: StarttoStringL60
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL61
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: Startconstructor1L63
 this.exp : this.exp = null, 
@@ -247,21 +247,21 @@ this.exp : this.exp = e,
 this.variable : this.variable = id, 
 
 BLOCK: StartevaluateL66
-this.exp : this.exp = null, 
 this.variable : this.variable = null, 
+this.exp : this.exp = null, 
 
 BLOCK: BasicL67
-result : result = this.exp.evaluate(bindings, ), 
-this.exp : this.exp = null, 
 this.variable : this.variable = null, 
+this.exp : this.exp = null, 
+result : result = this.exp.evaluate(bindings, ), 
 
 BLOCK: StarttoStringL69
-this.exp : this.exp = null, 
 this.variable : this.variable = null, 
+this.exp : this.exp = null, 
 
 BLOCK: BasicL70
-this.exp : this.exp = null, 
 this.variable : this.variable = null, 
+this.exp : this.exp = null, 
 
 BLOCK: Startconstructor1L72
 this.exp : this.exp = null, 
@@ -273,8 +273,8 @@ BLOCK: StartevaluateL75
 this.exp : this.exp = null, 
 
 BLOCK: BasicL76
-x : x = this.exp.evaluate(binding, ), 
 this.exp : this.exp = null, 
+x : x = this.exp.evaluate(binding, ), 
 
 BLOCK: StarttoStringL78
 this.exp : this.exp = null, 
@@ -299,12 +299,12 @@ this.variable : this.variable = null,
 this.val : this.val = 0.0, 
 
 BLOCK: StartgetIdL87
-this.val : this.val = 0.0, 
 this.variable : this.variable = null, 
+this.val : this.val = 0.0, 
 
 BLOCK: BasicL88
-this.val : this.val = 0.0, 
 this.variable : this.variable = null, 
+this.val : this.val = 0.0, 
 
 BLOCK: Startconstructor1L90
 this.val : this.val = 0.0, 
@@ -325,93 +325,93 @@ BLOCK: BasicL97
 this.val : this.val = 0.0, 
 
 BLOCK: Startconstructor1L0
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: Startconstructor1L0
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL1
-this.right : this.right = rht, 
 this.left : this.left = lft, 
+this.right : this.right = rht, 
 
 BLOCK: StartevaluateL3
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: StartevaluateL3
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL4
-y : y = this.right.evaluate(binding, ), 
+this.left : this.left = null, 
 multiply : multiply = x * y, 
 this.right : this.right = null, 
-this.left : this.left = null, 
+y : y = this.right.evaluate(binding, ), 
 x : x = this.left.evaluate(binding, ), 
 
 BLOCK: StarttoStringL6
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: StarttoStringL6
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: BasicL7
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: StartmainL9
 
 BLOCK: StartmainL9
 
 BLOCK: BasicL10
-ex25 : ex25 = new SubtractExpression(new NegationExpression(new DoubleConstantExpression(-3, ), ), new NegationExpression(new DoubleConstantExpression(12, ), ), ), 
-ex8 : ex8 = new DivideExpression(new DoubleConstantExpression(0, ), new DoubleConstantExpression(3.2, ), ), 
-ex2 : ex2 = new MultiplyExpression(new MultiplyExpression(new IdentifierExpression("p", ), new IdentifierExpression("r", ), ), new DoubleConstantExpression(2, ), ), 
-ex23 : ex23 = new SubtractExpression(new NegationExpression(new DoubleConstantExpression(3, ), ), new NegationExpression(new DoubleConstantExpression(12, ), ), ), 
-a2 : a2 = new Assignment("r", new NegationExpression(new DoubleConstantExpression(10, ), ), ), 
-ex16 : ex16 = new MultiplyExpression(new NegationExpression(new DoubleConstantExpression(4, ), ), new DoubleConstantExpression(7, ), ), 
-ex3 : ex3 = new DivideExpression(new DoubleConstantExpression(90, ), new NegationExpression(new DoubleConstantExpression(9, ), ), ), 
-ex18 : ex18 = new DivideExpression(new DoubleConstantExpression(10, ), new NegationExpression(new DoubleConstantExpression(5, ), ), ), 
-ex11 : ex11 = new AddExpression(new NegationExpression(new DoubleConstantExpression(4, ), ), new NegationExpression(new DoubleConstantExpression(7, ), ), ), 
-ex21 : ex21 = new SubtractExpression(new DoubleConstantExpression(3, ), new DoubleConstantExpression(12, ), ), 
-ex26 : ex26 = new SubtractExpression(new IdentifierExpression("p", ), new IdentifierExpression("r", ), ), 
-ex6 : ex6 = new SubtractExpression(new AddExpression(new DoubleConstantExpression(1, ), new MultiplyExpression(new DoubleConstantExpression(2, ), new DoubleConstantExpression(3, ), ), ), new MultiplyExpression(new DoubleConstantExpression(4, ), new DoubleConstantExpression(17, ), ), ), 
-ex22 : ex22 = new SubtractExpression(new DoubleConstantExpression(3, ), new NegationExpression(new DoubleConstantExpression(12, ), ), ), 
-ex13 : ex13 = new MultiplyExpression(new DoubleConstantExpression(4, ), new DoubleConstantExpression(7, ), ), 
-ex24 : ex24 = new SubtractExpression(new NegationExpression(new DoubleConstantExpression(3, ), ), new DoubleConstantExpression(12, ), ), 
-ex19 : ex19 = new DivideExpression(new NegationExpression(new DoubleConstantExpression(10, ), ), new NegationExpression(new DoubleConstantExpression(5, ), ), ), 
-a1 : a1 = new Assignment("p", new DoubleConstantExpression(4, ), ), 
-ex7 : ex7 = new IdentifierExpression("p", ), 
-ex27 : ex27 = new AddExpression(new IdentifierExpression("p", ), new IdentifierExpression("r", ), ), 
-b1 : b1 = new VariableBindings(), 
-ex5 : ex5 = new MultiplyExpression(new DoubleConstantExpression(1.7, ), new DoubleConstantExpression(3.2, ), ), 
-ex20 : ex20 = new DivideExpression(new NegationExpression(new DoubleConstantExpression(10, ), ), new DoubleConstantExpression(5, ), ), 
-ex28 : ex28 = new MultiplyExpression(new IdentifierExpression("p", ), new IdentifierExpression("r", ), ), 
-ex12 : ex12 = new AddExpression(new NegationExpression(new DoubleConstantExpression(4, ), ), new DoubleConstantExpression(7, ), ), 
-ex14 : ex14 = new MultiplyExpression(new DoubleConstantExpression(4, ), new NegationExpression(new DoubleConstantExpression(7, ), ), ), 
-ex9 : ex9 = new AddExpression(new DoubleConstantExpression(4, ), new DoubleConstantExpression(7, ), ), 
-ex1 : ex1 = new AddExpression(new DoubleConstantExpression(1, ), new DoubleConstantExpression(2, ), ), 
-ex10 : ex10 = new AddExpression(new DoubleConstantExpression(4, ), new NegationExpression(new DoubleConstantExpression(7, ), ), ), 
-ex29 : ex29 = new DivideExpression(new IdentifierExpression("p", ), new IdentifierExpression("r", ), ), 
-ex4 : ex4 = new SubtractExpression(new DoubleConstantExpression(4, ), new NegationExpression(new DoubleConstantExpression(8, ), ), ), 
-ex15 : ex15 = new MultiplyExpression(new NegationExpression(new DoubleConstantExpression(4, ), ), new NegationExpression(new DoubleConstantExpression(7, ), ), ), 
 ex17 : ex17 = new DivideExpression(new DoubleConstantExpression(10, ), new DoubleConstantExpression(5, ), ), 
+ex13 : ex13 = new MultiplyExpression(new DoubleConstantExpression(4, ), new DoubleConstantExpression(7, ), ), 
+ex16 : ex16 = new MultiplyExpression(new NegationExpression(new DoubleConstantExpression(4, ), ), new DoubleConstantExpression(7, ), ), 
+ex10 : ex10 = new AddExpression(new DoubleConstantExpression(4, ), new NegationExpression(new DoubleConstantExpression(7, ), ), ), 
+a2 : a2 = new Assignment("r", new NegationExpression(new DoubleConstantExpression(10, ), ), ), 
+ex11 : ex11 = new AddExpression(new NegationExpression(new DoubleConstantExpression(4, ), ), new NegationExpression(new DoubleConstantExpression(7, ), ), ), 
+ex9 : ex9 = new AddExpression(new DoubleConstantExpression(4, ), new DoubleConstantExpression(7, ), ), 
+ex27 : ex27 = new AddExpression(new IdentifierExpression("p", ), new IdentifierExpression("r", ), ), 
+a1 : a1 = new Assignment("p", new DoubleConstantExpression(4, ), ), 
+ex3 : ex3 = new DivideExpression(new DoubleConstantExpression(90, ), new NegationExpression(new DoubleConstantExpression(9, ), ), ), 
+ex26 : ex26 = new SubtractExpression(new IdentifierExpression("p", ), new IdentifierExpression("r", ), ), 
+ex23 : ex23 = new SubtractExpression(new NegationExpression(new DoubleConstantExpression(3, ), ), new NegationExpression(new DoubleConstantExpression(12, ), ), ), 
+ex25 : ex25 = new SubtractExpression(new NegationExpression(new DoubleConstantExpression(-3, ), ), new NegationExpression(new DoubleConstantExpression(12, ), ), ), 
+ex18 : ex18 = new DivideExpression(new DoubleConstantExpression(10, ), new NegationExpression(new DoubleConstantExpression(5, ), ), ), 
+ex22 : ex22 = new SubtractExpression(new DoubleConstantExpression(3, ), new NegationExpression(new DoubleConstantExpression(12, ), ), ), 
+ex15 : ex15 = new MultiplyExpression(new NegationExpression(new DoubleConstantExpression(4, ), ), new NegationExpression(new DoubleConstantExpression(7, ), ), ), 
+ex4 : ex4 = new SubtractExpression(new DoubleConstantExpression(4, ), new NegationExpression(new DoubleConstantExpression(8, ), ), ), 
+ex2 : ex2 = new MultiplyExpression(new MultiplyExpression(new IdentifierExpression("p", ), new IdentifierExpression("r", ), ), new DoubleConstantExpression(2, ), ), 
+ex19 : ex19 = new DivideExpression(new NegationExpression(new DoubleConstantExpression(10, ), ), new NegationExpression(new DoubleConstantExpression(5, ), ), ), 
+ex29 : ex29 = new DivideExpression(new IdentifierExpression("p", ), new IdentifierExpression("r", ), ), 
+ex24 : ex24 = new SubtractExpression(new NegationExpression(new DoubleConstantExpression(3, ), ), new DoubleConstantExpression(12, ), ), 
+ex14 : ex14 = new MultiplyExpression(new DoubleConstantExpression(4, ), new NegationExpression(new DoubleConstantExpression(7, ), ), ), 
+ex6 : ex6 = new SubtractExpression(new AddExpression(new DoubleConstantExpression(1, ), new MultiplyExpression(new DoubleConstantExpression(2, ), new DoubleConstantExpression(3, ), ), ), new MultiplyExpression(new DoubleConstantExpression(4, ), new DoubleConstantExpression(17, ), ), ), 
+ex28 : ex28 = new MultiplyExpression(new IdentifierExpression("p", ), new IdentifierExpression("r", ), ), 
+b1 : b1 = new VariableBindings(), 
+ex20 : ex20 = new DivideExpression(new NegationExpression(new DoubleConstantExpression(10, ), ), new DoubleConstantExpression(5, ), ), 
+ex8 : ex8 = new DivideExpression(new DoubleConstantExpression(0, ), new DoubleConstantExpression(3.2, ), ), 
+ex5 : ex5 = new MultiplyExpression(new DoubleConstantExpression(1.7, ), new DoubleConstantExpression(3.2, ), ), 
+ex12 : ex12 = new AddExpression(new NegationExpression(new DoubleConstantExpression(4, ), ), new DoubleConstantExpression(7, ), ), 
+ex1 : ex1 = new AddExpression(new DoubleConstantExpression(1, ), new DoubleConstantExpression(2, ), ), 
+ex21 : ex21 = new SubtractExpression(new DoubleConstantExpression(3, ), new DoubleConstantExpression(12, ), ), 
+ex7 : ex7 = new IdentifierExpression("p", ), 
 
 BLOCK: Startconstructor1L12
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: Startconstructor1L12
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: BasicL13
-this.left : this.left = lft, 
 this.right : this.right = rht, 
+this.left : this.left = lft, 
 
 BLOCK: StartevaluateL15
 this.right : this.right = null, 
@@ -422,23 +422,23 @@ this.right : this.right = null,
 this.left : this.left = null, 
 
 BLOCK: BasicL16
-x : x = this.left.evaluate(binding, ), 
 this.right : this.right = null, 
-y : y = this.right.evaluate(binding, ), 
+x : x = this.left.evaluate(binding, ), 
 this.left : this.left = null, 
 add : add = x + y, 
+y : y = this.right.evaluate(binding, ), 
 
 BLOCK: StarttoStringL18
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: StarttoStringL18
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL19
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: Startconstructor1L21
 this.bindingList : this.bindingList = null, 
@@ -468,70 +468,70 @@ BLOCK: BasicL28
 this.bindingList : this.bindingList = null, 
 
 BLOCK: ForInitL30
-this.bindingList : this.bindingList = null, 
 i : i = 0, 
+this.bindingList : this.bindingList = null, 
 
 BLOCK: ForCondL31
-b2 : b2 = b1.getId(), 
+i : i = i + 1, i = 0, 
+b1 : b1 = this.bindingList.get(i, ), 
 this.bindingList : this.bindingList = null, 
 @temp1 : @temp1 = i, 
-b1 : b1 = this.bindingList.get(i, ), 
-i : i = 0, i = i + 1, 
+b2 : b2 = b1.getId(), 
 
 BLOCK: LoopL32
-b2 : b2 = b1.getId(), 
+i : i = i + 1, i = 0, 
+b1 : b1 = this.bindingList.get(i, ), 
 this.bindingList : this.bindingList = null, 
 @temp1 : @temp1 = i, 
-b1 : b1 = this.bindingList.get(i, ), 
-i : i = 0, i = i + 1, 
+b2 : b2 = b1.getId(), 
 
 BLOCK: BasicL33
-b2 : b2 = b1.getId(), 
+i : i = i + 1, i = 0, 
+b1 : b1 = this.bindingList.get(i, ), 
 this.bindingList : this.bindingList = null, 
 @temp1 : @temp1 = i, 
-b1 : b1 = this.bindingList.get(i, ), 
-i : i = 0, i = i + 1, 
+b2 : b2 = b1.getId(), 
 
 BLOCK: trueL34
-b2 : b2 = b1.getId(), 
+i : i = i + 1, i = 0, 
+b1 : b1 = this.bindingList.get(i, ), 
 this.bindingList : this.bindingList = null, 
 @temp1 : @temp1 = i, 
-b1 : b1 = this.bindingList.get(i, ), 
-i : i = 0, i = i + 1, 
+b2 : b2 = b1.getId(), 
 
 BLOCK: joinL35
-b2 : b2 = b1.getId(), 
+i : i = i + 1, 
+b1 : b1 = this.bindingList.get(i, ), 
 this.bindingList : this.bindingList = null, 
 @temp1 : @temp1 = i, 
-b1 : b1 = this.bindingList.get(i, ), 
-i : i = i + 1, 
+b2 : b2 = b1.getId(), 
 
 BLOCK: Startconstructor1L36
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: Startconstructor1L36
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL37
-this.right : this.right = rht, 
 this.left : this.left = lft, 
+this.right : this.right = rht, 
 
 BLOCK: StartevaluateL39
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: StartevaluateL39
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: BasicL40
-x : x = this.left.evaluate(binding, ), 
 y : y = this.right.evaluate(binding, ), 
+this.right : this.right = null, 
+x : x = this.left.evaluate(binding, ), 
 divide : divide = x / y, 
 this.left : this.left = null, 
-this.right : this.right = null, 
 
 BLOCK: StarttoStringL42
 this.left : this.left = null, 
@@ -561,8 +561,8 @@ BLOCK: StartevaluateL48
 this.iden : this.iden = null, 
 
 BLOCK: BasicL49
-value : value = bindings.lookupBinding(this.iden, ), 
 this.iden : this.iden = null, 
+value : value = bindings.lookupBinding(this.iden, ), 
 
 BLOCK: StarttoStringL51
 this.iden : this.iden = null, 
@@ -595,22 +595,22 @@ this.right : this.right = null,
 
 BLOCK: BasicL58
 this.left : this.left = null, 
-this.right : this.right = null, 
 x : x = this.left.evaluate(binding, ), 
-y : y = this.right.evaluate(binding, ), 
 subtract : subtract = x - y, 
+y : y = this.right.evaluate(binding, ), 
+this.right : this.right = null, 
 
 BLOCK: StarttoStringL60
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: StarttoStringL60
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL61
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: Startconstructor1L63
 this.exp : this.exp = null, 
@@ -625,29 +625,29 @@ this.exp : this.exp = e,
 this.variable : this.variable = id, 
 
 BLOCK: StartevaluateL66
-this.exp : this.exp = null, 
 this.variable : this.variable = null, 
+this.exp : this.exp = null, 
 
 BLOCK: StartevaluateL66
-this.exp : this.exp = null, 
 this.variable : this.variable = null, 
+this.exp : this.exp = null, 
 
 BLOCK: BasicL67
+this.variable : this.variable = null, 
+this.exp : this.exp = null, 
 result : result = this.exp.evaluate(bindings, ), 
-this.exp : this.exp = null, 
-this.variable : this.variable = null, 
 
 BLOCK: StarttoStringL69
-this.exp : this.exp = null, 
 this.variable : this.variable = null, 
+this.exp : this.exp = null, 
 
 BLOCK: StarttoStringL69
-this.exp : this.exp = null, 
 this.variable : this.variable = null, 
+this.exp : this.exp = null, 
 
 BLOCK: BasicL70
-this.exp : this.exp = null, 
 this.variable : this.variable = null, 
+this.exp : this.exp = null, 
 
 BLOCK: Startconstructor1L72
 this.exp : this.exp = null, 
@@ -665,8 +665,8 @@ BLOCK: StartevaluateL75
 this.exp : this.exp = null, 
 
 BLOCK: BasicL76
-x : x = this.exp.evaluate(binding, ), 
 this.exp : this.exp = null, 
+x : x = this.exp.evaluate(binding, ), 
 
 BLOCK: StarttoStringL78
 this.exp : this.exp = null, 
@@ -702,16 +702,16 @@ this.variable : this.variable = null,
 this.val : this.val = 0.0, 
 
 BLOCK: StartgetIdL87
-this.val : this.val = 0.0, 
 this.variable : this.variable = null, 
+this.val : this.val = 0.0, 
 
 BLOCK: StartgetIdL87
-this.val : this.val = 0.0, 
 this.variable : this.variable = null, 
+this.val : this.val = 0.0, 
 
 BLOCK: BasicL88
-this.val : this.val = 0.0, 
 this.variable : this.variable = null, 
+this.val : this.val = 0.0, 
 
 BLOCK: Startconstructor1L90
 this.val : this.val = 0.0, 
@@ -747,7 +747,7 @@ Filtered: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 6.564 s
-[INFO] Finished at: 2019-05-01T17:37:56-07:00
-[INFO] Final Memory: 28M/1506M
+[INFO] Total time: 6.109 s
+[INFO] Finished at: 2019-05-06T19:57:56-07:00
+[INFO] Final Memory: 34M/1506M
 [INFO] ------------------------------------------------------------------------

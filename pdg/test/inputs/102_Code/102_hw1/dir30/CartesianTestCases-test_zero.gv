@@ -1,0 +1,9 @@
+digraph G {
+"4 : testC = new CartesianPoint(0, 0, )"
+"5 : Check.check(testC.xCoordinate(), 0, )"
+"6 : Check.check(testC.yCoordinate(), 0, )"
+"7 : Check.check(testC.radius(), 0, )"
+"8 : Check.check(testC.angle(), 0, )"
+"9 : testC_Rotated = testC.rotate90()"
+"10 : Check.check(testC_Rotated.angle(), 0, )"
+}

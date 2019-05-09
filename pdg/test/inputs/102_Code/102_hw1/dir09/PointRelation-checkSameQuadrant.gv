@@ -1,0 +1,10 @@
+digraph G {
+"5 : this.scan = new Scanner(System.in, )"
+"95 : quad1 = checkQuadrant(pt1, )"
+"95 : quad1 = checkQuadrant(pt1, )" -> "98 : quad1 == quad2"
+"96 : quad2 = checkQuadrant(pt2, )"
+"96 : quad2 = checkQuadrant(pt2, )" -> "98 : quad1 == quad2"
+"98 : quad1 == quad2"
+"100 : System.out.println(\"In same quadrant.\", )"
+"104 : System.out.println(\"Not in same quadrant.\", )"
+}

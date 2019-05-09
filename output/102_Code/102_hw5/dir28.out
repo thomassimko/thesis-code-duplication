@@ -71,9 +71,9 @@ Caused by: java.lang.NumberFormatException: For input string: "1L"
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 3.955 s
-[INFO] Finished at: 2019-05-01T18:14:20-07:00
-[INFO] Final Memory: 20M/970M
+[INFO] Total time: 4.508 s
+[INFO] Finished at: 2019-05-06T20:05:31-07:00
+[INFO] Final Memory: 26M/1047M
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:1.2.1:java (default-cli) on project thesis: An exception occured while executing the Java class. null: InvocationTargetException: For input string: "1L" -> [Help 1]
 [ERROR] 

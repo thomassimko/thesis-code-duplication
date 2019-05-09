@@ -3,20 +3,20 @@ digraph G {
 "32 : i = 0"
 "32 : i = 0" -> "38 : i = scan.nextInt()" [style=dashed]
 "33 : x = 0.0"
-"33 : x = 0.0" -> "46 : x = 0" [style=dashed]
 "33 : x = 0.0" -> "50 : x = scan.nextDouble()" [style=dashed]
+"33 : x = 0.0" -> "46 : x = 0" [style=dashed]
 "33 : y = 0.0"
 "33 : y = 0.0" -> "61 : y = scan.nextInt()" [style=dashed]
 "33 : y = 0.0" -> "57 : y = 0" [style=dashed]
 "33 : r = 0.0"
-"33 : r = 0.0" -> "76 : r = scan.nextDouble()" [style=dashed]
 "33 : r = 0.0" -> "72 : r = 0" [style=dashed]
+"33 : r = 0.0" -> "76 : r = scan.nextDouble()" [style=dashed]
 "33 : x2 = 0.0"
 "33 : x2 = 0.0" -> "107 : x2 = 0" [style=dashed]
 "33 : x2 = 0.0" -> "111 : x2 = scan.nextDouble()" [style=dashed]
 "33 : y2 = 0.0"
-"33 : y2 = 0.0" -> "118 : y2 = 0" [style=dashed]
 "33 : y2 = 0.0" -> "122 : y2 = scan.nextDouble()" [style=dashed]
+"33 : y2 = 0.0" -> "118 : y2 = 0" [style=dashed]
 "33 : r2 = 0.0"
 "33 : r2 = 0.0" -> "137 : r2 = scan.nextDouble()" [style=dashed]
 "33 : r2 = 0.0" -> "133 : r2 = 0" [style=dashed]
@@ -29,12 +29,12 @@ digraph G {
 "34 : a2 = 0.0" -> "144 : a2 = 0" [style=dashed]
 "34 : a2 = 0.0" -> "148 : a2 = scan.nextDouble() * 2 * Math.PI / 360" [style=dashed]
 "35 : store = null"
-"35 : store = null" -> "63 : store = new CartesianPoint(x, y, )" [style=dashed]
 "35 : store = null" -> "89 : store = new PolarPoint(r, a, )" [style=dashed]
+"35 : store = null" -> "63 : store = new CartesianPoint(x, y, )" [style=dashed]
 "35 : store = null" -> "95 : store = null" [style=dashed]
 "35 : store2 = null"
-"35 : store2 = null" -> "124 : store2 = new CartesianPoint(x2, y2, )" [style=dashed]
 "35 : store2 = null" -> "150 : store2 = new PolarPoint(r2, a2, )" [style=dashed]
+"35 : store2 = null" -> "124 : store2 = new CartesianPoint(x2, y2, )" [style=dashed]
 "35 : store2 = null" -> "156 : store2 = null" [style=dashed]
 "37 : System.out.print(\"Which type of point should be created (1 for Cartesian, 2 for Polar)? \", )"
 "38 : i = scan.nextInt()"
@@ -59,8 +59,8 @@ digraph G {
 "61 : y = scan.nextInt()"
 "61 : y = scan.nextInt()" -> "63 : store = new CartesianPoint(x, y, )"
 "63 : store = new CartesianPoint(x, y, )"
-"63 : store = new CartesianPoint(x, y, )" -> "162 : sameQuadrant(store, store2, )"
 "63 : store = new CartesianPoint(x, y, )" -> "159 : dist = distance(store, store2, )"
+"63 : store = new CartesianPoint(x, y, )" -> "162 : sameQuadrant(store, store2, )"
 "65 : i == 2"
 "67 : System.out.print(\"Enter radius: \", )"
 "68 : scan.hasNextDouble()"
@@ -79,13 +79,13 @@ digraph G {
 "87 : a = scan.nextDouble() * 2 * Math.PI / 360"
 "87 : a = scan.nextDouble() * 2 * Math.PI / 360" -> "89 : store = new PolarPoint(r, a, )"
 "89 : store = new PolarPoint(r, a, )"
-"89 : store = new PolarPoint(r, a, )" -> "162 : sameQuadrant(store, store2, )"
 "89 : store = new PolarPoint(r, a, )" -> "159 : dist = distance(store, store2, )"
+"89 : store = new PolarPoint(r, a, )" -> "162 : sameQuadrant(store, store2, )"
 "93 : System.out.println(\"Please enter either 1 or 2\", )"
 "94 : System.exit(1, )"
 "95 : store = null"
-"95 : store = null" -> "162 : sameQuadrant(store, store2, )"
 "95 : store = null" -> "159 : dist = distance(store, store2, )"
+"95 : store = null" -> "162 : sameQuadrant(store, store2, )"
 "98 : System.out.print(\"Which type of point should be created (1 for Cartesian, 2 for Polar)? \", )"
 "99 : i = scan.nextInt()"
 "99 : i = scan.nextInt()" -> "100 : i == 1"
@@ -108,8 +108,8 @@ digraph G {
 "122 : y2 = scan.nextDouble()"
 "122 : y2 = scan.nextDouble()" -> "124 : store2 = new CartesianPoint(x2, y2, )"
 "124 : store2 = new CartesianPoint(x2, y2, )"
-"124 : store2 = new CartesianPoint(x2, y2, )" -> "162 : sameQuadrant(store, store2, )"
 "124 : store2 = new CartesianPoint(x2, y2, )" -> "159 : dist = distance(store, store2, )"
+"124 : store2 = new CartesianPoint(x2, y2, )" -> "162 : sameQuadrant(store, store2, )"
 "126 : i == 2"
 "128 : System.out.print(\"Enter radius: \", )"
 "129 : scan.hasNextDouble()"
@@ -128,13 +128,13 @@ digraph G {
 "148 : a2 = scan.nextDouble() * 2 * Math.PI / 360"
 "148 : a2 = scan.nextDouble() * 2 * Math.PI / 360" -> "150 : store2 = new PolarPoint(r2, a2, )"
 "150 : store2 = new PolarPoint(r2, a2, )"
-"150 : store2 = new PolarPoint(r2, a2, )" -> "162 : sameQuadrant(store, store2, )"
 "150 : store2 = new PolarPoint(r2, a2, )" -> "159 : dist = distance(store, store2, )"
+"150 : store2 = new PolarPoint(r2, a2, )" -> "162 : sameQuadrant(store, store2, )"
 "154 : System.out.println(\"Please enter 1 or 2.\", )"
 "155 : System.exit(1, )"
 "156 : store2 = null"
-"156 : store2 = null" -> "162 : sameQuadrant(store, store2, )"
 "156 : store2 = null" -> "159 : dist = distance(store, store2, )"
+"156 : store2 = null" -> "162 : sameQuadrant(store, store2, )"
 "159 : dist = distance(store, store2, )"
 "159 : dist = distance(store, store2, )" -> "160 : System.out.println(\"Distance between points: \" + dist, )"
 "160 : System.out.println(\"Distance between points: \" + dist, )"

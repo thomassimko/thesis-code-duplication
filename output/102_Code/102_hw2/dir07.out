@@ -19,40 +19,40 @@
 [INFO] 
 [INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ thesis ---
 BLOCK: Startconstructor1L0
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: BasicL1
-this.left : this.left = lft, 
 this.right : this.right = rht, 
+this.left : this.left = lft, 
 
 BLOCK: StartevaluateL3
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL4
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: StarttoStringL6
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL7
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: StartmainL9
 
 BLOCK: BasicL10
-ex6 : ex6 = new DoubleConstantExpression(1.0 / 3.0, ), 
-ex2 : ex2 = new DoubleConstantExpression(2.0, ), 
 bind1 : bind1 = new VariableBindings(), 
+ex3 : ex3 = new DoubleConstantExpression(-1.0, ), 
 ex4 : ex4 = new DoubleConstantExpression(10.0, ), 
 ex1 : ex1 = new DoubleConstantExpression(1.0, ), 
-ex3 : ex3 = new DoubleConstantExpression(-1.0, ), 
 bind2 : bind2 = new VariableBindings(), 
 ex5 : ex5 = new DoubleConstantExpression(3.0, ), 
+ex2 : ex2 = new DoubleConstantExpression(2.0, ), 
+ex6 : ex6 = new DoubleConstantExpression(1.0 / 3.0, ), 
 
 BLOCK: Startconstructor1L12
 this.right : this.right = null, 
@@ -82,55 +82,55 @@ BLOCK: StartaddBindingL21
 this.bindingsList : this.bindingsList = new ArrayList(), 
 
 BLOCK: BasicL22
-found : found = false, 
 this.bindingsList : this.bindingsList = new ArrayList(), 
+found : found = false, 
 
 BLOCK: ForInitL24
 i : i = 0, 
-found : found = false, 
 this.bindingsList : this.bindingsList = new ArrayList(), 
+found : found = false, 
 
 BLOCK: ForCondL25
 i : i = i + 1, i = 0, 
-found : found = true, found = false, 
-@temp1 : @temp1 = i, 
 this.bindingsList : this.bindingsList = new ArrayList(), 
+@temp1 : @temp1 = i, 
+found : found = true, found = false, 
 
 BLOCK: LoopL26
 i : i = i + 1, i = 0, 
-found : found = true, found = false, 
-@temp1 : @temp1 = i, 
 this.bindingsList : this.bindingsList = new ArrayList(), 
+@temp1 : @temp1 = i, 
+found : found = true, found = false, 
 
 BLOCK: BasicL27
 i : i = i + 1, i = 0, 
-found : found = true, found = false, 
-@temp1 : @temp1 = i, 
 this.bindingsList : this.bindingsList = new ArrayList(), 
+@temp1 : @temp1 = i, 
+found : found = true, found = false, 
 
 BLOCK: trueL28
 i : i = i + 1, i = 0, 
-found : found = true, 
-@temp1 : @temp1 = i, 
 this.bindingsList : this.bindingsList = new ArrayList(), 
+@temp1 : @temp1 = i, 
+found : found = true, 
 
 BLOCK: joinL29
 i : i = i + 1, 
-found : found = true, found = false, 
-@temp1 : @temp1 = i, 
 this.bindingsList : this.bindingsList = new ArrayList(), 
+@temp1 : @temp1 = i, 
+found : found = true, found = false, 
 
 BLOCK: trueL30
 i : i = i + 1, i = 0, 
-found : found = true, found = false, 
-@temp1 : @temp1 = i, 
 this.bindingsList : this.bindingsList = new ArrayList(), 
+@temp1 : @temp1 = i, 
+found : found = true, found = false, 
 
 BLOCK: joinL31
 i : i = i + 1, i = 0, 
-found : found = true, found = false, 
-@temp1 : @temp1 = i, 
 this.bindingsList : this.bindingsList = new ArrayList(), 
+@temp1 : @temp1 = i, 
+found : found = true, found = false, 
 
 BLOCK: StartlookupBindingL32
 this.bindingsList : this.bindingsList = new ArrayList(), 
@@ -139,33 +139,33 @@ BLOCK: BasicL33
 this.bindingsList : this.bindingsList = new ArrayList(), 
 
 BLOCK: ForInitL35
-this.bindingsList : this.bindingsList = new ArrayList(), 
 i : i = 0, 
+this.bindingsList : this.bindingsList = new ArrayList(), 
 
 BLOCK: ForCondL36
-this.bindingsList : this.bindingsList = new ArrayList(), 
-i : i = i + 1, i = 0, 
 @temp2 : @temp2 = i, 
+i : i = 0, i = i + 1, 
+this.bindingsList : this.bindingsList = new ArrayList(), 
 
 BLOCK: LoopL37
-this.bindingsList : this.bindingsList = new ArrayList(), 
-i : i = i + 1, i = 0, 
 @temp2 : @temp2 = i, 
+i : i = 0, i = i + 1, 
+this.bindingsList : this.bindingsList = new ArrayList(), 
 
 BLOCK: BasicL38
-this.bindingsList : this.bindingsList = new ArrayList(), 
-i : i = i + 1, i = 0, 
 @temp2 : @temp2 = i, 
+i : i = 0, i = i + 1, 
+this.bindingsList : this.bindingsList = new ArrayList(), 
 
 BLOCK: trueL39
-this.bindingsList : this.bindingsList = new ArrayList(), 
-i : i = i + 1, i = 0, 
 @temp2 : @temp2 = i, 
+i : i = 0, i = i + 1, 
+this.bindingsList : this.bindingsList = new ArrayList(), 
 
 BLOCK: joinL40
-this.bindingsList : this.bindingsList = new ArrayList(), 
-i : i = i + 1, 
 @temp2 : @temp2 = i, 
+i : i = i + 1, 
+this.bindingsList : this.bindingsList = new ArrayList(), 
 
 BLOCK: Startconstructor1L41
 this.right : this.right = null, 
@@ -176,20 +176,20 @@ this.right : this.right = rht,
 this.left : this.left = lft, 
 
 BLOCK: StartevaluateL44
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL45
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: StarttoStringL47
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: BasicL48
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: Startconstructor1L50
 this.id : this.id = null, 
@@ -218,20 +218,20 @@ this.left : this.left = lft,
 this.right : this.right = rht, 
 
 BLOCK: StartevaluateL62
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: BasicL63
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: StarttoStringL65
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL66
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: Startconstructor1L68
 this.expression : this.expression = null, 
@@ -318,54 +318,54 @@ BLOCK: BasicL102
 this.value : this.value = 0.0, 
 
 BLOCK: Startconstructor1L0
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: Startconstructor1L0
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: BasicL1
-this.left : this.left = lft, 
 this.right : this.right = rht, 
+this.left : this.left = lft, 
 
 BLOCK: StartevaluateL3
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: StartevaluateL3
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL4
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: StarttoStringL6
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: StarttoStringL6
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL7
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: StartmainL9
 
 BLOCK: StartmainL9
 
 BLOCK: BasicL10
-ex6 : ex6 = new DoubleConstantExpression(1.0 / 3.0, ), 
-ex2 : ex2 = new DoubleConstantExpression(2.0, ), 
 bind1 : bind1 = new VariableBindings(), 
+ex3 : ex3 = new DoubleConstantExpression(-1.0, ), 
 ex4 : ex4 = new DoubleConstantExpression(10.0, ), 
 ex1 : ex1 = new DoubleConstantExpression(1.0, ), 
-ex3 : ex3 = new DoubleConstantExpression(-1.0, ), 
 bind2 : bind2 = new VariableBindings(), 
 ex5 : ex5 = new DoubleConstantExpression(3.0, ), 
+ex2 : ex2 = new DoubleConstantExpression(2.0, ), 
+ex6 : ex6 = new DoubleConstantExpression(1.0 / 3.0, ), 
 
 BLOCK: Startconstructor1L12
 this.right : this.right = null, 
@@ -410,55 +410,55 @@ BLOCK: StartaddBindingL21
 this.bindingsList : this.bindingsList = new ArrayList(), 
 
 BLOCK: BasicL22
-found : found = false, 
 this.bindingsList : this.bindingsList = new ArrayList(), 
+found : found = false, 
 
 BLOCK: ForInitL24
 i : i = 0, 
-found : found = false, 
 this.bindingsList : this.bindingsList = new ArrayList(), 
+found : found = false, 
 
 BLOCK: ForCondL25
 i : i = i + 1, i = 0, 
-found : found = true, found = false, 
-@temp1 : @temp1 = i, 
 this.bindingsList : this.bindingsList = new ArrayList(), 
+@temp1 : @temp1 = i, 
+found : found = true, found = false, 
 
 BLOCK: LoopL26
 i : i = i + 1, i = 0, 
-found : found = true, found = false, 
-@temp1 : @temp1 = i, 
 this.bindingsList : this.bindingsList = new ArrayList(), 
+@temp1 : @temp1 = i, 
+found : found = true, found = false, 
 
 BLOCK: BasicL27
 i : i = i + 1, i = 0, 
-found : found = true, found = false, 
-@temp1 : @temp1 = i, 
 this.bindingsList : this.bindingsList = new ArrayList(), 
+@temp1 : @temp1 = i, 
+found : found = true, found = false, 
 
 BLOCK: trueL28
 i : i = i + 1, i = 0, 
-found : found = true, 
-@temp1 : @temp1 = i, 
 this.bindingsList : this.bindingsList = new ArrayList(), 
+@temp1 : @temp1 = i, 
+found : found = true, 
 
 BLOCK: joinL29
 i : i = i + 1, 
-found : found = true, found = false, 
-@temp1 : @temp1 = i, 
 this.bindingsList : this.bindingsList = new ArrayList(), 
+@temp1 : @temp1 = i, 
+found : found = true, found = false, 
 
 BLOCK: trueL30
 i : i = i + 1, i = 0, 
-found : found = true, found = false, 
-@temp1 : @temp1 = i, 
 this.bindingsList : this.bindingsList = new ArrayList(), 
+@temp1 : @temp1 = i, 
+found : found = true, found = false, 
 
 BLOCK: joinL31
 i : i = i + 1, i = 0, 
-found : found = true, found = false, 
-@temp1 : @temp1 = i, 
 this.bindingsList : this.bindingsList = new ArrayList(), 
+@temp1 : @temp1 = i, 
+found : found = true, found = false, 
 
 BLOCK: StartlookupBindingL32
 this.bindingsList : this.bindingsList = new ArrayList(), 
@@ -470,33 +470,33 @@ BLOCK: BasicL33
 this.bindingsList : this.bindingsList = new ArrayList(), 
 
 BLOCK: ForInitL35
-this.bindingsList : this.bindingsList = new ArrayList(), 
 i : i = 0, 
+this.bindingsList : this.bindingsList = new ArrayList(), 
 
 BLOCK: ForCondL36
-this.bindingsList : this.bindingsList = new ArrayList(), 
-i : i = i + 1, i = 0, 
 @temp2 : @temp2 = i, 
+i : i = 0, i = i + 1, 
+this.bindingsList : this.bindingsList = new ArrayList(), 
 
 BLOCK: LoopL37
-this.bindingsList : this.bindingsList = new ArrayList(), 
-i : i = i + 1, i = 0, 
 @temp2 : @temp2 = i, 
+i : i = 0, i = i + 1, 
+this.bindingsList : this.bindingsList = new ArrayList(), 
 
 BLOCK: BasicL38
-this.bindingsList : this.bindingsList = new ArrayList(), 
-i : i = i + 1, i = 0, 
 @temp2 : @temp2 = i, 
+i : i = 0, i = i + 1, 
+this.bindingsList : this.bindingsList = new ArrayList(), 
 
 BLOCK: trueL39
-this.bindingsList : this.bindingsList = new ArrayList(), 
-i : i = i + 1, i = 0, 
 @temp2 : @temp2 = i, 
+i : i = 0, i = i + 1, 
+this.bindingsList : this.bindingsList = new ArrayList(), 
 
 BLOCK: joinL40
-this.bindingsList : this.bindingsList = new ArrayList(), 
-i : i = i + 1, 
 @temp2 : @temp2 = i, 
+i : i = i + 1, 
+this.bindingsList : this.bindingsList = new ArrayList(), 
 
 BLOCK: Startconstructor1L41
 this.right : this.right = null, 
@@ -511,28 +511,28 @@ this.right : this.right = rht,
 this.left : this.left = lft, 
 
 BLOCK: StartevaluateL44
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: StartevaluateL44
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL45
-this.right : this.right = null, 
-this.left : this.left = null, 
-
-BLOCK: StarttoStringL47
 this.left : this.left = null, 
 this.right : this.right = null, 
 
 BLOCK: StarttoStringL47
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
+
+BLOCK: StarttoStringL47
+this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: BasicL48
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: Startconstructor1L50
 this.id : this.id = null, 
@@ -574,28 +574,28 @@ this.left : this.left = lft,
 this.right : this.right = rht, 
 
 BLOCK: StartevaluateL62
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: StartevaluateL62
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: BasicL63
-this.left : this.left = null, 
-this.right : this.right = null, 
-
-BLOCK: StarttoStringL65
 this.right : this.right = null, 
 this.left : this.left = null, 
 
 BLOCK: StarttoStringL65
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
+
+BLOCK: StarttoStringL65
+this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL66
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: Startconstructor1L68
 this.expression : this.expression = null, 
@@ -730,7 +730,7 @@ Filtered: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 3.026 s
-[INFO] Finished at: 2019-05-01T17:15:58-07:00
+[INFO] Total time: 2.738 s
+[INFO] Finished at: 2019-05-06T19:56:55-07:00
 [INFO] Final Memory: 11M/702M
 [INFO] ------------------------------------------------------------------------

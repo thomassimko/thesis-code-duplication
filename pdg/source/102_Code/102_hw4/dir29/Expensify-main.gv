@@ -8,8 +8,8 @@ digraph G {
 "27 : date = null" -> "49 : date = df.parse(s.nextLine(), )" [style=dashed]
 "27 : date = null" -> "40 : date = df.parse(s.nextLine(), )" [style=dashed]
 "28 : category = null"
-"28 : category = null" -> "41 : category = s.nextLine()" [style=dashed]
 "28 : category = null" -> "50 : category = s.nextLine()" [style=dashed]
+"28 : category = null" -> "41 : category = s.nextLine()" [style=dashed]
 "29 : payee = null"
 "29 : payee = null" -> "51 : payee = s.nextLine()" [style=dashed]
 "29 : payee = null" -> "42 : payee = s.nextLine()" [style=dashed]
@@ -31,8 +31,8 @@ digraph G {
 "40 : date = df.parse(s.nextLine(), )" -> "40 : date = df.parse(s.nextLine(), )" [style=dashed]
 "41 : category = s.nextLine()"
 "41 : category = s.nextLine()" -> "45 : expenseList.add(new FullExpense(date, category, payee, amount, ), )"
-"41 : category = s.nextLine()" -> "41 : category = s.nextLine()" [style=dashed]
 "41 : category = s.nextLine()" -> "50 : category = s.nextLine()" [style=dashed]
+"41 : category = s.nextLine()" -> "41 : category = s.nextLine()" [style=dashed]
 "42 : payee = s.nextLine()"
 "42 : payee = s.nextLine()" -> "45 : expenseList.add(new FullExpense(date, category, payee, amount, ), )"
 "42 : payee = s.nextLine()" -> "51 : payee = s.nextLine()" [style=dashed]
@@ -51,8 +51,8 @@ digraph G {
 "49 : date = df.parse(s.nextLine(), )" -> "40 : date = df.parse(s.nextLine(), )" [style=dashed]
 "50 : category = s.nextLine()"
 "50 : category = s.nextLine()" -> "55 : expenseList.add(new PartialExpense(date, category, payee, amount, remainingAmount, ), )"
-"50 : category = s.nextLine()" -> "41 : category = s.nextLine()" [style=dashed]
 "50 : category = s.nextLine()" -> "50 : category = s.nextLine()" [style=dashed]
+"50 : category = s.nextLine()" -> "41 : category = s.nextLine()" [style=dashed]
 "51 : payee = s.nextLine()"
 "51 : payee = s.nextLine()" -> "55 : expenseList.add(new PartialExpense(date, category, payee, amount, remainingAmount, ), )"
 "51 : payee = s.nextLine()" -> "51 : payee = s.nextLine()" [style=dashed]
@@ -88,22 +88,22 @@ digraph G {
 "86 : exp = expenseList" -> "93 : exp instanceof PartialExpense"
 "86 : exp = expenseList" -> "86 : exp = expenseList" [style=dashed]
 "87 : strOut = null"
-"87 : strOut = null" -> "96 : strOut = String.format(\"%1$2tm/%<2td/%<tY \", expDate, ) + String.format(\"%-15.15s %10s (%s) [%s]\", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, )" [style=dashed]
 "87 : strOut = null" -> "101 : strOut = String.format(\"%1$2tm/%<2td/%<tY \", expDate, ) + String.format(\"%-15.15s %10s [%s]\", expPayee, expAmount.toString(), expCategory, )" [style=dashed]
 "87 : strOut = null" -> "87 : strOut = null" [style=dashed]
+"87 : strOut = null" -> "96 : strOut = String.format(\"%1$2tm/%<2td/%<tY \", expDate, ) + String.format(\"%-15.15s %10s (%s) [%s]\", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, )" [style=dashed]
 "88 : expDate = exp.getDate()"
-"88 : expDate = exp.getDate()" -> "96 : strOut = String.format(\"%1$2tm/%<2td/%<tY \", expDate, ) + String.format(\"%-15.15s %10s (%s) [%s]\", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, )"
 "88 : expDate = exp.getDate()" -> "101 : strOut = String.format(\"%1$2tm/%<2td/%<tY \", expDate, ) + String.format(\"%-15.15s %10s [%s]\", expPayee, expAmount.toString(), expCategory, )"
+"88 : expDate = exp.getDate()" -> "96 : strOut = String.format(\"%1$2tm/%<2td/%<tY \", expDate, ) + String.format(\"%-15.15s %10s (%s) [%s]\", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, )"
 "88 : expDate = exp.getDate()" -> "88 : expDate = exp.getDate()" [style=dashed]
 "89 : expPayee = exp.getPayee()"
-"89 : expPayee = exp.getPayee()" -> "96 : strOut = String.format(\"%1$2tm/%<2td/%<tY \", expDate, ) + String.format(\"%-15.15s %10s (%s) [%s]\", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, )"
 "89 : expPayee = exp.getPayee()" -> "101 : strOut = String.format(\"%1$2tm/%<2td/%<tY \", expDate, ) + String.format(\"%-15.15s %10s [%s]\", expPayee, expAmount.toString(), expCategory, )"
+"89 : expPayee = exp.getPayee()" -> "96 : strOut = String.format(\"%1$2tm/%<2td/%<tY \", expDate, ) + String.format(\"%-15.15s %10s (%s) [%s]\", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, )"
 "89 : expPayee = exp.getPayee()" -> "89 : expPayee = exp.getPayee()" [style=dashed]
 "90 : expAmount = exp.getAmountPaid()"
 "90 : expAmount = exp.getAmountPaid()" -> "90 : expAmount = exp.getAmountPaid()" [style=dashed]
 "91 : expCategory = exp.getCategory()"
-"91 : expCategory = exp.getCategory()" -> "96 : strOut = String.format(\"%1$2tm/%<2td/%<tY \", expDate, ) + String.format(\"%-15.15s %10s (%s) [%s]\", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, )"
 "91 : expCategory = exp.getCategory()" -> "101 : strOut = String.format(\"%1$2tm/%<2td/%<tY \", expDate, ) + String.format(\"%-15.15s %10s [%s]\", expPayee, expAmount.toString(), expCategory, )"
+"91 : expCategory = exp.getCategory()" -> "96 : strOut = String.format(\"%1$2tm/%<2td/%<tY \", expDate, ) + String.format(\"%-15.15s %10s (%s) [%s]\", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, )"
 "91 : expCategory = exp.getCategory()" -> "91 : expCategory = exp.getCategory()" [style=dashed]
 "93 : exp instanceof PartialExpense"
 "108 : System.out.print(\"\n\", )"
@@ -122,9 +122,9 @@ digraph G {
 "127 : listNew.add(new FullExpense(date, category, payee, amount, ), )"
 "128 : listNew.addAll(expenseList, )"
 "130 : expenseList = listNew"
-"130 : expenseList = listNew" -> "86 : exp = expenseList"
-"130 : expenseList = listNew" -> "137 : listNew.addAll(expenseList, )"
 "130 : expenseList = listNew" -> "128 : listNew.addAll(expenseList, )"
+"130 : expenseList = listNew" -> "137 : listNew.addAll(expenseList, )"
+"130 : expenseList = listNew" -> "86 : exp = expenseList"
 "130 : expenseList = listNew" -> "130 : expenseList = listNew" [style=dashed]
 "130 : expenseList = listNew" -> "139 : expenseList = listNew" [style=dashed]
 "132 : System.out.print(\"Expense Balance: \", )"
@@ -137,9 +137,9 @@ digraph G {
 "136 : listNew.add(new PartialExpense(date, category, payee, amount, remainingAmount, ), )"
 "137 : listNew.addAll(expenseList, )"
 "139 : expenseList = listNew"
-"139 : expenseList = listNew" -> "86 : exp = expenseList"
-"139 : expenseList = listNew" -> "137 : listNew.addAll(expenseList, )"
 "139 : expenseList = listNew" -> "128 : listNew.addAll(expenseList, )"
+"139 : expenseList = listNew" -> "137 : listNew.addAll(expenseList, )"
+"139 : expenseList = listNew" -> "86 : exp = expenseList"
 "139 : expenseList = listNew" -> "130 : expenseList = listNew" [style=dashed]
 "139 : expenseList = listNew" -> "139 : expenseList = listNew" [style=dashed]
 "152 : out = new FileWriter(\"StoredExpenses\", )"

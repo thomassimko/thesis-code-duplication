@@ -24,8 +24,8 @@ digraph G {
 "19 : a = new CartesianPoint(0, 0, )"
 "19 : a = new CartesianPoint(0, 0, )" -> "85 : distance = Distance(a, b, )"
 "19 : a = new CartesianPoint(0, 0, )" -> "89 : same = Quadrant(a, b, )"
-"19 : a = new CartesianPoint(0, 0, )" -> "40 : a = new CartesianPoint(x, y, )" [style=dashed]
 "19 : a = new CartesianPoint(0, 0, )" -> "50 : a = new PolarPoint(radius, angle, )" [style=dashed]
+"19 : a = new CartesianPoint(0, 0, )" -> "40 : a = new CartesianPoint(x, y, )" [style=dashed]
 "20 : b = new CartesianPoint(0, 0, )"
 "20 : b = new CartesianPoint(0, 0, )" -> "85 : distance = Distance(a, b, )"
 "20 : b = new CartesianPoint(0, 0, )" -> "89 : same = Quadrant(a, b, )"
@@ -34,8 +34,8 @@ digraph G {
 "22 : scan = new Scanner(System.in, )"
 "23 : System.out.print(\"Which type of point should be created(1 for Cartesian, 2 for Polar)? \", )"
 "24 : pointype = scan.nextInt()"
-"24 : pointype = scan.nextInt()" -> "26 : pointype != 1 && pointype != 2"
 "24 : pointype = scan.nextInt()" -> "42 : pointype == 2"
+"24 : pointype = scan.nextInt()" -> "26 : pointype != 1 && pointype != 2"
 "24 : pointype = scan.nextInt()" -> "32 : pointype == 1"
 "24 : pointype = scan.nextInt()" -> "55 : pointype = scan.nextInt()" [style=dashed]
 "26 : pointype != 1 && pointype != 2"
@@ -64,9 +64,9 @@ digraph G {
 "50 : a = new PolarPoint(radius, angle, )" -> "89 : same = Quadrant(a, b, )"
 "54 : System.out.print(\"Which type of point should be created(1 for Cartesian, 2 for Polar)? \", )"
 "55 : pointype = scan.nextInt()"
-"55 : pointype = scan.nextInt()" -> "74 : pointype == 2"
-"55 : pointype = scan.nextInt()" -> "57 : pointype != 1 && pointype != 2"
 "55 : pointype = scan.nextInt()" -> "63 : pointype == 1"
+"55 : pointype = scan.nextInt()" -> "57 : pointype != 1 && pointype != 2"
+"55 : pointype = scan.nextInt()" -> "74 : pointype == 2"
 "57 : pointype != 1 && pointype != 2"
 "59 : System.out.println(\"Invalid input\", )"
 "60 : System.exit(1, )"
@@ -95,8 +95,8 @@ digraph G {
 "85 : distance = Distance(a, b, )" -> "87 : System.out.println(\"Distance between points: \" + distance, )"
 "87 : System.out.println(\"Distance between points: \" + distance, )"
 "89 : same = Quadrant(a, b, )"
-"89 : same = Quadrant(a, b, )" -> "94 : same == false"
 "89 : same = Quadrant(a, b, )" -> "90 : same == true"
+"89 : same = Quadrant(a, b, )" -> "94 : same == false"
 "90 : same == true"
 "92 : System.out.println(\"In same quadrant.\", )"
 "94 : same == false"

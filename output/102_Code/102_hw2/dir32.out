@@ -45,20 +45,20 @@ this.rht : this.rht = null,
 BLOCK: StartmainL9
 
 BLOCK: BasicL10
-id : id = new IdentifierExpression("x", ), 
-a4 : a4 = new DoubleConstantExpression(3.0, ), 
-subtract : subtract = new SubtractExpression(a4, a1, ), 
+a2 : a2 = new DoubleConstantExpression(2.0, ), 
+negative : negative = new NegationExpression(divide, ), 
+varTest : varTest = new AddExpression(a1, id, ), 
 binder : binder = new VariableBindings(), 
 divide : divide = new DivideExpression(a4, a1, ), 
-negative : negative = new NegationExpression(divide, ), 
 add : add = new AddExpression(a1, a2, ), 
-a1 : a1 = new DoubleConstantExpression(1.5, ), 
-a2 : a2 = new DoubleConstantExpression(2.0, ), 
-multiply : multiply = new MultiplyExpression(a2, a3, ), 
-a3 : a3 = new DoubleConstantExpression(2.5, ), 
-varTest : varTest = new AddExpression(a1, id, ), 
-all : all = new NegationExpression(new AddExpression(a1, new SubtractExpression(a4, new DivideExpression(a2, multiply, ), ), ), ), 
+a4 : a4 = new DoubleConstantExpression(3.0, ), 
 assign : assign = new Assignment("x", add, ), 
+all : all = new NegationExpression(new AddExpression(a1, new SubtractExpression(a4, new DivideExpression(a2, multiply, ), ), ), ), 
+a3 : a3 = new DoubleConstantExpression(2.5, ), 
+subtract : subtract = new SubtractExpression(a4, a1, ), 
+id : id = new IdentifierExpression("x", ), 
+a1 : a1 = new DoubleConstantExpression(1.5, ), 
+multiply : multiply = new MultiplyExpression(a2, a3, ), 
 
 BLOCK: Startconstructor1L12
 this.lft : this.lft = null, 
@@ -69,20 +69,20 @@ this.lft : this.lft = lft,
 this.rht : this.rht = rht, 
 
 BLOCK: StartevaluateL15
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL16
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StarttoStringL18
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL19
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StartaddBindingL21
 this.variables : this.variables = new ArrayList(), 
@@ -94,38 +94,38 @@ BLOCK: trueL24
 this.variables : this.variables = new ArrayList(), 
 
 BLOCK: ForInitL26
-this.variables : this.variables = new ArrayList(), 
 i : i = 0, 
+this.variables : this.variables = new ArrayList(), 
 
 BLOCK: ForCondL27
 @temp1 : @temp1 = i, 
+i : i = i + 1, i = 0, 
 this.variables : this.variables = new ArrayList(), 
-i : i = 0, i = i + 1, 
 
 BLOCK: LoopL28
 @temp1 : @temp1 = i, 
+i : i = i + 1, i = 0, 
 this.variables : this.variables = new ArrayList(), 
-i : i = 0, i = i + 1, 
 
 BLOCK: BasicL29
 @temp1 : @temp1 = i, 
+i : i = i + 1, i = 0, 
 this.variables : this.variables = new ArrayList(), 
-i : i = 0, i = i + 1, 
 
 BLOCK: trueL30
 @temp1 : @temp1 = i, 
+i : i = i + 1, i = 0, 
 this.variables : this.variables = new ArrayList(), 
-i : i = 0, i = i + 1, 
 
 BLOCK: joinL31
 @temp1 : @temp1 = i, 
-this.variables : this.variables = new ArrayList(), 
 i : i = i + 1, 
+this.variables : this.variables = new ArrayList(), 
 
 BLOCK: joinL25
 @temp1 : @temp1 = i, 
+i : i = i + 1, i = 0, 
 this.variables : this.variables = new ArrayList(), 
-i : i = 0, i = i + 1, 
 
 BLOCK: StartlookupBindingL32
 this.variables : this.variables = new ArrayList(), 
@@ -142,33 +142,33 @@ i : i = 0,
 
 BLOCK: ForCondL38
 this.variables : this.variables = new ArrayList(), 
-@temp2 : @temp2 = i, 
 i : i = i + 1, i = 0, 
+@temp2 : @temp2 = i, 
 
 BLOCK: LoopL39
 this.variables : this.variables = new ArrayList(), 
-@temp2 : @temp2 = i, 
 i : i = i + 1, i = 0, 
+@temp2 : @temp2 = i, 
 
 BLOCK: BasicL40
 this.variables : this.variables = new ArrayList(), 
-@temp2 : @temp2 = i, 
 i : i = i + 1, i = 0, 
+@temp2 : @temp2 = i, 
 
 BLOCK: trueL41
 this.variables : this.variables = new ArrayList(), 
-@temp2 : @temp2 = i, 
 i : i = i + 1, i = 0, 
+@temp2 : @temp2 = i, 
 
 BLOCK: joinL42
-@temp2 : @temp2 = i, 
 this.variables : this.variables = new ArrayList(), 
 i : i = i + 1, 
+@temp2 : @temp2 = i, 
 
 BLOCK: joinL36
 this.variables : this.variables = new ArrayList(), 
-@temp2 : @temp2 = i, 
 i : i = i + 1, i = 0, 
+@temp2 : @temp2 = i, 
 
 BLOCK: Startconstructor1L43
 this.rht : this.rht = null, 
@@ -187,12 +187,12 @@ this.rht : this.rht = null,
 this.lft : this.lft = null, 
 
 BLOCK: StarttoStringL49
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL50
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: Startconstructor1L52
 this.id : this.id = null, 
@@ -221,12 +221,12 @@ this.lft : this.lft = lft,
 this.rht : this.rht = rht, 
 
 BLOCK: StartevaluateL64
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL65
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StarttoStringL67
 this.lft : this.lft = null, 
@@ -237,12 +237,12 @@ this.lft : this.lft = null,
 this.rht : this.rht = null, 
 
 BLOCK: Startconstructor1L70
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: BasicL71
-this.e : this.e = e, 
 this.id : this.id = id, 
+this.e : this.e = e, 
 
 BLOCK: StartevaluateL73
 this.id : this.id = null, 
@@ -279,28 +279,28 @@ BLOCK: BasicL86
 this.value : this.value = null, 
 
 BLOCK: Startconstructor1L88
-this.value : this.value = 0.0, 
 this.id : this.id = null, 
+this.value : this.value = 0.0, 
 
 BLOCK: BasicL89
-this.value : this.value = value, 
 this.id : this.id = id, 
+this.value : this.value = value, 
 
 BLOCK: StartgetIdL91
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: BasicL92
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: StartgetValueL94
-this.value : this.value = 0.0, 
 this.id : this.id = null, 
+this.value : this.value = 0.0, 
 
 BLOCK: BasicL95
-this.value : this.value = 0.0, 
 this.id : this.id = null, 
+this.value : this.value = 0.0, 
 
 BLOCK: Startconstructor1L97
 this.value : this.value = 0.0, 
@@ -361,20 +361,20 @@ BLOCK: StartmainL9
 BLOCK: StartmainL9
 
 BLOCK: BasicL10
-id : id = new IdentifierExpression("x", ), 
-a4 : a4 = new DoubleConstantExpression(3.0, ), 
-subtract : subtract = new SubtractExpression(a4, a1, ), 
+a2 : a2 = new DoubleConstantExpression(2.0, ), 
+negative : negative = new NegationExpression(divide, ), 
+varTest : varTest = new AddExpression(a1, id, ), 
 binder : binder = new VariableBindings(), 
 divide : divide = new DivideExpression(a4, a1, ), 
-negative : negative = new NegationExpression(divide, ), 
 add : add = new AddExpression(a1, a2, ), 
-a1 : a1 = new DoubleConstantExpression(1.5, ), 
-a2 : a2 = new DoubleConstantExpression(2.0, ), 
-multiply : multiply = new MultiplyExpression(a2, a3, ), 
-a3 : a3 = new DoubleConstantExpression(2.5, ), 
-varTest : varTest = new AddExpression(a1, id, ), 
-all : all = new NegationExpression(new AddExpression(a1, new SubtractExpression(a4, new DivideExpression(a2, multiply, ), ), ), ), 
+a4 : a4 = new DoubleConstantExpression(3.0, ), 
 assign : assign = new Assignment("x", add, ), 
+all : all = new NegationExpression(new AddExpression(a1, new SubtractExpression(a4, new DivideExpression(a2, multiply, ), ), ), ), 
+a3 : a3 = new DoubleConstantExpression(2.5, ), 
+subtract : subtract = new SubtractExpression(a4, a1, ), 
+id : id = new IdentifierExpression("x", ), 
+a1 : a1 = new DoubleConstantExpression(1.5, ), 
+multiply : multiply = new MultiplyExpression(a2, a3, ), 
 
 BLOCK: Startconstructor1L12
 this.lft : this.lft = null, 
@@ -389,28 +389,28 @@ this.lft : this.lft = lft,
 this.rht : this.rht = rht, 
 
 BLOCK: StartevaluateL15
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StartevaluateL15
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL16
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StarttoStringL18
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StarttoStringL18
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL19
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StartaddBindingL21
 this.variables : this.variables = new ArrayList(), 
@@ -425,38 +425,38 @@ BLOCK: trueL24
 this.variables : this.variables = new ArrayList(), 
 
 BLOCK: ForInitL26
-this.variables : this.variables = new ArrayList(), 
 i : i = 0, 
+this.variables : this.variables = new ArrayList(), 
 
 BLOCK: ForCondL27
 @temp1 : @temp1 = i, 
+i : i = i + 1, i = 0, 
 this.variables : this.variables = new ArrayList(), 
-i : i = 0, i = i + 1, 
 
 BLOCK: LoopL28
 @temp1 : @temp1 = i, 
+i : i = i + 1, i = 0, 
 this.variables : this.variables = new ArrayList(), 
-i : i = 0, i = i + 1, 
 
 BLOCK: BasicL29
 @temp1 : @temp1 = i, 
+i : i = i + 1, i = 0, 
 this.variables : this.variables = new ArrayList(), 
-i : i = 0, i = i + 1, 
 
 BLOCK: trueL30
 @temp1 : @temp1 = i, 
+i : i = i + 1, i = 0, 
 this.variables : this.variables = new ArrayList(), 
-i : i = 0, i = i + 1, 
 
 BLOCK: joinL31
 @temp1 : @temp1 = i, 
-this.variables : this.variables = new ArrayList(), 
 i : i = i + 1, 
+this.variables : this.variables = new ArrayList(), 
 
 BLOCK: joinL25
 @temp1 : @temp1 = i, 
+i : i = i + 1, i = 0, 
 this.variables : this.variables = new ArrayList(), 
-i : i = 0, i = i + 1, 
 
 BLOCK: StartlookupBindingL32
 this.variables : this.variables = new ArrayList(), 
@@ -476,33 +476,33 @@ i : i = 0,
 
 BLOCK: ForCondL38
 this.variables : this.variables = new ArrayList(), 
-@temp2 : @temp2 = i, 
 i : i = i + 1, i = 0, 
+@temp2 : @temp2 = i, 
 
 BLOCK: LoopL39
 this.variables : this.variables = new ArrayList(), 
-@temp2 : @temp2 = i, 
 i : i = i + 1, i = 0, 
+@temp2 : @temp2 = i, 
 
 BLOCK: BasicL40
 this.variables : this.variables = new ArrayList(), 
-@temp2 : @temp2 = i, 
 i : i = i + 1, i = 0, 
+@temp2 : @temp2 = i, 
 
 BLOCK: trueL41
 this.variables : this.variables = new ArrayList(), 
-@temp2 : @temp2 = i, 
 i : i = i + 1, i = 0, 
+@temp2 : @temp2 = i, 
 
 BLOCK: joinL42
-@temp2 : @temp2 = i, 
 this.variables : this.variables = new ArrayList(), 
 i : i = i + 1, 
+@temp2 : @temp2 = i, 
 
 BLOCK: joinL36
 this.variables : this.variables = new ArrayList(), 
-@temp2 : @temp2 = i, 
 i : i = i + 1, i = 0, 
+@temp2 : @temp2 = i, 
 
 BLOCK: Startconstructor1L43
 this.rht : this.rht = null, 
@@ -529,16 +529,16 @@ this.rht : this.rht = null,
 this.lft : this.lft = null, 
 
 BLOCK: StarttoStringL49
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StarttoStringL49
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL50
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: Startconstructor1L52
 this.id : this.id = null, 
@@ -580,16 +580,16 @@ this.lft : this.lft = lft,
 this.rht : this.rht = rht, 
 
 BLOCK: StartevaluateL64
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StartevaluateL64
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL65
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StarttoStringL67
 this.lft : this.lft = null, 
@@ -604,16 +604,16 @@ this.lft : this.lft = null,
 this.rht : this.rht = null, 
 
 BLOCK: Startconstructor1L70
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: Startconstructor1L70
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: BasicL71
-this.e : this.e = e, 
 this.id : this.id = id, 
+this.e : this.e = e, 
 
 BLOCK: StartevaluateL73
 this.id : this.id = null, 
@@ -667,40 +667,40 @@ BLOCK: BasicL86
 this.value : this.value = null, 
 
 BLOCK: Startconstructor1L88
-this.value : this.value = 0.0, 
 this.id : this.id = null, 
+this.value : this.value = 0.0, 
 
 BLOCK: Startconstructor1L88
-this.value : this.value = 0.0, 
 this.id : this.id = null, 
+this.value : this.value = 0.0, 
 
 BLOCK: BasicL89
-this.value : this.value = value, 
 this.id : this.id = id, 
+this.value : this.value = value, 
 
 BLOCK: StartgetIdL91
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: StartgetIdL91
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: BasicL92
-this.id : this.id = null, 
-this.value : this.value = 0.0, 
-
-BLOCK: StartgetValueL94
 this.value : this.value = 0.0, 
 this.id : this.id = null, 
 
 BLOCK: StartgetValueL94
-this.value : this.value = 0.0, 
 this.id : this.id = null, 
+this.value : this.value = 0.0, 
+
+BLOCK: StartgetValueL94
+this.id : this.id = null, 
+this.value : this.value = 0.0, 
 
 BLOCK: BasicL95
-this.value : this.value = 0.0, 
 this.id : this.id = null, 
+this.value : this.value = 0.0, 
 
 BLOCK: Startconstructor1L97
 this.value : this.value = 0.0, 
@@ -736,7 +736,7 @@ Filtered: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 3.216 s
-[INFO] Finished at: 2019-05-01T17:37:49-07:00
-[INFO] Final Memory: 22M/1196M
+[INFO] Total time: 3.017 s
+[INFO] Finished at: 2019-05-06T19:57:48-07:00
+[INFO] Final Memory: 28M/1195M
 [INFO] ------------------------------------------------------------------------

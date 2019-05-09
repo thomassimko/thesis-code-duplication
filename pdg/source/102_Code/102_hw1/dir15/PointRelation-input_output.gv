@@ -9,13 +9,13 @@ digraph G {
 "8 : p2 = new CartesianPoint(0, 0, )" -> "66 : compute_distance(p1, p2, )"
 "8 : p2 = new CartesianPoint(0, 0, )" -> "68 : distance_quadrant(quadrant(p1, p2, ), )"
 "8 : p2 = new CartesianPoint(0, 0, )" -> "67 : System.out.println(\"Distance between points: \" + compute_distance(p1, p2, ), )"
-"8 : p2 = new CartesianPoint(0, 0, )" -> "60 : p2 = new PolarPoint(radius_2, theta_2, )" [style=dashed]
 "8 : p2 = new CartesianPoint(0, 0, )" -> "47 : p2 = new CartesianPoint(x2, y2, )" [style=dashed]
+"8 : p2 = new CartesianPoint(0, 0, )" -> "60 : p2 = new PolarPoint(radius_2, theta_2, )" [style=dashed]
 "9 : input = new Scanner(System.in, )"
 "11 : System.out.print(\"Which type of point should be created (1 for Cartesian, 2 for Polar)? \", )"
 "12 : choice_1 = input.nextInt()"
-"12 : choice_1 = input.nextInt()" -> "13 : choice_1 == 1"
 "12 : choice_1 = input.nextInt()" -> "21 : choice_1 == 2"
+"12 : choice_1 = input.nextInt()" -> "13 : choice_1 == 1"
 "13 : choice_1 == 1"
 "15 : System.out.print(\"Enter x-coordinate: \", )"
 "16 : x1 = input.nextDouble()"
@@ -33,9 +33,9 @@ digraph G {
 "24 : radius_1 = input.nextDouble()" -> "32 : p1 = new PolarPoint(radius_1, theta_1, )"
 "25 : System.out.print(\"Enter angle (in degrees): \", )"
 "26 : angle_1 = input.nextDouble()"
+"26 : angle_1 = input.nextDouble()" -> "31 : theta_1 = Math.toRadians(angle_1, )"
 "26 : angle_1 = input.nextDouble()" -> "29 : angle_1 = angle_1 + 360"
 "26 : angle_1 = input.nextDouble()" -> "27 : angle_1 < 0"
-"26 : angle_1 = input.nextDouble()" -> "31 : theta_1 = Math.toRadians(angle_1, )"
 "26 : angle_1 = input.nextDouble()" -> "29 : angle_1 = angle_1 + 360" [style=dashed]
 "27 : angle_1 < 0"
 "29 : angle_1 = angle_1 + 360"
@@ -49,8 +49,8 @@ digraph G {
 "36 : System.exit(1, )"
 "39 : System.out.print(\"Which type of point should be created (1 for Cartesian, 2 for Polar)? \", )"
 "40 : choice_2 = input.nextInt()"
-"40 : choice_2 = input.nextInt()" -> "41 : choice_2 == 1"
 "40 : choice_2 = input.nextInt()" -> "49 : choice_2 == 2"
+"40 : choice_2 = input.nextInt()" -> "41 : choice_2 == 1"
 "41 : choice_2 == 1"
 "43 : System.out.print(\"Enter x-coordinate: \", )"
 "44 : x2 = input.nextDouble()"

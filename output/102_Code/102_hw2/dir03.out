@@ -35,19 +35,19 @@ this.left : this.left = null,
 this.right : this.right = null, 
 
 BLOCK: StarttoStringL6
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL7
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: StartmainL9
 
 BLOCK: BasicL10
+e1 : e1 = new DoubleConstantExpression(10, ), 
 b1 : b1 = new VariableBindings(), 
 e2 : e2 = new DoubleConstantExpression(20, ), 
-e1 : e1 = new DoubleConstantExpression(10, ), 
 
 BLOCK: Startconstructor1L12
 this.left : this.left = null, 
@@ -66,12 +66,12 @@ this.right : this.right = null,
 this.left : this.left = null, 
 
 BLOCK: StarttoStringL18
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: BasicL19
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: StartaddBindingL21
 this.bindings : this.bindings = new ArrayList(), 
@@ -86,41 +86,41 @@ BLOCK: BasicL25
 this.bindings : this.bindings = new ArrayList(), 
 
 BLOCK: ForInitL27
-i : i = 0, 
 this.bindings : this.bindings = new ArrayList(), 
+i : i = 0, 
 
 BLOCK: ForCondL28
-i : i = i + 1, i = 0, 
 this.bindings : this.bindings = new ArrayList(), 
 @temp1 : @temp1 = i, 
+i : i = i + 1, i = 0, 
 
 BLOCK: LoopL29
-i : i = i + 1, i = 0, 
 this.bindings : this.bindings = new ArrayList(), 
 @temp1 : @temp1 = i, 
+i : i = i + 1, i = 0, 
 
 BLOCK: BasicL30
-i : i = i + 1, i = 0, 
 this.bindings : this.bindings = new ArrayList(), 
 @temp1 : @temp1 = i, 
+i : i = i + 1, i = 0, 
 
 BLOCK: trueL31
-i : i = i + 1, i = 0, 
 this.bindings : this.bindings = new ArrayList(), 
 @temp1 : @temp1 = i, 
+i : i = i + 1, i = 0, 
 
 BLOCK: joinL32
-i : i = i + 1, 
 this.bindings : this.bindings = new ArrayList(), 
 @temp1 : @temp1 = i, 
+i : i = i + 1, 
 
 BLOCK: Startconstructor1L33
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: BasicL34
-this.left : this.left = lft, 
 this.right : this.right = rht, 
+this.left : this.left = lft, 
 
 BLOCK: StartevaluateL36
 this.right : this.right = null, 
@@ -157,12 +157,12 @@ BLOCK: BasicL49
 this.val : this.val = null, 
 
 BLOCK: Startconstructor1L51
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL52
-this.right : this.right = rht, 
 this.left : this.left = lft, 
+this.right : this.right = rht, 
 
 BLOCK: StartevaluateL54
 this.right : this.right = null, 
@@ -223,12 +223,12 @@ BLOCK: BasicL76
 this.value : this.value = null, 
 
 BLOCK: Startconstructor1L78
-this.i : this.i = null, 
 this.val : this.val = 0.0, 
+this.i : this.i = null, 
 
 BLOCK: BasicL79
-this.i : this.i = id, 
 this.val : this.val = value, 
+this.i : this.i = id, 
 
 BLOCK: StartgetIdL81
 this.i : this.i = null, 
@@ -289,25 +289,25 @@ this.left : this.left = null,
 this.right : this.right = null, 
 
 BLOCK: StarttoStringL6
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: StarttoStringL6
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL7
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: StartmainL9
 
 BLOCK: StartmainL9
 
 BLOCK: BasicL10
+e1 : e1 = new DoubleConstantExpression(10, ), 
 b1 : b1 = new VariableBindings(), 
 e2 : e2 = new DoubleConstantExpression(20, ), 
-e1 : e1 = new DoubleConstantExpression(10, ), 
 
 BLOCK: Startconstructor1L12
 this.left : this.left = null, 
@@ -334,16 +334,16 @@ this.right : this.right = null,
 this.left : this.left = null, 
 
 BLOCK: StarttoStringL18
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: StarttoStringL18
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: BasicL19
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: StartaddBindingL21
 this.bindings : this.bindings = new ArrayList(), 
@@ -364,45 +364,45 @@ BLOCK: BasicL25
 this.bindings : this.bindings = new ArrayList(), 
 
 BLOCK: ForInitL27
-i : i = 0, 
 this.bindings : this.bindings = new ArrayList(), 
+i : i = 0, 
 
 BLOCK: ForCondL28
-i : i = i + 1, i = 0, 
 this.bindings : this.bindings = new ArrayList(), 
 @temp1 : @temp1 = i, 
+i : i = i + 1, i = 0, 
 
 BLOCK: LoopL29
-i : i = i + 1, i = 0, 
 this.bindings : this.bindings = new ArrayList(), 
 @temp1 : @temp1 = i, 
+i : i = i + 1, i = 0, 
 
 BLOCK: BasicL30
-i : i = i + 1, i = 0, 
 this.bindings : this.bindings = new ArrayList(), 
 @temp1 : @temp1 = i, 
+i : i = i + 1, i = 0, 
 
 BLOCK: trueL31
-i : i = i + 1, i = 0, 
 this.bindings : this.bindings = new ArrayList(), 
 @temp1 : @temp1 = i, 
+i : i = i + 1, i = 0, 
 
 BLOCK: joinL32
-i : i = i + 1, 
 this.bindings : this.bindings = new ArrayList(), 
 @temp1 : @temp1 = i, 
+i : i = i + 1, 
 
 BLOCK: Startconstructor1L33
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: Startconstructor1L33
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: BasicL34
-this.left : this.left = lft, 
 this.right : this.right = rht, 
+this.left : this.left = lft, 
 
 BLOCK: StartevaluateL36
 this.right : this.right = null, 
@@ -456,16 +456,16 @@ BLOCK: BasicL49
 this.val : this.val = null, 
 
 BLOCK: Startconstructor1L51
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: Startconstructor1L51
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL52
-this.right : this.right = rht, 
 this.left : this.left = lft, 
+this.right : this.right = rht, 
 
 BLOCK: StartevaluateL54
 this.right : this.right = null, 
@@ -555,16 +555,16 @@ BLOCK: BasicL76
 this.value : this.value = null, 
 
 BLOCK: Startconstructor1L78
-this.i : this.i = null, 
 this.val : this.val = 0.0, 
+this.i : this.i = null, 
 
 BLOCK: Startconstructor1L78
-this.i : this.i = null, 
 this.val : this.val = 0.0, 
+this.i : this.i = null, 
 
 BLOCK: BasicL79
-this.i : this.i = id, 
 this.val : this.val = value, 
+this.i : this.i = id, 
 
 BLOCK: StartgetIdL81
 this.i : this.i = null, 
@@ -624,7 +624,7 @@ Filtered: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 2.275 s
-[INFO] Finished at: 2019-05-01T17:38:00-07:00
-[INFO] Final Memory: 14M/703M
+[INFO] Total time: 2.347 s
+[INFO] Finished at: 2019-05-06T19:57:59-07:00
+[INFO] Final Memory: 14M/706M
 [INFO] ------------------------------------------------------------------------

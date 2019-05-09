@@ -4,35 +4,35 @@ digraph G {
 "25 : sum2 = 0" -> "33 : average2 = sum2 * 1.0 / count2"
 "25 : sum2 = 0" -> "29 : sum2 = sum2 + arr[i]" [style=dashed]
 "26 : count2 = 0"
-"26 : count2 = 0" -> "30 : @temp3 = count2"
+"26 : count2 = 0" -> "30 : @temp12 = count2"
 "26 : count2 = 0" -> "33 : average2 = sum2 * 1.0 / count2"
 "26 : count2 = 0" -> "30 : count2 = count2 + 1"
 "26 : count2 = 0" -> "30 : count2 = count2 + 1" [style=dashed]
 "28 : i = 0"
-"28 : i = 0" -> "28 : i < 3"
 "28 : i = 0" -> "29 : sum2 = sum2 + arr[i]"
-"28 : i = 0" -> "28 : @temp4 = i"
+"28 : i = 0" -> "28 : @temp13 = i"
 "28 : i = 0" -> "28 : i = i + 1"
+"28 : i = 0" -> "28 : i < 3"
 "28 : i = 0" -> "28 : i = i + 1" [style=dashed]
 "28 : i < 3"
 "29 : sum2 = sum2 + arr[i]"
 "29 : sum2 = sum2 + arr[i]" -> "29 : sum2 = sum2 + arr[i]"
 "29 : sum2 = sum2 + arr[i]" -> "33 : average2 = sum2 * 1.0 / count2"
 "29 : sum2 = sum2 + arr[i]" -> "29 : sum2 = sum2 + arr[i]" [style=dashed]
-"30 : @temp3 = count2"
-"30 : @temp3 = count2" -> "30 : @temp3 = count2" [style=dashed]
+"30 : @temp12 = count2"
+"30 : @temp12 = count2" -> "30 : @temp12 = count2" [style=dashed]
 "30 : count2 = count2 + 1"
-"30 : count2 = count2 + 1" -> "30 : @temp3 = count2"
+"30 : count2 = count2 + 1" -> "30 : @temp12 = count2"
 "30 : count2 = count2 + 1" -> "33 : average2 = sum2 * 1.0 / count2"
 "30 : count2 = count2 + 1" -> "30 : count2 = count2 + 1"
 "30 : count2 = count2 + 1" -> "30 : count2 = count2 + 1" [style=dashed]
-"28 : @temp4 = i"
-"28 : @temp4 = i" -> "28 : @temp4 = i" [style=dashed]
+"28 : @temp13 = i"
+"28 : @temp13 = i" -> "28 : @temp13 = i" [style=dashed]
 "28 : i = i + 1"
-"28 : i = i + 1" -> "28 : i < 3"
 "28 : i = i + 1" -> "29 : sum2 = sum2 + arr[i]"
-"28 : i = i + 1" -> "28 : @temp4 = i"
+"28 : i = i + 1" -> "28 : @temp13 = i"
 "28 : i = i + 1" -> "28 : i = i + 1"
+"28 : i = i + 1" -> "28 : i < 3"
 "28 : i = i + 1" -> "28 : i = i + 1" [style=dashed]
 "33 : average2 = sum2 * 1.0 / count2"
 }

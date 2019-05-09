@@ -18,6 +18,7 @@ public class Mapping {
     private final int valueMax;
 
     public Mapping(Map<Expression, Expression> initial) {
+
         int[] keyRange = getRange(initial.keySet());
         keyMin = keyRange[0];
         keyMax = keyRange[1];

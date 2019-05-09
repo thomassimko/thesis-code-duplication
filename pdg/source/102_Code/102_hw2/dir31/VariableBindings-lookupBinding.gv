@@ -1,10 +1,10 @@
 digraph G {
 "6 : this.bindings = new ArrayList()"
 "36 : i = 0"
-"36 : i = 0" -> "36 : @temp2 = i"
-"36 : i = 0" -> "36 : i < this.bindings.size()"
 "36 : i = 0" -> "36 : i = i + 1"
+"36 : i = 0" -> "36 : i < this.bindings.size()"
 "36 : i = 0" -> "38 : check = this.bindings.get(i, )"
+"36 : i = 0" -> "36 : @temp2 = i"
 "36 : i = 0" -> "36 : i = i + 1" [style=dashed]
 "36 : i < this.bindings.size()"
 "38 : check = this.bindings.get(i, )"
@@ -15,9 +15,9 @@ digraph G {
 "36 : @temp2 = i"
 "36 : @temp2 = i" -> "36 : @temp2 = i" [style=dashed]
 "36 : i = i + 1"
-"36 : i = i + 1" -> "36 : @temp2 = i"
-"36 : i = i + 1" -> "36 : i < this.bindings.size()"
 "36 : i = i + 1" -> "36 : i = i + 1"
+"36 : i = i + 1" -> "36 : i < this.bindings.size()"
 "36 : i = i + 1" -> "38 : check = this.bindings.get(i, )"
+"36 : i = i + 1" -> "36 : @temp2 = i"
 "36 : i = i + 1" -> "36 : i = i + 1" [style=dashed]
 }

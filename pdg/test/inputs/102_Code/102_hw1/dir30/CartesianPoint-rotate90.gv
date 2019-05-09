@@ -1,0 +1,9 @@
+digraph G {
+"4 : this.x_coord = 0.0"
+"5 : this.y_coord = 0.0"
+"34 : x = yCoordinate()"
+"34 : x = yCoordinate()" -> "36 : rotatedPoint = new CartesianPoint(x, y, )"
+"35 : y = xCoordinate()"
+"35 : y = xCoordinate()" -> "36 : rotatedPoint = new CartesianPoint(x, y, )"
+"36 : rotatedPoint = new CartesianPoint(x, y, )"
+}

@@ -1,7 +1,7 @@
 digraph G {
 "4 : this.rad = 0.0"
-"4 : this.rad = 0.0" -> "26 : xVal = this.rad * Math.cos(this.ang, )"
 "4 : this.rad = 0.0" -> "22 : this.rad == 0"
+"4 : this.rad = 0.0" -> "26 : xVal = this.rad * Math.cos(this.ang, )"
 "5 : this.ang = 0.0"
 "5 : this.ang = 0.0" -> "26 : xVal = this.rad * Math.cos(this.ang, )"
 "22 : this.rad == 0"

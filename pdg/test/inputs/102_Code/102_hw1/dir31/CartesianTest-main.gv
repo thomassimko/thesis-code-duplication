@@ -1,0 +1,10 @@
+digraph G {
+"4 : cp = new CartesianPoint(4, 3, )"
+"5 : dp = new CartesianPoint(5, 12, )"
+"7 : Check.check(cp.radius(), 5, )"
+"8 : Check.check(cp.angle(), 0.6435011, )"
+"9 : Check.check(xCoord(), 5, )"
+"10 : Check.check(dp.radius(), 13, )"
+"11 : Check.check(dp.angle(), 1.1760052, )"
+"12 : Check.check(xCoord(), 13, )"
+}

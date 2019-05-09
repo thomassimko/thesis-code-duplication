@@ -1,0 +1,9 @@
+digraph G {
+"4 : this.x = 0.0"
+"4 : this.x = 0.0" -> "34 : rotatedPoint = new CartesianPoint(-this.y, this.x, )"
+"5 : this.y = 0.0"
+"5 : this.y = 0.0" -> "34 : rotatedPoint = new CartesianPoint(-this.y, this.x, )"
+"6 : this.radius = 0.0"
+"7 : this.angle = 0.0"
+"34 : rotatedPoint = new CartesianPoint(-this.y, this.x, )"
+}

@@ -45,53 +45,53 @@ this.rht : this.rht = null,
 BLOCK: StartmainL9
 
 BLOCK: BasicL10
-y_id : y_id = new IdentifierExpression("y", ), 
-x : x = new Assignment("x", c1, ), 
-s2 : s2 = new SubtractExpression(c1, c4, ), 
-b : b = new VariableBindings(), 
-a1 : a1 = new AddExpression(c1, c2, ), 
-s1 : s1 = new SubtractExpression(c4, c1, ), 
-n1 : n1 = new NegationExpression(c1, ), 
-d1 : d1 = new DivideExpression(c1, c2, ), 
-c3 : c3 = new DoubleConstantExpression(0.0, ), 
-c1 : c1 = new DoubleConstantExpression(1.0, ), 
-a2 : a2 = new AddExpression(c1, c1, ), 
-y : y = new Assignment("y", a1, ), 
-c4 : c4 = new DoubleConstantExpression(4.0, ), 
-x_id : x_id = new IdentifierExpression("x", ), 
-d2 : d2 = new DivideExpression(s4, s2, ), 
-n2 : n2 = new NegationExpression(c2, ), 
-c2 : c2 = new DoubleConstantExpression(-1.0, ), 
-m1 : m1 = new MultiplyExpression(c1, c2, ), 
-a3 : a3 = new AddExpression(a2, c1, ), 
 m2 : m2 = new MultiplyExpression(s1, s2, ), 
-a4 : a4 = new AddExpression(a2, a3, ), 
-s4 : s4 = new SubtractExpression(a1, c3, ), 
+a3 : a3 = new AddExpression(a2, c1, ), 
+y : y = new Assignment("y", a1, ), 
+c2 : c2 = new DoubleConstantExpression(-1.0, ), 
+d1 : d1 = new DivideExpression(c1, c2, ), 
+y_id : y_id = new IdentifierExpression("y", ), 
+d2 : d2 = new DivideExpression(s4, s2, ), 
 s3 : s3 = new SubtractExpression(s1, c4, ), 
+n2 : n2 = new NegationExpression(c2, ), 
+a2 : a2 = new AddExpression(c1, c1, ), 
+x_id : x_id = new IdentifierExpression("x", ), 
+x : x = new Assignment("x", c1, ), 
+c4 : c4 = new DoubleConstantExpression(4.0, ), 
+n1 : n1 = new NegationExpression(c1, ), 
+c3 : c3 = new DoubleConstantExpression(0.0, ), 
+s2 : s2 = new SubtractExpression(c1, c4, ), 
+a1 : a1 = new AddExpression(c1, c2, ), 
+c1 : c1 = new DoubleConstantExpression(1.0, ), 
+s4 : s4 = new SubtractExpression(a1, c3, ), 
+s1 : s1 = new SubtractExpression(c4, c1, ), 
+a4 : a4 = new AddExpression(a2, a3, ), 
+m1 : m1 = new MultiplyExpression(c1, c2, ), 
+b : b = new VariableBindings(), 
 
 BLOCK: Startconstructor1L12
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL13
-this.lft : this.lft = lft, 
 this.rht : this.rht = rht, 
+this.lft : this.lft = lft, 
 
 BLOCK: StartevaluateL15
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL16
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: StarttoStringL18
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL19
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StartaddBindingL21
 this.list : this.list = new ArrayList(), 
@@ -101,36 +101,36 @@ this.list : this.list = new ArrayList(),
 exists : exists = false, 
 
 BLOCK: LoopL24
-b : b = this.list, 
 this.list : this.list = new ArrayList(), 
-exists : exists = true, exists = false, 
+exists : exists = false, exists = true, 
+b : b = this.list, 
 
 BLOCK: BasicL25
-b : b = this.list, 
 this.list : this.list = new ArrayList(), 
-exists : exists = true, exists = false, 
+exists : exists = false, exists = true, 
+b : b = this.list, 
 
 BLOCK: trueL26
-b : b = this.list, 
 this.list : this.list = new ArrayList(), 
 exists : exists = true, 
+b : b = this.list, 
 
 BLOCK: joinL27
-b : b = this.list, 
 this.list : this.list = new ArrayList(), 
-exists : exists = true, exists = false, 
+exists : exists = false, exists = true, 
+b : b = this.list, 
 
 BLOCK: trueL28
-b : b = this.list, 
 this.list : this.list = new ArrayList(), 
 newBinding : newBinding = new Binding(id, value, ), 
-exists : exists = true, exists = false, 
+exists : exists = false, exists = true, 
+b : b = this.list, 
 
 BLOCK: joinL29
-b : b = this.list, 
 this.list : this.list = new ArrayList(), 
 newBinding : newBinding = new Binding(id, value, ), 
-exists : exists = true, exists = false, 
+exists : exists = false, exists = true, 
+b : b = this.list, 
 
 BLOCK: StartlookupBindingL30
 this.list : this.list = new ArrayList(), 
@@ -155,20 +155,20 @@ this.list : this.list = new ArrayList(),
 b : b = this.list, 
 
 BLOCK: Startconstructor1L37
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL38
-this.lft : this.lft = lft, 
 this.rht : this.rht = rht, 
+this.lft : this.lft = lft, 
 
 BLOCK: StartevaluateL40
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL41
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StarttoStringL43
 this.rht : this.rht = null, 
@@ -197,20 +197,20 @@ BLOCK: BasicL53
 this.id : this.id = null, 
 
 BLOCK: Startconstructor1L55
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL56
-this.rht : this.rht = rht, 
 this.lft : this.lft = lft, 
+this.rht : this.rht = rht, 
 
 BLOCK: StartevaluateL58
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL59
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: StarttoStringL61
 this.lft : this.lft = null, 
@@ -238,12 +238,12 @@ this.id : this.id = null,
 value : value = this.e.evaluate(bindings, ), 
 
 BLOCK: StarttoStringL70
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: BasicL71
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: Startconstructor1L73
 this.e : this.e = null, 
@@ -264,12 +264,12 @@ BLOCK: BasicL80
 this.e : this.e = null, 
 
 BLOCK: Startconstructor1L82
-this.value : this.value = 0.0, 
 this.id : this.id = null, 
+this.value : this.value = 0.0, 
 
 BLOCK: BasicL83
-this.value : this.value = value, 
 this.id : this.id = id, 
+this.value : this.value = value, 
 
 BLOCK: StartgetIdL85
 this.id : this.id = null, 
@@ -362,65 +362,65 @@ BLOCK: StartmainL9
 BLOCK: StartmainL9
 
 BLOCK: BasicL10
-y_id : y_id = new IdentifierExpression("y", ), 
-x : x = new Assignment("x", c1, ), 
-s2 : s2 = new SubtractExpression(c1, c4, ), 
-b : b = new VariableBindings(), 
-a1 : a1 = new AddExpression(c1, c2, ), 
-s1 : s1 = new SubtractExpression(c4, c1, ), 
-n1 : n1 = new NegationExpression(c1, ), 
-d1 : d1 = new DivideExpression(c1, c2, ), 
-c3 : c3 = new DoubleConstantExpression(0.0, ), 
-c1 : c1 = new DoubleConstantExpression(1.0, ), 
-a2 : a2 = new AddExpression(c1, c1, ), 
-y : y = new Assignment("y", a1, ), 
-c4 : c4 = new DoubleConstantExpression(4.0, ), 
-x_id : x_id = new IdentifierExpression("x", ), 
-d2 : d2 = new DivideExpression(s4, s2, ), 
-n2 : n2 = new NegationExpression(c2, ), 
-c2 : c2 = new DoubleConstantExpression(-1.0, ), 
-m1 : m1 = new MultiplyExpression(c1, c2, ), 
-a3 : a3 = new AddExpression(a2, c1, ), 
 m2 : m2 = new MultiplyExpression(s1, s2, ), 
-a4 : a4 = new AddExpression(a2, a3, ), 
-s4 : s4 = new SubtractExpression(a1, c3, ), 
+a3 : a3 = new AddExpression(a2, c1, ), 
+y : y = new Assignment("y", a1, ), 
+c2 : c2 = new DoubleConstantExpression(-1.0, ), 
+d1 : d1 = new DivideExpression(c1, c2, ), 
+y_id : y_id = new IdentifierExpression("y", ), 
+d2 : d2 = new DivideExpression(s4, s2, ), 
 s3 : s3 = new SubtractExpression(s1, c4, ), 
+n2 : n2 = new NegationExpression(c2, ), 
+a2 : a2 = new AddExpression(c1, c1, ), 
+x_id : x_id = new IdentifierExpression("x", ), 
+x : x = new Assignment("x", c1, ), 
+c4 : c4 = new DoubleConstantExpression(4.0, ), 
+n1 : n1 = new NegationExpression(c1, ), 
+c3 : c3 = new DoubleConstantExpression(0.0, ), 
+s2 : s2 = new SubtractExpression(c1, c4, ), 
+a1 : a1 = new AddExpression(c1, c2, ), 
+c1 : c1 = new DoubleConstantExpression(1.0, ), 
+s4 : s4 = new SubtractExpression(a1, c3, ), 
+s1 : s1 = new SubtractExpression(c4, c1, ), 
+a4 : a4 = new AddExpression(a2, a3, ), 
+m1 : m1 = new MultiplyExpression(c1, c2, ), 
+b : b = new VariableBindings(), 
 
 BLOCK: Startconstructor1L12
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: Startconstructor1L12
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL13
-this.lft : this.lft = lft, 
 this.rht : this.rht = rht, 
+this.lft : this.lft = lft, 
 
 BLOCK: StartevaluateL15
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: StartevaluateL15
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL16
-this.lft : this.lft = null, 
-this.rht : this.rht = null, 
-
-BLOCK: StarttoStringL18
 this.rht : this.rht = null, 
 this.lft : this.lft = null, 
 
 BLOCK: StarttoStringL18
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
+
+BLOCK: StarttoStringL18
+this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL19
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StartaddBindingL21
 this.list : this.list = new ArrayList(), 
@@ -433,36 +433,36 @@ this.list : this.list = new ArrayList(),
 exists : exists = false, 
 
 BLOCK: LoopL24
-b : b = this.list, 
 this.list : this.list = new ArrayList(), 
-exists : exists = true, exists = false, 
+exists : exists = false, exists = true, 
+b : b = this.list, 
 
 BLOCK: BasicL25
-b : b = this.list, 
 this.list : this.list = new ArrayList(), 
-exists : exists = true, exists = false, 
+exists : exists = false, exists = true, 
+b : b = this.list, 
 
 BLOCK: trueL26
-b : b = this.list, 
 this.list : this.list = new ArrayList(), 
 exists : exists = true, 
+b : b = this.list, 
 
 BLOCK: joinL27
-b : b = this.list, 
 this.list : this.list = new ArrayList(), 
-exists : exists = true, exists = false, 
+exists : exists = false, exists = true, 
+b : b = this.list, 
 
 BLOCK: trueL28
-b : b = this.list, 
 this.list : this.list = new ArrayList(), 
 newBinding : newBinding = new Binding(id, value, ), 
-exists : exists = true, exists = false, 
+exists : exists = false, exists = true, 
+b : b = this.list, 
 
 BLOCK: joinL29
-b : b = this.list, 
 this.list : this.list = new ArrayList(), 
 newBinding : newBinding = new Binding(id, value, ), 
-exists : exists = true, exists = false, 
+exists : exists = false, exists = true, 
+b : b = this.list, 
 
 BLOCK: StartlookupBindingL30
 this.list : this.list = new ArrayList(), 
@@ -490,28 +490,28 @@ this.list : this.list = new ArrayList(),
 b : b = this.list, 
 
 BLOCK: Startconstructor1L37
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: Startconstructor1L37
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL38
-this.lft : this.lft = lft, 
 this.rht : this.rht = rht, 
+this.lft : this.lft = lft, 
 
 BLOCK: StartevaluateL40
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StartevaluateL40
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL41
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StarttoStringL43
 this.rht : this.rht = null, 
@@ -553,28 +553,28 @@ BLOCK: BasicL53
 this.id : this.id = null, 
 
 BLOCK: Startconstructor1L55
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: Startconstructor1L55
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL56
-this.rht : this.rht = rht, 
 this.lft : this.lft = lft, 
+this.rht : this.rht = rht, 
 
 BLOCK: StartevaluateL58
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: StartevaluateL58
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL59
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: StarttoStringL61
 this.lft : this.lft = null, 
@@ -614,16 +614,16 @@ this.id : this.id = null,
 value : value = this.e.evaluate(bindings, ), 
 
 BLOCK: StarttoStringL70
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: StarttoStringL70
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: BasicL71
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: Startconstructor1L73
 this.e : this.e = null, 
@@ -653,16 +653,16 @@ BLOCK: BasicL80
 this.e : this.e = null, 
 
 BLOCK: Startconstructor1L82
-this.value : this.value = 0.0, 
 this.id : this.id = null, 
+this.value : this.value = 0.0, 
 
 BLOCK: Startconstructor1L82
-this.value : this.value = 0.0, 
 this.id : this.id = null, 
+this.value : this.value = 0.0, 
 
 BLOCK: BasicL83
-this.value : this.value = value, 
 this.id : this.id = id, 
+this.value : this.value = value, 
 
 BLOCK: StartgetIdL85
 this.id : this.id = null, 
@@ -739,79 +739,136 @@ this.value : this.value = 0.0,
 BLOCK: BasicL104
 this.value : this.value = 0.0, 
 
-Unfiltered: 838
-Filtered: 3
+Unfiltered: 456
+Filtered: 6
 
 
-Duplicate found: 102_Code/102_hw2/dir29/TestCases.java lines [5, 30] and 102_Code/102_hw2/dir29/TestCases.java lines [6, 29]
+Duplicate found: 102_Code/102_hw2/dir29/TestCases.java lines [11, 30] and 102_Code/102_hw2/dir29/TestCases.java lines [10, 29]
 102_Code/102_hw2/dir29/TestCases.java ----------
-5 :	c1 = new DoubleConstantExpression(1.0, )
-7 :	c3 = new DoubleConstantExpression(0.0, )
-10 :	n1 = new NegationExpression(c1, )
 11 :	n2 = new NegationExpression(c2, )
 15 :	a3 = new AddExpression(a2, c1, )
-16 :	a4 = new AddExpression(a2, a3, )
 18 :	s1 = new SubtractExpression(c4, c1, )
+19 :	s2 = new SubtractExpression(c1, c4, )
+20 :	s3 = new SubtractExpression(s1, c4, )
 21 :	s4 = new SubtractExpression(a1, c3, )
-26 :	d1 = new DivideExpression(c1, c2, )
 27 :	d2 = new DivideExpression(s4, s2, )
 30 :	y = new Assignment("y", a1, )
 102_Code/102_hw2/dir29/TestCases.java ----------
-6 :	c2 = new DoubleConstantExpression(-1.0, )
-8 :	c4 = new DoubleConstantExpression(4.0, )
-11 :	n2 = new NegationExpression(c2, )
 10 :	n1 = new NegationExpression(c1, )
-13 :	a1 = new AddExpression(c1, c2, )
-21 :	s4 = new SubtractExpression(a1, c3, )
-26 :	d1 = new DivideExpression(c1, c2, )
-18 :	s1 = new SubtractExpression(c4, c1, )
 23 :	m1 = new MultiplyExpression(c1, c2, )
+15 :	a3 = new AddExpression(a2, c1, )
+18 :	s1 = new SubtractExpression(c4, c1, )
+16 :	a4 = new AddExpression(a2, a3, )
+19 :	s2 = new SubtractExpression(c1, c4, )
 24 :	m2 = new MultiplyExpression(s1, s2, )
 29 :	x = new Assignment("x", c1, )
 ===========================
 
 
 
-Duplicate found: 102_Code/102_hw2/dir29/TestCases.java lines [5, 27] and 102_Code/102_hw2/dir29/TestCases.java lines [5, 24]
+Duplicate found: 102_Code/102_hw2/dir29/TestCases.java lines [11, 30] and 102_Code/102_hw2/dir29/TestCases.java lines [6, 29]
 102_Code/102_hw2/dir29/TestCases.java ----------
-5 :	c1 = new DoubleConstantExpression(1.0, )
-7 :	c3 = new DoubleConstantExpression(0.0, )
-8 :	c4 = new DoubleConstantExpression(4.0, )
 11 :	n2 = new NegationExpression(c2, )
-16 :	a4 = new AddExpression(a2, a3, )
+15 :	a3 = new AddExpression(a2, c1, )
+18 :	s1 = new SubtractExpression(c4, c1, )
+19 :	s2 = new SubtractExpression(c1, c4, )
 20 :	s3 = new SubtractExpression(s1, c4, )
-26 :	d1 = new DivideExpression(c1, c2, )
-27 :	d2 = new DivideExpression(s4, s2, )
-102_Code/102_hw2/dir29/TestCases.java ----------
-8 :	c4 = new DoubleConstantExpression(4.0, )
-5 :	c1 = new DoubleConstantExpression(1.0, )
-7 :	c3 = new DoubleConstantExpression(0.0, )
-6 :	c2 = new DoubleConstantExpression(-1.0, )
-24 :	m2 = new MultiplyExpression(s1, s2, )
 21 :	s4 = new SubtractExpression(a1, c3, )
-20 :	s3 = new SubtractExpression(s1, c4, )
+27 :	d2 = new DivideExpression(s4, s2, )
+30 :	y = new Assignment("y", a1, )
+102_Code/102_hw2/dir29/TestCases.java ----------
+6 :	c2 = new DoubleConstantExpression(-1.0, )
+21 :	s4 = new SubtractExpression(a1, c3, )
+15 :	a3 = new AddExpression(a2, c1, )
+18 :	s1 = new SubtractExpression(c4, c1, )
 16 :	a4 = new AddExpression(a2, a3, )
+19 :	s2 = new SubtractExpression(c1, c4, )
+24 :	m2 = new MultiplyExpression(s1, s2, )
+29 :	x = new Assignment("x", c1, )
 ===========================
 
 
 
-Duplicate found: 102_Code/102_hw2/dir29/TestCases.java lines [5, 27] and 102_Code/102_hw2/dir29/TestCases.java lines [5, 27]
+Duplicate found: 102_Code/102_hw2/dir29/TestCases.java lines [7, 30] and 102_Code/102_hw2/dir29/TestCases.java lines [8, 29]
 102_Code/102_hw2/dir29/TestCases.java ----------
-5 :	c1 = new DoubleConstantExpression(1.0, )
 7 :	c3 = new DoubleConstantExpression(0.0, )
 11 :	n2 = new NegationExpression(c2, )
-16 :	a4 = new AddExpression(a2, a3, )
+15 :	a3 = new AddExpression(a2, c1, )
 18 :	s1 = new SubtractExpression(c4, c1, )
-20 :	s3 = new SubtractExpression(s1, c4, )
-27 :	d2 = new DivideExpression(s4, s2, )
-102_Code/102_hw2/dir29/TestCases.java ----------
-7 :	c3 = new DoubleConstantExpression(0.0, )
-5 :	c1 = new DoubleConstantExpression(1.0, )
-6 :	c2 = new DoubleConstantExpression(-1.0, )
 20 :	s3 = new SubtractExpression(s1, c4, )
 21 :	s4 = new SubtractExpression(a1, c3, )
 27 :	d2 = new DivideExpression(s4, s2, )
+30 :	y = new Assignment("y", a1, )
+102_Code/102_hw2/dir29/TestCases.java ----------
+8 :	c4 = new DoubleConstantExpression(4.0, )
+10 :	n1 = new NegationExpression(c1, )
+23 :	m1 = new MultiplyExpression(c1, c2, )
+15 :	a3 = new AddExpression(a2, c1, )
 16 :	a4 = new AddExpression(a2, a3, )
+19 :	s2 = new SubtractExpression(c1, c4, )
+24 :	m2 = new MultiplyExpression(s1, s2, )
+29 :	x = new Assignment("x", c1, )
+===========================
+
+
+
+Duplicate found: 102_Code/102_hw2/dir29/TestCases.java lines [7, 30] and 102_Code/102_hw2/dir29/TestCases.java lines [6, 29]
+102_Code/102_hw2/dir29/TestCases.java ----------
+7 :	c3 = new DoubleConstantExpression(0.0, )
+11 :	n2 = new NegationExpression(c2, )
+15 :	a3 = new AddExpression(a2, c1, )
+18 :	s1 = new SubtractExpression(c4, c1, )
+20 :	s3 = new SubtractExpression(s1, c4, )
+21 :	s4 = new SubtractExpression(a1, c3, )
+27 :	d2 = new DivideExpression(s4, s2, )
+30 :	y = new Assignment("y", a1, )
+102_Code/102_hw2/dir29/TestCases.java ----------
+6 :	c2 = new DoubleConstantExpression(-1.0, )
+10 :	n1 = new NegationExpression(c1, )
+16 :	a4 = new AddExpression(a2, a3, )
+19 :	s2 = new SubtractExpression(c1, c4, )
+24 :	m2 = new MultiplyExpression(s1, s2, )
+13 :	a1 = new AddExpression(c1, c2, )
+21 :	s4 = new SubtractExpression(a1, c3, )
+29 :	x = new Assignment("x", c1, )
+===========================
+
+
+
+Duplicate found: 102_Code/102_hw2/dir29/TestCases.java lines [5, 26] and 102_Code/102_hw2/dir29/TestCases.java lines [6, 27]
+102_Code/102_hw2/dir29/TestCases.java ----------
+5 :	c1 = new DoubleConstantExpression(1.0, )
+10 :	n1 = new NegationExpression(c1, )
+11 :	n2 = new NegationExpression(c2, )
+21 :	s4 = new SubtractExpression(a1, c3, )
+23 :	m1 = new MultiplyExpression(c1, c2, )
+26 :	d1 = new DivideExpression(c1, c2, )
+102_Code/102_hw2/dir29/TestCases.java ----------
+6 :	c2 = new DoubleConstantExpression(-1.0, )
+11 :	n2 = new NegationExpression(c2, )
+10 :	n1 = new NegationExpression(c1, )
+27 :	d2 = new DivideExpression(s4, s2, )
+13 :	a1 = new AddExpression(c1, c2, )
+23 :	m1 = new MultiplyExpression(c1, c2, )
+===========================
+
+
+
+Duplicate found: 102_Code/102_hw2/dir29/TestCases.java lines [5, 30] and 102_Code/102_hw2/dir29/TestCases.java lines [6, 29]
+102_Code/102_hw2/dir29/TestCases.java ----------
+5 :	c1 = new DoubleConstantExpression(1.0, )
+11 :	n2 = new NegationExpression(c2, )
+19 :	s2 = new SubtractExpression(c1, c4, )
+26 :	d1 = new DivideExpression(c1, c2, )
+27 :	d2 = new DivideExpression(s4, s2, )
+30 :	y = new Assignment("y", a1, )
+102_Code/102_hw2/dir29/TestCases.java ----------
+6 :	c2 = new DoubleConstantExpression(-1.0, )
+10 :	n1 = new NegationExpression(c1, )
+13 :	a1 = new AddExpression(c1, c2, )
+23 :	m1 = new MultiplyExpression(c1, c2, )
+21 :	s4 = new SubtractExpression(a1, c3, )
+29 :	x = new Assignment("x", c1, )
 ===========================
 
 
@@ -819,7 +876,7 @@ Duplicate found: 102_Code/102_hw2/dir29/TestCases.java lines [5, 27] and 102_Cod
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 7.538 s
-[INFO] Finished at: 2019-05-01T17:16:34-07:00
-[INFO] Final Memory: 28M/1272M
+[INFO] Total time: 4.459 s
+[INFO] Finished at: 2019-05-06T19:57:26-07:00
+[INFO] Final Memory: 24M/1505M
 [INFO] ------------------------------------------------------------------------

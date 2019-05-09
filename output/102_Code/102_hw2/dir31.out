@@ -19,12 +19,12 @@
 [INFO] 
 [INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ thesis ---
 BLOCK: Startconstructor1L0
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL1
-this.right : this.right = rht, 
 this.left : this.left = lft, 
+this.right : this.right = rht, 
 
 BLOCK: StartevaluateL3
 this.left : this.left = null, 
@@ -51,57 +51,57 @@ BLOCK: StartcheckAssignmentL12
 
 BLOCK: BasicL13
 e4 : e4 = new AddExpression(f, e, ), 
+d : d = new Assignment("a", e3, ), 
+f2 : f2 = new IdentifierExpression("b", ), 
+e2 : e2 = new DoubleConstantExpression(3, ), 
+e : e = new DoubleConstantExpression(2, ), 
+f3 : f3 = new IdentifierExpression("c", ), 
+c : c = new Assignment("c", e3, ), 
 b : b = new Assignment("b", e2, ), 
 e3 : e3 = new AddExpression(e, e2, ), 
 d2 : d2 = new Assignment("a", e4, ), 
-f : f = new IdentifierExpression("a", ), 
-c : c = new Assignment("c", e3, ), 
 a : a = new Assignment("a", e, ), 
-e2 : e2 = new DoubleConstantExpression(3, ), 
-d : d = new Assignment("a", e3, ), 
-f2 : f2 = new IdentifierExpression("b", ), 
-f3 : f3 = new IdentifierExpression("c", ), 
-e : e = new DoubleConstantExpression(2, ), 
+f : f = new IdentifierExpression("a", ), 
 
 BLOCK: StartcheckDivideL15
 
 BLOCK: BasicL16
-e2 : e2 = new DivideExpression(c, b, ), 
-e3 : e3 = new DivideExpression(d, a, ), 
-c : c = new DoubleConstantExpression(6, ), 
 d : d = new AddExpression(a, c, ), 
 b : b = new DoubleConstantExpression(3, ), 
-e : e = new DivideExpression(c, a, ), 
-f : f = new SubtractExpression(c, a, ), 
 a : a = new DoubleConstantExpression(2, ), 
+f : f = new SubtractExpression(c, a, ), 
+e3 : e3 = new DivideExpression(d, a, ), 
+e2 : e2 = new DivideExpression(c, b, ), 
+c : c = new DoubleConstantExpression(6, ), 
+e : e = new DivideExpression(c, a, ), 
 e4 : e4 = new DivideExpression(d, f, ), 
 
 BLOCK: StartcheckMultiplyL18
 
 BLOCK: BasicL19
-e2 : e2 = new MultiplyExpression(a, c, ), 
-d : d = new AddExpression(a, b, ), 
-b : b = new DoubleConstantExpression(3, ), 
-c : c = new DoubleConstantExpression(5, ), 
 e3 : e3 = new MultiplyExpression(c, d, ), 
-e4 : e4 = new MultiplyExpression(d, c, ), 
+b : b = new DoubleConstantExpression(3, ), 
 e : e = new MultiplyExpression(a, b, ), 
+d : d = new AddExpression(a, b, ), 
 a : a = new DoubleConstantExpression(2, ), 
+e2 : e2 = new MultiplyExpression(a, c, ), 
+c : c = new DoubleConstantExpression(5, ), 
+e4 : e4 = new MultiplyExpression(d, c, ), 
 
 BLOCK: StartcheckSubtractL21
 
 BLOCK: BasicL22
-e : e = new SubtractExpression(a, b, ), 
 a : a = new DoubleConstantExpression(2, ), 
+e : e = new SubtractExpression(a, b, ), 
 e2 : e2 = new SubtractExpression(b, a, ), 
 b : b = new DoubleConstantExpression(3, ), 
 
 BLOCK: StartcheckAddL24
 
 BLOCK: BasicL25
+a : a = new DoubleConstantExpression(2, ), 
 e : e = new AddExpression(a, b, ), 
 b : b = new DoubleConstantExpression(3, ), 
-a : a = new DoubleConstantExpression(2, ), 
 
 BLOCK: StartcheckNegationL27
 
@@ -131,12 +131,12 @@ this.left : this.left = null,
 this.right : this.right = null, 
 
 BLOCK: StarttoStringL39
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: BasicL40
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: Startconstructor1L42
 this.bindings : this.bindings = new ArrayList(), 
@@ -148,71 +148,71 @@ BLOCK: StartaddBindingL45
 this.bindings : this.bindings = new ArrayList(), 
 
 BLOCK: BasicL46
-replaced : replaced = false, 
-b : b = new Binding(id, value, ), 
 this.bindings : this.bindings = new ArrayList(), 
+b : b = new Binding(id, value, ), 
+replaced : replaced = false, 
 
 BLOCK: ForInitL48
-i : i = 0, 
-replaced : replaced = false, 
-b : b = new Binding(id, value, ), 
 this.bindings : this.bindings = new ArrayList(), 
+b : b = new Binding(id, value, ), 
+replaced : replaced = false, 
+i : i = 0, 
 
 BLOCK: ForCondL49
-@temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
-replaced : replaced = true, replaced = false, 
-b : b = new Binding(id, value, ), 
 this.bindings : this.bindings = new ArrayList(), 
 check : check = this.bindings.get(i, ), 
+@temp1 : @temp1 = i, 
+b : b = new Binding(id, value, ), 
+replaced : replaced = true, replaced = false, 
+i : i = i + 1, i = 0, 
 
 BLOCK: LoopL50
-@temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
-replaced : replaced = true, replaced = false, 
-b : b = new Binding(id, value, ), 
 this.bindings : this.bindings = new ArrayList(), 
 check : check = this.bindings.get(i, ), 
+@temp1 : @temp1 = i, 
+b : b = new Binding(id, value, ), 
+replaced : replaced = true, replaced = false, 
+i : i = i + 1, i = 0, 
 
 BLOCK: BasicL51
-@temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
-replaced : replaced = true, replaced = false, 
-b : b = new Binding(id, value, ), 
 this.bindings : this.bindings = new ArrayList(), 
 check : check = this.bindings.get(i, ), 
+@temp1 : @temp1 = i, 
+b : b = new Binding(id, value, ), 
+replaced : replaced = true, replaced = false, 
+i : i = i + 1, i = 0, 
 
 BLOCK: trueL52
-@temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
-replaced : replaced = true, 
-b : b = new Binding(id, value, ), 
 this.bindings : this.bindings = new ArrayList(), 
 check : check = this.bindings.get(i, ), 
+@temp1 : @temp1 = i, 
+b : b = new Binding(id, value, ), 
+replaced : replaced = true, 
+i : i = i + 1, i = 0, 
 
 BLOCK: joinL53
-@temp1 : @temp1 = i, 
-i : i = i + 1, 
-replaced : replaced = true, replaced = false, 
-b : b = new Binding(id, value, ), 
 this.bindings : this.bindings = new ArrayList(), 
 check : check = this.bindings.get(i, ), 
+@temp1 : @temp1 = i, 
+b : b = new Binding(id, value, ), 
+replaced : replaced = true, replaced = false, 
+i : i = i + 1, 
 
 BLOCK: trueL54
-@temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
-replaced : replaced = true, replaced = false, 
-b : b = new Binding(id, value, ), 
 this.bindings : this.bindings = new ArrayList(), 
 check : check = this.bindings.get(i, ), 
+@temp1 : @temp1 = i, 
+b : b = new Binding(id, value, ), 
+replaced : replaced = true, replaced = false, 
+i : i = i + 1, i = 0, 
 
 BLOCK: joinL55
-@temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
-replaced : replaced = true, replaced = false, 
-b : b = new Binding(id, value, ), 
 this.bindings : this.bindings = new ArrayList(), 
 check : check = this.bindings.get(i, ), 
+@temp1 : @temp1 = i, 
+b : b = new Binding(id, value, ), 
+replaced : replaced = true, replaced = false, 
+i : i = i + 1, i = 0, 
 
 BLOCK: StartlookupBindingL56
 this.bindings : this.bindings = new ArrayList(), 
@@ -225,34 +225,34 @@ i : i = 0,
 this.bindings : this.bindings = new ArrayList(), 
 
 BLOCK: ForCondL60
-i : i = i + 1, i = 0, 
-check : check = this.bindings.get(i, ), 
-this.bindings : this.bindings = new ArrayList(), 
 @temp2 : @temp2 = i, 
+check : check = this.bindings.get(i, ), 
+i : i = 0, i = i + 1, 
+this.bindings : this.bindings = new ArrayList(), 
 
 BLOCK: LoopL61
-i : i = i + 1, i = 0, 
 check : check = this.bindings.get(i, ), 
-this.bindings : this.bindings = new ArrayList(), 
 @temp2 : @temp2 = i, 
+i : i = 0, i = i + 1, 
+this.bindings : this.bindings = new ArrayList(), 
 
 BLOCK: BasicL62
-i : i = i + 1, i = 0, 
-check : check = this.bindings.get(i, ), 
-this.bindings : this.bindings = new ArrayList(), 
 @temp2 : @temp2 = i, 
+check : check = this.bindings.get(i, ), 
+i : i = 0, i = i + 1, 
+this.bindings : this.bindings = new ArrayList(), 
 
 BLOCK: trueL63
-i : i = i + 1, i = 0, 
 check : check = this.bindings.get(i, ), 
-this.bindings : this.bindings = new ArrayList(), 
 @temp2 : @temp2 = i, 
+i : i = 0, i = i + 1, 
+this.bindings : this.bindings = new ArrayList(), 
 
 BLOCK: joinL64
-i : i = i + 1, 
-check : check = this.bindings.get(i, ), 
-this.bindings : this.bindings = new ArrayList(), 
 @temp2 : @temp2 = i, 
+check : check = this.bindings.get(i, ), 
+i : i = i + 1, 
+this.bindings : this.bindings = new ArrayList(), 
 
 BLOCK: Startconstructor1L65
 this.right : this.right = null, 
@@ -263,20 +263,20 @@ this.right : this.right = rht,
 this.left : this.left = lft, 
 
 BLOCK: StartevaluateL68
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL69
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: StarttoStringL71
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL72
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: Startconstructor1L74
 this.id : this.id = null, 
@@ -321,12 +321,12 @@ this.right : this.right = null,
 this.left : this.left = null, 
 
 BLOCK: Startconstructor1L92
-this.id : this.id = null, 
 this.e : this.e = null, 
+this.id : this.id = null, 
 
 BLOCK: BasicL93
-this.id : this.id = id, 
 this.e : this.e = e, 
+this.id : this.id = id, 
 
 BLOCK: StartevaluateL95
 this.e : this.e = null, 
@@ -334,16 +334,16 @@ this.id : this.id = null,
 
 BLOCK: BasicL96
 this.e : this.e = null, 
-this.id : this.id = null, 
 val : val = this.e.evaluate(bindings, ), 
+this.id : this.id = null, 
 
 BLOCK: StarttoStringL98
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: BasicL99
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: Startconstructor1L101
 this.value : this.value = null, 
@@ -364,28 +364,28 @@ BLOCK: BasicL108
 this.value : this.value = null, 
 
 BLOCK: Startconstructor1L110
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: BasicL111
-this.id : this.id = id, 
 this.value : this.value = value, 
+this.id : this.id = id, 
 
 BLOCK: StartgetIdL113
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: BasicL114
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: StartgetValueL116
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: BasicL117
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: Startconstructor1L119
 this.value : this.value = 0.0, 
@@ -406,16 +406,16 @@ BLOCK: BasicL126
 this.value : this.value = 0.0, 
 
 BLOCK: Startconstructor1L0
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: Startconstructor1L0
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL1
-this.right : this.right = rht, 
 this.left : this.left = lft, 
+this.right : this.right = rht, 
 
 BLOCK: StartevaluateL3
 this.left : this.left = null, 
@@ -454,31 +454,31 @@ BLOCK: StartcheckAssignmentL12
 
 BLOCK: BasicL13
 e4 : e4 = new AddExpression(f, e, ), 
+d : d = new Assignment("a", e3, ), 
+f2 : f2 = new IdentifierExpression("b", ), 
+e2 : e2 = new DoubleConstantExpression(3, ), 
+e : e = new DoubleConstantExpression(2, ), 
+f3 : f3 = new IdentifierExpression("c", ), 
+c : c = new Assignment("c", e3, ), 
 b : b = new Assignment("b", e2, ), 
 e3 : e3 = new AddExpression(e, e2, ), 
 d2 : d2 = new Assignment("a", e4, ), 
-f : f = new IdentifierExpression("a", ), 
-c : c = new Assignment("c", e3, ), 
 a : a = new Assignment("a", e, ), 
-e2 : e2 = new DoubleConstantExpression(3, ), 
-d : d = new Assignment("a", e3, ), 
-f2 : f2 = new IdentifierExpression("b", ), 
-f3 : f3 = new IdentifierExpression("c", ), 
-e : e = new DoubleConstantExpression(2, ), 
+f : f = new IdentifierExpression("a", ), 
 
 BLOCK: StartcheckDivideL15
 
 BLOCK: StartcheckDivideL15
 
 BLOCK: BasicL16
-e2 : e2 = new DivideExpression(c, b, ), 
-e3 : e3 = new DivideExpression(d, a, ), 
-c : c = new DoubleConstantExpression(6, ), 
 d : d = new AddExpression(a, c, ), 
 b : b = new DoubleConstantExpression(3, ), 
-e : e = new DivideExpression(c, a, ), 
-f : f = new SubtractExpression(c, a, ), 
 a : a = new DoubleConstantExpression(2, ), 
+f : f = new SubtractExpression(c, a, ), 
+e3 : e3 = new DivideExpression(d, a, ), 
+e2 : e2 = new DivideExpression(c, b, ), 
+c : c = new DoubleConstantExpression(6, ), 
+e : e = new DivideExpression(c, a, ), 
 e4 : e4 = new DivideExpression(d, f, ), 
 
 BLOCK: StartcheckMultiplyL18
@@ -486,22 +486,22 @@ BLOCK: StartcheckMultiplyL18
 BLOCK: StartcheckMultiplyL18
 
 BLOCK: BasicL19
-e2 : e2 = new MultiplyExpression(a, c, ), 
-d : d = new AddExpression(a, b, ), 
-b : b = new DoubleConstantExpression(3, ), 
-c : c = new DoubleConstantExpression(5, ), 
 e3 : e3 = new MultiplyExpression(c, d, ), 
-e4 : e4 = new MultiplyExpression(d, c, ), 
+b : b = new DoubleConstantExpression(3, ), 
 e : e = new MultiplyExpression(a, b, ), 
+d : d = new AddExpression(a, b, ), 
 a : a = new DoubleConstantExpression(2, ), 
+e2 : e2 = new MultiplyExpression(a, c, ), 
+c : c = new DoubleConstantExpression(5, ), 
+e4 : e4 = new MultiplyExpression(d, c, ), 
 
 BLOCK: StartcheckSubtractL21
 
 BLOCK: StartcheckSubtractL21
 
 BLOCK: BasicL22
-e : e = new SubtractExpression(a, b, ), 
 a : a = new DoubleConstantExpression(2, ), 
+e : e = new SubtractExpression(a, b, ), 
 e2 : e2 = new SubtractExpression(b, a, ), 
 b : b = new DoubleConstantExpression(3, ), 
 
@@ -510,9 +510,9 @@ BLOCK: StartcheckAddL24
 BLOCK: StartcheckAddL24
 
 BLOCK: BasicL25
+a : a = new DoubleConstantExpression(2, ), 
 e : e = new AddExpression(a, b, ), 
 b : b = new DoubleConstantExpression(3, ), 
-a : a = new DoubleConstantExpression(2, ), 
 
 BLOCK: StartcheckNegationL27
 
@@ -554,16 +554,16 @@ this.left : this.left = null,
 this.right : this.right = null, 
 
 BLOCK: StarttoStringL39
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: StarttoStringL39
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: BasicL40
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: Startconstructor1L42
 this.bindings : this.bindings = new ArrayList(), 
@@ -581,71 +581,71 @@ BLOCK: StartaddBindingL45
 this.bindings : this.bindings = new ArrayList(), 
 
 BLOCK: BasicL46
-replaced : replaced = false, 
-b : b = new Binding(id, value, ), 
 this.bindings : this.bindings = new ArrayList(), 
+b : b = new Binding(id, value, ), 
+replaced : replaced = false, 
 
 BLOCK: ForInitL48
-i : i = 0, 
-replaced : replaced = false, 
-b : b = new Binding(id, value, ), 
 this.bindings : this.bindings = new ArrayList(), 
+b : b = new Binding(id, value, ), 
+replaced : replaced = false, 
+i : i = 0, 
 
 BLOCK: ForCondL49
-@temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
-replaced : replaced = true, replaced = false, 
-b : b = new Binding(id, value, ), 
 this.bindings : this.bindings = new ArrayList(), 
 check : check = this.bindings.get(i, ), 
+@temp1 : @temp1 = i, 
+b : b = new Binding(id, value, ), 
+replaced : replaced = true, replaced = false, 
+i : i = i + 1, i = 0, 
 
 BLOCK: LoopL50
-@temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
-replaced : replaced = true, replaced = false, 
-b : b = new Binding(id, value, ), 
 this.bindings : this.bindings = new ArrayList(), 
 check : check = this.bindings.get(i, ), 
+@temp1 : @temp1 = i, 
+b : b = new Binding(id, value, ), 
+replaced : replaced = true, replaced = false, 
+i : i = i + 1, i = 0, 
 
 BLOCK: BasicL51
-@temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
-replaced : replaced = true, replaced = false, 
-b : b = new Binding(id, value, ), 
 this.bindings : this.bindings = new ArrayList(), 
 check : check = this.bindings.get(i, ), 
+@temp1 : @temp1 = i, 
+b : b = new Binding(id, value, ), 
+replaced : replaced = true, replaced = false, 
+i : i = i + 1, i = 0, 
 
 BLOCK: trueL52
-@temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
-replaced : replaced = true, 
-b : b = new Binding(id, value, ), 
 this.bindings : this.bindings = new ArrayList(), 
 check : check = this.bindings.get(i, ), 
+@temp1 : @temp1 = i, 
+b : b = new Binding(id, value, ), 
+replaced : replaced = true, 
+i : i = i + 1, i = 0, 
 
 BLOCK: joinL53
-@temp1 : @temp1 = i, 
-i : i = i + 1, 
-replaced : replaced = true, replaced = false, 
-b : b = new Binding(id, value, ), 
 this.bindings : this.bindings = new ArrayList(), 
 check : check = this.bindings.get(i, ), 
+@temp1 : @temp1 = i, 
+b : b = new Binding(id, value, ), 
+replaced : replaced = true, replaced = false, 
+i : i = i + 1, 
 
 BLOCK: trueL54
-@temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
-replaced : replaced = true, replaced = false, 
-b : b = new Binding(id, value, ), 
 this.bindings : this.bindings = new ArrayList(), 
 check : check = this.bindings.get(i, ), 
+@temp1 : @temp1 = i, 
+b : b = new Binding(id, value, ), 
+replaced : replaced = true, replaced = false, 
+i : i = i + 1, i = 0, 
 
 BLOCK: joinL55
-@temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
-replaced : replaced = true, replaced = false, 
-b : b = new Binding(id, value, ), 
 this.bindings : this.bindings = new ArrayList(), 
 check : check = this.bindings.get(i, ), 
+@temp1 : @temp1 = i, 
+b : b = new Binding(id, value, ), 
+replaced : replaced = true, replaced = false, 
+i : i = i + 1, i = 0, 
 
 BLOCK: StartlookupBindingL56
 this.bindings : this.bindings = new ArrayList(), 
@@ -661,34 +661,34 @@ i : i = 0,
 this.bindings : this.bindings = new ArrayList(), 
 
 BLOCK: ForCondL60
-i : i = i + 1, i = 0, 
-check : check = this.bindings.get(i, ), 
-this.bindings : this.bindings = new ArrayList(), 
 @temp2 : @temp2 = i, 
+check : check = this.bindings.get(i, ), 
+i : i = 0, i = i + 1, 
+this.bindings : this.bindings = new ArrayList(), 
 
 BLOCK: LoopL61
-i : i = i + 1, i = 0, 
 check : check = this.bindings.get(i, ), 
-this.bindings : this.bindings = new ArrayList(), 
 @temp2 : @temp2 = i, 
+i : i = 0, i = i + 1, 
+this.bindings : this.bindings = new ArrayList(), 
 
 BLOCK: BasicL62
-i : i = i + 1, i = 0, 
-check : check = this.bindings.get(i, ), 
-this.bindings : this.bindings = new ArrayList(), 
 @temp2 : @temp2 = i, 
+check : check = this.bindings.get(i, ), 
+i : i = 0, i = i + 1, 
+this.bindings : this.bindings = new ArrayList(), 
 
 BLOCK: trueL63
-i : i = i + 1, i = 0, 
 check : check = this.bindings.get(i, ), 
-this.bindings : this.bindings = new ArrayList(), 
 @temp2 : @temp2 = i, 
+i : i = 0, i = i + 1, 
+this.bindings : this.bindings = new ArrayList(), 
 
 BLOCK: joinL64
-i : i = i + 1, 
-check : check = this.bindings.get(i, ), 
-this.bindings : this.bindings = new ArrayList(), 
 @temp2 : @temp2 = i, 
+check : check = this.bindings.get(i, ), 
+i : i = i + 1, 
+this.bindings : this.bindings = new ArrayList(), 
 
 BLOCK: Startconstructor1L65
 this.right : this.right = null, 
@@ -703,28 +703,28 @@ this.right : this.right = rht,
 this.left : this.left = lft, 
 
 BLOCK: StartevaluateL68
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: StartevaluateL68
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL69
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: StarttoStringL71
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: StarttoStringL71
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL72
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: Startconstructor1L74
 this.id : this.id = null, 
@@ -790,16 +790,16 @@ this.right : this.right = null,
 this.left : this.left = null, 
 
 BLOCK: Startconstructor1L92
-this.id : this.id = null, 
 this.e : this.e = null, 
+this.id : this.id = null, 
 
 BLOCK: Startconstructor1L92
-this.id : this.id = null, 
 this.e : this.e = null, 
+this.id : this.id = null, 
 
 BLOCK: BasicL93
-this.id : this.id = id, 
 this.e : this.e = e, 
+this.id : this.id = id, 
 
 BLOCK: StartevaluateL95
 this.e : this.e = null, 
@@ -811,20 +811,20 @@ this.id : this.id = null,
 
 BLOCK: BasicL96
 this.e : this.e = null, 
-this.id : this.id = null, 
 val : val = this.e.evaluate(bindings, ), 
-
-BLOCK: StarttoStringL98
-this.e : this.e = null, 
 this.id : this.id = null, 
 
 BLOCK: StarttoStringL98
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
+
+BLOCK: StarttoStringL98
+this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: BasicL99
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: Startconstructor1L101
 this.value : this.value = null, 
@@ -854,40 +854,40 @@ BLOCK: BasicL108
 this.value : this.value = null, 
 
 BLOCK: Startconstructor1L110
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: Startconstructor1L110
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: BasicL111
-this.id : this.id = id, 
 this.value : this.value = value, 
+this.id : this.id = id, 
 
 BLOCK: StartgetIdL113
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: StartgetIdL113
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: BasicL114
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: StartgetValueL116
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: StartgetValueL116
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: BasicL117
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: Startconstructor1L119
 this.value : this.value = 0.0, 
@@ -916,30 +916,18 @@ this.value : this.value = 0.0,
 BLOCK: BasicL126
 this.value : this.value = 0.0, 
 
-Unfiltered: 85
-Filtered: 2
+Unfiltered: 45
+Filtered: 1
 
 
-Duplicate found: 102_Code/102_hw2/dir31/TestCases.java lines [50, 57] and 102_Code/102_hw2/dir31/TestCases.java lines [70, 77]
+Duplicate found: 102_Code/102_hw2/dir31/TestCases.java lines [50, 59] and 102_Code/102_hw2/dir31/TestCases.java lines [69, 77]
 102_Code/102_hw2/dir31/TestCases.java ----------
 50 :	a = new DoubleConstantExpression(2, )
-51 :	b = new DoubleConstantExpression(3, )
-53 :	d = new AddExpression(a, c, )
+52 :	c = new DoubleConstantExpression(6, )
 54 :	f = new SubtractExpression(c, a, )
 56 :	e = new DivideExpression(c, a, )
-57 :	e2 = new DivideExpression(c, b, )
-102_Code/102_hw2/dir31/TestCases.java ----------
-71 :	c = new DoubleConstantExpression(5, )
-70 :	b = new DoubleConstantExpression(3, )
-75 :	e2 = new MultiplyExpression(a, c, )
-76 :	e3 = new MultiplyExpression(c, d, )
-77 :	e4 = new MultiplyExpression(d, c, )
-74 :	e = new MultiplyExpression(a, b, )
-===========================
-
-
-
-Duplicate found: 102_Code/102_hw2/dir31/TestCases.java lines [69, 77] and 102_Code/102_hw2/dir31/TestCases.java lines [50, 59]
+58 :	e3 = new DivideExpression(d, a, )
+59 :	e4 = new DivideExpression(d, f, )
 102_Code/102_hw2/dir31/TestCases.java ----------
 69 :	a = new DoubleConstantExpression(2, )
 70 :	b = new DoubleConstantExpression(3, )
@@ -947,13 +935,6 @@ Duplicate found: 102_Code/102_hw2/dir31/TestCases.java lines [69, 77] and 102_Co
 74 :	e = new MultiplyExpression(a, b, )
 75 :	e2 = new MultiplyExpression(a, c, )
 77 :	e4 = new MultiplyExpression(d, c, )
-102_Code/102_hw2/dir31/TestCases.java ----------
-52 :	c = new DoubleConstantExpression(6, )
-50 :	a = new DoubleConstantExpression(2, )
-53 :	d = new AddExpression(a, c, )
-56 :	e = new DivideExpression(c, a, )
-57 :	e2 = new DivideExpression(c, b, )
-59 :	e4 = new DivideExpression(d, f, )
 ===========================
 
 
@@ -961,7 +942,7 @@ Duplicate found: 102_Code/102_hw2/dir31/TestCases.java lines [69, 77] and 102_Co
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 3.477 s
-[INFO] Finished at: 2019-05-01T17:15:54-07:00
-[INFO] Final Memory: 27M/1217M
+[INFO] Total time: 2.998 s
+[INFO] Finished at: 2019-05-06T19:56:51-07:00
+[INFO] Final Memory: 27M/1219M
 [INFO] ------------------------------------------------------------------------

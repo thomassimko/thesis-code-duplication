@@ -1,0 +1,17 @@
+digraph G {
+"3 : this.x = 0.0"
+"3 : this.x = 0.0" -> "41 : this.y2 = this.x"
+"4 : this.x2 = 0.0"
+"4 : this.x2 = 0.0" -> "40 : this.x2 = 1 * this.y" [style=dashed]
+"5 : this.y = 0.0"
+"5 : this.y = 0.0" -> "40 : this.x2 = 1 * this.y"
+"6 : this.y2 = 0.0"
+"6 : this.y2 = 0.0" -> "41 : this.y2 = this.x" [style=dashed]
+"7 : this.radius = 0.0"
+"8 : this.angle = 0.0"
+"40 : this.x2 = 1 * this.y"
+"40 : this.x2 = 1 * this.y" -> "42 : new CartesianPoint(this.x2, this.y2, )"
+"41 : this.y2 = this.x"
+"41 : this.y2 = this.x" -> "42 : new CartesianPoint(this.x2, this.y2, )"
+"42 : new CartesianPoint(this.x2, this.y2, )"
+}

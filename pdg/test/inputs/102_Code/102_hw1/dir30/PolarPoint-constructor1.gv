@@ -1,0 +1,21 @@
+digraph G {
+"4 : this.radius = 0.0"
+"4 : this.radius = 0.0" -> "15 : this.radius = Math.abs(radius, )" [style=dashed]
+"5 : this.angle = 0.0"
+"5 : this.angle = 0.0" -> "16 : this.angle = angle" [style=dashed]
+"8 : radius < 0"
+"9 : angle = angle - Math.PI"
+"9 : angle = angle - Math.PI" -> "13 : angle = angle + 2 * Math.PI"
+"9 : angle = angle - Math.PI" -> "16 : this.angle = angle"
+"9 : angle = angle - Math.PI" -> "11 : angle < 0"
+"9 : angle = angle - Math.PI" -> "13 : angle = angle + 2 * Math.PI" [style=dashed]
+"11 : angle < 0"
+"13 : angle = angle + 2 * Math.PI"
+"13 : angle = angle + 2 * Math.PI" -> "13 : angle = angle + 2 * Math.PI"
+"13 : angle = angle + 2 * Math.PI" -> "16 : this.angle = angle"
+"13 : angle = angle + 2 * Math.PI" -> "11 : angle < 0"
+"13 : angle = angle + 2 * Math.PI" -> "13 : angle = angle + 2 * Math.PI" [style=dashed]
+"11 : angle < 0"
+"15 : this.radius = Math.abs(radius, )"
+"16 : this.angle = angle"
+}

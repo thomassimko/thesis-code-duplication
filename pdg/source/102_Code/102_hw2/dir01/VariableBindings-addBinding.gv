@@ -1,8 +1,8 @@
 digraph G {
 "8 : this.binds = new ArrayList()"
 "12 : i = 0"
-"12 : i = 0" -> "12 : @temp1 = i"
 "12 : i = 0" -> "12 : i < this.binds.size()"
+"12 : i = 0" -> "12 : @temp1 = i"
 "12 : i = 0" -> "12 : i = i + 1"
 "12 : i = 0" -> "12 : i = i + 1" [style=dashed]
 "12 : i < this.binds.size()"
@@ -12,8 +12,8 @@ digraph G {
 "12 : @temp1 = i"
 "12 : @temp1 = i" -> "12 : @temp1 = i" [style=dashed]
 "12 : i = i + 1"
-"12 : i = i + 1" -> "12 : @temp1 = i"
 "12 : i = i + 1" -> "12 : i < this.binds.size()"
+"12 : i = i + 1" -> "12 : @temp1 = i"
 "12 : i = i + 1" -> "12 : i = i + 1"
 "12 : i = i + 1" -> "12 : i = i + 1" [style=dashed]
 }

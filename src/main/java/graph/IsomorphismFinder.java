@@ -1,11 +1,12 @@
 package graph;
 
 import ast.expressions.Expression;
+import graph.edge.LooseEdgeComparator;
+import graph.edge.StrictEdgeComparator;
 import main.ArgumentHandler;
 import org.jgrapht.Graph;
 import org.jgrapht.GraphMapping;
 import org.jgrapht.alg.isomorphism.VF2AbstractIsomorphismInspector;
-import org.jgrapht.alg.isomorphism.VF2GraphIsomorphismInspector;
 import org.jgrapht.alg.isomorphism.VF2SubgraphIsomorphismInspector;
 import org.jgrapht.graph.DefaultEdge;
 
@@ -14,6 +15,13 @@ import java.util.*;
 public class IsomorphismFinder {
 
     public static void findSubgraphs(Graph<Expression, DefaultEdge> subgraph, Graph<Expression, DefaultEdge> largeGraph, List<Expression> added, Set<Set<Expression>> seenGraphs, PriorityQueue<Mapping> mappings) {
+
+        Comparator<DefaultEdge> edgeComparator = new LooseEdgeComparator();
+
+        if(ArgumentHandler.strictEdges) {
+            edgeComparator = new StrictEdgeComparator();
+        }
+
 
         //get all of the outgoing/incoming vertices minus the ones already in the graph
         Set<Expression> possibleNext = new HashSet<>();
@@ -37,19 +45,18 @@ public class IsomorphismFinder {
             if(subgraph.vertexSet().size() <= largeGraph.vertexSet().size()) {
 
                 if (subgraph.vertexSet().size() >= ArgumentHandler.minGraphSize) {
+
                     if (haveSeenGraph(subgraph, seenGraphs)) {
                         continue;
                     }
 
                     //check if exp is isomorphism
-                    VF2AbstractIsomorphismInspector iso = new VF2SubgraphIsomorphismInspector(largeGraph, subgraph, new ExpressionComparator(), null, true);
+                    VF2AbstractIsomorphismInspector iso = new VF2SubgraphIsomorphismInspector(largeGraph, subgraph, new ExpressionComparator(), edgeComparator, true);
 
                     if (iso.isomorphismExists()) {
 
                         Iterator<GraphMapping<Expression, DefaultEdge>> mappingIter = iso.getMappings();
 
-
-                        //DO I ONLY CARE ABOUT 1 MAPPING?
                         while (mappingIter.hasNext()) {
 
                             Map<Expression, Expression> newMapping = new HashMap<>();

@@ -27,22 +27,22 @@ this.radius : this.radius = r,
 this.angle : this.angle = a * Math.PI / 180, 
 
 BLOCK: StartxCoordL3
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: BasicL4
-this.radius : this.radius = 0.0, 
-x : x = this.radius * Math.cos(this.angle, ), 
 this.angle : this.angle = 0.0, 
+x : x = this.radius * Math.cos(this.angle, ), 
+this.radius : this.radius = 0.0, 
 
 BLOCK: StartyCoordL6
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: BasicL7
-this.radius : this.radius = 0.0, 
 y : y = this.radius * Math.sin(this.angle, ), 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: StartradiusL9
 this.radius : this.radius = 0.0, 
@@ -66,24 +66,24 @@ this.radius : this.radius = 0.0,
 
 BLOCK: BasicL16
 this.angle : this.angle = 0.0, 
-ang : ang = this.angle + Math.PI / 2, 
 this.radius : this.radius = 0.0, 
+ang : ang = this.angle + Math.PI / 2, 
 
 BLOCK: trueL18
 this.angle : this.angle = 0.0, 
-ang : ang = ang - 2 * Math.PI, 
 this.radius : this.radius = 0.0, 
+ang : ang = ang - 2 * Math.PI, 
 
 BLOCK: joinL19
 this.angle : this.angle = 0.0, 
-ang : ang = ang - 2 * Math.PI, ang = this.angle + Math.PI / 2, 
 this.radius : this.radius = 0.0, 
+ang : ang = ang - 2 * Math.PI, ang = this.angle + Math.PI / 2, 
 
 BLOCK: StartmainL20
 
 BLOCK: BasicL21
-tp : tp = new PolarPoint(1, Math.PI / 6, ), 
 rp : rp = new PolarPoint(2, Math.PI / 4, ), 
+tp : tp = new PolarPoint(1, Math.PI / 6, ), 
 
 BLOCK: StartmainL23
 
@@ -134,28 +134,28 @@ BLOCK: joinL48
 BLOCK: StartcallPointL49
 
 BLOCK: BasicL50
-scan : scan = new Scanner(System.in, ), 
 y : y = 0.0, 
-ans : ans = scan.nextInt(), 
 x : x = 0.0, 
+ans : ans = scan.nextInt(), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: trueL52
-scan : scan = new Scanner(System.in, ), 
 y : y = scan.nextDouble(), 
-ans : ans = scan.nextInt(), 
 x : x = scan.nextDouble(), 
+ans : ans = scan.nextInt(), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: falseL54
-scan : scan = new Scanner(System.in, ), 
 y : y = scan.nextDouble(), 
-ans : ans = scan.nextInt(), 
 x : x = scan.nextDouble(), 
+ans : ans = scan.nextInt(), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: joinL53
-scan : scan = new Scanner(System.in, ), scan = new Scanner(System.in, ), 
 y : y = scan.nextDouble(), y = scan.nextDouble(), 
-ans : ans = scan.nextInt(), 
 x : x = scan.nextDouble(), x = scan.nextDouble(), 
+ans : ans = scan.nextInt(), 
+scan : scan = new Scanner(System.in, ), scan = new Scanner(System.in, ), 
 
 BLOCK: StartmainL55
 
@@ -209,37 +209,37 @@ this.y : this.y = 0.0,
 
 BLOCK: BasicL71
 this.x : this.x = 0.0, 
-this.y : this.y = 0.0, 
 hyp : hyp = Math.sqrt(this.x * this.x + this.y * this.y, ), 
+this.y : this.y = 0.0, 
 
 BLOCK: StartangleL73
-this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
 
 BLOCK: BasicL74
+this.y : this.y = 0.0, 
 ang : ang = Math.atan2(this.y, this.x, ), 
 this.x : this.x = 0.0, 
-this.y : this.y = 0.0, 
 
 BLOCK: trueL76
+this.y : this.y = 0.0, 
 ang : ang = ang - 2 * Math.PI, 
 this.x : this.x = 0.0, 
-this.y : this.y = 0.0, 
 
 BLOCK: joinL77
-ang : ang = ang - 2 * Math.PI, ang = Math.atan2(this.y, this.x, ), 
-this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
+ang : ang = Math.atan2(this.y, this.x, ), ang = ang - 2 * Math.PI, 
+this.x : this.x = 0.0, 
 
 BLOCK: Startrot90L78
 this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
 
 BLOCK: BasicL79
-this.y : this.y = 0.0, 
-this.x : this.x = 0.0, 
-x2 : x2 = this.x * Math.cos(angle(), ) + this.y * Math.sin(angle(), ), 
 y2 : y2 = this.y * Math.cos(angle(), ) - this.x * Math.sin(angle(), ), 
+this.y : this.y = 0.0, 
+x2 : x2 = this.x * Math.cos(angle(), ) + this.y * Math.sin(angle(), ), 
+this.x : this.x = 0.0, 
 
 BLOCK: Startconstructor1L0
 this.radius : this.radius = 0.0, 
@@ -254,30 +254,30 @@ this.radius : this.radius = r,
 this.angle : this.angle = a * Math.PI / 180, 
 
 BLOCK: StartxCoordL3
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: StartxCoordL3
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: BasicL4
-this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
 x : x = this.radius * Math.cos(this.angle, ), 
-this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: StartyCoordL6
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: StartyCoordL6
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: BasicL7
-this.radius : this.radius = 0.0, 
 y : y = this.radius * Math.sin(this.angle, ), 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: StartradiusL9
 this.radius : this.radius = 0.0, 
@@ -313,26 +313,26 @@ this.radius : this.radius = 0.0,
 
 BLOCK: BasicL16
 this.angle : this.angle = 0.0, 
-ang : ang = this.angle + Math.PI / 2, 
 this.radius : this.radius = 0.0, 
+ang : ang = this.angle + Math.PI / 2, 
 
 BLOCK: trueL18
 this.angle : this.angle = 0.0, 
-ang : ang = ang - 2 * Math.PI, 
 this.radius : this.radius = 0.0, 
+ang : ang = ang - 2 * Math.PI, 
 
 BLOCK: joinL19
 this.angle : this.angle = 0.0, 
-ang : ang = ang - 2 * Math.PI, ang = this.angle + Math.PI / 2, 
 this.radius : this.radius = 0.0, 
+ang : ang = ang - 2 * Math.PI, ang = this.angle + Math.PI / 2, 
 
 BLOCK: StartmainL20
 
 BLOCK: StartmainL20
 
 BLOCK: BasicL21
-tp : tp = new PolarPoint(1, Math.PI / 6, ), 
 rp : rp = new PolarPoint(2, Math.PI / 4, ), 
+tp : tp = new PolarPoint(1, Math.PI / 6, ), 
 
 BLOCK: StartmainL23
 
@@ -393,28 +393,28 @@ BLOCK: StartcallPointL49
 BLOCK: StartcallPointL49
 
 BLOCK: BasicL50
-scan : scan = new Scanner(System.in, ), 
 y : y = 0.0, 
-ans : ans = scan.nextInt(), 
 x : x = 0.0, 
+ans : ans = scan.nextInt(), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: trueL52
-scan : scan = new Scanner(System.in, ), 
 y : y = scan.nextDouble(), 
-ans : ans = scan.nextInt(), 
 x : x = scan.nextDouble(), 
+ans : ans = scan.nextInt(), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: falseL54
-scan : scan = new Scanner(System.in, ), 
 y : y = scan.nextDouble(), 
-ans : ans = scan.nextInt(), 
 x : x = scan.nextDouble(), 
+ans : ans = scan.nextInt(), 
+scan : scan = new Scanner(System.in, ), 
 
 BLOCK: joinL53
-scan : scan = new Scanner(System.in, ), scan = new Scanner(System.in, ), 
 y : y = scan.nextDouble(), y = scan.nextDouble(), 
-ans : ans = scan.nextInt(), 
 x : x = scan.nextDouble(), x = scan.nextDouble(), 
+ans : ans = scan.nextInt(), 
+scan : scan = new Scanner(System.in, ), scan = new Scanner(System.in, ), 
 
 BLOCK: StartmainL55
 
@@ -486,31 +486,31 @@ this.y : this.y = 0.0,
 
 BLOCK: BasicL71
 this.x : this.x = 0.0, 
-this.y : this.y = 0.0, 
 hyp : hyp = Math.sqrt(this.x * this.x + this.y * this.y, ), 
-
-BLOCK: StartangleL73
-this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
 
 BLOCK: StartangleL73
-this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: StartangleL73
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
 
 BLOCK: BasicL74
+this.y : this.y = 0.0, 
 ang : ang = Math.atan2(this.y, this.x, ), 
 this.x : this.x = 0.0, 
-this.y : this.y = 0.0, 
 
 BLOCK: trueL76
+this.y : this.y = 0.0, 
 ang : ang = ang - 2 * Math.PI, 
 this.x : this.x = 0.0, 
-this.y : this.y = 0.0, 
 
 BLOCK: joinL77
-ang : ang = ang - 2 * Math.PI, ang = Math.atan2(this.y, this.x, ), 
-this.x : this.x = 0.0, 
 this.y : this.y = 0.0, 
+ang : ang = Math.atan2(this.y, this.x, ), ang = ang - 2 * Math.PI, 
+this.x : this.x = 0.0, 
 
 BLOCK: Startrot90L78
 this.y : this.y = 0.0, 
@@ -521,12 +521,12 @@ this.y : this.y = 0.0,
 this.x : this.x = 0.0, 
 
 BLOCK: BasicL79
-this.y : this.y = 0.0, 
-this.x : this.x = 0.0, 
-x2 : x2 = this.x * Math.cos(angle(), ) + this.y * Math.sin(angle(), ), 
 y2 : y2 = this.y * Math.cos(angle(), ) - this.x * Math.sin(angle(), ), 
+this.y : this.y = 0.0, 
+x2 : x2 = this.x * Math.cos(angle(), ) + this.y * Math.sin(angle(), ), 
+this.x : this.x = 0.0, 
 
-Unfiltered: 8
+Unfiltered: 25
 Filtered: 1
 
 
@@ -554,7 +554,7 @@ Duplicate found: 102_Code/102_hw1/dir31/PointRelation.java lines [30, 52] and 10
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 4.014 s
-[INFO] Finished at: 2019-05-01T17:11:42-07:00
-[INFO] Final Memory: 28M/1004M
+[INFO] Total time: 3.833 s
+[INFO] Finished at: 2019-05-06T19:52:15-07:00
+[INFO] Final Memory: 28M/1007M
 [INFO] ------------------------------------------------------------------------

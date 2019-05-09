@@ -19,54 +19,54 @@
 [INFO] 
 [INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ thesis ---
 BLOCK: Startconstructor1L0
-this.theta : this.theta = 0.0, 
 this.p : this.p = null, 
 this.r : this.r = 0.0, 
+this.theta : this.theta = 0.0, 
 
 BLOCK: BasicL1
-this.theta : this.theta = angle, 
 this.p : this.p = null, 
 this.r : this.r = radius, 
+this.theta : this.theta = angle, 
 
 BLOCK: StartxCoordinateL3
+this.p : this.p = null, 
 this.r : this.r = 0.0, 
 this.theta : this.theta = 0.0, 
-this.p : this.p = null, 
 
 BLOCK: BasicL4
+this.p : this.p = null, 
 this.r : this.r = 0.0, 
 this.theta : this.theta = 0.0, 
-this.p : this.p = null, 
 
 BLOCK: StartyCoordinateL6
-this.theta : this.theta = 0.0, 
 this.r : this.r = 0.0, 
 this.p : this.p = null, 
+this.theta : this.theta = 0.0, 
 
 BLOCK: BasicL7
-this.theta : this.theta = 0.0, 
 this.r : this.r = 0.0, 
 this.p : this.p = null, 
+this.theta : this.theta = 0.0, 
 
 BLOCK: StartradiusL9
-this.theta : this.theta = 0.0, 
-this.p : this.p = null, 
 this.r : this.r = 0.0, 
+this.p : this.p = null, 
+this.theta : this.theta = 0.0, 
 
 BLOCK: BasicL10
-this.theta : this.theta = 0.0, 
-this.p : this.p = null, 
 this.r : this.r = 0.0, 
+this.p : this.p = null, 
+this.theta : this.theta = 0.0, 
 
 BLOCK: StartangleL12
-this.r : this.r = 0.0, 
 this.theta : this.theta = 0.0, 
 this.p : this.p = null, 
+this.r : this.r = 0.0, 
 
 BLOCK: BasicL13
-this.r : this.r = 0.0, 
 this.theta : this.theta = 0.0, 
 this.p : this.p = null, 
+this.r : this.r = 0.0, 
 
 BLOCK: Startrotate90L15
 this.r : this.r = 0.0, 
@@ -81,189 +81,189 @@ this.theta : this.theta = 0.0,
 BLOCK: Startinput_outputL18
 
 BLOCK: BasicL19
-choice_1 : choice_1 = input.nextInt(), 
+input : input = new Scanner(System.in, ), 
 p1 : p1 = new CartesianPoint(0, 0, ), 
 p2 : p2 = new CartesianPoint(0, 0, ), 
-input : input = new Scanner(System.in, ), 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: trueL21
-choice_1 : choice_1 = input.nextInt(), 
+x1 : x1 = input.nextDouble(), 
+input : input = new Scanner(System.in, ), 
 y1 : y1 = input.nextDouble(), 
 p1 : p1 = new CartesianPoint(x1, y1, ), 
-x1 : x1 = input.nextDouble(), 
 p2 : p2 = new CartesianPoint(0, 0, ), 
-input : input = new Scanner(System.in, ), 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: falseL23
-choice_1 : choice_1 = input.nextInt(), 
+input : input = new Scanner(System.in, ), 
 p1 : p1 = new CartesianPoint(0, 0, ), 
 p2 : p2 = new CartesianPoint(0, 0, ), 
-input : input = new Scanner(System.in, ), 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: trueL24
-angle_1 : angle_1 = input.nextDouble(), 
 radius_1 : radius_1 = input.nextDouble(), 
-choice_1 : choice_1 = input.nextInt(), 
+input : input = new Scanner(System.in, ), 
+angle_1 : angle_1 = input.nextDouble(), 
 p1 : p1 = new CartesianPoint(0, 0, ), 
 p2 : p2 = new CartesianPoint(0, 0, ), 
-input : input = new Scanner(System.in, ), 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: trueL26
-angle_1 : angle_1 = angle_1 + 360, 
 radius_1 : radius_1 = input.nextDouble(), 
-choice_1 : choice_1 = input.nextInt(), 
+input : input = new Scanner(System.in, ), 
+angle_1 : angle_1 = angle_1 + 360, 
 p1 : p1 = new CartesianPoint(0, 0, ), 
 p2 : p2 = new CartesianPoint(0, 0, ), 
-input : input = new Scanner(System.in, ), 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: joinL27
-theta_1 : theta_1 = Math.toRadians(angle_1, ), 
-angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
 radius_1 : radius_1 = input.nextDouble(), 
-choice_1 : choice_1 = input.nextInt(), 
+input : input = new Scanner(System.in, ), 
+angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
+theta_1 : theta_1 = Math.toRadians(angle_1, ), 
 p1 : p1 = new PolarPoint(radius_1, theta_1, ), 
 p2 : p2 = new CartesianPoint(0, 0, ), 
-input : input = new Scanner(System.in, ), 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: falseL28
-choice_1 : choice_1 = input.nextInt(), 
+input : input = new Scanner(System.in, ), 
 p1 : p1 = new CartesianPoint(0, 0, ), 
 p2 : p2 = new CartesianPoint(0, 0, ), 
-input : input = new Scanner(System.in, ), 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: joinL25
-theta_1 : theta_1 = Math.toRadians(angle_1, ), 
-angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
 radius_1 : radius_1 = input.nextDouble(), 
-choice_1 : choice_1 = input.nextInt(), 
-p1 : p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(radius_1, theta_1, ), 
-p2 : p2 = new CartesianPoint(0, 0, ), 
 input : input = new Scanner(System.in, ), 
+angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
+theta_1 : theta_1 = Math.toRadians(angle_1, ), 
+p1 : p1 = new PolarPoint(radius_1, theta_1, ), p1 = new CartesianPoint(0, 0, ), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: joinL22
-theta_1 : theta_1 = Math.toRadians(angle_1, ), 
-angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
-radius_1 : radius_1 = input.nextDouble(), 
 choice_2 : choice_2 = input.nextInt(), 
-choice_1 : choice_1 = input.nextInt(), 
-y1 : y1 = input.nextDouble(), 
-p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(radius_1, theta_1, ), 
 x1 : x1 = input.nextDouble(), 
-p2 : p2 = new CartesianPoint(0, 0, ), 
 input : input = new Scanner(System.in, ), 
+radius_1 : radius_1 = input.nextDouble(), 
+y1 : y1 = input.nextDouble(), 
+angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
+theta_1 : theta_1 = Math.toRadians(angle_1, ), 
+p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new PolarPoint(radius_1, theta_1, ), p1 = new CartesianPoint(0, 0, ), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: trueL29
-theta_1 : theta_1 = Math.toRadians(angle_1, ), 
-angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
-radius_1 : radius_1 = input.nextDouble(), 
 choice_2 : choice_2 = input.nextInt(), 
-x2 : x2 = input.nextDouble(), 
-choice_1 : choice_1 = input.nextInt(), 
-y1 : y1 = input.nextDouble(), 
-p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(radius_1, theta_1, ), 
 x1 : x1 = input.nextDouble(), 
-y2 : y2 = input.nextDouble(), 
-p2 : p2 = new CartesianPoint(x2, y2, ), 
 input : input = new Scanner(System.in, ), 
+radius_1 : radius_1 = input.nextDouble(), 
+y1 : y1 = input.nextDouble(), 
+angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
+theta_1 : theta_1 = Math.toRadians(angle_1, ), 
+p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new PolarPoint(radius_1, theta_1, ), p1 = new CartesianPoint(0, 0, ), 
+x2 : x2 = input.nextDouble(), 
+p2 : p2 = new CartesianPoint(x2, y2, ), 
+y2 : y2 = input.nextDouble(), 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: falseL31
-theta_1 : theta_1 = Math.toRadians(angle_1, ), 
-angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
-radius_1 : radius_1 = input.nextDouble(), 
 choice_2 : choice_2 = input.nextInt(), 
-choice_1 : choice_1 = input.nextInt(), 
-y1 : y1 = input.nextDouble(), 
-p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(radius_1, theta_1, ), 
 x1 : x1 = input.nextDouble(), 
-p2 : p2 = new CartesianPoint(0, 0, ), 
 input : input = new Scanner(System.in, ), 
+radius_1 : radius_1 = input.nextDouble(), 
+y1 : y1 = input.nextDouble(), 
+angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
+theta_1 : theta_1 = Math.toRadians(angle_1, ), 
+p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new PolarPoint(radius_1, theta_1, ), p1 = new CartesianPoint(0, 0, ), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: trueL32
-theta_1 : theta_1 = Math.toRadians(angle_1, ), 
-angle_2 : angle_2 = input.nextDouble(), 
-angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
-radius_1 : radius_1 = input.nextDouble(), 
 choice_2 : choice_2 = input.nextInt(), 
-choice_1 : choice_1 = input.nextInt(), 
-y1 : y1 = input.nextDouble(), 
-p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(radius_1, theta_1, ), 
 x1 : x1 = input.nextDouble(), 
-p2 : p2 = new CartesianPoint(0, 0, ), 
-radius_2 : radius_2 = input.nextDouble(), 
 input : input = new Scanner(System.in, ), 
+radius_1 : radius_1 = input.nextDouble(), 
+y1 : y1 = input.nextDouble(), 
+angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
+theta_1 : theta_1 = Math.toRadians(angle_1, ), 
+radius_2 : radius_2 = input.nextDouble(), 
+p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new PolarPoint(radius_1, theta_1, ), p1 = new CartesianPoint(0, 0, ), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+angle_2 : angle_2 = input.nextDouble(), 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: trueL34
-theta_1 : theta_1 = Math.toRadians(angle_1, ), 
-angle_2 : angle_2 = angle_2 + 360, 
-angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
-radius_1 : radius_1 = input.nextDouble(), 
 choice_2 : choice_2 = input.nextInt(), 
-choice_1 : choice_1 = input.nextInt(), 
-y1 : y1 = input.nextDouble(), 
-p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(radius_1, theta_1, ), 
 x1 : x1 = input.nextDouble(), 
-p2 : p2 = new CartesianPoint(0, 0, ), 
-radius_2 : radius_2 = input.nextDouble(), 
 input : input = new Scanner(System.in, ), 
+radius_1 : radius_1 = input.nextDouble(), 
+y1 : y1 = input.nextDouble(), 
+angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
+theta_1 : theta_1 = Math.toRadians(angle_1, ), 
+radius_2 : radius_2 = input.nextDouble(), 
+p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new PolarPoint(radius_1, theta_1, ), p1 = new CartesianPoint(0, 0, ), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+angle_2 : angle_2 = angle_2 + 360, 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: joinL35
-choice_1 : choice_1 = input.nextInt(), 
-p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(radius_1, theta_1, ), 
-p2 : p2 = new PolarPoint(radius_2, theta_2, ), 
-theta_1 : theta_1 = Math.toRadians(angle_1, ), 
-angle_2 : angle_2 = angle_2 + 360, angle_2 = input.nextDouble(), 
-theta_2 : theta_2 = Math.toRadians(angle_2, ), 
-angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
-radius_1 : radius_1 = input.nextDouble(), 
-choice_2 : choice_2 = input.nextInt(), 
-y1 : y1 = input.nextDouble(), 
-x1 : x1 = input.nextDouble(), 
-radius_2 : radius_2 = input.nextDouble(), 
 input : input = new Scanner(System.in, ), 
+theta_1 : theta_1 = Math.toRadians(angle_1, ), 
+radius_2 : radius_2 = input.nextDouble(), 
+p2 : p2 = new PolarPoint(radius_2, theta_2, ), 
+theta_2 : theta_2 = Math.toRadians(angle_2, ), 
+choice_2 : choice_2 = input.nextInt(), 
+x1 : x1 = input.nextDouble(), 
+radius_1 : radius_1 = input.nextDouble(), 
+y1 : y1 = input.nextDouble(), 
+angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
+p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new PolarPoint(radius_1, theta_1, ), p1 = new CartesianPoint(0, 0, ), 
+angle_2 : angle_2 = input.nextDouble(), angle_2 = angle_2 + 360, 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: falseL36
-theta_1 : theta_1 = Math.toRadians(angle_1, ), 
-angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
-radius_1 : radius_1 = input.nextDouble(), 
 choice_2 : choice_2 = input.nextInt(), 
-choice_1 : choice_1 = input.nextInt(), 
-y1 : y1 = input.nextDouble(), 
-p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(radius_1, theta_1, ), 
 x1 : x1 = input.nextDouble(), 
-p2 : p2 = new CartesianPoint(0, 0, ), 
 input : input = new Scanner(System.in, ), 
+radius_1 : radius_1 = input.nextDouble(), 
+y1 : y1 = input.nextDouble(), 
+angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
+theta_1 : theta_1 = Math.toRadians(angle_1, ), 
+p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new PolarPoint(radius_1, theta_1, ), p1 = new CartesianPoint(0, 0, ), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: joinL33
-choice_1 : choice_1 = input.nextInt(), 
-p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(radius_1, theta_1, ), 
-p2 : p2 = new PolarPoint(radius_2, theta_2, ), p2 = new CartesianPoint(0, 0, ), 
-theta_1 : theta_1 = Math.toRadians(angle_1, ), 
-angle_2 : angle_2 = angle_2 + 360, angle_2 = input.nextDouble(), 
-theta_2 : theta_2 = Math.toRadians(angle_2, ), 
-angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
-radius_1 : radius_1 = input.nextDouble(), 
-choice_2 : choice_2 = input.nextInt(), 
-y1 : y1 = input.nextDouble(), 
-x1 : x1 = input.nextDouble(), 
-radius_2 : radius_2 = input.nextDouble(), 
 input : input = new Scanner(System.in, ), 
+theta_1 : theta_1 = Math.toRadians(angle_1, ), 
+radius_2 : radius_2 = input.nextDouble(), 
+p2 : p2 = new PolarPoint(radius_2, theta_2, ), p2 = new CartesianPoint(0, 0, ), 
+theta_2 : theta_2 = Math.toRadians(angle_2, ), 
+choice_2 : choice_2 = input.nextInt(), 
+x1 : x1 = input.nextDouble(), 
+radius_1 : radius_1 = input.nextDouble(), 
+y1 : y1 = input.nextDouble(), 
+angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
+p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new PolarPoint(radius_1, theta_1, ), p1 = new CartesianPoint(0, 0, ), 
+angle_2 : angle_2 = input.nextDouble(), angle_2 = angle_2 + 360, 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: joinL30
-x2 : x2 = input.nextDouble(), 
-choice_1 : choice_1 = input.nextInt(), 
-p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(radius_1, theta_1, ), 
-p2 : p2 = new PolarPoint(radius_2, theta_2, ), p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(x2, y2, ), 
-theta_1 : theta_1 = Math.toRadians(angle_1, ), 
-angle_2 : angle_2 = angle_2 + 360, angle_2 = input.nextDouble(), 
-angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
-radius_1 : radius_1 = input.nextDouble(), 
-theta_2 : theta_2 = Math.toRadians(angle_2, ), 
-choice_2 : choice_2 = input.nextInt(), 
-y1 : y1 = input.nextDouble(), 
-x1 : x1 = input.nextDouble(), 
-y2 : y2 = input.nextDouble(), 
 input : input = new Scanner(System.in, ), 
+theta_1 : theta_1 = Math.toRadians(angle_1, ), 
 radius_2 : radius_2 = input.nextDouble(), 
+p2 : p2 = new CartesianPoint(x2, y2, ), p2 = new PolarPoint(radius_2, theta_2, ), p2 = new CartesianPoint(0, 0, ), 
+theta_2 : theta_2 = Math.toRadians(angle_2, ), 
+y2 : y2 = input.nextDouble(), 
+choice_2 : choice_2 = input.nextInt(), 
+x1 : x1 = input.nextDouble(), 
+radius_1 : radius_1 = input.nextDouble(), 
+y1 : y1 = input.nextDouble(), 
+angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
+p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new PolarPoint(radius_1, theta_1, ), p1 = new CartesianPoint(0, 0, ), 
+x2 : x2 = input.nextDouble(), 
+angle_2 : angle_2 = input.nextDouble(), angle_2 = angle_2 + 360, 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: Startcompute_distanceL37
 
@@ -281,7 +281,7 @@ BLOCK: falseL45
 flag : flag = false, 
 
 BLOCK: joinL44
-flag : flag = false, flag = true, 
+flag : flag = true, flag = false, 
 
 BLOCK: Startdistance_quadrantL46
 
@@ -316,14 +316,14 @@ this.x : this.x = x_coord,
 this.p : this.p = null, 
 
 BLOCK: StartxCoordinateL61
-this.p : this.p = null, 
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+this.p : this.p = null, 
 
 BLOCK: BasicL62
-this.p : this.p = null, 
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+this.p : this.p = null, 
 
 BLOCK: StartyCoordinateL64
 this.x : this.x = 0.0, 
@@ -337,117 +337,117 @@ this.y : this.y = 0.0,
 
 BLOCK: StartradiusL67
 this.p : this.p = null, 
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: BasicL68
 this.p : this.p = null, 
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: StartangleL70
 this.x : this.x = 0.0, 
-this.y : this.y = 0.0, 
 this.p : this.p = null, 
+this.y : this.y = 0.0, 
 
 BLOCK: BasicL71
 this.x : this.x = 0.0, 
-this.y : this.y = 0.0, 
 this.p : this.p = null, 
+this.y : this.y = 0.0, 
 
 BLOCK: Startrotate90L73
 this.x : this.x = 0.0, 
-this.y : this.y = 0.0, 
 this.p : this.p = null, 
+this.y : this.y = 0.0, 
 
 BLOCK: BasicL74
 this.x : this.x = 0.0, 
-this.y : this.y = 0.0, 
 this.p : this.p = null, 
+this.y : this.y = 0.0, 
 
 BLOCK: StartmainL76
 
 BLOCK: BasicL77
-p5 : p5 = new CartesianPoint(1, 1, ), 
 p2 : p2 = new CartesianPoint(0, 1, ), 
+p5 : p5 = new CartesianPoint(1, 1, ), 
 p1 : p1 = new CartesianPoint(1, 0, ), 
 p4 : p4 = p2.rotate90(), 
 p3 : p3 = p1.rotate90(), 
 
 BLOCK: Startconstructor1L0
-this.theta : this.theta = 0.0, 
 this.p : this.p = null, 
 this.r : this.r = 0.0, 
+this.theta : this.theta = 0.0, 
 
 BLOCK: Startconstructor1L0
-this.theta : this.theta = 0.0, 
 this.p : this.p = null, 
 this.r : this.r = 0.0, 
+this.theta : this.theta = 0.0, 
 
 BLOCK: BasicL1
-this.theta : this.theta = angle, 
 this.p : this.p = null, 
 this.r : this.r = radius, 
+this.theta : this.theta = angle, 
 
 BLOCK: StartxCoordinateL3
+this.p : this.p = null, 
 this.r : this.r = 0.0, 
 this.theta : this.theta = 0.0, 
-this.p : this.p = null, 
 
 BLOCK: StartxCoordinateL3
+this.p : this.p = null, 
 this.r : this.r = 0.0, 
 this.theta : this.theta = 0.0, 
-this.p : this.p = null, 
 
 BLOCK: BasicL4
+this.p : this.p = null, 
 this.r : this.r = 0.0, 
 this.theta : this.theta = 0.0, 
-this.p : this.p = null, 
 
 BLOCK: StartyCoordinateL6
-this.theta : this.theta = 0.0, 
 this.r : this.r = 0.0, 
 this.p : this.p = null, 
+this.theta : this.theta = 0.0, 
 
 BLOCK: StartyCoordinateL6
-this.theta : this.theta = 0.0, 
 this.r : this.r = 0.0, 
 this.p : this.p = null, 
+this.theta : this.theta = 0.0, 
 
 BLOCK: BasicL7
-this.theta : this.theta = 0.0, 
 this.r : this.r = 0.0, 
 this.p : this.p = null, 
+this.theta : this.theta = 0.0, 
 
 BLOCK: StartradiusL9
-this.theta : this.theta = 0.0, 
-this.p : this.p = null, 
 this.r : this.r = 0.0, 
+this.p : this.p = null, 
+this.theta : this.theta = 0.0, 
 
 BLOCK: StartradiusL9
-this.theta : this.theta = 0.0, 
-this.p : this.p = null, 
 this.r : this.r = 0.0, 
+this.p : this.p = null, 
+this.theta : this.theta = 0.0, 
 
 BLOCK: BasicL10
+this.r : this.r = 0.0, 
+this.p : this.p = null, 
+this.theta : this.theta = 0.0, 
+
+BLOCK: StartangleL12
 this.theta : this.theta = 0.0, 
 this.p : this.p = null, 
 this.r : this.r = 0.0, 
 
 BLOCK: StartangleL12
-this.r : this.r = 0.0, 
 this.theta : this.theta = 0.0, 
 this.p : this.p = null, 
-
-BLOCK: StartangleL12
 this.r : this.r = 0.0, 
-this.theta : this.theta = 0.0, 
-this.p : this.p = null, 
 
 BLOCK: BasicL13
-this.r : this.r = 0.0, 
 this.theta : this.theta = 0.0, 
 this.p : this.p = null, 
+this.r : this.r = 0.0, 
 
 BLOCK: Startrotate90L15
 this.r : this.r = 0.0, 
@@ -469,189 +469,189 @@ BLOCK: Startinput_outputL18
 BLOCK: Startinput_outputL18
 
 BLOCK: BasicL19
-choice_1 : choice_1 = input.nextInt(), 
+input : input = new Scanner(System.in, ), 
 p1 : p1 = new CartesianPoint(0, 0, ), 
 p2 : p2 = new CartesianPoint(0, 0, ), 
-input : input = new Scanner(System.in, ), 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: trueL21
-choice_1 : choice_1 = input.nextInt(), 
+x1 : x1 = input.nextDouble(), 
+input : input = new Scanner(System.in, ), 
 y1 : y1 = input.nextDouble(), 
 p1 : p1 = new CartesianPoint(x1, y1, ), 
-x1 : x1 = input.nextDouble(), 
 p2 : p2 = new CartesianPoint(0, 0, ), 
-input : input = new Scanner(System.in, ), 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: falseL23
-choice_1 : choice_1 = input.nextInt(), 
+input : input = new Scanner(System.in, ), 
 p1 : p1 = new CartesianPoint(0, 0, ), 
 p2 : p2 = new CartesianPoint(0, 0, ), 
-input : input = new Scanner(System.in, ), 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: trueL24
-angle_1 : angle_1 = input.nextDouble(), 
 radius_1 : radius_1 = input.nextDouble(), 
-choice_1 : choice_1 = input.nextInt(), 
+input : input = new Scanner(System.in, ), 
+angle_1 : angle_1 = input.nextDouble(), 
 p1 : p1 = new CartesianPoint(0, 0, ), 
 p2 : p2 = new CartesianPoint(0, 0, ), 
-input : input = new Scanner(System.in, ), 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: trueL26
-angle_1 : angle_1 = angle_1 + 360, 
 radius_1 : radius_1 = input.nextDouble(), 
-choice_1 : choice_1 = input.nextInt(), 
+input : input = new Scanner(System.in, ), 
+angle_1 : angle_1 = angle_1 + 360, 
 p1 : p1 = new CartesianPoint(0, 0, ), 
 p2 : p2 = new CartesianPoint(0, 0, ), 
-input : input = new Scanner(System.in, ), 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: joinL27
-theta_1 : theta_1 = Math.toRadians(angle_1, ), 
-angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
 radius_1 : radius_1 = input.nextDouble(), 
-choice_1 : choice_1 = input.nextInt(), 
+input : input = new Scanner(System.in, ), 
+angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
+theta_1 : theta_1 = Math.toRadians(angle_1, ), 
 p1 : p1 = new PolarPoint(radius_1, theta_1, ), 
 p2 : p2 = new CartesianPoint(0, 0, ), 
-input : input = new Scanner(System.in, ), 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: falseL28
-choice_1 : choice_1 = input.nextInt(), 
+input : input = new Scanner(System.in, ), 
 p1 : p1 = new CartesianPoint(0, 0, ), 
 p2 : p2 = new CartesianPoint(0, 0, ), 
-input : input = new Scanner(System.in, ), 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: joinL25
-theta_1 : theta_1 = Math.toRadians(angle_1, ), 
-angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
 radius_1 : radius_1 = input.nextDouble(), 
-choice_1 : choice_1 = input.nextInt(), 
-p1 : p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(radius_1, theta_1, ), 
-p2 : p2 = new CartesianPoint(0, 0, ), 
 input : input = new Scanner(System.in, ), 
+angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
+theta_1 : theta_1 = Math.toRadians(angle_1, ), 
+p1 : p1 = new PolarPoint(radius_1, theta_1, ), p1 = new CartesianPoint(0, 0, ), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: joinL22
-theta_1 : theta_1 = Math.toRadians(angle_1, ), 
-angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
-radius_1 : radius_1 = input.nextDouble(), 
 choice_2 : choice_2 = input.nextInt(), 
-choice_1 : choice_1 = input.nextInt(), 
-y1 : y1 = input.nextDouble(), 
-p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(radius_1, theta_1, ), 
 x1 : x1 = input.nextDouble(), 
-p2 : p2 = new CartesianPoint(0, 0, ), 
 input : input = new Scanner(System.in, ), 
+radius_1 : radius_1 = input.nextDouble(), 
+y1 : y1 = input.nextDouble(), 
+angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
+theta_1 : theta_1 = Math.toRadians(angle_1, ), 
+p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new PolarPoint(radius_1, theta_1, ), p1 = new CartesianPoint(0, 0, ), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: trueL29
-theta_1 : theta_1 = Math.toRadians(angle_1, ), 
-angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
-radius_1 : radius_1 = input.nextDouble(), 
 choice_2 : choice_2 = input.nextInt(), 
-x2 : x2 = input.nextDouble(), 
-choice_1 : choice_1 = input.nextInt(), 
-y1 : y1 = input.nextDouble(), 
-p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(radius_1, theta_1, ), 
 x1 : x1 = input.nextDouble(), 
-y2 : y2 = input.nextDouble(), 
-p2 : p2 = new CartesianPoint(x2, y2, ), 
 input : input = new Scanner(System.in, ), 
+radius_1 : radius_1 = input.nextDouble(), 
+y1 : y1 = input.nextDouble(), 
+angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
+theta_1 : theta_1 = Math.toRadians(angle_1, ), 
+p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new PolarPoint(radius_1, theta_1, ), p1 = new CartesianPoint(0, 0, ), 
+x2 : x2 = input.nextDouble(), 
+p2 : p2 = new CartesianPoint(x2, y2, ), 
+y2 : y2 = input.nextDouble(), 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: falseL31
-theta_1 : theta_1 = Math.toRadians(angle_1, ), 
-angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
-radius_1 : radius_1 = input.nextDouble(), 
 choice_2 : choice_2 = input.nextInt(), 
-choice_1 : choice_1 = input.nextInt(), 
-y1 : y1 = input.nextDouble(), 
-p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(radius_1, theta_1, ), 
 x1 : x1 = input.nextDouble(), 
-p2 : p2 = new CartesianPoint(0, 0, ), 
 input : input = new Scanner(System.in, ), 
+radius_1 : radius_1 = input.nextDouble(), 
+y1 : y1 = input.nextDouble(), 
+angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
+theta_1 : theta_1 = Math.toRadians(angle_1, ), 
+p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new PolarPoint(radius_1, theta_1, ), p1 = new CartesianPoint(0, 0, ), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: trueL32
-theta_1 : theta_1 = Math.toRadians(angle_1, ), 
-angle_2 : angle_2 = input.nextDouble(), 
-angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
-radius_1 : radius_1 = input.nextDouble(), 
 choice_2 : choice_2 = input.nextInt(), 
-choice_1 : choice_1 = input.nextInt(), 
-y1 : y1 = input.nextDouble(), 
-p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(radius_1, theta_1, ), 
 x1 : x1 = input.nextDouble(), 
-p2 : p2 = new CartesianPoint(0, 0, ), 
-radius_2 : radius_2 = input.nextDouble(), 
 input : input = new Scanner(System.in, ), 
+radius_1 : radius_1 = input.nextDouble(), 
+y1 : y1 = input.nextDouble(), 
+angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
+theta_1 : theta_1 = Math.toRadians(angle_1, ), 
+radius_2 : radius_2 = input.nextDouble(), 
+p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new PolarPoint(radius_1, theta_1, ), p1 = new CartesianPoint(0, 0, ), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+angle_2 : angle_2 = input.nextDouble(), 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: trueL34
-theta_1 : theta_1 = Math.toRadians(angle_1, ), 
-angle_2 : angle_2 = angle_2 + 360, 
-angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
-radius_1 : radius_1 = input.nextDouble(), 
 choice_2 : choice_2 = input.nextInt(), 
-choice_1 : choice_1 = input.nextInt(), 
-y1 : y1 = input.nextDouble(), 
-p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(radius_1, theta_1, ), 
 x1 : x1 = input.nextDouble(), 
-p2 : p2 = new CartesianPoint(0, 0, ), 
-radius_2 : radius_2 = input.nextDouble(), 
 input : input = new Scanner(System.in, ), 
+radius_1 : radius_1 = input.nextDouble(), 
+y1 : y1 = input.nextDouble(), 
+angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
+theta_1 : theta_1 = Math.toRadians(angle_1, ), 
+radius_2 : radius_2 = input.nextDouble(), 
+p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new PolarPoint(radius_1, theta_1, ), p1 = new CartesianPoint(0, 0, ), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+angle_2 : angle_2 = angle_2 + 360, 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: joinL35
-choice_1 : choice_1 = input.nextInt(), 
-p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(radius_1, theta_1, ), 
-p2 : p2 = new PolarPoint(radius_2, theta_2, ), 
-theta_1 : theta_1 = Math.toRadians(angle_1, ), 
-angle_2 : angle_2 = angle_2 + 360, angle_2 = input.nextDouble(), 
-theta_2 : theta_2 = Math.toRadians(angle_2, ), 
-angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
-radius_1 : radius_1 = input.nextDouble(), 
-choice_2 : choice_2 = input.nextInt(), 
-y1 : y1 = input.nextDouble(), 
-x1 : x1 = input.nextDouble(), 
-radius_2 : radius_2 = input.nextDouble(), 
 input : input = new Scanner(System.in, ), 
+theta_1 : theta_1 = Math.toRadians(angle_1, ), 
+radius_2 : radius_2 = input.nextDouble(), 
+p2 : p2 = new PolarPoint(radius_2, theta_2, ), 
+theta_2 : theta_2 = Math.toRadians(angle_2, ), 
+choice_2 : choice_2 = input.nextInt(), 
+x1 : x1 = input.nextDouble(), 
+radius_1 : radius_1 = input.nextDouble(), 
+y1 : y1 = input.nextDouble(), 
+angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
+p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new PolarPoint(radius_1, theta_1, ), p1 = new CartesianPoint(0, 0, ), 
+angle_2 : angle_2 = input.nextDouble(), angle_2 = angle_2 + 360, 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: falseL36
-theta_1 : theta_1 = Math.toRadians(angle_1, ), 
-angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
-radius_1 : radius_1 = input.nextDouble(), 
 choice_2 : choice_2 = input.nextInt(), 
-choice_1 : choice_1 = input.nextInt(), 
-y1 : y1 = input.nextDouble(), 
-p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(radius_1, theta_1, ), 
 x1 : x1 = input.nextDouble(), 
-p2 : p2 = new CartesianPoint(0, 0, ), 
 input : input = new Scanner(System.in, ), 
+radius_1 : radius_1 = input.nextDouble(), 
+y1 : y1 = input.nextDouble(), 
+angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
+theta_1 : theta_1 = Math.toRadians(angle_1, ), 
+p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new PolarPoint(radius_1, theta_1, ), p1 = new CartesianPoint(0, 0, ), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: joinL33
-choice_1 : choice_1 = input.nextInt(), 
-p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(radius_1, theta_1, ), 
-p2 : p2 = new PolarPoint(radius_2, theta_2, ), p2 = new CartesianPoint(0, 0, ), 
-theta_1 : theta_1 = Math.toRadians(angle_1, ), 
-angle_2 : angle_2 = angle_2 + 360, angle_2 = input.nextDouble(), 
-theta_2 : theta_2 = Math.toRadians(angle_2, ), 
-angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
-radius_1 : radius_1 = input.nextDouble(), 
-choice_2 : choice_2 = input.nextInt(), 
-y1 : y1 = input.nextDouble(), 
-x1 : x1 = input.nextDouble(), 
-radius_2 : radius_2 = input.nextDouble(), 
 input : input = new Scanner(System.in, ), 
+theta_1 : theta_1 = Math.toRadians(angle_1, ), 
+radius_2 : radius_2 = input.nextDouble(), 
+p2 : p2 = new PolarPoint(radius_2, theta_2, ), p2 = new CartesianPoint(0, 0, ), 
+theta_2 : theta_2 = Math.toRadians(angle_2, ), 
+choice_2 : choice_2 = input.nextInt(), 
+x1 : x1 = input.nextDouble(), 
+radius_1 : radius_1 = input.nextDouble(), 
+y1 : y1 = input.nextDouble(), 
+angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
+p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new PolarPoint(radius_1, theta_1, ), p1 = new CartesianPoint(0, 0, ), 
+angle_2 : angle_2 = input.nextDouble(), angle_2 = angle_2 + 360, 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: joinL30
-x2 : x2 = input.nextDouble(), 
-choice_1 : choice_1 = input.nextInt(), 
-p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new CartesianPoint(0, 0, ), p1 = new PolarPoint(radius_1, theta_1, ), 
-p2 : p2 = new PolarPoint(radius_2, theta_2, ), p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(x2, y2, ), 
-theta_1 : theta_1 = Math.toRadians(angle_1, ), 
-angle_2 : angle_2 = angle_2 + 360, angle_2 = input.nextDouble(), 
-angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
-radius_1 : radius_1 = input.nextDouble(), 
-theta_2 : theta_2 = Math.toRadians(angle_2, ), 
-choice_2 : choice_2 = input.nextInt(), 
-y1 : y1 = input.nextDouble(), 
-x1 : x1 = input.nextDouble(), 
-y2 : y2 = input.nextDouble(), 
 input : input = new Scanner(System.in, ), 
+theta_1 : theta_1 = Math.toRadians(angle_1, ), 
 radius_2 : radius_2 = input.nextDouble(), 
+p2 : p2 = new CartesianPoint(x2, y2, ), p2 = new PolarPoint(radius_2, theta_2, ), p2 = new CartesianPoint(0, 0, ), 
+theta_2 : theta_2 = Math.toRadians(angle_2, ), 
+y2 : y2 = input.nextDouble(), 
+choice_2 : choice_2 = input.nextInt(), 
+x1 : x1 = input.nextDouble(), 
+radius_1 : radius_1 = input.nextDouble(), 
+y1 : y1 = input.nextDouble(), 
+angle_1 : angle_1 = angle_1 + 360, angle_1 = input.nextDouble(), 
+p1 : p1 = new CartesianPoint(x1, y1, ), p1 = new PolarPoint(radius_1, theta_1, ), p1 = new CartesianPoint(0, 0, ), 
+x2 : x2 = input.nextDouble(), 
+angle_2 : angle_2 = input.nextDouble(), angle_2 = angle_2 + 360, 
+choice_1 : choice_1 = input.nextInt(), 
 
 BLOCK: Startcompute_distanceL37
 
@@ -673,7 +673,7 @@ BLOCK: falseL45
 flag : flag = false, 
 
 BLOCK: joinL44
-flag : flag = false, flag = true, 
+flag : flag = true, flag = false, 
 
 BLOCK: Startdistance_quadrantL46
 
@@ -719,19 +719,19 @@ this.x : this.x = x_coord,
 this.p : this.p = null, 
 
 BLOCK: StartxCoordinateL61
-this.p : this.p = null, 
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+this.p : this.p = null, 
 
 BLOCK: StartxCoordinateL61
-this.p : this.p = null, 
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+this.p : this.p = null, 
 
 BLOCK: BasicL62
-this.p : this.p = null, 
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+this.p : this.p = null, 
 
 BLOCK: StartyCoordinateL64
 this.x : this.x = 0.0, 
@@ -750,56 +750,56 @@ this.y : this.y = 0.0,
 
 BLOCK: StartradiusL67
 this.p : this.p = null, 
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: StartradiusL67
 this.p : this.p = null, 
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: BasicL68
 this.p : this.p = null, 
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: StartangleL70
 this.x : this.x = 0.0, 
-this.y : this.y = 0.0, 
 this.p : this.p = null, 
+this.y : this.y = 0.0, 
 
 BLOCK: StartangleL70
 this.x : this.x = 0.0, 
-this.y : this.y = 0.0, 
 this.p : this.p = null, 
+this.y : this.y = 0.0, 
 
 BLOCK: BasicL71
 this.x : this.x = 0.0, 
-this.y : this.y = 0.0, 
 this.p : this.p = null, 
+this.y : this.y = 0.0, 
 
 BLOCK: Startrotate90L73
 this.x : this.x = 0.0, 
-this.y : this.y = 0.0, 
 this.p : this.p = null, 
+this.y : this.y = 0.0, 
 
 BLOCK: Startrotate90L73
 this.x : this.x = 0.0, 
-this.y : this.y = 0.0, 
 this.p : this.p = null, 
+this.y : this.y = 0.0, 
 
 BLOCK: BasicL74
 this.x : this.x = 0.0, 
-this.y : this.y = 0.0, 
 this.p : this.p = null, 
+this.y : this.y = 0.0, 
 
 BLOCK: StartmainL76
 
 BLOCK: StartmainL76
 
 BLOCK: BasicL77
-p5 : p5 = new CartesianPoint(1, 1, ), 
 p2 : p2 = new CartesianPoint(0, 1, ), 
+p5 : p5 = new CartesianPoint(1, 1, ), 
 p1 : p1 = new CartesianPoint(1, 0, ), 
 p4 : p4 = p2.rotate90(), 
 p3 : p3 = p1.rotate90(), 
@@ -811,7 +811,7 @@ Filtered: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 5.127 s
-[INFO] Finished at: 2019-05-01T17:08:30-07:00
-[INFO] Final Memory: 34M/1433M
+[INFO] Total time: 5.542 s
+[INFO] Finished at: 2019-05-06T19:47:39-07:00
+[INFO] Final Memory: 27M/1455M
 [INFO] ------------------------------------------------------------------------

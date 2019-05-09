@@ -1,0 +1,16 @@
+digraph G {
+"57 : point1 = callPoint()"
+"57 : point1 = callPoint()" -> "61 : dist = distance(point1, point2, )"
+"57 : point1 = callPoint()" -> "64 : SameQuad(point1, point2, )"
+"58 : point2 = callPoint()"
+"58 : point2 = callPoint()" -> "61 : dist = distance(point1, point2, )"
+"58 : point2 = callPoint()" -> "64 : SameQuad(point1, point2, )"
+"60 : dist = 0.0"
+"60 : dist = 0.0" -> "61 : dist = distance(point1, point2, )" [style=dashed]
+"61 : dist = distance(point1, point2, )"
+"61 : dist = distance(point1, point2, )" -> "62 : System.out.println(\"Distance between points: \" + dist, )"
+"62 : System.out.println(\"Distance between points: \" + dist, )"
+"64 : SameQuad(point1, point2, )"
+"65 : System.out.println(\"In same quadrant.\", )"
+"67 : System.out.println(\"Not in same quadrant.\", )"
+}

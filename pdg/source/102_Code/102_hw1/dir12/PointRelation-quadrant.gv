@@ -1,70 +1,70 @@
 digraph G {
 "12 : p1_x = false"
-"12 : p1_x = false" -> "21 : p1_x = false" [style=dashed]
 "12 : p1_x = false" -> "17 : p1_x = true" [style=dashed]
+"12 : p1_x = false" -> "21 : p1_x = false" [style=dashed]
 "12 : p1_y = false"
-"12 : p1_y = false" -> "30 : p1_y = false" [style=dashed]
 "12 : p1_y = false" -> "26 : p1_y = true" [style=dashed]
+"12 : p1_y = false" -> "30 : p1_y = false" [style=dashed]
 "12 : p2_x = false"
-"12 : p2_x = false" -> "39 : p2_x = false" [style=dashed]
 "12 : p2_x = false" -> "35 : p2_x = true" [style=dashed]
+"12 : p2_x = false" -> "39 : p2_x = false" [style=dashed]
 "12 : p2_y = false"
 "12 : p2_y = false" -> "44 : p2_y = true" [style=dashed]
 "12 : p2_y = false" -> "48 : p2_y = false" [style=dashed]
 "13 : p1_quad = 0"
-"13 : p1_quad = 0" -> "65 : p1_quad = 4" [style=dashed]
 "13 : p1_quad = 0" -> "69 : p1_quad = 1" [style=dashed]
-"13 : p1_quad = 0" -> "53 : p1_quad = 1" [style=dashed]
 "13 : p1_quad = 0" -> "57 : p1_quad = 2" [style=dashed]
+"13 : p1_quad = 0" -> "53 : p1_quad = 1" [style=dashed]
 "13 : p1_quad = 0" -> "61 : p1_quad = 3" [style=dashed]
+"13 : p1_quad = 0" -> "65 : p1_quad = 4" [style=dashed]
 "13 : p2_quad = 0"
-"13 : p2_quad = 0" -> "78 : p2_quad = 2" [style=dashed]
-"13 : p2_quad = 0" -> "86 : p2_quad = 4" [style=dashed]
 "13 : p2_quad = 0" -> "74 : p2_quad = 1" [style=dashed]
-"13 : p2_quad = 0" -> "90 : p2_quad = 1" [style=dashed]
+"13 : p2_quad = 0" -> "78 : p2_quad = 2" [style=dashed]
 "13 : p2_quad = 0" -> "82 : p2_quad = 3" [style=dashed]
+"13 : p2_quad = 0" -> "86 : p2_quad = 4" [style=dashed]
+"13 : p2_quad = 0" -> "90 : p2_quad = 1" [style=dashed]
 "15 : p1.xCoordinate() > 0"
 "17 : p1_x = true"
-"17 : p1_x = true" -> "59 : p1_x == false && p1_y == false"
-"17 : p1_x = true" -> "63 : p1_x == true && p1_y == false"
 "17 : p1_x = true" -> "51 : p1_x == true && p1_y == true"
 "17 : p1_x = true" -> "55 : p1_x == false && p1_y == true"
+"17 : p1_x = true" -> "59 : p1_x == false && p1_y == false"
+"17 : p1_x = true" -> "63 : p1_x == true && p1_y == false"
 "21 : p1_x = false"
-"21 : p1_x = false" -> "59 : p1_x == false && p1_y == false"
-"21 : p1_x = false" -> "63 : p1_x == true && p1_y == false"
 "21 : p1_x = false" -> "51 : p1_x == true && p1_y == true"
 "21 : p1_x = false" -> "55 : p1_x == false && p1_y == true"
+"21 : p1_x = false" -> "59 : p1_x == false && p1_y == false"
+"21 : p1_x = false" -> "63 : p1_x == true && p1_y == false"
 "24 : p1.yCoordinate() > 0"
 "26 : p1_y = true"
-"26 : p1_y = true" -> "59 : p1_x == false && p1_y == false"
-"26 : p1_y = true" -> "63 : p1_x == true && p1_y == false"
 "26 : p1_y = true" -> "51 : p1_x == true && p1_y == true"
 "26 : p1_y = true" -> "55 : p1_x == false && p1_y == true"
+"26 : p1_y = true" -> "59 : p1_x == false && p1_y == false"
+"26 : p1_y = true" -> "63 : p1_x == true && p1_y == false"
 "30 : p1_y = false"
-"30 : p1_y = false" -> "59 : p1_x == false && p1_y == false"
-"30 : p1_y = false" -> "63 : p1_x == true && p1_y == false"
 "30 : p1_y = false" -> "51 : p1_x == true && p1_y == true"
 "30 : p1_y = false" -> "55 : p1_x == false && p1_y == true"
+"30 : p1_y = false" -> "59 : p1_x == false && p1_y == false"
+"30 : p1_y = false" -> "63 : p1_x == true && p1_y == false"
 "33 : p2.xCoordinate() > 0"
 "35 : p2_x = true"
-"35 : p2_x = true" -> "76 : p2_x == false && p2_y == true"
 "35 : p2_x = true" -> "84 : p2_x == true && p2_y == false"
+"35 : p2_x = true" -> "76 : p2_x == false && p2_y == true"
 "35 : p2_x = true" -> "72 : p2_x == true && p2_y == true"
 "35 : p2_x = true" -> "80 : p2_x == false && p2_y == false"
 "39 : p2_x = false"
-"39 : p2_x = false" -> "76 : p2_x == false && p2_y == true"
 "39 : p2_x = false" -> "84 : p2_x == true && p2_y == false"
+"39 : p2_x = false" -> "76 : p2_x == false && p2_y == true"
 "39 : p2_x = false" -> "72 : p2_x == true && p2_y == true"
 "39 : p2_x = false" -> "80 : p2_x == false && p2_y == false"
 "42 : p2.yCoordinate() > 0"
 "44 : p2_y = true"
-"44 : p2_y = true" -> "76 : p2_x == false && p2_y == true"
 "44 : p2_y = true" -> "84 : p2_x == true && p2_y == false"
+"44 : p2_y = true" -> "76 : p2_x == false && p2_y == true"
 "44 : p2_y = true" -> "72 : p2_x == true && p2_y == true"
 "44 : p2_y = true" -> "80 : p2_x == false && p2_y == false"
 "48 : p2_y = false"
-"48 : p2_y = false" -> "76 : p2_x == false && p2_y == true"
 "48 : p2_y = false" -> "84 : p2_x == true && p2_y == false"
+"48 : p2_y = false" -> "76 : p2_x == false && p2_y == true"
 "48 : p2_y = false" -> "72 : p2_x == true && p2_y == true"
 "48 : p2_y = false" -> "80 : p2_x == false && p2_y == false"
 "51 : p1_x == true && p1_y == true"

@@ -1,16 +1,16 @@
 digraph G {
 "95 : pete1 = 0"
-"95 : pete1 = 0" -> "114 : pete1 = 5" [style=dashed]
-"95 : pete1 = 0" -> "107 : pete1 = 3" [style=dashed]
-"95 : pete1 = 0" -> "111 : pete1 = 4" [style=dashed]
 "95 : pete1 = 0" -> "103 : pete1 = 2" [style=dashed]
 "95 : pete1 = 0" -> "99 : pete1 = 1" [style=dashed]
+"95 : pete1 = 0" -> "111 : pete1 = 4" [style=dashed]
+"95 : pete1 = 0" -> "114 : pete1 = 5" [style=dashed]
+"95 : pete1 = 0" -> "107 : pete1 = 3" [style=dashed]
 "95 : pete2 = 0"
-"95 : pete2 = 0" -> "134 : pete2 = 5" [style=dashed]
 "95 : pete2 = 0" -> "119 : pete2 = 1" [style=dashed]
 "95 : pete2 = 0" -> "123 : pete2 = 2" [style=dashed]
-"95 : pete2 = 0" -> "127 : pete2 = 3" [style=dashed]
+"95 : pete2 = 0" -> "134 : pete2 = 5" [style=dashed]
 "95 : pete2 = 0" -> "131 : pete2 = 4" [style=dashed]
+"95 : pete2 = 0" -> "127 : pete2 = 3" [style=dashed]
 "97 : pat1.xCoordinate() > 0 && pat1.yCoordinate() >= 0"
 "99 : pete1 = 1"
 "99 : pete1 = 1" -> "137 : pete1 == pete2"

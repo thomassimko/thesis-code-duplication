@@ -19,407 +19,407 @@
 [INFO] 
 [INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ thesis ---
 BLOCK: Startconstructor1L0
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: BasicL1
-this.radius : this.radius = radius, 
 this.angle : this.angle = angle, 
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+this.radius : this.radius = radius, 
 
 BLOCK: StartxCoordinateL3
+this.x : this.x = 0.0, 
 this.radius : this.radius = 0.0, 
 this.y : this.y = 0.0, 
-this.x : this.x = 0.0, 
 this.angle : this.angle = 0.0, 
 
 BLOCK: BasicL4
+this.x : this.x = this.radius * Math.cos(this.angle, ), 
 this.radius : this.radius = 0.0, 
 this.y : this.y = 0.0, 
-this.x : this.x = this.radius * Math.cos(this.angle, ), 
 this.angle : this.angle = 0.0, 
 
 BLOCK: StartyCoordinateL6
 this.y : this.y = 0.0, 
-this.radius : this.radius = 0.0, 
 this.x : this.x = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: BasicL7
 this.y : this.y = this.radius * Math.sin(this.angle, ), 
-this.radius : this.radius = 0.0, 
 this.x : this.x = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: StartradiusL9
-this.y : this.y = 0.0, 
-this.x : this.x = 0.0, 
 this.angle : this.angle = 0.0, 
 this.radius : this.radius = 0.0, 
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
 
 BLOCK: BasicL10
-this.y : this.y = 0.0, 
-this.x : this.x = 0.0, 
 this.angle : this.angle = 0.0, 
 this.radius : this.radius = 0.0, 
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
 
 BLOCK: StartangleL12
-this.radius : this.radius = 0.0, 
-this.angle : this.angle = 0.0, 
 this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: BasicL13
-this.radius : this.radius = 0.0, 
-this.angle : this.angle = 0.0, 
 this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: Startrotate90L15
-this.angle : this.angle = 0.0, 
+this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
 this.radius : this.radius = 0.0, 
-this.y : this.y = 0.0, 
+this.angle : this.angle = 0.0, 
 
 BLOCK: BasicL16
-this.angle : this.angle = 0.0, 
+this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
 this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
 rotatedPoint : rotatedPoint = new PolarPoint(this.radius, this.angle + Math.PI / 2, ), 
-this.y : this.y = 0.0, 
 
 BLOCK: StartmainL18
 
 BLOCK: BasicL19
-y2 : y2 = 0.0, 
-radius : radius = 0.0, 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = 0.0, 
-y : y = 0.0, 
 choice : choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(0, 0, ), 
-counter2 : counter2 = 0, 
 x2 : x2 = 0.0, 
-p2 : p2 = new CartesianPoint(0, 0, ), 
+counter2 : counter2 = 0, 
+p1 : p1 = new CartesianPoint(0, 0, ), 
+y2 : y2 = 0.0, 
+x : x = 0.0, 
 distance : distance = 0.0, 
-angle : angle = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+angle : angle = 0.0, 
+y : y = 0.0, 
+radius : radius = 0.0, 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: trueL21
-y2 : y2 = 0.0, 
-radius : radius = 0.0, 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = pointReader.nextDouble(), 
-y : y = pointReader.nextDouble(), 
 choice : choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(x, y, ), 
-counter2 : counter2 = 0, 
 x2 : x2 = 0.0, 
-p2 : p2 = new CartesianPoint(0, 0, ), 
+counter2 : counter2 = 0, 
+p1 : p1 = new CartesianPoint(x, y, ), 
+y2 : y2 = 0.0, 
+x : x = pointReader.nextDouble(), 
 distance : distance = 0.0, 
-angle : angle = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+y : y = pointReader.nextDouble(), 
+angle : angle = 0.0, 
+radius : radius = 0.0, 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: falseL23
-y2 : y2 = 0.0, 
-radius : radius = 0.0, 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = 0.0, 
-y : y = 0.0, 
 choice : choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(0, 0, ), 
-counter2 : counter2 = 0, 
 x2 : x2 = 0.0, 
-p2 : p2 = new CartesianPoint(0, 0, ), 
+counter2 : counter2 = 0, 
+p1 : p1 = new CartesianPoint(0, 0, ), 
+y2 : y2 = 0.0, 
+x : x = 0.0, 
 distance : distance = 0.0, 
-angle : angle = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+angle : angle = 0.0, 
+y : y = 0.0, 
+radius : radius = 0.0, 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: trueL24
-y2 : y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = 0.0, 
-y : y = 0.0, 
 choice : choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(0, 0, ), 
-counter2 : counter2 = 0, 
 x2 : x2 = 0.0, 
-p2 : p2 = new CartesianPoint(0, 0, ), 
+counter2 : counter2 = 0, 
+p1 : p1 = new CartesianPoint(0, 0, ), 
+y2 : y2 = 0.0, 
+x : x = 0.0, 
 distance : distance = 0.0, 
-angle : angle = pointReader.nextDouble(), 
 pointReader : pointReader = new Scanner(System.in, ), 
+angle : angle = pointReader.nextDouble(), 
+y : y = 0.0, 
+radius : radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: trueL26
-y2 : y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = 0.0, 
-y : y = 0.0, 
 choice : choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(0, 0, ), 
-counter2 : counter2 = 0, 
 x2 : x2 = 0.0, 
-p2 : p2 = new CartesianPoint(0, 0, ), 
+counter2 : counter2 = 0, 
+p1 : p1 = new CartesianPoint(0, 0, ), 
+y2 : y2 = 0.0, 
+x : x = 0.0, 
 distance : distance = 0.0, 
-angle : angle = angle + 360, 
 pointReader : pointReader = new Scanner(System.in, ), 
+angle : angle = angle + 360, 
+y : y = 0.0, 
+radius : radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: joinL27
-y2 : y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = 0.0, 
-y : y = 0.0, 
 choice : choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
-counter2 : counter2 = 0, 
 x2 : x2 = 0.0, 
-p2 : p2 = new CartesianPoint(0, 0, ), 
+counter2 : counter2 = 0, 
+p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
+y2 : y2 = 0.0, 
+x : x = 0.0, 
 distance : distance = 0.0, 
-angle : angle = angle + 360, angle = pointReader.nextDouble(), 
 pointReader : pointReader = new Scanner(System.in, ), 
+angle : angle = pointReader.nextDouble(), angle = angle + 360, 
+y : y = 0.0, 
+radius : radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: falseL28
-y2 : y2 = 0.0, 
-radius : radius = 0.0, 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = 0.0, 
-y : y = 0.0, 
 choice : choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(0, 0, ), 
-counter2 : counter2 = 0, 
 x2 : x2 = 0.0, 
-p2 : p2 = new CartesianPoint(0, 0, ), 
+counter2 : counter2 = 0, 
+p1 : p1 = new CartesianPoint(0, 0, ), 
+y2 : y2 = 0.0, 
+x : x = 0.0, 
 distance : distance = 0.0, 
-angle : angle = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+angle : angle = 0.0, 
+y : y = 0.0, 
+radius : radius = 0.0, 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: joinL25
-y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = pointReader.nextDouble(), x = 0.0, 
-y : y = pointReader.nextDouble(), y = 0.0, 
 choice : choice = choiceReader.nextInt(), choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(x, y, ), p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(0, 0, ), 
+x2 : x2 = 0.0, x2 = pointReader.nextDouble(), 
 counter2 : counter2 = 0, 
-x2 : x2 = pointReader.nextDouble(), x2 = 0.0, 
-p2 : p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), p2 = new CartesianPoint(x2, y2, ), p2 = new CartesianPoint(0, 0, ), 
-distance : distance = 0.0, distance = distance_func(p1, p2, ), 
-angle : angle = angle + 360, angle = pointReader.nextDouble(), angle = pointReader.nextDouble(), angle = angle + 360, angle = 0.0, 
+p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(0, 0, ), p1 = new CartesianPoint(x, y, ), 
+y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
+x : x = 0.0, x = pointReader.nextDouble(), 
+distance : distance = distance_func(p1, p2, ), distance = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+angle : angle = pointReader.nextDouble(), angle = 0.0, angle = angle + 360, angle = angle + 360, angle = pointReader.nextDouble(), 
+y : y = 0.0, y = pointReader.nextDouble(), 
+radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(x2, y2, ), p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: joinL22
-y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = pointReader.nextDouble(), x = 0.0, 
-y : y = pointReader.nextDouble(), y = 0.0, 
 choice : choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(x, y, ), p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(0, 0, ), 
+x2 : x2 = 0.0, x2 = pointReader.nextDouble(), 
 counter2 : counter2 = 0, 
-x2 : x2 = pointReader.nextDouble(), x2 = 0.0, 
-p2 : p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), p2 = new CartesianPoint(x2, y2, ), p2 = new CartesianPoint(0, 0, ), 
-distance : distance = 0.0, distance = distance_func(p1, p2, ), 
-angle : angle = angle + 360, angle = pointReader.nextDouble(), angle = pointReader.nextDouble(), angle = angle + 360, angle = 0.0, 
+p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), 
+y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
+x : x = 0.0, x = pointReader.nextDouble(), 
+distance : distance = distance_func(p1, p2, ), distance = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+y : y = 0.0, y = pointReader.nextDouble(), 
+angle : angle = pointReader.nextDouble(), angle = 0.0, angle = angle + 360, angle = angle + 360, angle = pointReader.nextDouble(), 
+radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(x2, y2, ), p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: trueL29
-y2 : y2 = pointReader.nextDouble(), 
-radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = pointReader.nextDouble(), x = 0.0, 
-y : y = pointReader.nextDouble(), y = 0.0, 
-choice : choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(x, y, ), p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(0, 0, ), 
-counter2 : counter2 = 0, 
 x2 : x2 = pointReader.nextDouble(), 
-p2 : p2 = new CartesianPoint(x2, y2, ), 
-distance : distance = 0.0, distance = distance_func(p1, p2, ), 
-angle : angle = angle + 360, angle = pointReader.nextDouble(), angle = pointReader.nextDouble(), angle = angle + 360, angle = 0.0, 
+choice : choice = choiceReader.nextInt(), 
+counter2 : counter2 = 0, 
+y2 : y2 = pointReader.nextDouble(), 
+p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), 
+x : x = 0.0, x = pointReader.nextDouble(), 
+distance : distance = distance_func(p1, p2, ), distance = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+y : y = 0.0, y = pointReader.nextDouble(), 
+angle : angle = pointReader.nextDouble(), angle = 0.0, angle = angle + 360, angle = angle + 360, angle = pointReader.nextDouble(), 
+radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(x2, y2, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: falseL31
-y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = pointReader.nextDouble(), x = 0.0, 
-y : y = pointReader.nextDouble(), y = 0.0, 
 choice : choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(x, y, ), p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(0, 0, ), 
+x2 : x2 = 0.0, x2 = pointReader.nextDouble(), 
 counter2 : counter2 = 0, 
-x2 : x2 = pointReader.nextDouble(), x2 = 0.0, 
-p2 : p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), p2 = new CartesianPoint(x2, y2, ), p2 = new CartesianPoint(0, 0, ), 
-distance : distance = 0.0, distance = distance_func(p1, p2, ), 
-angle : angle = angle + 360, angle = pointReader.nextDouble(), angle = pointReader.nextDouble(), angle = angle + 360, angle = 0.0, 
+p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), 
+y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
+x : x = 0.0, x = pointReader.nextDouble(), 
+distance : distance = distance_func(p1, p2, ), distance = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+y : y = 0.0, y = pointReader.nextDouble(), 
+angle : angle = pointReader.nextDouble(), angle = 0.0, angle = angle + 360, angle = angle + 360, angle = pointReader.nextDouble(), 
+radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(x2, y2, ), p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: trueL32
-y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = pointReader.nextDouble(), x = 0.0, 
-y : y = pointReader.nextDouble(), y = 0.0, 
 choice : choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(x, y, ), p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(0, 0, ), 
+x2 : x2 = 0.0, x2 = pointReader.nextDouble(), 
 counter2 : counter2 = 0, 
-x2 : x2 = pointReader.nextDouble(), x2 = 0.0, 
-p2 : p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), p2 = new CartesianPoint(x2, y2, ), p2 = new CartesianPoint(0, 0, ), 
-distance : distance = 0.0, distance = distance_func(p1, p2, ), 
-angle : angle = pointReader.nextDouble(), 
+p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), 
+y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
+x : x = 0.0, x = pointReader.nextDouble(), 
+distance : distance = distance_func(p1, p2, ), distance = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+angle : angle = pointReader.nextDouble(), 
+y : y = 0.0, y = pointReader.nextDouble(), 
+radius : radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(x2, y2, ), p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: trueL34
-y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = pointReader.nextDouble(), x = 0.0, 
-y : y = pointReader.nextDouble(), y = 0.0, 
 choice : choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(x, y, ), p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(0, 0, ), 
+x2 : x2 = 0.0, x2 = pointReader.nextDouble(), 
 counter2 : counter2 = 0, 
-x2 : x2 = pointReader.nextDouble(), x2 = 0.0, 
-p2 : p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), p2 = new CartesianPoint(x2, y2, ), p2 = new CartesianPoint(0, 0, ), 
-distance : distance = 0.0, distance = distance_func(p1, p2, ), 
-angle : angle = angle + 360, 
+p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), 
+y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
+x : x = 0.0, x = pointReader.nextDouble(), 
+distance : distance = distance_func(p1, p2, ), distance = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+angle : angle = angle + 360, 
+y : y = 0.0, y = pointReader.nextDouble(), 
+radius : radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(x2, y2, ), p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: joinL35
-y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = pointReader.nextDouble(), x = 0.0, 
-y : y = pointReader.nextDouble(), y = 0.0, 
 choice : choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(x, y, ), p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(0, 0, ), 
+x2 : x2 = 0.0, x2 = pointReader.nextDouble(), 
 counter2 : counter2 = 0, 
-x2 : x2 = pointReader.nextDouble(), x2 = 0.0, 
-p2 : p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
-distance : distance = 0.0, distance = distance_func(p1, p2, ), 
-angle : angle = pointReader.nextDouble(), angle = angle + 360, 
+p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), 
+y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
+x : x = 0.0, x = pointReader.nextDouble(), 
+distance : distance = distance_func(p1, p2, ), distance = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+angle : angle = angle + 360, angle = pointReader.nextDouble(), 
+y : y = 0.0, y = pointReader.nextDouble(), 
+radius : radius = pointReader.nextDouble(), 
+p2 : p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: falseL36
-y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = pointReader.nextDouble(), x = 0.0, 
-y : y = pointReader.nextDouble(), y = 0.0, 
 choice : choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(x, y, ), p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(0, 0, ), 
+x2 : x2 = 0.0, x2 = pointReader.nextDouble(), 
 counter2 : counter2 = 0, 
-x2 : x2 = pointReader.nextDouble(), x2 = 0.0, 
-p2 : p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), p2 = new CartesianPoint(x2, y2, ), p2 = new CartesianPoint(0, 0, ), 
-distance : distance = 0.0, distance = distance_func(p1, p2, ), 
-angle : angle = angle + 360, angle = pointReader.nextDouble(), angle = pointReader.nextDouble(), angle = angle + 360, angle = 0.0, 
+p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), 
+y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
+x : x = 0.0, x = pointReader.nextDouble(), 
+distance : distance = distance_func(p1, p2, ), distance = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+y : y = 0.0, y = pointReader.nextDouble(), 
+angle : angle = pointReader.nextDouble(), angle = 0.0, angle = angle + 360, angle = angle + 360, angle = pointReader.nextDouble(), 
+radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(x2, y2, ), p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: joinL33
-y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = pointReader.nextDouble(), x = 0.0, 
-y : y = pointReader.nextDouble(), y = 0.0, 
 choice : choice = choiceReader.nextInt(), choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(x, y, ), p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(0, 0, ), 
+x2 : x2 = 0.0, x2 = pointReader.nextDouble(), 
 counter2 : counter2 = 0, 
-x2 : x2 = pointReader.nextDouble(), x2 = 0.0, 
-p2 : p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), p2 = new CartesianPoint(x2, y2, ), p2 = new CartesianPoint(0, 0, ), 
-distance : distance = 0.0, distance = distance_func(p1, p2, ), 
-angle : angle = angle + 360, angle = pointReader.nextDouble(), angle = pointReader.nextDouble(), angle = angle + 360, angle = 0.0, 
+p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), 
+y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
+x : x = 0.0, x = pointReader.nextDouble(), 
+distance : distance = distance_func(p1, p2, ), distance = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+angle : angle = pointReader.nextDouble(), angle = 0.0, angle = angle + 360, angle = angle + 360, angle = pointReader.nextDouble(), 
+y : y = 0.0, y = pointReader.nextDouble(), 
+radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(x2, y2, ), p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: joinL30
-y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = pointReader.nextDouble(), x = 0.0, 
-y : y = pointReader.nextDouble(), y = 0.0, 
+x2 : x2 = 0.0, x2 = pointReader.nextDouble(), 
 choice : choice = choiceReader.nextInt(), choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(x, y, ), p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(0, 0, ), 
 counter2 : counter2 = 0, 
-x2 : x2 = pointReader.nextDouble(), x2 = 0.0, 
-p2 : p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), p2 = new CartesianPoint(x2, y2, ), p2 = new CartesianPoint(0, 0, ), 
+y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
+p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), 
+x : x = 0.0, x = pointReader.nextDouble(), 
 distance : distance = distance_func(p1, p2, ), 
-angle : angle = angle + 360, angle = pointReader.nextDouble(), angle = pointReader.nextDouble(), angle = angle + 360, angle = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+y : y = 0.0, y = pointReader.nextDouble(), 
+angle : angle = pointReader.nextDouble(), angle = 0.0, angle = angle + 360, angle = angle + 360, angle = pointReader.nextDouble(), 
+radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(x2, y2, ), p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: trueL37
-y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = pointReader.nextDouble(), x = 0.0, 
-y : y = pointReader.nextDouble(), y = 0.0, 
+x2 : x2 = 0.0, x2 = pointReader.nextDouble(), 
 choice : choice = choiceReader.nextInt(), choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(x, y, ), p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(0, 0, ), 
 counter2 : counter2 = 0, 
-x2 : x2 = pointReader.nextDouble(), x2 = 0.0, 
-p2 : p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), p2 = new CartesianPoint(x2, y2, ), p2 = new CartesianPoint(0, 0, ), 
+y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
+p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), 
+x : x = 0.0, x = pointReader.nextDouble(), 
 distance : distance = distance_func(p1, p2, ), 
-angle : angle = angle + 360, angle = pointReader.nextDouble(), angle = pointReader.nextDouble(), angle = angle + 360, angle = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+y : y = 0.0, y = pointReader.nextDouble(), 
+angle : angle = pointReader.nextDouble(), angle = 0.0, angle = angle + 360, angle = angle + 360, angle = pointReader.nextDouble(), 
+radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(x2, y2, ), p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: falseL39
-y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = pointReader.nextDouble(), x = 0.0, 
-y : y = pointReader.nextDouble(), y = 0.0, 
+x2 : x2 = 0.0, x2 = pointReader.nextDouble(), 
 choice : choice = choiceReader.nextInt(), choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(x, y, ), p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(0, 0, ), 
 counter2 : counter2 = 0, 
-x2 : x2 = pointReader.nextDouble(), x2 = 0.0, 
-p2 : p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), p2 = new CartesianPoint(x2, y2, ), p2 = new CartesianPoint(0, 0, ), 
+y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
+p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), 
+x : x = 0.0, x = pointReader.nextDouble(), 
 distance : distance = distance_func(p1, p2, ), 
-angle : angle = angle + 360, angle = pointReader.nextDouble(), angle = pointReader.nextDouble(), angle = angle + 360, angle = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+y : y = 0.0, y = pointReader.nextDouble(), 
+angle : angle = pointReader.nextDouble(), angle = 0.0, angle = angle + 360, angle = angle + 360, angle = pointReader.nextDouble(), 
+radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(x2, y2, ), p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: joinL38
-y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = pointReader.nextDouble(), x = 0.0, 
-y : y = pointReader.nextDouble(), y = 0.0, 
+x2 : x2 = 0.0, x2 = pointReader.nextDouble(), 
 choice : choice = choiceReader.nextInt(), choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(x, y, ), p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(0, 0, ), 
 counter2 : counter2 = 0, 
-x2 : x2 = pointReader.nextDouble(), x2 = 0.0, 
-p2 : p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), p2 = new CartesianPoint(x2, y2, ), p2 = new CartesianPoint(0, 0, ), 
+y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
+p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), 
+x : x = 0.0, x = pointReader.nextDouble(), 
 distance : distance = distance_func(p1, p2, ), 
-angle : angle = angle + 360, angle = pointReader.nextDouble(), angle = pointReader.nextDouble(), angle = angle + 360, angle = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+y : y = 0.0, y = pointReader.nextDouble(), 
+angle : angle = pointReader.nextDouble(), angle = 0.0, angle = angle + 360, angle = angle + 360, angle = pointReader.nextDouble(), 
+radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(x2, y2, ), p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: Startdistance_funcL40
 
 BLOCK: BasicL41
-y2 : y2 = p2.yCoordinate(), 
 y1 : y1 = p1.yCoordinate(), 
-x2 : x2 = p2.xCoordinate(), 
 x1 : x1 = p1.xCoordinate(), 
+y2 : y2 = p2.yCoordinate(), 
+x2 : x2 = p2.xCoordinate(), 
 
 BLOCK: StartquadrantL43
 
@@ -452,83 +452,83 @@ BLOCK: joinL47
 BLOCK: StarttestPolarPointL58
 
 BLOCK: BasicL59
-p1_answer : p1_answer = p1.rotate90(), 
-p1 : p1 = new PolarPoint(1, Math.PI / 2, ), 
 p2 : p2 = new PolarPoint(3, 2 * Math.PI, ), 
 p2_answer : p2_answer = p2.rotate90(), 
+p1_answer : p1_answer = p1.rotate90(), 
+p1 : p1 = new PolarPoint(1, Math.PI / 2, ), 
 
 BLOCK: Startconstructor1L61
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
-this.y : this.y = 0.0, 
+this.radius : this.radius = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: BasicL62
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
-this.y : this.y = yCoord, 
+this.radius : this.radius = 0.0, 
 this.x : this.x = xCoord, 
+this.y : this.y = yCoord, 
 
 BLOCK: StartxCoordinateL64
-this.angle : this.angle = 0.0, 
-this.x : this.x = 0.0, 
-this.radius : this.radius = 0.0, 
 this.y : this.y = 0.0, 
+this.radius : this.radius = 0.0, 
+this.x : this.x = 0.0, 
+this.angle : this.angle = 0.0, 
 
 BLOCK: BasicL65
-this.angle : this.angle = 0.0, 
-this.x : this.x = 0.0, 
-this.radius : this.radius = 0.0, 
 this.y : this.y = 0.0, 
+this.radius : this.radius = 0.0, 
+this.x : this.x = 0.0, 
+this.angle : this.angle = 0.0, 
 
 BLOCK: StartyCoordinateL67
-this.y : this.y = 0.0, 
-this.radius : this.radius = 0.0, 
 this.x : this.x = 0.0, 
+this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: BasicL68
-this.y : this.y = 0.0, 
-this.radius : this.radius = 0.0, 
 this.x : this.x = 0.0, 
+this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: StartradiusL70
+this.angle : this.angle = 0.0, 
+this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
 this.radius : this.radius = 0.0, 
-this.y : this.y = 0.0, 
-this.angle : this.angle = 0.0, 
 
 BLOCK: BasicL71
+this.angle : this.angle = 0.0, 
+this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
 this.radius : this.radius = Math.sqrt(this.x * this.x + this.y * this.y, ), 
-this.y : this.y = 0.0, 
-this.angle : this.angle = 0.0, 
 
 BLOCK: StartangleL73
-this.angle : this.angle = 0.0, 
-this.x : this.x = 0.0, 
-this.radius : this.radius = 0.0, 
 this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: BasicL74
-this.angle : this.angle = Math.atan2(this.y, this.x, ), 
-this.x : this.x = 0.0, 
-this.radius : this.radius = 0.0, 
 this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.angle : this.angle = Math.atan2(this.y, this.x, ), 
+this.radius : this.radius = 0.0, 
 
 BLOCK: Startrotate90L76
 this.angle : this.angle = 0.0, 
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
 this.radius : this.radius = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: BasicL77
 this.angle : this.angle = 0.0, 
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
 this.radius : this.radius = 0.0, 
 rotatedPoint : rotatedPoint = new CartesianPoint(-this.y, this.x, ), 
+this.y : this.y = 0.0, 
 
 BLOCK: StarttestCartesianPointL79
 
@@ -539,447 +539,447 @@ p2_answer : p2_answer = p2.rotate90(),
 p2 : p2 = new CartesianPoint(3, 7, ), 
 
 BLOCK: Startconstructor1L0
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: Startconstructor1L0
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: BasicL1
-this.radius : this.radius = radius, 
 this.angle : this.angle = angle, 
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
+this.radius : this.radius = radius, 
 
 BLOCK: StartxCoordinateL3
+this.x : this.x = 0.0, 
 this.radius : this.radius = 0.0, 
 this.y : this.y = 0.0, 
-this.x : this.x = 0.0, 
 this.angle : this.angle = 0.0, 
 
 BLOCK: StartxCoordinateL3
+this.x : this.x = 0.0, 
 this.radius : this.radius = 0.0, 
 this.y : this.y = 0.0, 
-this.x : this.x = 0.0, 
 this.angle : this.angle = 0.0, 
 
 BLOCK: BasicL4
-this.radius : this.radius = 0.0, 
-this.y : this.y = 0.0, 
 this.x : this.x = this.radius * Math.cos(this.angle, ), 
+this.radius : this.radius = 0.0, 
+this.y : this.y = 0.0, 
 this.angle : this.angle = 0.0, 
 
 BLOCK: StartyCoordinateL6
 this.y : this.y = 0.0, 
-this.radius : this.radius = 0.0, 
 this.x : this.x = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: StartyCoordinateL6
 this.y : this.y = 0.0, 
-this.radius : this.radius = 0.0, 
 this.x : this.x = 0.0, 
 this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: BasicL7
 this.y : this.y = this.radius * Math.sin(this.angle, ), 
-this.radius : this.radius = 0.0, 
-this.x : this.x = 0.0, 
-this.angle : this.angle = 0.0, 
-
-BLOCK: StartradiusL9
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
 this.angle : this.angle = 0.0, 
 this.radius : this.radius = 0.0, 
 
 BLOCK: StartradiusL9
-this.y : this.y = 0.0, 
-this.x : this.x = 0.0, 
 this.angle : this.angle = 0.0, 
 this.radius : this.radius = 0.0, 
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: StartradiusL9
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
 
 BLOCK: BasicL10
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+
+BLOCK: StartangleL12
 this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
 this.angle : this.angle = 0.0, 
 this.radius : this.radius = 0.0, 
 
 BLOCK: StartangleL12
-this.radius : this.radius = 0.0, 
-this.angle : this.angle = 0.0, 
 this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
-
-BLOCK: StartangleL12
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
-this.y : this.y = 0.0, 
-this.x : this.x = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: BasicL13
-this.radius : this.radius = 0.0, 
-this.angle : this.angle = 0.0, 
 this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: Startrotate90L15
-this.angle : this.angle = 0.0, 
+this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
 this.radius : this.radius = 0.0, 
-this.y : this.y = 0.0, 
+this.angle : this.angle = 0.0, 
 
 BLOCK: Startrotate90L15
-this.angle : this.angle = 0.0, 
+this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
 this.radius : this.radius = 0.0, 
-this.y : this.y = 0.0, 
+this.angle : this.angle = 0.0, 
 
 BLOCK: BasicL16
-this.angle : this.angle = 0.0, 
+this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
 this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
 rotatedPoint : rotatedPoint = new PolarPoint(this.radius, this.angle + Math.PI / 2, ), 
-this.y : this.y = 0.0, 
 
 BLOCK: StartmainL18
 
 BLOCK: StartmainL18
 
 BLOCK: BasicL19
-y2 : y2 = 0.0, 
-radius : radius = 0.0, 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = 0.0, 
-y : y = 0.0, 
 choice : choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(0, 0, ), 
-counter2 : counter2 = 0, 
 x2 : x2 = 0.0, 
-p2 : p2 = new CartesianPoint(0, 0, ), 
+counter2 : counter2 = 0, 
+p1 : p1 = new CartesianPoint(0, 0, ), 
+y2 : y2 = 0.0, 
+x : x = 0.0, 
 distance : distance = 0.0, 
-angle : angle = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+angle : angle = 0.0, 
+y : y = 0.0, 
+radius : radius = 0.0, 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: trueL21
-y2 : y2 = 0.0, 
-radius : radius = 0.0, 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = pointReader.nextDouble(), 
-y : y = pointReader.nextDouble(), 
 choice : choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(x, y, ), 
-counter2 : counter2 = 0, 
 x2 : x2 = 0.0, 
-p2 : p2 = new CartesianPoint(0, 0, ), 
+counter2 : counter2 = 0, 
+p1 : p1 = new CartesianPoint(x, y, ), 
+y2 : y2 = 0.0, 
+x : x = pointReader.nextDouble(), 
 distance : distance = 0.0, 
-angle : angle = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+y : y = pointReader.nextDouble(), 
+angle : angle = 0.0, 
+radius : radius = 0.0, 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: falseL23
-y2 : y2 = 0.0, 
-radius : radius = 0.0, 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = 0.0, 
-y : y = 0.0, 
 choice : choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(0, 0, ), 
-counter2 : counter2 = 0, 
 x2 : x2 = 0.0, 
-p2 : p2 = new CartesianPoint(0, 0, ), 
+counter2 : counter2 = 0, 
+p1 : p1 = new CartesianPoint(0, 0, ), 
+y2 : y2 = 0.0, 
+x : x = 0.0, 
 distance : distance = 0.0, 
-angle : angle = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+angle : angle = 0.0, 
+y : y = 0.0, 
+radius : radius = 0.0, 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: trueL24
-y2 : y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = 0.0, 
-y : y = 0.0, 
 choice : choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(0, 0, ), 
-counter2 : counter2 = 0, 
 x2 : x2 = 0.0, 
-p2 : p2 = new CartesianPoint(0, 0, ), 
+counter2 : counter2 = 0, 
+p1 : p1 = new CartesianPoint(0, 0, ), 
+y2 : y2 = 0.0, 
+x : x = 0.0, 
 distance : distance = 0.0, 
-angle : angle = pointReader.nextDouble(), 
 pointReader : pointReader = new Scanner(System.in, ), 
+angle : angle = pointReader.nextDouble(), 
+y : y = 0.0, 
+radius : radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: trueL26
-y2 : y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = 0.0, 
-y : y = 0.0, 
 choice : choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(0, 0, ), 
-counter2 : counter2 = 0, 
 x2 : x2 = 0.0, 
-p2 : p2 = new CartesianPoint(0, 0, ), 
+counter2 : counter2 = 0, 
+p1 : p1 = new CartesianPoint(0, 0, ), 
+y2 : y2 = 0.0, 
+x : x = 0.0, 
 distance : distance = 0.0, 
-angle : angle = angle + 360, 
 pointReader : pointReader = new Scanner(System.in, ), 
+angle : angle = angle + 360, 
+y : y = 0.0, 
+radius : radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: joinL27
-y2 : y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = 0.0, 
-y : y = 0.0, 
 choice : choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
-counter2 : counter2 = 0, 
 x2 : x2 = 0.0, 
-p2 : p2 = new CartesianPoint(0, 0, ), 
+counter2 : counter2 = 0, 
+p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
+y2 : y2 = 0.0, 
+x : x = 0.0, 
 distance : distance = 0.0, 
-angle : angle = angle + 360, angle = pointReader.nextDouble(), 
 pointReader : pointReader = new Scanner(System.in, ), 
+angle : angle = pointReader.nextDouble(), angle = angle + 360, 
+y : y = 0.0, 
+radius : radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: falseL28
-y2 : y2 = 0.0, 
-radius : radius = 0.0, 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = 0.0, 
-y : y = 0.0, 
 choice : choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(0, 0, ), 
-counter2 : counter2 = 0, 
 x2 : x2 = 0.0, 
-p2 : p2 = new CartesianPoint(0, 0, ), 
+counter2 : counter2 = 0, 
+p1 : p1 = new CartesianPoint(0, 0, ), 
+y2 : y2 = 0.0, 
+x : x = 0.0, 
 distance : distance = 0.0, 
-angle : angle = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+angle : angle = 0.0, 
+y : y = 0.0, 
+radius : radius = 0.0, 
+p2 : p2 = new CartesianPoint(0, 0, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: joinL25
-y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = pointReader.nextDouble(), x = 0.0, 
-y : y = pointReader.nextDouble(), y = 0.0, 
 choice : choice = choiceReader.nextInt(), choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(x, y, ), p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(0, 0, ), 
+x2 : x2 = 0.0, x2 = pointReader.nextDouble(), 
 counter2 : counter2 = 0, 
-x2 : x2 = pointReader.nextDouble(), x2 = 0.0, 
-p2 : p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), p2 = new CartesianPoint(x2, y2, ), p2 = new CartesianPoint(0, 0, ), 
-distance : distance = 0.0, distance = distance_func(p1, p2, ), 
-angle : angle = angle + 360, angle = pointReader.nextDouble(), angle = pointReader.nextDouble(), angle = angle + 360, angle = 0.0, 
+p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(0, 0, ), p1 = new CartesianPoint(x, y, ), 
+y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
+x : x = 0.0, x = pointReader.nextDouble(), 
+distance : distance = distance_func(p1, p2, ), distance = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+angle : angle = pointReader.nextDouble(), angle = 0.0, angle = angle + 360, angle = angle + 360, angle = pointReader.nextDouble(), 
+y : y = 0.0, y = pointReader.nextDouble(), 
+radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(x2, y2, ), p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: joinL22
-y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = pointReader.nextDouble(), x = 0.0, 
-y : y = pointReader.nextDouble(), y = 0.0, 
 choice : choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(x, y, ), p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(0, 0, ), 
+x2 : x2 = 0.0, x2 = pointReader.nextDouble(), 
 counter2 : counter2 = 0, 
-x2 : x2 = pointReader.nextDouble(), x2 = 0.0, 
-p2 : p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), p2 = new CartesianPoint(x2, y2, ), p2 = new CartesianPoint(0, 0, ), 
-distance : distance = 0.0, distance = distance_func(p1, p2, ), 
-angle : angle = angle + 360, angle = pointReader.nextDouble(), angle = pointReader.nextDouble(), angle = angle + 360, angle = 0.0, 
+p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), 
+y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
+x : x = 0.0, x = pointReader.nextDouble(), 
+distance : distance = distance_func(p1, p2, ), distance = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+y : y = 0.0, y = pointReader.nextDouble(), 
+angle : angle = pointReader.nextDouble(), angle = 0.0, angle = angle + 360, angle = angle + 360, angle = pointReader.nextDouble(), 
+radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(x2, y2, ), p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: trueL29
-y2 : y2 = pointReader.nextDouble(), 
-radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = pointReader.nextDouble(), x = 0.0, 
-y : y = pointReader.nextDouble(), y = 0.0, 
-choice : choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(x, y, ), p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(0, 0, ), 
-counter2 : counter2 = 0, 
 x2 : x2 = pointReader.nextDouble(), 
-p2 : p2 = new CartesianPoint(x2, y2, ), 
-distance : distance = 0.0, distance = distance_func(p1, p2, ), 
-angle : angle = angle + 360, angle = pointReader.nextDouble(), angle = pointReader.nextDouble(), angle = angle + 360, angle = 0.0, 
+choice : choice = choiceReader.nextInt(), 
+counter2 : counter2 = 0, 
+y2 : y2 = pointReader.nextDouble(), 
+p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), 
+x : x = 0.0, x = pointReader.nextDouble(), 
+distance : distance = distance_func(p1, p2, ), distance = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+y : y = 0.0, y = pointReader.nextDouble(), 
+angle : angle = pointReader.nextDouble(), angle = 0.0, angle = angle + 360, angle = angle + 360, angle = pointReader.nextDouble(), 
+radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(x2, y2, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: falseL31
-y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = pointReader.nextDouble(), x = 0.0, 
-y : y = pointReader.nextDouble(), y = 0.0, 
 choice : choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(x, y, ), p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(0, 0, ), 
+x2 : x2 = 0.0, x2 = pointReader.nextDouble(), 
 counter2 : counter2 = 0, 
-x2 : x2 = pointReader.nextDouble(), x2 = 0.0, 
-p2 : p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), p2 = new CartesianPoint(x2, y2, ), p2 = new CartesianPoint(0, 0, ), 
-distance : distance = 0.0, distance = distance_func(p1, p2, ), 
-angle : angle = angle + 360, angle = pointReader.nextDouble(), angle = pointReader.nextDouble(), angle = angle + 360, angle = 0.0, 
+p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), 
+y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
+x : x = 0.0, x = pointReader.nextDouble(), 
+distance : distance = distance_func(p1, p2, ), distance = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+y : y = 0.0, y = pointReader.nextDouble(), 
+angle : angle = pointReader.nextDouble(), angle = 0.0, angle = angle + 360, angle = angle + 360, angle = pointReader.nextDouble(), 
+radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(x2, y2, ), p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: trueL32
-y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = pointReader.nextDouble(), x = 0.0, 
-y : y = pointReader.nextDouble(), y = 0.0, 
 choice : choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(x, y, ), p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(0, 0, ), 
+x2 : x2 = 0.0, x2 = pointReader.nextDouble(), 
 counter2 : counter2 = 0, 
-x2 : x2 = pointReader.nextDouble(), x2 = 0.0, 
-p2 : p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), p2 = new CartesianPoint(x2, y2, ), p2 = new CartesianPoint(0, 0, ), 
-distance : distance = 0.0, distance = distance_func(p1, p2, ), 
-angle : angle = pointReader.nextDouble(), 
+p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), 
+y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
+x : x = 0.0, x = pointReader.nextDouble(), 
+distance : distance = distance_func(p1, p2, ), distance = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+angle : angle = pointReader.nextDouble(), 
+y : y = 0.0, y = pointReader.nextDouble(), 
+radius : radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(x2, y2, ), p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: trueL34
-y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = pointReader.nextDouble(), x = 0.0, 
-y : y = pointReader.nextDouble(), y = 0.0, 
 choice : choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(x, y, ), p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(0, 0, ), 
+x2 : x2 = 0.0, x2 = pointReader.nextDouble(), 
 counter2 : counter2 = 0, 
-x2 : x2 = pointReader.nextDouble(), x2 = 0.0, 
-p2 : p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), p2 = new CartesianPoint(x2, y2, ), p2 = new CartesianPoint(0, 0, ), 
-distance : distance = 0.0, distance = distance_func(p1, p2, ), 
-angle : angle = angle + 360, 
+p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), 
+y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
+x : x = 0.0, x = pointReader.nextDouble(), 
+distance : distance = distance_func(p1, p2, ), distance = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+angle : angle = angle + 360, 
+y : y = 0.0, y = pointReader.nextDouble(), 
+radius : radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(x2, y2, ), p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: joinL35
-y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = pointReader.nextDouble(), x = 0.0, 
-y : y = pointReader.nextDouble(), y = 0.0, 
 choice : choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(x, y, ), p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(0, 0, ), 
+x2 : x2 = 0.0, x2 = pointReader.nextDouble(), 
 counter2 : counter2 = 0, 
-x2 : x2 = pointReader.nextDouble(), x2 = 0.0, 
-p2 : p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
-distance : distance = 0.0, distance = distance_func(p1, p2, ), 
-angle : angle = pointReader.nextDouble(), angle = angle + 360, 
+p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), 
+y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
+x : x = 0.0, x = pointReader.nextDouble(), 
+distance : distance = distance_func(p1, p2, ), distance = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+angle : angle = angle + 360, angle = pointReader.nextDouble(), 
+y : y = 0.0, y = pointReader.nextDouble(), 
+radius : radius = pointReader.nextDouble(), 
+p2 : p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: falseL36
-y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = pointReader.nextDouble(), x = 0.0, 
-y : y = pointReader.nextDouble(), y = 0.0, 
 choice : choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(x, y, ), p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(0, 0, ), 
+x2 : x2 = 0.0, x2 = pointReader.nextDouble(), 
 counter2 : counter2 = 0, 
-x2 : x2 = pointReader.nextDouble(), x2 = 0.0, 
-p2 : p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), p2 = new CartesianPoint(x2, y2, ), p2 = new CartesianPoint(0, 0, ), 
-distance : distance = 0.0, distance = distance_func(p1, p2, ), 
-angle : angle = angle + 360, angle = pointReader.nextDouble(), angle = pointReader.nextDouble(), angle = angle + 360, angle = 0.0, 
+p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), 
+y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
+x : x = 0.0, x = pointReader.nextDouble(), 
+distance : distance = distance_func(p1, p2, ), distance = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+y : y = 0.0, y = pointReader.nextDouble(), 
+angle : angle = pointReader.nextDouble(), angle = 0.0, angle = angle + 360, angle = angle + 360, angle = pointReader.nextDouble(), 
+radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(x2, y2, ), p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: joinL33
-y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = pointReader.nextDouble(), x = 0.0, 
-y : y = pointReader.nextDouble(), y = 0.0, 
 choice : choice = choiceReader.nextInt(), choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(x, y, ), p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(0, 0, ), 
+x2 : x2 = 0.0, x2 = pointReader.nextDouble(), 
 counter2 : counter2 = 0, 
-x2 : x2 = pointReader.nextDouble(), x2 = 0.0, 
-p2 : p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), p2 = new CartesianPoint(x2, y2, ), p2 = new CartesianPoint(0, 0, ), 
-distance : distance = 0.0, distance = distance_func(p1, p2, ), 
-angle : angle = angle + 360, angle = pointReader.nextDouble(), angle = pointReader.nextDouble(), angle = angle + 360, angle = 0.0, 
+p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), 
+y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
+x : x = 0.0, x = pointReader.nextDouble(), 
+distance : distance = distance_func(p1, p2, ), distance = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+angle : angle = pointReader.nextDouble(), angle = 0.0, angle = angle + 360, angle = angle + 360, angle = pointReader.nextDouble(), 
+y : y = 0.0, y = pointReader.nextDouble(), 
+radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(x2, y2, ), p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: joinL30
-y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = pointReader.nextDouble(), x = 0.0, 
-y : y = pointReader.nextDouble(), y = 0.0, 
+x2 : x2 = 0.0, x2 = pointReader.nextDouble(), 
 choice : choice = choiceReader.nextInt(), choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(x, y, ), p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(0, 0, ), 
 counter2 : counter2 = 0, 
-x2 : x2 = pointReader.nextDouble(), x2 = 0.0, 
-p2 : p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), p2 = new CartesianPoint(x2, y2, ), p2 = new CartesianPoint(0, 0, ), 
+y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
+p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), 
+x : x = 0.0, x = pointReader.nextDouble(), 
 distance : distance = distance_func(p1, p2, ), 
-angle : angle = angle + 360, angle = pointReader.nextDouble(), angle = pointReader.nextDouble(), angle = angle + 360, angle = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+y : y = 0.0, y = pointReader.nextDouble(), 
+angle : angle = pointReader.nextDouble(), angle = 0.0, angle = angle + 360, angle = angle + 360, angle = pointReader.nextDouble(), 
+radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(x2, y2, ), p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: trueL37
-y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = pointReader.nextDouble(), x = 0.0, 
-y : y = pointReader.nextDouble(), y = 0.0, 
+x2 : x2 = 0.0, x2 = pointReader.nextDouble(), 
 choice : choice = choiceReader.nextInt(), choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(x, y, ), p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(0, 0, ), 
 counter2 : counter2 = 0, 
-x2 : x2 = pointReader.nextDouble(), x2 = 0.0, 
-p2 : p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), p2 = new CartesianPoint(x2, y2, ), p2 = new CartesianPoint(0, 0, ), 
+y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
+p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), 
+x : x = 0.0, x = pointReader.nextDouble(), 
 distance : distance = distance_func(p1, p2, ), 
-angle : angle = angle + 360, angle = pointReader.nextDouble(), angle = pointReader.nextDouble(), angle = angle + 360, angle = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+y : y = 0.0, y = pointReader.nextDouble(), 
+angle : angle = pointReader.nextDouble(), angle = 0.0, angle = angle + 360, angle = angle + 360, angle = pointReader.nextDouble(), 
+radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(x2, y2, ), p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: falseL39
-y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = pointReader.nextDouble(), x = 0.0, 
-y : y = pointReader.nextDouble(), y = 0.0, 
+x2 : x2 = 0.0, x2 = pointReader.nextDouble(), 
 choice : choice = choiceReader.nextInt(), choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(x, y, ), p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(0, 0, ), 
 counter2 : counter2 = 0, 
-x2 : x2 = pointReader.nextDouble(), x2 = 0.0, 
-p2 : p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), p2 = new CartesianPoint(x2, y2, ), p2 = new CartesianPoint(0, 0, ), 
+y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
+p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), 
+x : x = 0.0, x = pointReader.nextDouble(), 
 distance : distance = distance_func(p1, p2, ), 
-angle : angle = angle + 360, angle = pointReader.nextDouble(), angle = pointReader.nextDouble(), angle = angle + 360, angle = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+y : y = 0.0, y = pointReader.nextDouble(), 
+angle : angle = pointReader.nextDouble(), angle = 0.0, angle = angle + 360, angle = angle + 360, angle = pointReader.nextDouble(), 
+radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(x2, y2, ), p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: joinL38
-y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
-radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
-choiceReader : choiceReader = new Scanner(System.in, ), 
-x : x = pointReader.nextDouble(), x = 0.0, 
-y : y = pointReader.nextDouble(), y = 0.0, 
+x2 : x2 = 0.0, x2 = pointReader.nextDouble(), 
 choice : choice = choiceReader.nextInt(), choice = choiceReader.nextInt(), 
-counter1 : counter1 = 0, 
-p1 : p1 = new CartesianPoint(x, y, ), p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(0, 0, ), 
 counter2 : counter2 = 0, 
-x2 : x2 = pointReader.nextDouble(), x2 = 0.0, 
-p2 : p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), p2 = new CartesianPoint(x2, y2, ), p2 = new CartesianPoint(0, 0, ), 
+y2 : y2 = pointReader.nextDouble(), y2 = 0.0, 
+p1 : p1 = new PolarPoint(radius, Math.PI / 180 * angle, ), p1 = new CartesianPoint(x, y, ), p1 = new CartesianPoint(0, 0, ), 
+x : x = 0.0, x = pointReader.nextDouble(), 
 distance : distance = distance_func(p1, p2, ), 
-angle : angle = angle + 360, angle = pointReader.nextDouble(), angle = pointReader.nextDouble(), angle = angle + 360, angle = 0.0, 
 pointReader : pointReader = new Scanner(System.in, ), 
+y : y = 0.0, y = pointReader.nextDouble(), 
+angle : angle = pointReader.nextDouble(), angle = 0.0, angle = angle + 360, angle = angle + 360, angle = pointReader.nextDouble(), 
+radius : radius = pointReader.nextDouble(), radius = 0.0, radius = pointReader.nextDouble(), 
+p2 : p2 = new CartesianPoint(0, 0, ), p2 = new CartesianPoint(x2, y2, ), p2 = new PolarPoint(radius, Math.PI / 180 * angle, ), 
+choiceReader : choiceReader = new Scanner(System.in, ), 
+counter1 : counter1 = 0, 
 
 BLOCK: Startdistance_funcL40
 
 BLOCK: Startdistance_funcL40
 
 BLOCK: BasicL41
-y2 : y2 = p2.yCoordinate(), 
 y1 : y1 = p1.yCoordinate(), 
-x2 : x2 = p2.xCoordinate(), 
 x1 : x1 = p1.xCoordinate(), 
+y2 : y2 = p2.yCoordinate(), 
+x2 : x2 = p2.xCoordinate(), 
 
 BLOCK: StartquadrantL43
 
@@ -1016,119 +1016,119 @@ BLOCK: StarttestPolarPointL58
 BLOCK: StarttestPolarPointL58
 
 BLOCK: BasicL59
-p1_answer : p1_answer = p1.rotate90(), 
-p1 : p1 = new PolarPoint(1, Math.PI / 2, ), 
 p2 : p2 = new PolarPoint(3, 2 * Math.PI, ), 
 p2_answer : p2_answer = p2.rotate90(), 
+p1_answer : p1_answer = p1.rotate90(), 
+p1 : p1 = new PolarPoint(1, Math.PI / 2, ), 
 
 BLOCK: Startconstructor1L61
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
-this.y : this.y = 0.0, 
+this.radius : this.radius = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: Startconstructor1L61
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
-this.y : this.y = 0.0, 
+this.radius : this.radius = 0.0, 
 this.x : this.x = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: BasicL62
-this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
-this.y : this.y = yCoord, 
+this.radius : this.radius = 0.0, 
 this.x : this.x = xCoord, 
+this.y : this.y = yCoord, 
 
 BLOCK: StartxCoordinateL64
-this.angle : this.angle = 0.0, 
-this.x : this.x = 0.0, 
-this.radius : this.radius = 0.0, 
 this.y : this.y = 0.0, 
+this.radius : this.radius = 0.0, 
+this.x : this.x = 0.0, 
+this.angle : this.angle = 0.0, 
 
 BLOCK: StartxCoordinateL64
-this.angle : this.angle = 0.0, 
-this.x : this.x = 0.0, 
-this.radius : this.radius = 0.0, 
 this.y : this.y = 0.0, 
+this.radius : this.radius = 0.0, 
+this.x : this.x = 0.0, 
+this.angle : this.angle = 0.0, 
 
 BLOCK: BasicL65
-this.angle : this.angle = 0.0, 
-this.x : this.x = 0.0, 
-this.radius : this.radius = 0.0, 
-this.y : this.y = 0.0, 
-
-BLOCK: StartyCoordinateL67
 this.y : this.y = 0.0, 
 this.radius : this.radius = 0.0, 
 this.x : this.x = 0.0, 
 this.angle : this.angle = 0.0, 
 
 BLOCK: StartyCoordinateL67
-this.y : this.y = 0.0, 
-this.radius : this.radius = 0.0, 
 this.x : this.x = 0.0, 
+this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.y : this.y = 0.0, 
+
+BLOCK: StartyCoordinateL67
+this.x : this.x = 0.0, 
+this.radius : this.radius = 0.0, 
+this.angle : this.angle = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: BasicL68
-this.y : this.y = 0.0, 
-this.radius : this.radius = 0.0, 
 this.x : this.x = 0.0, 
+this.radius : this.radius = 0.0, 
 this.angle : this.angle = 0.0, 
+this.y : this.y = 0.0, 
 
 BLOCK: StartradiusL70
+this.angle : this.angle = 0.0, 
+this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
 this.radius : this.radius = 0.0, 
-this.y : this.y = 0.0, 
-this.angle : this.angle = 0.0, 
 
 BLOCK: StartradiusL70
+this.angle : this.angle = 0.0, 
+this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
 this.radius : this.radius = 0.0, 
-this.y : this.y = 0.0, 
-this.angle : this.angle = 0.0, 
 
 BLOCK: BasicL71
+this.angle : this.angle = 0.0, 
+this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
 this.radius : this.radius = Math.sqrt(this.x * this.x + this.y * this.y, ), 
-this.y : this.y = 0.0, 
-this.angle : this.angle = 0.0, 
 
 BLOCK: StartangleL73
-this.angle : this.angle = 0.0, 
-this.x : this.x = 0.0, 
-this.radius : this.radius = 0.0, 
 this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: StartangleL73
-this.angle : this.angle = 0.0, 
-this.x : this.x = 0.0, 
-this.radius : this.radius = 0.0, 
 this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
+this.angle : this.angle = 0.0, 
+this.radius : this.radius = 0.0, 
 
 BLOCK: BasicL74
+this.y : this.y = 0.0, 
+this.x : this.x = 0.0, 
 this.angle : this.angle = Math.atan2(this.y, this.x, ), 
+this.radius : this.radius = 0.0, 
+
+BLOCK: Startrotate90L76
+this.angle : this.angle = 0.0, 
 this.x : this.x = 0.0, 
 this.radius : this.radius = 0.0, 
 this.y : this.y = 0.0, 
 
 BLOCK: Startrotate90L76
 this.angle : this.angle = 0.0, 
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
 this.radius : this.radius = 0.0, 
-
-BLOCK: Startrotate90L76
-this.angle : this.angle = 0.0, 
 this.y : this.y = 0.0, 
-this.x : this.x = 0.0, 
-this.radius : this.radius = 0.0, 
 
 BLOCK: BasicL77
 this.angle : this.angle = 0.0, 
-this.y : this.y = 0.0, 
 this.x : this.x = 0.0, 
 this.radius : this.radius = 0.0, 
 rotatedPoint : rotatedPoint = new CartesianPoint(-this.y, this.x, ), 
+this.y : this.y = 0.0, 
 
 BLOCK: StarttestCartesianPointL79
 
@@ -1140,14 +1140,115 @@ p1 : p1 = new CartesianPoint(2, 4, ),
 p2_answer : p2_answer = p2.rotate90(), 
 p2 : p2 = new CartesianPoint(3, 7, ), 
 
-Unfiltered: 0
-Filtered: 0
+Unfiltered: 1573
+Filtered: 5
+
+
+Duplicate found: 102_Code/102_hw1/dir19/PointRelation.java lines [10, 65] and 102_Code/102_hw1/dir19/PointRelation.java lines [10, 66]
+102_Code/102_hw1/dir19/PointRelation.java ----------
+10 :	x = 0.0
+11 :	y = 0.0
+12 :	radius = 0.0
+13 :	angle = 0.0
+14 :	distance = 0.0
+16 :	p1 = new CartesianPoint(0, 0, )
+27 :	x = pointReader.nextDouble()
+30 :	p1 = new CartesianPoint(x, y, )
+39 :	angle = angle + 360
+54 :	x2 = pointReader.nextDouble()
+65 :	angle < 0
+102_Code/102_hw1/dir19/PointRelation.java ----------
+10 :	x2 = 0.0
+14 :	distance = 0.0
+10 :	x = 0.0
+11 :	y2 = 0.0
+13 :	angle = 0.0
+17 :	p2 = new CartesianPoint(0, 0, )
+54 :	x2 = pointReader.nextDouble()
+57 :	p2 = new CartesianPoint(x2, y2, )
+66 :	angle = angle + 360
+35 :	radius = pointReader.nextDouble()
+38 :	angle < 0
+===========================
+
+
+
+Duplicate found: 102_Code/102_hw1/dir19/PointRelation.java lines [10, 65] and 102_Code/102_hw1/dir19/PointRelation.java lines [10, 68]
+102_Code/102_hw1/dir19/PointRelation.java ----------
+10 :	x = 0.0
+11 :	y = 0.0
+12 :	radius = 0.0
+13 :	angle = 0.0
+14 :	distance = 0.0
+16 :	p1 = new CartesianPoint(0, 0, )
+39 :	angle = angle + 360
+41 :	p1 = new PolarPoint(radius, Math.PI / 180 * angle, )
+54 :	x2 = pointReader.nextDouble()
+65 :	angle < 0
+102_Code/102_hw1/dir19/PointRelation.java ----------
+13 :	angle = 0.0
+10 :	x = 0.0
+11 :	y2 = 0.0
+14 :	distance = 0.0
+10 :	x2 = 0.0
+17 :	p2 = new CartesianPoint(0, 0, )
+66 :	angle = angle + 360
+68 :	p2 = new PolarPoint(radius, Math.PI / 180 * angle, )
+35 :	radius = pointReader.nextDouble()
+38 :	angle < 0
+===========================
+
+
+
+Duplicate found: 102_Code/102_hw1/dir19/PointRelation.java lines [88, 94] and 102_Code/102_hw1/dir19/PointRelation.java lines [10, 35]
+102_Code/102_hw1/dir19/PointRelation.java ----------
+88 :	x2 = 0.0
+89 :	y2 = 0.0
+92 :	y1 = p1.yCoordinate()
+94 :	y2 = p2.yCoordinate()
+102_Code/102_hw1/dir19/PointRelation.java ----------
+13 :	angle = 0.0
+10 :	x = 0.0
+27 :	x = pointReader.nextDouble()
+35 :	radius = pointReader.nextDouble()
+===========================
+
+
+
+Duplicate found: 102_Code/102_hw1/dir19/PointRelation.java lines [88, 94] and 102_Code/102_hw1/dir19/PointRelation.java lines [10, 54]
+102_Code/102_hw1/dir19/PointRelation.java ----------
+88 :	x2 = 0.0
+89 :	y2 = 0.0
+92 :	y1 = p1.yCoordinate()
+94 :	y2 = p2.yCoordinate()
+102_Code/102_hw1/dir19/PointRelation.java ----------
+13 :	angle = 0.0
+10 :	x = 0.0
+27 :	x = pointReader.nextDouble()
+54 :	x2 = pointReader.nextDouble()
+===========================
+
+
+
+Duplicate found: 102_Code/102_hw1/dir19/PointRelation.java lines [88, 94] and 102_Code/102_hw1/dir19/PointRelation.java lines [10, 64]
+102_Code/102_hw1/dir19/PointRelation.java ----------
+88 :	x2 = 0.0
+89 :	y2 = 0.0
+92 :	y1 = p1.yCoordinate()
+94 :	y2 = p2.yCoordinate()
+102_Code/102_hw1/dir19/PointRelation.java ----------
+10 :	x2 = 0.0
+13 :	angle = 0.0
+64 :	angle = pointReader.nextDouble()
+62 :	radius = pointReader.nextDouble()
+===========================
+
 
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 9.268 s
-[INFO] Finished at: 2019-05-01T17:12:12-07:00
-[INFO] Final Memory: 34M/1424M
+[INFO] Total time: 31.434 s
+[INFO] Finished at: 2019-05-06T19:53:00-07:00
+[INFO] Final Memory: 21M/1527M
 [INFO] ------------------------------------------------------------------------

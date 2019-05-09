@@ -43,118 +43,118 @@ this.rht : this.rht = null,
 this.lft : this.lft = null, 
 
 BLOCK: StartcheckDoubleConstantExpressionL9
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
+this.a : this.a = new DoubleConstantExpression(1.0, ), 
 this.binding : this.binding = new VariableBindings(), 
 this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
 this.b : this.b = new DoubleConstantExpression(1.2, ), 
-this.a : this.a = new DoubleConstantExpression(1.0, ), 
 
 BLOCK: BasicL10
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
+this.a : this.a = new DoubleConstantExpression(1.0, ), 
 this.binding : this.binding = new VariableBindings(), 
 this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
 this.b : this.b = new DoubleConstantExpression(1.2, ), 
-this.a : this.a = new DoubleConstantExpression(1.0, ), 
 
 BLOCK: StartcheckNegationExpressionL12
 this.d : this.d = new DoubleConstantExpression(-8.0, ), 
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
 this.b : this.b = new DoubleConstantExpression(1.2, ), 
 this.binding : this.binding = new VariableBindings(), 
 this.a : this.a = new DoubleConstantExpression(1.0, ), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
 
 BLOCK: BasicL13
-this.d : this.d = new DoubleConstantExpression(-8.0, ), 
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
-this.binding : this.binding = new VariableBindings(), 
-this.a : this.a = new DoubleConstantExpression(1.0, ), 
-e : e = new NegationExpression(this.a, ), 
-h : h = new NegationExpression(this.d, ), 
 f : f = new NegationExpression(this.b, ), 
 g : g = new NegationExpression(this.c, ), 
+this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
+this.binding : this.binding = new VariableBindings(), 
+e : e = new NegationExpression(this.a, ), 
+this.a : this.a = new DoubleConstantExpression(1.0, ), 
+h : h = new NegationExpression(this.d, ), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
 
 BLOCK: StartcheckAddExpressionL15
 this.a : this.a = new DoubleConstantExpression(1.0, ), 
 this.c : this.c = new DoubleConstantExpression(2.2, ), 
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
 this.d : this.d = new DoubleConstantExpression(-8.0, ), 
 this.binding : this.binding = new VariableBindings(), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
 
 BLOCK: BasicL16
 g : g = new AddExpression(this.a, this.d, ), 
 this.a : this.a = new DoubleConstantExpression(1.0, ), 
 this.c : this.c = new DoubleConstantExpression(2.2, ), 
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
 f : f = new AddExpression(this.c, this.d, ), 
-this.d : this.d = new DoubleConstantExpression(-8.0, ), 
 e : e = new AddExpression(this.a, this.b, ), 
+this.d : this.d = new DoubleConstantExpression(-8.0, ), 
 this.binding : this.binding = new VariableBindings(), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
 
 BLOCK: StartcheckSubtractExpressionL18
 this.a : this.a = new DoubleConstantExpression(1.0, ), 
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
+this.d : this.d = new DoubleConstantExpression(-8.0, ), 
 this.b : this.b = new DoubleConstantExpression(1.2, ), 
 this.binding : this.binding = new VariableBindings(), 
-this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
 
 BLOCK: BasicL19
-this.a : this.a = new DoubleConstantExpression(1.0, ), 
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
-e : e = new SubtractExpression(this.a, this.b, ), 
 g : g = new SubtractExpression(this.a, this.d, ), 
+this.a : this.a = new DoubleConstantExpression(1.0, ), 
 f : f = new SubtractExpression(this.c, this.d, ), 
-this.binding : this.binding = new VariableBindings(), 
 this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+e : e = new SubtractExpression(this.a, this.b, ), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
+this.binding : this.binding = new VariableBindings(), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
 
 BLOCK: StartcheckMultiplyExpressionL21
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
-this.binding : this.binding = new VariableBindings(), 
 this.a : this.a = new DoubleConstantExpression(1.0, ), 
+this.binding : this.binding = new VariableBindings(), 
 this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
 this.c : this.c = new DoubleConstantExpression(2.2, ), 
 
 BLOCK: BasicL22
-g : g = new MultiplyExpression(this.a, this.d, ), 
-f : f = new MultiplyExpression(this.c, this.d, ), 
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
-this.binding : this.binding = new VariableBindings(), 
 this.a : this.a = new DoubleConstantExpression(1.0, ), 
+this.binding : this.binding = new VariableBindings(), 
 this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
+f : f = new MultiplyExpression(this.c, this.d, ), 
 e : e = new MultiplyExpression(this.a, this.b, ), 
 this.c : this.c = new DoubleConstantExpression(2.2, ), 
+g : g = new MultiplyExpression(this.a, this.d, ), 
 
 BLOCK: StartcheckDivideExpressionL24
 this.a : this.a = new DoubleConstantExpression(1.0, ), 
-this.d : this.d = new DoubleConstantExpression(-8.0, ), 
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
 this.binding : this.binding = new VariableBindings(), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
+this.d : this.d = new DoubleConstantExpression(-8.0, ), 
 
 BLOCK: BasicL25
-f : f = new DivideExpression(this.c, this.d, ), 
-e : e = new DivideExpression(this.a, this.b, ), 
-this.a : this.a = new DoubleConstantExpression(1.0, ), 
 g : g = new DivideExpression(this.a, this.d, ), 
-this.d : this.d = new DoubleConstantExpression(-8.0, ), 
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
+f : f = new DivideExpression(this.c, this.d, ), 
+this.a : this.a = new DoubleConstantExpression(1.0, ), 
 this.binding : this.binding = new VariableBindings(), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
+e : e = new DivideExpression(this.a, this.b, ), 
+this.d : this.d = new DoubleConstantExpression(-8.0, ), 
 
 BLOCK: StartcheckBindingsL27
-this.d : this.d = new DoubleConstantExpression(-8.0, ), 
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
-this.binding : this.binding = new VariableBindings(), 
-this.a : this.a = new DoubleConstantExpression(1.0, ), 
 this.c : this.c = new DoubleConstantExpression(2.2, ), 
+this.a : this.a = new DoubleConstantExpression(1.0, ), 
+this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.binding : this.binding = new VariableBindings(), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
 
 BLOCK: BasicL28
-this.d : this.d = new DoubleConstantExpression(-8.0, ), 
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
-this.binding : this.binding = new VariableBindings(), 
-this.a : this.a = new DoubleConstantExpression(1.0, ), 
 this.c : this.c = new DoubleConstantExpression(2.2, ), 
+this.a : this.a = new DoubleConstantExpression(1.0, ), 
+this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.binding : this.binding = new VariableBindings(), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
 
 BLOCK: BasicL30
 
@@ -163,76 +163,76 @@ BLOCK: BasicL31
 BLOCK: BasicL32
 
 BLOCK: StartcheckAssignmentL33
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
-this.d : this.d = new DoubleConstantExpression(-8.0, ), 
-this.binding : this.binding = new VariableBindings(), 
 this.a : this.a = new DoubleConstantExpression(1.0, ), 
+this.binding : this.binding = new VariableBindings(), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
+this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
 
 BLOCK: BasicL34
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
-e : e = new Assignment("h", this.a, ), 
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
-this.d : this.d = new DoubleConstantExpression(-8.0, ), 
-f : f = new Assignment("i", this.b, ), 
 g : g = new Assignment("j", this.c, ), 
-this.binding : this.binding = new VariableBindings(), 
 this.a : this.a = new DoubleConstantExpression(1.0, ), 
+e : e = new Assignment("h", this.a, ), 
+f : f = new Assignment("i", this.b, ), 
+this.binding : this.binding = new VariableBindings(), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
+this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
 
 BLOCK: StartcheckIdentifierExpressionL36
-this.binding : this.binding = new VariableBindings(), 
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
-this.a : this.a = new DoubleConstantExpression(1.0, ), 
 this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.binding : this.binding = new VariableBindings(), 
+this.a : this.a = new DoubleConstantExpression(1.0, ), 
 this.b : this.b = new DoubleConstantExpression(1.2, ), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
 
 BLOCK: BasicL37
-this.binding : this.binding = new VariableBindings(), 
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
-f : f = new IdentifierExpression("b", ), 
-this.a : this.a = new DoubleConstantExpression(1.0, ), 
-e : e = new IdentifierExpression("a", ), 
 g : g = new IdentifierExpression("c", ), 
 this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.binding : this.binding = new VariableBindings(), 
+this.a : this.a = new DoubleConstantExpression(1.0, ), 
 this.b : this.b = new DoubleConstantExpression(1.2, ), 
+f : f = new IdentifierExpression("b", ), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
+e : e = new IdentifierExpression("a", ), 
 
 BLOCK: StartmainL39
-this.a : this.a = new DoubleConstantExpression(1.0, ), 
-this.binding : this.binding = new VariableBindings(), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
 this.c : this.c = new DoubleConstantExpression(2.2, ), 
 this.d : this.d = new DoubleConstantExpression(-8.0, ), 
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
+this.a : this.a = new DoubleConstantExpression(1.0, ), 
+this.binding : this.binding = new VariableBindings(), 
 
 BLOCK: BasicL40
-this.a : this.a = new DoubleConstantExpression(1.0, ), 
-this.binding : this.binding = new VariableBindings(), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
 this.c : this.c = new DoubleConstantExpression(2.2, ), 
 this.d : this.d = new DoubleConstantExpression(-8.0, ), 
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
+this.a : this.a = new DoubleConstantExpression(1.0, ), 
+this.binding : this.binding = new VariableBindings(), 
 
 BLOCK: Startconstructor1L42
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL43
-this.lft : this.lft = lft, 
 this.rht : this.rht = rht, 
+this.lft : this.lft = lft, 
 
 BLOCK: StartevaluateL45
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL46
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StarttoStringL48
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL49
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: Startconstructor1L51
 this.bindings : this.bindings = null, 
@@ -257,29 +257,29 @@ i : i = 0,
 this.bindings : this.bindings = null, 
 
 BLOCK: ForCondL61
-@temp1 : @temp1 = i, 
-i : i = 0, i = i + 1, 
+i : i = i + 1, i = 0, 
 this.bindings : this.bindings = null, 
+@temp1 : @temp1 = i, 
 
 BLOCK: LoopL62
-@temp1 : @temp1 = i, 
-i : i = 0, i = i + 1, 
+i : i = i + 1, i = 0, 
 this.bindings : this.bindings = null, 
+@temp1 : @temp1 = i, 
 
 BLOCK: BasicL63
-@temp1 : @temp1 = i, 
-i : i = 0, i = i + 1, 
+i : i = i + 1, i = 0, 
 this.bindings : this.bindings = null, 
+@temp1 : @temp1 = i, 
 
 BLOCK: trueL64
-@temp1 : @temp1 = i, 
-i : i = 0, i = i + 1, 
+i : i = i + 1, i = 0, 
 this.bindings : this.bindings = null, 
+@temp1 : @temp1 = i, 
 
 BLOCK: joinL65
-@temp1 : @temp1 = i, 
 i : i = i + 1, 
 this.bindings : this.bindings = null, 
+@temp1 : @temp1 = i, 
 
 BLOCK: Startconstructor1L66
 this.lft : this.lft = null, 
@@ -290,12 +290,12 @@ this.lft : this.lft = lft,
 this.rht : this.rht = rht, 
 
 BLOCK: StartevaluateL69
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL70
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: StarttoStringL72
 this.rht : this.rht = null, 
@@ -332,12 +332,12 @@ this.lft : this.lft = lft,
 this.rht : this.rht = rht, 
 
 BLOCK: StartevaluateL87
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL88
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: StarttoStringL90
 this.lft : this.lft = null, 
@@ -348,21 +348,21 @@ this.lft : this.lft = null,
 this.rht : this.rht = null, 
 
 BLOCK: Startconstructor1L93
-this.id : this.id = null, 
 this.e : this.e = null, 
+this.id : this.id = null, 
 
 BLOCK: BasicL94
-this.id : this.id = id, 
 this.e : this.e = e, 
+this.id : this.id = id, 
 
 BLOCK: StartevaluateL96
 this.id : this.id = null, 
 this.e : this.e = null, 
 
 BLOCK: BasicL97
-value : value = this.e.evaluate(binding, ), 
 this.id : this.id = null, 
 this.e : this.e = null, 
+value : value = this.e.evaluate(binding, ), 
 
 BLOCK: StarttoStringL99
 this.e : this.e = null, 
@@ -469,167 +469,167 @@ this.rht : this.rht = null,
 this.lft : this.lft = null, 
 
 BLOCK: StartcheckDoubleConstantExpressionL9
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
+this.a : this.a = new DoubleConstantExpression(1.0, ), 
 this.binding : this.binding = new VariableBindings(), 
 this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
 this.b : this.b = new DoubleConstantExpression(1.2, ), 
-this.a : this.a = new DoubleConstantExpression(1.0, ), 
 
 BLOCK: StartcheckDoubleConstantExpressionL9
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
+this.a : this.a = new DoubleConstantExpression(1.0, ), 
 this.binding : this.binding = new VariableBindings(), 
 this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
 this.b : this.b = new DoubleConstantExpression(1.2, ), 
-this.a : this.a = new DoubleConstantExpression(1.0, ), 
 
 BLOCK: BasicL10
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
+this.a : this.a = new DoubleConstantExpression(1.0, ), 
 this.binding : this.binding = new VariableBindings(), 
 this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
 this.b : this.b = new DoubleConstantExpression(1.2, ), 
-this.a : this.a = new DoubleConstantExpression(1.0, ), 
 
 BLOCK: StartcheckNegationExpressionL12
 this.d : this.d = new DoubleConstantExpression(-8.0, ), 
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
 this.b : this.b = new DoubleConstantExpression(1.2, ), 
 this.binding : this.binding = new VariableBindings(), 
 this.a : this.a = new DoubleConstantExpression(1.0, ), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
 
 BLOCK: StartcheckNegationExpressionL12
 this.d : this.d = new DoubleConstantExpression(-8.0, ), 
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
 this.b : this.b = new DoubleConstantExpression(1.2, ), 
 this.binding : this.binding = new VariableBindings(), 
 this.a : this.a = new DoubleConstantExpression(1.0, ), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
 
 BLOCK: BasicL13
-this.d : this.d = new DoubleConstantExpression(-8.0, ), 
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
-this.binding : this.binding = new VariableBindings(), 
-this.a : this.a = new DoubleConstantExpression(1.0, ), 
-e : e = new NegationExpression(this.a, ), 
-h : h = new NegationExpression(this.d, ), 
 f : f = new NegationExpression(this.b, ), 
 g : g = new NegationExpression(this.c, ), 
+this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
+this.binding : this.binding = new VariableBindings(), 
+e : e = new NegationExpression(this.a, ), 
+this.a : this.a = new DoubleConstantExpression(1.0, ), 
+h : h = new NegationExpression(this.d, ), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
 
 BLOCK: StartcheckAddExpressionL15
 this.a : this.a = new DoubleConstantExpression(1.0, ), 
 this.c : this.c = new DoubleConstantExpression(2.2, ), 
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
 this.d : this.d = new DoubleConstantExpression(-8.0, ), 
 this.binding : this.binding = new VariableBindings(), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
 
 BLOCK: StartcheckAddExpressionL15
 this.a : this.a = new DoubleConstantExpression(1.0, ), 
 this.c : this.c = new DoubleConstantExpression(2.2, ), 
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
 this.d : this.d = new DoubleConstantExpression(-8.0, ), 
 this.binding : this.binding = new VariableBindings(), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
 
 BLOCK: BasicL16
 g : g = new AddExpression(this.a, this.d, ), 
 this.a : this.a = new DoubleConstantExpression(1.0, ), 
 this.c : this.c = new DoubleConstantExpression(2.2, ), 
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
 f : f = new AddExpression(this.c, this.d, ), 
-this.d : this.d = new DoubleConstantExpression(-8.0, ), 
 e : e = new AddExpression(this.a, this.b, ), 
+this.d : this.d = new DoubleConstantExpression(-8.0, ), 
 this.binding : this.binding = new VariableBindings(), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
 
 BLOCK: StartcheckSubtractExpressionL18
 this.a : this.a = new DoubleConstantExpression(1.0, ), 
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
+this.d : this.d = new DoubleConstantExpression(-8.0, ), 
 this.b : this.b = new DoubleConstantExpression(1.2, ), 
 this.binding : this.binding = new VariableBindings(), 
-this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
 
 BLOCK: StartcheckSubtractExpressionL18
 this.a : this.a = new DoubleConstantExpression(1.0, ), 
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
+this.d : this.d = new DoubleConstantExpression(-8.0, ), 
 this.b : this.b = new DoubleConstantExpression(1.2, ), 
 this.binding : this.binding = new VariableBindings(), 
-this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
 
 BLOCK: BasicL19
-this.a : this.a = new DoubleConstantExpression(1.0, ), 
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
-e : e = new SubtractExpression(this.a, this.b, ), 
 g : g = new SubtractExpression(this.a, this.d, ), 
+this.a : this.a = new DoubleConstantExpression(1.0, ), 
 f : f = new SubtractExpression(this.c, this.d, ), 
-this.binding : this.binding = new VariableBindings(), 
 this.d : this.d = new DoubleConstantExpression(-8.0, ), 
-
-BLOCK: StartcheckMultiplyExpressionL21
+e : e = new SubtractExpression(this.a, this.b, ), 
 this.b : this.b = new DoubleConstantExpression(1.2, ), 
 this.binding : this.binding = new VariableBindings(), 
-this.a : this.a = new DoubleConstantExpression(1.0, ), 
-this.d : this.d = new DoubleConstantExpression(-8.0, ), 
 this.c : this.c = new DoubleConstantExpression(2.2, ), 
 
 BLOCK: StartcheckMultiplyExpressionL21
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
-this.binding : this.binding = new VariableBindings(), 
 this.a : this.a = new DoubleConstantExpression(1.0, ), 
+this.binding : this.binding = new VariableBindings(), 
 this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
+
+BLOCK: StartcheckMultiplyExpressionL21
+this.a : this.a = new DoubleConstantExpression(1.0, ), 
+this.binding : this.binding = new VariableBindings(), 
+this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
 this.c : this.c = new DoubleConstantExpression(2.2, ), 
 
 BLOCK: BasicL22
-g : g = new MultiplyExpression(this.a, this.d, ), 
-f : f = new MultiplyExpression(this.c, this.d, ), 
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
-this.binding : this.binding = new VariableBindings(), 
 this.a : this.a = new DoubleConstantExpression(1.0, ), 
+this.binding : this.binding = new VariableBindings(), 
 this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
+f : f = new MultiplyExpression(this.c, this.d, ), 
 e : e = new MultiplyExpression(this.a, this.b, ), 
 this.c : this.c = new DoubleConstantExpression(2.2, ), 
+g : g = new MultiplyExpression(this.a, this.d, ), 
 
 BLOCK: StartcheckDivideExpressionL24
 this.a : this.a = new DoubleConstantExpression(1.0, ), 
-this.d : this.d = new DoubleConstantExpression(-8.0, ), 
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
 this.binding : this.binding = new VariableBindings(), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
+this.d : this.d = new DoubleConstantExpression(-8.0, ), 
 
 BLOCK: StartcheckDivideExpressionL24
 this.a : this.a = new DoubleConstantExpression(1.0, ), 
-this.d : this.d = new DoubleConstantExpression(-8.0, ), 
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
 this.binding : this.binding = new VariableBindings(), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
+this.d : this.d = new DoubleConstantExpression(-8.0, ), 
 
 BLOCK: BasicL25
-f : f = new DivideExpression(this.c, this.d, ), 
-e : e = new DivideExpression(this.a, this.b, ), 
-this.a : this.a = new DoubleConstantExpression(1.0, ), 
 g : g = new DivideExpression(this.a, this.d, ), 
-this.d : this.d = new DoubleConstantExpression(-8.0, ), 
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
+f : f = new DivideExpression(this.c, this.d, ), 
+this.a : this.a = new DoubleConstantExpression(1.0, ), 
 this.binding : this.binding = new VariableBindings(), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
+e : e = new DivideExpression(this.a, this.b, ), 
+this.d : this.d = new DoubleConstantExpression(-8.0, ), 
 
 BLOCK: StartcheckBindingsL27
-this.d : this.d = new DoubleConstantExpression(-8.0, ), 
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
-this.binding : this.binding = new VariableBindings(), 
-this.a : this.a = new DoubleConstantExpression(1.0, ), 
 this.c : this.c = new DoubleConstantExpression(2.2, ), 
+this.a : this.a = new DoubleConstantExpression(1.0, ), 
+this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.binding : this.binding = new VariableBindings(), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
 
 BLOCK: StartcheckBindingsL27
-this.d : this.d = new DoubleConstantExpression(-8.0, ), 
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
-this.binding : this.binding = new VariableBindings(), 
-this.a : this.a = new DoubleConstantExpression(1.0, ), 
 this.c : this.c = new DoubleConstantExpression(2.2, ), 
+this.a : this.a = new DoubleConstantExpression(1.0, ), 
+this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.binding : this.binding = new VariableBindings(), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
 
 BLOCK: BasicL28
-this.d : this.d = new DoubleConstantExpression(-8.0, ), 
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
-this.binding : this.binding = new VariableBindings(), 
-this.a : this.a = new DoubleConstantExpression(1.0, ), 
 this.c : this.c = new DoubleConstantExpression(2.2, ), 
+this.a : this.a = new DoubleConstantExpression(1.0, ), 
+this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.binding : this.binding = new VariableBindings(), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
 
 BLOCK: BasicL30
 
@@ -638,109 +638,109 @@ BLOCK: BasicL31
 BLOCK: BasicL32
 
 BLOCK: StartcheckAssignmentL33
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
-this.d : this.d = new DoubleConstantExpression(-8.0, ), 
-this.binding : this.binding = new VariableBindings(), 
 this.a : this.a = new DoubleConstantExpression(1.0, ), 
+this.binding : this.binding = new VariableBindings(), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
+this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
 
 BLOCK: StartcheckAssignmentL33
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
-this.d : this.d = new DoubleConstantExpression(-8.0, ), 
-this.binding : this.binding = new VariableBindings(), 
 this.a : this.a = new DoubleConstantExpression(1.0, ), 
+this.binding : this.binding = new VariableBindings(), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
+this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
 
 BLOCK: BasicL34
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
-e : e = new Assignment("h", this.a, ), 
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
-this.d : this.d = new DoubleConstantExpression(-8.0, ), 
-f : f = new Assignment("i", this.b, ), 
 g : g = new Assignment("j", this.c, ), 
-this.binding : this.binding = new VariableBindings(), 
 this.a : this.a = new DoubleConstantExpression(1.0, ), 
+e : e = new Assignment("h", this.a, ), 
+f : f = new Assignment("i", this.b, ), 
+this.binding : this.binding = new VariableBindings(), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
+this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
 
 BLOCK: StartcheckIdentifierExpressionL36
-this.binding : this.binding = new VariableBindings(), 
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
-this.a : this.a = new DoubleConstantExpression(1.0, ), 
 this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.binding : this.binding = new VariableBindings(), 
+this.a : this.a = new DoubleConstantExpression(1.0, ), 
 this.b : this.b = new DoubleConstantExpression(1.2, ), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
 
 BLOCK: StartcheckIdentifierExpressionL36
-this.binding : this.binding = new VariableBindings(), 
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
-this.a : this.a = new DoubleConstantExpression(1.0, ), 
 this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.binding : this.binding = new VariableBindings(), 
+this.a : this.a = new DoubleConstantExpression(1.0, ), 
 this.b : this.b = new DoubleConstantExpression(1.2, ), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
 
 BLOCK: BasicL37
-this.binding : this.binding = new VariableBindings(), 
-this.c : this.c = new DoubleConstantExpression(2.2, ), 
-f : f = new IdentifierExpression("b", ), 
-this.a : this.a = new DoubleConstantExpression(1.0, ), 
-e : e = new IdentifierExpression("a", ), 
 g : g = new IdentifierExpression("c", ), 
 this.d : this.d = new DoubleConstantExpression(-8.0, ), 
+this.binding : this.binding = new VariableBindings(), 
+this.a : this.a = new DoubleConstantExpression(1.0, ), 
 this.b : this.b = new DoubleConstantExpression(1.2, ), 
+f : f = new IdentifierExpression("b", ), 
+this.c : this.c = new DoubleConstantExpression(2.2, ), 
+e : e = new IdentifierExpression("a", ), 
 
 BLOCK: StartmainL39
-this.a : this.a = new DoubleConstantExpression(1.0, ), 
-this.binding : this.binding = new VariableBindings(), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
 this.c : this.c = new DoubleConstantExpression(2.2, ), 
 this.d : this.d = new DoubleConstantExpression(-8.0, ), 
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
+this.a : this.a = new DoubleConstantExpression(1.0, ), 
+this.binding : this.binding = new VariableBindings(), 
 
 BLOCK: StartmainL39
-this.a : this.a = new DoubleConstantExpression(1.0, ), 
-this.binding : this.binding = new VariableBindings(), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
 this.c : this.c = new DoubleConstantExpression(2.2, ), 
 this.d : this.d = new DoubleConstantExpression(-8.0, ), 
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
+this.a : this.a = new DoubleConstantExpression(1.0, ), 
+this.binding : this.binding = new VariableBindings(), 
 
 BLOCK: BasicL40
-this.a : this.a = new DoubleConstantExpression(1.0, ), 
-this.binding : this.binding = new VariableBindings(), 
+this.b : this.b = new DoubleConstantExpression(1.2, ), 
 this.c : this.c = new DoubleConstantExpression(2.2, ), 
 this.d : this.d = new DoubleConstantExpression(-8.0, ), 
-this.b : this.b = new DoubleConstantExpression(1.2, ), 
+this.a : this.a = new DoubleConstantExpression(1.0, ), 
+this.binding : this.binding = new VariableBindings(), 
 
 BLOCK: Startconstructor1L42
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: Startconstructor1L42
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL43
-this.lft : this.lft = lft, 
 this.rht : this.rht = rht, 
+this.lft : this.lft = lft, 
 
 BLOCK: StartevaluateL45
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StartevaluateL45
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL46
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StarttoStringL48
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StarttoStringL48
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL49
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: Startconstructor1L51
 this.bindings : this.bindings = null, 
@@ -774,29 +774,29 @@ i : i = 0,
 this.bindings : this.bindings = null, 
 
 BLOCK: ForCondL61
-@temp1 : @temp1 = i, 
-i : i = 0, i = i + 1, 
+i : i = i + 1, i = 0, 
 this.bindings : this.bindings = null, 
+@temp1 : @temp1 = i, 
 
 BLOCK: LoopL62
-@temp1 : @temp1 = i, 
-i : i = 0, i = i + 1, 
+i : i = i + 1, i = 0, 
 this.bindings : this.bindings = null, 
+@temp1 : @temp1 = i, 
 
 BLOCK: BasicL63
-@temp1 : @temp1 = i, 
-i : i = 0, i = i + 1, 
+i : i = i + 1, i = 0, 
 this.bindings : this.bindings = null, 
+@temp1 : @temp1 = i, 
 
 BLOCK: trueL64
-@temp1 : @temp1 = i, 
-i : i = 0, i = i + 1, 
+i : i = i + 1, i = 0, 
 this.bindings : this.bindings = null, 
+@temp1 : @temp1 = i, 
 
 BLOCK: joinL65
-@temp1 : @temp1 = i, 
 i : i = i + 1, 
 this.bindings : this.bindings = null, 
+@temp1 : @temp1 = i, 
 
 BLOCK: Startconstructor1L66
 this.lft : this.lft = null, 
@@ -811,16 +811,16 @@ this.lft : this.lft = lft,
 this.rht : this.rht = rht, 
 
 BLOCK: StartevaluateL69
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: StartevaluateL69
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL70
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: StarttoStringL72
 this.rht : this.rht = null, 
@@ -874,16 +874,16 @@ this.lft : this.lft = lft,
 this.rht : this.rht = rht, 
 
 BLOCK: StartevaluateL87
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: StartevaluateL87
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL88
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: StarttoStringL90
 this.lft : this.lft = null, 
@@ -898,16 +898,16 @@ this.lft : this.lft = null,
 this.rht : this.rht = null, 
 
 BLOCK: Startconstructor1L93
-this.id : this.id = null, 
 this.e : this.e = null, 
+this.id : this.id = null, 
 
 BLOCK: Startconstructor1L93
-this.id : this.id = null, 
 this.e : this.e = null, 
+this.id : this.id = null, 
 
 BLOCK: BasicL94
-this.id : this.id = id, 
 this.e : this.e = e, 
+this.id : this.id = id, 
 
 BLOCK: StartevaluateL96
 this.id : this.id = null, 
@@ -918,9 +918,9 @@ this.id : this.id = null,
 this.e : this.e = null, 
 
 BLOCK: BasicL97
-value : value = this.e.evaluate(binding, ), 
 this.id : this.id = null, 
 this.e : this.e = null, 
+value : value = this.e.evaluate(binding, ), 
 
 BLOCK: StarttoStringL99
 this.e : this.e = null, 
@@ -1024,7 +1024,7 @@ this.value : this.value = 0.0,
 BLOCK: BasicL127
 this.value : this.value = 0.0, 
 
-Unfiltered: 390
+Unfiltered: 318
 Filtered: 5
 
 
@@ -1112,15 +1112,7 @@ Duplicate found: 102_Code/102_hw2/dir26/TestCases.java lines [4, 40] and 102_Cod
 
 
 
-Duplicate found: 102_Code/102_hw2/dir26/TestCases.java lines [4, 49] and 102_Code/102_hw2/dir26/TestCases.java lines [4, 58]
-102_Code/102_hw2/dir26/TestCases.java ----------
-4 :	this.a = new DoubleConstantExpression(1.0, )
-5 :	this.b = new DoubleConstantExpression(1.2, )
-6 :	this.c = new DoubleConstantExpression(2.2, )
-7 :	this.d = new DoubleConstantExpression(-8.0, )
-47 :	e = new MultiplyExpression(this.a, this.b, )
-48 :	f = new MultiplyExpression(this.c, this.d, )
-49 :	g = new MultiplyExpression(this.a, this.d, )
+Duplicate found: 102_Code/102_hw2/dir26/TestCases.java lines [4, 58] and 102_Code/102_hw2/dir26/TestCases.java lines [4, 49]
 102_Code/102_hw2/dir26/TestCases.java ----------
 4 :	this.a = new DoubleConstantExpression(1.0, )
 5 :	this.b = new DoubleConstantExpression(1.2, )
@@ -1129,6 +1121,14 @@ Duplicate found: 102_Code/102_hw2/dir26/TestCases.java lines [4, 49] and 102_Cod
 56 :	e = new DivideExpression(this.a, this.b, )
 57 :	f = new DivideExpression(this.c, this.d, )
 58 :	g = new DivideExpression(this.a, this.d, )
+102_Code/102_hw2/dir26/TestCases.java ----------
+4 :	this.a = new DoubleConstantExpression(1.0, )
+5 :	this.b = new DoubleConstantExpression(1.2, )
+6 :	this.c = new DoubleConstantExpression(2.2, )
+7 :	this.d = new DoubleConstantExpression(-8.0, )
+47 :	e = new MultiplyExpression(this.a, this.b, )
+48 :	f = new MultiplyExpression(this.c, this.d, )
+49 :	g = new MultiplyExpression(this.a, this.d, )
 ===========================
 
 
@@ -1136,7 +1136,7 @@ Duplicate found: 102_Code/102_hw2/dir26/TestCases.java lines [4, 49] and 102_Cod
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 3.246 s
-[INFO] Finished at: 2019-05-01T17:16:02-07:00
-[INFO] Final Memory: 21M/1217M
+[INFO] Total time: 3.145 s
+[INFO] Finished at: 2019-05-06T19:56:59-07:00
+[INFO] Final Memory: 21M/1216M
 [INFO] ------------------------------------------------------------------------

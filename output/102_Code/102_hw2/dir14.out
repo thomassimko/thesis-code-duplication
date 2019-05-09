@@ -45,16 +45,16 @@ this.left : this.left = null,
 BLOCK: StartmainL9
 
 BLOCK: BasicL10
-pi : pi = new VariableBindings(), 
-f : f = new DoubleConstantExpression(9.8, ), 
-s1 : s1 = "string", 
-e : e = new DoubleConstantExpression(5.5, ), 
-s2 : s2 = "a", 
-b : b = new VariableBindings(), 
-g : g = new DoubleConstantExpression(-1.2, ), 
 i : i = new DoubleConstantExpression(0, ), 
-h : h = new DoubleConstantExpression(5, ), 
 a : a = new VariableBindings(), 
+g : g = new DoubleConstantExpression(-1.2, ), 
+s2 : s2 = "a", 
+pi : pi = new VariableBindings(), 
+e : e = new DoubleConstantExpression(5.5, ), 
+b : b = new VariableBindings(), 
+s1 : s1 = "string", 
+h : h = new DoubleConstantExpression(5, ), 
+f : f = new DoubleConstantExpression(9.8, ), 
 
 BLOCK: Startconstructor1L12
 this.left : this.left = null, 
@@ -92,84 +92,84 @@ i : i = 0,
 
 BLOCK: ForCondL25
 this.stored_variables : this.stored_variables = new ArrayList(), 
+i : i = 0, i = i + 1, 
 @temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
 
 BLOCK: LoopL26
 this.stored_variables : this.stored_variables = new ArrayList(), 
+i : i = 0, i = i + 1, 
 @temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
 
 BLOCK: BasicL27
 this.stored_variables : this.stored_variables = new ArrayList(), 
+i : i = 0, i = i + 1, 
 @temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
 
 BLOCK: trueL28
 this.stored_variables : this.stored_variables = new ArrayList(), 
+i : i = 0, i = i + 1, 
 @temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
 
 BLOCK: joinL29
 this.stored_variables : this.stored_variables = new ArrayList(), 
-@temp1 : @temp1 = i, 
 i : i = i + 1, 
+@temp1 : @temp1 = i, 
 
 BLOCK: StartlookupBindingL30
 this.stored_variables : this.stored_variables = new ArrayList(), 
 
 BLOCK: BasicL31
-this.stored_variables : this.stored_variables = new ArrayList(), 
 value : value = 0, 
+this.stored_variables : this.stored_variables = new ArrayList(), 
 
 BLOCK: ForInitL33
-this.stored_variables : this.stored_variables = new ArrayList(), 
-i : i = 0, 
 value : value = 0, 
+i : i = 0, 
+this.stored_variables : this.stored_variables = new ArrayList(), 
 
 BLOCK: ForCondL34
+value : value = getValue(), value = 0, 
+i : i = i + 1, i = 0, 
 this.stored_variables : this.stored_variables = new ArrayList(), 
 @temp2 : @temp2 = i, 
-i : i = i + 1, i = 0, 
-value : value = getValue(), value = 0, 
 
 BLOCK: LoopL35
+value : value = getValue(), value = 0, 
+i : i = i + 1, i = 0, 
 this.stored_variables : this.stored_variables = new ArrayList(), 
 @temp2 : @temp2 = i, 
-i : i = i + 1, i = 0, 
-value : value = getValue(), value = 0, 
 
 BLOCK: BasicL36
+value : value = getValue(), value = 0, 
+i : i = i + 1, i = 0, 
 this.stored_variables : this.stored_variables = new ArrayList(), 
 @temp2 : @temp2 = i, 
-i : i = i + 1, i = 0, 
-value : value = getValue(), value = 0, 
 
 BLOCK: trueL37
-this.stored_variables : this.stored_variables = new ArrayList(), 
-@temp2 : @temp2 = i, 
 value : value = getValue(), 
 i : i = i + 1, i = 0, 
+this.stored_variables : this.stored_variables = new ArrayList(), 
+@temp2 : @temp2 = i, 
 
 BLOCK: falseL39
+value : value = getValue(), value = 0, 
+i : i = i + 1, i = 0, 
 this.stored_variables : this.stored_variables = new ArrayList(), 
 @temp2 : @temp2 = i, 
-i : i = i + 1, i = 0, 
-value : value = getValue(), value = 0, 
 
 BLOCK: joinL38
+value : value = getValue(), value = 0, 
+i : i = i + 1, 
 this.stored_variables : this.stored_variables = new ArrayList(), 
 @temp2 : @temp2 = i, 
-i : i = i + 1, 
-value : value = getValue(), value = 0, 
 
 BLOCK: Startconstructor1L40
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: BasicL41
-this.left : this.left = lft, 
 this.right : this.right = rht, 
+this.left : this.left = lft, 
 
 BLOCK: StartevaluateL43
 this.right : this.right = null, 
@@ -214,12 +214,12 @@ this.right : this.right = rht,
 this.left : this.left = lft, 
 
 BLOCK: StartevaluateL61
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL62
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: StarttoStringL64
 this.left : this.left = null, 
@@ -230,12 +230,12 @@ this.left : this.left = null,
 this.right : this.right = null, 
 
 BLOCK: Startconstructor1L67
-this.variable : this.variable = null, 
 this.expression : this.expression = null, 
+this.variable : this.variable = null, 
 
 BLOCK: BasicL68
-this.variable : this.variable = id, 
 this.expression : this.expression = e, 
+this.variable : this.variable = id, 
 
 BLOCK: StartevaluateL70
 this.variable : this.variable = null, 
@@ -243,16 +243,16 @@ this.expression : this.expression = null,
 
 BLOCK: BasicL71
 this.variable : this.variable = null, 
-this.expression : this.expression = null, 
 evaluation : evaluation = this.expression.evaluate(bindings, ), 
+this.expression : this.expression = null, 
 
 BLOCK: StarttoStringL73
-this.variable : this.variable = null, 
 this.expression : this.expression = null, 
+this.variable : this.variable = null, 
 
 BLOCK: BasicL74
-this.variable : this.variable = null, 
 this.expression : this.expression = null, 
+this.variable : this.variable = null, 
 
 BLOCK: Startconstructor1L76
 this.expression : this.expression = null, 
@@ -273,20 +273,20 @@ BLOCK: BasicL83
 this.expression : this.expression = null, 
 
 BLOCK: Startconstructor1L85
-this.current_value : this.current_value = 0.0, 
 this.variable : this.variable = null, 
+this.current_value : this.current_value = 0.0, 
 
 BLOCK: BasicL86
-this.current_value : this.current_value = value, 
 this.variable : this.variable = id, 
+this.current_value : this.current_value = value, 
 
 BLOCK: StartgetStringL88
-this.current_value : this.current_value = 0.0, 
 this.variable : this.variable = null, 
+this.current_value : this.current_value = 0.0, 
 
 BLOCK: BasicL89
-this.current_value : this.current_value = 0.0, 
 this.variable : this.variable = null, 
+this.current_value : this.current_value = 0.0, 
 
 BLOCK: StartgetValueL91
 this.variable : this.variable = null, 
@@ -355,16 +355,16 @@ BLOCK: StartmainL9
 BLOCK: StartmainL9
 
 BLOCK: BasicL10
-pi : pi = new VariableBindings(), 
-f : f = new DoubleConstantExpression(9.8, ), 
-s1 : s1 = "string", 
-e : e = new DoubleConstantExpression(5.5, ), 
-s2 : s2 = "a", 
-b : b = new VariableBindings(), 
-g : g = new DoubleConstantExpression(-1.2, ), 
 i : i = new DoubleConstantExpression(0, ), 
-h : h = new DoubleConstantExpression(5, ), 
 a : a = new VariableBindings(), 
+g : g = new DoubleConstantExpression(-1.2, ), 
+s2 : s2 = "a", 
+pi : pi = new VariableBindings(), 
+e : e = new DoubleConstantExpression(5.5, ), 
+b : b = new VariableBindings(), 
+s1 : s1 = "string", 
+h : h = new DoubleConstantExpression(5, ), 
+f : f = new DoubleConstantExpression(9.8, ), 
 
 BLOCK: Startconstructor1L12
 this.left : this.left = null, 
@@ -417,28 +417,28 @@ i : i = 0,
 
 BLOCK: ForCondL25
 this.stored_variables : this.stored_variables = new ArrayList(), 
+i : i = 0, i = i + 1, 
 @temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
 
 BLOCK: LoopL26
 this.stored_variables : this.stored_variables = new ArrayList(), 
+i : i = 0, i = i + 1, 
 @temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
 
 BLOCK: BasicL27
 this.stored_variables : this.stored_variables = new ArrayList(), 
+i : i = 0, i = i + 1, 
 @temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
 
 BLOCK: trueL28
 this.stored_variables : this.stored_variables = new ArrayList(), 
+i : i = 0, i = i + 1, 
 @temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
 
 BLOCK: joinL29
 this.stored_variables : this.stored_variables = new ArrayList(), 
-@temp1 : @temp1 = i, 
 i : i = i + 1, 
+@temp1 : @temp1 = i, 
 
 BLOCK: StartlookupBindingL30
 this.stored_variables : this.stored_variables = new ArrayList(), 
@@ -447,61 +447,61 @@ BLOCK: StartlookupBindingL30
 this.stored_variables : this.stored_variables = new ArrayList(), 
 
 BLOCK: BasicL31
-this.stored_variables : this.stored_variables = new ArrayList(), 
 value : value = 0, 
+this.stored_variables : this.stored_variables = new ArrayList(), 
 
 BLOCK: ForInitL33
-this.stored_variables : this.stored_variables = new ArrayList(), 
-i : i = 0, 
 value : value = 0, 
+i : i = 0, 
+this.stored_variables : this.stored_variables = new ArrayList(), 
 
 BLOCK: ForCondL34
+value : value = getValue(), value = 0, 
+i : i = i + 1, i = 0, 
 this.stored_variables : this.stored_variables = new ArrayList(), 
 @temp2 : @temp2 = i, 
-i : i = i + 1, i = 0, 
-value : value = getValue(), value = 0, 
 
 BLOCK: LoopL35
+value : value = getValue(), value = 0, 
+i : i = i + 1, i = 0, 
 this.stored_variables : this.stored_variables = new ArrayList(), 
 @temp2 : @temp2 = i, 
-i : i = i + 1, i = 0, 
-value : value = getValue(), value = 0, 
 
 BLOCK: BasicL36
+value : value = getValue(), value = 0, 
+i : i = i + 1, i = 0, 
 this.stored_variables : this.stored_variables = new ArrayList(), 
 @temp2 : @temp2 = i, 
-i : i = i + 1, i = 0, 
-value : value = getValue(), value = 0, 
 
 BLOCK: trueL37
-this.stored_variables : this.stored_variables = new ArrayList(), 
-@temp2 : @temp2 = i, 
 value : value = getValue(), 
 i : i = i + 1, i = 0, 
+this.stored_variables : this.stored_variables = new ArrayList(), 
+@temp2 : @temp2 = i, 
 
 BLOCK: falseL39
+value : value = getValue(), value = 0, 
+i : i = i + 1, i = 0, 
 this.stored_variables : this.stored_variables = new ArrayList(), 
 @temp2 : @temp2 = i, 
-i : i = i + 1, i = 0, 
-value : value = getValue(), value = 0, 
 
 BLOCK: joinL38
+value : value = getValue(), value = 0, 
+i : i = i + 1, 
 this.stored_variables : this.stored_variables = new ArrayList(), 
 @temp2 : @temp2 = i, 
-i : i = i + 1, 
-value : value = getValue(), value = 0, 
 
 BLOCK: Startconstructor1L40
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: Startconstructor1L40
-this.left : this.left = null, 
 this.right : this.right = null, 
+this.left : this.left = null, 
 
 BLOCK: BasicL41
-this.left : this.left = lft, 
 this.right : this.right = rht, 
+this.left : this.left = lft, 
 
 BLOCK: StartevaluateL43
 this.right : this.right = null, 
@@ -567,16 +567,16 @@ this.right : this.right = rht,
 this.left : this.left = lft, 
 
 BLOCK: StartevaluateL61
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: StartevaluateL61
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: BasicL62
-this.right : this.right = null, 
 this.left : this.left = null, 
+this.right : this.right = null, 
 
 BLOCK: StarttoStringL64
 this.left : this.left = null, 
@@ -591,16 +591,16 @@ this.left : this.left = null,
 this.right : this.right = null, 
 
 BLOCK: Startconstructor1L67
-this.variable : this.variable = null, 
 this.expression : this.expression = null, 
+this.variable : this.variable = null, 
 
 BLOCK: Startconstructor1L67
-this.variable : this.variable = null, 
 this.expression : this.expression = null, 
+this.variable : this.variable = null, 
 
 BLOCK: BasicL68
-this.variable : this.variable = id, 
 this.expression : this.expression = e, 
+this.variable : this.variable = id, 
 
 BLOCK: StartevaluateL70
 this.variable : this.variable = null, 
@@ -612,20 +612,20 @@ this.expression : this.expression = null,
 
 BLOCK: BasicL71
 this.variable : this.variable = null, 
-this.expression : this.expression = null, 
 evaluation : evaluation = this.expression.evaluate(bindings, ), 
-
-BLOCK: StarttoStringL73
-this.variable : this.variable = null, 
 this.expression : this.expression = null, 
 
 BLOCK: StarttoStringL73
-this.variable : this.variable = null, 
 this.expression : this.expression = null, 
+this.variable : this.variable = null, 
+
+BLOCK: StarttoStringL73
+this.expression : this.expression = null, 
+this.variable : this.variable = null, 
 
 BLOCK: BasicL74
-this.variable : this.variable = null, 
 this.expression : this.expression = null, 
+this.variable : this.variable = null, 
 
 BLOCK: Startconstructor1L76
 this.expression : this.expression = null, 
@@ -655,28 +655,28 @@ BLOCK: BasicL83
 this.expression : this.expression = null, 
 
 BLOCK: Startconstructor1L85
-this.current_value : this.current_value = 0.0, 
 this.variable : this.variable = null, 
+this.current_value : this.current_value = 0.0, 
 
 BLOCK: Startconstructor1L85
-this.current_value : this.current_value = 0.0, 
 this.variable : this.variable = null, 
+this.current_value : this.current_value = 0.0, 
 
 BLOCK: BasicL86
-this.current_value : this.current_value = value, 
 this.variable : this.variable = id, 
+this.current_value : this.current_value = value, 
 
 BLOCK: StartgetStringL88
-this.current_value : this.current_value = 0.0, 
 this.variable : this.variable = null, 
+this.current_value : this.current_value = 0.0, 
 
 BLOCK: StartgetStringL88
-this.current_value : this.current_value = 0.0, 
 this.variable : this.variable = null, 
+this.current_value : this.current_value = 0.0, 
 
 BLOCK: BasicL89
-this.current_value : this.current_value = 0.0, 
 this.variable : this.variable = null, 
+this.current_value : this.current_value = 0.0, 
 
 BLOCK: StartgetValueL91
 this.variable : this.variable = null, 
@@ -724,7 +724,7 @@ Filtered: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 3.374 s
-[INFO] Finished at: 2019-05-01T17:14:55-07:00
-[INFO] Final Memory: 24M/985M
+[INFO] Total time: 3.034 s
+[INFO] Finished at: 2019-05-06T19:55:56-07:00
+[INFO] Final Memory: 28M/1225M
 [INFO] ------------------------------------------------------------------------

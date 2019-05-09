@@ -12,8 +12,8 @@ digraph G {
 "9 : p2 = new CartesianPoint(0.0, 0.0, )" -> "46 : p2 = new CartesianPoint(x2, y2, )" [style=dashed]
 "10 : System.out.print(\"Which type of point should be created (1 for Cartesian, 2 for Polar)? \", )"
 "11 : type1 = in.nextInt()"
-"11 : type1 = in.nextInt()" -> "12 : type1 == 1 || type1 == 2"
 "11 : type1 = in.nextInt()" -> "14 : type1 == 1"
+"11 : type1 = in.nextInt()" -> "12 : type1 == 1 || type1 == 2"
 "12 : type1 == 1 || type1 == 2"
 "14 : type1 == 1"
 "16 : System.out.print(\"Enter x-coordinate: \", )"

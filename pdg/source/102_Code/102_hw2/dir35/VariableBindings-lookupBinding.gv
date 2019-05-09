@@ -1,9 +1,9 @@
 digraph G {
 "7 : this.bindingList = null"
 "19 : i = 0"
-"19 : i = 0" -> "21 : b1 = this.bindingList.get(i, )"
-"19 : i = 0" -> "19 : i < this.bindingList.size()"
 "19 : i = 0" -> "19 : @temp1 = i"
+"19 : i = 0" -> "19 : i < this.bindingList.size()"
+"19 : i = 0" -> "21 : b1 = this.bindingList.get(i, )"
 "19 : i = 0" -> "19 : i = i + 1"
 "19 : i = 0" -> "19 : i = i + 1" [style=dashed]
 "19 : i < this.bindingList.size()"
@@ -18,9 +18,9 @@ digraph G {
 "19 : @temp1 = i"
 "19 : @temp1 = i" -> "19 : @temp1 = i" [style=dashed]
 "19 : i = i + 1"
-"19 : i = i + 1" -> "21 : b1 = this.bindingList.get(i, )"
-"19 : i = i + 1" -> "19 : i < this.bindingList.size()"
 "19 : i = i + 1" -> "19 : @temp1 = i"
+"19 : i = i + 1" -> "19 : i < this.bindingList.size()"
+"19 : i = i + 1" -> "21 : b1 = this.bindingList.get(i, )"
 "19 : i = i + 1" -> "19 : i = i + 1"
 "19 : i = i + 1" -> "19 : i = i + 1" [style=dashed]
 }

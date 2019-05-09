@@ -7,27 +7,27 @@ digraph G {
 "6 : this.y = 0.0"
 "6 : this.nang = 0.0"
 "10 : this.rad = radius"
-"10 : this.rad = radius" -> "12 : this.rad < 0"
 "10 : this.rad = radius" -> "14 : this.rad = Math.abs(this.rad, )"
+"10 : this.rad = radius" -> "12 : this.rad < 0"
 "10 : this.rad = radius" -> "14 : this.rad = Math.abs(this.rad, )" [style=dashed]
 "11 : this.ang = angle"
-"11 : this.ang = angle" -> "23 : this.ang = this.ang - Math.PI * 2"
-"11 : this.ang = angle" -> "21 : this.ang > Math.PI * 2"
 "11 : this.ang = angle" -> "17 : this.ang < 0"
 "11 : this.ang = angle" -> "19 : this.ang = this.ang + Math.PI * 2"
 "11 : this.ang = angle" -> "15 : this.ang = this.ang + Math.PI"
-"11 : this.ang = angle" -> "23 : this.ang = this.ang - Math.PI * 2" [style=dashed]
+"11 : this.ang = angle" -> "23 : this.ang = this.ang - Math.PI * 2"
+"11 : this.ang = angle" -> "21 : this.ang > Math.PI * 2"
 "11 : this.ang = angle" -> "19 : this.ang = this.ang + Math.PI * 2" [style=dashed]
 "11 : this.ang = angle" -> "15 : this.ang = this.ang + Math.PI" [style=dashed]
+"11 : this.ang = angle" -> "23 : this.ang = this.ang - Math.PI * 2" [style=dashed]
 "12 : this.rad < 0"
 "14 : this.rad = Math.abs(this.rad, )"
 "15 : this.ang = this.ang + Math.PI"
-"15 : this.ang = this.ang + Math.PI" -> "23 : this.ang = this.ang - Math.PI * 2"
-"15 : this.ang = this.ang + Math.PI" -> "21 : this.ang > Math.PI * 2"
 "15 : this.ang = this.ang + Math.PI" -> "17 : this.ang < 0"
 "15 : this.ang = this.ang + Math.PI" -> "19 : this.ang = this.ang + Math.PI * 2"
-"15 : this.ang = this.ang + Math.PI" -> "23 : this.ang = this.ang - Math.PI * 2" [style=dashed]
+"15 : this.ang = this.ang + Math.PI" -> "23 : this.ang = this.ang - Math.PI * 2"
+"15 : this.ang = this.ang + Math.PI" -> "21 : this.ang > Math.PI * 2"
 "15 : this.ang = this.ang + Math.PI" -> "19 : this.ang = this.ang + Math.PI * 2" [style=dashed]
+"15 : this.ang = this.ang + Math.PI" -> "23 : this.ang = this.ang - Math.PI * 2" [style=dashed]
 "17 : this.ang < 0"
 "19 : this.ang = this.ang + Math.PI * 2"
 "19 : this.ang = this.ang + Math.PI * 2" -> "23 : this.ang = this.ang - Math.PI * 2"

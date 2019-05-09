@@ -1,15 +1,15 @@
 digraph G {
 "30 : x = 0.0"
-"30 : x = 0.0" -> "47 : x = scan.nextDouble()" [style=dashed]
 "30 : x = 0.0" -> "37 : x = scan.nextDouble()" [style=dashed]
+"30 : x = 0.0" -> "47 : x = scan.nextDouble()" [style=dashed]
 "30 : y = 0.0"
 "30 : y = 0.0" -> "50 : y = scan.nextDouble()" [style=dashed]
 "30 : y = 0.0" -> "40 : y = scan.nextDouble()" [style=dashed]
 "30 : ans = 0.0"
 "30 : ans = 0.0" -> "33 : ans = scan.nextInt()" [style=dashed]
 "31 : scan = new Scanner(System.in, )"
-"31 : scan = new Scanner(System.in, )" -> "35 : scan = new Scanner(System.in, )" [style=dashed]
 "31 : scan = new Scanner(System.in, )" -> "45 : scan = new Scanner(System.in, )" [style=dashed]
+"31 : scan = new Scanner(System.in, )" -> "35 : scan = new Scanner(System.in, )" [style=dashed]
 "32 : System.out.print(\"Which type of point should be created (1 for Cartesian, 2 for Polar)?\", )"
 "33 : ans = scan.nextInt()"
 "33 : ans = scan.nextInt()" -> "34 : ans == 1"

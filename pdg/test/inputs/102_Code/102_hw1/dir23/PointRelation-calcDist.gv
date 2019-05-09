@@ -1,0 +1,5 @@
+digraph G {
+"7 : dist = 0.0"
+"7 : dist = 0.0" -> "8 : dist = Math.sqrt(pt2.xCoordinate() - pt1.xCoordinate() * pt2.xCoordinate() - pt1.xCoordinate() + pt2.yCoordinate() - pt1.yCoordinate() * pt2.yCoordinate() - pt1.yCoordinate(), )" [style=dashed]
+"8 : dist = Math.sqrt(pt2.xCoordinate() - pt1.xCoordinate() * pt2.xCoordinate() - pt1.xCoordinate() + pt2.yCoordinate() - pt1.yCoordinate() * pt2.yCoordinate() - pt1.yCoordinate(), )"
+}

@@ -1,0 +1,11 @@
+digraph G {
+"4 : this.y = 0.0"
+"4 : this.y = 0.0" -> "34 : Math.atan2(this.y, this.x, )"
+"4 : this.y = 0.0" -> "30 : this.x < 1.0E-5 && this.y < 1.0E-5"
+"5 : this.x = 0.0"
+"5 : this.x = 0.0" -> "34 : Math.atan2(this.y, this.x, )"
+"5 : this.x = 0.0" -> "30 : this.x < 1.0E-5 && this.y < 1.0E-5"
+"30 : this.x < 1.0E-5 && this.y < 1.0E-5"
+"32 : 0"
+"34 : Math.atan2(this.y, this.x, )"
+}

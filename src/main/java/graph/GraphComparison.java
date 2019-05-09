@@ -2,13 +2,10 @@ package graph;
 
 import ast.expressions.Expression;
 import main.ArgumentHandler;
-import main.OutputFormatter;
 import org.jgrapht.Graph;
 import org.jgrapht.graph.DefaultDirectedGraph;
 import org.jgrapht.graph.DefaultEdge;
-
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class GraphComparison {
 
@@ -56,12 +53,17 @@ public class GraphComparison {
             boolean isSubMap = false;
             //System.out.println(map.size());
 
-            //if one is a subset of the other map
-            for(Mapping filteredMap : mapListMask) {
+            //Check if they are the same
+            if(map.getKeyFile().equals(map.getValueFile()) && map.getKeyMin() == map.getValueMin() && map.getKeyMax() == map.getValueMax()) {
+                isSubMap = true;
+            } else {
+                //if one is a subset of the other map
+                for (Mapping filteredMap : mapListMask) {
 
-                if(filteredMap.isSubMapping(map)) {
-                    isSubMap = true;
-                    break;
+                    if (filteredMap.isSubMapping(map)) {
+                        isSubMap = true;
+                        break;
+                    }
                 }
             }
 

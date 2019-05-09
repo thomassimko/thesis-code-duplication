@@ -1,0 +1,6 @@
+digraph G {
+"3 : this.radius = 0.0"
+"4 : this.angle = 0.0"
+"4 : this.angle = 0.0" -> "41 : this.angle * 3.14159 / 180"
+"41 : this.angle * 3.14159 / 180"
+}

@@ -1,0 +1,9 @@
+digraph G {
+"26 : testP = new PolarPoint(1, Math.PI / 2, )"
+"27 : Check.check(testP.xCoordinate(), 0, )"
+"28 : Check.check(testP.yCoordinate(), 1, )"
+"29 : Check.check(testP.radius(), 1, )"
+"30 : Check.check(testP.angle(), Math.PI / 2, )"
+"31 : testP_Rotated = testP.rotate90()"
+"32 : Check.check(testP_Rotated.angle(), Math.PI, )"
+}

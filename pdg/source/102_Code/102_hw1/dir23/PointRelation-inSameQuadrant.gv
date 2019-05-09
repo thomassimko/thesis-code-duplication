@@ -1,9 +1,9 @@
 digraph G {
 "14 : pt1Quad = 0"
 "14 : pt1Quad = 0" -> "60 : pt1Quad == pt2Quad"
-"14 : pt1Quad = 0" -> "33 : pt1Quad = 4" [style=dashed]
 "14 : pt1Quad = 0" -> "17 : pt1Quad = 1" [style=dashed]
 "14 : pt1Quad = 0" -> "29 : pt1Quad = 3" [style=dashed]
+"14 : pt1Quad = 0" -> "33 : pt1Quad = 4" [style=dashed]
 "14 : pt1Quad = 0" -> "25 : pt1Quad = 2" [style=dashed]
 "15 : pt1.xCoordinate() > 0 && pt1.yCoordinate() >= 0"
 "17 : pt1Quad = 1"
@@ -21,10 +21,10 @@ digraph G {
 "36 : pt2Quad = 0"
 "36 : pt2Quad = 0" -> "60 : pt1Quad == pt2Quad"
 "36 : pt2Quad = 0" -> "36 : pt2Quad = 0" [style=dashed]
-"36 : pt2Quad = 0" -> "52 : pt2Quad = 3" [style=dashed]
-"36 : pt2Quad = 0" -> "48 : pt2Quad = 2" [style=dashed]
-"36 : pt2Quad = 0" -> "40 : pt2Quad = 1" [style=dashed]
 "36 : pt2Quad = 0" -> "56 : pt2Quad = 4" [style=dashed]
+"36 : pt2Quad = 0" -> "40 : pt2Quad = 1" [style=dashed]
+"36 : pt2Quad = 0" -> "48 : pt2Quad = 2" [style=dashed]
+"36 : pt2Quad = 0" -> "52 : pt2Quad = 3" [style=dashed]
 "38 : pt2.xCoordinate() > 0 && pt2.yCoordinate() >= 0"
 "40 : pt2Quad = 1"
 "40 : pt2Quad = 1" -> "60 : pt1Quad == pt2Quad"

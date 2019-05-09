@@ -1,8 +1,8 @@
 digraph G {
 "18 : e = new DoubleConstantExpression(2, )"
 "18 : e = new DoubleConstantExpression(2, )" -> "20 : e3 = new AddExpression(e, e2, )"
-"18 : e = new DoubleConstantExpression(2, )" -> "21 : a = new Assignment(\"a\", e, )"
 "18 : e = new DoubleConstantExpression(2, )" -> "43 : e4 = new AddExpression(f, e, )"
+"18 : e = new DoubleConstantExpression(2, )" -> "21 : a = new Assignment(\"a\", e, )"
 "19 : e2 = new DoubleConstantExpression(3, )"
 "19 : e2 = new DoubleConstantExpression(3, )" -> "20 : e3 = new AddExpression(e, e2, )"
 "19 : e2 = new DoubleConstantExpression(3, )" -> "22 : b = new Assignment(\"b\", e2, )"

@@ -46,9 +46,9 @@ Caused by: java.lang.NullPointerException
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 4.434 s
-[INFO] Finished at: 2019-05-01T18:07:41-07:00
-[INFO] Final Memory: 34M/1460M
+[INFO] Total time: 4.561 s
+[INFO] Finished at: 2019-05-06T19:58:42-07:00
+[INFO] Final Memory: 34M/1466M
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:1.2.1:java (default-cli) on project thesis: An exception occured while executing the Java class. null: InvocationTargetException: NullPointerException -> [Help 1]
 [ERROR] 

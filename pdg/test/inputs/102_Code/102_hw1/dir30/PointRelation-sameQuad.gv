@@ -1,0 +1,17 @@
+digraph G {
+"144 : x1 = pointA.xCoordinate()"
+"144 : x1 = pointA.xCoordinate()" -> "148 : c1 = quadrant(x1, y1, )"
+"145 : y1 = pointA.yCoordinate()"
+"145 : y1 = pointA.yCoordinate()" -> "148 : c1 = quadrant(x1, y1, )"
+"146 : x2 = pointB.xCoordinate()"
+"146 : x2 = pointB.xCoordinate()" -> "149 : c2 = quadrant(x2, y2, )"
+"147 : y2 = pointB.yCoordinate()"
+"147 : y2 = pointB.yCoordinate()" -> "149 : c2 = quadrant(x2, y2, )"
+"148 : c1 = quadrant(x1, y1, )"
+"148 : c1 = quadrant(x1, y1, )" -> "150 : c1 == c2 && c1 != 0 || c2 != 0"
+"149 : c2 = quadrant(x2, y2, )"
+"149 : c2 = quadrant(x2, y2, )" -> "150 : c1 == c2 && c1 != 0 || c2 != 0"
+"150 : c1 == c2 && c1 != 0 || c2 != 0"
+"151 : true"
+"154 : false"
+}

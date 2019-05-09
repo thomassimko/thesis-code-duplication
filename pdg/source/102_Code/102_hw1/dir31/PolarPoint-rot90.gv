@@ -6,9 +6,9 @@ digraph G {
 "30 : ang = 0.0"
 "30 : ang = 0.0" -> "31 : ang = this.angle + Math.PI / 2" [style=dashed]
 "31 : ang = this.angle + Math.PI / 2"
+"31 : ang = this.angle + Math.PI / 2" -> "34 : new PolarPoint(this.radius, ang, )"
 "31 : ang = this.angle + Math.PI / 2" -> "33 : ang = ang - 2 * Math.PI"
 "31 : ang = this.angle + Math.PI / 2" -> "32 : ang >= 2 * Math.PI"
-"31 : ang = this.angle + Math.PI / 2" -> "34 : new PolarPoint(this.radius, ang, )"
 "31 : ang = this.angle + Math.PI / 2" -> "33 : ang = ang - 2 * Math.PI" [style=dashed]
 "32 : ang >= 2 * Math.PI"
 "33 : ang = ang - 2 * Math.PI"

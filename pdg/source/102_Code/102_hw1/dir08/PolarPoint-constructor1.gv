@@ -1,16 +1,16 @@
 digraph G {
 "4 : this.radius = 0.0"
-"4 : this.radius = 0.0" -> "14 : this.radius = r" [style=dashed]
 "4 : this.radius = 0.0" -> "19 : this.radius = r" [style=dashed]
+"4 : this.radius = 0.0" -> "14 : this.radius = r" [style=dashed]
 "4 : this.angle = 0.0"
 "4 : this.angle = 0.0" -> "20 : this.angle = a" [style=dashed]
 "4 : this.angle = 0.0" -> "15 : this.angle = a + Math.PI" [style=dashed]
 "8 : a < 0"
 "10 : a = a + 2 * Math.PI"
-"10 : a = a + 2 * Math.PI" -> "8 : a < 0"
 "10 : a = a + 2 * Math.PI" -> "20 : this.angle = a"
-"10 : a = a + 2 * Math.PI" -> "15 : this.angle = a + Math.PI"
+"10 : a = a + 2 * Math.PI" -> "8 : a < 0"
 "10 : a = a + 2 * Math.PI" -> "10 : a = a + 2 * Math.PI"
+"10 : a = a + 2 * Math.PI" -> "15 : this.angle = a + Math.PI"
 "10 : a = a + 2 * Math.PI" -> "10 : a = a + 2 * Math.PI" [style=dashed]
 "8 : a < 0"
 "12 : r < 0"

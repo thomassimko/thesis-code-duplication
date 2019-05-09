@@ -19,28 +19,28 @@
 [INFO] 
 [INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ thesis ---
 BLOCK: Startconstructor1L0
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL1
-this.lft : this.lft = lft, 
 this.rht : this.rht = rht, 
+this.lft : this.lft = lft, 
 
 BLOCK: StartevaluateL3
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL4
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StarttoStringL6
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL7
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StartmainL9
 
@@ -49,28 +49,28 @@ BLOCK: BasicL10
 BLOCK: StartBindingTestL12
 
 BLOCK: BasicL13
-Test2 : Test2 = new VariableBindings(), 
-TestC : TestC = new Binding("c", 3, ), 
-Test1 : Test1 = new VariableBindings(), 
-TestA : TestA = new Binding("a", 1, ), 
-TestB : TestB = new Binding("b", 2, ), 
 Test3 : Test3 = new VariableBindings(), 
+TestC : TestC = new Binding("c", 3, ), 
+TestA : TestA = new Binding("a", 1, ), 
+Test1 : Test1 = new VariableBindings(), 
+Test2 : Test2 = new VariableBindings(), 
+TestB : TestB = new Binding("b", 2, ), 
 
 BLOCK: Startconstructor1L15
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL16
-this.lft : this.lft = lft, 
 this.rht : this.rht = rht, 
+this.lft : this.lft = lft, 
 
 BLOCK: StartevaluateL18
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL19
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StarttoStringL21
 this.rht : this.rht = null, 
@@ -90,8 +90,8 @@ BLOCK: StartaddBindingL27
 this.bindingList : this.bindingList = null, 
 
 BLOCK: BasicL28
-binding : binding = new Binding(id, value, ), 
 this.bindingList : this.bindingList = null, 
+binding : binding = new Binding(id, value, ), 
 
 BLOCK: StartlookupBindingL30
 this.bindingList : this.bindingList = null, 
@@ -100,46 +100,46 @@ BLOCK: BasicL31
 this.bindingList : this.bindingList = null, 
 
 BLOCK: ForInitL33
-i : i = 0, 
 this.bindingList : this.bindingList = null, 
+i : i = 0, 
 
 BLOCK: ForCondL34
-i : i = i + 1, i = 0, 
-@temp1 : @temp1 = i, 
 this.bindingList : this.bindingList = null, 
+@temp1 : @temp1 = i, 
 tmp : tmp = this.bindingList.get(i, ), 
+i : i = 0, i = i + 1, 
 
 BLOCK: LoopL35
-i : i = i + 1, i = 0, 
-@temp1 : @temp1 = i, 
 this.bindingList : this.bindingList = null, 
 tmp : tmp = this.bindingList.get(i, ), 
+@temp1 : @temp1 = i, 
+i : i = 0, i = i + 1, 
 
 BLOCK: BasicL36
-i : i = i + 1, i = 0, 
-@temp1 : @temp1 = i, 
 this.bindingList : this.bindingList = null, 
+@temp1 : @temp1 = i, 
 tmp : tmp = this.bindingList.get(i, ), 
+i : i = 0, i = i + 1, 
 
 BLOCK: trueL37
-i : i = i + 1, i = 0, 
-@temp1 : @temp1 = i, 
 this.bindingList : this.bindingList = null, 
 tmp : tmp = this.bindingList.get(i, ), 
+@temp1 : @temp1 = i, 
+i : i = 0, i = i + 1, 
 
 BLOCK: joinL38
-i : i = i + 1, 
-@temp1 : @temp1 = i, 
 this.bindingList : this.bindingList = null, 
+@temp1 : @temp1 = i, 
 tmp : tmp = this.bindingList.get(i, ), 
+i : i = i + 1, 
 
 BLOCK: Startconstructor1L39
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL40
-this.lft : this.lft = lft, 
 this.rht : this.rht = rht, 
+this.lft : this.lft = lft, 
 
 BLOCK: StartevaluateL42
 this.rht : this.rht = null, 
@@ -150,12 +150,12 @@ this.rht : this.rht = null,
 this.lft : this.lft = null, 
 
 BLOCK: StarttoStringL45
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL46
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: Startconstructor1L48
 this.value : this.value = 0.0, 
@@ -174,12 +174,12 @@ this.id : this.id = null,
 this.value : this.value = 0.0, 
 
 BLOCK: StarttoStringL54
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: BasicL55
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: Startconstructor1L57
 this.rht : this.rht = null, 
@@ -190,12 +190,12 @@ this.rht : this.rht = rht,
 this.lft : this.lft = lft, 
 
 BLOCK: StartevaluateL60
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL61
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: StarttoStringL63
 this.lft : this.lft = null, 
@@ -206,29 +206,29 @@ this.lft : this.lft = null,
 this.rht : this.rht = null, 
 
 BLOCK: Startconstructor1L66
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: BasicL67
-this.e : this.e = e, 
 this.id : this.id = id, 
+this.e : this.e = e, 
 
 BLOCK: StartevaluateL69
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: BasicL70
-this.e : this.e = null, 
 value : value = this.e.evaluate(binding, ), 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: StarttoStringL72
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: BasicL73
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: Startconstructor1L75
 this.original : this.original = null, 
@@ -249,20 +249,20 @@ BLOCK: BasicL82
 this.original : this.original = null, 
 
 BLOCK: Startconstructor1L84
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: BasicL85
-this.id : this.id = id, 
 this.value : this.value = value, 
+this.id : this.id = id, 
 
 BLOCK: StartgetIDL87
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: BasicL88
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: StartgetValueL90
 this.value : this.value = 0.0, 
@@ -291,40 +291,40 @@ BLOCK: BasicL100
 this.Value : this.Value = 0.0, 
 
 BLOCK: Startconstructor1L0
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: Startconstructor1L0
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL1
-this.lft : this.lft = lft, 
 this.rht : this.rht = rht, 
+this.lft : this.lft = lft, 
 
 BLOCK: StartevaluateL3
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StartevaluateL3
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL4
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StarttoStringL6
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StarttoStringL6
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL7
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StartmainL9
 
@@ -337,36 +337,36 @@ BLOCK: StartBindingTestL12
 BLOCK: StartBindingTestL12
 
 BLOCK: BasicL13
-Test2 : Test2 = new VariableBindings(), 
-TestC : TestC = new Binding("c", 3, ), 
-Test1 : Test1 = new VariableBindings(), 
-TestA : TestA = new Binding("a", 1, ), 
-TestB : TestB = new Binding("b", 2, ), 
 Test3 : Test3 = new VariableBindings(), 
+TestC : TestC = new Binding("c", 3, ), 
+TestA : TestA = new Binding("a", 1, ), 
+Test1 : Test1 = new VariableBindings(), 
+Test2 : Test2 = new VariableBindings(), 
+TestB : TestB = new Binding("b", 2, ), 
 
 BLOCK: Startconstructor1L15
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: Startconstructor1L15
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL16
-this.lft : this.lft = lft, 
 this.rht : this.rht = rht, 
+this.lft : this.lft = lft, 
 
 BLOCK: StartevaluateL18
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StartevaluateL18
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL19
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StarttoStringL21
 this.rht : this.rht = null, 
@@ -396,8 +396,8 @@ BLOCK: StartaddBindingL27
 this.bindingList : this.bindingList = null, 
 
 BLOCK: BasicL28
-binding : binding = new Binding(id, value, ), 
 this.bindingList : this.bindingList = null, 
+binding : binding = new Binding(id, value, ), 
 
 BLOCK: StartlookupBindingL30
 this.bindingList : this.bindingList = null, 
@@ -409,50 +409,50 @@ BLOCK: BasicL31
 this.bindingList : this.bindingList = null, 
 
 BLOCK: ForInitL33
-i : i = 0, 
 this.bindingList : this.bindingList = null, 
+i : i = 0, 
 
 BLOCK: ForCondL34
-i : i = i + 1, i = 0, 
-@temp1 : @temp1 = i, 
 this.bindingList : this.bindingList = null, 
+@temp1 : @temp1 = i, 
 tmp : tmp = this.bindingList.get(i, ), 
+i : i = 0, i = i + 1, 
 
 BLOCK: LoopL35
-i : i = i + 1, i = 0, 
-@temp1 : @temp1 = i, 
 this.bindingList : this.bindingList = null, 
 tmp : tmp = this.bindingList.get(i, ), 
+@temp1 : @temp1 = i, 
+i : i = 0, i = i + 1, 
 
 BLOCK: BasicL36
-i : i = i + 1, i = 0, 
-@temp1 : @temp1 = i, 
 this.bindingList : this.bindingList = null, 
+@temp1 : @temp1 = i, 
 tmp : tmp = this.bindingList.get(i, ), 
+i : i = 0, i = i + 1, 
 
 BLOCK: trueL37
-i : i = i + 1, i = 0, 
-@temp1 : @temp1 = i, 
 this.bindingList : this.bindingList = null, 
 tmp : tmp = this.bindingList.get(i, ), 
+@temp1 : @temp1 = i, 
+i : i = 0, i = i + 1, 
 
 BLOCK: joinL38
-i : i = i + 1, 
-@temp1 : @temp1 = i, 
 this.bindingList : this.bindingList = null, 
+@temp1 : @temp1 = i, 
 tmp : tmp = this.bindingList.get(i, ), 
+i : i = i + 1, 
 
 BLOCK: Startconstructor1L39
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: Startconstructor1L39
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL40
-this.lft : this.lft = lft, 
 this.rht : this.rht = rht, 
+this.lft : this.lft = lft, 
 
 BLOCK: StartevaluateL42
 this.rht : this.rht = null, 
@@ -467,16 +467,16 @@ this.rht : this.rht = null,
 this.lft : this.lft = null, 
 
 BLOCK: StarttoStringL45
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: StarttoStringL45
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL46
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: Startconstructor1L48
 this.value : this.value = 0.0, 
@@ -503,16 +503,16 @@ this.id : this.id = null,
 this.value : this.value = 0.0, 
 
 BLOCK: StarttoStringL54
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: StarttoStringL54
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: BasicL55
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: Startconstructor1L57
 this.rht : this.rht = null, 
@@ -527,16 +527,16 @@ this.rht : this.rht = rht,
 this.lft : this.lft = lft, 
 
 BLOCK: StartevaluateL60
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: StartevaluateL60
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL61
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: StarttoStringL63
 this.lft : this.lft = null, 
@@ -551,41 +551,41 @@ this.lft : this.lft = null,
 this.rht : this.rht = null, 
 
 BLOCK: Startconstructor1L66
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: Startconstructor1L66
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: BasicL67
-this.e : this.e = e, 
 this.id : this.id = id, 
+this.e : this.e = e, 
 
 BLOCK: StartevaluateL69
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: StartevaluateL69
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: BasicL70
-this.e : this.e = null, 
 value : value = this.e.evaluate(binding, ), 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: StarttoStringL72
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: StarttoStringL72
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: BasicL73
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: Startconstructor1L75
 this.original : this.original = null, 
@@ -615,28 +615,28 @@ BLOCK: BasicL82
 this.original : this.original = null, 
 
 BLOCK: Startconstructor1L84
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: Startconstructor1L84
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: BasicL85
-this.id : this.id = id, 
 this.value : this.value = value, 
+this.id : this.id = id, 
 
 BLOCK: StartgetIDL87
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: StartgetIDL87
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: BasicL88
-this.id : this.id = null, 
 this.value : this.value = 0.0, 
+this.id : this.id = null, 
 
 BLOCK: StartgetValueL90
 this.value : this.value = 0.0, 
@@ -684,7 +684,7 @@ Filtered: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 3.156 s
-[INFO] Finished at: 2019-05-01T17:15:00-07:00
-[INFO] Final Memory: 20M/1009M
+[INFO] Total time: 2.918 s
+[INFO] Finished at: 2019-05-06T19:56:00-07:00
+[INFO] Final Memory: 23M/1214M
 [INFO] ------------------------------------------------------------------------

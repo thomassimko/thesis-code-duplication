@@ -19,55 +19,55 @@
 [INFO] 
 [INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ thesis ---
 BLOCK: Startconstructor1L0
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL1
-this.rht : this.rht = rht, 
 this.lft : this.lft = lft, 
+this.rht : this.rht = rht, 
 
 BLOCK: StartevaluateL3
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL4
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StarttoStringL6
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL7
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: StartmainL9
 
 BLOCK: BasicL10
-bindvalue2 : bindvalue2 = vb.lookupBinding("b", ), 
-bindvalue3 : bindvalue3 = vb.lookupBinding("c", ), 
-h : h = new DivideExpression(d, a, ), 
-a : a = new DoubleConstantExpression(1.0, ), 
 p : p = new IdentifierExpression("j", ), 
-z : z = new AddExpression(a, b, ), 
-d : d = new DoubleConstantExpression(2.0, ), 
-assign : assign = new Assignment("a", z, ), 
-bindvalue : bindvalue = vb.lookupBinding("a", ), 
 f : f = new SubtractExpression(d, a, ), 
-b : b = new NegationExpression(a, ), 
-g : g = new MultiplyExpression(d, a, ), 
-vb : vb = new VariableBindings(), 
-c : c = new AddExpression(a, b, ), 
+bindvalue : bindvalue = vb.lookupBinding("a", ), 
+assign : assign = new Assignment("a", z, ), 
+bindvalue2 : bindvalue2 = vb.lookupBinding("b", ), 
+a : a = new DoubleConstantExpression(1.0, ), 
 e : e = new AddExpression(a, d, ), 
+b : b = new NegationExpression(a, ), 
+bindvalue3 : bindvalue3 = vb.lookupBinding("c", ), 
+g : g = new MultiplyExpression(d, a, ), 
+h : h = new DivideExpression(d, a, ), 
+z : z = new AddExpression(a, b, ), 
+c : c = new AddExpression(a, b, ), 
+d : d = new DoubleConstantExpression(2.0, ), 
+vb : vb = new VariableBindings(), 
 
 BLOCK: Startconstructor1L12
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL13
-this.rht : this.rht = rht, 
 this.lft : this.lft = lft, 
+this.rht : this.rht = rht, 
 
 BLOCK: StartevaluateL15
 this.lft : this.lft = null, 
@@ -78,12 +78,12 @@ this.lft : this.lft = null,
 this.rht : this.rht = null, 
 
 BLOCK: StarttoStringL18
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL19
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: StartaddBindingL21
 this.bindings : this.bindings = new ArrayList(), 
@@ -97,74 +97,74 @@ done : done = 0,
 this.bindings : this.bindings = new ArrayList(), 
 
 BLOCK: ForInitL26
-i : i = 0, 
 done : done = 0, 
 this.bindings : this.bindings = new ArrayList(), 
+i : i = 0, 
 
 BLOCK: ForCondL27
+done : done = 1, done = 0, 
 @temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
-bind : bind = new Binding(id, value, ), 
-done : done = 0, done = 1, 
 this.bindings : this.bindings = new ArrayList(), 
+bind : bind = new Binding(id, value, ), 
+i : i = 0, i = i + 1, 
 
 BLOCK: LoopL28
+done : done = 1, done = 0, 
 @temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
-bind : bind = new Binding(id, value, ), 
-done : done = 0, done = 1, 
 this.bindings : this.bindings = new ArrayList(), 
+bind : bind = new Binding(id, value, ), 
+i : i = 0, i = i + 1, 
 
 BLOCK: BasicL29
+done : done = 1, done = 0, 
 @temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
-bind : bind = new Binding(id, value, ), 
-done : done = 0, done = 1, 
 this.bindings : this.bindings = new ArrayList(), 
+bind : bind = new Binding(id, value, ), 
+i : i = 0, i = i + 1, 
 
 BLOCK: trueL30
-@temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
-bind : bind = new Binding(id, value, ), 
 done : done = 1, 
+@temp1 : @temp1 = i, 
 this.bindings : this.bindings = new ArrayList(), 
+bind : bind = new Binding(id, value, ), 
+i : i = 0, i = i + 1, 
 
 BLOCK: joinL31
+done : done = 1, done = 0, 
 @temp1 : @temp1 = i, 
-i : i = i + 1, 
-bind : bind = new Binding(id, value, ), 
-done : done = 0, done = 1, 
 this.bindings : this.bindings = new ArrayList(), 
+bind : bind = new Binding(id, value, ), 
+i : i = i + 1, 
 
 BLOCK: trueL32
+done : done = 1, done = 0, 
 @temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
-bind : bind = new Binding(id, value, ), 
-bind : bind = new Binding(id, value, ), 
-done : done = 0, done = 1, 
 this.bindings : this.bindings = new ArrayList(), 
+bind : bind = new Binding(id, value, ), 
+bind : bind = new Binding(id, value, ), 
+i : i = 0, i = i + 1, 
 
 BLOCK: joinL33
+done : done = 1, done = 0, 
 @temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
-bind : bind = new Binding(id, value, ), 
-bind : bind = new Binding(id, value, ), 
-done : done = 0, done = 1, 
 this.bindings : this.bindings = new ArrayList(), 
+bind : bind = new Binding(id, value, ), 
+bind : bind = new Binding(id, value, ), 
+i : i = 0, i = i + 1, 
 
 BLOCK: falseL34
-bind : bind = new Binding(id, value, ), 
 done : done = 0, 
+bind : bind = new Binding(id, value, ), 
 this.bindings : this.bindings = new ArrayList(), 
 
 BLOCK: joinL25
+done : done = 1, done = 0, 
 @temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
 bind : bind = new Binding(id, value, ), 
-bind : bind = new Binding(id, value, ), 
-bind : bind = new Binding(id, value, ), 
-done : done = 0, done = 1, 
 this.bindings : this.bindings = new ArrayList(), 
+bind : bind = new Binding(id, value, ), 
+bind : bind = new Binding(id, value, ), 
+i : i = 0, i = i + 1, 
 
 BLOCK: StartlookupBindingL35
 this.bindings : this.bindings = new ArrayList(), 
@@ -210,12 +210,12 @@ this.rht : this.rht = rht,
 this.lft : this.lft = lft, 
 
 BLOCK: StartevaluateL47
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL48
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StarttoStringL50
 this.rht : this.rht = null, 
@@ -244,20 +244,20 @@ BLOCK: BasicL60
 this.id : this.id = null, 
 
 BLOCK: Startconstructor1L62
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL63
-this.lft : this.lft = lft, 
 this.rht : this.rht = rht, 
+this.lft : this.lft = lft, 
 
 BLOCK: StartevaluateL65
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL66
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: StarttoStringL68
 this.lft : this.lft = null, 
@@ -268,28 +268,28 @@ this.lft : this.lft = null,
 this.rht : this.rht = null, 
 
 BLOCK: Startconstructor1L71
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: BasicL72
-this.e : this.e = e, 
 this.id : this.id = id, 
+this.e : this.e = e, 
 
 BLOCK: StartevaluateL74
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: BasicL75
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: StarttoStringL77
-this.id : this.id = null, 
 this.e : this.e = null, 
+this.id : this.id = null, 
 
 BLOCK: BasicL78
-this.id : this.id = null, 
 this.e : this.e = null, 
+this.id : this.id = null, 
 
 BLOCK: Startconstructor1L80
 this.value : this.value = null, 
@@ -352,73 +352,73 @@ BLOCK: BasicL105
 this.value : this.value = 0.0, 
 
 BLOCK: Startconstructor1L0
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: Startconstructor1L0
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL1
-this.rht : this.rht = rht, 
 this.lft : this.lft = lft, 
+this.rht : this.rht = rht, 
 
 BLOCK: StartevaluateL3
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StartevaluateL3
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL4
-this.rht : this.rht = null, 
-this.lft : this.lft = null, 
-
-BLOCK: StarttoStringL6
 this.lft : this.lft = null, 
 this.rht : this.rht = null, 
 
 BLOCK: StarttoStringL6
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
+
+BLOCK: StarttoStringL6
+this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL7
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: StartmainL9
 
 BLOCK: StartmainL9
 
 BLOCK: BasicL10
-bindvalue2 : bindvalue2 = vb.lookupBinding("b", ), 
-bindvalue3 : bindvalue3 = vb.lookupBinding("c", ), 
-h : h = new DivideExpression(d, a, ), 
-a : a = new DoubleConstantExpression(1.0, ), 
 p : p = new IdentifierExpression("j", ), 
-z : z = new AddExpression(a, b, ), 
-d : d = new DoubleConstantExpression(2.0, ), 
-assign : assign = new Assignment("a", z, ), 
-bindvalue : bindvalue = vb.lookupBinding("a", ), 
 f : f = new SubtractExpression(d, a, ), 
-b : b = new NegationExpression(a, ), 
-g : g = new MultiplyExpression(d, a, ), 
-vb : vb = new VariableBindings(), 
-c : c = new AddExpression(a, b, ), 
+bindvalue : bindvalue = vb.lookupBinding("a", ), 
+assign : assign = new Assignment("a", z, ), 
+bindvalue2 : bindvalue2 = vb.lookupBinding("b", ), 
+a : a = new DoubleConstantExpression(1.0, ), 
 e : e = new AddExpression(a, d, ), 
+b : b = new NegationExpression(a, ), 
+bindvalue3 : bindvalue3 = vb.lookupBinding("c", ), 
+g : g = new MultiplyExpression(d, a, ), 
+h : h = new DivideExpression(d, a, ), 
+z : z = new AddExpression(a, b, ), 
+c : c = new AddExpression(a, b, ), 
+d : d = new DoubleConstantExpression(2.0, ), 
+vb : vb = new VariableBindings(), 
 
 BLOCK: Startconstructor1L12
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: Startconstructor1L12
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL13
-this.rht : this.rht = rht, 
 this.lft : this.lft = lft, 
+this.rht : this.rht = rht, 
 
 BLOCK: StartevaluateL15
 this.lft : this.lft = null, 
@@ -433,16 +433,16 @@ this.lft : this.lft = null,
 this.rht : this.rht = null, 
 
 BLOCK: StarttoStringL18
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: StarttoStringL18
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL19
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: StartaddBindingL21
 this.bindings : this.bindings = new ArrayList(), 
@@ -459,74 +459,74 @@ done : done = 0,
 this.bindings : this.bindings = new ArrayList(), 
 
 BLOCK: ForInitL26
-i : i = 0, 
 done : done = 0, 
 this.bindings : this.bindings = new ArrayList(), 
+i : i = 0, 
 
 BLOCK: ForCondL27
+done : done = 1, done = 0, 
 @temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
-bind : bind = new Binding(id, value, ), 
-done : done = 0, done = 1, 
 this.bindings : this.bindings = new ArrayList(), 
+bind : bind = new Binding(id, value, ), 
+i : i = 0, i = i + 1, 
 
 BLOCK: LoopL28
+done : done = 1, done = 0, 
 @temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
-bind : bind = new Binding(id, value, ), 
-done : done = 0, done = 1, 
 this.bindings : this.bindings = new ArrayList(), 
+bind : bind = new Binding(id, value, ), 
+i : i = 0, i = i + 1, 
 
 BLOCK: BasicL29
+done : done = 1, done = 0, 
 @temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
-bind : bind = new Binding(id, value, ), 
-done : done = 0, done = 1, 
 this.bindings : this.bindings = new ArrayList(), 
+bind : bind = new Binding(id, value, ), 
+i : i = 0, i = i + 1, 
 
 BLOCK: trueL30
-@temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
-bind : bind = new Binding(id, value, ), 
 done : done = 1, 
+@temp1 : @temp1 = i, 
 this.bindings : this.bindings = new ArrayList(), 
+bind : bind = new Binding(id, value, ), 
+i : i = 0, i = i + 1, 
 
 BLOCK: joinL31
+done : done = 1, done = 0, 
 @temp1 : @temp1 = i, 
-i : i = i + 1, 
-bind : bind = new Binding(id, value, ), 
-done : done = 0, done = 1, 
 this.bindings : this.bindings = new ArrayList(), 
+bind : bind = new Binding(id, value, ), 
+i : i = i + 1, 
 
 BLOCK: trueL32
+done : done = 1, done = 0, 
 @temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
-bind : bind = new Binding(id, value, ), 
-bind : bind = new Binding(id, value, ), 
-done : done = 0, done = 1, 
 this.bindings : this.bindings = new ArrayList(), 
+bind : bind = new Binding(id, value, ), 
+bind : bind = new Binding(id, value, ), 
+i : i = 0, i = i + 1, 
 
 BLOCK: joinL33
+done : done = 1, done = 0, 
 @temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
-bind : bind = new Binding(id, value, ), 
-bind : bind = new Binding(id, value, ), 
-done : done = 0, done = 1, 
 this.bindings : this.bindings = new ArrayList(), 
+bind : bind = new Binding(id, value, ), 
+bind : bind = new Binding(id, value, ), 
+i : i = 0, i = i + 1, 
 
 BLOCK: falseL34
-bind : bind = new Binding(id, value, ), 
 done : done = 0, 
+bind : bind = new Binding(id, value, ), 
 this.bindings : this.bindings = new ArrayList(), 
 
 BLOCK: joinL25
+done : done = 1, done = 0, 
 @temp1 : @temp1 = i, 
-i : i = i + 1, i = 0, 
 bind : bind = new Binding(id, value, ), 
-bind : bind = new Binding(id, value, ), 
-bind : bind = new Binding(id, value, ), 
-done : done = 0, done = 1, 
 this.bindings : this.bindings = new ArrayList(), 
+bind : bind = new Binding(id, value, ), 
+bind : bind = new Binding(id, value, ), 
+i : i = 0, i = i + 1, 
 
 BLOCK: StartlookupBindingL35
 this.bindings : this.bindings = new ArrayList(), 
@@ -579,16 +579,16 @@ this.rht : this.rht = rht,
 this.lft : this.lft = lft, 
 
 BLOCK: StartevaluateL47
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StartevaluateL47
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: BasicL48
-this.rht : this.rht = null, 
 this.lft : this.lft = null, 
+this.rht : this.rht = null, 
 
 BLOCK: StarttoStringL50
 this.rht : this.rht = null, 
@@ -630,28 +630,28 @@ BLOCK: BasicL60
 this.id : this.id = null, 
 
 BLOCK: Startconstructor1L62
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: Startconstructor1L62
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL63
-this.lft : this.lft = lft, 
 this.rht : this.rht = rht, 
+this.lft : this.lft = lft, 
 
 BLOCK: StartevaluateL65
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: StartevaluateL65
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: BasicL66
-this.lft : this.lft = null, 
 this.rht : this.rht = null, 
+this.lft : this.lft = null, 
 
 BLOCK: StarttoStringL68
 this.lft : this.lft = null, 
@@ -666,40 +666,40 @@ this.lft : this.lft = null,
 this.rht : this.rht = null, 
 
 BLOCK: Startconstructor1L71
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: Startconstructor1L71
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: BasicL72
-this.e : this.e = e, 
 this.id : this.id = id, 
+this.e : this.e = e, 
 
 BLOCK: StartevaluateL74
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: StartevaluateL74
-this.e : this.e = null, 
 this.id : this.id = null, 
+this.e : this.e = null, 
 
 BLOCK: BasicL75
-this.e : this.e = null, 
-this.id : this.id = null, 
-
-BLOCK: StarttoStringL77
 this.id : this.id = null, 
 this.e : this.e = null, 
 
 BLOCK: StarttoStringL77
-this.id : this.id = null, 
 this.e : this.e = null, 
+this.id : this.id = null, 
+
+BLOCK: StarttoStringL77
+this.e : this.e = null, 
+this.id : this.id = null, 
 
 BLOCK: BasicL78
-this.id : this.id = null, 
 this.e : this.e = null, 
+this.id : this.id = null, 
 
 BLOCK: Startconstructor1L80
 this.value : this.value = null, 
@@ -791,7 +791,7 @@ this.value : this.value = 0.0,
 BLOCK: BasicL105
 this.value : this.value = 0.0, 
 
-Unfiltered: 18
+Unfiltered: 9
 Filtered: 1
 
 
@@ -808,8 +808,8 @@ Duplicate found: 102_Code/102_hw2/dir25/TestCases.java lines [11, 44] and 102_Co
 11 :	a = new DoubleConstantExpression(1.0, )
 39 :	g = new MultiplyExpression(d, a, )
 44 :	h = new DivideExpression(d, a, )
-29 :	e = new AddExpression(a, d, )
 34 :	f = new SubtractExpression(d, a, )
+29 :	e = new AddExpression(a, d, )
 ===========================
 
 
@@ -817,7 +817,7 @@ Duplicate found: 102_Code/102_hw2/dir25/TestCases.java lines [11, 44] and 102_Co
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 3.772 s
-[INFO] Finished at: 2019-05-01T17:14:47-07:00
-[INFO] Final Memory: 20M/1001M
+[INFO] Total time: 3.296 s
+[INFO] Finished at: 2019-05-06T19:55:49-07:00
+[INFO] Final Memory: 23M/1219M
 [INFO] ------------------------------------------------------------------------

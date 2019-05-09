@@ -1,0 +1,5 @@
+digraph G {
+"5 : this.scan = new Scanner(System.in, )"
+"9 : System.out.println(\"Invalid entry.\", )"
+"10 : System.exit(1, )"
+}

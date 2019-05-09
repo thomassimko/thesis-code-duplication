@@ -1,0 +1,6 @@
+digraph G {
+"31 : pt = new PolarPoint(5.0, Math.PI / 2, )"
+"32 : Check.check(pt.angle(), Math.PI / 2, )"
+"34 : pt2 = new PolarPoint(10.3, Math.PI / 6, )"
+"35 : Check.check(pt2.angle(), Math.PI / 6, )"
+}

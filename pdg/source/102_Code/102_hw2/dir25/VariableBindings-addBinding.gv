@@ -8,8 +8,8 @@ digraph G {
 "14 : i = 0"
 "14 : i = 0" -> "14 : @temp1 = i"
 "14 : i = 0" -> "14 : i < this.bindings.size() && done != 1"
-"14 : i = 0" -> "20 : this.bindings.set(i, bind, )"
 "14 : i = 0" -> "14 : i = i + 1"
+"14 : i = 0" -> "20 : this.bindings.set(i, bind, )"
 "14 : i = 0" -> "14 : i = i + 1" [style=dashed]
 "14 : i < this.bindings.size() && done != 1"
 "17 : equals(id, )"
@@ -27,8 +27,8 @@ digraph G {
 "14 : i = i + 1"
 "14 : i = i + 1" -> "14 : @temp1 = i"
 "14 : i = i + 1" -> "14 : i < this.bindings.size() && done != 1"
-"14 : i = i + 1" -> "20 : this.bindings.set(i, bind, )"
 "14 : i = i + 1" -> "14 : i = i + 1"
+"14 : i = i + 1" -> "20 : this.bindings.set(i, bind, )"
 "14 : i = i + 1" -> "14 : i = i + 1" [style=dashed]
 "27 : bind = new Binding(id, value, )"
 "27 : bind = new Binding(id, value, )" -> "28 : this.bindings.add(bind, )"
