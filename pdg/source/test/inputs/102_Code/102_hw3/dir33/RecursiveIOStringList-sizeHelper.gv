@@ -1,0 +1,6 @@
+digraph G {
+"5 : this.head = null"
+"171 : cur instanceof RIONode"
+"172 : 1 + sizeHelper(cur.getNext(), )"
+"173 : 0"
+}

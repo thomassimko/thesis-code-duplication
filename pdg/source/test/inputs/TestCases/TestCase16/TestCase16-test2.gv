@@ -1,0 +1,78 @@
+digraph G {
+"25 : sum = 0"
+"25 : sum = 0" -> "41 : average = sum * 1.0 / count"
+"25 : sum = 0" -> "34 : sum = sum + arr[i]"
+"25 : sum = 0" -> "29 : something = @temp21 ? sum + 32 : Integer.parseInt(arr, )"
+"25 : sum = 0" -> "34 : sum = sum + arr[i]" [style=dashed]
+"26 : something = 4"
+"26 : something = 4" -> "28 : something = something + 12"
+"26 : something = 4" -> "28 : something = something + 12" [style=dashed]
+"27 : count = 0"
+"27 : count = 0" -> "35 : count = count + 1"
+"27 : count = 0" -> "40 : @temp26 = something % 4 == count"
+"27 : count = 0" -> "35 : @temp24 = count"
+"27 : count = 0" -> "41 : average = sum * 1.0 / count"
+"27 : count = 0" -> "35 : count = count + 1" [style=dashed]
+"28 : something = something + 12"
+"28 : something = something + 12" -> "29 : @temp21 = something == 3"
+"28 : something = something + 12" -> "29 : something = @temp21 ? sum + 32 : Integer.parseInt(arr, )" [style=dashed]
+"29 : @temp21 = something == 3"
+"29 : @temp21 = something == 3" -> "29 : something = @temp21 ? sum + 32 : Integer.parseInt(arr, )"
+"29 : something = @temp21 ? sum + 32 : Integer.parseInt(arr, )"
+"29 : something = @temp21 ? sum + 32 : Integer.parseInt(arr, )" -> "40 : @temp26 = something % 4 == count"
+"29 : something = @temp21 ? sum + 32 : Integer.parseInt(arr, )" -> "32 : @temp22 = something"
+"29 : something = @temp21 ? sum + 32 : Integer.parseInt(arr, )" -> "32 : something = something + 1"
+"29 : something = @temp21 ? sum + 32 : Integer.parseInt(arr, )" -> "40 : newThing = @temp26 ? something : 432"
+"29 : something = @temp21 ? sum + 32 : Integer.parseInt(arr, )" -> "32 : something = something + 1" [style=dashed]
+"31 : i = 0"
+"31 : i = 0" -> "31 : i < 3"
+"31 : i = 0" -> "31 : @temp25 = i"
+"31 : i = 0" -> "34 : sum = sum + arr[i]"
+"31 : i = 0" -> "31 : i = i + 1"
+"31 : i = 0" -> "31 : i = i + 1" [style=dashed]
+"31 : i < 3"
+"32 : @temp22 = something"
+"32 : @temp22 = something" -> "32 : @temp22 = something" [style=dashed]
+"32 : something = something + 1"
+"32 : something = something + 1" -> "33 : @temp23 = something"
+"32 : something = something + 1" -> "33 : something = something - 1"
+"32 : something = something + 1" -> "33 : something = something - 1" [style=dashed]
+"33 : @temp23 = something"
+"33 : @temp23 = something" -> "33 : @temp23 = something" [style=dashed]
+"33 : something = something - 1"
+"33 : something = something - 1" -> "40 : @temp26 = something % 4 == count"
+"33 : something = something - 1" -> "37 : firefighter = firefighter / something"
+"33 : something = something - 1" -> "32 : @temp22 = something"
+"33 : something = something - 1" -> "32 : something = something + 1"
+"33 : something = something - 1" -> "40 : newThing = @temp26 ? something : 432"
+"33 : something = something - 1" -> "32 : something = something + 1" [style=dashed]
+"34 : sum = sum + arr[i]"
+"34 : sum = sum + arr[i]" -> "41 : average = sum * 1.0 / count"
+"34 : sum = sum + arr[i]" -> "34 : sum = sum + arr[i]"
+"34 : sum = sum + arr[i]" -> "34 : sum = sum + arr[i]" [style=dashed]
+"35 : @temp24 = count"
+"35 : @temp24 = count" -> "35 : @temp24 = count" [style=dashed]
+"35 : count = count + 1"
+"35 : count = count + 1" -> "35 : count = count + 1"
+"35 : count = count + 1" -> "40 : @temp26 = something % 4 == count"
+"35 : count = count + 1" -> "35 : @temp24 = count"
+"35 : count = count + 1" -> "41 : average = sum * 1.0 / count"
+"35 : count = count + 1" -> "35 : count = count + 1" [style=dashed]
+"36 : firefighter = Integer.parseInt(\"43\", )"
+"36 : firefighter = Integer.parseInt(\"43\", )" -> "37 : firefighter = firefighter / something"
+"36 : firefighter = Integer.parseInt(\"43\", )" -> "37 : firefighter = firefighter / something" [style=dashed]
+"37 : firefighter = firefighter / something"
+"37 : firefighter = firefighter / something" -> "36 : firefighter = Integer.parseInt(\"43\", )" [style=dashed]
+"31 : @temp25 = i"
+"31 : @temp25 = i" -> "31 : @temp25 = i" [style=dashed]
+"31 : i = i + 1"
+"31 : i = i + 1" -> "31 : i < 3"
+"31 : i = i + 1" -> "31 : @temp25 = i"
+"31 : i = i + 1" -> "34 : sum = sum + arr[i]"
+"31 : i = i + 1" -> "31 : i = i + 1"
+"31 : i = i + 1" -> "31 : i = i + 1" [style=dashed]
+"40 : @temp26 = something % 4 == count"
+"40 : @temp26 = something % 4 == count" -> "40 : newThing = @temp26 ? something : 432"
+"40 : newThing = @temp26 ? something : 432"
+"41 : average = sum * 1.0 / count"
+}

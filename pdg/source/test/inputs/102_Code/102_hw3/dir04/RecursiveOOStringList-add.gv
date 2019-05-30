@@ -1,0 +1,9 @@
+digraph G {
+"4 : this.head = null"
+"4 : this.head = null" -> "26 : this.head instanceof ROOEmpty"
+"4 : this.head = null" -> "28 : this.head = new ROONode(element, this.head, )"
+"4 : this.head = null" -> "28 : this.head = new ROONode(element, this.head, )" [style=dashed]
+"26 : this.head instanceof ROOEmpty"
+"28 : this.head = new ROONode(element, this.head, )"
+"32 : this.head.add(index, element, )"
+}

@@ -1,0 +1,5 @@
+digraph G {
+"5 : d = new DoubleConstantExpression(3.0, )"
+"6 : Check.check(d.evaluate(null, ), 3, )"
+"7 : Check.check(d.toString(), \"3.0\", )"
+}

@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.variable = null"
+"4 : this.variable = null" -> "20 : \"set \" + this.variable + \" = \" + this.exp"
+"5 : this.exp = null"
+"5 : this.exp = null" -> "20 : \"set \" + this.variable + \" = \" + this.exp"
+"20 : \"set \" + this.variable + \" = \" + this.exp"
+}

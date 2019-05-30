@@ -1,0 +1,7 @@
+digraph G {
+"3 : this.dollars = 0"
+"3 : this.dollars = 0" -> "33 : this.dollars * 100 + this.cents"
+"4 : this.cents = 0"
+"4 : this.cents = 0" -> "33 : this.dollars * 100 + this.cents"
+"33 : this.dollars * 100 + this.cents"
+}

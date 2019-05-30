@@ -1,0 +1,43 @@
+digraph G {
+"27 : this.goodList = null"
+"28 : this.badList = null"
+"29 : this.RSSList = null"
+"59 : i = 0"
+"59 : i = 0" -> "62 : i = 0" [style=dashed]
+"60 : j = 0"
+"60 : j = 0" -> "64 : j = 0" [style=dashed]
+"62 : i = 0"
+"62 : i = 0" -> "62 : i < this.goodList.size()"
+"62 : i = 0" -> "62 : @temp6 = i"
+"62 : i = 0" -> "68 : this.goodList.remove(i, )"
+"62 : i = 0" -> "62 : i = i + 1"
+"62 : i = 0" -> "62 : i = i + 1" [style=dashed]
+"62 : i < this.goodList.size()"
+"64 : j = 0"
+"64 : j = 0" -> "64 : @temp5 = j"
+"64 : j = 0" -> "64 : j = j + 1"
+"64 : j = 0" -> "66 : equals(this.badList.get(j, ), )"
+"64 : j = 0" -> "64 : j < this.badList.size()"
+"64 : j = 0" -> "64 : j = j + 1" [style=dashed]
+"64 : j = 0" -> "64 : j = 0" [style=dashed]
+"64 : j < this.badList.size()"
+"66 : equals(this.badList.get(j, ), )"
+"62 : @temp6 = i"
+"62 : @temp6 = i" -> "62 : @temp6 = i" [style=dashed]
+"62 : i = i + 1"
+"62 : i = i + 1" -> "62 : i < this.goodList.size()"
+"62 : i = i + 1" -> "62 : @temp6 = i"
+"62 : i = i + 1" -> "68 : this.goodList.remove(i, )"
+"62 : i = i + 1" -> "62 : i = i + 1"
+"62 : i = i + 1" -> "62 : i = i + 1" [style=dashed]
+"68 : this.goodList.remove(i, )"
+"64 : @temp5 = j"
+"64 : @temp5 = j" -> "64 : @temp5 = j" [style=dashed]
+"64 : j = j + 1"
+"64 : j = j + 1" -> "64 : @temp5 = j"
+"64 : j = j + 1" -> "64 : j = j + 1"
+"64 : j = j + 1" -> "66 : equals(this.badList.get(j, ), )"
+"64 : j = j + 1" -> "64 : j < this.badList.size()"
+"64 : j = j + 1" -> "64 : j = j + 1" [style=dashed]
+"64 : j = j + 1" -> "64 : j = 0" [style=dashed]
+}

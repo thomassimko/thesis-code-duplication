@@ -1,0 +1,14 @@
+digraph G {
+"4 : this.value = null"
+"5 : this.next = null"
+"62 : this.value.equals(element, )"
+"63 : 0"
+"64 : index = this.next.indexOf(element, )"
+"64 : index = this.next.indexOf(element, )" -> "65 : @temp1 = index == 1"
+"64 : index = this.next.indexOf(element, )" -> "65 : @temp1 ? -1 : index + 1"
+"64 : index = this.next.indexOf(element, )" -> "64 : index = this.next.indexOf(element, )" [style=dashed]
+"65 : @temp1 = index == 1"
+"65 : @temp1 = index == 1" -> "65 : @temp1 ? -1 : index + 1"
+"65 : @temp1 = index == 1" -> "65 : @temp1 = index == 1" [style=dashed]
+"65 : @temp1 ? -1 : index + 1"
+}

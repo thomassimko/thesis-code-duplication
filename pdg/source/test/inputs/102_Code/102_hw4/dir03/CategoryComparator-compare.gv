@@ -1,0 +1,6 @@
+digraph G {
+"7 : leftString = left.getCategory()"
+"8 : rightString = right.getCategory()"
+"8 : rightString = right.getCategory()" -> "9 : leftString.compareTo(rightString, )"
+"9 : leftString.compareTo(rightString, )"
+}

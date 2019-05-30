@@ -1,0 +1,8 @@
+digraph G {
+"6 : this.head = null"
+"47 : cur instanceof RIOEmpty"
+"49 : n = new RIONode(element, cur, )"
+"54 : n = addToEndHelper(element, cur.getNext(), )"
+"54 : n = addToEndHelper(element, cur.getNext(), )" -> "55 : cur.setNext(n, )"
+"55 : cur.setNext(n, )"
+}

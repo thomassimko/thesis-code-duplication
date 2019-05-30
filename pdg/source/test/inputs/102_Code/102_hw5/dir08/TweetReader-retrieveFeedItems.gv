@@ -1,0 +1,16 @@
+digraph G {
+"8 : this.sourceList = new ArrayList()"
+"8 : this.sourceList = new ArrayList()" -> "32 : src = this.sourceList"
+"9 : this.badList = new ArrayList()"
+"29 : rssList = new ArrayList()"
+"29 : rssList = new ArrayList()" -> "48 : Collections.sort(rssList, new RSSComparator(), )"
+"30 : this.badList.clear()"
+"32 : src = this.sourceList"
+"48 : Collections.sort(rssList, new RSSComparator(), )"
+"36 : factory = DocumentBuilderFactory.newInstance()"
+"37 : builder = factory.newDocumentBuilder()"
+"38 : feedDocument = builder.parse(src, )"
+"38 : feedDocument = builder.parse(src, )" -> "40 : Helpers.addRSSItems(rssList, feedDocument, )"
+"40 : Helpers.addRSSItems(rssList, feedDocument, )"
+"44 : this.badList.add(src, )"
+}

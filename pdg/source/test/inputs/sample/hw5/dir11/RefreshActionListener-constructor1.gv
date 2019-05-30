@@ -1,0 +1,8 @@
+digraph G {
+"14 : this.feed = null"
+"14 : this.feed = null" -> "19 : this.feed = feed" [style=dashed]
+"15 : this.feedItems = null"
+"15 : this.feedItems = null" -> "20 : this.feedItems = feedItems" [style=dashed]
+"19 : this.feed = feed"
+"20 : this.feedItems = feedItems"
+}

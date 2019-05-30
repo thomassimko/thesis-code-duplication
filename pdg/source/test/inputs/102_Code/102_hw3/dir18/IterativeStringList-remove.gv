@@ -1,0 +1,27 @@
+digraph G {
+"4 : this.head = null"
+"4 : this.head = null" -> "21 : n = this.head"
+"4 : this.head = null" -> "25 : this.head = this.head.getNext()" [style=dashed]
+"21 : n = this.head"
+"21 : n = this.head" -> "29 : n = n.getNext()" [style=dashed]
+"22 : str = null"
+"23 : cur = 1"
+"23 : cur = 1" -> "30 : @temp2 = cur"
+"23 : cur = 1" -> "30 : cur = cur + 1"
+"23 : cur = 1" -> "28 : cur != index"
+"23 : cur = 1" -> "30 : cur = cur + 1" [style=dashed]
+"24 : index == 0"
+"25 : this.head = this.head.getNext()"
+"28 : cur != index"
+"29 : n = n.getNext()"
+"29 : n = n.getNext()" -> "29 : n = n.getNext()" [style=dashed]
+"30 : @temp2 = cur"
+"30 : @temp2 = cur" -> "30 : @temp2 = cur" [style=dashed]
+"30 : cur = cur + 1"
+"30 : cur = cur + 1" -> "30 : @temp2 = cur"
+"30 : cur = cur + 1" -> "30 : cur = cur + 1"
+"30 : cur = cur + 1" -> "28 : cur != index"
+"30 : cur = cur + 1" -> "30 : cur = cur + 1" [style=dashed]
+"28 : cur != index"
+"32 : n.setNext(getNext(), )"
+}

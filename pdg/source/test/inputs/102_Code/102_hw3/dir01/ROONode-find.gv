@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.string = null"
+"5 : this.next = null"
+"78 : this.string.compareTo(element, ) == 0"
+"80 : n + 1"
+"82 : find(element, n + 1, )"
+}

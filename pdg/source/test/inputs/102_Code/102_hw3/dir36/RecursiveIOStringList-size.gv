@@ -1,0 +1,7 @@
+digraph G {
+"5 : this.head = null"
+"6 : this.temp = null"
+"145 : temp instanceof RIOEmpty"
+"147 : 0"
+"151 : 1 + size(temp.next(), )"
+}

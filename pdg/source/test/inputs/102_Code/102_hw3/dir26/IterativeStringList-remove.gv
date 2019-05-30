@@ -1,0 +1,30 @@
+digraph G {
+"4 : this.first = null"
+"4 : this.first = null" -> "44 : this.first == null || index < 0 || index > size() - 1"
+"4 : this.first = null" -> "52 : cur = this.first"
+"4 : this.first = null" -> "48 : this.first = this.first.getNext()" [style=dashed]
+"44 : this.first == null || index < 0 || index > size() - 1"
+"45 : new IndexOutOfBoundsException()"
+"46 : index == 0"
+"47 : remove = this.first.getNode()"
+"48 : this.first = this.first.getNext()"
+"52 : cur = this.first"
+"52 : cur = this.first" -> "54 : cur = cur.getNext()" [style=dashed]
+"53 : i = 1"
+"53 : i = 1" -> "53 : i < index"
+"53 : i = 1" -> "53 : @temp3 = i"
+"53 : i = 1" -> "53 : i = i + 1"
+"53 : i = 1" -> "53 : i = i + 1" [style=dashed]
+"53 : i < index"
+"54 : cur = cur.getNext()"
+"54 : cur = cur.getNext()" -> "54 : cur = cur.getNext()" [style=dashed]
+"53 : @temp3 = i"
+"53 : @temp3 = i" -> "53 : @temp3 = i" [style=dashed]
+"53 : i = i + 1"
+"53 : i = i + 1" -> "53 : i < index"
+"53 : i = i + 1" -> "53 : @temp3 = i"
+"53 : i = i + 1" -> "53 : i = i + 1"
+"53 : i = i + 1" -> "53 : i = i + 1" [style=dashed]
+"56 : remove = getNode()"
+"57 : cur.setNext(getNext(), )"
+}

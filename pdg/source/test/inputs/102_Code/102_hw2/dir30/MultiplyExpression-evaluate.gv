@@ -1,0 +1,5 @@
+digraph G {
+"3 : this.left = null"
+"3 : this.right = null"
+"10 : bindings.value = this.left.evaluate(bindings, ) * this.right.evaluate(bindings, )"
+}

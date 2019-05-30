@@ -1,0 +1,8 @@
+digraph G {
+"6 : this.nextComp = null"
+"16 : o1.getDollarAmount() == o1.getDollarAmount() && o1.getCentAmount() == o2.getCentAmount()"
+"18 : this.nextComp.compare(o1, o2, )"
+"22 : o1.getDollarAmount() == o2.getDollarAmount()"
+"24 : o1.getCentAmount() - o2.getCentAmount()"
+"26 : o1.getDollarAmount() - o2.getDollarAmount()"
+}

@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.string = null"
+"5 : this.next = null"
+"59 : index == 0"
+"61 : toString()"
+"65 : get(index - 1, )"
+}

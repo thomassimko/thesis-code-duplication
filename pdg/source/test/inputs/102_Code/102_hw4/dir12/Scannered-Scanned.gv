@@ -1,0 +1,77 @@
+digraph G {
+"10 : expended = new ArrayList()"
+"11 : f = new File(\"StoredExpenses\", )"
+"12 : f.exists()"
+"14 : sc = new Scanner(f, )"
+"15 : sp = null"
+"16 : df = new SimpleDateFormat(\"MM/dd/yyyy \", )"
+"18 : remaining = 0.0"
+"18 : remaining = 0.0" -> "45 : remaining = Double.parseDouble(sc.nextLine(), )" [style=dashed]
+"19 : name = null"
+"19 : name = null" -> "33 : name = sc.nextLine()" [style=dashed]
+"19 : name = null" -> "43 : name = sc.nextLine()" [style=dashed]
+"20 : category = null"
+"20 : category = null" -> "42 : category = sc.nextLine()" [style=dashed]
+"20 : category = null" -> "32 : category = sc.nextLine()" [style=dashed]
+"21 : d = null"
+"21 : d = null" -> "38 : d = df.parse(sc.nextLine(), )" [style=dashed]
+"21 : d = null" -> "28 : d = df.parse(sc.nextLine(), )" [style=dashed]
+"22 : amount = 0.0"
+"22 : amount = 0.0" -> "34 : amount = Double.parseDouble(sc.nextLine(), ) * 100" [style=dashed]
+"22 : amount = 0.0" -> "44 : amount = Double.parseDouble(sc.nextLine(), ) * 100" [style=dashed]
+"24 : sc.hasNext()"
+"26 : string = sc.nextLine()"
+"26 : string = sc.nextLine()" -> "26 : string = sc.nextLine()" [style=dashed]
+"27 : string.equals(\"in-full\", )"
+"56 : System.out.println(\"File Loaded\", )"
+"28 : d = df.parse(sc.nextLine(), )"
+"28 : d = df.parse(sc.nextLine(), )" -> "30 : c.setTime(d, )"
+"28 : d = df.parse(sc.nextLine(), )" -> "36 : expended.add(new inFull(d, amount, name, category, ), )"
+"28 : d = df.parse(sc.nextLine(), )" -> "38 : d = df.parse(sc.nextLine(), )" [style=dashed]
+"28 : d = df.parse(sc.nextLine(), )" -> "28 : d = df.parse(sc.nextLine(), )" [style=dashed]
+"29 : c = Calendar.getInstance()"
+"29 : c = Calendar.getInstance()" -> "29 : c = Calendar.getInstance()" [style=dashed]
+"30 : c.setTime(d, )"
+"32 : category = sc.nextLine()"
+"32 : category = sc.nextLine()" -> "36 : expended.add(new inFull(d, amount, name, category, ), )"
+"32 : category = sc.nextLine()" -> "42 : category = sc.nextLine()" [style=dashed]
+"32 : category = sc.nextLine()" -> "32 : category = sc.nextLine()" [style=dashed]
+"33 : name = sc.nextLine()"
+"33 : name = sc.nextLine()" -> "36 : expended.add(new inFull(d, amount, name, category, ), )"
+"33 : name = sc.nextLine()" -> "33 : name = sc.nextLine()" [style=dashed]
+"33 : name = sc.nextLine()" -> "43 : name = sc.nextLine()" [style=dashed]
+"34 : amount = Double.parseDouble(sc.nextLine(), ) * 100"
+"34 : amount = Double.parseDouble(sc.nextLine(), ) * 100" -> "36 : expended.add(new inFull(d, amount, name, category, ), )"
+"34 : amount = Double.parseDouble(sc.nextLine(), ) * 100" -> "34 : amount = Double.parseDouble(sc.nextLine(), ) * 100" [style=dashed]
+"34 : amount = Double.parseDouble(sc.nextLine(), ) * 100" -> "44 : amount = Double.parseDouble(sc.nextLine(), ) * 100" [style=dashed]
+"36 : expended.add(new inFull(d, amount, name, category, ), )"
+"37 : string.equals(\"partial\", )"
+"38 : d = df.parse(sc.nextLine(), )"
+"38 : d = df.parse(sc.nextLine(), )" -> "49 : expended.add(new partial(d, amount, name, category, remaining, ), )"
+"38 : d = df.parse(sc.nextLine(), )" -> "40 : c.setTime(d, )"
+"38 : d = df.parse(sc.nextLine(), )" -> "38 : d = df.parse(sc.nextLine(), )" [style=dashed]
+"38 : d = df.parse(sc.nextLine(), )" -> "28 : d = df.parse(sc.nextLine(), )" [style=dashed]
+"39 : c = Calendar.getInstance()"
+"39 : c = Calendar.getInstance()" -> "39 : c = Calendar.getInstance()" [style=dashed]
+"40 : c.setTime(d, )"
+"42 : category = sc.nextLine()"
+"42 : category = sc.nextLine()" -> "49 : expended.add(new partial(d, amount, name, category, remaining, ), )"
+"42 : category = sc.nextLine()" -> "42 : category = sc.nextLine()" [style=dashed]
+"42 : category = sc.nextLine()" -> "32 : category = sc.nextLine()" [style=dashed]
+"43 : name = sc.nextLine()"
+"43 : name = sc.nextLine()" -> "49 : expended.add(new partial(d, amount, name, category, remaining, ), )"
+"43 : name = sc.nextLine()" -> "33 : name = sc.nextLine()" [style=dashed]
+"43 : name = sc.nextLine()" -> "43 : name = sc.nextLine()" [style=dashed]
+"44 : amount = Double.parseDouble(sc.nextLine(), ) * 100"
+"44 : amount = Double.parseDouble(sc.nextLine(), ) * 100" -> "49 : expended.add(new partial(d, amount, name, category, remaining, ), )"
+"44 : amount = Double.parseDouble(sc.nextLine(), ) * 100" -> "34 : amount = Double.parseDouble(sc.nextLine(), ) * 100" [style=dashed]
+"44 : amount = Double.parseDouble(sc.nextLine(), ) * 100" -> "44 : amount = Double.parseDouble(sc.nextLine(), ) * 100" [style=dashed]
+"45 : remaining = Double.parseDouble(sc.nextLine(), )"
+"45 : remaining = Double.parseDouble(sc.nextLine(), )" -> "49 : expended.add(new partial(d, amount, name, category, remaining, ), )"
+"45 : remaining = Double.parseDouble(sc.nextLine(), )" -> "45 : remaining = Double.parseDouble(sc.nextLine(), )" [style=dashed]
+"49 : expended.add(new partial(d, amount, name, category, remaining, ), )"
+"51 : System.err.println(\"invalid strings in \" + f.toString(), )"
+"24 : sc.hasNext()"
+"59 : System.err.println(\"cant find \" + f.toString(), )"
+"62 : System.err.println(\"invalid strings in \" + f.toString(), )"
+}

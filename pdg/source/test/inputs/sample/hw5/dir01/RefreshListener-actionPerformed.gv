@@ -1,0 +1,40 @@
+digraph G {
+"12 : this.reeder = null"
+"13 : this.item = null"
+"23 : dispitem = null"
+"23 : dispitem = null" -> "24 : dispitem = retrieveFeedItems()" [style=dashed]
+"24 : dispitem = retrieveFeedItems()"
+"24 : dispitem = retrieveFeedItems()" -> "26 : Collections.sort(dispitem, new RSSItemComparator(), )"
+"25 : str = \"\""
+"25 : str = \"\"" -> "33 : this.item.setText(str, )"
+"25 : str = \"\"" -> "28 : str = str + getTitle() + \"\n\""
+"25 : str = \"\"" -> "28 : str = str + getTitle() + \"\n\"" [style=dashed]
+"26 : Collections.sort(dispitem, new RSSItemComparator(), )"
+"27 : i = 0"
+"27 : i = 0" -> "27 : @temp13 = i"
+"27 : i = 0" -> "27 : i = i + 1"
+"27 : i = 0" -> "27 : i < dispitem.size()"
+"27 : i = 0" -> "27 : i = i + 1" [style=dashed]
+"27 : i < dispitem.size()"
+"28 : str = str + getTitle() + \"\n\""
+"28 : str = str + getTitle() + \"\n\"" -> "29 : str = str + \"    \" + caltoread(getDate(), ) + \"\n\""
+"28 : str = str + getTitle() + \"\n\"" -> "29 : str = str + \"    \" + caltoread(getDate(), ) + \"\n\"" [style=dashed]
+"29 : str = str + \"    \" + caltoread(getDate(), ) + \"\n\""
+"29 : str = str + \"    \" + caltoread(getDate(), ) + \"\n\"" -> "30 : str = str + \"    \" + getLink() + \"\n\""
+"29 : str = str + \"    \" + caltoread(getDate(), ) + \"\n\"" -> "30 : str = str + \"    \" + getLink() + \"\n\"" [style=dashed]
+"30 : str = str + \"    \" + getLink() + \"\n\""
+"30 : str = str + \"    \" + getLink() + \"\n\"" -> "31 : str = str + \"\n\""
+"30 : str = str + \"    \" + getLink() + \"\n\"" -> "31 : str = str + \"\n\"" [style=dashed]
+"31 : str = str + \"\n\""
+"31 : str = str + \"\n\"" -> "33 : this.item.setText(str, )"
+"31 : str = str + \"\n\"" -> "28 : str = str + getTitle() + \"\n\""
+"31 : str = str + \"\n\"" -> "28 : str = str + getTitle() + \"\n\"" [style=dashed]
+"27 : @temp13 = i"
+"27 : @temp13 = i" -> "27 : @temp13 = i" [style=dashed]
+"27 : i = i + 1"
+"27 : i = i + 1" -> "27 : @temp13 = i"
+"27 : i = i + 1" -> "27 : i = i + 1"
+"27 : i = i + 1" -> "27 : i < dispitem.size()"
+"27 : i = i + 1" -> "27 : i = i + 1" [style=dashed]
+"33 : this.item.setText(str, )"
+}

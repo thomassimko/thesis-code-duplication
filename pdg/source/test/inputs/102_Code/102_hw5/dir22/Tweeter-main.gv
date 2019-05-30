@@ -1,0 +1,5 @@
+digraph G {
+"12 : TFR = new TwitFeedReader()"
+"12 : TFR = new TwitFeedReader()" -> "13 : TG = new TwitGUI(TFR, )"
+"13 : TG = new TwitGUI(TFR, )"
+}

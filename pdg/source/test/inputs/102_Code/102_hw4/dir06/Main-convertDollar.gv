@@ -1,0 +1,6 @@
+digraph G {
+"387 : scan = new Scanner(s, )"
+"388 : scan.hasNextDouble()"
+"390 : temp = scan.nextDouble()"
+"393 : new NoSuchElementException()"
+}

@@ -1,0 +1,51 @@
+digraph G {
+"19 : this.expenseList = new LinkedList()"
+"142 : System.out.print(\"Expense type (in-full, partial)? \", )"
+"143 : type = scan.next()"
+"144 : type.equals(\"in-full\", )"
+"146 : System.out.print(\"Payment date: \", )"
+"147 : date = null"
+"150 : date = convertDate(scan.next(), )"
+"150 : date = convertDate(scan.next(), )" -> "163 : expense = new InFull(date, category, payee, paid, )"
+"156 : System.out.print(\"Expense Amount: \", )"
+"157 : paid = scan.next()"
+"157 : paid = scan.next()" -> "163 : expense = new InFull(date, category, payee, paid, )"
+"157 : paid = scan.next()" -> "157 : paid = scan.next()" [style=dashed]
+"158 : System.out.print(\"Who was this expense paid to? \", )"
+"159 : payee = scan.next()"
+"159 : payee = scan.next()" -> "163 : expense = new InFull(date, category, payee, paid, )"
+"159 : payee = scan.next()" -> "159 : payee = scan.next()" [style=dashed]
+"160 : System.out.print(\"Expense category: \", )"
+"161 : category = scan.next()"
+"161 : category = scan.next()" -> "163 : expense = new InFull(date, category, payee, paid, )"
+"161 : category = scan.next()" -> "161 : category = scan.next()" [style=dashed]
+"163 : expense = new InFull(date, category, payee, paid, )"
+"163 : expense = new InFull(date, category, payee, paid, )" -> "164 : this.expenseList.add(expense, )"
+"163 : expense = new InFull(date, category, payee, paid, )" -> "163 : expense = new InFull(date, category, payee, paid, )" [style=dashed]
+"164 : this.expenseList.add(expense, )"
+"166 : type.equals(\"partial\", )"
+"168 : System.out.print(\"Payment date: \", )"
+"169 : date = null"
+"172 : date = convertDate(scan.next(), )"
+"172 : date = convertDate(scan.next(), )" -> "187 : expense = new Partial(date, category, payee, paid, remaining, )"
+"178 : System.out.print(\"Expense Amount: \", )"
+"179 : paid = scan.next()"
+"179 : paid = scan.next()" -> "187 : expense = new Partial(date, category, payee, paid, remaining, )"
+"179 : paid = scan.next()" -> "179 : paid = scan.next()" [style=dashed]
+"180 : System.out.print(\"Who was this expense paid to? \", )"
+"181 : payee = scan.next()"
+"181 : payee = scan.next()" -> "187 : expense = new Partial(date, category, payee, paid, remaining, )"
+"181 : payee = scan.next()" -> "181 : payee = scan.next()" [style=dashed]
+"182 : System.out.print(\"Expense category: \", )"
+"183 : category = scan.next()"
+"183 : category = scan.next()" -> "187 : expense = new Partial(date, category, payee, paid, remaining, )"
+"183 : category = scan.next()" -> "183 : category = scan.next()" [style=dashed]
+"184 : System.out.print(\"Expense Balance: \", )"
+"185 : remaining = scan.next()"
+"185 : remaining = scan.next()" -> "187 : expense = new Partial(date, category, payee, paid, remaining, )"
+"185 : remaining = scan.next()" -> "185 : remaining = scan.next()" [style=dashed]
+"187 : expense = new Partial(date, category, payee, paid, remaining, )"
+"187 : expense = new Partial(date, category, payee, paid, remaining, )" -> "188 : this.expenseList.add(expense, )"
+"187 : expense = new Partial(date, category, payee, paid, remaining, )" -> "187 : expense = new Partial(date, category, payee, paid, remaining, )" [style=dashed]
+"188 : this.expenseList.add(expense, )"
+}

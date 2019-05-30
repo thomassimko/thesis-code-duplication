@@ -1,0 +1,12 @@
+digraph G {
+"19 : this.feedDocument = null"
+"20 : this.itemList = null"
+"20 : this.itemList = null" -> "25 : this.itemList = new LinkedList()" [style=dashed]
+"21 : this.sourceList = null"
+"21 : this.sourceList = null" -> "26 : this.sourceList = new LinkedList()" [style=dashed]
+"22 : this.badSources = null"
+"22 : this.badSources = null" -> "27 : this.badSources = new LinkedList()" [style=dashed]
+"25 : this.itemList = new LinkedList()"
+"26 : this.sourceList = new LinkedList()"
+"27 : this.badSources = new LinkedList()"
+}

@@ -1,0 +1,29 @@
+digraph G {
+"6 : this.head = null"
+"161 : lower = new IterativeStringList()"
+"162 : newString = null"
+"162 : newString = null" -> "166 : newString = get(i, )" [style=dashed]
+"163 : size = size()"
+"163 : size = size()" -> "164 : i < size"
+"164 : i = 0"
+"164 : i = 0" -> "164 : i < size"
+"164 : i = 0" -> "166 : newString = get(i, )"
+"164 : i = 0" -> "164 : @temp7 = i"
+"164 : i = 0" -> "164 : i = i + 1"
+"164 : i = 0" -> "164 : i = i + 1" [style=dashed]
+"164 : i < size"
+"166 : newString = get(i, )"
+"166 : newString = get(i, )" -> "167 : newString = newString.toLowerCase()" [style=dashed]
+"167 : newString = newString.toLowerCase()"
+"167 : newString = newString.toLowerCase()" -> "168 : lower.addToEnd(newString, )"
+"167 : newString = newString.toLowerCase()" -> "166 : newString = get(i, )" [style=dashed]
+"168 : lower.addToEnd(newString, )"
+"164 : @temp7 = i"
+"164 : @temp7 = i" -> "164 : @temp7 = i" [style=dashed]
+"164 : i = i + 1"
+"164 : i = i + 1" -> "164 : i < size"
+"164 : i = i + 1" -> "166 : newString = get(i, )"
+"164 : i = i + 1" -> "164 : @temp7 = i"
+"164 : i = i + 1" -> "164 : i = i + 1"
+"164 : i = i + 1" -> "164 : i = i + 1" [style=dashed]
+}

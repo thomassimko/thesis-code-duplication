@@ -1,0 +1,33 @@
+digraph G {
+"9 : this.feed = new Feed()"
+"10 : this.NPanel = new JPanel()"
+"11 : this.EPanel = new JPanel()"
+"12 : this.CPanel = new JPanel()"
+"13 : this.addText = new JTextField(20, )"
+"14 : this.itemPanel = new JPanel()"
+"15 : this.RSSArea = new JTextArea(30, 40, )"
+"16 : this.sourcePanel = new JPanel()"
+"17 : this.sourceArea = new JTextArea(7, 40, )"
+"104 : this.sourceArea.setText(\"\", )"
+"105 : sources = this.feed.getSources()"
+"105 : sources = this.feed.getSources()" -> "106 : Collections.sort(sources, )"
+"106 : Collections.sort(sources, )"
+"107 : size = sources.size()"
+"107 : size = sources.size()" -> "108 : i < size"
+"108 : i = 0"
+"108 : i = 0" -> "110 : this.sourceArea.append(sources.get(i, ) + \"\n\", )"
+"108 : i = 0" -> "108 : i = i + 1"
+"108 : i = 0" -> "108 : i < size"
+"108 : i = 0" -> "108 : @temp5 = i"
+"108 : i = 0" -> "108 : i = i + 1" [style=dashed]
+"108 : i < size"
+"110 : this.sourceArea.append(sources.get(i, ) + \"\n\", )"
+"108 : @temp5 = i"
+"108 : @temp5 = i" -> "108 : @temp5 = i" [style=dashed]
+"108 : i = i + 1"
+"108 : i = i + 1" -> "110 : this.sourceArea.append(sources.get(i, ) + \"\n\", )"
+"108 : i = i + 1" -> "108 : i = i + 1"
+"108 : i = i + 1" -> "108 : i < size"
+"108 : i = i + 1" -> "108 : @temp5 = i"
+"108 : i = i + 1" -> "108 : i = i + 1" [style=dashed]
+}

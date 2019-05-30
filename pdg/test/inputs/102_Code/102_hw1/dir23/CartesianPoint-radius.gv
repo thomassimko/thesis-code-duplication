@@ -1,7 +1,0 @@
-digraph G {
-"5 : this.x = 0.0"
-"5 : this.x = 0.0" -> "29 : rad = Math.sqrt(this.x * this.x + this.y * this.y, )"
-"6 : this.y = 0.0"
-"6 : this.y = 0.0" -> "29 : rad = Math.sqrt(this.x * this.x + this.y * this.y, )"
-"29 : rad = Math.sqrt(this.x * this.x + this.y * this.y, )"
-}

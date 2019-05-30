@@ -1,0 +1,28 @@
+digraph G {
+"23 : this.srcList = new ArrayList()"
+"24 : this.documentList = new ArrayList()"
+"25 : this.badSrcList = new ArrayList()"
+"26 : this.badDocumentList = new ArrayList()"
+"183 : badDocumentListSize = this.badDocumentList.size()"
+"183 : badDocumentListSize = this.badDocumentList.size()" -> "185 : i < badDocumentListSize"
+"185 : i = 0"
+"185 : i = 0" -> "187 : badDoc = this.badDocumentList.get(i, )"
+"185 : i = 0" -> "185 : i < badDocumentListSize"
+"185 : i = 0" -> "185 : i = i + 1"
+"185 : i = 0" -> "185 : @temp10 = i"
+"185 : i = 0" -> "185 : i = i + 1" [style=dashed]
+"185 : i < badDocumentListSize"
+"187 : badDoc = this.badDocumentList.get(i, )"
+"187 : badDoc = this.badDocumentList.get(i, )" -> "188 : this.documentList.remove(badDoc, )"
+"187 : badDoc = this.badDocumentList.get(i, )" -> "187 : badDoc = this.badDocumentList.get(i, )" [style=dashed]
+"188 : this.documentList.remove(badDoc, )"
+"185 : @temp10 = i"
+"185 : @temp10 = i" -> "185 : @temp10 = i" [style=dashed]
+"185 : i = i + 1"
+"185 : i = i + 1" -> "187 : badDoc = this.badDocumentList.get(i, )"
+"185 : i = i + 1" -> "185 : i < badDocumentListSize"
+"185 : i = i + 1" -> "185 : i = i + 1"
+"185 : i = i + 1" -> "185 : @temp10 = i"
+"185 : i = i + 1" -> "185 : i = i + 1" [style=dashed]
+"191 : this.badDocumentList.clear()"
+}

@@ -1,0 +1,81 @@
+digraph G {
+"196 : date = null"
+"196 : date = null" -> "210 : date = dateRead(scan.next(), )" [style=dashed]
+"196 : date = null" -> "223 : date = dateRead(scan.next(), )" [style=dashed]
+"197 : category = null"
+"197 : category = null" -> "216 : category = scan.next()" [style=dashed]
+"197 : category = null" -> "229 : category = scan.next()" [style=dashed]
+"198 : paidTo = null"
+"198 : paidTo = null" -> "227 : paidTo = scan.next()" [style=dashed]
+"198 : paidTo = null" -> "214 : paidTo = scan.next()" [style=dashed]
+"199 : amount = null"
+"199 : amount = null" -> "212 : amount = toMoney(scan.next(), )" [style=dashed]
+"199 : amount = null" -> "225 : amount = toMoney(scan.next(), )" [style=dashed]
+"200 : remain = null"
+"200 : remain = null" -> "231 : remain = toMoney(scan.next(), )" [style=dashed]
+"201 : bob = true"
+"201 : bob = true" -> "203 : bob == true"
+"201 : bob = true" -> "233 : bob = false" [style=dashed]
+"201 : bob = true" -> "218 : bob = false" [style=dashed]
+"203 : bob == true"
+"205 : System.out.print(\"Expense type (in-full, partial)? \", )"
+"206 : type = scan.next()"
+"206 : type = scan.next()" -> "206 : type = scan.next()" [style=dashed]
+"207 : type.equals(\"in-full\", )"
+"209 : System.out.print(\"Payment date: \", )"
+"210 : date = dateRead(scan.next(), )"
+"210 : date = dateRead(scan.next(), )" -> "217 : list.add(0, new Infull(date, amount, paidTo, category, ), )"
+"210 : date = dateRead(scan.next(), )" -> "210 : date = dateRead(scan.next(), )" [style=dashed]
+"210 : date = dateRead(scan.next(), )" -> "223 : date = dateRead(scan.next(), )" [style=dashed]
+"211 : System.out.print(\"Expense Amount: \", )"
+"212 : amount = toMoney(scan.next(), )"
+"212 : amount = toMoney(scan.next(), )" -> "217 : list.add(0, new Infull(date, amount, paidTo, category, ), )"
+"212 : amount = toMoney(scan.next(), )" -> "212 : amount = toMoney(scan.next(), )" [style=dashed]
+"212 : amount = toMoney(scan.next(), )" -> "225 : amount = toMoney(scan.next(), )" [style=dashed]
+"213 : System.out.print(\"Who was this expense paid to? \", )"
+"214 : paidTo = scan.next()"
+"214 : paidTo = scan.next()" -> "217 : list.add(0, new Infull(date, amount, paidTo, category, ), )"
+"214 : paidTo = scan.next()" -> "227 : paidTo = scan.next()" [style=dashed]
+"214 : paidTo = scan.next()" -> "214 : paidTo = scan.next()" [style=dashed]
+"215 : System.out.print(\"Expense category: \", )"
+"216 : category = scan.next()"
+"216 : category = scan.next()" -> "217 : list.add(0, new Infull(date, amount, paidTo, category, ), )"
+"216 : category = scan.next()" -> "216 : category = scan.next()" [style=dashed]
+"216 : category = scan.next()" -> "229 : category = scan.next()" [style=dashed]
+"217 : list.add(0, new Infull(date, amount, paidTo, category, ), )"
+"218 : bob = false"
+"218 : bob = false" -> "203 : bob == true"
+"218 : bob = false" -> "233 : bob = false" [style=dashed]
+"218 : bob = false" -> "218 : bob = false" [style=dashed]
+"220 : type.equals(\"partial\", )"
+"222 : System.out.print(\"Payment date: \", )"
+"223 : date = dateRead(scan.next(), )"
+"223 : date = dateRead(scan.next(), )" -> "232 : list.add(0, new Partial(date, amount, paidTo, category, remain, ), )"
+"223 : date = dateRead(scan.next(), )" -> "210 : date = dateRead(scan.next(), )" [style=dashed]
+"223 : date = dateRead(scan.next(), )" -> "223 : date = dateRead(scan.next(), )" [style=dashed]
+"224 : System.out.print(\"Expense Amount: \", )"
+"225 : amount = toMoney(scan.next(), )"
+"225 : amount = toMoney(scan.next(), )" -> "232 : list.add(0, new Partial(date, amount, paidTo, category, remain, ), )"
+"225 : amount = toMoney(scan.next(), )" -> "212 : amount = toMoney(scan.next(), )" [style=dashed]
+"225 : amount = toMoney(scan.next(), )" -> "225 : amount = toMoney(scan.next(), )" [style=dashed]
+"226 : System.out.print(\"Who was this expense paid to? \", )"
+"227 : paidTo = scan.next()"
+"227 : paidTo = scan.next()" -> "232 : list.add(0, new Partial(date, amount, paidTo, category, remain, ), )"
+"227 : paidTo = scan.next()" -> "227 : paidTo = scan.next()" [style=dashed]
+"227 : paidTo = scan.next()" -> "214 : paidTo = scan.next()" [style=dashed]
+"228 : System.out.print(\"Expense category: \", )"
+"229 : category = scan.next()"
+"229 : category = scan.next()" -> "232 : list.add(0, new Partial(date, amount, paidTo, category, remain, ), )"
+"229 : category = scan.next()" -> "216 : category = scan.next()" [style=dashed]
+"229 : category = scan.next()" -> "229 : category = scan.next()" [style=dashed]
+"230 : System.out.print(\"Expense Balance: \", )"
+"231 : remain = toMoney(scan.next(), )"
+"231 : remain = toMoney(scan.next(), )" -> "232 : list.add(0, new Partial(date, amount, paidTo, category, remain, ), )"
+"231 : remain = toMoney(scan.next(), )" -> "231 : remain = toMoney(scan.next(), )" [style=dashed]
+"232 : list.add(0, new Partial(date, amount, paidTo, category, remain, ), )"
+"233 : bob = false"
+"233 : bob = false" -> "203 : bob == true"
+"233 : bob = false" -> "233 : bob = false" [style=dashed]
+"233 : bob = false" -> "218 : bob = false" [style=dashed]
+"203 : bob == true"
+}

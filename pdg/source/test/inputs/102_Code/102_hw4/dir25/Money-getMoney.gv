@@ -1,0 +1,11 @@
+digraph G {
+"3 : this.dollar = 0"
+"3 : this.dollar = 0" -> "22 : this.dollar + \".00\""
+"3 : this.dollar = 0" -> "24 : this.dollar + \".\" + this.cents"
+"4 : this.cents = 0"
+"4 : this.cents = 0" -> "24 : this.dollar + \".\" + this.cents"
+"4 : this.cents = 0" -> "20 : this.cents == 0"
+"20 : this.cents == 0"
+"22 : this.dollar + \".00\""
+"24 : this.dollar + \".\" + this.cents"
+}

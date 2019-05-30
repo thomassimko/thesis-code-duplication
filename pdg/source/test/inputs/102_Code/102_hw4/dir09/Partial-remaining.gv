@@ -1,0 +1,17 @@
+digraph G {
+"6 : this.date = null"
+"7 : this.paidDollar = 0"
+"7 : this.paidCent = 0"
+"7 : this.remainingDollar = 0"
+"7 : this.remainingDollar = 0" -> "55 : this.remainingDollar + \".\" + this.remainingCent"
+"7 : this.remainingDollar = 0" -> "54 : this.remainingDollar + \".0\" + this.remainingCent"
+"7 : this.remainingCent = 0"
+"7 : this.remainingCent = 0" -> "55 : this.remainingDollar + \".\" + this.remainingCent"
+"7 : this.remainingCent = 0" -> "54 : this.remainingDollar + \".0\" + this.remainingCent"
+"7 : this.remainingCent = 0" -> "54 : this.remainingCent < 10"
+"8 : this.payee = null"
+"8 : this.category = null"
+"54 : this.remainingCent < 10"
+"54 : this.remainingDollar + \".0\" + this.remainingCent"
+"55 : this.remainingDollar + \".\" + this.remainingCent"
+}

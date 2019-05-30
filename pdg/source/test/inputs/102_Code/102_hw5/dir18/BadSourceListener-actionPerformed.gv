@@ -1,0 +1,23 @@
+digraph G {
+"8 : this.reader = null"
+"9 : this.textArea = null"
+"17 : this.textArea.setText(\"\", )"
+"18 : size = size()"
+"18 : size = size()" -> "19 : i < size"
+"19 : i = 0"
+"19 : i = 0" -> "19 : i < size"
+"19 : i = 0" -> "20 : this.textArea.append(get(i, ) + \"\n\", )"
+"19 : i = 0" -> "19 : @temp2 = i"
+"19 : i = 0" -> "19 : i = i + 1"
+"19 : i = 0" -> "19 : i = i + 1" [style=dashed]
+"19 : i < size"
+"20 : this.textArea.append(get(i, ) + \"\n\", )"
+"19 : @temp2 = i"
+"19 : @temp2 = i" -> "19 : @temp2 = i" [style=dashed]
+"19 : i = i + 1"
+"19 : i = i + 1" -> "19 : i < size"
+"19 : i = i + 1" -> "20 : this.textArea.append(get(i, ) + \"\n\", )"
+"19 : i = i + 1" -> "19 : @temp2 = i"
+"19 : i = i + 1" -> "19 : i = i + 1"
+"19 : i = i + 1" -> "19 : i = i + 1" [style=dashed]
+}

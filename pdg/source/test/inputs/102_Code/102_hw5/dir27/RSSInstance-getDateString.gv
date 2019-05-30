@@ -1,0 +1,11 @@
+digraph G {
+"10 : this.title = null"
+"10 : this.link = null"
+"11 : this.date = null"
+"34 : format = new SimpleDateFormat(\"EEE MMM dd HH:mm:ss z YYYY\", )"
+"35 : want = new SimpleDateFormat(\"MM/dd/YYYY HH:mm\", )"
+"36 : get = format.parse(toString(), )"
+"36 : get = format.parse(toString(), )" -> "37 : out = want.format(get, )"
+"37 : out = want.format(get, )"
+"43 : \"\""
+}

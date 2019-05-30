@@ -1,0 +1,41 @@
+digraph G {
+"19 : this.feedDocument = null"
+"20 : this.itemList = null"
+"21 : this.sourceList = null"
+"22 : this.badSources = null"
+"133 : i = 0"
+"133 : i = 0" -> "133 : @temp12 = i"
+"133 : i = 0" -> "136 : this.sourceList.remove(i, )"
+"133 : i = 0" -> "133 : i = i + 1"
+"133 : i = 0" -> "133 : i < this.sourceList.size()"
+"133 : i = 0" -> "133 : i = i + 1" [style=dashed]
+"133 : i < this.sourceList.size()"
+"140 : this.badSources.clear()"
+"134 : j = 0"
+"134 : j = 0" -> "135 : equalsIgnoreCase(this.badSources.get(j, ), )"
+"134 : j = 0" -> "134 : j < this.badSources.size()"
+"134 : j = 0" -> "134 : @temp11 = j"
+"134 : j = 0" -> "134 : j = j + 1"
+"134 : j = 0" -> "134 : j = 0" [style=dashed]
+"134 : j = 0" -> "134 : j = j + 1" [style=dashed]
+"134 : j < this.badSources.size()"
+"135 : equalsIgnoreCase(this.badSources.get(j, ), )"
+"133 : @temp12 = i"
+"133 : @temp12 = i" -> "133 : @temp12 = i" [style=dashed]
+"133 : i = i + 1"
+"133 : i = i + 1" -> "133 : @temp12 = i"
+"133 : i = i + 1" -> "136 : this.sourceList.remove(i, )"
+"133 : i = i + 1" -> "133 : i = i + 1"
+"133 : i = i + 1" -> "133 : i < this.sourceList.size()"
+"133 : i = i + 1" -> "133 : i = i + 1" [style=dashed]
+"136 : this.sourceList.remove(i, )"
+"134 : @temp11 = j"
+"134 : @temp11 = j" -> "134 : @temp11 = j" [style=dashed]
+"134 : j = j + 1"
+"134 : j = j + 1" -> "135 : equalsIgnoreCase(this.badSources.get(j, ), )"
+"134 : j = j + 1" -> "134 : j < this.badSources.size()"
+"134 : j = j + 1" -> "134 : @temp11 = j"
+"134 : j = j + 1" -> "134 : j = j + 1"
+"134 : j = j + 1" -> "134 : j = 0" [style=dashed]
+"134 : j = j + 1" -> "134 : j = j + 1" [style=dashed]
+}

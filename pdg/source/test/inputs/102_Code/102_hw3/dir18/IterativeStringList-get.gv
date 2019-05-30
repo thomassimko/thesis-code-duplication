@@ -1,0 +1,29 @@
+digraph G {
+"4 : this.head = null"
+"4 : this.head = null" -> "83 : n = this.head"
+"83 : n = this.head"
+"83 : n = this.head" -> "85 : cur != index && n != null"
+"83 : n = this.head" -> "86 : n = n.getNext()" [style=dashed]
+"84 : cur = 0"
+"84 : cur = 0" -> "87 : cur = cur + 1"
+"84 : cur = 0" -> "89 : cur == index"
+"84 : cur = 0" -> "87 : @temp4 = cur"
+"84 : cur = 0" -> "85 : cur != index && n != null"
+"84 : cur = 0" -> "87 : cur = cur + 1" [style=dashed]
+"85 : cur != index && n != null"
+"86 : n = n.getNext()"
+"86 : n = n.getNext()" -> "85 : cur != index && n != null"
+"86 : n = n.getNext()" -> "86 : n = n.getNext()" [style=dashed]
+"87 : @temp4 = cur"
+"87 : @temp4 = cur" -> "87 : @temp4 = cur" [style=dashed]
+"87 : cur = cur + 1"
+"87 : cur = cur + 1" -> "87 : cur = cur + 1"
+"87 : cur = cur + 1" -> "89 : cur == index"
+"87 : cur = cur + 1" -> "87 : @temp4 = cur"
+"87 : cur = cur + 1" -> "85 : cur != index && n != null"
+"87 : cur = cur + 1" -> "87 : cur = cur + 1" [style=dashed]
+"85 : cur != index && n != null"
+"89 : cur == index"
+"90 : n.getString()"
+"93 : new IndexOutOfBoundsException()"
+}

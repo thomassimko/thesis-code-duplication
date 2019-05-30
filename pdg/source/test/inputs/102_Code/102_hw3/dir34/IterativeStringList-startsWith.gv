@@ -1,0 +1,29 @@
+digraph G {
+"7 : this.node = null"
+"8 : this.head = null"
+"8 : this.head = null" -> "186 : cur = this.head"
+"9 : this.size = 0"
+"10 : this.index = 0"
+"186 : cur = this.head"
+"186 : cur = this.head" -> "189 : cur != null"
+"186 : cur = this.head" -> "194 : cur = cur.getNext()" [style=dashed]
+"188 : list = new IterativeStringList()"
+"189 : i = 0"
+"189 : i = 0" -> "189 : i = i + 1"
+"189 : i = 0" -> "189 : @temp8 = i"
+"189 : i = 0" -> "193 : list.add(i, cur.getString(), )"
+"189 : i = 0" -> "189 : i = i + 1" [style=dashed]
+"189 : cur != null"
+"191 : startsWith(prefix, )"
+"193 : list.add(i, cur.getString(), )"
+"194 : cur = cur.getNext()"
+"194 : cur = cur.getNext()" -> "189 : cur != null"
+"194 : cur = cur.getNext()" -> "194 : cur = cur.getNext()" [style=dashed]
+"189 : @temp8 = i"
+"189 : @temp8 = i" -> "189 : @temp8 = i" [style=dashed]
+"189 : i = i + 1"
+"189 : i = i + 1" -> "189 : i = i + 1"
+"189 : i = i + 1" -> "189 : @temp8 = i"
+"189 : i = i + 1" -> "193 : list.add(i, cur.getString(), )"
+"189 : i = i + 1" -> "189 : i = i + 1" [style=dashed]
+}

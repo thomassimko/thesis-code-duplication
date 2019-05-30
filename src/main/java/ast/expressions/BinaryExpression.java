@@ -3,6 +3,7 @@ package ast.expressions;
 import ast.expressions.left.Left;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -12,11 +13,25 @@ public class BinaryExpression extends Expression {
     private Expression left;
     private Expression right;
 
+    private HashMap<String, String> operatorReverse;
+    private HashMap<String, String> operatorNegated;
+
     public BinaryExpression(String file, int line, String operator, Expression left, Expression right) {
         super(file, line);
         this.operator = operator;
         this.left = left;
         this.right = right;
+        operatorReverse = new HashMap<>();
+        operatorReverse.put("<", ">");
+        operatorReverse.put(">", "<");
+        operatorReverse.put("<=", ">=");
+        operatorReverse.put(">=", "<=");
+
+        operatorNegated = new HashMap<>();
+        operatorNegated.put("<", ">=");
+        operatorNegated.put(">", "<=");
+        operatorNegated.put("<=", ">");
+        operatorNegated.put(">=", "<");
     }
 
     @Override
@@ -58,11 +73,12 @@ public class BinaryExpression extends Expression {
 
     @Override
     public int graphicalCompareTo(Expression o) {
-
         if(o instanceof BinaryExpression) {
             BinaryExpression bin = (BinaryExpression) o;
-            if(operator.equals(((BinaryExpression) o).operator)) {
+            if(operator.equals(bin.operator)) {
                 return left.graphicalCompareTo(bin.left) == 0 ? right.graphicalCompareTo(bin.right) : -1;
+            } else if(operatorReverse.containsKey(operator) && operatorReverse.get(operator).equals(bin.operator)) {
+                return left.graphicalCompareTo(bin.right) == 0 ? right.graphicalCompareTo(bin.left) : -1;
             }
         }
         return -1;

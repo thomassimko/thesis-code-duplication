@@ -1,0 +1,30 @@
+digraph G {
+"194 : file = new File(\"StoredExpenses.txt\", )"
+"194 : file = new File(\"StoredExpenses.txt\", )" -> "195 : out = new PrintWriter(file, )"
+"195 : out = new PrintWriter(file, )"
+"196 : format = new SimpleDateFormat(\"MM/dd/yyyy\", )"
+"197 : i = 0"
+"197 : i = 0" -> "197 : i = i + 1"
+"197 : i = 0" -> "197 : i < list.size()"
+"197 : i = 0" -> "197 : @temp3 = i"
+"197 : i = 0" -> "197 : i = i + 1" [style=dashed]
+"197 : i < list.size()"
+"199 : out.println(getType(), )"
+"200 : date = getDate()"
+"200 : date = getDate()" -> "201 : out.println(format.format(date, ), )"
+"200 : date = getDate()" -> "200 : date = getDate()" [style=dashed]
+"201 : out.println(format.format(date, ), )"
+"202 : out.println(getCategory(), )"
+"203 : out.println(getPayee(), )"
+"204 : out.println(getMoney(), )"
+"205 : out.println(getMoney(), )"
+"197 : @temp3 = i"
+"197 : @temp3 = i" -> "197 : @temp3 = i" [style=dashed]
+"197 : i = i + 1"
+"197 : i = i + 1" -> "197 : i = i + 1"
+"197 : i = i + 1" -> "197 : i < list.size()"
+"197 : i = i + 1" -> "197 : @temp3 = i"
+"197 : i = i + 1" -> "197 : i = i + 1" [style=dashed]
+"207 : out.close()"
+"211 : System.err.println(\"zzsdfsdfffffffffff can't find file\", )"
+}

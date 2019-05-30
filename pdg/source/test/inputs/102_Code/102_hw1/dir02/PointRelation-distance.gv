@@ -1,0 +1,15 @@
+digraph G {
+"7 : x1 = point1.xCoordinate()"
+"7 : x1 = point1.xCoordinate()" -> "11 : x = x1 - x2"
+"8 : x2 = point2.xCoordinate()"
+"8 : x2 = point2.xCoordinate()" -> "11 : x = x1 - x2"
+"9 : y1 = point1.yCoordinate()"
+"9 : y1 = point1.yCoordinate()" -> "12 : y = y1 - y2"
+"10 : y2 = point2.yCoordinate()"
+"10 : y2 = point2.yCoordinate()" -> "12 : y = y1 - y2"
+"11 : x = x1 - x2"
+"11 : x = x1 - x2" -> "13 : Math.sqrt(x * x + y * y, )"
+"12 : y = y1 - y2"
+"12 : y = y1 - y2" -> "13 : Math.sqrt(x * x + y * y, )"
+"13 : Math.sqrt(x * x + y * y, )"
+}

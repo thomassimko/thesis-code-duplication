@@ -43,7 +43,8 @@ public class ForStatement extends Statement {
         start.addBlock(outBlock);
 
         //initialize loop
-        initBlock = declaration.generateCFG(initBlock, finalBlock, labelMap, start, scope);
+        if(declaration != null)
+            initBlock = declaration.generateCFG(initBlock, finalBlock, labelMap, start, scope);
         for(Statement stmt: initStatements) {
             initBlock = stmt.generateCFG(initBlock, finalBlock, labelMap, start, scope);
         }

@@ -1,0 +1,17 @@
+digraph G {
+"6 : this.head = null"
+"6 : this.head = null" -> "207 : this.head == null"
+"6 : this.head = null" -> "214 : cur = this.head"
+"207 : this.head == null"
+"209 : new NullPointerException()"
+"213 : newList = new IterativeStringList()"
+"214 : cur = this.head"
+"214 : cur = this.head" -> "215 : cur != null"
+"214 : cur = this.head" -> "218 : cur = cur.next()" [style=dashed]
+"215 : cur != null"
+"217 : newList.addToEnd(toUpperCase(), )"
+"218 : cur = cur.next()"
+"218 : cur = cur.next()" -> "215 : cur != null"
+"218 : cur = cur.next()" -> "218 : cur = cur.next()" [style=dashed]
+"215 : cur != null"
+}

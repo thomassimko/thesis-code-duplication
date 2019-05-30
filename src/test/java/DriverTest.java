@@ -73,6 +73,7 @@ class DriverTest {
 
     @Test
     void TestCase8() {
+        ArgumentHandler.checkLeft = false;
         List<Mapping> mappings = Driver.run("../test/inputs/TestCases/TestCase8");
         OutputFormatter.printFilesAndLines(mappings);
         assertNotEquals(0, mappings.size());
@@ -80,6 +81,7 @@ class DriverTest {
 
     @Test
     void TestCase9() {
+        ArgumentHandler.minGraphSize = 10;
         List<Mapping> mappings = Driver.run("../test/inputs/TestCases/TestCase9");
         OutputFormatter.printFilesAndLines(mappings);
         assertNotEquals(0, mappings.size());
@@ -94,7 +96,45 @@ class DriverTest {
 
     @Test
     void TestCase11() {
+        ArgumentHandler.checkLeft = false;
         List<Mapping> mappings = Driver.run("../test/inputs/TestCases/TestCase11");
+        OutputFormatter.printFilesAndLines(mappings);
+        assertNotEquals(0, mappings.size());
+    }
+
+    //false negative
+    @Test
+    void TestCase12() {
+        List<Mapping> mappings = Driver.run("../test/inputs/TestCases/TestCase12");
+        OutputFormatter.printFilesAndLines(mappings);
+        assertNotEquals(0, mappings.size());
+    }
+
+
+    @Test
+    void TestCase13() {
+        List<Mapping> mappings = Driver.run("../test/inputs/TestCases/TestCase13");
+        OutputFormatter.printFilesAndLines(mappings);
+        assertNotEquals(0, mappings.size());
+    }
+
+    @Test
+    void TestCase14() {
+        List<Mapping> mappings = Driver.run("../test/inputs/TestCases/TestCase14");
+        OutputFormatter.printFilesAndLines(mappings);
+        assertEquals(0, mappings.size());
+    }
+
+    @Test
+    void TestCase15() {
+        List<Mapping> mappings = Driver.run("../test/inputs/TestCases/TestCase15");
+        OutputFormatter.printFilesAndLines(mappings);
+        assertNotEquals(0, mappings.size());
+    }
+
+    @Test
+    void TestCase16() {
+        List<Mapping> mappings = Driver.run("../test/inputs/TestCases/TestCase16");
         OutputFormatter.printFilesAndLines(mappings);
         assertNotEquals(0, mappings.size());
     }

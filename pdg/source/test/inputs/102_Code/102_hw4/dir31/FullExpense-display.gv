@@ -1,0 +1,12 @@
+digraph G {
+"8 : this.type = null"
+"9 : this.date = null"
+"9 : this.date = null" -> "62 : System.out.println(String.format(\"%1$2tm/%<2td/%<tY \", this.date, ) + String.format(\"%-15.15s %s [%s]\", this.paidTo, getAmount(), this.category, ), )"
+"10 : this.category = null"
+"10 : this.category = null" -> "62 : System.out.println(String.format(\"%1$2tm/%<2td/%<tY \", this.date, ) + String.format(\"%-15.15s %s [%s]\", this.paidTo, getAmount(), this.category, ), )"
+"11 : this.paidTo = null"
+"11 : this.paidTo = null" -> "62 : System.out.println(String.format(\"%1$2tm/%<2td/%<tY \", this.date, ) + String.format(\"%-15.15s %s [%s]\", this.paidTo, getAmount(), this.category, ), )"
+"12 : this.dollarAmnt = 0"
+"13 : this.centAmnt = 0"
+"62 : System.out.println(String.format(\"%1$2tm/%<2td/%<tY \", this.date, ) + String.format(\"%-15.15s %s [%s]\", this.paidTo, getAmount(), this.category, ), )"
+}

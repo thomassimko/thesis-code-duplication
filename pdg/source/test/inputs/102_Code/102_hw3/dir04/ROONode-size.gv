@@ -1,0 +1,20 @@
+digraph G {
+"5 : this.str = null"
+"6 : this.next = null"
+"107 : cur = this"
+"107 : cur = this" -> "112 : cur = cur.getNext()" [style=dashed]
+"108 : size = 1"
+"108 : size = 1" -> "113 : @temp5 = size"
+"108 : size = 1" -> "113 : size = size + 1"
+"108 : size = 1" -> "113 : size = size + 1" [style=dashed]
+"110 : cur.getNext() instanceof ROONode"
+"112 : cur = cur.getNext()"
+"112 : cur = cur.getNext()" -> "112 : cur = cur.getNext()" [style=dashed]
+"113 : @temp5 = size"
+"113 : @temp5 = size" -> "113 : @temp5 = size" [style=dashed]
+"113 : size = size + 1"
+"113 : size = size + 1" -> "113 : @temp5 = size"
+"113 : size = size + 1" -> "113 : size = size + 1"
+"113 : size = size + 1" -> "113 : size = size + 1" [style=dashed]
+"110 : cur.getNext() instanceof ROONode"
+}

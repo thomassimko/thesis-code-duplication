@@ -1,0 +1,13 @@
+digraph G {
+"4 : this.head = null"
+"81 : cur instanceof RIOEmpty"
+"83 : new IndexOutOfBoundsException()"
+"85 : cur instanceof RIONode"
+"87 : index == 0"
+"89 : s.setString(cur.toString(), )"
+"90 : cur.next()"
+"94 : n = remove(index - 1, s, cur.next(), )"
+"94 : n = remove(index - 1, s, cur.next(), )" -> "95 : cur.setNext(n, )"
+"95 : cur.setNext(n, )"
+"101 : new IndexOutOfBoundsException()"
+}

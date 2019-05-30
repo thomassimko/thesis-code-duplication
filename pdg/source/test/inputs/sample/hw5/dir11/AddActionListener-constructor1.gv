@@ -1,0 +1,14 @@
+digraph G {
+"13 : this.feed = null"
+"13 : this.feed = null" -> "21 : this.feed = feed" [style=dashed]
+"14 : this.tF = null"
+"14 : this.tF = null" -> "20 : this.tF = tF" [style=dashed]
+"15 : this.sources = null"
+"15 : this.sources = null" -> "22 : this.sources = sources" [style=dashed]
+"16 : this.feedList = new LinkedList()"
+"16 : this.feedList = new LinkedList()" -> "23 : this.feedList = feed.getSources()" [style=dashed]
+"20 : this.tF = tF"
+"21 : this.feed = feed"
+"22 : this.sources = sources"
+"23 : this.feedList = feed.getSources()"
+}

@@ -1,0 +1,24 @@
+digraph G {
+"8 : this.node = null"
+"8 : this.node = null" -> "29 : cur = this.node"
+"8 : this.node = null" -> "23 : this.node == null"
+"8 : this.node = null" -> "25 : this.node = n" [style=dashed]
+"21 : n = new IterativeNode(element, null, )"
+"21 : n = new IterativeNode(element, null, )" -> "25 : this.node = n"
+"21 : n = new IterativeNode(element, null, )" -> "36 : cur.setNext(n, )"
+"23 : this.node == null"
+"25 : this.node = n"
+"29 : cur = this.node"
+"29 : cur = this.node" -> "31 : cur.getNext() != null"
+"29 : cur = this.node" -> "33 : cur = cur.getNext()"
+"29 : cur = this.node" -> "36 : cur.setNext(n, )"
+"29 : cur = this.node" -> "33 : cur = cur.getNext()" [style=dashed]
+"31 : cur.getNext() != null"
+"33 : cur = cur.getNext()"
+"33 : cur = cur.getNext()" -> "31 : cur.getNext() != null"
+"33 : cur = cur.getNext()" -> "33 : cur = cur.getNext()"
+"33 : cur = cur.getNext()" -> "36 : cur.setNext(n, )"
+"33 : cur = cur.getNext()" -> "33 : cur = cur.getNext()" [style=dashed]
+"31 : cur.getNext() != null"
+"36 : cur.setNext(n, )"
+}

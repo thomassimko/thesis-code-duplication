@@ -1,0 +1,9 @@
+digraph G {
+"3 : this.first = new RIOEmpty()"
+"3 : this.first = new RIOEmpty()" -> "69 : this.first = new RIONode(element, cur, )" [style=dashed]
+"68 : cur instanceof RIOEmpty"
+"69 : this.first = new RIONode(element, cur, )"
+"71 : cur.getNext() instanceof RIONode"
+"72 : addToEndHelper(cur.getNext(), element, )"
+"74 : cur.setNext(new RIONode(element, cur.getNext(), ), )"
+}

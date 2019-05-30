@@ -1,0 +1,6 @@
+digraph G {
+"6 : this.comp = null"
+"15 : equals(second.payee(), )"
+"17 : this.comp.compare(first, second, )"
+"19 : compareTo(second.payee(), )"
+}

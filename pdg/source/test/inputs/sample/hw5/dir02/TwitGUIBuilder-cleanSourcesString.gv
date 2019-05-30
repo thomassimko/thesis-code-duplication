@@ -1,0 +1,14 @@
+digraph G {
+"81 : reader.removeBadSources()"
+"82 : sourceList = reader.getSources()"
+"82 : sourceList = reader.getSources()" -> "84 : s = sourceList"
+"83 : sourcesToPrint = \"\""
+"83 : sourcesToPrint = \"\"" -> "86 : sourcesToPrint = sourcesToPrint + s + \"\n\""
+"83 : sourcesToPrint = \"\"" -> "86 : sourcesToPrint = sourcesToPrint + s + \"\n\"" [style=dashed]
+"84 : s = sourceList"
+"84 : s = sourceList" -> "86 : sourcesToPrint = sourcesToPrint + s + \"\n\""
+"84 : s = sourceList" -> "84 : s = sourceList" [style=dashed]
+"86 : sourcesToPrint = sourcesToPrint + s + \"\n\""
+"86 : sourcesToPrint = sourcesToPrint + s + \"\n\"" -> "86 : sourcesToPrint = sourcesToPrint + s + \"\n\""
+"86 : sourcesToPrint = sourcesToPrint + s + \"\n\"" -> "86 : sourcesToPrint = sourcesToPrint + s + \"\n\"" [style=dashed]
+}

@@ -1,0 +1,208 @@
+digraph G {
+"126 : keyList = new ArrayList()"
+"127 : counter = 0"
+"127 : counter = 0" -> "136 : counter = keyList.size()" [style=dashed]
+"127 : i = 0"
+"127 : i = 0" -> "182 : @temp2 = i"
+"127 : i = 0" -> "137 : i < counter"
+"127 : i = 0" -> "182 : i = i + 1"
+"127 : i = 0" -> "182 : i = i + 1" [style=dashed]
+"128 : cur = null"
+"128 : cur = null" -> "169 : cur == null"
+"128 : cur = null" -> "139 : cur == null"
+"128 : cur = null" -> "144 : cur = new ExpenseAmountDelegateComparator(cur, )"
+"128 : cur = null" -> "149 : cur == null"
+"128 : cur = null" -> "154 : cur = new ExpenseCategoryDelegateComparator(cur, )"
+"128 : cur = null" -> "159 : cur == null"
+"128 : cur = null" -> "164 : cur = new ExpenseDateDelegateComparator(cur, )"
+"128 : cur = null" -> "184 : Collections.sort(list, cur, )"
+"128 : cur = null" -> "174 : cur = new ExpensePayeeDelegateComparator(cur, )"
+"128 : cur = null" -> "150 : cur = new ExpenseCategoryComparator()" [style=dashed]
+"128 : cur = null" -> "140 : cur = new ExpenseAmountComparator()" [style=dashed]
+"128 : cur = null" -> "160 : cur = new ExpenseDateComparator()" [style=dashed]
+"128 : cur = null" -> "144 : cur = new ExpenseAmountDelegateComparator(cur, )" [style=dashed]
+"128 : cur = null" -> "154 : cur = new ExpenseCategoryDelegateComparator(cur, )" [style=dashed]
+"128 : cur = null" -> "164 : cur = new ExpenseDateDelegateComparator(cur, )" [style=dashed]
+"128 : cur = null" -> "170 : cur = new ExpensePayeeComparator()" [style=dashed]
+"128 : cur = null" -> "174 : cur = new ExpensePayeeDelegateComparator(cur, )" [style=dashed]
+"129 : System.out.print(\"Keys to sort by: \", )"
+"130 : str = scanner.nextLine()"
+"131 : scannerSplitter = new Scanner(scanner.nextLine(), )"
+"132 : scannerSplitter.hasNext()"
+"133 : keyList.add(0, scannerSplitter.next(), )"
+"134 : System.err.println(keyList.get(0, ), )"
+"132 : scannerSplitter.hasNext()"
+"136 : counter = keyList.size()"
+"136 : counter = keyList.size()" -> "137 : i < counter"
+"137 : i < counter"
+"138 : equals(\"amount\", )"
+"184 : Collections.sort(list, cur, )"
+"139 : cur == null"
+"140 : cur = new ExpenseAmountComparator()"
+"140 : cur = new ExpenseAmountComparator()" -> "169 : cur == null"
+"140 : cur = new ExpenseAmountComparator()" -> "139 : cur == null"
+"140 : cur = new ExpenseAmountComparator()" -> "144 : cur = new ExpenseAmountDelegateComparator(cur, )"
+"140 : cur = new ExpenseAmountComparator()" -> "149 : cur == null"
+"140 : cur = new ExpenseAmountComparator()" -> "154 : cur = new ExpenseCategoryDelegateComparator(cur, )"
+"140 : cur = new ExpenseAmountComparator()" -> "159 : cur == null"
+"140 : cur = new ExpenseAmountComparator()" -> "164 : cur = new ExpenseDateDelegateComparator(cur, )"
+"140 : cur = new ExpenseAmountComparator()" -> "184 : Collections.sort(list, cur, )"
+"140 : cur = new ExpenseAmountComparator()" -> "174 : cur = new ExpensePayeeDelegateComparator(cur, )"
+"140 : cur = new ExpenseAmountComparator()" -> "150 : cur = new ExpenseCategoryComparator()" [style=dashed]
+"140 : cur = new ExpenseAmountComparator()" -> "140 : cur = new ExpenseAmountComparator()" [style=dashed]
+"140 : cur = new ExpenseAmountComparator()" -> "160 : cur = new ExpenseDateComparator()" [style=dashed]
+"140 : cur = new ExpenseAmountComparator()" -> "144 : cur = new ExpenseAmountDelegateComparator(cur, )" [style=dashed]
+"140 : cur = new ExpenseAmountComparator()" -> "154 : cur = new ExpenseCategoryDelegateComparator(cur, )" [style=dashed]
+"140 : cur = new ExpenseAmountComparator()" -> "164 : cur = new ExpenseDateDelegateComparator(cur, )" [style=dashed]
+"140 : cur = new ExpenseAmountComparator()" -> "170 : cur = new ExpensePayeeComparator()" [style=dashed]
+"140 : cur = new ExpenseAmountComparator()" -> "174 : cur = new ExpensePayeeDelegateComparator(cur, )" [style=dashed]
+"141 : System.err.println(\"amount\", )"
+"144 : cur = new ExpenseAmountDelegateComparator(cur, )"
+"144 : cur = new ExpenseAmountDelegateComparator(cur, )" -> "169 : cur == null"
+"144 : cur = new ExpenseAmountDelegateComparator(cur, )" -> "139 : cur == null"
+"144 : cur = new ExpenseAmountDelegateComparator(cur, )" -> "144 : cur = new ExpenseAmountDelegateComparator(cur, )"
+"144 : cur = new ExpenseAmountDelegateComparator(cur, )" -> "149 : cur == null"
+"144 : cur = new ExpenseAmountDelegateComparator(cur, )" -> "154 : cur = new ExpenseCategoryDelegateComparator(cur, )"
+"144 : cur = new ExpenseAmountDelegateComparator(cur, )" -> "159 : cur == null"
+"144 : cur = new ExpenseAmountDelegateComparator(cur, )" -> "164 : cur = new ExpenseDateDelegateComparator(cur, )"
+"144 : cur = new ExpenseAmountDelegateComparator(cur, )" -> "184 : Collections.sort(list, cur, )"
+"144 : cur = new ExpenseAmountDelegateComparator(cur, )" -> "174 : cur = new ExpensePayeeDelegateComparator(cur, )"
+"144 : cur = new ExpenseAmountDelegateComparator(cur, )" -> "150 : cur = new ExpenseCategoryComparator()" [style=dashed]
+"144 : cur = new ExpenseAmountDelegateComparator(cur, )" -> "140 : cur = new ExpenseAmountComparator()" [style=dashed]
+"144 : cur = new ExpenseAmountDelegateComparator(cur, )" -> "160 : cur = new ExpenseDateComparator()" [style=dashed]
+"144 : cur = new ExpenseAmountDelegateComparator(cur, )" -> "144 : cur = new ExpenseAmountDelegateComparator(cur, )" [style=dashed]
+"144 : cur = new ExpenseAmountDelegateComparator(cur, )" -> "154 : cur = new ExpenseCategoryDelegateComparator(cur, )" [style=dashed]
+"144 : cur = new ExpenseAmountDelegateComparator(cur, )" -> "164 : cur = new ExpenseDateDelegateComparator(cur, )" [style=dashed]
+"144 : cur = new ExpenseAmountDelegateComparator(cur, )" -> "170 : cur = new ExpensePayeeComparator()" [style=dashed]
+"144 : cur = new ExpenseAmountDelegateComparator(cur, )" -> "174 : cur = new ExpensePayeeDelegateComparator(cur, )" [style=dashed]
+"145 : System.err.println(\"amountdelegator\", )"
+"148 : equals(\"category\", )"
+"149 : cur == null"
+"150 : cur = new ExpenseCategoryComparator()"
+"150 : cur = new ExpenseCategoryComparator()" -> "169 : cur == null"
+"150 : cur = new ExpenseCategoryComparator()" -> "139 : cur == null"
+"150 : cur = new ExpenseCategoryComparator()" -> "144 : cur = new ExpenseAmountDelegateComparator(cur, )"
+"150 : cur = new ExpenseCategoryComparator()" -> "149 : cur == null"
+"150 : cur = new ExpenseCategoryComparator()" -> "154 : cur = new ExpenseCategoryDelegateComparator(cur, )"
+"150 : cur = new ExpenseCategoryComparator()" -> "159 : cur == null"
+"150 : cur = new ExpenseCategoryComparator()" -> "164 : cur = new ExpenseDateDelegateComparator(cur, )"
+"150 : cur = new ExpenseCategoryComparator()" -> "184 : Collections.sort(list, cur, )"
+"150 : cur = new ExpenseCategoryComparator()" -> "174 : cur = new ExpensePayeeDelegateComparator(cur, )"
+"150 : cur = new ExpenseCategoryComparator()" -> "150 : cur = new ExpenseCategoryComparator()" [style=dashed]
+"150 : cur = new ExpenseCategoryComparator()" -> "140 : cur = new ExpenseAmountComparator()" [style=dashed]
+"150 : cur = new ExpenseCategoryComparator()" -> "160 : cur = new ExpenseDateComparator()" [style=dashed]
+"150 : cur = new ExpenseCategoryComparator()" -> "144 : cur = new ExpenseAmountDelegateComparator(cur, )" [style=dashed]
+"150 : cur = new ExpenseCategoryComparator()" -> "154 : cur = new ExpenseCategoryDelegateComparator(cur, )" [style=dashed]
+"150 : cur = new ExpenseCategoryComparator()" -> "164 : cur = new ExpenseDateDelegateComparator(cur, )" [style=dashed]
+"150 : cur = new ExpenseCategoryComparator()" -> "170 : cur = new ExpensePayeeComparator()" [style=dashed]
+"150 : cur = new ExpenseCategoryComparator()" -> "174 : cur = new ExpensePayeeDelegateComparator(cur, )" [style=dashed]
+"151 : System.err.println(\"category\", )"
+"154 : cur = new ExpenseCategoryDelegateComparator(cur, )"
+"154 : cur = new ExpenseCategoryDelegateComparator(cur, )" -> "169 : cur == null"
+"154 : cur = new ExpenseCategoryDelegateComparator(cur, )" -> "139 : cur == null"
+"154 : cur = new ExpenseCategoryDelegateComparator(cur, )" -> "144 : cur = new ExpenseAmountDelegateComparator(cur, )"
+"154 : cur = new ExpenseCategoryDelegateComparator(cur, )" -> "149 : cur == null"
+"154 : cur = new ExpenseCategoryDelegateComparator(cur, )" -> "154 : cur = new ExpenseCategoryDelegateComparator(cur, )"
+"154 : cur = new ExpenseCategoryDelegateComparator(cur, )" -> "159 : cur == null"
+"154 : cur = new ExpenseCategoryDelegateComparator(cur, )" -> "164 : cur = new ExpenseDateDelegateComparator(cur, )"
+"154 : cur = new ExpenseCategoryDelegateComparator(cur, )" -> "184 : Collections.sort(list, cur, )"
+"154 : cur = new ExpenseCategoryDelegateComparator(cur, )" -> "174 : cur = new ExpensePayeeDelegateComparator(cur, )"
+"154 : cur = new ExpenseCategoryDelegateComparator(cur, )" -> "150 : cur = new ExpenseCategoryComparator()" [style=dashed]
+"154 : cur = new ExpenseCategoryDelegateComparator(cur, )" -> "140 : cur = new ExpenseAmountComparator()" [style=dashed]
+"154 : cur = new ExpenseCategoryDelegateComparator(cur, )" -> "160 : cur = new ExpenseDateComparator()" [style=dashed]
+"154 : cur = new ExpenseCategoryDelegateComparator(cur, )" -> "144 : cur = new ExpenseAmountDelegateComparator(cur, )" [style=dashed]
+"154 : cur = new ExpenseCategoryDelegateComparator(cur, )" -> "154 : cur = new ExpenseCategoryDelegateComparator(cur, )" [style=dashed]
+"154 : cur = new ExpenseCategoryDelegateComparator(cur, )" -> "164 : cur = new ExpenseDateDelegateComparator(cur, )" [style=dashed]
+"154 : cur = new ExpenseCategoryDelegateComparator(cur, )" -> "170 : cur = new ExpensePayeeComparator()" [style=dashed]
+"154 : cur = new ExpenseCategoryDelegateComparator(cur, )" -> "174 : cur = new ExpensePayeeDelegateComparator(cur, )" [style=dashed]
+"155 : System.err.println(\"categorydelegator\", )"
+"158 : equals(\"date\", )"
+"159 : cur == null"
+"160 : cur = new ExpenseDateComparator()"
+"160 : cur = new ExpenseDateComparator()" -> "169 : cur == null"
+"160 : cur = new ExpenseDateComparator()" -> "139 : cur == null"
+"160 : cur = new ExpenseDateComparator()" -> "144 : cur = new ExpenseAmountDelegateComparator(cur, )"
+"160 : cur = new ExpenseDateComparator()" -> "149 : cur == null"
+"160 : cur = new ExpenseDateComparator()" -> "154 : cur = new ExpenseCategoryDelegateComparator(cur, )"
+"160 : cur = new ExpenseDateComparator()" -> "159 : cur == null"
+"160 : cur = new ExpenseDateComparator()" -> "164 : cur = new ExpenseDateDelegateComparator(cur, )"
+"160 : cur = new ExpenseDateComparator()" -> "184 : Collections.sort(list, cur, )"
+"160 : cur = new ExpenseDateComparator()" -> "174 : cur = new ExpensePayeeDelegateComparator(cur, )"
+"160 : cur = new ExpenseDateComparator()" -> "150 : cur = new ExpenseCategoryComparator()" [style=dashed]
+"160 : cur = new ExpenseDateComparator()" -> "140 : cur = new ExpenseAmountComparator()" [style=dashed]
+"160 : cur = new ExpenseDateComparator()" -> "160 : cur = new ExpenseDateComparator()" [style=dashed]
+"160 : cur = new ExpenseDateComparator()" -> "144 : cur = new ExpenseAmountDelegateComparator(cur, )" [style=dashed]
+"160 : cur = new ExpenseDateComparator()" -> "154 : cur = new ExpenseCategoryDelegateComparator(cur, )" [style=dashed]
+"160 : cur = new ExpenseDateComparator()" -> "164 : cur = new ExpenseDateDelegateComparator(cur, )" [style=dashed]
+"160 : cur = new ExpenseDateComparator()" -> "170 : cur = new ExpensePayeeComparator()" [style=dashed]
+"160 : cur = new ExpenseDateComparator()" -> "174 : cur = new ExpensePayeeDelegateComparator(cur, )" [style=dashed]
+"161 : System.err.println(\"date\", )"
+"164 : cur = new ExpenseDateDelegateComparator(cur, )"
+"164 : cur = new ExpenseDateDelegateComparator(cur, )" -> "169 : cur == null"
+"164 : cur = new ExpenseDateDelegateComparator(cur, )" -> "139 : cur == null"
+"164 : cur = new ExpenseDateDelegateComparator(cur, )" -> "144 : cur = new ExpenseAmountDelegateComparator(cur, )"
+"164 : cur = new ExpenseDateDelegateComparator(cur, )" -> "149 : cur == null"
+"164 : cur = new ExpenseDateDelegateComparator(cur, )" -> "154 : cur = new ExpenseCategoryDelegateComparator(cur, )"
+"164 : cur = new ExpenseDateDelegateComparator(cur, )" -> "159 : cur == null"
+"164 : cur = new ExpenseDateDelegateComparator(cur, )" -> "164 : cur = new ExpenseDateDelegateComparator(cur, )"
+"164 : cur = new ExpenseDateDelegateComparator(cur, )" -> "184 : Collections.sort(list, cur, )"
+"164 : cur = new ExpenseDateDelegateComparator(cur, )" -> "174 : cur = new ExpensePayeeDelegateComparator(cur, )"
+"164 : cur = new ExpenseDateDelegateComparator(cur, )" -> "150 : cur = new ExpenseCategoryComparator()" [style=dashed]
+"164 : cur = new ExpenseDateDelegateComparator(cur, )" -> "140 : cur = new ExpenseAmountComparator()" [style=dashed]
+"164 : cur = new ExpenseDateDelegateComparator(cur, )" -> "160 : cur = new ExpenseDateComparator()" [style=dashed]
+"164 : cur = new ExpenseDateDelegateComparator(cur, )" -> "144 : cur = new ExpenseAmountDelegateComparator(cur, )" [style=dashed]
+"164 : cur = new ExpenseDateDelegateComparator(cur, )" -> "154 : cur = new ExpenseCategoryDelegateComparator(cur, )" [style=dashed]
+"164 : cur = new ExpenseDateDelegateComparator(cur, )" -> "164 : cur = new ExpenseDateDelegateComparator(cur, )" [style=dashed]
+"164 : cur = new ExpenseDateDelegateComparator(cur, )" -> "170 : cur = new ExpensePayeeComparator()" [style=dashed]
+"164 : cur = new ExpenseDateDelegateComparator(cur, )" -> "174 : cur = new ExpensePayeeDelegateComparator(cur, )" [style=dashed]
+"165 : System.err.println(\"datedelegator\", )"
+"168 : equals(\"payee\", )"
+"169 : cur == null"
+"170 : cur = new ExpensePayeeComparator()"
+"170 : cur = new ExpensePayeeComparator()" -> "169 : cur == null"
+"170 : cur = new ExpensePayeeComparator()" -> "139 : cur == null"
+"170 : cur = new ExpensePayeeComparator()" -> "144 : cur = new ExpenseAmountDelegateComparator(cur, )"
+"170 : cur = new ExpensePayeeComparator()" -> "149 : cur == null"
+"170 : cur = new ExpensePayeeComparator()" -> "154 : cur = new ExpenseCategoryDelegateComparator(cur, )"
+"170 : cur = new ExpensePayeeComparator()" -> "159 : cur == null"
+"170 : cur = new ExpensePayeeComparator()" -> "164 : cur = new ExpenseDateDelegateComparator(cur, )"
+"170 : cur = new ExpensePayeeComparator()" -> "184 : Collections.sort(list, cur, )"
+"170 : cur = new ExpensePayeeComparator()" -> "174 : cur = new ExpensePayeeDelegateComparator(cur, )"
+"170 : cur = new ExpensePayeeComparator()" -> "150 : cur = new ExpenseCategoryComparator()" [style=dashed]
+"170 : cur = new ExpensePayeeComparator()" -> "140 : cur = new ExpenseAmountComparator()" [style=dashed]
+"170 : cur = new ExpensePayeeComparator()" -> "160 : cur = new ExpenseDateComparator()" [style=dashed]
+"170 : cur = new ExpensePayeeComparator()" -> "144 : cur = new ExpenseAmountDelegateComparator(cur, )" [style=dashed]
+"170 : cur = new ExpensePayeeComparator()" -> "154 : cur = new ExpenseCategoryDelegateComparator(cur, )" [style=dashed]
+"170 : cur = new ExpensePayeeComparator()" -> "164 : cur = new ExpenseDateDelegateComparator(cur, )" [style=dashed]
+"170 : cur = new ExpensePayeeComparator()" -> "170 : cur = new ExpensePayeeComparator()" [style=dashed]
+"170 : cur = new ExpensePayeeComparator()" -> "174 : cur = new ExpensePayeeDelegateComparator(cur, )" [style=dashed]
+"171 : System.err.println(\"payee\", )"
+"174 : cur = new ExpensePayeeDelegateComparator(cur, )"
+"174 : cur = new ExpensePayeeDelegateComparator(cur, )" -> "169 : cur == null"
+"174 : cur = new ExpensePayeeDelegateComparator(cur, )" -> "139 : cur == null"
+"174 : cur = new ExpensePayeeDelegateComparator(cur, )" -> "144 : cur = new ExpenseAmountDelegateComparator(cur, )"
+"174 : cur = new ExpensePayeeDelegateComparator(cur, )" -> "149 : cur == null"
+"174 : cur = new ExpensePayeeDelegateComparator(cur, )" -> "154 : cur = new ExpenseCategoryDelegateComparator(cur, )"
+"174 : cur = new ExpensePayeeDelegateComparator(cur, )" -> "159 : cur == null"
+"174 : cur = new ExpensePayeeDelegateComparator(cur, )" -> "164 : cur = new ExpenseDateDelegateComparator(cur, )"
+"174 : cur = new ExpensePayeeDelegateComparator(cur, )" -> "184 : Collections.sort(list, cur, )"
+"174 : cur = new ExpensePayeeDelegateComparator(cur, )" -> "174 : cur = new ExpensePayeeDelegateComparator(cur, )"
+"174 : cur = new ExpensePayeeDelegateComparator(cur, )" -> "150 : cur = new ExpenseCategoryComparator()" [style=dashed]
+"174 : cur = new ExpensePayeeDelegateComparator(cur, )" -> "140 : cur = new ExpenseAmountComparator()" [style=dashed]
+"174 : cur = new ExpensePayeeDelegateComparator(cur, )" -> "160 : cur = new ExpenseDateComparator()" [style=dashed]
+"174 : cur = new ExpensePayeeDelegateComparator(cur, )" -> "144 : cur = new ExpenseAmountDelegateComparator(cur, )" [style=dashed]
+"174 : cur = new ExpensePayeeDelegateComparator(cur, )" -> "154 : cur = new ExpenseCategoryDelegateComparator(cur, )" [style=dashed]
+"174 : cur = new ExpensePayeeDelegateComparator(cur, )" -> "164 : cur = new ExpenseDateDelegateComparator(cur, )" [style=dashed]
+"174 : cur = new ExpensePayeeDelegateComparator(cur, )" -> "170 : cur = new ExpensePayeeComparator()" [style=dashed]
+"174 : cur = new ExpensePayeeDelegateComparator(cur, )" -> "174 : cur = new ExpensePayeeDelegateComparator(cur, )" [style=dashed]
+"175 : System.err.println(\"payeedelegator\", )"
+"179 : System.err.println(\"Invalid key\", )"
+"182 : @temp2 = i"
+"182 : @temp2 = i" -> "182 : @temp2 = i" [style=dashed]
+"182 : i = i + 1"
+"182 : i = i + 1" -> "182 : @temp2 = i"
+"182 : i = i + 1" -> "182 : i = i + 1"
+"182 : i = i + 1" -> "137 : i < counter"
+"182 : i = i + 1" -> "182 : i = i + 1" [style=dashed]
+"137 : i < counter"
+}

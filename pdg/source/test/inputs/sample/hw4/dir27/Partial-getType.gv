@@ -1,0 +1,8 @@
+digraph G {
+"6 : this.paid = null"
+"6 : this.remaining = null"
+"7 : this.category = null"
+"8 : this.date = null"
+"9 : this.payee = null"
+"20 : \"partial\""
+}

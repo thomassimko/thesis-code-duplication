@@ -1,0 +1,67 @@
+digraph G {
+"192 : System.out.print(\"\n\", )"
+"193 : size = list.size()"
+"193 : size = list.size()" -> "196 : i < size"
+"194 : paid = null"
+"194 : paid = null" -> "206 : paid = getFAmount() + \".\" + getSAmount()" [style=dashed]
+"194 : paid = null" -> "202 : paid = getFAmount() + \".\" + \"00\"" [style=dashed]
+"194 : paid = null" -> "222 : paid = getFAmount() + \".\" + getSAmount()" [style=dashed]
+"194 : paid = null" -> "218 : paid = getFAmount() + \".\" + \"00\"" [style=dashed]
+"195 : remaining = null"
+"195 : remaining = null" -> "227 : remaining = getFRemaining() + \".\" + \"00\"" [style=dashed]
+"195 : remaining = null" -> "231 : remaining = getFRemaining() + \".\" + getSRemaining()" [style=dashed]
+"196 : i = 0"
+"196 : i = 0" -> "198 : list.get(i, ) instanceof InFull"
+"196 : i = 0" -> "196 : i < size"
+"196 : i = 0" -> "196 : @temp3 = i"
+"196 : i = 0" -> "196 : i = i + 1"
+"196 : i = 0" -> "196 : i = i + 1" [style=dashed]
+"196 : i < size"
+"198 : list.get(i, ) instanceof InFull"
+"240 : System.out.print(\"\n\", )"
+"200 : getSAmount() == 0"
+"202 : paid = getFAmount() + \".\" + \"00\""
+"202 : paid = getFAmount() + \".\" + \"00\"" -> "209 : System.out.println(String.format(\"%1$2tm/%<2td/%<tY \", getDate(), ) + String.format(\"%-15.15s %10s [%s]\", getPayee(), paid, getCategory(), ), )"
+"202 : paid = getFAmount() + \".\" + \"00\"" -> "206 : paid = getFAmount() + \".\" + getSAmount()" [style=dashed]
+"202 : paid = getFAmount() + \".\" + \"00\"" -> "202 : paid = getFAmount() + \".\" + \"00\"" [style=dashed]
+"202 : paid = getFAmount() + \".\" + \"00\"" -> "222 : paid = getFAmount() + \".\" + getSAmount()" [style=dashed]
+"202 : paid = getFAmount() + \".\" + \"00\"" -> "218 : paid = getFAmount() + \".\" + \"00\"" [style=dashed]
+"206 : paid = getFAmount() + \".\" + getSAmount()"
+"206 : paid = getFAmount() + \".\" + getSAmount()" -> "209 : System.out.println(String.format(\"%1$2tm/%<2td/%<tY \", getDate(), ) + String.format(\"%-15.15s %10s [%s]\", getPayee(), paid, getCategory(), ), )"
+"206 : paid = getFAmount() + \".\" + getSAmount()" -> "206 : paid = getFAmount() + \".\" + getSAmount()" [style=dashed]
+"206 : paid = getFAmount() + \".\" + getSAmount()" -> "202 : paid = getFAmount() + \".\" + \"00\"" [style=dashed]
+"206 : paid = getFAmount() + \".\" + getSAmount()" -> "222 : paid = getFAmount() + \".\" + getSAmount()" [style=dashed]
+"206 : paid = getFAmount() + \".\" + getSAmount()" -> "218 : paid = getFAmount() + \".\" + \"00\"" [style=dashed]
+"209 : System.out.println(String.format(\"%1$2tm/%<2td/%<tY \", getDate(), ) + String.format(\"%-15.15s %10s [%s]\", getPayee(), paid, getCategory(), ), )"
+"216 : getSAmount() == 0"
+"218 : paid = getFAmount() + \".\" + \"00\""
+"218 : paid = getFAmount() + \".\" + \"00\"" -> "234 : System.out.println(String.format(\"%1$2tm/%<2td/%<tY \", getDate(), ) + String.format(\"%-15.15s %10s (%s) [%s]\", getPayee(), paid, remaining, getCategory(), ), )"
+"218 : paid = getFAmount() + \".\" + \"00\"" -> "206 : paid = getFAmount() + \".\" + getSAmount()" [style=dashed]
+"218 : paid = getFAmount() + \".\" + \"00\"" -> "202 : paid = getFAmount() + \".\" + \"00\"" [style=dashed]
+"218 : paid = getFAmount() + \".\" + \"00\"" -> "222 : paid = getFAmount() + \".\" + getSAmount()" [style=dashed]
+"218 : paid = getFAmount() + \".\" + \"00\"" -> "218 : paid = getFAmount() + \".\" + \"00\"" [style=dashed]
+"222 : paid = getFAmount() + \".\" + getSAmount()"
+"222 : paid = getFAmount() + \".\" + getSAmount()" -> "234 : System.out.println(String.format(\"%1$2tm/%<2td/%<tY \", getDate(), ) + String.format(\"%-15.15s %10s (%s) [%s]\", getPayee(), paid, remaining, getCategory(), ), )"
+"222 : paid = getFAmount() + \".\" + getSAmount()" -> "206 : paid = getFAmount() + \".\" + getSAmount()" [style=dashed]
+"222 : paid = getFAmount() + \".\" + getSAmount()" -> "202 : paid = getFAmount() + \".\" + \"00\"" [style=dashed]
+"222 : paid = getFAmount() + \".\" + getSAmount()" -> "222 : paid = getFAmount() + \".\" + getSAmount()" [style=dashed]
+"222 : paid = getFAmount() + \".\" + getSAmount()" -> "218 : paid = getFAmount() + \".\" + \"00\"" [style=dashed]
+"225 : getSRemaining() == 0"
+"227 : remaining = getFRemaining() + \".\" + \"00\""
+"227 : remaining = getFRemaining() + \".\" + \"00\"" -> "234 : System.out.println(String.format(\"%1$2tm/%<2td/%<tY \", getDate(), ) + String.format(\"%-15.15s %10s (%s) [%s]\", getPayee(), paid, remaining, getCategory(), ), )"
+"227 : remaining = getFRemaining() + \".\" + \"00\"" -> "227 : remaining = getFRemaining() + \".\" + \"00\"" [style=dashed]
+"227 : remaining = getFRemaining() + \".\" + \"00\"" -> "231 : remaining = getFRemaining() + \".\" + getSRemaining()" [style=dashed]
+"231 : remaining = getFRemaining() + \".\" + getSRemaining()"
+"231 : remaining = getFRemaining() + \".\" + getSRemaining()" -> "234 : System.out.println(String.format(\"%1$2tm/%<2td/%<tY \", getDate(), ) + String.format(\"%-15.15s %10s (%s) [%s]\", getPayee(), paid, remaining, getCategory(), ), )"
+"231 : remaining = getFRemaining() + \".\" + getSRemaining()" -> "227 : remaining = getFRemaining() + \".\" + \"00\"" [style=dashed]
+"231 : remaining = getFRemaining() + \".\" + getSRemaining()" -> "231 : remaining = getFRemaining() + \".\" + getSRemaining()" [style=dashed]
+"234 : System.out.println(String.format(\"%1$2tm/%<2td/%<tY \", getDate(), ) + String.format(\"%-15.15s %10s (%s) [%s]\", getPayee(), paid, remaining, getCategory(), ), )"
+"196 : @temp3 = i"
+"196 : @temp3 = i" -> "196 : @temp3 = i" [style=dashed]
+"196 : i = i + 1"
+"196 : i = i + 1" -> "198 : list.get(i, ) instanceof InFull"
+"196 : i = i + 1" -> "196 : i < size"
+"196 : i = i + 1" -> "196 : @temp3 = i"
+"196 : i = i + 1" -> "196 : i = i + 1"
+"196 : i = i + 1" -> "196 : i = i + 1" [style=dashed]
+}

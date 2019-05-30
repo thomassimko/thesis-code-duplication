@@ -1,0 +1,14 @@
+digraph G {
+"5 : this.next = null"
+"14 : o1 = e1.getPayee()"
+"15 : o2 = e2.getPayee()"
+"15 : o2 = e2.getPayee()" -> "16 : comparisonResult = o1.compareTo(o2, )"
+"16 : comparisonResult = o1.compareTo(o2, )"
+"16 : comparisonResult = o1.compareTo(o2, )" -> "21 : comparisonResult < 0"
+"16 : comparisonResult = o1.compareTo(o2, )" -> "17 : comparisonResult > 0"
+"17 : comparisonResult > 0"
+"19 : 1"
+"21 : comparisonResult < 0"
+"23 : 1"
+"27 : this.next.compare(e1, e2, )"
+}

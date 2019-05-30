@@ -1,0 +1,23 @@
+digraph G {
+"6 : this.head = null"
+"6 : this.head = null" -> "226 : this.head == null"
+"6 : this.head = null" -> "233 : cur = this.head"
+"226 : this.head == null"
+"228 : new NullPointerException()"
+"232 : newList = new IterativeStringList()"
+"232 : newList = new IterativeStringList()" -> "238 : newList.addToEnd(cur.toString(), )"
+"233 : cur = this.head"
+"233 : cur = this.head" -> "240 : cur = cur.next()"
+"233 : cur = this.head" -> "234 : cur != null"
+"233 : cur = this.head" -> "238 : newList.addToEnd(cur.toString(), )"
+"233 : cur = this.head" -> "240 : cur = cur.next()" [style=dashed]
+"234 : cur != null"
+"236 : startsWith(prefix, )"
+"238 : newList.addToEnd(cur.toString(), )"
+"240 : cur = cur.next()"
+"240 : cur = cur.next()" -> "240 : cur = cur.next()"
+"240 : cur = cur.next()" -> "234 : cur != null"
+"240 : cur = cur.next()" -> "238 : newList.addToEnd(cur.toString(), )"
+"240 : cur = cur.next()" -> "240 : cur = cur.next()" [style=dashed]
+"234 : cur != null"
+}

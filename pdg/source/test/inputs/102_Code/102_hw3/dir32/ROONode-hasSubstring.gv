@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.data = null"
+"5 : this.next = null"
+"111 : contains(substring, )"
+"113 : n = new ROONode(getData(), hasSubstring(substring, ), )"
+"118 : hasSubstring(substring, )"
+}

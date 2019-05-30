@@ -1,0 +1,12 @@
+digraph G {
+"11 : feed = new FeedReaderData()"
+"12 : feed.addSource(\"https://search.twitter.com/search.rss?q=from:keen_csc102\", )"
+"14 : feed.addSource(\"bad\", )"
+"15 : list = feed.retrieveFeedItems()"
+"16 : bad = feed.getBadSources()"
+"18 : System.out.println(\"Bad source: \" + bad.get(0, ) + \"\n\", )"
+"20 : System.out.println(\"Link \" + getLink(), )"
+"21 : System.out.println(\"Date \" + calendarToString(), )"
+"22 : System.out.println(\"Title \" + getTitle(), )"
+"26 : System.err.println(\"Parse exception\", )"
+}

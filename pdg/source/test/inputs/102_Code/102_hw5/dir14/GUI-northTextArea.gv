@@ -1,0 +1,11 @@
+digraph G {
+"23 : this.gui = this"
+"24 : this.feedReader = null"
+"25 : this.source = null"
+"26 : this.data = null"
+"27 : this.sources = null"
+"216 : northLabel = new JPanel()"
+"217 : dataLabel = new JLabel(\"RSS Items\", )"
+"217 : dataLabel = new JLabel(\"RSS Items\", )" -> "218 : northLabel.add(dataLabel, )"
+"218 : northLabel.add(dataLabel, )"
+}

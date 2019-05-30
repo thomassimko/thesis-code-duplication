@@ -1,0 +1,33 @@
+digraph G {
+"7 : this.primary = null"
+"15 : i = 0"
+"15 : i = 0" -> "30 : i = 1" [style=dashed]
+"15 : i = 0" -> "24 : i = 1" [style=dashed]
+"15 : i = 0" -> "22 : i = 1" [style=dashed]
+"15 : i = 0" -> "28 : i = 1" [style=dashed]
+"16 : leftDollars = left.getAmtDollars()"
+"16 : leftDollars = left.getAmtDollars()" -> "21 : leftDollars > rightDollars"
+"16 : leftDollars = left.getAmtDollars()" -> "23 : leftDollars < rightDollars"
+"17 : leftCents = left.getAmtCents()"
+"17 : leftCents = left.getAmtCents()" -> "27 : leftCents > rightCents"
+"17 : leftCents = left.getAmtCents()" -> "29 : leftCents < rightCents"
+"18 : rightDollars = right.getAmtDollars()"
+"18 : rightDollars = right.getAmtDollars()" -> "21 : leftDollars > rightDollars"
+"18 : rightDollars = right.getAmtDollars()" -> "23 : leftDollars < rightDollars"
+"19 : rightCents = right.getAmtCents()"
+"19 : rightCents = right.getAmtCents()" -> "27 : leftCents > rightCents"
+"19 : rightCents = right.getAmtCents()" -> "29 : leftCents < rightCents"
+"21 : leftDollars > rightDollars"
+"22 : i = 1"
+"22 : i = 1" -> "30 : i = 1" [style=dashed]
+"22 : i = 1" -> "24 : i = 1" [style=dashed]
+"22 : i = 1" -> "28 : i = 1" [style=dashed]
+"23 : leftDollars < rightDollars"
+"24 : i = 1"
+"27 : leftCents > rightCents"
+"28 : i = 1"
+"28 : i = 1" -> "30 : i = 1" [style=dashed]
+"29 : leftCents < rightCents"
+"30 : i = 1"
+"32 : this.primary.compare(left, right, )"
+}

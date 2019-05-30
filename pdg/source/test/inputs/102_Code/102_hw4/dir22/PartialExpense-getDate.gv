@@ -1,0 +1,11 @@
+digraph G {
+"6 : this.dollarsPaid = 0"
+"7 : this.centsPaid = 0"
+"8 : this.dollarsDue = 0"
+"9 : this.centsDue = 0"
+"10 : this.c = null"
+"10 : this.c = null" -> "30 : date = String.format(\"%1$tm/%1$te/%1$tY\", this.c, )"
+"11 : this.paidTo = null"
+"12 : this.category = null"
+"30 : date = String.format(\"%1$tm/%1$te/%1$tY\", this.c, )"
+}

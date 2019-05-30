@@ -1,8 +1,0 @@
-digraph G {
-"78 : flag = false"
-"78 : flag = false" -> "87 : flag = false" [style=dashed]
-"78 : flag = false" -> "83 : flag = true" [style=dashed]
-"79 : p1.xCoordinate() >= 0 && p1.yCoordinate() > 0 && p2.xCoordinate() >= 0 && p2.yCoordinate() > 0 || p1.xCoordinate() > 0 && p1.yCoordinate() >= 0 && p2.xCoordinate() > 0 && p2.yCoordinate() >= 0 || p1.xCoordinate() <= 0 && p1.yCoordinate() < 0 && p2.xCoordinate() <= 0 && p2.yCoordinate() < 0 || p1.xCoordinate() > 0 && p1.yCoordinate() <= 0 && p2.xCoordinate() > 0 && p2.yCoordinate() <= 0"
-"83 : flag = true"
-"87 : flag = false"
-}

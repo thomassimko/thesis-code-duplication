@@ -1,0 +1,14 @@
+digraph G {
+"20 : this.scan = null"
+"251 : df = new SimpleDateFormat(\"MM/dd/yyyy\", )"
+"252 : d1 = null"
+"253 : c = null"
+"257 : d1 = df.parse(date, )"
+"257 : d1 = df.parse(date, )" -> "259 : c.setTime(d1, )"
+"258 : c = GregorianCalendar.getInstance()"
+"259 : c.setTime(d1, )"
+"263 : System.out.print(\"Payment date: \", )"
+"264 : date2 = this.scan.next()"
+"264 : date2 = this.scan.next()" -> "265 : formatDate(date2, )"
+"265 : formatDate(date2, )"
+}

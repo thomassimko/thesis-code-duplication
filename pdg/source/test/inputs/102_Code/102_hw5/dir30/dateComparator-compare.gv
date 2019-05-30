@@ -1,0 +1,11 @@
+digraph G {
+"11 : lftDate = getTime()"
+"12 : rhtDate = getTime()"
+"12 : rhtDate = getTime()" -> "18 : lftDate.before(rhtDate, )"
+"12 : rhtDate = getTime()" -> "14 : lftDate.equals(rhtDate, )"
+"14 : lftDate.equals(rhtDate, )"
+"16 : 0"
+"18 : lftDate.before(rhtDate, )"
+"20 : 1"
+"24 : 1"
+}

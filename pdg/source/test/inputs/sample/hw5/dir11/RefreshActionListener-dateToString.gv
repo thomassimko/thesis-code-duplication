@@ -1,0 +1,6 @@
+digraph G {
+"14 : this.feed = null"
+"15 : this.feedItems = null"
+"41 : dateFormat = new SimpleDateFormat(\"MM/dd/yyyy HH:mm\", )"
+"42 : dateFormat.format(c.getTime(), )"
+}

@@ -1,0 +1,7 @@
+digraph G {
+"17 : this.sources = null"
+"18 : this.sourceStrs = null"
+"19 : this.items = null"
+"20 : this.badStrs = null"
+"31 : this.sourceStrs.add(src, )"
+}

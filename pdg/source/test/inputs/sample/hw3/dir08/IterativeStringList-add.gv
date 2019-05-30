@@ -1,0 +1,48 @@
+digraph G {
+"6 : this.head = null"
+"6 : this.head = null" -> "56 : cur = this.head"
+"6 : this.head = null" -> "33 : this.head == null"
+"6 : this.head = null" -> "48 : this.head = new IterativeNode(element, this.head, )"
+"6 : this.head = null" -> "37 : this.head = new IterativeNode(element, null, )" [style=dashed]
+"6 : this.head = null" -> "48 : this.head = new IterativeNode(element, this.head, )" [style=dashed]
+"33 : this.head == null"
+"35 : index == 0"
+"37 : this.head = new IterativeNode(element, null, )"
+"41 : new IndexOutOfBoundsException()"
+"46 : index == 0"
+"48 : this.head = new IterativeNode(element, this.head, )"
+"50 : index < 0"
+"52 : new IndexOutOfBoundsException()"
+"56 : cur = this.head"
+"56 : cur = this.head" -> "67 : n = new IterativeNode(element, cur.next(), )"
+"56 : cur = this.head" -> "57 : i < index && cur != null"
+"56 : cur = this.head" -> "68 : cur.setNext(n, )"
+"56 : cur = this.head" -> "61 : cur == null"
+"56 : cur = this.head" -> "59 : cur = cur.next()"
+"56 : cur = this.head" -> "59 : cur = cur.next()" [style=dashed]
+"57 : i = 1"
+"57 : i = 1" -> "57 : i < index && cur != null"
+"57 : i = 1" -> "57 : i = i + 1"
+"57 : i = 1" -> "57 : @temp1 = i"
+"57 : i = 1" -> "57 : i = i + 1" [style=dashed]
+"57 : i < index && cur != null"
+"59 : cur = cur.next()"
+"59 : cur = cur.next()" -> "67 : n = new IterativeNode(element, cur.next(), )"
+"59 : cur = cur.next()" -> "57 : i < index && cur != null"
+"59 : cur = cur.next()" -> "68 : cur.setNext(n, )"
+"59 : cur = cur.next()" -> "61 : cur == null"
+"59 : cur = cur.next()" -> "59 : cur = cur.next()"
+"59 : cur = cur.next()" -> "59 : cur = cur.next()" [style=dashed]
+"57 : @temp1 = i"
+"57 : @temp1 = i" -> "57 : @temp1 = i" [style=dashed]
+"57 : i = i + 1"
+"57 : i = i + 1" -> "57 : i < index && cur != null"
+"57 : i = i + 1" -> "57 : i = i + 1"
+"57 : i = i + 1" -> "57 : @temp1 = i"
+"57 : i = i + 1" -> "57 : i = i + 1" [style=dashed]
+"61 : cur == null"
+"63 : new IndexOutOfBoundsException()"
+"67 : n = new IterativeNode(element, cur.next(), )"
+"67 : n = new IterativeNode(element, cur.next(), )" -> "68 : cur.setNext(n, )"
+"68 : cur.setNext(n, )"
+}

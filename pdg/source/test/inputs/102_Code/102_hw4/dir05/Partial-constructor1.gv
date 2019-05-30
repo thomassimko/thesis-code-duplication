@@ -1,0 +1,23 @@
+digraph G {
+"5 : this.date = null"
+"5 : this.date = null" -> "16 : this.date = date" [style=dashed]
+"6 : this.category = null"
+"6 : this.category = null" -> "17 : this.category = category" [style=dashed]
+"7 : this.payee = null"
+"7 : this.payee = null" -> "18 : this.payee = payee" [style=dashed]
+"8 : this.famount = 0"
+"8 : this.famount = 0" -> "19 : this.famount = famount" [style=dashed]
+"9 : this.samount = 0"
+"9 : this.samount = 0" -> "20 : this.samount = samount" [style=dashed]
+"10 : this.fremaining = 0"
+"10 : this.fremaining = 0" -> "21 : this.fremaining = fremaining" [style=dashed]
+"11 : this.sremaining = 0"
+"11 : this.sremaining = 0" -> "22 : this.sremaining = sremaining" [style=dashed]
+"16 : this.date = date"
+"17 : this.category = category"
+"18 : this.payee = payee"
+"19 : this.famount = famount"
+"20 : this.samount = samount"
+"21 : this.fremaining = fremaining"
+"22 : this.sremaining = sremaining"
+}

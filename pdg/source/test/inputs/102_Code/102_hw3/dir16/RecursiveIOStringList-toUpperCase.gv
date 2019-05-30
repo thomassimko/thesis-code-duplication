@@ -1,0 +1,8 @@
+digraph G {
+"6 : this.head = null"
+"159 : cur instanceof RIOEmpty"
+"161 : new RecursiveIOStringList()"
+"164 : newList = toUpperCase(getNext(), )"
+"164 : newList = toUpperCase(getNext(), )" -> "164 : newList = toUpperCase(getNext(), )" [style=dashed]
+"165 : newList.add(0, toUpperCase(), )"
+}

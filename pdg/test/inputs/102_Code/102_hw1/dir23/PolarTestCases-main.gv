@@ -1,7 +1,0 @@
-digraph G {
-"55 : test_x_coordinate()"
-"56 : test_y_coordinate()"
-"57 : test_radius()"
-"58 : test_angle()"
-"59 : test_rotate90()"
-}

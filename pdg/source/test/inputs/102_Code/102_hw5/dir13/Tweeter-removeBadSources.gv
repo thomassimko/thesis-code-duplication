@@ -1,0 +1,46 @@
+digraph G {
+"22 : this.factory = DocumentBuilderFactory.newInstance()"
+"23 : this.builder = null"
+"24 : this.sources = new ArrayList()"
+"25 : this.badSources = new ArrayList()"
+"26 : this.xpfactory = XPathFactory.newInstance()"
+"27 : this.xpath = this.xpfactory.newXPath()"
+"28 : this.items = 0"
+"109 : i = 0"
+"109 : i = 0" -> "109 : i < this.sources.size()"
+"109 : i = 0" -> "109 : @temp3 = i"
+"109 : i = 0" -> "112 : this.sources.remove(i, )"
+"109 : i = 0" -> "109 : i = i + 1"
+"109 : i = 0" -> "109 : i = i + 1" [style=dashed]
+"109 : i < this.sources.size()"
+"110 : n = 0"
+"110 : n = 0" -> "110 : n < this.badSources.size()"
+"110 : n = 0" -> "113 : this.badSources.remove(n, )"
+"110 : n = 0" -> "111 : equals(this.badSources.get(n, ), )"
+"110 : n = 0" -> "110 : n = n + 1"
+"110 : n = 0" -> "110 : @temp2 = n"
+"110 : n = 0" -> "110 : n = 0" [style=dashed]
+"110 : n = 0" -> "110 : n = n + 1" [style=dashed]
+"110 : n < this.badSources.size()"
+"111 : equals(this.badSources.get(n, ), )"
+"109 : @temp3 = i"
+"109 : @temp3 = i" -> "109 : @temp3 = i" [style=dashed]
+"109 : i = i + 1"
+"109 : i = i + 1" -> "109 : i < this.sources.size()"
+"109 : i = i + 1" -> "109 : @temp3 = i"
+"109 : i = i + 1" -> "112 : this.sources.remove(i, )"
+"109 : i = i + 1" -> "109 : i = i + 1"
+"109 : i = i + 1" -> "109 : i = i + 1" [style=dashed]
+"112 : this.sources.remove(i, )"
+"113 : this.badSources.remove(n, )"
+"110 : @temp2 = n"
+"110 : @temp2 = n" -> "110 : @temp2 = n" [style=dashed]
+"110 : n = n + 1"
+"110 : n = n + 1" -> "110 : n < this.badSources.size()"
+"110 : n = n + 1" -> "113 : this.badSources.remove(n, )"
+"110 : n = n + 1" -> "111 : equals(this.badSources.get(n, ), )"
+"110 : n = n + 1" -> "110 : n = n + 1"
+"110 : n = n + 1" -> "110 : @temp2 = n"
+"110 : n = n + 1" -> "110 : n = 0" [style=dashed]
+"110 : n = n + 1" -> "110 : n = n + 1" [style=dashed]
+}

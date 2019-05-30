@@ -1,6 +1,7 @@
 package ast.literal;
 
 import ast.expressions.Expression;
+import ast.expressions.left.Left;
 import main.ArgumentHandler;
 
 import java.util.ArrayList;
@@ -22,7 +23,10 @@ public class BooleanLiteral extends Literal {
 
     @Override
     public int graphicalCompareTo(Expression o) {
-        if(o instanceof BooleanLiteral) {
+        if(o instanceof Left && !ArgumentHandler.checkLeft) {
+            return 0;
+        }
+        else if(o instanceof BooleanLiteral) {
             if (ArgumentHandler.checkLiterals) {
                 return value == ((BooleanLiteral) o).value ? 0 : -1;
             } else {

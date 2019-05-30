@@ -1,0 +1,9 @@
+digraph G {
+"4 : this.product = 0.0"
+"5 : this.p1 = null"
+"5 : this.p1 = null" -> "9 : this.p1 = lft" [style=dashed]
+"5 : this.p2 = null"
+"5 : this.p2 = null" -> "10 : this.p2 = rht" [style=dashed]
+"9 : this.p1 = lft"
+"10 : this.p2 = rht"
+}

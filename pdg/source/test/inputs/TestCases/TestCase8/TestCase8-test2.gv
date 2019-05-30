@@ -1,0 +1,17 @@
+digraph G {
+"24 : sum = 0"
+"24 : sum = 0" -> "28 : sum = 3 + sum + arr[i]"
+"24 : sum = 0" -> "28 : sum = 3 + sum + arr[i]" [style=dashed]
+"25 : count = 0"
+"25 : count = 0" -> "29 : count = count + 1"
+"25 : count = 0" -> "29 : @temp53 = count"
+"25 : count = 0" -> "29 : count = count + 1" [style=dashed]
+"26 : i = 4"
+"26 : i = 4" -> "28 : sum = 3 + sum + arr[i]"
+"28 : sum = 3 + sum + arr[i]"
+"28 : sum = 3 + sum + arr[i]" -> "31 : average = sum * 1.0 / count"
+"29 : @temp53 = count"
+"29 : count = count + 1"
+"29 : count = count + 1" -> "31 : average = sum * 1.0 / count"
+"31 : average = sum * 1.0 / count"
+}

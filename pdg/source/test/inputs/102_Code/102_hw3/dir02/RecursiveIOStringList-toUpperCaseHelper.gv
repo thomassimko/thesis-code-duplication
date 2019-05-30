@@ -1,0 +1,9 @@
+digraph G {
+"4 : this.head = null"
+"180 : node instanceof RIONode"
+"182 : str = toUpperCase()"
+"182 : str = toUpperCase()" -> "184 : list.add(0, str, )"
+"183 : list = toUpperCaseHelper(getNext(), )"
+"184 : list.add(0, str, )"
+"189 : newList = new RecursiveIOStringList()"
+}

@@ -1,0 +1,16 @@
+digraph G {
+"23 : this.sources = null"
+"24 : this.badList = null"
+"47 : size = this.sources.size()"
+"47 : size = this.sources.size()" -> "51 : i < size"
+"48 : rssList = new ArrayList()"
+"49 : this.badList.clear()"
+"51 : i = 0"
+"51 : i = 0" -> "51 : i < size"
+"51 : i < size"
+"55 : sourceConvert(rssList, this.sources.get(i, ), )"
+"51 : @temp4 = i"
+"51 : i = i + 1"
+"51 : i = i + 1" -> "51 : i < size"
+"59 : this.badList.add(this.sources.get(i, ), )"
+}

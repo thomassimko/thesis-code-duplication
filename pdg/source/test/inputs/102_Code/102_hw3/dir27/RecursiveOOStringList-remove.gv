@@ -1,0 +1,10 @@
+digraph G {
+"4 : this.head = null"
+"4 : this.head = null" -> "25 : temp = this.head"
+"4 : this.head = null" -> "26 : this.head = this.head.getNext()" [style=dashed]
+"23 : index == 0"
+"25 : temp = this.head"
+"26 : this.head = this.head.getNext()"
+"27 : temp.getName()"
+"29 : getName()"
+}

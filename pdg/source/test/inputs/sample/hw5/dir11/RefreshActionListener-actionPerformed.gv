@@ -1,0 +1,14 @@
+digraph G {
+"14 : this.feed = null"
+"15 : this.feedItems = null"
+"26 : this.feedItems.setText(\"\", )"
+"28 : itemList = this.feed.retrieveFeedItems()"
+"28 : itemList = this.feed.retrieveFeedItems()" -> "29 : Collections.sort(itemList, new DateComparator(), )"
+"28 : itemList = this.feed.retrieveFeedItems()" -> "31 : i = itemList"
+"29 : Collections.sort(itemList, new DateComparator(), )"
+"31 : i = itemList"
+"31 : i = itemList" -> "31 : i = itemList" [style=dashed]
+"33 : this.feedItems.append(i.getTitle() + \"\n\", )"
+"34 : this.feedItems.append(\"   \" + dateToString(i.getDate(), ) + \"\n\", )"
+"35 : this.feedItems.append(\"   \" + i.getLink() + \"\n\n\", )"
+}

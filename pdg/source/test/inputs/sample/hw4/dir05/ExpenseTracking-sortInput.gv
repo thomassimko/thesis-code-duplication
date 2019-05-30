@@ -1,0 +1,7 @@
+digraph G {
+"86 : scanner = new Scanner(System.in, )"
+"88 : System.out.print(\"Keys to sort by: \", )"
+"89 : sortby = scanner.nextLine()"
+"90 : s = sortby.split(\" \", )"
+"91 : System.out.print(\"\n\", )"
+}

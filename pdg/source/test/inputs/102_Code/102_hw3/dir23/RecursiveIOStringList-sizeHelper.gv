@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.cur = null"
+"4 : this.head = null"
+"96 : cur instanceof RIOEmpty"
+"97 : 0"
+"100 : 1 + sizeHelper(cur.getNode(), )"
+}

@@ -1,0 +1,6 @@
+digraph G {
+"4 : this.head = null"
+"4 : this.head = null" -> "13 : this.head = new RIONode(element, this.head, )"
+"4 : this.head = null" -> "13 : this.head = new RIONode(element, this.head, )" [style=dashed]
+"13 : this.head = new RIONode(element, this.head, )"
+}

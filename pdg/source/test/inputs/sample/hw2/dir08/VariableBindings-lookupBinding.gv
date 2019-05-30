@@ -1,0 +1,20 @@
+digraph G {
+"7 : this.bindingList = null"
+"7 : this.bindingList = null" -> "25 : binding = this.bindingList"
+"22 : check = 0"
+"22 : check = 0" -> "34 : check == 1"
+"22 : check = 0" -> "30 : check = 1" [style=dashed]
+"23 : answer = 0.0"
+"23 : answer = 0.0" -> "29 : answer = binding.getValue()" [style=dashed]
+"25 : binding = this.bindingList"
+"25 : binding = this.bindingList" -> "29 : answer = binding.getValue()"
+"25 : binding = this.bindingList" -> "25 : binding = this.bindingList" [style=dashed]
+"27 : equals(id, )"
+"34 : check == 1"
+"29 : answer = binding.getValue()"
+"29 : answer = binding.getValue()" -> "29 : answer = binding.getValue()" [style=dashed]
+"30 : check = 1"
+"30 : check = 1" -> "34 : check == 1"
+"30 : check = 1" -> "30 : check = 1" [style=dashed]
+"37 : new UnboundIdentifierException(\"unbound identifier: \" + id, )"
+}

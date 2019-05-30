@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.difference = 0.0"
+"4 : this.difference = 0.0" -> "12 : this.difference = this.d1.evaluate(bindings, ) - this.d2.evaluate(bindings, )" [style=dashed]
+"5 : this.d1 = null"
+"5 : this.d2 = null"
+"12 : this.difference = this.d1.evaluate(bindings, ) - this.d2.evaluate(bindings, )"
+}

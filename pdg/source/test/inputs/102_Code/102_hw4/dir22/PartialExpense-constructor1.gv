@@ -1,0 +1,23 @@
+digraph G {
+"6 : this.dollarsPaid = 0"
+"6 : this.dollarsPaid = 0" -> "16 : this.dollarsPaid = dollarsPaid" [style=dashed]
+"7 : this.centsPaid = 0"
+"7 : this.centsPaid = 0" -> "17 : this.centsPaid = centsPaid" [style=dashed]
+"8 : this.dollarsDue = 0"
+"8 : this.dollarsDue = 0" -> "19 : this.dollarsDue = dollarsDue" [style=dashed]
+"9 : this.centsDue = 0"
+"9 : this.centsDue = 0" -> "20 : this.centsDue = centsDue" [style=dashed]
+"10 : this.c = null"
+"10 : this.c = null" -> "18 : this.c = c" [style=dashed]
+"11 : this.paidTo = null"
+"11 : this.paidTo = null" -> "21 : this.paidTo = paidTo" [style=dashed]
+"12 : this.category = null"
+"12 : this.category = null" -> "22 : this.category = category" [style=dashed]
+"16 : this.dollarsPaid = dollarsPaid"
+"17 : this.centsPaid = centsPaid"
+"18 : this.c = c"
+"19 : this.dollarsDue = dollarsDue"
+"20 : this.centsDue = centsDue"
+"21 : this.paidTo = paidTo"
+"22 : this.category = category"
+}

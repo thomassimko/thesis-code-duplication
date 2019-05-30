@@ -1,8 +1,0 @@
-digraph G {
-"4 : this.x = 0.0"
-"4 : this.x = 0.0" -> "8 : this.x = in1" [style=dashed]
-"5 : this.y = 0.0"
-"5 : this.y = 0.0" -> "9 : this.y = in2" [style=dashed]
-"8 : this.x = in1"
-"9 : this.y = in2"
-}

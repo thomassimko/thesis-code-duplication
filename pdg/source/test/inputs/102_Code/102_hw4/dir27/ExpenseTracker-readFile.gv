@@ -1,0 +1,12 @@
+digraph G {
+"89 : scan = new Scanner(read, )"
+"89 : scan = new Scanner(read, )" -> "90 : list = createList(scan, )"
+"90 : list = createList(scan, )"
+"90 : list = createList(scan, )" -> "92 : userPrompt(list, )"
+"91 : System.out.println(\"File loaded\", )"
+"92 : userPrompt(list, )"
+"96 : System.out.println(\"No file found\", )"
+"97 : list = new ArrayList()"
+"97 : list = new ArrayList()" -> "98 : userPrompt(list, )"
+"98 : userPrompt(list, )"
+}

@@ -1,0 +1,68 @@
+digraph G {
+"14 : this.feedReader = null"
+"15 : this.sourceField = null"
+"16 : this.itemArea = null"
+"17 : this.sourceArea = null"
+"60 : this.itemArea.setText(\"\", )"
+"62 : dateComparator = new dateComparator()"
+"62 : dateComparator = new dateComparator()" -> "66 : Collections.sort(feedItems, dateComparator, )"
+"64 : feedItems = this.feedReader.retrieveFeedItems()"
+"64 : feedItems = this.feedReader.retrieveFeedItems()" -> "66 : Collections.sort(feedItems, dateComparator, )"
+"66 : Collections.sort(feedItems, dateComparator, )"
+"68 : j = 0"
+"68 : j = 0" -> "70 : feedItem = feedItems.get(j, )"
+"68 : j = 0" -> "68 : j < feedItems.size()"
+"68 : j = 0" -> "68 : j = j + 1"
+"68 : j = 0" -> "68 : @temp4 = j"
+"68 : j = 0" -> "68 : j = j + 1" [style=dashed]
+"68 : j < feedItems.size()"
+"70 : feedItem = feedItems.get(j, )"
+"70 : feedItem = feedItems.get(j, )" -> "70 : feedItem = feedItems.get(j, )" [style=dashed]
+"72 : this.itemArea.append(feedItem.getTitle(), )"
+"73 : this.itemArea.append(\"\n\", )"
+"74 : c = feedItem.getDate()"
+"74 : c = feedItem.getDate()" -> "74 : c = feedItem.getDate()" [style=dashed]
+"75 : month = c.get(Calendar.MONTH, )"
+"75 : month = c.get(Calendar.MONTH, )" -> "92 : this.itemArea.append(\"   \" + month + \"/\" + day + \"/\" + year + \" \" + hour + \":\" + minute, )"
+"75 : month = c.get(Calendar.MONTH, )" -> "88 : this.itemArea.append(\"   \" + month + \"/\" + day + \"/\" + year + \" \" + hour + \":0\" + minute, )"
+"75 : month = c.get(Calendar.MONTH, )" -> "75 : month = c.get(Calendar.MONTH, )" [style=dashed]
+"76 : day = c.get(Calendar.DAY_OF_MONTH, )"
+"76 : day = c.get(Calendar.DAY_OF_MONTH, )" -> "92 : this.itemArea.append(\"   \" + month + \"/\" + day + \"/\" + year + \" \" + hour + \":\" + minute, )"
+"76 : day = c.get(Calendar.DAY_OF_MONTH, )" -> "88 : this.itemArea.append(\"   \" + month + \"/\" + day + \"/\" + year + \" \" + hour + \":0\" + minute, )"
+"76 : day = c.get(Calendar.DAY_OF_MONTH, )" -> "76 : day = c.get(Calendar.DAY_OF_MONTH, )" [style=dashed]
+"77 : year = c.get(Calendar.YEAR, )"
+"77 : year = c.get(Calendar.YEAR, )" -> "92 : this.itemArea.append(\"   \" + month + \"/\" + day + \"/\" + year + \" \" + hour + \":\" + minute, )"
+"77 : year = c.get(Calendar.YEAR, )" -> "88 : this.itemArea.append(\"   \" + month + \"/\" + day + \"/\" + year + \" \" + hour + \":0\" + minute, )"
+"77 : year = c.get(Calendar.YEAR, )" -> "77 : year = c.get(Calendar.YEAR, )" [style=dashed]
+"78 : hour = c.get(Calendar.HOUR, )"
+"78 : hour = c.get(Calendar.HOUR, )" -> "81 : hour == 0"
+"78 : hour = c.get(Calendar.HOUR, )" -> "92 : this.itemArea.append(\"   \" + month + \"/\" + day + \"/\" + year + \" \" + hour + \":\" + minute, )"
+"78 : hour = c.get(Calendar.HOUR, )" -> "88 : this.itemArea.append(\"   \" + month + \"/\" + day + \"/\" + year + \" \" + hour + \":0\" + minute, )"
+"78 : hour = c.get(Calendar.HOUR, )" -> "78 : hour = c.get(Calendar.HOUR, )" [style=dashed]
+"78 : hour = c.get(Calendar.HOUR, )" -> "83 : hour = 12" [style=dashed]
+"79 : minute = c.get(Calendar.MINUTE, )"
+"79 : minute = c.get(Calendar.MINUTE, )" -> "86 : minute < 10"
+"79 : minute = c.get(Calendar.MINUTE, )" -> "92 : this.itemArea.append(\"   \" + month + \"/\" + day + \"/\" + year + \" \" + hour + \":\" + minute, )"
+"79 : minute = c.get(Calendar.MINUTE, )" -> "88 : this.itemArea.append(\"   \" + month + \"/\" + day + \"/\" + year + \" \" + hour + \":0\" + minute, )"
+"79 : minute = c.get(Calendar.MINUTE, )" -> "79 : minute = c.get(Calendar.MINUTE, )" [style=dashed]
+"81 : hour == 0"
+"83 : hour = 12"
+"83 : hour = 12" -> "92 : this.itemArea.append(\"   \" + month + \"/\" + day + \"/\" + year + \" \" + hour + \":\" + minute, )"
+"83 : hour = 12" -> "88 : this.itemArea.append(\"   \" + month + \"/\" + day + \"/\" + year + \" \" + hour + \":0\" + minute, )"
+"83 : hour = 12" -> "78 : hour = c.get(Calendar.HOUR, )" [style=dashed]
+"86 : minute < 10"
+"88 : this.itemArea.append(\"   \" + month + \"/\" + day + \"/\" + year + \" \" + hour + \":0\" + minute, )"
+"92 : this.itemArea.append(\"   \" + month + \"/\" + day + \"/\" + year + \" \" + hour + \":\" + minute, )"
+"95 : this.itemArea.append(\"\n\", )"
+"96 : this.itemArea.append(\"   \" + feedItem.getLink(), )"
+"97 : this.itemArea.append(\"\n\", )"
+"98 : this.itemArea.append(\"\n\", )"
+"68 : @temp4 = j"
+"68 : @temp4 = j" -> "68 : @temp4 = j" [style=dashed]
+"68 : j = j + 1"
+"68 : j = j + 1" -> "70 : feedItem = feedItems.get(j, )"
+"68 : j = j + 1" -> "68 : j < feedItems.size()"
+"68 : j = j + 1" -> "68 : j = j + 1"
+"68 : j = j + 1" -> "68 : @temp4 = j"
+"68 : j = j + 1" -> "68 : j = j + 1" [style=dashed]
+}

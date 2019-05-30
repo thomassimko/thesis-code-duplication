@@ -1,0 +1,3 @@
+digraph G {
+"8 : first.getFAmount() * 100 + first.getSAmount() - second.getFAmount() * 100 + second.getSAmount()"
+}

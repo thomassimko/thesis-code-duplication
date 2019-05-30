@@ -1,0 +1,6 @@
+digraph G {
+"8 : this.sourceList = new ArrayList()"
+"8 : this.sourceList = new ArrayList()" -> "21 : Collections.sort(this.sourceList, )"
+"9 : this.badList = new ArrayList()"
+"21 : Collections.sort(this.sourceList, )"
+}

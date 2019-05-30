@@ -1,0 +1,26 @@
+digraph G {
+"7 : this.head = null"
+"7 : this.head = null" -> "118 : tempNode = this.head"
+"117 : tempNode = null"
+"117 : tempNode = null" -> "118 : tempNode = this.head" [style=dashed]
+"118 : tempNode = this.head"
+"118 : tempNode = this.head" -> "120 : tempNode != null"
+"118 : tempNode = this.head" -> "127 : tempNode = tempNode.getNext()" [style=dashed]
+"119 : index = 0"
+"119 : index = 0" -> "126 : @temp4 = index"
+"119 : index = 0" -> "126 : index = index + 1"
+"119 : index = 0" -> "126 : index = index + 1" [style=dashed]
+"120 : tempNode != null"
+"122 : equals(element, )"
+"129 : 1"
+"126 : @temp4 = index"
+"126 : @temp4 = index" -> "126 : @temp4 = index" [style=dashed]
+"126 : index = index + 1"
+"126 : index = index + 1" -> "126 : @temp4 = index"
+"126 : index = index + 1" -> "126 : index = index + 1"
+"126 : index = index + 1" -> "126 : index = index + 1" [style=dashed]
+"127 : tempNode = tempNode.getNext()"
+"127 : tempNode = tempNode.getNext()" -> "120 : tempNode != null"
+"127 : tempNode = tempNode.getNext()" -> "127 : tempNode = tempNode.getNext()" [style=dashed]
+"120 : tempNode != null"
+}

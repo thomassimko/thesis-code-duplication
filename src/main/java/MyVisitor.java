@@ -20,7 +20,8 @@ public class MyVisitor extends Java8BaseVisitor<Program> {
 
         List<ClassObject> types = new ArrayList<ClassObject>();
         for(Java8Parser.TypeDeclarationContext ctx : ctxList) {
-            types.add(Driver.typeVisitor.visitTypeDeclaration(ctx));
+            if(ctx.classDeclaration() != null)
+                types.add(Driver.typeVisitor.visitTypeDeclaration(ctx));
         }
         return types;
 

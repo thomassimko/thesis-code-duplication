@@ -1,0 +1,26 @@
+digraph G {
+"2 : this.head = null"
+"2 : this.head = null" -> "54 : tmp = this.head"
+"53 : i = index"
+"53 : i = index" -> "60 : i = i - 1"
+"53 : i = index" -> "60 : @temp3 = i"
+"53 : i = index" -> "55 : i > 0"
+"53 : i = index" -> "60 : i = i - 1" [style=dashed]
+"54 : tmp = this.head"
+"54 : tmp = this.head" -> "56 : tmp = tmp.next()" [style=dashed]
+"55 : i > 0"
+"56 : tmp = tmp.next()"
+"56 : tmp = tmp.next()" -> "57 : tmp == null"
+"56 : tmp = tmp.next()" -> "56 : tmp = tmp.next()" [style=dashed]
+"57 : tmp == null"
+"62 : tmp.getVal()"
+"58 : new IndexOutOfBoundsException()"
+"60 : @temp3 = i"
+"60 : @temp3 = i" -> "60 : @temp3 = i" [style=dashed]
+"60 : i = i - 1"
+"60 : i = i - 1" -> "60 : i = i - 1"
+"60 : i = i - 1" -> "60 : @temp3 = i"
+"60 : i = i - 1" -> "55 : i > 0"
+"60 : i = i - 1" -> "60 : i = i - 1" [style=dashed]
+"55 : i > 0"
+}

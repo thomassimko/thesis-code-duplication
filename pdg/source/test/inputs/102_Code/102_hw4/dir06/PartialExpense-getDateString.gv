@@ -1,0 +1,12 @@
+digraph G {
+"7 : this.date = null"
+"7 : this.date = null" -> "106 : String.format(\"%1$2tm/%<2td/%<tY \", this.date, )"
+"8 : this.dollarAmount = 0"
+"9 : this.centAmount = 0"
+"10 : this.paidTo = null"
+"11 : this.category = null"
+"12 : this.remainingDollar = 0"
+"13 : this.remainingCent = 0"
+"14 : this.type = \"partial\""
+"106 : String.format(\"%1$2tm/%<2td/%<tY \", this.date, )"
+}

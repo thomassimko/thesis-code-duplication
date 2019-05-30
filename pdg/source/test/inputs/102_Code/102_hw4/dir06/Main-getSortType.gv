@@ -1,0 +1,28 @@
+digraph G {
+"138 : sortChoice = new ArrayList()"
+"139 : System.out.print(\"Keys to sort by: \", )"
+"140 : input = s.nextLine()"
+"140 : input = s.nextLine()" -> "141 : scan = new Scanner(input, )"
+"141 : scan = new Scanner(input, )"
+"142 : scan.hasNext()"
+"144 : sortChoice.add(scan.next(), )"
+"142 : scan.hasNext()"
+"146 : i = 0"
+"146 : i = 0" -> "146 : i < sortChoice.size()"
+"146 : i = 0" -> "146 : @temp2 = i"
+"146 : i = 0" -> "146 : i = i + 1"
+"146 : i = 0" -> "146 : i = i + 1" [style=dashed]
+"146 : i < sortChoice.size()"
+"148 : compare = toLowerCase()"
+"148 : compare = toLowerCase()" -> "148 : compare = toLowerCase()" [style=dashed]
+"149 : compare.equals(\"date\", ) || compare.equals(\"category\", ) || compare.equals(\"amount\", ) || compare.equals(\"payee\", )"
+"156 : System.out.println(\"Improper keys, please re-enter keys\", )"
+"157 : getSortType(s, )"
+"146 : @temp2 = i"
+"146 : @temp2 = i" -> "146 : @temp2 = i" [style=dashed]
+"146 : i = i + 1"
+"146 : i = i + 1" -> "146 : i < sortChoice.size()"
+"146 : i = i + 1" -> "146 : @temp2 = i"
+"146 : i = i + 1" -> "146 : i = i + 1"
+"146 : i = i + 1" -> "146 : i = i + 1" [style=dashed]
+}

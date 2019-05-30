@@ -1,0 +1,6 @@
+digraph G {
+"3 : this.cents = 0"
+"4 : this.dollars = 0"
+"6 : this.sCents = null"
+"7 : this.sDollars = null"
+}

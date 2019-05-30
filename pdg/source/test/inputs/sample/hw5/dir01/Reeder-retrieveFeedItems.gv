@@ -1,0 +1,92 @@
+digraph G {
+"17 : this.sources = null"
+"17 : this.sources = null" -> "46 : this.sources = new ArrayList()" [style=dashed]
+"18 : this.sourceStrs = null"
+"19 : this.items = null"
+"19 : this.items = null" -> "73 : this.items = new ArrayList()" [style=dashed]
+"20 : this.badStrs = null"
+"20 : this.badStrs = null" -> "45 : this.badStrs = new ArrayList()" [style=dashed]
+"45 : this.badStrs = new ArrayList()"
+"46 : this.sources = new ArrayList()"
+"47 : v = 0"
+"47 : v = 0" -> "47 : v < size()"
+"47 : v = 0" -> "48 : src = get(v, )"
+"47 : v < size()"
+"48 : src = get(v, )"
+"49 : factory = DocumentBuilderFactory.newInstance()"
+"51 : builder = null"
+"71 : xpfactory = XPathFactory.newInstance()"
+"72 : xpath = xpfactory.newXPath()"
+"73 : this.items = new ArrayList()"
+"53 : builder = factory.newDocumentBuilder()"
+"53 : builder = factory.newDocumentBuilder()" -> "51 : builder = null" [style=dashed]
+"54 : feedDocument = builder.parse(src, )"
+"54 : feedDocument = builder.parse(src, )" -> "55 : this.sources.add(feedDocument, )"
+"55 : this.sources.add(feedDocument, )"
+"47 : @temp5 = v"
+"47 : v = v + 1"
+"47 : v = v + 1" -> "47 : v < size()"
+"47 : v = v + 1" -> "48 : src = get(v, )"
+"59 : this.badStrs.add(src, )"
+"63 : this.badStrs.add(src, )"
+"67 : this.badStrs.add(src, )"
+"74 : v = 0"
+"74 : v = 0" -> "75 : feedDocument = get(v, )"
+"74 : v = 0" -> "74 : @temp7 = v"
+"74 : v = 0" -> "74 : v < size()"
+"74 : v = 0" -> "74 : v = v + 1"
+"74 : v = 0" -> "74 : v = v + 1" [style=dashed]
+"74 : v < size()"
+"75 : feedDocument = get(v, )"
+"75 : feedDocument = get(v, )" -> "76 : feedDocument != null"
+"75 : feedDocument = get(v, )" -> "75 : feedDocument = get(v, )" [style=dashed]
+"76 : feedDocument != null"
+"77 : countStr = null"
+"79 : countStr = xpath.evaluate(\"count(/rss/channel/item)\", feedDocument, )"
+"79 : countStr = xpath.evaluate(\"count(/rss/channel/item)\", feedDocument, )" -> "81 : itemcount = Integer.parseInt(countStr, )"
+"79 : countStr = xpath.evaluate(\"count(/rss/channel/item)\", feedDocument, )" -> "77 : countStr = null" [style=dashed]
+"81 : itemcount = Integer.parseInt(countStr, )"
+"81 : itemcount = Integer.parseInt(countStr, )" -> "82 : x <= itemcount"
+"82 : x = 1"
+"82 : x = 1" -> "82 : x <= itemcount"
+"82 : x = 1" -> "87 : date = xpath.evaluate(\"/rss/channel/item[\" + x + \"]/pubDate\", feedDocument, )"
+"82 : x = 1" -> "85 : link = xpath.evaluate(\"/rss/channel/item[\" + x + \"]/link\", feedDocument, )"
+"82 : x = 1" -> "83 : title = xpath.evaluate(\"/rss/channel/item[\" + x + \"]/title\", feedDocument, )"
+"82 : x = 1" -> "82 : @temp6 = x"
+"82 : x = 1" -> "82 : x = x + 1"
+"82 : x = 1" -> "82 : x = x + 1" [style=dashed]
+"82 : x <= itemcount"
+"83 : title = xpath.evaluate(\"/rss/channel/item[\" + x + \"]/title\", feedDocument, )"
+"83 : title = xpath.evaluate(\"/rss/channel/item[\" + x + \"]/title\", feedDocument, )" -> "89 : z = new Item(title, link, date, )"
+"83 : title = xpath.evaluate(\"/rss/channel/item[\" + x + \"]/title\", feedDocument, )" -> "83 : title = xpath.evaluate(\"/rss/channel/item[\" + x + \"]/title\", feedDocument, )" [style=dashed]
+"85 : link = xpath.evaluate(\"/rss/channel/item[\" + x + \"]/link\", feedDocument, )"
+"85 : link = xpath.evaluate(\"/rss/channel/item[\" + x + \"]/link\", feedDocument, )" -> "89 : z = new Item(title, link, date, )"
+"85 : link = xpath.evaluate(\"/rss/channel/item[\" + x + \"]/link\", feedDocument, )" -> "85 : link = xpath.evaluate(\"/rss/channel/item[\" + x + \"]/link\", feedDocument, )" [style=dashed]
+"87 : date = xpath.evaluate(\"/rss/channel/item[\" + x + \"]/pubDate\", feedDocument, )"
+"87 : date = xpath.evaluate(\"/rss/channel/item[\" + x + \"]/pubDate\", feedDocument, )" -> "89 : z = new Item(title, link, date, )"
+"87 : date = xpath.evaluate(\"/rss/channel/item[\" + x + \"]/pubDate\", feedDocument, )" -> "87 : date = xpath.evaluate(\"/rss/channel/item[\" + x + \"]/pubDate\", feedDocument, )" [style=dashed]
+"89 : z = new Item(title, link, date, )"
+"89 : z = new Item(title, link, date, )" -> "90 : this.items.add(z, )"
+"89 : z = new Item(title, link, date, )" -> "89 : z = new Item(title, link, date, )" [style=dashed]
+"90 : this.items.add(z, )"
+"82 : @temp6 = x"
+"82 : @temp6 = x" -> "82 : @temp6 = x" [style=dashed]
+"82 : x = x + 1"
+"82 : x = x + 1" -> "82 : x <= itemcount"
+"82 : x = x + 1" -> "87 : date = xpath.evaluate(\"/rss/channel/item[\" + x + \"]/pubDate\", feedDocument, )"
+"82 : x = x + 1" -> "85 : link = xpath.evaluate(\"/rss/channel/item[\" + x + \"]/link\", feedDocument, )"
+"82 : x = x + 1" -> "83 : title = xpath.evaluate(\"/rss/channel/item[\" + x + \"]/title\", feedDocument, )"
+"82 : x = x + 1" -> "82 : @temp6 = x"
+"82 : x = x + 1" -> "82 : x = x + 1"
+"82 : x = x + 1" -> "82 : x = x + 1" [style=dashed]
+"94 : this.badStrs.add(get(v, ), )"
+"97 : this.badStrs.add(get(v, ), )"
+"74 : @temp7 = v"
+"74 : @temp7 = v" -> "74 : @temp7 = v" [style=dashed]
+"74 : v = v + 1"
+"74 : v = v + 1" -> "75 : feedDocument = get(v, )"
+"74 : v = v + 1" -> "74 : @temp7 = v"
+"74 : v = v + 1" -> "74 : v < size()"
+"74 : v = v + 1" -> "74 : v = v + 1"
+"74 : v = v + 1" -> "74 : v = v + 1" [style=dashed]
+}

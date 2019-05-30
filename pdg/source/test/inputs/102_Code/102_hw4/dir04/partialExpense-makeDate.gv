@@ -1,0 +1,18 @@
+digraph G {
+"11 : this.date = null"
+"11 : this.date = null" -> "37 : s = this.date"
+"12 : this.category = null"
+"13 : this.paidTo = null"
+"14 : this.amount = null"
+"15 : this.remainingAmt = null"
+"16 : this.dollars = 0"
+"17 : this.cents = 0"
+"37 : s = this.date"
+"38 : df = new SimpleDateFormat(\"MM/dd/yyyy\", )"
+"39 : d = null"
+"42 : d = df.parse(s, )"
+"42 : d = df.parse(s, )" -> "49 : c.setTime(d, )"
+"48 : c = Calendar.getInstance()"
+"49 : c.setTime(d, )"
+"46 : System.err.println(\"Parse error, yo.\", )"
+}

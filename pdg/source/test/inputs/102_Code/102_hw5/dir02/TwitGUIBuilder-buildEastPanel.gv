@@ -1,0 +1,8 @@
+digraph G {
+"136 : EASTPanel = new JPanel()"
+"136 : EASTPanel = new JPanel()" -> "137 : EASTPanel.setLayout(new BoxLayout(EASTPanel, BoxLayout.Y_AXIS, ), )"
+"137 : EASTPanel.setLayout(new BoxLayout(EASTPanel, BoxLayout.Y_AXIS, ), )"
+"138 : EASTPanel.add(refresh, )"
+"139 : EASTPanel.add(badSources, )"
+"140 : EASTPanel.add(cleanSources, )"
+}

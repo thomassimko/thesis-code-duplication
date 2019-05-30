@@ -1,0 +1,26 @@
+digraph G {
+"8 : this.head = null"
+"8 : this.head = null" -> "72 : cur = this.head"
+"72 : cur = this.head"
+"72 : cur = this.head" -> "77 : cur = cur.getNext()" [style=dashed]
+"73 : rmv = null"
+"73 : rmv = null" -> "80 : rmv = cur.getNext()" [style=dashed]
+"75 : i = 1"
+"75 : i = 1" -> "75 : i = i + 1"
+"75 : i = 1" -> "75 : @temp7 = i"
+"75 : i = 1" -> "75 : i < index - 1"
+"75 : i = 1" -> "75 : i = i + 1" [style=dashed]
+"75 : i < index - 1"
+"77 : cur = cur.getNext()"
+"77 : cur = cur.getNext()" -> "77 : cur = cur.getNext()" [style=dashed]
+"75 : @temp7 = i"
+"75 : @temp7 = i" -> "75 : @temp7 = i" [style=dashed]
+"75 : i = i + 1"
+"75 : i = i + 1" -> "75 : i = i + 1"
+"75 : i = i + 1" -> "75 : @temp7 = i"
+"75 : i = i + 1" -> "75 : i < index - 1"
+"75 : i = i + 1" -> "75 : i = i + 1" [style=dashed]
+"80 : rmv = cur.getNext()"
+"82 : cur.setNext(getNext(), )"
+"84 : rmv.getStr()"
+}

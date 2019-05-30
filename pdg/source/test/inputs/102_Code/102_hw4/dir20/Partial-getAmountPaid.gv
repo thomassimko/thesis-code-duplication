@@ -1,0 +1,20 @@
+digraph G {
+"8 : this.eDate = Calendar.getInstance()"
+"9 : this.payee = null"
+"10 : this.category = null"
+"11 : this.dollarsPaid = 0"
+"11 : this.dollarsPaid = 0" -> "52 : Integer.toString(this.dollarsPaid, ) + \".\" + change"
+"12 : this.centsPaid = 0"
+"12 : this.centsPaid = 0" -> "45 : change = Integer.toString(this.centsPaid, )"
+"12 : this.centsPaid = 0" -> "46 : this.centsPaid == 0"
+"13 : this.dollarsRemain = 0"
+"14 : this.centsRemain = 0"
+"45 : change = Integer.toString(this.centsPaid, )"
+"45 : change = Integer.toString(this.centsPaid, )" -> "52 : Integer.toString(this.dollarsPaid, ) + \".\" + change"
+"45 : change = Integer.toString(this.centsPaid, )" -> "48 : change = change + \"0\""
+"45 : change = Integer.toString(this.centsPaid, )" -> "48 : change = change + \"0\"" [style=dashed]
+"46 : this.centsPaid == 0"
+"48 : change = change + \"0\""
+"48 : change = change + \"0\"" -> "52 : Integer.toString(this.dollarsPaid, ) + \".\" + change"
+"52 : Integer.toString(this.dollarsPaid, ) + \".\" + change"
+}

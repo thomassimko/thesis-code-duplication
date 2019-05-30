@@ -1,0 +1,7 @@
+digraph G {
+"11 : paid1 = expense1.getPaidDollars() * 100 + expense1.getPaidCents()"
+"11 : paid1 = expense1.getPaidDollars() * 100 + expense1.getPaidCents()" -> "13 : paid1 - paid2"
+"12 : paid2 = expense2.getPaidDollars() * 100 + expense2.getPaidCents()"
+"12 : paid2 = expense2.getPaidDollars() * 100 + expense2.getPaidCents()" -> "13 : paid1 - paid2"
+"13 : paid1 - paid2"
+}

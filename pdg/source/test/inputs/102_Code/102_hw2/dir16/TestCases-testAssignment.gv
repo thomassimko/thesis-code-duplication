@@ -1,0 +1,8 @@
+digraph G {
+"90 : asgn1 = new Assignment(\"a\", new DoubleConstantExpression(10, ), )"
+"91 : asgn2 = new Assignment(\"b\", new MultiplyExpression(new DoubleConstantExpression(10, ), new DoubleConstantExpression(2.2, ), ), )"
+"92 : asgn3 = new Assignment(\"a\", new AddExpression(new DoubleConstantExpression(-1.2, ), new DoubleConstantExpression(-6.07, ), ), )"
+"93 : Check.check(asgn1.evaluate(bindings, ), 10, )"
+"94 : Check.check(asgn2.evaluate(bindings, ), 22, )"
+"95 : Check.check(asgn3.evaluate(bindings, ), 7.27, )"
+}

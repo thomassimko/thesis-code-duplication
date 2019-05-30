@@ -1,0 +1,8 @@
+digraph G {
+"4 : this.element = null"
+"4 : this.element = null" -> "8 : this.element = element" [style=dashed]
+"5 : this.node = null"
+"5 : this.node = null" -> "9 : this.node = new RIOEmpty()" [style=dashed]
+"8 : this.element = element"
+"9 : this.node = new RIOEmpty()"
+}

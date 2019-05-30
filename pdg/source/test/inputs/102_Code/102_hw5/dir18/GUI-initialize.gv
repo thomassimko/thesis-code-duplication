@@ -1,0 +1,17 @@
+digraph G {
+"8 : this.textArea = new JTextArea(30, 40, )"
+"9 : this.sourceTextArea = new JTextArea(7, 40, )"
+"12 : frame = new JFrame()"
+"13 : frame.setDefaultCloseOperation(EXIT_ON_CLOSE, )"
+"14 : frame.setSize(650, 750, )"
+"15 : frame.setResizable(false, )"
+"16 : panel = new JPanel()"
+"17 : this.sourceTextArea.setEditable(false, )"
+"18 : this.textArea.setEditable(false, )"
+"19 : pane = frame.getContentPane()"
+"20 : pane.setLayout(new BorderLayout(), )"
+"21 : pane.add(northPanel(reader, ), BorderLayout.NORTH, )"
+"22 : pane.add(eastPanel(reader, ), BorderLayout.EAST, )"
+"23 : pane.add(centerPanel(reader, ), BorderLayout.CENTER, )"
+"24 : frame.setVisible(true, )"
+}

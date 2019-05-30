@@ -1,0 +1,13 @@
+digraph G {
+"4 : this.element = null"
+"4 : this.element = null" -> "113 : this.element.indexOf(substring, ) > 0"
+"4 : this.element = null" -> "114 : n = new ROONode(this.element, this.next.hasSubstring(substring, ), )"
+"5 : this.next = null"
+"5 : this.next = null" -> "117 : this.next.hasSubstring(substring, )"
+"5 : this.next = null" -> "114 : n = new ROONode(this.element, this.next.hasSubstring(substring, ), )"
+"112 : n = null"
+"112 : n = null" -> "114 : n = new ROONode(this.element, this.next.hasSubstring(substring, ), )" [style=dashed]
+"113 : this.element.indexOf(substring, ) > 0"
+"114 : n = new ROONode(this.element, this.next.hasSubstring(substring, ), )"
+"117 : this.next.hasSubstring(substring, )"
+}

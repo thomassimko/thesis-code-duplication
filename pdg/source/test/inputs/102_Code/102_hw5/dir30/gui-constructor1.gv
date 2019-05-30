@@ -1,0 +1,11 @@
+digraph G {
+"17 : this.feedReader = null"
+"17 : this.feedReader = null" -> "24 : this.feedReader = new FeedReaderClass()" [style=dashed]
+"18 : this.sourceField = null"
+"19 : this.itemArea = null"
+"20 : this.sourceArea = null"
+"24 : this.feedReader = new FeedReaderClass()"
+"25 : createFrame()"
+"26 : editLayout()"
+"27 : this.setVisible(true, )"
+}

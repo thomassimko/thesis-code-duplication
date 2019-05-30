@@ -1,0 +1,5 @@
+digraph G {
+"7 : this.string = null"
+"8 : this.next = null"
+"103 : 1 + size()"
+}

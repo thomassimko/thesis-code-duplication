@@ -1,0 +1,83 @@
+digraph G {
+"23 : list = new ArrayList()"
+"24 : check = false"
+"28 : StoredExpenses = new File(\"StoredExpenses\", )"
+"28 : StoredExpenses = new File(\"StoredExpenses\", )" -> "29 : scanner = new Scanner(StoredExpenses, )"
+"29 : scanner = new Scanner(StoredExpenses, )"
+"29 : scanner = new Scanner(StoredExpenses, )" -> "43 : list.add(scanPartial(scanner, ), )"
+"29 : scanner = new Scanner(StoredExpenses, )" -> "38 : list.add(scanInFull(scanner, ), )"
+"31 : scanner.hasNext()"
+"33 : next = scanner.next()"
+"33 : next = scanner.next()" -> "33 : next = scanner.next()" [style=dashed]
+"35 : next.equals(\"in-full\", )"
+"51 : check == true"
+"37 : check = true"
+"37 : check = true" -> "51 : check == true"
+"37 : check = true" -> "37 : check = true" [style=dashed]
+"37 : check = true" -> "42 : check = true" [style=dashed]
+"38 : list.add(scanInFull(scanner, ), )"
+"40 : next.equals(\"partial\", )"
+"42 : check = true"
+"42 : check = true" -> "51 : check == true"
+"42 : check = true" -> "37 : check = true" [style=dashed]
+"42 : check = true" -> "42 : check = true" [style=dashed]
+"43 : list.add(scanPartial(scanner, ), )"
+"47 : new IncorrectFileFormatException()"
+"31 : scanner.hasNext()"
+"53 : System.out.println(\"File loaded\", )"
+"58 : System.err.println(\"No file exists with the name 'StoredExpenses'!\", )"
+"62 : System.err.println(\"Parse exception, incorrect date format has been entered!\", )"
+"66 : System.err.println(\"File input is in the incorrect format, not all expenses were read!\", )"
+"70 : System.err.println(\"File input for amount is incorrect, not all expenses were read!\", )"
+"74 : System.err.println(\"File input is missing a line, not all expenses were read!\", )"
+"79 : system = new Scanner(System.in, )"
+"79 : system = new Scanner(System.in, )" -> "112 : list = sortList(list, system, )"
+"80 : print = new PrintWriter(\"StoredExpenses\", )"
+"82 : response = 0"
+"82 : response = 0" -> "89 : response = system.nextInt()" [style=dashed]
+"93 : displayExpenses(list, )"
+"95 : response == 2"
+"99 : list = addExpense(list, system, )"
+"99 : list = addExpense(list, system, )" -> "93 : displayExpenses(list, )"
+"99 : list = addExpense(list, system, )" -> "112 : list = sortList(list, system, )"
+"99 : list = addExpense(list, system, )" -> "112 : list = sortList(list, system, )" [style=dashed]
+"103 : System.err.println(\"Entered incorrect format for a number.\", )"
+"107 : System.out.println(\"Parse exception!\", )"
+"110 : response == 3"
+"112 : list = sortList(list, system, )"
+"112 : list = sortList(list, system, )" -> "93 : displayExpenses(list, )"
+"112 : list = sortList(list, system, )" -> "112 : list = sortList(list, system, )"
+"112 : list = sortList(list, system, )" -> "112 : list = sortList(list, system, )" [style=dashed]
+"114 : response == 4"
+"116 : i = 0"
+"116 : i = 0" -> "116 : i = i + 1"
+"116 : i = 0" -> "116 : i < list.size()"
+"116 : i = 0" -> "116 : @temp1 = i"
+"116 : i = 0" -> "116 : i = i + 1" [style=dashed]
+"116 : i = 0" -> "116 : i = 0" [style=dashed]
+"116 : i < list.size()"
+"118 : print.write(fileFormat() + \"\n\", )"
+"116 : @temp1 = i"
+"116 : @temp1 = i" -> "116 : @temp1 = i" [style=dashed]
+"116 : i = i + 1"
+"116 : i = i + 1" -> "116 : i = i + 1"
+"116 : i = i + 1" -> "116 : i < list.size()"
+"116 : i = i + 1" -> "116 : @temp1 = i"
+"116 : i = i + 1" -> "116 : i = i + 1" [style=dashed]
+"116 : i = i + 1" -> "116 : i = 0" [style=dashed]
+"121 : System.out.println(\"\nExpenses Saved\", )"
+"86 : System.out.println(\"\n1. Display \n2. Add Expense \n3. Sort \n4. Save \n5. Quit\n\", )"
+"87 : System.out.print(\"Enter choice: \", )"
+"89 : response = system.nextInt()"
+"89 : response = system.nextInt()" -> "91 : response == 1"
+"89 : response = system.nextInt()" -> "124 : response == 1 || response == 2 || response == 3 || response == 4"
+"89 : response = system.nextInt()" -> "95 : response == 2"
+"89 : response = system.nextInt()" -> "110 : response == 3"
+"89 : response = system.nextInt()" -> "114 : response == 4"
+"89 : response = system.nextInt()" -> "89 : response = system.nextInt()" [style=dashed]
+"91 : response == 1"
+"124 : response == 1 || response == 2 || response == 3 || response == 4"
+"126 : print.close()"
+"130 : System.out.println(\"No file exists with the name 'StoredExpenses'!\", )"
+"134 : System.err.println(\"Incorrect input entered.\", )"
+}

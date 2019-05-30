@@ -1,0 +1,32 @@
+digraph G {
+"9 : this.reeder = null"
+"10 : this.source = null"
+"21 : this.reeder.removeBadSources()"
+"22 : str = \"\""
+"22 : str = \"\"" -> "28 : this.source.setText(str, )"
+"22 : str = \"\"" -> "26 : str = str + listy.get(i, ) + \"\n\""
+"22 : str = \"\"" -> "26 : str = str + listy.get(i, ) + \"\n\"" [style=dashed]
+"23 : listy = getSources()"
+"23 : listy = getSources()" -> "24 : Collections.sort(listy, )"
+"24 : Collections.sort(listy, )"
+"25 : i = 0"
+"25 : i = 0" -> "25 : @temp12 = i"
+"25 : i = 0" -> "26 : str = str + listy.get(i, ) + \"\n\""
+"25 : i = 0" -> "25 : i < listy.size()"
+"25 : i = 0" -> "25 : i = i + 1"
+"25 : i = 0" -> "25 : i = i + 1" [style=dashed]
+"25 : i < listy.size()"
+"26 : str = str + listy.get(i, ) + \"\n\""
+"26 : str = str + listy.get(i, ) + \"\n\"" -> "28 : this.source.setText(str, )"
+"26 : str = str + listy.get(i, ) + \"\n\"" -> "26 : str = str + listy.get(i, ) + \"\n\""
+"26 : str = str + listy.get(i, ) + \"\n\"" -> "26 : str = str + listy.get(i, ) + \"\n\"" [style=dashed]
+"25 : @temp12 = i"
+"25 : @temp12 = i" -> "25 : @temp12 = i" [style=dashed]
+"25 : i = i + 1"
+"25 : i = i + 1" -> "25 : @temp12 = i"
+"25 : i = i + 1" -> "26 : str = str + listy.get(i, ) + \"\n\""
+"25 : i = i + 1" -> "25 : i < listy.size()"
+"25 : i = i + 1" -> "25 : i = i + 1"
+"25 : i = i + 1" -> "25 : i = i + 1" [style=dashed]
+"28 : this.source.setText(str, )"
+}

@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.product = 0.0"
+"4 : this.product = 0.0" -> "15 : this.product = this.p1.evaluate(bindings, ) * this.p2.evaluate(bindings, )" [style=dashed]
+"5 : this.p1 = null"
+"5 : this.p2 = null"
+"15 : this.product = this.p1.evaluate(bindings, ) * this.p2.evaluate(bindings, )"
+}

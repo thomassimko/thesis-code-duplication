@@ -1,0 +1,11 @@
+digraph G {
+"12 : this.reader = null"
+"12 : this.reader = null" -> "16 : this.reader = reader" [style=dashed]
+"13 : this.textArea = null"
+"13 : this.textArea = null" -> "17 : this.textArea = textArea" [style=dashed]
+"13 : this.sourceTextArea = null"
+"13 : this.sourceTextArea = null" -> "18 : this.sourceTextArea = sourceTextArea" [style=dashed]
+"16 : this.reader = reader"
+"17 : this.textArea = textArea"
+"18 : this.sourceTextArea = sourceTextArea"
+}

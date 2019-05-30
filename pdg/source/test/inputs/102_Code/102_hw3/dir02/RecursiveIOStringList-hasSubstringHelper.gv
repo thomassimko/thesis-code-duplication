@@ -1,0 +1,10 @@
+digraph G {
+"4 : this.head = null"
+"221 : node instanceof RIONode"
+"223 : str = getString()"
+"223 : str = getString()" -> "227 : list.add(0, str, )"
+"224 : list = hasSubstringHelper(substring, getNext(), )"
+"225 : str.indexOf(substring, ) != 1"
+"227 : list.add(0, str, )"
+"233 : newList = new RecursiveIOStringList()"
+}

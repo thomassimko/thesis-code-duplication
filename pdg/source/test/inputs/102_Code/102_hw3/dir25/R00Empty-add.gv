@@ -1,0 +1,5 @@
+digraph G {
+"32 : index != 0"
+"34 : new IndexOutOfBoundsException()"
+"36 : n = new R00Node(element, this, )"
+}

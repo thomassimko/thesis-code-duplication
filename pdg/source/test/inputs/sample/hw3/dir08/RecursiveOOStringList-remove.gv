@@ -1,0 +1,11 @@
+digraph G {
+"4 : this.head = null"
+"4 : this.head = null" -> "42 : this.head = remove(index, string, )" [style=dashed]
+"35 : index < 0 || index >= size()"
+"37 : new IndexOutOfBoundsException()"
+"41 : string = new StringObj()"
+"41 : string = new StringObj()" -> "43 : string.toString()"
+"41 : string = new StringObj()" -> "42 : this.head = remove(index, string, )"
+"42 : this.head = remove(index, string, )"
+"43 : string.toString()"
+}

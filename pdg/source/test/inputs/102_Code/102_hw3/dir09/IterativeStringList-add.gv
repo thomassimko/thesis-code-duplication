@@ -1,0 +1,55 @@
+digraph G {
+"7 : this.head = null"
+"7 : this.head = null" -> "59 : cursor = this.head"
+"7 : this.head = null" -> "53 : this.head = new IterativeNode(element, this.head, )"
+"7 : this.head = null" -> "44 : this.head = new IterativeNode(element, null, )" [style=dashed]
+"7 : this.head = null" -> "53 : this.head = new IterativeNode(element, this.head, )" [style=dashed]
+"8 : this.size = 0"
+"8 : this.size = 0" -> "45 : @temp3 = this.size"
+"8 : this.size = 0" -> "56 : index < 0 || index > this.size"
+"8 : this.size = 0" -> "45 : this.size = this.size + 1"
+"8 : this.size = 0" -> "54 : @temp4 = this.size"
+"8 : this.size = 0" -> "67 : this.size = this.size + 1"
+"8 : this.size = 0" -> "40 : this.size == 0"
+"8 : this.size = 0" -> "54 : this.size = this.size + 1"
+"8 : this.size = 0" -> "67 : @temp6 = this.size"
+"8 : this.size = 0" -> "45 : this.size = this.size + 1" [style=dashed]
+"8 : this.size = 0" -> "67 : this.size = this.size + 1" [style=dashed]
+"8 : this.size = 0" -> "54 : this.size = this.size + 1" [style=dashed]
+"40 : this.size == 0"
+"42 : index == 0"
+"44 : this.head = new IterativeNode(element, null, )"
+"45 : @temp3 = this.size"
+"45 : this.size = this.size + 1"
+"47 : new IndexOutOfBoundsException()"
+"51 : index == 0"
+"53 : this.head = new IterativeNode(element, this.head, )"
+"54 : @temp4 = this.size"
+"54 : this.size = this.size + 1"
+"56 : index < 0 || index > this.size"
+"56 : new IndexOutOfBoundsException()"
+"59 : cursor = this.head"
+"59 : cursor = this.head" -> "61 : i < index && cursor != null"
+"59 : cursor = this.head" -> "63 : cursor = cursor.getNext()" [style=dashed]
+"61 : i = 1"
+"61 : i = 1" -> "61 : i < index && cursor != null"
+"61 : i = 1" -> "61 : @temp5 = i"
+"61 : i = 1" -> "61 : i = i + 1"
+"61 : i = 1" -> "61 : i = i + 1" [style=dashed]
+"61 : i < index && cursor != null"
+"63 : cursor = cursor.getNext()"
+"63 : cursor = cursor.getNext()" -> "61 : i < index && cursor != null"
+"63 : cursor = cursor.getNext()" -> "63 : cursor = cursor.getNext()" [style=dashed]
+"61 : @temp5 = i"
+"61 : @temp5 = i" -> "61 : @temp5 = i" [style=dashed]
+"61 : i = i + 1"
+"61 : i = i + 1" -> "61 : i < index && cursor != null"
+"61 : i = i + 1" -> "61 : @temp5 = i"
+"61 : i = i + 1" -> "61 : i = i + 1"
+"61 : i = i + 1" -> "61 : i = i + 1" [style=dashed]
+"65 : n = new IterativeNode(element, cursor.getNext(), )"
+"65 : n = new IterativeNode(element, cursor.getNext(), )" -> "66 : cursor.setNext(n, )"
+"66 : cursor.setNext(n, )"
+"67 : @temp6 = this.size"
+"67 : this.size = this.size + 1"
+}

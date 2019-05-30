@@ -1,0 +1,7 @@
+digraph G {
+"16 : this.list = null"
+"17 : this.badSources = null"
+"18 : this.RSSItemList = null"
+"18 : this.RSSItemList = null" -> "169 : Collections.sort(this.RSSItemList, new DateComparator(), )"
+"169 : Collections.sort(this.RSSItemList, new DateComparator(), )"
+}

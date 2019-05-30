@@ -1,5 +1,0 @@
-digraph G {
-"5 : this.e = null"
-"5 : this.e = null" -> "8 : this.e = e" [style=dashed]
-"8 : this.e = e"
-}

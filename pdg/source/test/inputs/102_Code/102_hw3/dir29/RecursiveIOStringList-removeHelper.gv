@@ -1,0 +1,8 @@
+digraph G {
+"3 : this.first = new RIOEmpty()"
+"93 : cur.getNext() instanceof RIONode"
+"94 : index == 1"
+"95 : cur.setNext(getNext(), )"
+"97 : removeHelper(cur.getNext(), index - 1, )"
+"100 : new IndexOutOfBoundsException()"
+}

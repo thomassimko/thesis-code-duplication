@@ -1,0 +1,37 @@
+digraph G {
+"2 : this.head = null"
+"2 : this.head = null" -> "36 : tmp0 = this.head"
+"35 : i = index"
+"35 : i = index" -> "37 : i > 0"
+"35 : i = index" -> "40 : @temp2 = i"
+"35 : i = index" -> "40 : i = i - 1"
+"35 : i = index" -> "40 : i = i - 1" [style=dashed]
+"36 : tmp0 = this.head"
+"36 : tmp0 = this.head" -> "42 : tmp0 == null || tmp == null"
+"36 : tmp0 = this.head" -> "38 : tmp0 = tmp" [style=dashed]
+"36 : tmp = this.head.next()"
+"36 : tmp = this.head.next()" -> "38 : tmp0 = tmp"
+"36 : tmp = this.head.next()" -> "42 : tmp0 == null || tmp == null"
+"36 : tmp = this.head.next()" -> "39 : tmp = tmp.next()" [style=dashed]
+"37 : i > 0"
+"38 : tmp0 = tmp"
+"38 : tmp0 = tmp" -> "42 : tmp0 == null || tmp == null"
+"38 : tmp0 = tmp" -> "38 : tmp0 = tmp" [style=dashed]
+"39 : tmp = tmp.next()"
+"39 : tmp = tmp.next()" -> "38 : tmp0 = tmp"
+"39 : tmp = tmp.next()" -> "42 : tmp0 == null || tmp == null"
+"39 : tmp = tmp.next()" -> "39 : tmp = tmp.next()" [style=dashed]
+"40 : @temp2 = i"
+"40 : @temp2 = i" -> "40 : @temp2 = i" [style=dashed]
+"40 : i = i - 1"
+"40 : i = i - 1" -> "37 : i > 0"
+"40 : i = i - 1" -> "40 : @temp2 = i"
+"40 : i = i - 1" -> "40 : i = i - 1"
+"40 : i = i - 1" -> "40 : i = i - 1" [style=dashed]
+"37 : i > 0"
+"42 : tmp0 == null || tmp == null"
+"43 : new IndexOutOfBoundsException()"
+"45 : tmp.next() == null"
+"46 : tmp0.linkNext(null, )"
+"49 : tmp0.linkNext(tmp.next(), )"
+}

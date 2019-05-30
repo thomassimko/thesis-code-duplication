@@ -1,0 +1,18 @@
+digraph G {
+"6 : this.head = null"
+"6 : this.head = null" -> "195 : cur = this.head"
+"195 : cur = this.head"
+"195 : cur = this.head" -> "198 : cur != null"
+"195 : cur = this.head" -> "205 : cur = cur.getNext()" [style=dashed]
+"196 : newList = new IterativeStringList()"
+"198 : cur != null"
+"200 : checkString = cur.getString()"
+"200 : checkString = cur.getString()" -> "203 : newList.addToEnd(checkString, )"
+"200 : checkString = cur.getString()" -> "200 : checkString = cur.getString()" [style=dashed]
+"201 : checkString.startsWith(prefix, )"
+"203 : newList.addToEnd(checkString, )"
+"205 : cur = cur.getNext()"
+"205 : cur = cur.getNext()" -> "198 : cur != null"
+"205 : cur = cur.getNext()" -> "205 : cur = cur.getNext()" [style=dashed]
+"198 : cur != null"
+}

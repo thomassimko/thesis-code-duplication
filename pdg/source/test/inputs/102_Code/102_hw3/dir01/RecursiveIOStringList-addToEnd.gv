@@ -1,0 +1,6 @@
+digraph G {
+"4 : this.node = null"
+"21 : n.next() instanceof RIOEmpty"
+"23 : n.setNext(new RIONode(element, ), )"
+"27 : addToEnd(element, n.next(), )"
+}

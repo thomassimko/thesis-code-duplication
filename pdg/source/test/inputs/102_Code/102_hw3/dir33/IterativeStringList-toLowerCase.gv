@@ -1,0 +1,16 @@
+digraph G {
+"7 : this.head = null"
+"7 : this.head = null" -> "147 : tempNode = this.head"
+"146 : tempNode = null"
+"146 : tempNode = null" -> "147 : tempNode = this.head" [style=dashed]
+"147 : tempNode = this.head"
+"147 : tempNode = this.head" -> "149 : tempNode != null"
+"147 : tempNode = this.head" -> "152 : tempNode = tempNode.getNext()" [style=dashed]
+"148 : list = new IterativeStringList()"
+"149 : tempNode != null"
+"151 : list.addToEnd(toLowerCase(), )"
+"152 : tempNode = tempNode.getNext()"
+"152 : tempNode = tempNode.getNext()" -> "149 : tempNode != null"
+"152 : tempNode = tempNode.getNext()" -> "152 : tempNode = tempNode.getNext()" [style=dashed]
+"149 : tempNode != null"
+}

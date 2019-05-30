@@ -1,0 +1,71 @@
+digraph G {
+"4 : this.head = null"
+"4 : this.head = null" -> "89 : cur = this.head"
+"4 : this.head = null" -> "91 : this.head = head.next" [style=dashed]
+"5 : this.counter = 0"
+"5 : this.counter = 0" -> "110 : @temp8 = this.counter"
+"5 : this.counter = 0" -> "92 : this.counter = this.counter - 1"
+"5 : this.counter = 0" -> "101 : @temp6 = this.counter"
+"5 : this.counter = 0" -> "92 : @temp4 = this.counter"
+"5 : this.counter = 0" -> "101 : this.counter = this.counter - 1"
+"5 : this.counter = 0" -> "110 : this.counter = this.counter - 1"
+"5 : this.counter = 0" -> "92 : this.counter = this.counter - 1" [style=dashed]
+"5 : this.counter = 0" -> "101 : this.counter = this.counter - 1" [style=dashed]
+"5 : this.counter = 0" -> "110 : this.counter = this.counter - 1" [style=dashed]
+"88 : cur = null"
+"88 : cur = null" -> "89 : cur = this.head" [style=dashed]
+"89 : cur = this.head"
+"89 : cur = this.head" -> "109 : cur.setNext(getNode(), )"
+"89 : cur = this.head" -> "102 : cur.getElement()"
+"89 : cur = this.head" -> "93 : cur.getElement()"
+"89 : cur = this.head" -> "106 : cur = cur.next" [style=dashed]
+"89 : cur = this.head" -> "98 : cur = cur.next" [style=dashed]
+"90 : index == 0"
+"91 : this.head = head.next"
+"92 : @temp4 = this.counter"
+"92 : this.counter = this.counter - 1"
+"93 : cur.getElement()"
+"96 : index == size() - 1"
+"97 : i = 0"
+"97 : i = 0" -> "97 : i < index"
+"97 : i = 0" -> "97 : i = i + 1"
+"97 : i = 0" -> "97 : @temp5 = i"
+"97 : i = 0" -> "97 : i = i + 1" [style=dashed]
+"97 : i < index"
+"98 : cur = cur.next"
+"98 : cur = cur.next" -> "102 : cur.getElement()"
+"98 : cur = cur.next" -> "98 : cur = cur.next" [style=dashed]
+"97 : @temp5 = i"
+"97 : @temp5 = i" -> "97 : @temp5 = i" [style=dashed]
+"97 : i = i + 1"
+"97 : i = i + 1" -> "97 : i < index"
+"97 : i = i + 1" -> "97 : i = i + 1"
+"97 : i = i + 1" -> "97 : @temp5 = i"
+"97 : i = i + 1" -> "97 : i = i + 1" [style=dashed]
+"100 : cur.next = null"
+"101 : @temp6 = this.counter"
+"101 : this.counter = this.counter - 1"
+"102 : cur.getElement()"
+"105 : i = 1"
+"105 : i = 1" -> "105 : i < index"
+"105 : i = 1" -> "105 : i = i + 1"
+"105 : i = 1" -> "105 : @temp7 = i"
+"105 : i = 1" -> "105 : i = i + 1" [style=dashed]
+"105 : i < index"
+"106 : cur = cur.next"
+"106 : cur = cur.next" -> "109 : cur.setNext(getNode(), )"
+"106 : cur = cur.next" -> "106 : cur = cur.next" [style=dashed]
+"105 : @temp7 = i"
+"105 : @temp7 = i" -> "105 : @temp7 = i" [style=dashed]
+"105 : i = i + 1"
+"105 : i = i + 1" -> "105 : i < index"
+"105 : i = i + 1" -> "105 : i = i + 1"
+"105 : i = i + 1" -> "105 : @temp7 = i"
+"105 : i = i + 1" -> "105 : i = i + 1" [style=dashed]
+"108 : temp = cur.next"
+"108 : temp = cur.next" -> "111 : temp.getElement()"
+"109 : cur.setNext(getNode(), )"
+"110 : @temp8 = this.counter"
+"110 : this.counter = this.counter - 1"
+"111 : temp.getElement()"
+}

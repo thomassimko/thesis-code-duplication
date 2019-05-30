@@ -1,0 +1,8 @@
+digraph G {
+"35 : sub1 = new SubtractExpression(new DoubleConstantExpression(1, ), new DoubleConstantExpression(2, ), )"
+"36 : sub2 = new SubtractExpression(new DoubleConstantExpression(50, ), new DoubleConstantExpression(25.5, ), )"
+"37 : sub3 = new SubtractExpression(new DoubleConstantExpression(2.2, ), new DoubleConstantExpression(10.2, ), )"
+"38 : Check.check(sub1.evaluate(bindings, ), 1, )"
+"39 : Check.check(sub2.evaluate(bindings, ), 24.5, )"
+"40 : Check.check(sub3.evaluate(bindings, ), 8, )"
+}

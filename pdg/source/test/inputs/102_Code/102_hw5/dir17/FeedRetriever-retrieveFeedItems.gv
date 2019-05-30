@@ -1,0 +1,22 @@
+digraph G {
+"18 : this.sources = new ArrayList()"
+"19 : this.badSources = null"
+"19 : this.badSources = null" -> "29 : this.badSources = new ArrayList()" [style=dashed]
+"28 : items = new ArrayList()"
+"29 : this.badSources = new ArrayList()"
+"31 : factory = DocumentBuilderFactory.newInstance()"
+"32 : builder = null"
+"34 : xpfactory = XPathFactory.newInstance()"
+"35 : xpath = xpfactory.newXPath()"
+"39 : builder = factory.newDocumentBuilder()"
+"43 : System.err.println(e, )"
+"46 : src = this.sources"
+"50 : feedDocument = getDocument(src, builder, )"
+"50 : feedDocument = getDocument(src, builder, )" -> "51 : itemCount = getCount(feedDocument, xpath, )"
+"50 : feedDocument = getDocument(src, builder, )" -> "52 : items = addRSSItems(itemCount, feedDocument, items, xpath, )"
+"51 : itemCount = getCount(feedDocument, xpath, )"
+"51 : itemCount = getCount(feedDocument, xpath, )" -> "52 : items = addRSSItems(itemCount, feedDocument, items, xpath, )"
+"52 : items = addRSSItems(itemCount, feedDocument, items, xpath, )"
+"56 : this.badSources.add(src, )"
+"57 : System.err.println(\"ERROR: \" + e, )"
+}

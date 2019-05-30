@@ -1,0 +1,8 @@
+digraph G {
+"25 : add1 = new AddExpression(new DoubleConstantExpression(1, ), new DoubleConstantExpression(2, ), )"
+"26 : add2 = new AddExpression(new DoubleConstantExpression(10.1, ), new DoubleConstantExpression(20.2, ), )"
+"27 : add3 = new AddExpression(new DoubleConstantExpression(-1, ), new DoubleConstantExpression(-2, ), )"
+"28 : Check.check(add1.evaluate(bindings, ), 3, )"
+"29 : Check.check(add2.evaluate(bindings, ), 30.3, )"
+"30 : Check.check(add3.evaluate(bindings, ), 3, )"
+}

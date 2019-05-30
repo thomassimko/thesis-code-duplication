@@ -1,0 +1,29 @@
+digraph G {
+"14 : this.feedReader = null"
+"15 : this.sourceField = null"
+"16 : this.itemArea = null"
+"17 : this.sourceArea = null"
+"44 : this.sourceArea.setText(\"\", )"
+"46 : srcList = this.feedReader.getSources()"
+"46 : srcList = this.feedReader.getSources()" -> "49 : Collections.sort(srcList, )"
+"47 : srcListSize = srcList.size()"
+"47 : srcListSize = srcList.size()" -> "51 : i < srcListSize"
+"49 : Collections.sort(srcList, )"
+"51 : i = 0"
+"51 : i = 0" -> "51 : @temp3 = i"
+"51 : i = 0" -> "51 : i = i + 1"
+"51 : i = 0" -> "53 : this.sourceArea.append(srcList.get(i, ), )"
+"51 : i = 0" -> "51 : i < srcListSize"
+"51 : i = 0" -> "51 : i = i + 1" [style=dashed]
+"51 : i < srcListSize"
+"53 : this.sourceArea.append(srcList.get(i, ), )"
+"54 : this.sourceArea.append(\"\n\", )"
+"51 : @temp3 = i"
+"51 : @temp3 = i" -> "51 : @temp3 = i" [style=dashed]
+"51 : i = i + 1"
+"51 : i = i + 1" -> "51 : @temp3 = i"
+"51 : i = i + 1" -> "51 : i = i + 1"
+"51 : i = i + 1" -> "53 : this.sourceArea.append(srcList.get(i, ), )"
+"51 : i = i + 1" -> "51 : i < srcListSize"
+"51 : i = i + 1" -> "51 : i = i + 1" [style=dashed]
+}

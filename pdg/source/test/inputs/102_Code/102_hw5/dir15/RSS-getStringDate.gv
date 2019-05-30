@@ -1,0 +1,11 @@
+digraph G {
+"8 : this.title = null"
+"9 : this.date = null"
+"9 : this.date = null" -> "45 : now.setTime(this.date, )"
+"9 : this.date = null" -> "47 : strdate = outFormatter.format(this.date, )"
+"10 : this.link = null"
+"42 : outFormatter = new SimpleDateFormat(\"MM/dd/yyyy HH:mm\", )"
+"44 : now = Calendar.getInstance()"
+"45 : now.setTime(this.date, )"
+"47 : strdate = outFormatter.format(this.date, )"
+}

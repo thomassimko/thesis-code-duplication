@@ -1,0 +1,11 @@
+digraph G {
+"4 : this.first = new RIOEmpty()"
+"4 : this.first = new RIOEmpty()" -> "54 : mRemove(index, this.first, )"
+"4 : this.first = new RIOEmpty()" -> "50 : this.first = this.first.getNext()" [style=dashed]
+"46 : index < 0 || index >= size()"
+"47 : new IndexOutOfBoundsException()"
+"48 : index == 0"
+"49 : remove = this.first.getValue()"
+"50 : this.first = this.first.getNext()"
+"54 : mRemove(index, this.first, )"
+}

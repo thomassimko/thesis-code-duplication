@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 public class Mapping {
 
     private Map<Expression, Expression> map;
+    private Set<Expression> expressions;
 
     private final String keyFile;
     private final int keyMin;
@@ -20,21 +21,41 @@ public class Mapping {
     public Mapping(Map<Expression, Expression> initial) {
 
         int[] keyRange = getRange(initial.keySet());
-        keyMin = keyRange[0];
-        keyMax = keyRange[1];
-
         int[] valueRange = getRange(initial.values());
-        valueMin = valueRange[0];
-        valueMax = valueRange[1];
-
-        keyFile = initial.keySet().iterator().next().getFile();
-        valueFile = initial.values().iterator().next().getFile();
-
         map = new TreeMap<>(new LineOrderingComparator());
-        for(Expression key : initial.keySet()) {
-            map.put(key, initial.get(key));
+        expressions = new HashSet<>();
+        boolean valueAsKey = false;
+        if(valueRange[0] < keyRange[0]) {
+
+            valueAsKey = true;
+
+            valueMin = keyRange[0];
+            valueMax = keyRange[1];
+            keyMin = valueRange[0];
+            keyMax = valueRange[1];
+
+            valueFile = initial.keySet().iterator().next().getFile();
+            keyFile = initial.values().iterator().next().getFile();
+
+        } else {
+            keyMin = keyRange[0];
+            keyMax = keyRange[1];
+            valueMin = valueRange[0];
+            valueMax = valueRange[1];
+
+            keyFile = initial.keySet().iterator().next().getFile();
+            valueFile = initial.values().iterator().next().getFile();
         }
 
+        for(Expression key : initial.keySet()) {
+            if(valueAsKey) {
+                map.put(initial.get(key), key);
+            } else {
+                map.put(key, initial.get(key));
+            }
+            expressions.add(key);
+            expressions.add(initial.get(key));
+        }
     }
 
     private int[] getRange(Collection<Expression> set) {
@@ -58,12 +79,22 @@ public class Mapping {
 
     public boolean isSubMapping(Mapping subMapping) {
 
+        if(subMapping.getExpressions().containsAll(this.expressions)) {
+            return true;
+        }
+
+
         //if they are the same files
         if(keyFile.equals(subMapping.keyFile) && valueFile.equals(subMapping.valueFile)) {
 
             //if one is a subset range of the other
             return (keyMin <= subMapping.keyMin && keyMax >= subMapping.keyMax &&
                 valueMin <= subMapping.valueMin && valueMax >= subMapping.valueMax);
+        } else if(valueFile.equals(subMapping.keyFile) && keyFile.equals(subMapping.valueFile)) {
+
+            //if one is a subset range of the other
+            return (valueMin <= subMapping.keyMin && valueMax >= subMapping.keyMax &&
+                    keyMin <= subMapping.valueMin && keyMax >= subMapping.valueMax);
         }
         return false;
 
@@ -103,5 +134,7 @@ public class Mapping {
                 + valueFile + " lines [" + valueMin + ", " + valueMax + "]");
     }
 
-
+    public Set<Expression> getExpressions() {
+        return expressions;
+    }
 }

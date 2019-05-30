@@ -1,0 +1,5 @@
+digraph G {
+"6 : this.head = null"
+"6 : this.head = null" -> "155 : list = toLowerCaseHelper(this.head, )"
+"155 : list = toLowerCaseHelper(this.head, )"
+}

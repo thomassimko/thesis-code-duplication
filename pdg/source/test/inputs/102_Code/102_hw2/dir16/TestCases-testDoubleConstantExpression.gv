@@ -1,0 +1,8 @@
+digraph G {
+"5 : doub1 = new DoubleConstantExpression(1.0, )"
+"6 : doub2 = new DoubleConstantExpression(10, )"
+"7 : doub3 = new DoubleConstantExpression(-99.99, )"
+"8 : Check.check(doub1.evaluate(bindings, ), 1.0, )"
+"9 : Check.check(doub2.evaluate(bindings, ), 10.0, )"
+"10 : Check.check(doub3.evaluate(bindings, ), 99.99, )"
+}

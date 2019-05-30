@@ -1,0 +1,9 @@
+digraph G {
+"4 : this.str = null"
+"5 : this.next = null"
+"26 : index < 0"
+"28 : new IndexOutOfBoundsException()"
+"30 : index == 0"
+"32 : newNode = new ROONode(element, this, )"
+"37 : add(index - 1, element, )"
+}

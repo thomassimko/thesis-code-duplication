@@ -1,0 +1,30 @@
+digraph G {
+"3 : this.first = null"
+"3 : this.first = null" -> "38 : node = this.first"
+"3 : this.first = null" -> "41 : this.first = this.first.getNext()" [style=dashed]
+"38 : node = this.first"
+"38 : node = this.first" -> "44 : node = node.getNext()" [style=dashed]
+"39 : i = 0"
+"39 : i = 0" -> "45 : i = i + 1"
+"39 : i = 0" -> "45 : @temp2 = i"
+"39 : i = 0" -> "43 : i < index - 1 && node.getNext() != null"
+"39 : i = 0" -> "45 : i = i + 1" [style=dashed]
+"40 : index == 0"
+"41 : this.first = this.first.getNext()"
+"43 : i < index - 1 && node.getNext() != null"
+"44 : node = node.getNext()"
+"44 : node = node.getNext()" -> "44 : node = node.getNext()" [style=dashed]
+"45 : @temp2 = i"
+"45 : @temp2 = i" -> "45 : @temp2 = i" [style=dashed]
+"45 : i = i + 1"
+"45 : i = i + 1" -> "45 : i = i + 1"
+"45 : i = i + 1" -> "45 : @temp2 = i"
+"45 : i = i + 1" -> "43 : i < index - 1 && node.getNext() != null"
+"45 : i = i + 1" -> "45 : i = i + 1" [style=dashed]
+"43 : i < index - 1 && node.getNext() != null"
+"47 : node.getNext() != null"
+"48 : next = getNext()"
+"48 : next = getNext()" -> "49 : node.setNext(next, )"
+"49 : node.setNext(next, )"
+"51 : new IndexOutOfBoundsException()"
+}

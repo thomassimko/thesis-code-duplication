@@ -1,0 +1,12 @@
+digraph G {
+"15 : this.reader = null"
+"15 : this.reader = null" -> "21 : this.reader = reader" [style=dashed]
+"16 : this.text = null"
+"16 : this.text = null" -> "22 : this.text = text" [style=dashed]
+"17 : this.source = null"
+"17 : this.source = null" -> "23 : this.source = source" [style=dashed]
+"18 : this.rss = null"
+"21 : this.reader = reader"
+"22 : this.text = text"
+"23 : this.source = source"
+}

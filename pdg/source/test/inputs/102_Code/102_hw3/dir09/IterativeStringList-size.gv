@@ -1,0 +1,4 @@
+digraph G {
+"7 : this.head = null"
+"8 : this.size = 0"
+}

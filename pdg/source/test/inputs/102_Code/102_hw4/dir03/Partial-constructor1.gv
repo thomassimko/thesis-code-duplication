@@ -1,0 +1,23 @@
+digraph G {
+"7 : this.date = null"
+"7 : this.date = null" -> "17 : this.date = date" [style=dashed]
+"8 : this.amtDollars = 0"
+"8 : this.amtDollars = 0" -> "18 : this.amtDollars = amtDollars" [style=dashed]
+"9 : this.amtCents = 0"
+"9 : this.amtCents = 0" -> "19 : this.amtCents = amtCents" [style=dashed]
+"10 : this.payee = null"
+"10 : this.payee = null" -> "20 : this.payee = payee" [style=dashed]
+"11 : this.category = null"
+"11 : this.category = null" -> "21 : this.category = category" [style=dashed]
+"12 : this.balDollars = 0"
+"12 : this.balDollars = 0" -> "22 : this.balDollars = baldollars" [style=dashed]
+"13 : this.balCents = 0"
+"13 : this.balCents = 0" -> "23 : this.balCents = balcents" [style=dashed]
+"17 : this.date = date"
+"18 : this.amtDollars = amtDollars"
+"19 : this.amtCents = amtCents"
+"20 : this.payee = payee"
+"21 : this.category = category"
+"22 : this.balDollars = baldollars"
+"23 : this.balCents = balcents"
+}

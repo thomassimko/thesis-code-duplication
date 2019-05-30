@@ -1,0 +1,12 @@
+digraph G {
+"23 : this.gui = this"
+"24 : this.feedReader = null"
+"25 : this.source = null"
+"26 : this.data = null"
+"27 : this.sources = null"
+"46 : container = getContentPane()"
+"47 : container.setLayout(new BorderLayout(), )"
+"48 : container.add(north(), BorderLayout.NORTH, )"
+"49 : container.add(east(), BorderLayout.EAST, )"
+"50 : container.add(center(), BorderLayout.CENTER, )"
+}

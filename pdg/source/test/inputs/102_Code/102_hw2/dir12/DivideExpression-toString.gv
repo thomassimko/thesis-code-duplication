@@ -1,0 +1,6 @@
+digraph G {
+"4 : this.quotient = 0.0"
+"5 : this.dividend = null"
+"5 : this.divisor = null"
+"21 : \"(\" + this.dividend.toString() + \" / \" + this.divisor.toString() + \")\""
+}

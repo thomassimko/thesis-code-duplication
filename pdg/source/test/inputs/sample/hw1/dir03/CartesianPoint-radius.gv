@@ -1,0 +1,24 @@
+digraph G {
+"6 : this.x = 0.0"
+"6 : this.x = 0.0" -> "23 : this.a = this.x * this.x"
+"6 : this.y = 0.0"
+"6 : this.y = 0.0" -> "24 : this.b = this.y * this.y"
+"6 : this.a = 0.0"
+"6 : this.a = 0.0" -> "23 : this.a = this.x * this.x" [style=dashed]
+"6 : this.b = 0.0"
+"6 : this.b = 0.0" -> "24 : this.b = this.y * this.y" [style=dashed]
+"6 : this.h = 0.0"
+"6 : this.h = 0.0" -> "26 : this.h = Math.sqrt(this.temp, )" [style=dashed]
+"6 : this.nx = 0.0"
+"6 : this.ny = 0.0"
+"6 : this.theta = 0.0"
+"6 : this.temp = 0.0"
+"6 : this.temp = 0.0" -> "25 : this.temp = this.a + this.b" [style=dashed]
+"23 : this.a = this.x * this.x"
+"23 : this.a = this.x * this.x" -> "25 : this.temp = this.a + this.b"
+"24 : this.b = this.y * this.y"
+"24 : this.b = this.y * this.y" -> "25 : this.temp = this.a + this.b"
+"25 : this.temp = this.a + this.b"
+"25 : this.temp = this.a + this.b" -> "26 : this.h = Math.sqrt(this.temp, )"
+"26 : this.h = Math.sqrt(this.temp, )"
+}

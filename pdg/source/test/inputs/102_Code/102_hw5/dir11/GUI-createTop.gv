@@ -1,0 +1,18 @@
+digraph G {
+"15 : this.feed = null"
+"15 : this.feed = null" -> "41 : addAction = new AddActionListener(this.feed, tF, sources, )"
+"37 : addAction = null"
+"37 : addAction = null" -> "41 : addAction = new AddActionListener(this.feed, tF, sources, )" [style=dashed]
+"38 : addButton = new JButton(\"Add\", )"
+"38 : addButton = new JButton(\"Add\", )" -> "47 : top.add(addButton, )"
+"39 : tF = new JTextField(20, )"
+"39 : tF = new JTextField(20, )" -> "41 : addAction = new AddActionListener(this.feed, tF, sources, )"
+"39 : tF = new JTextField(20, )" -> "46 : top.add(tF, )"
+"41 : addAction = new AddActionListener(this.feed, tF, sources, )"
+"41 : addAction = new AddActionListener(this.feed, tF, sources, )" -> "42 : addButton.addActionListener(addAction, )"
+"42 : addButton.addActionListener(addAction, )"
+"44 : top = new JPanel()"
+"45 : top.add(new JLabel(\"Source\", ), )"
+"46 : top.add(tF, )"
+"47 : top.add(addButton, )"
+}

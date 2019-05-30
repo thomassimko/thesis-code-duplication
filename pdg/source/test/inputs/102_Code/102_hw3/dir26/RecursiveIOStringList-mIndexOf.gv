@@ -1,0 +1,15 @@
+digraph G {
+"4 : this.first = new RIOEmpty()"
+"85 : r instanceof RIOEmpty"
+"86 : 1"
+"87 : equals(element, )"
+"88 : 0"
+"89 : index = mIndexOf(element, r.getNext(), )"
+"89 : index = mIndexOf(element, r.getNext(), )" -> "90 : @temp7 = index == 1"
+"89 : index = mIndexOf(element, r.getNext(), )" -> "90 : @temp7 ? -1 : index + 1"
+"89 : index = mIndexOf(element, r.getNext(), )" -> "89 : index = mIndexOf(element, r.getNext(), )" [style=dashed]
+"90 : @temp7 = index == 1"
+"90 : @temp7 = index == 1" -> "90 : @temp7 ? -1 : index + 1"
+"90 : @temp7 = index == 1" -> "90 : @temp7 = index == 1" [style=dashed]
+"90 : @temp7 ? -1 : index + 1"
+}

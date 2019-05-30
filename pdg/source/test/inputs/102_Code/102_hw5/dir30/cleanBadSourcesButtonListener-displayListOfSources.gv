@@ -1,0 +1,27 @@
+digraph G {
+"11 : this.feedReader = null"
+"12 : this.sourceArea = null"
+"34 : this.sourceArea.setText(\"\", )"
+"36 : srcList = this.feedReader.getSources()"
+"36 : srcList = this.feedReader.getSources()" -> "39 : Collections.sort(srcList, )"
+"37 : srcListSize = srcList.size()"
+"37 : srcListSize = srcList.size()" -> "41 : i < srcListSize"
+"39 : Collections.sort(srcList, )"
+"41 : i = 0"
+"41 : i = 0" -> "43 : this.sourceArea.append(srcList.get(i, ), )"
+"41 : i = 0" -> "41 : i < srcListSize"
+"41 : i = 0" -> "41 : i = i + 1"
+"41 : i = 0" -> "41 : @temp12 = i"
+"41 : i = 0" -> "41 : i = i + 1" [style=dashed]
+"41 : i < srcListSize"
+"43 : this.sourceArea.append(srcList.get(i, ), )"
+"44 : this.sourceArea.append(\"\n\", )"
+"41 : @temp12 = i"
+"41 : @temp12 = i" -> "41 : @temp12 = i" [style=dashed]
+"41 : i = i + 1"
+"41 : i = i + 1" -> "43 : this.sourceArea.append(srcList.get(i, ), )"
+"41 : i = i + 1" -> "41 : i < srcListSize"
+"41 : i = i + 1" -> "41 : i = i + 1"
+"41 : i = i + 1" -> "41 : @temp12 = i"
+"41 : i = i + 1" -> "41 : i = i + 1" [style=dashed]
+}

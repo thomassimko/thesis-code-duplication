@@ -1,0 +1,11 @@
+digraph G {
+"7 : this.date = null"
+"7 : this.date = null" -> "24 : String.format(\"%1$2tm/%<2td/%<tY \", this.date, ) + String.format(\"%-15.15s %s (%s) [%s]\", this.payee, this.paid.toString(), this.remaining.toString(), this.category, )"
+"8 : this.category = null"
+"8 : this.category = null" -> "24 : String.format(\"%1$2tm/%<2td/%<tY \", this.date, ) + String.format(\"%-15.15s %s (%s) [%s]\", this.payee, this.paid.toString(), this.remaining.toString(), this.category, )"
+"9 : this.payee = null"
+"9 : this.payee = null" -> "24 : String.format(\"%1$2tm/%<2td/%<tY \", this.date, ) + String.format(\"%-15.15s %s (%s) [%s]\", this.payee, this.paid.toString(), this.remaining.toString(), this.category, )"
+"10 : this.paid = null"
+"11 : this.remaining = null"
+"24 : String.format(\"%1$2tm/%<2td/%<tY \", this.date, ) + String.format(\"%-15.15s %s (%s) [%s]\", this.payee, this.paid.toString(), this.remaining.toString(), this.category, )"
+}

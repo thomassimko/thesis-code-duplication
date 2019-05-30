@@ -1,0 +1,9 @@
+digraph G {
+"5 : this.first = null"
+"6 : this.second = null"
+"16 : i = compare(left, right, )"
+"16 : i = compare(left, right, )" -> "17 : i == 0"
+"16 : i = compare(left, right, )" -> "19 : i = compare(left, right, )" [style=dashed]
+"17 : i == 0"
+"19 : i = compare(left, right, )"
+}

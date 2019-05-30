@@ -1,5 +1,0 @@
-digraph G {
-"3 : this.lft = null"
-"4 : this.rht = null"
-"12 : this.lft.evaluate(binding, ) + this.rht.evaluate(binding, )"
-}

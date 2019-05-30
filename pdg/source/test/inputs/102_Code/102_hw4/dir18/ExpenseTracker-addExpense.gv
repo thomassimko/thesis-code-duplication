@@ -1,0 +1,69 @@
+digraph G {
+"90 : expenseType = null"
+"90 : expenseType = null" -> "94 : expenseType = scanner.next()" [style=dashed]
+"90 : dateStr = null"
+"90 : dateStr = null" -> "96 : dateStr = scanner.next()" [style=dashed]
+"90 : amountStr = null"
+"90 : amountStr = null" -> "99 : amountStr = scanner.next()" [style=dashed]
+"90 : category = null"
+"90 : category = null" -> "105 : category = scanner.next()" [style=dashed]
+"90 : payee = null"
+"90 : payee = null" -> "103 : payee = scanner.next()" [style=dashed]
+"90 : amountLeft = null"
+"90 : amountLeft = null" -> "113 : amountLeft = scanner.next()" [style=dashed]
+"91 : dollarsPaid = 0"
+"91 : dollarsPaid = 0" -> "100 : dollarsPaid = strToDollar(amountStr, )" [style=dashed]
+"91 : centsPaid = 0"
+"91 : centsPaid = 0" -> "101 : centsPaid = strToCents(amountStr, )" [style=dashed]
+"91 : dollarsLeft = 0"
+"91 : dollarsLeft = 0" -> "115 : dollarsLeft = strToDollar(amountLeft, )" [style=dashed]
+"91 : centsLeft = 0"
+"91 : centsLeft = 0" -> "116 : centsLeft = strToCents(amountLeft, )" [style=dashed]
+"92 : date = null"
+"92 : date = null" -> "97 : date = dateConverter(dateStr, )" [style=dashed]
+"93 : System.out.print(\"Expense type (in-full, partial)? \", )"
+"94 : expenseType = scanner.next()"
+"95 : System.out.print(\"Payment date: \", )"
+"96 : dateStr = scanner.next()"
+"96 : dateStr = scanner.next()" -> "97 : date = dateConverter(dateStr, )"
+"97 : date = dateConverter(dateStr, )"
+"97 : date = dateConverter(dateStr, )" -> "108 : newExpense = new inFull(date, payee, dollarsPaid, centsPaid, category, )"
+"97 : date = dateConverter(dateStr, )" -> "117 : newExpense = new inPart(date, payee, dollarsPaid, centsPaid, dollarsLeft, centsLeft, category, )"
+"98 : System.out.print(\"Expense Amount: \", )"
+"99 : amountStr = scanner.next()"
+"99 : amountStr = scanner.next()" -> "100 : dollarsPaid = strToDollar(amountStr, )"
+"99 : amountStr = scanner.next()" -> "101 : centsPaid = strToCents(amountStr, )"
+"100 : dollarsPaid = strToDollar(amountStr, )"
+"100 : dollarsPaid = strToDollar(amountStr, )" -> "108 : newExpense = new inFull(date, payee, dollarsPaid, centsPaid, category, )"
+"100 : dollarsPaid = strToDollar(amountStr, )" -> "117 : newExpense = new inPart(date, payee, dollarsPaid, centsPaid, dollarsLeft, centsLeft, category, )"
+"101 : centsPaid = strToCents(amountStr, )"
+"101 : centsPaid = strToCents(amountStr, )" -> "108 : newExpense = new inFull(date, payee, dollarsPaid, centsPaid, category, )"
+"101 : centsPaid = strToCents(amountStr, )" -> "117 : newExpense = new inPart(date, payee, dollarsPaid, centsPaid, dollarsLeft, centsLeft, category, )"
+"102 : System.out.print(\"Who was this expense paid to? \", )"
+"103 : payee = scanner.next()"
+"103 : payee = scanner.next()" -> "108 : newExpense = new inFull(date, payee, dollarsPaid, centsPaid, category, )"
+"103 : payee = scanner.next()" -> "117 : newExpense = new inPart(date, payee, dollarsPaid, centsPaid, dollarsLeft, centsLeft, category, )"
+"104 : System.out.print(\"Expense category: \", )"
+"105 : category = scanner.next()"
+"105 : category = scanner.next()" -> "108 : newExpense = new inFull(date, payee, dollarsPaid, centsPaid, category, )"
+"105 : category = scanner.next()" -> "117 : newExpense = new inPart(date, payee, dollarsPaid, centsPaid, dollarsLeft, centsLeft, category, )"
+"106 : expenseType.equals(\"in-full\", )"
+"107 : System.out.println(\"\", )"
+"108 : newExpense = new inFull(date, payee, dollarsPaid, centsPaid, category, )"
+"108 : newExpense = new inFull(date, payee, dollarsPaid, centsPaid, category, )" -> "109 : list.add(newExpense, )"
+"109 : list.add(newExpense, )"
+"111 : expenseType.equals(\"partial\", )"
+"112 : System.out.print(\"Expense balance: \", )"
+"113 : amountLeft = scanner.next()"
+"113 : amountLeft = scanner.next()" -> "115 : dollarsLeft = strToDollar(amountLeft, )"
+"113 : amountLeft = scanner.next()" -> "116 : centsLeft = strToCents(amountLeft, )"
+"114 : System.out.println(\"\", )"
+"115 : dollarsLeft = strToDollar(amountLeft, )"
+"115 : dollarsLeft = strToDollar(amountLeft, )" -> "117 : newExpense = new inPart(date, payee, dollarsPaid, centsPaid, dollarsLeft, centsLeft, category, )"
+"116 : centsLeft = strToCents(amountLeft, )"
+"116 : centsLeft = strToCents(amountLeft, )" -> "117 : newExpense = new inPart(date, payee, dollarsPaid, centsPaid, dollarsLeft, centsLeft, category, )"
+"117 : newExpense = new inPart(date, payee, dollarsPaid, centsPaid, dollarsLeft, centsLeft, category, )"
+"117 : newExpense = new inPart(date, payee, dollarsPaid, centsPaid, dollarsLeft, centsLeft, category, )" -> "118 : list.add(newExpense, )"
+"118 : list.add(newExpense, )"
+"121 : System.err.println(\"Invalid type of expense\", )"
+}

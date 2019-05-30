@@ -1,0 +1,8 @@
+digraph G {
+"152 : money = paid.split(\"\\.\", )"
+"153 : dollars = Integer.parseInt(money[0], )"
+"153 : dollars = Integer.parseInt(money[0], )" -> "156 : new Amount(cents, dollars, )"
+"154 : cents = Integer.parseInt(money[1], )"
+"154 : cents = Integer.parseInt(money[1], )" -> "156 : new Amount(cents, dollars, )"
+"156 : new Amount(cents, dollars, )"
+}

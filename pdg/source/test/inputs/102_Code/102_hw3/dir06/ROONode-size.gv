@@ -1,0 +1,8 @@
+digraph G {
+"5 : this.next = null"
+"6 : this.string = null"
+"80 : @temp1 = curSize"
+"80 : curSize = curSize + 1"
+"80 : curSize = curSize + 1" -> "81 : this.next.size(curSize, )"
+"81 : this.next.size(curSize, )"
+}

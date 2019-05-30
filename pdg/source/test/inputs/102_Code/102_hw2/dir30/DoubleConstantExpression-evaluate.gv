@@ -1,0 +1,5 @@
+digraph G {
+"3 : this.number = 0.0"
+"3 : this.number = 0.0" -> "9 : bindings.value = this.number"
+"9 : bindings.value = this.number"
+}

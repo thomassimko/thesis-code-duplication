@@ -1,0 +1,7 @@
+digraph G {
+"6 : this.head = null"
+"6 : this.head = null" -> "81 : this.head = this.head.get(index, )" [style=dashed]
+"79 : cur instanceof RIONode"
+"81 : this.head = this.head.get(index, )"
+"85 : new UnsupportedOperationException()"
+}

@@ -1,0 +1,14 @@
+digraph G {
+"10 : this.tweets = null"
+"105 : stuff = this.tweets.retrieveFeedItems()"
+"105 : stuff = this.tweets.retrieveFeedItems()" -> "108 : r = stuff"
+"106 : feedsOutput = \"\""
+"106 : feedsOutput = \"\"" -> "109 : feedsOutput = feedsOutput + r.getTitle() + \"\n    \" + formatter.format(r.getDate(), ) + \"\n    \" + r.getLink() + \"\n \n\""
+"106 : feedsOutput = \"\"" -> "109 : feedsOutput = feedsOutput + r.getTitle() + \"\n    \" + formatter.format(r.getDate(), ) + \"\n    \" + r.getLink() + \"\n \n\"" [style=dashed]
+"107 : formatter = new SimpleDateFormat(\"MM/dd/yyyy kk:mm:ss\", )"
+"108 : r = stuff"
+"108 : r = stuff" -> "108 : r = stuff" [style=dashed]
+"109 : feedsOutput = feedsOutput + r.getTitle() + \"\n    \" + formatter.format(r.getDate(), ) + \"\n    \" + r.getLink() + \"\n \n\""
+"109 : feedsOutput = feedsOutput + r.getTitle() + \"\n    \" + formatter.format(r.getDate(), ) + \"\n    \" + r.getLink() + \"\n \n\"" -> "109 : feedsOutput = feedsOutput + r.getTitle() + \"\n    \" + formatter.format(r.getDate(), ) + \"\n    \" + r.getLink() + \"\n \n\""
+"109 : feedsOutput = feedsOutput + r.getTitle() + \"\n    \" + formatter.format(r.getDate(), ) + \"\n    \" + r.getLink() + \"\n \n\"" -> "109 : feedsOutput = feedsOutput + r.getTitle() + \"\n    \" + formatter.format(r.getDate(), ) + \"\n    \" + r.getLink() + \"\n \n\"" [style=dashed]
+}

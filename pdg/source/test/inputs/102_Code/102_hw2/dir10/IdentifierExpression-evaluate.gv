@@ -1,0 +1,7 @@
+digraph G {
+"3 : this.search = null"
+"3 : this.search = null" -> "12 : answer = bindings.lookupBinding(this.search, )"
+"11 : answer = 0.0"
+"11 : answer = 0.0" -> "12 : answer = bindings.lookupBinding(this.search, )" [style=dashed]
+"12 : answer = bindings.lookupBinding(this.search, )"
+}

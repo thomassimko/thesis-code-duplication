@@ -1,0 +1,15 @@
+digraph G {
+"9 : this.paid_to = null"
+"10 : this.dollars = 0"
+"10 : this.dollars = 0" -> "70 : this.dollars + \".\" + this.cents"
+"10 : this.dollars = 0" -> "68 : this.dollars + \".0\" + this.cents"
+"11 : this.cents = 0"
+"11 : this.cents = 0" -> "70 : this.dollars + \".\" + this.cents"
+"11 : this.cents = 0" -> "68 : this.dollars + \".0\" + this.cents"
+"11 : this.cents = 0" -> "66 : this.cents < 10 && this.cents >= 0"
+"12 : this.category = null"
+"13 : this.date = null"
+"66 : this.cents < 10 && this.cents >= 0"
+"68 : this.dollars + \".0\" + this.cents"
+"70 : this.dollars + \".\" + this.cents"
+}

@@ -1,0 +1,23 @@
+digraph G {
+"4 : this.head = null"
+"4 : this.head = null" -> "117 : cursor = this.head"
+"117 : cursor = this.head"
+"117 : cursor = this.head" -> "118 : cursor != null"
+"117 : cursor = this.head" -> "124 : cursor = cursor.getNext()" [style=dashed]
+"118 : i = 0"
+"118 : i = 0" -> "118 : @temp4 = i"
+"118 : i = 0" -> "118 : i = i + 1"
+"118 : i = 0" -> "118 : i = i + 1" [style=dashed]
+"118 : cursor != null"
+"120 : cursor.getValue() == element"
+"126 : new IndexOutOfBoundsException()"
+"124 : cursor = cursor.getNext()"
+"124 : cursor = cursor.getNext()" -> "118 : cursor != null"
+"124 : cursor = cursor.getNext()" -> "124 : cursor = cursor.getNext()" [style=dashed]
+"118 : @temp4 = i"
+"118 : @temp4 = i" -> "118 : @temp4 = i" [style=dashed]
+"118 : i = i + 1"
+"118 : i = i + 1" -> "118 : @temp4 = i"
+"118 : i = i + 1" -> "118 : i = i + 1"
+"118 : i = i + 1" -> "118 : i = i + 1" [style=dashed]
+}

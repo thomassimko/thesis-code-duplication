@@ -1,0 +1,9 @@
+digraph G {
+"4 : this.cur = null"
+"4 : this.head = null"
+"82 : cur instanceof RIOEmpty"
+"83 : new UnsupportedOperationException()"
+"86 : equals(element, )"
+"87 : 0"
+"90 : 1 + indexOfHelper(element, cur.getNode(), )"
+}

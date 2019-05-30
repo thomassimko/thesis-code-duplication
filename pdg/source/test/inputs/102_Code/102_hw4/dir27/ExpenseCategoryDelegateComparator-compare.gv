@@ -1,0 +1,7 @@
+digraph G {
+"6 : this.next = null"
+"13 : value = compareTo(getCategory(), )"
+"13 : value = compareTo(getCategory(), )" -> "14 : value == 0"
+"14 : value == 0"
+"16 : this.next.compare(one, two, )"
+}

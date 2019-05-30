@@ -1,0 +1,7 @@
+digraph G {
+"216 : index = amount.indexOf(\".\", )"
+"216 : index = amount.indexOf(\".\", )" -> "217 : dollars = amount.substring(0, index, )"
+"217 : dollars = amount.substring(0, index, )"
+"217 : dollars = amount.substring(0, index, )" -> "218 : Integer.parseInt(dollars, )"
+"218 : Integer.parseInt(dollars, )"
+}

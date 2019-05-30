@@ -1,0 +1,10 @@
+digraph G {
+"9 : this.paid_to = null"
+"9 : this.paid_to = null" -> "75 : \"in-full\n\" + getStringDate() + \"\n\" + this.category + \"\n\" + this.paid_to + \"\n\" + toString()"
+"10 : this.dollars = 0"
+"11 : this.cents = 0"
+"12 : this.category = null"
+"12 : this.category = null" -> "75 : \"in-full\n\" + getStringDate() + \"\n\" + this.category + \"\n\" + this.paid_to + \"\n\" + toString()"
+"13 : this.date = null"
+"75 : \"in-full\n\" + getStringDate() + \"\n\" + this.category + \"\n\" + this.paid_to + \"\n\" + toString()"
+}

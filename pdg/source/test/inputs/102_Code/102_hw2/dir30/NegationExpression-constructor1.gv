@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.here = 0.0"
+"4 : this.here = 0.0" -> "7 : this.here = 1 * e.evaluate(rar, )" [style=dashed]
+"6 : rar = new Binding(\"nam\", 2, )"
+"6 : rar = new Binding(\"nam\", 2, )" -> "7 : this.here = 1 * e.evaluate(rar, )"
+"7 : this.here = 1 * e.evaluate(rar, )"
+}

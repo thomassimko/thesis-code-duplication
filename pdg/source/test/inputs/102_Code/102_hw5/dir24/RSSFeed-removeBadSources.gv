@@ -1,0 +1,30 @@
+digraph G {
+"12 : this.source = null"
+"13 : this.item = null"
+"14 : this.badSource = null"
+"14 : this.badSource = null" -> "160 : this.badSource = new ArrayList()" [style=dashed]
+"16 : this.factory = null"
+"17 : this.builder = null"
+"18 : this.feedDocument = null"
+"20 : this.xpfactory = null"
+"21 : this.xpath = null"
+"155 : size = size()"
+"155 : size = size()" -> "156 : i < size"
+"156 : i = 0"
+"156 : i = 0" -> "156 : i < size"
+"156 : i = 0" -> "156 : @temp4 = i"
+"156 : i = 0" -> "158 : this.source.remove(get(i, ), )"
+"156 : i = 0" -> "156 : i = i + 1"
+"156 : i = 0" -> "156 : i = i + 1" [style=dashed]
+"156 : i < size"
+"158 : this.source.remove(get(i, ), )"
+"156 : @temp4 = i"
+"156 : @temp4 = i" -> "156 : @temp4 = i" [style=dashed]
+"156 : i = i + 1"
+"156 : i = i + 1" -> "156 : i < size"
+"156 : i = i + 1" -> "156 : @temp4 = i"
+"156 : i = i + 1" -> "158 : this.source.remove(get(i, ), )"
+"156 : i = i + 1" -> "156 : i = i + 1"
+"156 : i = i + 1" -> "156 : i = i + 1" [style=dashed]
+"160 : this.badSource = new ArrayList()"
+}

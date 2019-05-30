@@ -1,0 +1,6 @@
+digraph G {
+"2 : this.value = null"
+"3 : this.nextLink = null"
+"68 : s = this.nextLink.toLowerCase()"
+"69 : s.add(0, this.value.toLowerCase(), )"
+}

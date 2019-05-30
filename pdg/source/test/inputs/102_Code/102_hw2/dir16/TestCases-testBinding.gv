@@ -1,0 +1,11 @@
+digraph G {
+"65 : bind1 = new Binding(\"a\", 10, )"
+"66 : bind2 = new Binding(\"abc\", -10, )"
+"67 : bind3 = new Binding(\"cat\", 1.1, )"
+"68 : Check.check(bind1.getId(), \"a\", )"
+"69 : Check.check(bind2.getId(), \"abc\", )"
+"70 : Check.check(bind3.getId(), \"cat\", )"
+"71 : Check.check(bind1.getValue(), 10, )"
+"72 : Check.check(bind2.getValue(), 10, )"
+"73 : Check.check(bind3.getValue(), 1.1, )"
+}

@@ -1,0 +1,15 @@
+digraph G {
+"4 : this.x_coord = 0.0"
+"4 : this.x_coord = 0.0" -> "38 : new_y = this.x_coord"
+"5 : this.y_coord = 0.0"
+"5 : this.y_coord = 0.0" -> "37 : new_x = this.y_coord"
+"35 : new_x = 0.0"
+"35 : new_x = 0.0" -> "37 : new_x = this.y_coord" [style=dashed]
+"35 : new_y = 0.0"
+"35 : new_y = 0.0" -> "38 : new_y = this.x_coord" [style=dashed]
+"37 : new_x = this.y_coord"
+"37 : new_x = this.y_coord" -> "40 : new CartesianPoint(new_x, new_y, )"
+"38 : new_y = this.x_coord"
+"38 : new_y = this.x_coord" -> "40 : new CartesianPoint(new_x, new_y, )"
+"40 : new CartesianPoint(new_x, new_y, )"
+}

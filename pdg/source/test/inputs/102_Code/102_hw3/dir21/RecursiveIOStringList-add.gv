@@ -1,0 +1,26 @@
+digraph G {
+"2 : this.head = null"
+"2 : this.head = null" -> "30 : this.iter = this.head"
+"2 : this.head = null" -> "25 : this.iter = this.head"
+"2 : this.iter = null"
+"2 : this.iter = null" -> "20 : tmp = this.iter"
+"2 : this.iter = null" -> "33 : this.iter = this.iter.next()" [style=dashed]
+"2 : this.iter = null" -> "22 : this.iter = new RIONode(element, )" [style=dashed]
+"2 : this.iter = null" -> "30 : this.iter = this.head" [style=dashed]
+"2 : this.iterPrev = null"
+"19 : index == 1 && this.iter.next() instanceof RIOEmpty"
+"20 : tmp = this.iter"
+"21 : tmp1 = this.iter.next()"
+"21 : tmp1 = this.iter.next()" -> "23 : this.iter.linkNext(tmp1, )"
+"22 : this.iter = new RIONode(element, )"
+"22 : this.iter = new RIONode(element, )" -> "24 : tmp.linkNext(this.iter, )"
+"22 : this.iter = new RIONode(element, )" -> "25 : this.iter = this.head" [style=dashed]
+"23 : this.iter.linkNext(tmp1, )"
+"24 : tmp.linkNext(this.iter, )"
+"25 : this.iter = this.head"
+"28 : this.iter.next() instanceof RIOEmpty"
+"29 : this.iter.linkNext(new RIONode(element, ), )"
+"30 : this.iter = this.head"
+"33 : this.iter = this.iter.next()"
+"34 : add(index - 1, element, )"
+}

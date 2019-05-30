@@ -1,0 +1,20 @@
+digraph G {
+"7 : this.head = null"
+"8 : this.size = 0"
+"8 : this.size = 0" -> "114 : i < this.size"
+"114 : i = 0"
+"114 : i = 0" -> "114 : i < this.size"
+"114 : i = 0" -> "114 : i = i + 1"
+"114 : i = 0" -> "114 : @temp11 = i"
+"114 : i = 0" -> "114 : i = i + 1" [style=dashed]
+"114 : i < this.size"
+"116 : equals(element, )"
+"118 : new NoSuchElementException()"
+"114 : @temp11 = i"
+"114 : @temp11 = i" -> "114 : @temp11 = i" [style=dashed]
+"114 : i = i + 1"
+"114 : i = i + 1" -> "114 : i < this.size"
+"114 : i = i + 1" -> "114 : i = i + 1"
+"114 : i = i + 1" -> "114 : @temp11 = i"
+"114 : i = i + 1" -> "114 : i = i + 1" [style=dashed]
+}

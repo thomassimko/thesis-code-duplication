@@ -1,5 +1,0 @@
-digraph G {
-"24 : quad(p1, ) == quad(p2, )"
-"25 : true"
-"26 : false"
-}

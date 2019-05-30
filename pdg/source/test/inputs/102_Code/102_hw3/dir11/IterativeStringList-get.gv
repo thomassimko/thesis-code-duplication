@@ -1,0 +1,28 @@
+digraph G {
+"6 : this.head = null"
+"6 : this.head = null" -> "84 : this.cur = this.head"
+"7 : this.cur = null"
+"7 : this.cur = null" -> "84 : this.cur = this.head" [style=dashed]
+"84 : this.cur = this.head"
+"84 : this.cur = this.head" -> "88 : this.cur == null"
+"84 : this.cur = this.head" -> "94 : this.cur = getNext()" [style=dashed]
+"86 : i = 0"
+"86 : i = 0" -> "86 : i < index"
+"86 : i = 0" -> "86 : @temp3 = i"
+"86 : i = 0" -> "86 : i = i + 1"
+"86 : i = 0" -> "86 : i = i + 1" [style=dashed]
+"86 : i < index"
+"88 : this.cur == null"
+"98 : this.cur.getString()"
+"90 : new IndexOutOfBoundsException()"
+"94 : this.cur = getNext()"
+"94 : this.cur = getNext()" -> "88 : this.cur == null"
+"94 : this.cur = getNext()" -> "94 : this.cur = getNext()" [style=dashed]
+"86 : @temp3 = i"
+"86 : @temp3 = i" -> "86 : @temp3 = i" [style=dashed]
+"86 : i = i + 1"
+"86 : i = i + 1" -> "86 : i < index"
+"86 : i = i + 1" -> "86 : @temp3 = i"
+"86 : i = i + 1" -> "86 : i = i + 1"
+"86 : i = i + 1" -> "86 : i = i + 1" [style=dashed]
+}

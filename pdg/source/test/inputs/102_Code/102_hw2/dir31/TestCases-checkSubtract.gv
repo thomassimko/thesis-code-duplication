@@ -1,0 +1,12 @@
+digraph G {
+"87 : a = new DoubleConstantExpression(2, )"
+"87 : a = new DoubleConstantExpression(2, )" -> "89 : e = new SubtractExpression(a, b, )"
+"87 : a = new DoubleConstantExpression(2, )" -> "90 : e2 = new SubtractExpression(b, a, )"
+"88 : b = new DoubleConstantExpression(3, )"
+"88 : b = new DoubleConstantExpression(3, )" -> "89 : e = new SubtractExpression(a, b, )"
+"88 : b = new DoubleConstantExpression(3, )" -> "90 : e2 = new SubtractExpression(b, a, )"
+"89 : e = new SubtractExpression(a, b, )"
+"90 : e2 = new SubtractExpression(b, a, )"
+"92 : Check.check(e.evaluate(bindings, ), 1, )"
+"93 : Check.check(e2.evaluate(bindings, ), 1, )"
+}

@@ -1,0 +1,11 @@
+digraph G {
+"7 : this.description = null"
+"7 : this.description = null" -> "65 : \"in-full\n\" + String.format(\"%1$2tm/%<2td/%<tY\", this.date, ) + \"\n\" + this.description + \"\n\" + this.payee + \"\n\" + amountToString()"
+"8 : this.payee = null"
+"8 : this.payee = null" -> "65 : \"in-full\n\" + String.format(\"%1$2tm/%<2td/%<tY\", this.date, ) + \"\n\" + this.description + \"\n\" + this.payee + \"\n\" + amountToString()"
+"9 : this.dollars = 0"
+"10 : this.cents = 0"
+"11 : this.date = null"
+"11 : this.date = null" -> "65 : \"in-full\n\" + String.format(\"%1$2tm/%<2td/%<tY\", this.date, ) + \"\n\" + this.description + \"\n\" + this.payee + \"\n\" + amountToString()"
+"65 : \"in-full\n\" + String.format(\"%1$2tm/%<2td/%<tY\", this.date, ) + \"\n\" + this.description + \"\n\" + this.payee + \"\n\" + amountToString()"
+}

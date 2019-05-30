@@ -1,0 +1,5 @@
+digraph G {
+"123 : a = new Tweeter()"
+"124 : a.addSource(\"http://search.twitter.com/search.rss?q=ActuallyNPH\", )"
+"125 : System.out.println(a.retrieveFeedItems(), )"
+}

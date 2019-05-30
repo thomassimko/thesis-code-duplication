@@ -1,0 +1,9 @@
+digraph G {
+"17 : this.feedReader = null"
+"18 : this.sourceField = null"
+"19 : this.itemArea = null"
+"20 : this.sourceArea = null"
+"40 : setCenter()"
+"41 : setNorth()"
+"42 : setEast()"
+}

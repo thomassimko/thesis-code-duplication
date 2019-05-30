@@ -1,0 +1,9 @@
+digraph G {
+"16 : this.storedExpensesList = new ArrayList()"
+"16 : this.storedExpensesList = new ArrayList()" -> "83 : sortedList = sort.Sort(this.storedExpensesList, comp, )"
+"16 : this.storedExpensesList = new ArrayList()" -> "84 : this.storedExpensesList = sortedList" [style=dashed]
+"82 : sort = new InsertionSort()"
+"83 : sortedList = sort.Sort(this.storedExpensesList, comp, )"
+"83 : sortedList = sort.Sort(this.storedExpensesList, comp, )" -> "84 : this.storedExpensesList = sortedList"
+"84 : this.storedExpensesList = sortedList"
+}

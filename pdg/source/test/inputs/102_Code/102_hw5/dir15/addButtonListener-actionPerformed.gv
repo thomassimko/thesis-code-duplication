@@ -1,0 +1,29 @@
+digraph G {
+"11 : this.feed = null"
+"12 : this.src = null"
+"13 : this.sourceTextArea = null"
+"25 : source = this.src.getText()"
+"25 : source = this.src.getText()" -> "26 : this.feed.addSource(source, )"
+"26 : this.feed.addSource(source, )"
+"27 : this.src.setText(\"\", )"
+"28 : size = size()"
+"28 : size = size()" -> "32 : i < size"
+"30 : this.sourceTextArea.setText(\"\", )"
+"32 : i = 0"
+"32 : i = 0" -> "32 : i < size"
+"32 : i = 0" -> "32 : @temp6 = i"
+"32 : i = 0" -> "32 : i = i + 1"
+"32 : i = 0" -> "34 : this.sourceTextArea.append(get(i, ), )"
+"32 : i = 0" -> "32 : i = i + 1" [style=dashed]
+"32 : i < size"
+"34 : this.sourceTextArea.append(get(i, ), )"
+"35 : this.sourceTextArea.append(\"\n\", )"
+"32 : @temp6 = i"
+"32 : @temp6 = i" -> "32 : @temp6 = i" [style=dashed]
+"32 : i = i + 1"
+"32 : i = i + 1" -> "32 : i < size"
+"32 : i = i + 1" -> "32 : @temp6 = i"
+"32 : i = i + 1" -> "32 : i = i + 1"
+"32 : i = i + 1" -> "34 : this.sourceTextArea.append(get(i, ), )"
+"32 : i = i + 1" -> "32 : i = i + 1" [style=dashed]
+}

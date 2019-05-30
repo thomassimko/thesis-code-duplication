@@ -1,0 +1,9 @@
+digraph G {
+"6 : this.title = null"
+"6 : this.title = null" -> "33 : this.title + \"\n   \" + Helpers.dateToString(this.cal, ) + \"\n   \" + this.link + \"\n\n\""
+"6 : this.link = null"
+"6 : this.link = null" -> "33 : this.title + \"\n   \" + Helpers.dateToString(this.cal, ) + \"\n   \" + this.link + \"\n\n\""
+"7 : this.cal = null"
+"7 : this.cal = null" -> "33 : this.title + \"\n   \" + Helpers.dateToString(this.cal, ) + \"\n   \" + this.link + \"\n\n\""
+"33 : this.title + \"\n   \" + Helpers.dateToString(this.cal, ) + \"\n   \" + this.link + \"\n\n\""
+}

@@ -1,0 +1,52 @@
+digraph G {
+"7 : this.head = null"
+"7 : this.head = null" -> "44 : this.head == null"
+"7 : this.head = null" -> "36 : tempNode = this.head"
+"7 : this.head = null" -> "37 : previousNode = this.head"
+"7 : this.head = null" -> "50 : this.head = new IterativeNode(element, previousNode, )" [style=dashed]
+"7 : this.head = null" -> "46 : this.head = new IterativeNode(element, null, )" [style=dashed]
+"34 : tempNode = null"
+"34 : tempNode = null" -> "36 : tempNode = this.head" [style=dashed]
+"34 : previousNode = null"
+"34 : previousNode = null" -> "37 : previousNode = this.head" [style=dashed]
+"35 : ind = 0"
+"35 : ind = 0" -> "40 : ind = ind + 1"
+"35 : ind = 0" -> "52 : ind < index"
+"35 : ind = 0" -> "38 : tempNode != null && ind < index"
+"35 : ind = 0" -> "40 : @temp1 = ind"
+"35 : ind = 0" -> "40 : ind = ind + 1" [style=dashed]
+"36 : tempNode = this.head"
+"36 : tempNode = this.head" -> "41 : previousNode = tempNode"
+"36 : tempNode = this.head" -> "38 : tempNode != null && ind < index"
+"36 : tempNode = this.head" -> "58 : previousNode.setNext(new IterativeNode(element, tempNode, ), )"
+"36 : tempNode = this.head" -> "42 : tempNode = tempNode.getNext()" [style=dashed]
+"37 : previousNode = this.head"
+"37 : previousNode = this.head" -> "50 : this.head = new IterativeNode(element, previousNode, )"
+"37 : previousNode = this.head" -> "41 : previousNode = tempNode" [style=dashed]
+"38 : tempNode != null && ind < index"
+"40 : @temp1 = ind"
+"40 : @temp1 = ind" -> "40 : @temp1 = ind" [style=dashed]
+"40 : ind = ind + 1"
+"40 : ind = ind + 1" -> "40 : ind = ind + 1"
+"40 : ind = ind + 1" -> "52 : ind < index"
+"40 : ind = ind + 1" -> "38 : tempNode != null && ind < index"
+"40 : ind = ind + 1" -> "40 : @temp1 = ind"
+"40 : ind = ind + 1" -> "40 : ind = ind + 1" [style=dashed]
+"41 : previousNode = tempNode"
+"41 : previousNode = tempNode" -> "50 : this.head = new IterativeNode(element, previousNode, )"
+"41 : previousNode = tempNode" -> "41 : previousNode = tempNode" [style=dashed]
+"42 : tempNode = tempNode.getNext()"
+"42 : tempNode = tempNode.getNext()" -> "41 : previousNode = tempNode"
+"42 : tempNode = tempNode.getNext()" -> "38 : tempNode != null && ind < index"
+"42 : tempNode = tempNode.getNext()" -> "58 : previousNode.setNext(new IterativeNode(element, tempNode, ), )"
+"42 : tempNode = tempNode.getNext()" -> "42 : tempNode = tempNode.getNext()" [style=dashed]
+"38 : tempNode != null && ind < index"
+"44 : this.head == null"
+"46 : this.head = new IterativeNode(element, null, )"
+"46 : this.head = new IterativeNode(element, null, )" -> "50 : this.head = new IterativeNode(element, previousNode, )" [style=dashed]
+"48 : index == 0"
+"50 : this.head = new IterativeNode(element, previousNode, )"
+"52 : ind < index"
+"54 : new NoSuchElementException()"
+"58 : previousNode.setNext(new IterativeNode(element, tempNode, ), )"
+}

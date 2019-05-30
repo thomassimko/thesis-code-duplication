@@ -1,0 +1,19 @@
+digraph G {
+"18 : this.sources = new ArrayList()"
+"19 : this.badSources = null"
+"103 : title = null"
+"103 : title = null" -> "105 : title = xpath.evaluate(\"/rss/channel/item[\" + cur + \"]/title\", feedDoc, )" [style=dashed]
+"103 : link = null"
+"103 : link = null" -> "107 : link = xpath.evaluate(\"/rss/channel/item[\" + cur + \"]/link\", feedDoc, )" [style=dashed]
+"103 : dateStr = null"
+"103 : dateStr = null" -> "109 : dateStr = xpath.evaluate(\"/rss/channel/item[\" + cur + \"]/pubDate\", feedDoc, )" [style=dashed]
+"105 : title = xpath.evaluate(\"/rss/channel/item[\" + cur + \"]/title\", feedDoc, )"
+"105 : title = xpath.evaluate(\"/rss/channel/item[\" + cur + \"]/title\", feedDoc, )" -> "114 : new Item(title, link, date, )"
+"107 : link = xpath.evaluate(\"/rss/channel/item[\" + cur + \"]/link\", feedDoc, )"
+"107 : link = xpath.evaluate(\"/rss/channel/item[\" + cur + \"]/link\", feedDoc, )" -> "114 : new Item(title, link, date, )"
+"109 : dateStr = xpath.evaluate(\"/rss/channel/item[\" + cur + \"]/pubDate\", feedDoc, )"
+"109 : dateStr = xpath.evaluate(\"/rss/channel/item[\" + cur + \"]/pubDate\", feedDoc, )" -> "112 : date = getDate(dateStr, )"
+"112 : date = getDate(dateStr, )"
+"112 : date = getDate(dateStr, )" -> "114 : new Item(title, link, date, )"
+"114 : new Item(title, link, date, )"
+}

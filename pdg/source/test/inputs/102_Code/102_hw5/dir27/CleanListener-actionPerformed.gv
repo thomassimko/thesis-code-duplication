@@ -1,0 +1,28 @@
+digraph G {
+"10 : this.reader = null"
+"11 : this.text = null"
+"12 : this.rss = null"
+"21 : this.text.setText(\"\", )"
+"22 : this.reader.removeBadSources()"
+"23 : srcs = this.reader.getSources()"
+"23 : srcs = this.reader.getSources()" -> "24 : Collections.sort(srcs, )"
+"24 : Collections.sort(srcs, )"
+"25 : size = srcs.size()"
+"25 : size = srcs.size()" -> "26 : i < size"
+"26 : i = 0"
+"26 : i = 0" -> "26 : i = i + 1"
+"26 : i = 0" -> "26 : @temp1 = i"
+"26 : i = 0" -> "28 : this.text.append(srcs.get(i, ) + \"\n\", )"
+"26 : i = 0" -> "26 : i < size"
+"26 : i = 0" -> "26 : i = i + 1" [style=dashed]
+"26 : i < size"
+"28 : this.text.append(srcs.get(i, ) + \"\n\", )"
+"26 : @temp1 = i"
+"26 : @temp1 = i" -> "26 : @temp1 = i" [style=dashed]
+"26 : i = i + 1"
+"26 : i = i + 1" -> "26 : i = i + 1"
+"26 : i = i + 1" -> "26 : @temp1 = i"
+"26 : i = i + 1" -> "28 : this.text.append(srcs.get(i, ) + \"\n\", )"
+"26 : i = i + 1" -> "26 : i < size"
+"26 : i = i + 1" -> "26 : i = i + 1" [style=dashed]
+}

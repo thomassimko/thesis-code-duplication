@@ -1,0 +1,14 @@
+digraph G {
+"10 : this.tweets = null"
+"114 : stuff = this.tweets.getSources()"
+"114 : stuff = this.tweets.getSources()" -> "116 : s = stuff"
+"115 : sourcesOutput = \"\""
+"115 : sourcesOutput = \"\"" -> "117 : sourcesOutput = sourcesOutput + s + \"\n\""
+"115 : sourcesOutput = \"\"" -> "117 : sourcesOutput = sourcesOutput + s + \"\n\"" [style=dashed]
+"116 : s = stuff"
+"116 : s = stuff" -> "117 : sourcesOutput = sourcesOutput + s + \"\n\""
+"116 : s = stuff" -> "116 : s = stuff" [style=dashed]
+"117 : sourcesOutput = sourcesOutput + s + \"\n\""
+"117 : sourcesOutput = sourcesOutput + s + \"\n\"" -> "117 : sourcesOutput = sourcesOutput + s + \"\n\""
+"117 : sourcesOutput = sourcesOutput + s + \"\n\"" -> "117 : sourcesOutput = sourcesOutput + s + \"\n\"" [style=dashed]
+}

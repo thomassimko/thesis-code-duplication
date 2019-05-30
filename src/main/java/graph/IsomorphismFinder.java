@@ -50,6 +50,9 @@ public class IsomorphismFinder {
                         continue;
                     }
 
+                    Set<Expression> vertices = new HashSet<>(subgraph.vertexSet());
+                    seenGraphs.add(vertices);
+
                     //check if exp is isomorphism
                     VF2AbstractIsomorphismInspector iso = new VF2SubgraphIsomorphismInspector(largeGraph, subgraph, new ExpressionComparator(), edgeComparator, true);
 

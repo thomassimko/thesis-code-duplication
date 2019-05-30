@@ -1,0 +1,5 @@
+digraph G {
+"13 : reader = new FeedRetriever()"
+"13 : reader = new FeedRetriever()" -> "14 : gui = new GUI(reader, )"
+"14 : gui = new GUI(reader, )"
+}

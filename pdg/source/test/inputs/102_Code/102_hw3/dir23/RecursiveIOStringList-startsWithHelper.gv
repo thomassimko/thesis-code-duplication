@@ -1,0 +1,11 @@
+digraph G {
+"4 : this.cur = null"
+"4 : this.head = null"
+"129 : cur instanceof RIOEmpty"
+"130 : n = new RIOEmpty()"
+"134 : n = null"
+"134 : n = null" -> "136 : n = new RIONode(cur.getElement(), startsWithHelper(prefix, cur.getNode(), ), )" [style=dashed]
+"135 : startsWith(prefix, )"
+"136 : n = new RIONode(cur.getElement(), startsWithHelper(prefix, cur.getNode(), ), )"
+"139 : startsWithHelper(prefix, cur.getNode(), )"
+}

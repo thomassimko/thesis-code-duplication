@@ -1,0 +1,33 @@
+digraph G {
+"17 : status = true"
+"17 : status = true" -> "28 : status = false" [style=dashed]
+"17 : status = true" -> "36 : status = false" [style=dashed]
+"17 : status = true" -> "24 : status = false" [style=dashed]
+"17 : status = true" -> "32 : status = false" [style=dashed]
+"18 : x1 = point1.xCoordinate()"
+"18 : x1 = point1.xCoordinate()" -> "26 : x1 < 0 && x2 > 0"
+"18 : x1 = point1.xCoordinate()" -> "22 : x1 > 0 && x2 < 0"
+"19 : x2 = point2.xCoordinate()"
+"19 : x2 = point2.xCoordinate()" -> "26 : x1 < 0 && x2 > 0"
+"19 : x2 = point2.xCoordinate()" -> "22 : x1 > 0 && x2 < 0"
+"20 : y1 = point1.yCoordinate()"
+"20 : y1 = point1.yCoordinate()" -> "30 : y1 > 0 && y2 < 0"
+"20 : y1 = point1.yCoordinate()" -> "34 : y2 > 0 && y1 < 0"
+"21 : y2 = point2.yCoordinate()"
+"21 : y2 = point2.yCoordinate()" -> "30 : y1 > 0 && y2 < 0"
+"21 : y2 = point2.yCoordinate()" -> "34 : y2 > 0 && y1 < 0"
+"22 : x1 > 0 && x2 < 0"
+"24 : status = false"
+"24 : status = false" -> "28 : status = false" [style=dashed]
+"24 : status = false" -> "36 : status = false" [style=dashed]
+"24 : status = false" -> "32 : status = false" [style=dashed]
+"26 : x1 < 0 && x2 > 0"
+"28 : status = false"
+"28 : status = false" -> "36 : status = false" [style=dashed]
+"28 : status = false" -> "32 : status = false" [style=dashed]
+"30 : y1 > 0 && y2 < 0"
+"32 : status = false"
+"32 : status = false" -> "36 : status = false" [style=dashed]
+"34 : y2 > 0 && y1 < 0"
+"36 : status = false"
+}

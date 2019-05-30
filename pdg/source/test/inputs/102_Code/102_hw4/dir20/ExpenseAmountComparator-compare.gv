@@ -1,0 +1,13 @@
+digraph G {
+"14 : conLeft = new MoneyConverter(left.getAmountPaid(), )"
+"15 : icents = conLeft.getCents()"
+"15 : icents = conLeft.getCents()" -> "22 : idollars * 100 + icents - rdollars * 100 + rcents"
+"16 : idollars = conLeft.getDollars()"
+"16 : idollars = conLeft.getDollars()" -> "22 : idollars * 100 + icents - rdollars * 100 + rcents"
+"18 : conRight = new MoneyConverter(right.getAmountPaid(), )"
+"19 : rcents = conRight.getCents()"
+"19 : rcents = conRight.getCents()" -> "22 : idollars * 100 + icents - rdollars * 100 + rcents"
+"20 : rdollars = conRight.getDollars()"
+"20 : rdollars = conRight.getDollars()" -> "22 : idollars * 100 + icents - rdollars * 100 + rcents"
+"22 : idollars * 100 + icents - rdollars * 100 + rcents"
+}

@@ -1,0 +1,8 @@
+digraph G {
+"150 : NORTHPanel = new JPanel()"
+"151 : source = new JLabel(\"Source:\", )"
+"151 : source = new JLabel(\"Source:\", )" -> "152 : NORTHPanel.add(source, )"
+"152 : NORTHPanel.add(source, )"
+"153 : NORTHPanel.add(sourceTextField, )"
+"154 : NORTHPanel.add(addButton, )"
+}

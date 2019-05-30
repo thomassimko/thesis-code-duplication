@@ -1,0 +1,9 @@
+digraph G {
+"4 : this.element = null"
+"4 : this.element = null" -> "92 : n = new ROONode(this.element.toUpperCase(), temp, )"
+"5 : this.next = null"
+"5 : this.next = null" -> "91 : temp = this.next.toUpperCase()"
+"91 : temp = this.next.toUpperCase()"
+"91 : temp = this.next.toUpperCase()" -> "92 : n = new ROONode(this.element.toUpperCase(), temp, )"
+"92 : n = new ROONode(this.element.toUpperCase(), temp, )"
+}

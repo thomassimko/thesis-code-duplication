@@ -1,0 +1,22 @@
+digraph G {
+"8 : this.eDate = Calendar.getInstance()"
+"9 : this.payee = null"
+"9 : this.payee = null" -> "20 : this.payee = payee" [style=dashed]
+"10 : this.category = null"
+"10 : this.category = null" -> "21 : this.category = category" [style=dashed]
+"11 : this.dollarsPaid = 0"
+"11 : this.dollarsPaid = 0" -> "22 : this.dollarsPaid = dollarsPaid" [style=dashed]
+"12 : this.centsPaid = 0"
+"12 : this.centsPaid = 0" -> "23 : this.centsPaid = centsPaid" [style=dashed]
+"13 : this.dollarsRemain = 0"
+"13 : this.dollarsRemain = 0" -> "24 : this.dollarsRemain = dollarsRemain" [style=dashed]
+"14 : this.centsRemain = 0"
+"14 : this.centsRemain = 0" -> "25 : this.centsRemain = centsRemain" [style=dashed]
+"19 : this.eDate.setTime(eDate, )"
+"20 : this.payee = payee"
+"21 : this.category = category"
+"22 : this.dollarsPaid = dollarsPaid"
+"23 : this.centsPaid = centsPaid"
+"24 : this.dollarsRemain = dollarsRemain"
+"25 : this.centsRemain = centsRemain"
+}

@@ -1,0 +1,29 @@
+digraph G {
+"16 : this.storedExpensesList = new ArrayList()"
+"104 : printFile = null"
+"104 : printFile = null" -> "105 : printFile = new PrintWriter(\"StoredExpenses.txt\", )" [style=dashed]
+"105 : printFile = new PrintWriter(\"StoredExpenses.txt\", )"
+"106 : i = 0"
+"106 : i = 0" -> "106 : i = i + 1"
+"106 : i = 0" -> "114 : this.storedExpensesList.get(i, ) instanceof partialExpense"
+"106 : i = 0" -> "106 : @temp1 = i"
+"106 : i = 0" -> "106 : i < this.storedExpensesList.size()"
+"106 : i = 0" -> "106 : i = i + 1" [style=dashed]
+"106 : i < this.storedExpensesList.size()"
+"108 : printFile.println(getType(), )"
+"109 : printFile.println(getDate(), )"
+"110 : printFile.println(getCat(), )"
+"111 : printFile.println(getPaidTo(), )"
+"112 : printFile.println(getAmount(), )"
+"114 : this.storedExpensesList.get(i, ) instanceof partialExpense"
+"119 : printFile.close()"
+"116 : printFile.println(getBalance(), )"
+"106 : @temp1 = i"
+"106 : @temp1 = i" -> "106 : @temp1 = i" [style=dashed]
+"106 : i = i + 1"
+"106 : i = i + 1" -> "106 : i = i + 1"
+"106 : i = i + 1" -> "114 : this.storedExpensesList.get(i, ) instanceof partialExpense"
+"106 : i = i + 1" -> "106 : @temp1 = i"
+"106 : i = i + 1" -> "106 : i < this.storedExpensesList.size()"
+"106 : i = i + 1" -> "106 : i = i + 1" [style=dashed]
+}

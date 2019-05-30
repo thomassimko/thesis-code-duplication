@@ -1,0 +1,20 @@
+digraph G {
+"5 : this.head = null"
+"111 : newList = new IterativeStringList()"
+"112 : i = 0"
+"112 : i = 0" -> "112 : i = i + 1"
+"112 : i = 0" -> "114 : newList.add(i, toLowerCase(), )"
+"112 : i = 0" -> "112 : @temp8 = i"
+"112 : i = 0" -> "112 : i < size()"
+"112 : i = 0" -> "112 : i = i + 1" [style=dashed]
+"112 : i < size()"
+"114 : newList.add(i, toLowerCase(), )"
+"112 : @temp8 = i"
+"112 : @temp8 = i" -> "112 : @temp8 = i" [style=dashed]
+"112 : i = i + 1"
+"112 : i = i + 1" -> "112 : i = i + 1"
+"112 : i = i + 1" -> "114 : newList.add(i, toLowerCase(), )"
+"112 : i = i + 1" -> "112 : @temp8 = i"
+"112 : i = i + 1" -> "112 : i < size()"
+"112 : i = i + 1" -> "112 : i = i + 1" [style=dashed]
+}

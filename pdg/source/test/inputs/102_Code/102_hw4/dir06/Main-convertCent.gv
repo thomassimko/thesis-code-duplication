@@ -1,0 +1,11 @@
+digraph G {
+"398 : scan = new Scanner(s, )"
+"399 : scan.hasNextDouble()"
+"401 : temp = scan.nextDouble()"
+"401 : temp = scan.nextDouble()" -> "403 : temp - dollar * 100"
+"401 : temp = scan.nextDouble()" -> "402 : dollar = temp"
+"402 : dollar = temp"
+"402 : dollar = temp" -> "403 : temp - dollar * 100"
+"403 : temp - dollar * 100"
+"405 : new NoSuchElementException()"
+}

@@ -1,0 +1,6 @@
+digraph G {
+"7 : this.bindingList = new ArrayList()"
+"7 : this.bindingList = new ArrayList()" -> "11 : this.bindingList = this.bindingList"
+"7 : this.bindingList = new ArrayList()" -> "11 : this.bindingList = this.bindingList" [style=dashed]
+"11 : this.bindingList = this.bindingList"
+}

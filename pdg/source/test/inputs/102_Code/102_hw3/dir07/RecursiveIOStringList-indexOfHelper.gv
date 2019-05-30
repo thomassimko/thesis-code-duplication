@@ -1,0 +1,6 @@
+digraph G {
+"4 : this.head = null"
+"133 : equals(element, )"
+"135 : 0"
+"139 : 1 + indexOfHelper(element, cur.getNext(), )"
+}

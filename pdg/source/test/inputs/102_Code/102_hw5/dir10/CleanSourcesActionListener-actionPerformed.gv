@@ -1,0 +1,28 @@
+digraph G {
+"10 : this.feed = null"
+"11 : this.srcFeed = null"
+"20 : this.srcFeed.setText(\"\", )"
+"21 : this.feed.removeBadSources()"
+"22 : newList = this.feed.getSources()"
+"22 : newList = this.feed.getSources()" -> "24 : Collections.sort(newList, srcCompare, )"
+"23 : srcCompare = new SourceComparator()"
+"23 : srcCompare = new SourceComparator()" -> "24 : Collections.sort(newList, srcCompare, )"
+"24 : Collections.sort(newList, srcCompare, )"
+"25 : i = 0"
+"25 : i = 0" -> "25 : @temp13 = i"
+"25 : i = 0" -> "26 : this.srcFeed.append(newList.get(i, ), )"
+"25 : i = 0" -> "25 : i < newList.size()"
+"25 : i = 0" -> "25 : i = i + 1"
+"25 : i = 0" -> "25 : i = i + 1" [style=dashed]
+"25 : i < newList.size()"
+"26 : this.srcFeed.append(newList.get(i, ), )"
+"27 : this.srcFeed.append(\"\n\", )"
+"25 : @temp13 = i"
+"25 : @temp13 = i" -> "25 : @temp13 = i" [style=dashed]
+"25 : i = i + 1"
+"25 : i = i + 1" -> "25 : @temp13 = i"
+"25 : i = i + 1" -> "26 : this.srcFeed.append(newList.get(i, ), )"
+"25 : i = i + 1" -> "25 : i < newList.size()"
+"25 : i = i + 1" -> "25 : i = i + 1"
+"25 : i = i + 1" -> "25 : i = i + 1" [style=dashed]
+}

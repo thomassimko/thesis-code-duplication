@@ -2,6 +2,7 @@ package ast.expressions;
 
 import ast.expressions.left.Identifier;
 import ast.expressions.left.Left;
+import main.ArgumentHandler;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -58,6 +59,10 @@ public class CallExpression extends Expression {
 
     @Override
     public void setUsesAndDefines() {
+        if(ArgumentHandler.checkMethodLeft && leftSide != null) {
+            setUseAndDefineForChild(leftSide);
+            addSource(leftSide);
+        }
         for(Expression arg: argumentList) {
             setUseAndDefineForChild(arg);
             addSource(arg);

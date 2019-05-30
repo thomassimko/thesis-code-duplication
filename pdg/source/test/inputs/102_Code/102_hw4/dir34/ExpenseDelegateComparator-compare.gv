@@ -1,0 +1,9 @@
+digraph G {
+"5 : this.comp = null"
+"6 : this.comp2 = null"
+"14 : i = this.comp.compare(o1, o2, )"
+"14 : i = this.comp.compare(o1, o2, )" -> "15 : i == 0"
+"14 : i = this.comp.compare(o1, o2, )" -> "17 : i = this.comp2.compare(o1, o2, )" [style=dashed]
+"15 : i == 0"
+"17 : i = this.comp2.compare(o1, o2, )"
+}

@@ -1,0 +1,15 @@
+digraph G {
+"5 : this.str = null"
+"6 : this.next = null"
+"146 : cur = this"
+"146 : cur = this" -> "149 : cur instanceof ROONode"
+"146 : cur = this" -> "155 : cur = cur.getNext()" [style=dashed]
+"147 : startsWith = new RecursiveOOStringList()"
+"149 : cur instanceof ROONode"
+"151 : startsWith(prefix, )"
+"153 : startsWith.addToEnd(cur.getStr(), )"
+"155 : cur = cur.getNext()"
+"155 : cur = cur.getNext()" -> "149 : cur instanceof ROONode"
+"155 : cur = cur.getNext()" -> "155 : cur = cur.getNext()" [style=dashed]
+"149 : cur instanceof ROONode"
+}

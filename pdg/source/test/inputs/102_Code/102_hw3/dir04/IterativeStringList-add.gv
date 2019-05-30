@@ -1,0 +1,25 @@
+digraph G {
+"8 : this.head = null"
+"8 : this.head = null" -> "52 : cur = this.head"
+"52 : cur = this.head"
+"52 : cur = this.head" -> "57 : cur = cur.getNext()" [style=dashed]
+"53 : i = 1"
+"53 : i = 1" -> "58 : @temp6 = i"
+"53 : i = 1" -> "55 : i < index - 1"
+"53 : i = 1" -> "58 : i = i + 1"
+"53 : i = 1" -> "58 : i = i + 1" [style=dashed]
+"55 : i < index - 1"
+"57 : cur = cur.getNext()"
+"57 : cur = cur.getNext()" -> "57 : cur = cur.getNext()" [style=dashed]
+"58 : @temp6 = i"
+"58 : @temp6 = i" -> "58 : @temp6 = i" [style=dashed]
+"58 : i = i + 1"
+"58 : i = i + 1" -> "58 : @temp6 = i"
+"58 : i = i + 1" -> "58 : i = i + 1"
+"58 : i = i + 1" -> "55 : i < index - 1"
+"58 : i = i + 1" -> "58 : i = i + 1" [style=dashed]
+"55 : i < index - 1"
+"60 : add = new IterativeNode(element, cur.getNext(), )"
+"60 : add = new IterativeNode(element, cur.getNext(), )" -> "62 : cur.setNext(add, )"
+"62 : cur.setNext(add, )"
+}

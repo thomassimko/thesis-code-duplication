@@ -1,0 +1,8 @@
+digraph G {
+"4 : this.head = null"
+"4 : this.head = null" -> "26 : this.head = getNext()" [style=dashed]
+"23 : index == 0"
+"25 : delete = getString()"
+"26 : this.head = getNext()"
+"30 : this.head.remove(index, )"
+}

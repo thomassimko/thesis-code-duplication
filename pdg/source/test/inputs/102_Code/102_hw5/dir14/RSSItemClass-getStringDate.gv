@@ -1,0 +1,8 @@
+digraph G {
+"9 : this.title = null"
+"10 : this.link = null"
+"11 : this.date = null"
+"11 : this.date = null" -> "35 : string = df.format(this.date, )"
+"34 : df = new SimpleDateFormat(\"MM/dd/yyyy HH:mm\", )"
+"35 : string = df.format(this.date, )"
+}

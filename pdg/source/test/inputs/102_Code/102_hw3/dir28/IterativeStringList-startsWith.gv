@@ -1,0 +1,23 @@
+digraph G {
+"6 : this.head = null"
+"148 : startsWith = new IterativeStringList()"
+"149 : size = size()"
+"149 : size = size()" -> "150 : i < size"
+"150 : i = 0"
+"150 : i = 0" -> "150 : i = i + 1"
+"150 : i = 0" -> "150 : i < size"
+"150 : i = 0" -> "150 : @temp6 = i"
+"150 : i = 0" -> "154 : startsWith.addToEnd(get(i, ), )"
+"150 : i = 0" -> "150 : i = i + 1" [style=dashed]
+"150 : i < size"
+"152 : startsWith(prefix, )"
+"154 : startsWith.addToEnd(get(i, ), )"
+"150 : @temp6 = i"
+"150 : @temp6 = i" -> "150 : @temp6 = i" [style=dashed]
+"150 : i = i + 1"
+"150 : i = i + 1" -> "150 : i = i + 1"
+"150 : i = i + 1" -> "150 : i < size"
+"150 : i = i + 1" -> "150 : @temp6 = i"
+"150 : i = i + 1" -> "154 : startsWith.addToEnd(get(i, ), )"
+"150 : i = i + 1" -> "150 : i = i + 1" [style=dashed]
+}

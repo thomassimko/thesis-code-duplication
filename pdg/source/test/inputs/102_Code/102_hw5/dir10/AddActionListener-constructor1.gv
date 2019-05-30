@@ -1,0 +1,14 @@
+digraph G {
+"12 : this.srcText = null"
+"12 : this.srcText = null" -> "18 : this.srcText = srcText" [style=dashed]
+"13 : this.feed = null"
+"13 : this.feed = null" -> "19 : this.feed = feed" [style=dashed]
+"14 : this.tweeterFeed = null"
+"14 : this.tweeterFeed = null" -> "20 : this.tweeterFeed = tweeterFeed" [style=dashed]
+"15 : this.srcFeed = null"
+"15 : this.srcFeed = null" -> "21 : this.srcFeed = srcFeed" [style=dashed]
+"18 : this.srcText = srcText"
+"19 : this.feed = feed"
+"20 : this.tweeterFeed = tweeterFeed"
+"21 : this.srcFeed = srcFeed"
+}

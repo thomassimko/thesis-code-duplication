@@ -1,0 +1,7 @@
+digraph G {
+"23 : this.sources = null"
+"24 : this.badList = null"
+"24 : this.badList = null" -> "103 : this.sources.removeAll(this.badList, )"
+"103 : this.sources.removeAll(this.badList, )"
+"104 : this.badList.clear()"
+}

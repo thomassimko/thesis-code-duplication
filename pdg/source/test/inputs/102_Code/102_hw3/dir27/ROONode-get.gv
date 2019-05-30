@@ -1,0 +1,11 @@
+digraph G {
+"4 : this.name = null"
+"4 : this.name = null" -> "66 : want = this.name"
+"5 : this.next = null"
+"63 : want = null"
+"63 : want = null" -> "70 : want = this.next.get(index - 1, )" [style=dashed]
+"63 : want = null" -> "66 : want = this.name" [style=dashed]
+"64 : index == 0"
+"66 : want = this.name"
+"70 : want = this.next.get(index - 1, )"
+}

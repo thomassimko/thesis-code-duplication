@@ -1,0 +1,4 @@
+digraph G {
+"5 : gooey = new tweetGUI()"
+"6 : gooey.GUI()"
+}

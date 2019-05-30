@@ -1,0 +1,8 @@
+digraph G {
+"6 : this.comp1 = null"
+"6 : this.comp1 = null" -> "11 : this.comp1 = c1" [style=dashed]
+"7 : this.comp2 = null"
+"7 : this.comp2 = null" -> "12 : this.comp2 = c2" [style=dashed]
+"11 : this.comp1 = c1"
+"12 : this.comp2 = c2"
+}

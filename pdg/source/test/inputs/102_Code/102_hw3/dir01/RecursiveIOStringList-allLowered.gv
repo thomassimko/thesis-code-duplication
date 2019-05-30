@@ -1,0 +1,8 @@
+digraph G {
+"4 : this.node = null"
+"163 : n instanceof RIOEmpty"
+"165 : new RIOEmpty()"
+"167 : temp = new RIONode(toLowerCase(), )"
+"167 : temp = new RIONode(toLowerCase(), )" -> "167 : temp = new RIONode(toLowerCase(), )" [style=dashed]
+"168 : temp.setNext(allLowered(n.next(), ), )"
+}

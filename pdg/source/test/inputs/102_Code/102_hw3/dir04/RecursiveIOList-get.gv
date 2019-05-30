@@ -1,0 +1,5 @@
+digraph G {
+"4 : this.head = null"
+"4 : this.head = null" -> "81 : getHelper(this.head, index, )"
+"81 : getHelper(this.head, index, )"
+}

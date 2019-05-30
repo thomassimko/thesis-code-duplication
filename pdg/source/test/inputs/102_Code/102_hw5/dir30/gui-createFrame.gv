@@ -1,0 +1,9 @@
+digraph G {
+"17 : this.feedReader = null"
+"18 : this.sourceField = null"
+"19 : this.itemArea = null"
+"20 : this.sourceArea = null"
+"33 : this.setSize(650, 750, )"
+"34 : this.setResizable(false, )"
+"35 : this.setDefaultCloseOperation(EXIT_ON_CLOSE, )"
+}

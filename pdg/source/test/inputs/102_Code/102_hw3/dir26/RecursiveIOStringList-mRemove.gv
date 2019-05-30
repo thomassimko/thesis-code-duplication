@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.first = new RIOEmpty()"
+"58 : index == 1"
+"59 : remove = getValue()"
+"60 : r.setNext(getNext(), )"
+"63 : mRemove(index - 1, r.getNext(), )"
+}

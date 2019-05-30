@@ -1,0 +1,33 @@
+digraph G {
+"11 : this.textField = null"
+"12 : this.reader = null"
+"13 : this.textArea = null"
+"22 : str = null"
+"22 : str = null" -> "23 : str = this.textField.getText()" [style=dashed]
+"23 : str = this.textField.getText()"
+"23 : str = this.textField.getText()" -> "24 : this.reader.getSources().add(str, )"
+"24 : this.reader.getSources().add(str, )"
+"25 : this.textField.setText(\"\", )"
+"26 : this.textArea.setText(\"\", )"
+"27 : compare = new SourceComparator()"
+"27 : compare = new SourceComparator()" -> "28 : Collections.sort(this.reader.getSources(), compare, )"
+"28 : Collections.sort(this.reader.getSources(), compare, )"
+"29 : size = size()"
+"29 : size = size()" -> "30 : i < size"
+"30 : i = 0"
+"30 : i = 0" -> "31 : this.textArea.append(get(i, ) + \"\n\", )"
+"30 : i = 0" -> "30 : i = i + 1"
+"30 : i = 0" -> "30 : @temp1 = i"
+"30 : i = 0" -> "30 : i < size"
+"30 : i = 0" -> "30 : i = i + 1" [style=dashed]
+"30 : i < size"
+"31 : this.textArea.append(get(i, ) + \"\n\", )"
+"30 : @temp1 = i"
+"30 : @temp1 = i" -> "30 : @temp1 = i" [style=dashed]
+"30 : i = i + 1"
+"30 : i = i + 1" -> "31 : this.textArea.append(get(i, ) + \"\n\", )"
+"30 : i = i + 1" -> "30 : i = i + 1"
+"30 : i = i + 1" -> "30 : @temp1 = i"
+"30 : i = i + 1" -> "30 : i < size"
+"30 : i = i + 1" -> "30 : i = i + 1" [style=dashed]
+}

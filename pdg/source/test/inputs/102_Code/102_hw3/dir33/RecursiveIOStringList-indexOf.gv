@@ -1,0 +1,5 @@
+digraph G {
+"5 : this.head = null"
+"5 : this.head = null" -> "146 : indexOfHelper(element, this.head, )"
+"146 : indexOfHelper(element, this.head, )"
+}

@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.head = null"
+"4 : this.head = null" -> "29 : this.head = add(index, element, )" [style=dashed]
+"23 : index < 0 || index > size()"
+"25 : new IndexOutOfBoundsException()"
+"29 : this.head = add(index, element, )"
+}

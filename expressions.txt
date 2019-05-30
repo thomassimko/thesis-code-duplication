@@ -1,34 +1,1045 @@
-function test1 from class TestCase9
+function getString from class ROONode
+this.string = null
+this.next = null
 
-sum = 0
+
+function getNext from class ROONode
+this.string = null
+this.next = null
+
+
+function setNext from class ROONode
+this.string = null
+this.next = null
+
+this.next = n
+
+function constructor1 from class ROONode
+this.string = null
+this.next = null
+
+this.string = string
+this.next = next
+
+function addToEnd from class ROONode
+this.string = null
+this.next = null
+
+this.next = addToEnd(element, )
+this
+
+function add from class ROONode
+this.string = null
+this.next = null
+
+index != 0
+
+this.next = add(index - 1, element, )
+this
+
+newNode = new ROONode(element, this, )
+
+
+function remove from class ROONode
+this.string = null
+this.next = null
+
+index < 0
+
+new IndexOutOfBoundsException()
+
+index == 0
+
+
+this.next = remove(index - 1, )
+this
+
+
+
+function get from class ROONode
+this.string = null
+this.next = null
+
+index < 0
+
+new IndexOutOfBoundsException()
+
+index != 0
+
+get(index - 1, )
+
+
+
+
+function indexOf from class ROONode
+this.string = null
+this.next = null
+
+equals(element, )
+
+0
+
+indexOf(element, ) == 1
+
+new NoSuchElementException()
+
+1 + indexOf(element, )
+
+
+function size from class ROONode
+this.string = null
+this.next = null
+
+1 + size()
+
+function toLowerCase from class ROONode
+this.string = null
+this.next = null
+
+newList = toLowerCase()
+newList.add(0, toLowerCase(), )
+
+function toUpperCase from class ROONode
+this.string = null
+this.next = null
+
+newList = toUpperCase()
+newList.add(0, toUpperCase(), )
+
+function startsWith from class ROONode
+this.string = null
+this.next = null
+
+newList = startsWith(prefix, )
+startsWith(prefix, )
+
+newList.add(0, this.string, )
+
+
+function hasSubstring from class ROONode
+this.string = null
+this.next = null
+
+newList = hasSubstring(substring, )
+contains(substring, )
+
+newList.add(0, this.string, )
+
+
+function constructor1 from class RecursiveOOStringList
+this.node = null
+
+this.node = new ROOEmpty()
+
+function addToEnd from class RecursiveOOStringList
+this.node = null
+
+this.node = this.node.addToEnd(element, )
+
+function add from class RecursiveOOStringList
+this.node = null
+
+this.node = this.node.add(index, element, )
+
+function remove from class RecursiveOOStringList
+this.node = null
+
+this.node = remove(index, )
+
+function get from class RecursiveOOStringList
+this.node = null
+
+this.node.get(index, )
+
+function indexOf from class RecursiveOOStringList
+this.node = null
+
+this.node.indexOf(element, )
+
+function size from class RecursiveOOStringList
+this.node = null
+
+this.node.size()
+
+function toLowerCase from class RecursiveOOStringList
+this.node = null
+
+this.node.toLowerCase()
+
+function toUpperCase from class RecursiveOOStringList
+this.node = null
+
+this.node.toUpperCase()
+
+function startsWith from class RecursiveOOStringList
+this.node = null
+
+this.node.startsWith(prefix, )
+
+function hasSubstring from class RecursiveOOStringList
+this.node = null
+
+this.node.hasSubstring(substring, )
+
+function main from class TestCasesPart2
+
+list = new RecursiveOOStringList()
+list.addToEnd("Number one", )
+list.addToEnd("Number two", )
+Check.check(list.size(), 2, )
+list.add(1, "in between", )
+Check.check(list.size(), 3, )
+Check.check(list.get(0, ), "Number one", )
+Check.check(list.get(1, ), "in between", )
+Check.check(list.get(2, ), "Number two", )
+Check.check(list.indexOf("Number one", ), 0, )
+Check.check(list.indexOf("Number two", ), 2, )
+list.remove(1, )
+Check.check(list.size(), 2, )
+Check.check(list.get(0, ), "Number one", )
+Check.check(list.get(1, ), "Number two", )
+Check.check(list.indexOf("Number one", ), 0, )
+Check.check(list.indexOf("Number two", ), 1, )
+uppercaseList = list.toUpperCase()
+lowercaseList = list.toLowerCase()
+Check.check(uppercaseList.size(), 2, )
+Check.check(lowercaseList.size(), 2, )
+Check.check(uppercaseList.get(0, ), "NUMBER ONE", )
+Check.check(lowercaseList.get(0, ), "number one", )
+Check.check(uppercaseList.get(1, ), "NUMBER TWO", )
+Check.check(lowercaseList.get(1, ), "number two", )
+test = lowercaseList.startsWith("number", )
+Check.check(test.get(0, ), "number one", )
+Check.check(test.get(1, ), "number two", )
+Check.check(test.size(), 2, )
+test2 = lowercaseList.startsWith("number o", )
+Check.check(test.get(0, ), "number one", )
+Check.check(test2.size(), 1, )
+test3 = lowercaseList.hasSubstring("er", )
+Check.check(test.get(0, ), "number one", )
+Check.check(test.get(1, ), "number two", )
+Check.check(test3.size(), 2, )
+test4 = lowercaseList.hasSubstring("wo", )
+Check.check(test.get(1, ), "number two", )
+Check.check(test4.size(), 1, )
+list.remove(0, )
+Check.check(list.size(), 1, )
+Check.check(list.get(0, ), "Number two", )
+
+function getString from class RIONode
+this.string = null
+this.next = null
+
+
+function constructor1 from class RIONode
+this.string = null
+this.next = null
+
+this.string = string
+this.next = next
+
+function getNext from class RIONode
+this.string = null
+this.next = null
+
+
+function setNext from class RIONode
+this.string = null
+this.next = null
+
+this.next = n
+
+function constructor1 from class IterativeStringList
+this.node = null
+
+this.node = null
+
+function addToEnd from class IterativeStringList
+this.node = null
+
+n = new IterativeNode(element, null, )
+this.node == null
+
+this.node = n
+
+cur = this.node
+cur.getNext() != null
+
+cur = cur.getNext()
+cur.getNext() != null
+
+cur.setNext(n, )
+
+
+function add from class IterativeStringList
+this.node = null
+
+this.node == null
+
+index == 0
+
+this.node = new IterativeNode(element, null, )
+
+new IndexOutOfBoundsException()
+
+
+index == 0
+
+this.node.setNext(new IterativeNode(element, this.node, ), )
+
+index < 0
+
+new IndexOutOfBoundsException()
+
+cur = this.node
+i = 0
+
+i = 1
+
+i < index && cur != null
+
+cur = cur.getNext()
+@temp1 = i
+i = i + 1
+
+cur == null && i != index
+
+new IndexOutOfBoundsException()
+
+cur.setNext(new IterativeNode(element, cur.getNext(), ), )
+
+
+
+
+
+function remove from class IterativeStringList
+this.node = null
+
+this.node == null || index < 0
+
+new IndexOutOfBoundsException()
+
+index == 0
+
+string = getString()
+this.node = getNext()
+
+cur = this.node
+
+i = 1
+
+i < index && cur != null
+
+cur = cur.getNext()
+@temp2 = i
+i = i + 1
+
+cur == null || cur.getNext() == null
+
+new IndexOutOfBoundsException()
+
+string = getString()
+cur.setNext(getNext(), )
+
+
+
+
+function get from class IterativeStringList
+this.node = null
+
+curIndex = 0
+cur = this.node
+this.node == null || index < 0
+
+new IndexOutOfBoundsException()
+
+cur != null && curIndex < index
+
+cur = cur.getNext()
+@temp3 = curIndex
+curIndex = curIndex + 1
+cur != null && curIndex < index
+
+cur == null
+
+new IndexOutOfBoundsException()
+
+cur.getString()
+
+
+
+function indexOf from class IterativeStringList
+this.node = null
+
+cur = this.node
+index = 0
+cur == null
+
+new NoSuchElementException()
+
+cur != null && element.equals(cur.getString(), )
+
+cur = cur.getNext()
+@temp4 = index
+index = index + 1
+cur != null && element.equals(cur.getString(), )
+
+
+cur != null
+
+
+1
+
+function size from class IterativeStringList
+this.node = null
+
+cur = this.node
 count = 0
+cur != null
+
+cur = cur.getNext()
+@temp5 = count
+count = count + 1
+cur != null
+
+
+function toLowerCase from class IterativeStringList
+this.node = null
+
+cur = this.node
+newList = new IterativeStringList()
+cur != null
+
+newList.addToEnd(toLowerCase(), )
+cur = cur.getNext()
+cur != null
+
+
+function toUpperCase from class IterativeStringList
+this.node = null
+
+cur = this.node
+newList = new IterativeStringList()
+cur != null
+
+newList.addToEnd(toUpperCase(), )
+cur = cur.getNext()
+cur != null
+
+
+function startsWith from class IterativeStringList
+this.node = null
+
+cur = this.node
+newList = new IterativeStringList()
+cur != null
+
+startsWith(prefix, )
+
+
+newList.addToEnd(toUpperCase(), )
+
+cur = cur.getNext()
+cur != null
+
+function hasSubstring from class IterativeStringList
+this.node = null
+
+cur = this.node
+newList = new IterativeStringList()
+cur != null
+
+contains(substring, )
+
+
+newList.addToEnd(cur.getString(), )
+
+cur = cur.getNext()
+cur != null
+
+function main from class TestCases
+
+iter = new IterativeStringList()
+iter.addToEnd("Test1", )
+iter.addToEnd("Test2", )
+iter.add(1, "Test in between", )
+Check.check(iter.size(), 3, )
+iter.remove(0, )
+Check.check(iter.size(), 2, )
+Check.check(iter.get(0, ), "Test in between", )
+Check.check(iter.get(1, ), "Test2", )
+Check.check(iter.indexOf("Test in between", ), 0, )
+Check.check(iter.indexOf("Test2", ), 1, )
+newLowerCaseList = iter.toLowerCase()
+Check.check(newLowerCaseList.get(0, ), "test in between", )
+Check.check(newLowerCaseList.get(1, ), "test2", )
+Check.check(newLowerCaseList.indexOf("test in between", ), 0, )
+Check.check(newLowerCaseList.indexOf("test2", ), 1, )
+newUpperCaseList = iter.toUpperCase()
+Check.check(newUpperCaseList.get(0, ), "TEST IN BETWEEN", )
+Check.check(newUpperCaseList.get(1, ), "TEST2", )
+Check.check(newUpperCaseList.indexOf("TEST IN BETWEEN", ), 0, )
+Check.check(newUpperCaseList.indexOf("TEST2", ), 1, )
+test = newLowerCaseList.startsWith("test", )
+Check.check(test.size(), 2, )
+test2 = newLowerCaseList.startsWith("test2", )
+Check.check(test2.size(), 1, )
+test3 = newLowerCaseList.hasSubstring("en", )
+Check.check(test3.size(), 1, )
+test4 = newLowerCaseList.hasSubstring("e", )
+Check.check(test4.size(), 2, )
+iter.remove(1, )
+Check.check(iter.size(), 1, )
+Check.check(iter.get(0, ), "Test in between", )
+
+function main from class TestCasesPart3
+
+list = new RecursiveIOStringList()
+list.addToEnd("Number one", )
+list.addToEnd("Number two", )
+Check.check(list.size(), 2, )
+list.add(1, "in between", )
+Check.check(list.size(), 3, )
+Check.check(list.get(0, ), "Number one", )
+Check.check(list.get(1, ), "in between", )
+Check.check(list.get(2, ), "Number two", )
+Check.check(list.indexOf("Number one", ), 0, )
+Check.check(list.indexOf("in between", ), 1, )
+Check.check(list.indexOf("Number two", ), 2, )
+list.remove(1, )
+Check.check(list.size(), 2, )
+Check.check(list.get(0, ), "Number one", )
+Check.check(list.get(1, ), "Number two", )
+Check.check(list.indexOf("Number one", ), 0, )
+Check.check(list.indexOf("Number two", ), 1, )
+uppercaseList = list.toUpperCase()
+lowercaseList = list.toLowerCase()
+Check.check(uppercaseList.size(), 2, )
+Check.check(lowercaseList.size(), 2, )
+Check.check(uppercaseList.get(0, ), "NUMBER ONE", )
+Check.check(lowercaseList.get(0, ), "number one", )
+Check.check(uppercaseList.get(1, ), "NUMBER TWO", )
+Check.check(lowercaseList.get(1, ), "number two", )
+test = lowercaseList.startsWith("number", )
+Check.check(test.get(0, ), "number one", )
+Check.check(test.get(1, ), "number two", )
+Check.check(test.size(), 2, )
+test2 = lowercaseList.startsWith("number o", )
+Check.check(test.get(0, ), "number one", )
+Check.check(test2.size(), 1, )
+test3 = lowercaseList.hasSubstring("er", )
+Check.check(test.get(0, ), "number one", )
+Check.check(test.get(1, ), "number two", )
+Check.check(test3.size(), 2, )
+test4 = lowercaseList.hasSubstring("wo", )
+Check.check(test.get(1, ), "number two", )
+Check.check(test4.size(), 1, )
+Check.check(test.size(), 2, )
+list.remove(0, )
+Check.check(list.size(), 1, )
+Check.check(list.get(0, ), "Number two", )
+
+function getString from class ROOEmpty
+
+new UnsupportedOperationException()
+
+function getNext from class ROOEmpty
+
+new UnsupportedOperationException()
+
+function addToEnd from class ROOEmpty
+
+newNode = new ROONode(element, this, )
+
+function add from class ROOEmpty
+
+index == 0
+
+newNode = new ROONode(element, this, )
+
+new IndexOutOfBoundsException()
+
+
+function remove from class ROOEmpty
+
+new UnsupportedOperationException()
+
+function get from class ROOEmpty
+
+new UnsupportedOperationException()
+
+function indexOf from class ROOEmpty
+
+1
+
+function size from class ROOEmpty
+
+0
+
+function toLowerCase from class ROOEmpty
+
+new RecursiveOOStringList()
+
+function toUpperCase from class ROOEmpty
+
+new RecursiveOOStringList()
+
+function startsWith from class ROOEmpty
+
+new RecursiveOOStringList()
+
+function hasSubstring from class ROOEmpty
+
+new RecursiveOOStringList()
+
+function constructor1 from class StringAndROONode
+this.string = null
+this.node = null
+
+this.string = string
+this.node = node
+
+function getString from class StringAndROONode
+this.string = null
+this.node = null
+
+
+function getNode from class StringAndROONode
+this.string = null
+this.node = null
+
+
+function constructor1 from class RecursiveIOStringList
+this.head = null
+
+this.head = new RIOEmpty()
+
+function addToEnd from class RecursiveIOStringList
+this.head = null
+
+node instanceof RIOEmpty
+
+n = new RIONode(element, node, )
+
+n = addToEnd(node.getNext(), element, )
+node.setNext(n, )
+
+
+function addToEnd from class RecursiveIOStringList
+this.head = null
+
+this.head = addToEnd(this.head, element, )
+
+function add from class RecursiveIOStringList
+this.head = null
+
+cur instanceof RIOEmpty
+
+index == 0
+
+new RIONode(element, cur, )
+
+new UnsupportedOperationException()
+
+
+cur instanceof RIONode
+
+index == 0
+
+new RIONode(element, cur, )
+
+index < 0
+
+new IndexOutOfBoundsException()
+
+n = add(index - 1, element, getNext(), )
+cur.setNext(n, )
+
+
+
+new IndexOutOfBoundsException()
+
+
+
+function add from class RecursiveIOStringList
+this.head = null
+
+this.head = add(index, element, this.head, )
+
+function remove from class RecursiveIOStringList
+this.head = null
+
+index < 0
+
+new IndexOutOfBoundsException()
+
+cur instanceof RIOEmpty
+
+index == 0
+
+new RIOEmpty()
+
+new UnsupportedOperationException()
+
+
+index == 0
+
+this.head = this.head.getNext()
+
+index == 1
+
+cur.setNext(getNext(), )
+cur.getNext()
+
+remove(index - 1, cur.getNext(), )
+
+
+
+
+function remove from class RecursiveIOStringList
+this.head = null
+
+remove(index, this.head, )
+
+function get from class RecursiveIOStringList
+this.head = null
+
+get(index, this.head, )
+
+function get from class RecursiveIOStringList
+this.head = null
+
+cur instanceof RIOEmpty
+
+new IndexOutOfBoundsException()
+
+cur instanceof RIONode
+
+index == 0
+
+cur.getString()
+
+get(index - 1, cur.getNext(), )
+
+
+new IndexOutOfBoundsException()
+
+
+
+function indexOf from class RecursiveIOStringList
+this.head = null
+
+indexOf(element, this.head, )
+
+function indexOf from class RecursiveIOStringList
+this.head = null
+
+cur instanceof RIOEmpty
+
+new UnsupportedOperationException()
+
+equals(element, )
+
+0
+
+1 + indexOf(element, cur.getNext(), )
+
+
+
+function size from class RecursiveIOStringList
+this.head = null
+
+head instanceof RIOEmpty
+
+0
+
+1 + size(head.getNext(), )
+
+
+function size from class RecursiveIOStringList
+this.head = null
+
+size(this.head, )
+
+function toLowerCase from class RecursiveIOStringList
+this.head = null
+
+cur instanceof RIOEmpty
+
+new RecursiveIOStringList()
+
+cur instanceof RIONode
+
+newList = toLowerCase(cur.getNext(), )
+newList.add(0, toLowerCase(), )
+
+new UnsupportedOperationException()
+
+
+
+function toLowerCase from class RecursiveIOStringList
+this.head = null
+
+toLowerCase(this.head, )
+
+function toUpperCase from class RecursiveIOStringList
+this.head = null
+
+cur instanceof RIOEmpty
+
+new RecursiveIOStringList()
+
+cur instanceof RIONode
+
+newList = toUpperCase(cur.getNext(), )
+newList.add(0, toUpperCase(), )
+
+new UnsupportedOperationException()
+
+
+
+function toUpperCase from class RecursiveIOStringList
+this.head = null
+
+toUpperCase(this.head, )
+
+function startsWith from class RecursiveIOStringList
+this.head = null
+
+cur instanceof RIOEmpty
+
+new RecursiveIOStringList()
+
+cur instanceof RIONode
+
+newList = startsWith(prefix, cur.getNext(), )
+startsWith(prefix, )
+
+newList.add(0, cur.getString(), )
+
+
+new UnsupportedOperationException()
+
+
+
+function startsWith from class RecursiveIOStringList
+this.head = null
+
+startsWith(prefix, this.head, )
+
+function hasSubstring from class RecursiveIOStringList
+this.head = null
+
+cur instanceof RIOEmpty
+
+new RecursiveIOStringList()
+
+newList = hasSubstring(substring, cur.getNext(), )
+contains(substring, )
+
+newList.add(0, cur.getString(), )
+
+
+
+function hasSubstring from class RecursiveIOStringList
+this.head = null
+
+hasSubstring(substring, this.head, )
+
+function constructor1 from class IterativeNode
+this.string = null
+this.next = null
+
+this.string = string
+this.next = next
+
+function setNext from class IterativeNode
+this.string = null
+this.next = null
+
+this.next = n
+
+function getNext from class IterativeNode
+this.string = null
+this.next = null
+
+
+function getString from class IterativeNode
+this.string = null
+this.next = null
+
+
+function check from class Check
+
+isError(checkit(result, expected, ), Double.toString(result, ), Double.toString(expected, ), )
+
+function check from class Check
+
+isError(checkit(result, expected, ), Integer.toString(result, ), Integer.toString(expected, ), )
+
+function check from class Check
+
+isError(checkit(result, expected, ), Boolean.toString(result, ), Boolean.toString(expected, ), )
+
+function check from class Check
+
+isError(checkit(result, expected, ), "'" + result + "'", "'" + expected + "'", )
+
+function check from class Check
+
+isError(checkit(result, expected, ), "\"" + result + "\"", "\"" + expected + "\"", )
+
+function check from class Check
+
+result == null || expected == null || result.length != expected.length
+
+isError(false, Arrays.toString(result, ), Arrays.toString(expected, ), )
+
 
 i = 0
 
-i < 3
+i < result.length
 
-sum = sum + arr[i]
-@temp38 = count
-count = count + 1
-@temp39 = i
+isError(checkit(result[i], expected[i], ), Arrays.toString(result, ) + " (at index " + i + ")", Arrays.toString(expected, ), )
+@temp6 = i
 i = i + 1
 
-average = sum * 1.0 / count
 
-function test2 from class TestCase9
 
-sum = 0
-count = 0
+function check from class Check
+
+result == null || expected == null || result.length != expected.length
+
+isError(false, Arrays.toString(result, ), Arrays.toString(expected, ), )
+
 
 i = 0
 
-3 > i
+i < result.length
 
-sum = sum + arr[i]
-@temp40 = count
-count = count + 1
-@temp41 = i
+isError(checkit(result[i], expected[i], ), Arrays.toString(result, ) + " (at index " + i + ")", Arrays.toString(expected, ), )
+@temp7 = i
 i = i + 1
 
-average = sum * 1.0 / count
+
+
+function check from class Check
+
+result == null || expected == null || result.length != expected.length
+
+isError(false, Arrays.toString(result, ), Arrays.toString(expected, ), )
+
+
+i = 0
+
+i < result.length
+
+isError(checkit(result[i], expected[i], ), Arrays.toString(result, ) + " (at index " + i + ")", Arrays.toString(expected, ), )
+@temp8 = i
+i = i + 1
+
+
+
+function check from class Check
+
+result == null || expected == null || result.length != expected.length
+
+isError(false, Arrays.toString(result, ), Arrays.toString(expected, ), )
+
+
+i = 0
+
+i < result.length
+
+isError(checkit(result[i], expected[i], ), Arrays.toString(result, ) + " (at index " + i + ")", Arrays.toString(expected, ), )
+@temp9 = i
+i = i + 1
+
+
+
+function check from class Check
+
+result == null || expected == null || result.length != expected.length
+
+isError(false, Arrays.toString(result, ), Arrays.toString(expected, ), )
+
+
+i = 0
+
+i < result.length
+
+isError(checkit(result[i], expected[i], ), Arrays.toString(result, ) + " (at index " + i + ")", Arrays.toString(expected, ), )
+@temp10 = i
+i = i + 1
+
+
+
+function checkit from class Check
+
+epsilon = 1.0E-4
+result < expected + epsilon && result > expected - epsilon
+
+function checkit from class Check
+
+result == expected
+
+function checkit from class Check
+
+result == expected
+
+function checkit from class Check
+
+result == expected
+
+function checkit from class Check
+
+result != null && expected != null && result.equals(expected, )
+
+function isError from class Check
+
+
+System.err.println(errorMessage(result, expected, ), )
+
+
+function getLineNumber from class Check
+
+trace = getStackTrace()
+trace.length > 4
+
+getLineNumber()
+
+1
+
+
+function errorMessage from class Check
+
+line = getLineNumber()
+"Test failed on line " + line + ".  Expected " + expected + ", result was " + result
+
+function main from class Check
+
+Check.check(1, 1, )
+Check.check(1, 2, )
+Check.check(1.2, 1.2, )
+Check.check(1.2, 1.7, )
+Check.check("abc", "abc", )
+Check.check("abc", "def", )
+Check.check(', ', )
+Check.check(', ', )
+Check.check({1, 2, }, {1, 2, }, )
+Check.check({1, 2, }, {2, 3, }, )
+Check.check({1, 2, }, {2, 3, 4, }, )
+Check.check({"abc", "xyz", }, {"abc", }, )
+
+function getString from class RIOEmpty
+
+new UnsupportedOperationException()
+
+function getNext from class RIOEmpty
+
+new UnsupportedOperationException()
+
+function setNext from class RIOEmpty
+
+new UnsupportedOperationException()
 

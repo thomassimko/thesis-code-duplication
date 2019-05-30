@@ -1,0 +1,10 @@
+digraph G {
+"16 : this.storedExpensesList = new ArrayList()"
+"343 : scans = null"
+"346 : scans = readFile()"
+"346 : scans = readFile()" -> "354 : menu(scans, )"
+"347 : System.out.println(\"File Loaded\", )"
+"354 : menu(scans, )"
+"351 : this.storedExpensesList.clear()"
+"352 : System.out.println(\"File Loaded\", )"
+}

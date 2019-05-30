@@ -1,0 +1,27 @@
+digraph G {
+"19 : this.expenseList = new LinkedList()"
+"124 : System.out.println(\"\", )"
+"126 : i = 0"
+"126 : i = 0" -> "126 : i < this.expenseList.size()"
+"126 : i = 0" -> "126 : @temp1 = i"
+"126 : i = 0" -> "126 : i = i + 1"
+"126 : i = 0" -> "128 : expense = this.expenseList.get(i, )"
+"126 : i = 0" -> "126 : i = i + 1" [style=dashed]
+"126 : i < this.expenseList.size()"
+"128 : expense = this.expenseList.get(i, )"
+"128 : expense = this.expenseList.get(i, )" -> "129 : expense instanceof InFull"
+"128 : expense = this.expenseList.get(i, )" -> "133 : expense instanceof Partial"
+"128 : expense = this.expenseList.get(i, )" -> "128 : expense = this.expenseList.get(i, )" [style=dashed]
+"129 : expense instanceof InFull"
+"131 : System.out.println(expense.toString(), )"
+"133 : expense instanceof Partial"
+"135 : System.out.println(expense.toString(), )"
+"126 : @temp1 = i"
+"126 : @temp1 = i" -> "126 : @temp1 = i" [style=dashed]
+"126 : i = i + 1"
+"126 : i = i + 1" -> "126 : i < this.expenseList.size()"
+"126 : i = i + 1" -> "126 : @temp1 = i"
+"126 : i = i + 1" -> "126 : i = i + 1"
+"126 : i = i + 1" -> "128 : expense = this.expenseList.get(i, )"
+"126 : i = i + 1" -> "126 : i = i + 1" [style=dashed]
+}

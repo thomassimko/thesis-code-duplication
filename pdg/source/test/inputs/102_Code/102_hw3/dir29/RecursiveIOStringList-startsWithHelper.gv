@@ -1,0 +1,8 @@
+digraph G {
+"3 : this.first = new RIOEmpty()"
+"154 : cur instanceof RIOEmpty"
+"155 : new RIOEmpty()"
+"156 : startsWith(start, )"
+"157 : new RIONode(cur.getString(), substringHelper(cur.getNext(), start, ), )"
+"158 : substringHelper(cur.getNext(), start, )"
+}

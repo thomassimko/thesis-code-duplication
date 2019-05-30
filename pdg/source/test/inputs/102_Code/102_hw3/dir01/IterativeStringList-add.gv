@@ -1,0 +1,30 @@
+digraph G {
+"5 : this.node = null"
+"5 : this.node = null" -> "23 : n = this.node"
+"5 : this.node = null" -> "26 : this.node = new IterativeNode(element, )" [style=dashed]
+"23 : n = this.node"
+"23 : n = this.node" -> "33 : n == null"
+"23 : n = this.node" -> "27 : this.node.setNext(n, )"
+"23 : n = this.node" -> "34 : n = n.next()" [style=dashed]
+"24 : index == 0"
+"26 : this.node = new IterativeNode(element, )"
+"27 : this.node.setNext(n, )"
+"31 : i = index - 1"
+"31 : i = index - 1" -> "31 : i > 0"
+"31 : i = index - 1" -> "31 : i = i - 1"
+"31 : i = index - 1" -> "31 : i = i - 1" [style=dashed]
+"31 : i > 0"
+"33 : n == null"
+"36 : nn = n.next()"
+"36 : nn = n.next()" -> "38 : n.next().setNext(nn, )"
+"37 : n.setNext(new IterativeNode(element, ), )"
+"38 : n.next().setNext(nn, )"
+"33 : new NoSuchElementException()"
+"34 : n = n.next()"
+"34 : n = n.next()" -> "33 : n == null"
+"34 : n = n.next()" -> "34 : n = n.next()" [style=dashed]
+"31 : i = i - 1"
+"31 : i = i - 1" -> "31 : i > 0"
+"31 : i = i - 1" -> "31 : i = i - 1"
+"31 : i = i - 1" -> "31 : i = i - 1" [style=dashed]
+}

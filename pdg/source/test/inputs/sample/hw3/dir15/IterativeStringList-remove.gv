@@ -1,0 +1,42 @@
+digraph G {
+"7 : this.head = null"
+"7 : this.head = null" -> "94 : cur = this.head"
+"7 : this.head = null" -> "85 : this.head = null" [style=dashed]
+"81 : tmp = null"
+"81 : tmp = null" -> "84 : tmp = getValue()" [style=dashed]
+"81 : tmp = null" -> "103 : tmp = cur.getValue()" [style=dashed]
+"82 : index == 0"
+"84 : tmp = getValue()"
+"85 : this.head = null"
+"88 : index < 0"
+"90 : new IndexOutOfBoundsException()"
+"94 : cur = this.head"
+"94 : cur = this.head" -> "99 : cur == null"
+"94 : cur = this.head" -> "97 : cur = cur.getNext()"
+"94 : cur = this.head" -> "104 : cur.setNext(getNext(), )"
+"94 : cur = this.head" -> "103 : tmp = cur.getValue()"
+"94 : cur = this.head" -> "97 : cur = cur.getNext()" [style=dashed]
+"95 : i = 1"
+"95 : i = 1" -> "95 : @temp2 = i"
+"95 : i = 1" -> "95 : i < index"
+"95 : i = 1" -> "95 : i = i + 1"
+"95 : i = 1" -> "95 : i = i + 1" [style=dashed]
+"95 : i < index"
+"97 : cur = cur.getNext()"
+"97 : cur = cur.getNext()" -> "99 : cur == null"
+"97 : cur = cur.getNext()" -> "97 : cur = cur.getNext()"
+"97 : cur = cur.getNext()" -> "104 : cur.setNext(getNext(), )"
+"97 : cur = cur.getNext()" -> "103 : tmp = cur.getValue()"
+"97 : cur = cur.getNext()" -> "97 : cur = cur.getNext()" [style=dashed]
+"95 : @temp2 = i"
+"95 : @temp2 = i" -> "95 : @temp2 = i" [style=dashed]
+"95 : i = i + 1"
+"95 : i = i + 1" -> "95 : @temp2 = i"
+"95 : i = i + 1" -> "95 : i < index"
+"95 : i = i + 1" -> "95 : i = i + 1"
+"95 : i = i + 1" -> "95 : i = i + 1" [style=dashed]
+"99 : cur == null"
+"101 : new NullPointerException()"
+"103 : tmp = cur.getValue()"
+"104 : cur.setNext(getNext(), )"
+}

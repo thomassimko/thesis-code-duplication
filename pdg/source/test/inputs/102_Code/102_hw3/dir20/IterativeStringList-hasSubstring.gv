@@ -1,0 +1,18 @@
+digraph G {
+"6 : this.head = null"
+"6 : this.head = null" -> "238 : cur = this.head"
+"238 : cur = this.head"
+"238 : cur = this.head" -> "241 : cur != null"
+"238 : cur = this.head" -> "248 : cur = cur.getNext()" [style=dashed]
+"239 : hasSub = new IterativeStringList()"
+"241 : cur != null"
+"243 : v = cur.getString()"
+"243 : v = cur.getString()" -> "246 : hasSub.addToEnd(v, )"
+"243 : v = cur.getString()" -> "243 : v = cur.getString()" [style=dashed]
+"244 : v.contains(substring, )"
+"246 : hasSub.addToEnd(v, )"
+"248 : cur = cur.getNext()"
+"248 : cur = cur.getNext()" -> "241 : cur != null"
+"248 : cur = cur.getNext()" -> "248 : cur = cur.getNext()" [style=dashed]
+"241 : cur != null"
+}

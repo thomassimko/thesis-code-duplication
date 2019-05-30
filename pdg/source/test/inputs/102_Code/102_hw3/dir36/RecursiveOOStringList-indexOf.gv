@@ -1,0 +1,4 @@
+digraph G {
+"5 : this.head = null"
+"40 : i = this.head.indexOf(element, )"
+}

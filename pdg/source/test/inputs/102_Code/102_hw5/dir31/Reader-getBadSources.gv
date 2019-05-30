@@ -1,0 +1,8 @@
+digraph G {
+"24 : this.documents = new ArrayList()"
+"25 : this.sources = new ArrayList()"
+"26 : this.items = new ArrayList()"
+"27 : this.badSources = new ArrayList()"
+"27 : this.badSources = new ArrayList()" -> "109 : Collections.sort(this.badSources, new SourceComparator(), )"
+"109 : Collections.sort(this.badSources, new SourceComparator(), )"
+}

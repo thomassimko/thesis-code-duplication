@@ -1,0 +1,9 @@
+digraph G {
+"4 : this.str = null"
+"5 : this.next = null"
+"102 : str = getString()"
+"102 : str = getString()" -> "106 : list.add(0, str, )"
+"103 : list = startsWith(prefix, )"
+"104 : str.startsWith(prefix, )"
+"106 : list.add(0, str, )"
+}

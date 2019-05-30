@@ -1,0 +1,15 @@
+digraph G {
+"3 : this.head = null"
+"109 : value = null"
+"109 : value = null" -> "118 : value = cur.getValue()" [style=dashed]
+"109 : value = null" -> "122 : value = get(index - 1, cur.getNext(), )" [style=dashed]
+"110 : cur instanceof RIOEmpty"
+"112 : new IndexOutOfBoundsException()"
+"114 : cur instanceof RIONode"
+"116 : index == 0"
+"118 : value = cur.getValue()"
+"118 : value = cur.getValue()" -> "122 : value = get(index - 1, cur.getNext(), )" [style=dashed]
+"122 : value = get(index - 1, cur.getNext(), )"
+"122 : value = get(index - 1, cur.getNext(), )" -> "122 : value = get(index - 1, cur.getNext(), )" [style=dashed]
+"123 : get(index - 1, cur.getNext(), )"
+}

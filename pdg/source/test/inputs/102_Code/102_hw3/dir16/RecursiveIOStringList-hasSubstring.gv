@@ -1,0 +1,12 @@
+digraph G {
+"6 : this.head = null"
+"199 : cur instanceof RIOEmpty"
+"201 : new RecursiveIOStringList()"
+"204 : newList = hasSubstring(substring, getNext(), )"
+"204 : newList = hasSubstring(substring, getNext(), )" -> "204 : newList = hasSubstring(substring, getNext(), )" [style=dashed]
+"205 : checkString = getString()"
+"205 : checkString = getString()" -> "209 : newList.add(0, checkString, )"
+"205 : checkString = getString()" -> "205 : checkString = getString()" [style=dashed]
+"207 : checkString.contains(substring, )"
+"209 : newList.add(0, checkString, )"
+}

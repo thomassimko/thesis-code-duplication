@@ -1,0 +1,6 @@
+digraph G {
+"4 : this.first = new RIOEmpty()"
+"22 : r.getNext() instanceof RIOEmpty"
+"23 : r.setNext(new RIONode(element, r.getNext(), ), )"
+"25 : mAddToEnd(r.getNext(), element, )"
+}

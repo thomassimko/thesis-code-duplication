@@ -1,0 +1,7 @@
+digraph G {
+"11 : lft.getdDollarAmnt() == rht.getdDollarAmnt() && lft.getCentAmnt() == rht.getCentAmnt()"
+"13 : 0"
+"15 : lft.getdDollarAmnt() > rht.getdDollarAmnt() || lft.getCentAmnt() > rht.getCentAmnt() && lft.getdDollarAmnt() == rht.getdDollarAmnt()"
+"17 : 1"
+"19 : 1"
+}

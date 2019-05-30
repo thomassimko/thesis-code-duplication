@@ -1,0 +1,28 @@
+digraph G {
+"4 : this.first = null"
+"4 : this.first = null" -> "34 : cur = this.first"
+"4 : this.first = null" -> "32 : this.first = new IterativeNode(element, this.first, )"
+"4 : this.first = null" -> "32 : this.first = new IterativeNode(element, this.first, )" [style=dashed]
+"29 : index < 0 || index > size()"
+"30 : new IndexOutOfBoundsException()"
+"31 : index == 0"
+"32 : this.first = new IterativeNode(element, this.first, )"
+"34 : cur = this.first"
+"34 : cur = this.first" -> "36 : cur = cur.getNext()" [style=dashed]
+"35 : i = 1"
+"35 : i = 1" -> "35 : i = i + 1"
+"35 : i = 1" -> "35 : i < index"
+"35 : i = 1" -> "35 : @temp2 = i"
+"35 : i = 1" -> "35 : i = i + 1" [style=dashed]
+"35 : i < index"
+"36 : cur = cur.getNext()"
+"36 : cur = cur.getNext()" -> "36 : cur = cur.getNext()" [style=dashed]
+"35 : @temp2 = i"
+"35 : @temp2 = i" -> "35 : @temp2 = i" [style=dashed]
+"35 : i = i + 1"
+"35 : i = i + 1" -> "35 : i = i + 1"
+"35 : i = i + 1" -> "35 : i < index"
+"35 : i = i + 1" -> "35 : @temp2 = i"
+"35 : i = i + 1" -> "35 : i = i + 1" [style=dashed]
+"38 : cur.setNext(new IterativeNode(element, cur.getNext(), ), )"
+}

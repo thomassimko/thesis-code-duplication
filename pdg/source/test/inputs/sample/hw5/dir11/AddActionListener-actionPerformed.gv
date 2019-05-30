@@ -1,0 +1,15 @@
+digraph G {
+"13 : this.feed = null"
+"14 : this.tF = null"
+"15 : this.sources = null"
+"16 : this.feedList = new LinkedList()"
+"16 : this.feedList = new LinkedList()" -> "33 : Collections.sort(this.feedList, new SourceComparator(), )"
+"16 : this.feedList = new LinkedList()" -> "35 : f = this.feedList"
+"29 : this.feedList.add(this.tF.getText(), )"
+"31 : this.sources.setText(\"\", )"
+"33 : Collections.sort(this.feedList, new SourceComparator(), )"
+"35 : f = this.feedList"
+"35 : f = this.feedList" -> "37 : this.sources.append(f + \"\n\", )"
+"35 : f = this.feedList" -> "35 : f = this.feedList" [style=dashed]
+"37 : this.sources.append(f + \"\n\", )"
+}

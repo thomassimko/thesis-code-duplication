@@ -1,0 +1,11 @@
+digraph G {
+"16 : this.list = null"
+"16 : this.list = null" -> "22 : this.list = new ArrayList()" [style=dashed]
+"17 : this.badSources = null"
+"17 : this.badSources = null" -> "23 : this.badSources = new ArrayList()" [style=dashed]
+"18 : this.RSSItemList = null"
+"18 : this.RSSItemList = null" -> "24 : this.RSSItemList = new ArrayList()" [style=dashed]
+"22 : this.list = new ArrayList()"
+"23 : this.badSources = new ArrayList()"
+"24 : this.RSSItemList = new ArrayList()"
+}

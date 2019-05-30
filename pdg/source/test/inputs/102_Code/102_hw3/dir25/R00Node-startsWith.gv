@@ -1,0 +1,8 @@
+digraph G {
+"5 : this.value = null"
+"5 : this.value = null" -> "124 : knew.add(0, this.value, )"
+"6 : this.next = null"
+"121 : knew = this.next.startsWith(prefix, )"
+"122 : startsWith(prefix, )"
+"124 : knew.add(0, this.value, )"
+}

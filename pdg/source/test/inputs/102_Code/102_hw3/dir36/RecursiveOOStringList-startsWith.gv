@@ -1,0 +1,5 @@
+digraph G {
+"5 : this.head = null"
+"66 : r = new RecursiveOOStringList()"
+"67 : r.changeHead(this.head.startsWith(prefix, ), )"
+}

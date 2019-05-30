@@ -1,0 +1,12 @@
+digraph G {
+"9 : this.date = null"
+"9 : this.date = null" -> "17 : this.date = Calendar.getInstance()" [style=dashed]
+"10 : this.link = null"
+"10 : this.link = null" -> "16 : this.link = link" [style=dashed]
+"11 : this.title = null"
+"11 : this.title = null" -> "15 : this.title = title" [style=dashed]
+"15 : this.title = title"
+"16 : this.link = link"
+"17 : this.date = Calendar.getInstance()"
+"18 : this.date.setTime(d, )"
+}

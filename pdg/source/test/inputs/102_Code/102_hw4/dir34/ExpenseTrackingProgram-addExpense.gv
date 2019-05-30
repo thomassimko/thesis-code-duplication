@@ -1,0 +1,90 @@
+digraph G {
+"20 : this.scan = null"
+"189 : cents = 0"
+"189 : cents = 0" -> "211 : cents = centsTemp.intValue()" [style=dashed]
+"189 : dollars2 = 0"
+"189 : dollars2 = 0" -> "234 : dollars2 = amount2.intValue()" [style=dashed]
+"189 : dollars2 = 0" -> "224 : dollars2 = 0" [style=dashed]
+"189 : cents2 = 0"
+"189 : cents2 = 0" -> "238 : cents2 = cents2Temp.intValue()" [style=dashed]
+"189 : cents2 = 0" -> "223 : cents2 = 0" [style=dashed]
+"189 : dollars = 0"
+"189 : dollars = 0" -> "207 : dollars = amount.intValue()" [style=dashed]
+"190 : dollarsTemp = null"
+"190 : dollarsTemp = null" -> "208 : dollarsTemp = new BigDecimal(dollars, )" [style=dashed]
+"190 : amount = null"
+"190 : amount = null" -> "204 : amount = scan.nextBigDecimal()" [style=dashed]
+"190 : centsTemp = null"
+"190 : centsTemp = null" -> "209 : centsTemp = amount.subtract(dollarsTemp, )" [style=dashed]
+"191 : paidTo = null"
+"191 : paidTo = null" -> "215 : paidTo = scan.nextLine()" [style=dashed]
+"191 : expCategory = null"
+"191 : expCategory = null" -> "219 : expCategory = scan.nextLine()" [style=dashed]
+"191 : expType = null"
+"191 : expType = null" -> "196 : expType = scan.nextLine()" [style=dashed]
+"191 : date = null"
+"191 : date = null" -> "199 : date = scan.next()" [style=dashed]
+"192 : e1 = null"
+"192 : e1 = null" -> "225 : e1 = new InFull(d1, dollars, cents, paidTo, expCategory, dollars2, cents2, )" [style=dashed]
+"192 : e1 = null" -> "240 : e1 = new Partial(d1, dollars, cents, paidTo, expCategory, dollars2, cents2, )" [style=dashed]
+"194 : System.out.print(\"Expense type (in-full, partial)? \", )"
+"195 : scan.nextLine()"
+"196 : expType = scan.nextLine()"
+"198 : System.out.print(\"Payment date: \", )"
+"199 : date = scan.next()"
+"199 : date = scan.next()" -> "201 : d1 = formatDate(date, )"
+"201 : d1 = formatDate(date, )"
+"201 : d1 = formatDate(date, )" -> "225 : e1 = new InFull(d1, dollars, cents, paidTo, expCategory, dollars2, cents2, )"
+"201 : d1 = formatDate(date, )" -> "240 : e1 = new Partial(d1, dollars, cents, paidTo, expCategory, dollars2, cents2, )"
+"203 : System.out.print(\"Expense Amount: \", )"
+"204 : amount = scan.nextBigDecimal()"
+"207 : dollars = amount.intValue()"
+"207 : dollars = amount.intValue()" -> "225 : e1 = new InFull(d1, dollars, cents, paidTo, expCategory, dollars2, cents2, )"
+"207 : dollars = amount.intValue()" -> "240 : e1 = new Partial(d1, dollars, cents, paidTo, expCategory, dollars2, cents2, )"
+"207 : dollars = amount.intValue()" -> "208 : dollarsTemp = new BigDecimal(dollars, )"
+"208 : dollarsTemp = new BigDecimal(dollars, )"
+"208 : dollarsTemp = new BigDecimal(dollars, )" -> "209 : centsTemp = amount.subtract(dollarsTemp, )"
+"209 : centsTemp = amount.subtract(dollarsTemp, )"
+"209 : centsTemp = amount.subtract(dollarsTemp, )" -> "210 : centsTemp = centsTemp.movePointRight(2, )" [style=dashed]
+"210 : centsTemp = centsTemp.movePointRight(2, )"
+"211 : cents = centsTemp.intValue()"
+"211 : cents = centsTemp.intValue()" -> "225 : e1 = new InFull(d1, dollars, cents, paidTo, expCategory, dollars2, cents2, )"
+"211 : cents = centsTemp.intValue()" -> "240 : e1 = new Partial(d1, dollars, cents, paidTo, expCategory, dollars2, cents2, )"
+"213 : System.out.print(\"Who was this expense paid to? \", )"
+"214 : scan.nextLine()"
+"215 : paidTo = scan.nextLine()"
+"215 : paidTo = scan.nextLine()" -> "225 : e1 = new InFull(d1, dollars, cents, paidTo, expCategory, dollars2, cents2, )"
+"215 : paidTo = scan.nextLine()" -> "240 : e1 = new Partial(d1, dollars, cents, paidTo, expCategory, dollars2, cents2, )"
+"217 : System.out.print(\"Expense category: \", )"
+"219 : expCategory = scan.nextLine()"
+"219 : expCategory = scan.nextLine()" -> "225 : e1 = new InFull(d1, dollars, cents, paidTo, expCategory, dollars2, cents2, )"
+"219 : expCategory = scan.nextLine()" -> "240 : e1 = new Partial(d1, dollars, cents, paidTo, expCategory, dollars2, cents2, )"
+"221 : expType.equals(\"in-full\", )"
+"223 : cents2 = 0"
+"223 : cents2 = 0" -> "225 : e1 = new InFull(d1, dollars, cents, paidTo, expCategory, dollars2, cents2, )"
+"224 : dollars2 = 0"
+"224 : dollars2 = 0" -> "225 : e1 = new InFull(d1, dollars, cents, paidTo, expCategory, dollars2, cents2, )"
+"225 : e1 = new InFull(d1, dollars, cents, paidTo, expCategory, dollars2, cents2, )"
+"227 : expType.equals(\"partial\", )"
+"229 : amount2 = null"
+"229 : amount2 = null" -> "233 : amount2 = scan.nextBigDecimal()" [style=dashed]
+"229 : dollarsTemp2 = null"
+"229 : dollarsTemp2 = null" -> "235 : dollarsTemp2 = new BigDecimal(dollars2, )" [style=dashed]
+"229 : cents2Temp = null"
+"229 : cents2Temp = null" -> "236 : cents2Temp = amount2.subtract(dollarsTemp2, )" [style=dashed]
+"231 : System.out.print(\"Expense Balance: \", )"
+"233 : amount2 = scan.nextBigDecimal()"
+"234 : dollars2 = amount2.intValue()"
+"234 : dollars2 = amount2.intValue()" -> "240 : e1 = new Partial(d1, dollars, cents, paidTo, expCategory, dollars2, cents2, )"
+"234 : dollars2 = amount2.intValue()" -> "235 : dollarsTemp2 = new BigDecimal(dollars2, )"
+"235 : dollarsTemp2 = new BigDecimal(dollars2, )"
+"235 : dollarsTemp2 = new BigDecimal(dollars2, )" -> "236 : cents2Temp = amount2.subtract(dollarsTemp2, )"
+"236 : cents2Temp = amount2.subtract(dollarsTemp2, )"
+"236 : cents2Temp = amount2.subtract(dollarsTemp2, )" -> "237 : cents2Temp = cents2Temp.movePointRight(2, )" [style=dashed]
+"237 : cents2Temp = cents2Temp.movePointRight(2, )"
+"238 : cents2 = cents2Temp.intValue()"
+"238 : cents2 = cents2Temp.intValue()" -> "240 : e1 = new Partial(d1, dollars, cents, paidTo, expCategory, dollars2, cents2, )"
+"239 : scan.nextLine()"
+"240 : e1 = new Partial(d1, dollars, cents, paidTo, expCategory, dollars2, cents2, )"
+"244 : new InputMismatchException()"
+}

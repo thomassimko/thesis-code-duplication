@@ -1,0 +1,40 @@
+digraph G {
+"7 : this.sum = 0"
+"8 : this.count = 0"
+"12 : sum = 0"
+"12 : sum = 0" -> "20 : average = sum * 1.0 / count"
+"12 : sum = 0" -> "16 : sum = sum + arr[i]"
+"12 : sum = 0" -> "16 : sum = sum + arr[i]" [style=dashed]
+"13 : count = 0"
+"13 : count = 0" -> "17 : count = count + 1"
+"13 : count = 0" -> "20 : average = sum * 1.0 / count"
+"13 : count = 0" -> "17 : @temp5 = count"
+"13 : count = 0" -> "17 : count = count + 1" [style=dashed]
+"15 : i = 0"
+"15 : i = 0" -> "15 : @temp6 = i"
+"15 : i = 0" -> "16 : sum = sum + arr[i]"
+"15 : i = 0" -> "15 : i = i + 1"
+"15 : i = 0" -> "15 : i < 3"
+"15 : i = 0" -> "15 : i = i + 1" [style=dashed]
+"15 : i < 3"
+"16 : sum = sum + arr[i]"
+"16 : sum = sum + arr[i]" -> "20 : average = sum * 1.0 / count"
+"16 : sum = sum + arr[i]" -> "16 : sum = sum + arr[i]"
+"16 : sum = sum + arr[i]" -> "16 : sum = sum + arr[i]" [style=dashed]
+"17 : @temp5 = count"
+"17 : @temp5 = count" -> "17 : @temp5 = count" [style=dashed]
+"17 : count = count + 1"
+"17 : count = count + 1" -> "17 : count = count + 1"
+"17 : count = count + 1" -> "20 : average = sum * 1.0 / count"
+"17 : count = count + 1" -> "17 : @temp5 = count"
+"17 : count = count + 1" -> "17 : count = count + 1" [style=dashed]
+"15 : @temp6 = i"
+"15 : @temp6 = i" -> "15 : @temp6 = i" [style=dashed]
+"15 : i = i + 1"
+"15 : i = i + 1" -> "15 : @temp6 = i"
+"15 : i = i + 1" -> "16 : sum = sum + arr[i]"
+"15 : i = i + 1" -> "15 : i = i + 1"
+"15 : i = i + 1" -> "15 : i < 3"
+"15 : i = i + 1" -> "15 : i = i + 1" [style=dashed]
+"20 : average = sum * 1.0 / count"
+}

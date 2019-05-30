@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.left = null"
+"4 : this.left = null" -> "14 : this.left.evaluate(binding, ) + this.right.evaluate(binding, )"
+"4 : this.right = null"
+"4 : this.right = null" -> "14 : this.left.evaluate(binding, ) + this.right.evaluate(binding, )"
+"14 : this.left.evaluate(binding, ) + this.right.evaluate(binding, )"
+}

@@ -1,0 +1,25 @@
+digraph G {
+"5 : this.x = 0.0"
+"5 : this.x = 0.0" -> "63 : oldpt = new CartesianPoint(this.x, this.y, )"
+"6 : this.y = 0.0"
+"6 : this.y = 0.0" -> "63 : oldpt = new CartesianPoint(this.x, this.y, )"
+"61 : ex = 0.0"
+"61 : ex = 0.0" -> "68 : ex = rad * Math.cos(angle, )" [style=dashed]
+"62 : why = 0.0"
+"62 : why = 0.0" -> "69 : why = rad * Math.sin(angle, )" [style=dashed]
+"63 : oldpt = new CartesianPoint(this.x, this.y, )"
+"64 : rad = oldpt.radius()"
+"64 : rad = oldpt.radius()" -> "69 : why = rad * Math.sin(angle, )"
+"64 : rad = oldpt.radius()" -> "68 : ex = rad * Math.cos(angle, )"
+"65 : angle = oldpt.angle()"
+"65 : angle = oldpt.angle()" -> "66 : angle = angle + Math.PI / 2"
+"65 : angle = oldpt.angle()" -> "66 : angle = angle + Math.PI / 2" [style=dashed]
+"66 : angle = angle + Math.PI / 2"
+"66 : angle = angle + Math.PI / 2" -> "69 : why = rad * Math.sin(angle, )"
+"66 : angle = angle + Math.PI / 2" -> "68 : ex = rad * Math.cos(angle, )"
+"68 : ex = rad * Math.cos(angle, )"
+"68 : ex = rad * Math.cos(angle, )" -> "70 : pt = new CartesianPoint(ex, why, )"
+"69 : why = rad * Math.sin(angle, )"
+"69 : why = rad * Math.sin(angle, )" -> "70 : pt = new CartesianPoint(ex, why, )"
+"70 : pt = new CartesianPoint(ex, why, )"
+}

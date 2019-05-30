@@ -1,0 +1,37 @@
+digraph G {
+"8 : this.itemText = null"
+"8 : this.itemText = null" -> "15 : this.itemText = i" [style=dashed]
+"8 : this.sourceText = null"
+"8 : this.sourceText = null" -> "16 : this.sourceText = s" [style=dashed]
+"9 : this.refreshButton = null"
+"9 : this.refreshButton = null" -> "20 : this.refreshButton = new JButton(\"Refresh\", )" [style=dashed]
+"9 : this.badButton = null"
+"9 : this.badButton = null" -> "23 : this.badButton = new JButton(\"Bad Sources\", )" [style=dashed]
+"9 : this.cleanButton = null"
+"9 : this.cleanButton = null" -> "26 : this.cleanButton = new JButton(\"Clean Sources\", )" [style=dashed]
+"10 : this.reader = null"
+"10 : this.reader = null" -> "14 : this.reader = r" [style=dashed]
+"14 : this.reader = r"
+"14 : this.reader = r" -> "24 : this.badButton.addActionListener(new BadListener(this.reader, this.sourceText, ), )"
+"14 : this.reader = r" -> "27 : this.cleanButton.addActionListener(new CleanListener(this.reader, this.sourceText, ), )"
+"14 : this.reader = r" -> "21 : this.refreshButton.addActionListener(new RefreshListener(this.reader, this.itemText, this.sourceText, ), )"
+"15 : this.itemText = i"
+"15 : this.itemText = i" -> "21 : this.refreshButton.addActionListener(new RefreshListener(this.reader, this.itemText, this.sourceText, ), )"
+"16 : this.sourceText = s"
+"16 : this.sourceText = s" -> "24 : this.badButton.addActionListener(new BadListener(this.reader, this.sourceText, ), )"
+"16 : this.sourceText = s" -> "27 : this.cleanButton.addActionListener(new CleanListener(this.reader, this.sourceText, ), )"
+"16 : this.sourceText = s" -> "21 : this.refreshButton.addActionListener(new RefreshListener(this.reader, this.itemText, this.sourceText, ), )"
+"18 : this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS, ), )"
+"20 : this.refreshButton = new JButton(\"Refresh\", )"
+"20 : this.refreshButton = new JButton(\"Refresh\", )" -> "29 : add(this.refreshButton, )"
+"21 : this.refreshButton.addActionListener(new RefreshListener(this.reader, this.itemText, this.sourceText, ), )"
+"23 : this.badButton = new JButton(\"Bad Sources\", )"
+"23 : this.badButton = new JButton(\"Bad Sources\", )" -> "30 : add(this.badButton, )"
+"24 : this.badButton.addActionListener(new BadListener(this.reader, this.sourceText, ), )"
+"26 : this.cleanButton = new JButton(\"Clean Sources\", )"
+"26 : this.cleanButton = new JButton(\"Clean Sources\", )" -> "31 : add(this.cleanButton, )"
+"27 : this.cleanButton.addActionListener(new CleanListener(this.reader, this.sourceText, ), )"
+"29 : add(this.refreshButton, )"
+"30 : add(this.badButton, )"
+"31 : add(this.cleanButton, )"
+}

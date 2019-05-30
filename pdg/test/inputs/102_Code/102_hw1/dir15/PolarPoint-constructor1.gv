@@ -1,9 +1,0 @@
-digraph G {
-"4 : this.p = null"
-"5 : this.r = 0.0"
-"5 : this.r = 0.0" -> "10 : this.r = radius" [style=dashed]
-"6 : this.theta = 0.0"
-"6 : this.theta = 0.0" -> "11 : this.theta = angle" [style=dashed]
-"10 : this.r = radius"
-"11 : this.theta = angle"
-}

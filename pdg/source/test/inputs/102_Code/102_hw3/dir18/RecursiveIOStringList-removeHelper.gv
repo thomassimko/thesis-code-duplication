@@ -1,0 +1,10 @@
+digraph G {
+"6 : this.head = null"
+"58 : cur instanceof RIOEmpty"
+"59 : new IndexOutOfBoundsException()"
+"62 : index == 0"
+"63 : cur.getNext()"
+"66 : n = removeHelper(index - 1, getNext(), )"
+"66 : n = removeHelper(index - 1, getNext(), )" -> "67 : cur.setNext(n, )"
+"67 : cur.setNext(n, )"
+}

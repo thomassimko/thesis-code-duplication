@@ -1,0 +1,8 @@
+digraph G {
+"24 : this.documents = new ArrayList()"
+"25 : this.sources = new ArrayList()"
+"26 : this.items = new ArrayList()"
+"27 : this.badSources = new ArrayList()"
+"31 : src.equals(\"\", )"
+"32 : this.sources.add(src, )"
+}

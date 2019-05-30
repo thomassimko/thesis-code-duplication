@@ -1,0 +1,7 @@
+digraph G {
+"5 : this.head = null"
+"187 : cur instanceof RIONode"
+"188 : indexOf(substring, ) > 0"
+"189 : newList.addToEnd(cur.getString(), )"
+"191 : hasSubstringHelper(substring, cur.getNext(), newList, )"
+}

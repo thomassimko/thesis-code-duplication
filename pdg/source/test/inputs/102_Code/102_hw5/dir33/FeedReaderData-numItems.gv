@@ -1,0 +1,8 @@
+digraph G {
+"16 : this.list = null"
+"17 : this.badSources = null"
+"18 : this.RSSItemList = null"
+"133 : countStr = xpath.evaluate(\"count(/rss/channel/item)\", feedDocument, )"
+"133 : countStr = xpath.evaluate(\"count(/rss/channel/item)\", feedDocument, )" -> "134 : itemCount = Integer.parseInt(countStr, )"
+"134 : itemCount = Integer.parseInt(countStr, )"
+}

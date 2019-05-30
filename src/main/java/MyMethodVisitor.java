@@ -11,6 +11,9 @@ public class MyMethodVisitor extends Java8BaseVisitor<Method> {
 
     @Override
     public Method visitMethodDeclaration(Java8Parser.MethodDeclarationContext ctx) {
+        if(ctx.methodBody().block() == null) {
+            return null;
+        }
         Block blocks = Driver.blockVisitor.visitBlockStatements(ctx.methodBody().block().blockStatements());
         String name = ctx.methodHeader().methodDeclarator().Identifier().toString();
         List<DeclarationStatement> params = new ArrayList<>();

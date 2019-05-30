@@ -1,0 +1,39 @@
+digraph G {
+"8 : this.list = new ArrayList()"
+"65 : printer = new PrintWriter(new File(\"StoredExpenses.txt\", ), )"
+"66 : type = null"
+"66 : type = null" -> "72 : type = \"InFull\"" [style=dashed]
+"66 : type = null" -> "76 : type = \"Partial\"" [style=dashed]
+"67 : i = 0"
+"67 : i = 0" -> "67 : i < this.list.size()"
+"67 : i = 0" -> "70 : this.list.get(i, ) instanceof InFull"
+"67 : i = 0" -> "67 : @temp1 = i"
+"67 : i = 0" -> "67 : i = i + 1"
+"67 : i = 0" -> "67 : i = i + 1" [style=dashed]
+"67 : i < this.list.size()"
+"70 : this.list.get(i, ) instanceof InFull"
+"89 : printer.close()"
+"72 : type = \"InFull\""
+"72 : type = \"InFull\"" -> "79 : printer.println(type, )"
+"72 : type = \"InFull\"" -> "72 : type = \"InFull\"" [style=dashed]
+"72 : type = \"InFull\"" -> "76 : type = \"Partial\"" [style=dashed]
+"76 : type = \"Partial\""
+"76 : type = \"Partial\"" -> "79 : printer.println(type, )"
+"76 : type = \"Partial\"" -> "72 : type = \"InFull\"" [style=dashed]
+"76 : type = \"Partial\"" -> "76 : type = \"Partial\"" [style=dashed]
+"79 : printer.println(type, )"
+"80 : printer.println(String.format(\"%1$2tm/%<2td/%<tY \", getDate(), ), )"
+"81 : printer.println(getCategory(), )"
+"82 : printer.println(getPayee(), )"
+"83 : printer.println(getAmtString(), )"
+"84 : type.equals(\"Partial\", )"
+"86 : printer.println(getBalString(), )"
+"67 : @temp1 = i"
+"67 : @temp1 = i" -> "67 : @temp1 = i" [style=dashed]
+"67 : i = i + 1"
+"67 : i = i + 1" -> "67 : i < this.list.size()"
+"67 : i = i + 1" -> "70 : this.list.get(i, ) instanceof InFull"
+"67 : i = i + 1" -> "67 : @temp1 = i"
+"67 : i = i + 1" -> "67 : i = i + 1"
+"67 : i = i + 1" -> "67 : i = i + 1" [style=dashed]
+}

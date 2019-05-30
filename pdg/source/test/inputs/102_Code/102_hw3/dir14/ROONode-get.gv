@@ -1,0 +1,6 @@
+digraph G {
+"5 : this.element = null"
+"6 : this.next = null"
+"65 : index == 0"
+"71 : this.next.get(index - 1, )"
+}

@@ -1,0 +1,22 @@
+digraph G {
+"5 : this.node = null"
+"5 : this.node = null" -> "65 : n = this.node"
+"65 : n = this.node"
+"65 : n = this.node" -> "68 : n == null"
+"65 : n = this.node" -> "72 : n = n.next()" [style=dashed]
+"66 : i = index"
+"66 : i = index" -> "66 : i > 0"
+"66 : i = index" -> "66 : i = i - 1"
+"66 : i = index" -> "66 : i = i - 1" [style=dashed]
+"66 : i > 0"
+"68 : n == null"
+"74 : n.str()"
+"70 : new NoSuchElementException()"
+"72 : n = n.next()"
+"72 : n = n.next()" -> "68 : n == null"
+"72 : n = n.next()" -> "72 : n = n.next()" [style=dashed]
+"66 : i = i - 1"
+"66 : i = i - 1" -> "66 : i > 0"
+"66 : i = i - 1" -> "66 : i = i - 1"
+"66 : i = i - 1" -> "66 : i = i - 1" [style=dashed]
+}

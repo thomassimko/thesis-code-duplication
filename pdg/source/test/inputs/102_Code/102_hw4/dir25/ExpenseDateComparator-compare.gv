@@ -1,0 +1,13 @@
+digraph G {
+"10 : o1 = e1.getDate()"
+"11 : o2 = e2.getDate()"
+"11 : o2 = e2.getDate()" -> "12 : comparisonResult = o1.compareTo(o2, )"
+"12 : comparisonResult = o1.compareTo(o2, )"
+"12 : comparisonResult = o1.compareTo(o2, )" -> "13 : comparisonResult > 0"
+"12 : comparisonResult = o1.compareTo(o2, )" -> "17 : comparisonResult < 0"
+"13 : comparisonResult > 0"
+"15 : 1"
+"17 : comparisonResult < 0"
+"19 : 1"
+"21 : 0"
+}

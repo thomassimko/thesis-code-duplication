@@ -1,0 +1,29 @@
+digraph G {
+"2 : this.head = null"
+"2 : this.head = null" -> "22 : tmp = this.head"
+"21 : i = index - 1"
+"21 : i = index - 1" -> "23 : i > 0"
+"21 : i = index - 1" -> "28 : i = i - 1"
+"21 : i = index - 1" -> "28 : @temp1 = i"
+"21 : i = index - 1" -> "28 : i = i - 1" [style=dashed]
+"22 : tmp = this.head"
+"22 : tmp = this.head" -> "24 : tmp = tmp.next()" [style=dashed]
+"23 : i > 0"
+"24 : tmp = tmp.next()"
+"24 : tmp = tmp.next()" -> "25 : tmp == null"
+"24 : tmp = tmp.next()" -> "24 : tmp = tmp.next()" [style=dashed]
+"25 : tmp == null"
+"30 : second = tmp.next()"
+"30 : second = tmp.next()" -> "32 : tmp.next().linkNext(second, )"
+"31 : tmp.linkNext(new IterativeNode(element, ), )"
+"32 : tmp.next().linkNext(second, )"
+"26 : new IndexOutOfBoundsException()"
+"28 : @temp1 = i"
+"28 : @temp1 = i" -> "28 : @temp1 = i" [style=dashed]
+"28 : i = i - 1"
+"28 : i = i - 1" -> "23 : i > 0"
+"28 : i = i - 1" -> "28 : i = i - 1"
+"28 : i = i - 1" -> "28 : @temp1 = i"
+"28 : i = i - 1" -> "28 : i = i - 1" [style=dashed]
+"23 : i > 0"
+}

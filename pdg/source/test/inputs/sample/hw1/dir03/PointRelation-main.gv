@@ -1,0 +1,124 @@
+digraph G {
+"38 : x = 0.0"
+"38 : x = 0.0" -> "88 : x = radius * Math.cos(angle, )" [style=dashed]
+"38 : x = 0.0" -> "47 : x = scan.nextDouble()" [style=dashed]
+"38 : x = 0.0" -> "60 : x = radius * Math.cos(angle, )" [style=dashed]
+"38 : x = 0.0" -> "75 : x = scan.nextDouble()" [style=dashed]
+"38 : y = 0.0"
+"38 : y = 0.0" -> "89 : y = radius * Math.sin(angle, )" [style=dashed]
+"38 : y = 0.0" -> "77 : y = scan.nextDouble()" [style=dashed]
+"38 : y = 0.0" -> "49 : y = scan.nextDouble()" [style=dashed]
+"38 : y = 0.0" -> "61 : y = radius * Math.sin(angle, )" [style=dashed]
+"38 : choice = 0.0"
+"38 : choice = 0.0" -> "41 : choice = scan.nextDouble()" [style=dashed]
+"38 : radius = 0.0"
+"38 : radius = 0.0" -> "56 : radius = scan.nextDouble()" [style=dashed]
+"38 : radius = 0.0" -> "84 : radius = scan.nextDouble()" [style=dashed]
+"38 : angle = 0.0"
+"38 : angle = 0.0" -> "58 : angle = scan.nextDouble()" [style=dashed]
+"38 : angle = 0.0" -> "86 : angle = scan.nextDouble()" [style=dashed]
+"39 : scan = new Scanner(System.in, )"
+"39 : scan = new Scanner(System.in, )" -> "58 : angle = scan.nextDouble()"
+"39 : scan = new Scanner(System.in, )" -> "56 : radius = scan.nextDouble()"
+"39 : scan = new Scanner(System.in, )" -> "41 : choice = scan.nextDouble()"
+"39 : scan = new Scanner(System.in, )" -> "47 : x = scan.nextDouble()"
+"39 : scan = new Scanner(System.in, )" -> "77 : y = scan.nextDouble()"
+"39 : scan = new Scanner(System.in, )" -> "49 : y = scan.nextDouble()"
+"39 : scan = new Scanner(System.in, )" -> "71 : choice = scan.nextDouble()"
+"39 : scan = new Scanner(System.in, )" -> "86 : angle = scan.nextDouble()"
+"39 : scan = new Scanner(System.in, )" -> "75 : x = scan.nextDouble()"
+"39 : scan = new Scanner(System.in, )" -> "84 : radius = scan.nextDouble()"
+"40 : System.out.println(\"Which type of point should be created (1 for Cartesian, 2 for Polar)? \", )"
+"41 : choice = scan.nextDouble()"
+"41 : choice = scan.nextDouble()" -> "44 : choice == 1"
+"41 : choice = scan.nextDouble()" -> "53 : choice == 2"
+"41 : choice = scan.nextDouble()" -> "71 : choice = scan.nextDouble()" [style=dashed]
+"42 : p1 = new CartesianPoint(0, 0, )"
+"42 : p1 = new CartesianPoint(0, 0, )" -> "97 : distance(p1, p2, )"
+"42 : p1 = new CartesianPoint(0, 0, )" -> "98 : samequad(p1, p2, )"
+"42 : p1 = new CartesianPoint(0, 0, )" -> "50 : p1 = new CartesianPoint(x, y, )" [style=dashed]
+"42 : p1 = new CartesianPoint(0, 0, )" -> "62 : p1 = new CartesianPoint(x, y, )" [style=dashed]
+"43 : p2 = new CartesianPoint(0, 0, )"
+"43 : p2 = new CartesianPoint(0, 0, )" -> "97 : distance(p1, p2, )"
+"43 : p2 = new CartesianPoint(0, 0, )" -> "98 : samequad(p1, p2, )"
+"43 : p2 = new CartesianPoint(0, 0, )" -> "78 : p2 = new CartesianPoint(x, y, )" [style=dashed]
+"43 : p2 = new CartesianPoint(0, 0, )" -> "90 : p2 = new CartesianPoint(x, y, )" [style=dashed]
+"44 : choice == 1"
+"46 : System.out.println(\"Enter x-coordinate: \", )"
+"47 : x = scan.nextDouble()"
+"47 : x = scan.nextDouble()" -> "50 : p1 = new CartesianPoint(x, y, )"
+"47 : x = scan.nextDouble()" -> "88 : x = radius * Math.cos(angle, )" [style=dashed]
+"47 : x = scan.nextDouble()" -> "75 : x = scan.nextDouble()" [style=dashed]
+"48 : System.out.println(\"Enter y-coordinate: \", )"
+"49 : y = scan.nextDouble()"
+"49 : y = scan.nextDouble()" -> "50 : p1 = new CartesianPoint(x, y, )"
+"49 : y = scan.nextDouble()" -> "89 : y = radius * Math.sin(angle, )" [style=dashed]
+"49 : y = scan.nextDouble()" -> "77 : y = scan.nextDouble()" [style=dashed]
+"50 : p1 = new CartesianPoint(x, y, )"
+"50 : p1 = new CartesianPoint(x, y, )" -> "97 : distance(p1, p2, )"
+"50 : p1 = new CartesianPoint(x, y, )" -> "98 : samequad(p1, p2, )"
+"53 : choice == 2"
+"55 : System.out.println(\"Enter radius: \", )"
+"56 : radius = scan.nextDouble()"
+"56 : radius = scan.nextDouble()" -> "61 : y = radius * Math.sin(angle, )"
+"56 : radius = scan.nextDouble()" -> "60 : x = radius * Math.cos(angle, )"
+"56 : radius = scan.nextDouble()" -> "84 : radius = scan.nextDouble()" [style=dashed]
+"57 : System.out.println(\"Enter angle(in degrees): \", )"
+"58 : angle = scan.nextDouble()"
+"58 : angle = scan.nextDouble()" -> "59 : angle = angle * Math.PI / 180"
+"58 : angle = scan.nextDouble()" -> "59 : angle = angle * Math.PI / 180" [style=dashed]
+"59 : angle = angle * Math.PI / 180"
+"59 : angle = angle * Math.PI / 180" -> "61 : y = radius * Math.sin(angle, )"
+"59 : angle = angle * Math.PI / 180" -> "60 : x = radius * Math.cos(angle, )"
+"59 : angle = angle * Math.PI / 180" -> "86 : angle = scan.nextDouble()" [style=dashed]
+"60 : x = radius * Math.cos(angle, )"
+"60 : x = radius * Math.cos(angle, )" -> "62 : p1 = new CartesianPoint(x, y, )"
+"60 : x = radius * Math.cos(angle, )" -> "88 : x = radius * Math.cos(angle, )" [style=dashed]
+"60 : x = radius * Math.cos(angle, )" -> "75 : x = scan.nextDouble()" [style=dashed]
+"61 : y = radius * Math.sin(angle, )"
+"61 : y = radius * Math.sin(angle, )" -> "62 : p1 = new CartesianPoint(x, y, )"
+"61 : y = radius * Math.sin(angle, )" -> "89 : y = radius * Math.sin(angle, )" [style=dashed]
+"61 : y = radius * Math.sin(angle, )" -> "77 : y = scan.nextDouble()" [style=dashed]
+"62 : p1 = new CartesianPoint(x, y, )"
+"62 : p1 = new CartesianPoint(x, y, )" -> "97 : distance(p1, p2, )"
+"62 : p1 = new CartesianPoint(x, y, )" -> "98 : samequad(p1, p2, )"
+"66 : System.out.println(\"Error.\", )"
+"67 : System.exit(1, )"
+"70 : System.out.println(\"Which type of point should be created (1 for Cartesian, 2 for Polar)? \", )"
+"71 : choice = scan.nextDouble()"
+"71 : choice = scan.nextDouble()" -> "72 : choice == 1"
+"71 : choice = scan.nextDouble()" -> "81 : choice == 2"
+"72 : choice == 1"
+"74 : System.out.println(\"Enter x-coordinate: \", )"
+"75 : x = scan.nextDouble()"
+"75 : x = scan.nextDouble()" -> "78 : p2 = new CartesianPoint(x, y, )"
+"76 : System.out.println(\"Enter y-coordinate: \", )"
+"77 : y = scan.nextDouble()"
+"77 : y = scan.nextDouble()" -> "78 : p2 = new CartesianPoint(x, y, )"
+"78 : p2 = new CartesianPoint(x, y, )"
+"78 : p2 = new CartesianPoint(x, y, )" -> "97 : distance(p1, p2, )"
+"78 : p2 = new CartesianPoint(x, y, )" -> "98 : samequad(p1, p2, )"
+"81 : choice == 2"
+"83 : System.out.println(\"Enter radius: \", )"
+"84 : radius = scan.nextDouble()"
+"84 : radius = scan.nextDouble()" -> "89 : y = radius * Math.sin(angle, )"
+"84 : radius = scan.nextDouble()" -> "88 : x = radius * Math.cos(angle, )"
+"85 : System.out.println(\"Enter angle(in degrees): \", )"
+"86 : angle = scan.nextDouble()"
+"86 : angle = scan.nextDouble()" -> "87 : angle = angle * Math.PI / 180"
+"86 : angle = scan.nextDouble()" -> "87 : angle = angle * Math.PI / 180" [style=dashed]
+"87 : angle = angle * Math.PI / 180"
+"87 : angle = angle * Math.PI / 180" -> "89 : y = radius * Math.sin(angle, )"
+"87 : angle = angle * Math.PI / 180" -> "88 : x = radius * Math.cos(angle, )"
+"88 : x = radius * Math.cos(angle, )"
+"88 : x = radius * Math.cos(angle, )" -> "90 : p2 = new CartesianPoint(x, y, )"
+"89 : y = radius * Math.sin(angle, )"
+"89 : y = radius * Math.sin(angle, )" -> "90 : p2 = new CartesianPoint(x, y, )"
+"90 : p2 = new CartesianPoint(x, y, )"
+"90 : p2 = new CartesianPoint(x, y, )" -> "97 : distance(p1, p2, )"
+"90 : p2 = new CartesianPoint(x, y, )" -> "98 : samequad(p1, p2, )"
+"94 : System.out.println(\"Error.\", )"
+"95 : System.exit(1, )"
+"97 : distance(p1, p2, )"
+"98 : samequad(p1, p2, )"
+}

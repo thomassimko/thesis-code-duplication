@@ -1,0 +1,7 @@
+digraph G {
+"8 : after(e2.getDate(), )"
+"10 : 1"
+"12 : equals(e2.getDate(), )"
+"14 : 0"
+"18 : 1"
+}

@@ -1,0 +1,36 @@
+digraph G {
+"10 : out = new PrintWriter(new FileWriter(new File(\"StoredExpenses\", ), ), )"
+"11 : copy = expended"
+"12 : e = null"
+"12 : e = null" -> "16 : e = copy.get(i, )" [style=dashed]
+"13 : copy.isEmpty()"
+"14 : lenght = expended.size()"
+"14 : lenght = expended.size()" -> "15 : i < lenght"
+"15 : i = 0"
+"15 : i = 0" -> "15 : @temp2 = i"
+"15 : i = 0" -> "15 : i < lenght"
+"15 : i = 0" -> "16 : e = copy.get(i, )"
+"15 : i = 0" -> "15 : i = i + 1"
+"15 : i = 0" -> "15 : i = i + 1" [style=dashed]
+"15 : i < lenght"
+"16 : e = copy.get(i, )"
+"16 : e = copy.get(i, )" -> "22 : e instanceof partial"
+"16 : e = copy.get(i, )" -> "16 : e = copy.get(i, )" [style=dashed]
+"17 : out.println(e.getType(), )"
+"18 : out.println(String.format(\"%1$2tm/%<2td/%<tY \", e.getDate(), ), )"
+"19 : out.println(e.getCategory(), )"
+"20 : out.println(e.getName(), )"
+"21 : out.println(e.getAmount(), )"
+"22 : e instanceof partial"
+"23 : out.println(e.getBalance(), )"
+"15 : @temp2 = i"
+"15 : @temp2 = i" -> "15 : @temp2 = i" [style=dashed]
+"15 : i = i + 1"
+"15 : i = i + 1" -> "15 : @temp2 = i"
+"15 : i = i + 1" -> "15 : i < lenght"
+"15 : i = i + 1" -> "16 : e = copy.get(i, )"
+"15 : i = i + 1" -> "15 : i = i + 1"
+"15 : i = i + 1" -> "15 : i = i + 1" [style=dashed]
+"26 : out.close()"
+"28 : System.err.println(\"Your file could not be written\", )"
+}

@@ -1,0 +1,7 @@
+digraph G {
+"32 : x_diff = p1.xCoordinate() - p2.xCoordinate()"
+"32 : x_diff = p1.xCoordinate() - p2.xCoordinate()" -> "35 : Math.sqrt(Math.pow(x_diff, 2, ) + Math.pow(y_diff, 2, ), )"
+"33 : y_diff = p1.yCoordinate() - p2.yCoordinate()"
+"33 : y_diff = p1.yCoordinate() - p2.yCoordinate()" -> "35 : Math.sqrt(Math.pow(x_diff, 2, ) + Math.pow(y_diff, 2, ), )"
+"35 : Math.sqrt(Math.pow(x_diff, 2, ) + Math.pow(y_diff, 2, ), )"
+}

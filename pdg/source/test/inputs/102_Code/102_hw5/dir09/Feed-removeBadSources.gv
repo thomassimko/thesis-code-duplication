@@ -1,0 +1,45 @@
+digraph G {
+"12 : this.sources = null"
+"13 : this.badSources = null"
+"13 : this.badSources = null" -> "103 : this.badSources.removeAll(this.badSources, )"
+"89 : size1 = this.badSources.size()"
+"89 : size1 = this.badSources.size()" -> "91 : i < size1"
+"91 : i = 0"
+"91 : i = 0" -> "91 : i < size1"
+"91 : i = 0" -> "91 : i = i + 1"
+"91 : i = 0" -> "91 : @temp4 = i"
+"91 : i = 0" -> "91 : i = i + 1" [style=dashed]
+"91 : i < size1"
+"93 : size2 = this.sources.size()"
+"93 : size2 = this.sources.size()" -> "94 : j < size2"
+"93 : size2 = this.sources.size()" -> "93 : size2 = this.sources.size()" [style=dashed]
+"103 : this.badSources.removeAll(this.badSources, )"
+"94 : j = 0"
+"94 : j = 0" -> "96 : equals(this.sources.get(j, ), )"
+"94 : j = 0" -> "98 : this.sources.remove(j, )"
+"94 : j = 0" -> "94 : j = j + 1"
+"94 : j = 0" -> "94 : j < size2"
+"94 : j = 0" -> "94 : @temp3 = j"
+"94 : j = 0" -> "94 : j = j + 1" [style=dashed]
+"94 : j = 0" -> "94 : j = 0" [style=dashed]
+"94 : j < size2"
+"96 : equals(this.sources.get(j, ), )"
+"91 : @temp4 = i"
+"91 : @temp4 = i" -> "91 : @temp4 = i" [style=dashed]
+"91 : i = i + 1"
+"91 : i = i + 1" -> "91 : i < size1"
+"91 : i = i + 1" -> "91 : i = i + 1"
+"91 : i = i + 1" -> "91 : @temp4 = i"
+"91 : i = i + 1" -> "91 : i = i + 1" [style=dashed]
+"98 : this.sources.remove(j, )"
+"94 : @temp3 = j"
+"94 : @temp3 = j" -> "94 : @temp3 = j" [style=dashed]
+"94 : j = j + 1"
+"94 : j = j + 1" -> "96 : equals(this.sources.get(j, ), )"
+"94 : j = j + 1" -> "98 : this.sources.remove(j, )"
+"94 : j = j + 1" -> "94 : j = j + 1"
+"94 : j = j + 1" -> "94 : j < size2"
+"94 : j = j + 1" -> "94 : @temp3 = j"
+"94 : j = j + 1" -> "94 : j = j + 1" [style=dashed]
+"94 : j = j + 1" -> "94 : j = 0" [style=dashed]
+}

@@ -1,0 +1,23 @@
+digraph G {
+"6 : this.head = null"
+"85 : substringList = new IterativeStringList()"
+"86 : size = size()"
+"86 : size = size()" -> "87 : i < size"
+"87 : i = 0"
+"87 : i = 0" -> "87 : @temp3 = i"
+"87 : i = 0" -> "87 : i = i + 1"
+"87 : i = 0" -> "91 : substringList.addToEnd(get(i, ), )"
+"87 : i = 0" -> "87 : i < size"
+"87 : i = 0" -> "87 : i = i + 1" [style=dashed]
+"87 : i < size"
+"89 : contains(substring, )"
+"91 : substringList.addToEnd(get(i, ), )"
+"87 : @temp3 = i"
+"87 : @temp3 = i" -> "87 : @temp3 = i" [style=dashed]
+"87 : i = i + 1"
+"87 : i = i + 1" -> "87 : @temp3 = i"
+"87 : i = i + 1" -> "87 : i = i + 1"
+"87 : i = i + 1" -> "91 : substringList.addToEnd(get(i, ), )"
+"87 : i = i + 1" -> "87 : i < size"
+"87 : i = i + 1" -> "87 : i = i + 1" [style=dashed]
+}

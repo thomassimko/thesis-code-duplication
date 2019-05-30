@@ -1,0 +1,9 @@
+digraph G {
+"5 : this.head = null"
+"5 : this.head = null" -> "92 : n = getHelper(index, this.head, )"
+"92 : n = getHelper(index, this.head, )"
+"92 : n = getHelper(index, this.head, )" -> "93 : n instanceof RIOEmpty"
+"93 : n instanceof RIOEmpty"
+"94 : new IndexOutOfBoundsException()"
+"97 : n.getString()"
+}

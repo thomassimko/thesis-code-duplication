@@ -1,0 +1,16 @@
+digraph G {
+"129 : i = 0"
+"129 : i = 0" -> "129 : @temp2 = i"
+"129 : i = 0" -> "129 : i < list.size()"
+"129 : i = 0" -> "129 : i = i + 1"
+"129 : i = 0" -> "129 : i = i + 1" [style=dashed]
+"129 : i < list.size()"
+"131 : System.out.println(getExpense(), )"
+"129 : @temp2 = i"
+"129 : @temp2 = i" -> "129 : @temp2 = i" [style=dashed]
+"129 : i = i + 1"
+"129 : i = i + 1" -> "129 : @temp2 = i"
+"129 : i = i + 1" -> "129 : i < list.size()"
+"129 : i = i + 1" -> "129 : i = i + 1"
+"129 : i = i + 1" -> "129 : i = i + 1" [style=dashed]
+}

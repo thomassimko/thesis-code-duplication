@@ -1,6 +1,0 @@
-digraph G {
-"4 : this.e = null"
-"4 : this.e = null" -> "9 : this.e = parseUnary" [style=dashed]
-"5 : this.negate = 0.0"
-"9 : this.e = parseUnary"
-}

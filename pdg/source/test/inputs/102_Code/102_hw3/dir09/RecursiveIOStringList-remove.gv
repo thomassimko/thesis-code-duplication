@@ -1,0 +1,10 @@
+digraph G {
+"6 : this.head = null"
+"69 : node instanceof RIOEmpty"
+"71 : new IndexOutOfBoundsException()"
+"75 : index == 0"
+"75 : node.getNext()"
+"78 : n = remove(index - 1, getNext(), )"
+"78 : n = remove(index - 1, getNext(), )" -> "79 : node.setNext(n, )"
+"79 : node.setNext(n, )"
+}

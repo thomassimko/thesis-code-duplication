@@ -1,0 +1,8 @@
+digraph G {
+"3 : this.header = null"
+"3 : this.header = null" -> "44 : System.out.println(this.header, )"
+"4 : this.prompt = null"
+"5 : this.parser = null"
+"6 : this.bindings = null"
+"44 : System.out.println(this.header, )"
+}

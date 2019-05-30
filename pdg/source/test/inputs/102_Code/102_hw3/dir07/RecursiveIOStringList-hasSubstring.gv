@@ -1,0 +1,5 @@
+digraph G {
+"4 : this.head = null"
+"4 : this.head = null" -> "221 : hasSubstringHelper(substring, this.head, )"
+"221 : hasSubstringHelper(substring, this.head, )"
+}

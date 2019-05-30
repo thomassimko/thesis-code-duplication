@@ -1,0 +1,4 @@
+digraph G {
+"4 : this.next = null"
+"5 : this.s = null"
+}

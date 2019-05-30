@@ -1,0 +1,10 @@
+digraph G {
+"5 : this.element = null"
+"5 : this.element = null" -> "114 : newList.add(0, this.element, )"
+"6 : this.next = null"
+"110 : newList = null"
+"110 : newList = null" -> "111 : newList = this.next.startsWith(prefix, )" [style=dashed]
+"111 : newList = this.next.startsWith(prefix, )"
+"112 : this.element.startsWith(prefix, )"
+"114 : newList.add(0, this.element, )"
+}

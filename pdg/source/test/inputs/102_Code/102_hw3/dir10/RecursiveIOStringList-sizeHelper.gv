@@ -1,0 +1,18 @@
+digraph G {
+"5 : this.head = null"
+"122 : i = 0"
+"122 : i = 0" -> "124 : @temp7 = i"
+"122 : i = 0" -> "124 : i = i + 1"
+"122 : i = 0" -> "124 : i = i + 1" [style=dashed]
+"123 : cur instanceof RIONode"
+"124 : @temp7 = i"
+"124 : @temp7 = i" -> "124 : @temp7 = i" [style=dashed]
+"124 : i = i + 1"
+"124 : i = i + 1" -> "124 : @temp7 = i"
+"124 : i = i + 1" -> "124 : i = i + 1"
+"124 : i = i + 1" -> "124 : i = i + 1" [style=dashed]
+"125 : cur = cur.getNext()"
+"125 : cur = cur.getNext()" -> "123 : cur instanceof RIONode"
+"125 : cur = cur.getNext()" -> "125 : cur = cur.getNext()" [style=dashed]
+"123 : cur instanceof RIONode"
+}

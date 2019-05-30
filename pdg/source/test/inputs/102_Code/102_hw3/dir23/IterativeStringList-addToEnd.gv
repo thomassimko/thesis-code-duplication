@@ -1,0 +1,30 @@
+digraph G {
+"4 : this.head = null"
+"4 : this.head = null" -> "39 : this.head == null"
+"4 : this.head = null" -> "43 : cur = this.head"
+"4 : this.head = null" -> "40 : this.head = n" [style=dashed]
+"5 : this.counter = 0"
+"5 : this.counter = 0" -> "50 : @temp1 = this.counter"
+"5 : this.counter = 0" -> "50 : this.counter = this.counter + 1"
+"5 : this.counter = 0" -> "50 : this.counter = this.counter + 1" [style=dashed]
+"38 : n = new IterativeNode(element, null, )"
+"38 : n = new IterativeNode(element, null, )" -> "40 : this.head = n"
+"38 : n = new IterativeNode(element, null, )" -> "48 : cur.setNext(n, )"
+"39 : this.head == null"
+"40 : this.head = n"
+"43 : cur = this.head"
+"43 : cur = this.head" -> "45 : cur.getNode() != null"
+"43 : cur = this.head" -> "46 : cur = cur.getNode()"
+"43 : cur = this.head" -> "48 : cur.setNext(n, )"
+"43 : cur = this.head" -> "46 : cur = cur.getNode()" [style=dashed]
+"45 : cur.getNode() != null"
+"46 : cur = cur.getNode()"
+"46 : cur = cur.getNode()" -> "46 : cur = cur.getNode()"
+"46 : cur = cur.getNode()" -> "45 : cur.getNode() != null"
+"46 : cur = cur.getNode()" -> "48 : cur.setNext(n, )"
+"46 : cur = cur.getNode()" -> "46 : cur = cur.getNode()" [style=dashed]
+"45 : cur.getNode() != null"
+"48 : cur.setNext(n, )"
+"50 : @temp1 = this.counter"
+"50 : this.counter = this.counter + 1"
+}

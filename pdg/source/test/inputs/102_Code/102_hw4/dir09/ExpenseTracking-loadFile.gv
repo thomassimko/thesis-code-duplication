@@ -1,0 +1,52 @@
+digraph G {
+"44 : s = new Scanner(new File(\"StoredExpenses\", ), )"
+"45 : df = new SimpleDateFormat(\"MM/dd/yyyy\", )"
+"45 : df = new SimpleDateFormat(\"MM/dd/yyyy\", )" -> "50 : date = parseDate(df, temp, )"
+"46 : s.hasNextLine()"
+"48 : type = s.nextLine()"
+"48 : type = s.nextLine()" -> "48 : type = s.nextLine()" [style=dashed]
+"49 : temp = s.nextLine()"
+"49 : temp = s.nextLine()" -> "50 : date = parseDate(df, temp, )"
+"49 : temp = s.nextLine()" -> "49 : temp = s.nextLine()" [style=dashed]
+"50 : date = parseDate(df, temp, )"
+"50 : date = parseDate(df, temp, )" -> "65 : list.add(new InFull(date, paidDollar, paidCent, payee, category, ), )"
+"50 : date = parseDate(df, temp, )" -> "61 : list.add(new Partial(date, paidDollar, paidCent, payee, category, remainingDollar, remainingCent, ), )"
+"50 : date = parseDate(df, temp, )" -> "50 : date = parseDate(df, temp, )" [style=dashed]
+"51 : category = s.nextLine()"
+"51 : category = s.nextLine()" -> "65 : list.add(new InFull(date, paidDollar, paidCent, payee, category, ), )"
+"51 : category = s.nextLine()" -> "61 : list.add(new Partial(date, paidDollar, paidCent, payee, category, remainingDollar, remainingCent, ), )"
+"51 : category = s.nextLine()" -> "51 : category = s.nextLine()" [style=dashed]
+"52 : payee = s.nextLine()"
+"52 : payee = s.nextLine()" -> "65 : list.add(new InFull(date, paidDollar, paidCent, payee, category, ), )"
+"52 : payee = s.nextLine()" -> "61 : list.add(new Partial(date, paidDollar, paidCent, payee, category, remainingDollar, remainingCent, ), )"
+"52 : payee = s.nextLine()" -> "52 : payee = s.nextLine()" [style=dashed]
+"53 : paid = s.nextLine()"
+"53 : paid = s.nextLine()" -> "55 : paidCent = getCent(paid, )"
+"53 : paid = s.nextLine()" -> "54 : paidDollar = getDollar(paid, )"
+"53 : paid = s.nextLine()" -> "53 : paid = s.nextLine()" [style=dashed]
+"54 : paidDollar = getDollar(paid, )"
+"54 : paidDollar = getDollar(paid, )" -> "65 : list.add(new InFull(date, paidDollar, paidCent, payee, category, ), )"
+"54 : paidDollar = getDollar(paid, )" -> "61 : list.add(new Partial(date, paidDollar, paidCent, payee, category, remainingDollar, remainingCent, ), )"
+"54 : paidDollar = getDollar(paid, )" -> "54 : paidDollar = getDollar(paid, )" [style=dashed]
+"55 : paidCent = getCent(paid, )"
+"55 : paidCent = getCent(paid, )" -> "65 : list.add(new InFull(date, paidDollar, paidCent, payee, category, ), )"
+"55 : paidCent = getCent(paid, )" -> "61 : list.add(new Partial(date, paidDollar, paidCent, payee, category, remainingDollar, remainingCent, ), )"
+"55 : paidCent = getCent(paid, )" -> "55 : paidCent = getCent(paid, )" [style=dashed]
+"56 : type.equals(\"partial\", )"
+"68 : System.out.println(\"File Loaded\", )"
+"58 : remaining = s.nextLine()"
+"58 : remaining = s.nextLine()" -> "60 : remainingCent = getCent(remaining, )"
+"58 : remaining = s.nextLine()" -> "59 : remainingDollar = getDollar(remaining, )"
+"58 : remaining = s.nextLine()" -> "58 : remaining = s.nextLine()" [style=dashed]
+"59 : remainingDollar = getDollar(remaining, )"
+"59 : remainingDollar = getDollar(remaining, )" -> "61 : list.add(new Partial(date, paidDollar, paidCent, payee, category, remainingDollar, remainingCent, ), )"
+"59 : remainingDollar = getDollar(remaining, )" -> "59 : remainingDollar = getDollar(remaining, )" [style=dashed]
+"60 : remainingCent = getCent(remaining, )"
+"60 : remainingCent = getCent(remaining, )" -> "61 : list.add(new Partial(date, paidDollar, paidCent, payee, category, remainingDollar, remainingCent, ), )"
+"60 : remainingCent = getCent(remaining, )" -> "60 : remainingCent = getCent(remaining, )" [style=dashed]
+"61 : list.add(new Partial(date, paidDollar, paidCent, payee, category, remainingDollar, remainingCent, ), )"
+"65 : list.add(new InFull(date, paidDollar, paidCent, payee, category, ), )"
+"46 : s.hasNextLine()"
+"72 : System.err.println(\"File not found. Continuing with an empty list of expenses.\", )"
+"76 : System.err.println(\"Error parsing date.\", )"
+}

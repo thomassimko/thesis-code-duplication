@@ -1,0 +1,20 @@
+digraph G {
+"7 : this.date = null"
+"7 : this.date = null" -> "15 : this.date = date" [style=dashed]
+"8 : this.payee = null"
+"8 : this.payee = null" -> "16 : this.payee = payee" [style=dashed]
+"9 : this.category = null"
+"9 : this.category = null" -> "17 : this.category = category" [style=dashed]
+"10 : this.paidDollars = 0"
+"10 : this.paidDollars = 0" -> "20 : this.paidDollars = Integer.parseInt(paid.substring(0, index, ), )" [style=dashed]
+"11 : this.paidCents = 0"
+"11 : this.paidCents = 0" -> "21 : this.paidCents = Integer.parseInt(paid.substring(index + 1, ), )" [style=dashed]
+"15 : this.date = date"
+"16 : this.payee = payee"
+"17 : this.category = category"
+"19 : index = paid.indexOf(\".\", )"
+"19 : index = paid.indexOf(\".\", )" -> "21 : this.paidCents = Integer.parseInt(paid.substring(index + 1, ), )"
+"19 : index = paid.indexOf(\".\", )" -> "20 : this.paidDollars = Integer.parseInt(paid.substring(0, index, ), )"
+"20 : this.paidDollars = Integer.parseInt(paid.substring(0, index, ), )"
+"21 : this.paidCents = Integer.parseInt(paid.substring(index + 1, ), )"
+}

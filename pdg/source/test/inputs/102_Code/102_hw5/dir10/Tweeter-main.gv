@@ -1,0 +1,6 @@
+digraph G {
+"5 : feed = new TweeterFeedReader()"
+"5 : feed = new TweeterFeedReader()" -> "6 : userInterface = new TweeterGUI(feed, )"
+"6 : userInterface = new TweeterGUI(feed, )"
+"7 : userInterface.GUIDisplay()"
+}

@@ -1,0 +1,11 @@
+digraph G {
+"11 : this.feed = null"
+"11 : this.feed = null" -> "17 : this.feed = feed" [style=dashed]
+"12 : this.itemTextArea = null"
+"12 : this.itemTextArea = null" -> "18 : this.itemTextArea = itemTextArea" [style=dashed]
+"13 : this.sourceTextArea = null"
+"13 : this.sourceTextArea = null" -> "19 : this.sourceTextArea = sourceTextArea" [style=dashed]
+"17 : this.feed = feed"
+"18 : this.itemTextArea = itemTextArea"
+"19 : this.sourceTextArea = sourceTextArea"
+}

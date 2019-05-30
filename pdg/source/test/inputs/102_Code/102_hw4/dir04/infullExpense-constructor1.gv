@@ -1,0 +1,26 @@
+digraph G {
+"10 : this.date = null"
+"10 : this.date = null" -> "21 : this.date = date" [style=dashed]
+"11 : this.category = null"
+"11 : this.category = null" -> "22 : this.category = cat" [style=dashed]
+"12 : this.paidTo = null"
+"12 : this.paidTo = null" -> "23 : this.paidTo = paidTo" [style=dashed]
+"13 : this.amount = null"
+"13 : this.amount = null" -> "24 : this.amount = amount" [style=dashed]
+"14 : this.remainingAmt = null"
+"14 : this.remainingAmt = null" -> "25 : this.remainingAmt = null" [style=dashed]
+"15 : this.dollars = 0"
+"15 : this.dollars = 0" -> "30 : this.dollars = Integer.parseInt(splitAmt[0], )" [style=dashed]
+"16 : this.cents = 0"
+"16 : this.cents = 0" -> "31 : this.cents = Integer.parseInt(splitAmt[1], )" [style=dashed]
+"21 : this.date = date"
+"22 : this.category = cat"
+"23 : this.paidTo = paidTo"
+"24 : this.amount = amount"
+"25 : this.remainingAmt = null"
+"27 : splitAmt = null"
+"27 : splitAmt = null" -> "29 : splitAmt = amount.split(\"\\.\", )" [style=dashed]
+"29 : splitAmt = amount.split(\"\\.\", )"
+"30 : this.dollars = Integer.parseInt(splitAmt[0], )"
+"31 : this.cents = Integer.parseInt(splitAmt[1], )"
+}

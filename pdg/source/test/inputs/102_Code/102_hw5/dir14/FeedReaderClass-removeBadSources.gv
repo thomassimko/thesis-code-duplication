@@ -1,0 +1,11 @@
+digraph G {
+"11 : this.sources = new ArrayList()"
+"12 : this.badSources = new ArrayList()"
+"12 : this.badSources = new ArrayList()" -> "89 : src = this.badSources"
+"12 : this.badSources = new ArrayList()" -> "93 : this.badSources = new ArrayList()" [style=dashed]
+"89 : src = this.badSources"
+"89 : src = this.badSources" -> "91 : this.sources.remove(src, )"
+"89 : src = this.badSources" -> "89 : src = this.badSources" [style=dashed]
+"91 : this.sources.remove(src, )"
+"93 : this.badSources = new ArrayList()"
+}

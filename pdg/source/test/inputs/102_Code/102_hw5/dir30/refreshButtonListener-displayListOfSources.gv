@@ -1,0 +1,28 @@
+digraph G {
+"13 : this.feedReader = null"
+"14 : this.itemArea = null"
+"15 : this.sourceArea = null"
+"33 : this.sourceArea.setText(\"\", )"
+"35 : srcList = this.feedReader.getSources()"
+"35 : srcList = this.feedReader.getSources()" -> "38 : Collections.sort(srcList, )"
+"36 : srcListSize = srcList.size()"
+"36 : srcListSize = srcList.size()" -> "40 : i < srcListSize"
+"38 : Collections.sort(srcList, )"
+"40 : i = 0"
+"40 : i = 0" -> "40 : i < srcListSize"
+"40 : i = 0" -> "40 : i = i + 1"
+"40 : i = 0" -> "40 : @temp1 = i"
+"40 : i = 0" -> "42 : this.sourceArea.append(srcList.get(i, ), )"
+"40 : i = 0" -> "40 : i = i + 1" [style=dashed]
+"40 : i < srcListSize"
+"42 : this.sourceArea.append(srcList.get(i, ), )"
+"43 : this.sourceArea.append(\"\n\", )"
+"40 : @temp1 = i"
+"40 : @temp1 = i" -> "40 : @temp1 = i" [style=dashed]
+"40 : i = i + 1"
+"40 : i = i + 1" -> "40 : i < srcListSize"
+"40 : i = i + 1" -> "40 : i = i + 1"
+"40 : i = i + 1" -> "40 : @temp1 = i"
+"40 : i = i + 1" -> "42 : this.sourceArea.append(srcList.get(i, ), )"
+"40 : i = i + 1" -> "40 : i = i + 1" [style=dashed]
+}

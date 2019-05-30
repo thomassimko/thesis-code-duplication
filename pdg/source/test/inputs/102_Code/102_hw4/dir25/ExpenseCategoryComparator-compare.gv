@@ -1,0 +1,6 @@
+digraph G {
+"9 : o1 = e1.getCategory()"
+"10 : o2 = e2.getCategory()"
+"10 : o2 = e2.getCategory()" -> "11 : o1.compareTo(o2, )"
+"11 : o1.compareTo(o2, )"
+}

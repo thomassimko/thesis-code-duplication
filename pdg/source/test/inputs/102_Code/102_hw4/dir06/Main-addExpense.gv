@@ -1,0 +1,73 @@
+digraph G {
+"167 : type = null"
+"167 : type = null" -> "179 : type = s.nextLine()" [style=dashed]
+"168 : tempDate = null"
+"168 : tempDate = null" -> "182 : tempDate = s.nextLine()" [style=dashed]
+"169 : date = null"
+"169 : date = null" -> "183 : date = makeCalendar(tempDate, )" [style=dashed]
+"170 : paidTo = null"
+"170 : paidTo = null" -> "189 : paidTo = s.nextLine()" [style=dashed]
+"171 : category = null"
+"171 : category = null" -> "191 : category = s.nextLine()" [style=dashed]
+"172 : dollarAmount = 0"
+"172 : dollarAmount = 0" -> "186 : dollarAmount = convertDollar(temp, )" [style=dashed]
+"173 : centAmount = 0"
+"173 : centAmount = 0" -> "187 : centAmount = convertCent(temp, )" [style=dashed]
+"174 : remainingDollar = 0"
+"174 : remainingDollar = 0" -> "196 : remainingDollar = convertDollar(temp, )" [style=dashed]
+"175 : remainingCent = 0"
+"175 : remainingCent = 0" -> "197 : remainingCent = convertCent(temp, )" [style=dashed]
+"176 : temp = null"
+"176 : temp = null" -> "185 : temp = s.nextLine()" [style=dashed]
+"178 : System.out.print(\"Expense type (in-full, partial)? \", )"
+"179 : type = s.nextLine()"
+"179 : type = s.nextLine()" -> "180 : type = type.toLowerCase()" [style=dashed]
+"180 : type = type.toLowerCase()"
+"181 : System.out.print(\"Payment date (MM/dd/yyyy): \", )"
+"182 : tempDate = s.nextLine()"
+"182 : tempDate = s.nextLine()" -> "183 : date = makeCalendar(tempDate, )"
+"183 : date = makeCalendar(tempDate, )"
+"183 : date = makeCalendar(tempDate, )" -> "198 : newExpense = new PartialExpense(date, dollarAmount, centAmount, paidTo, category, remainingDollar, remainingCent, )"
+"183 : date = makeCalendar(tempDate, )" -> "204 : newExpense = new InFullExpense(date, dollarAmount, centAmount, paidTo, category, )"
+"184 : System.out.print(\"Expense Amount: \", )"
+"185 : temp = s.nextLine()"
+"185 : temp = s.nextLine()" -> "186 : dollarAmount = convertDollar(temp, )"
+"185 : temp = s.nextLine()" -> "187 : centAmount = convertCent(temp, )"
+"185 : temp = s.nextLine()" -> "195 : temp = s.nextLine()" [style=dashed]
+"186 : dollarAmount = convertDollar(temp, )"
+"186 : dollarAmount = convertDollar(temp, )" -> "198 : newExpense = new PartialExpense(date, dollarAmount, centAmount, paidTo, category, remainingDollar, remainingCent, )"
+"186 : dollarAmount = convertDollar(temp, )" -> "204 : newExpense = new InFullExpense(date, dollarAmount, centAmount, paidTo, category, )"
+"187 : centAmount = convertCent(temp, )"
+"187 : centAmount = convertCent(temp, )" -> "198 : newExpense = new PartialExpense(date, dollarAmount, centAmount, paidTo, category, remainingDollar, remainingCent, )"
+"187 : centAmount = convertCent(temp, )" -> "204 : newExpense = new InFullExpense(date, dollarAmount, centAmount, paidTo, category, )"
+"188 : System.out.print(\"Who was this expense paid to? \", )"
+"189 : paidTo = s.nextLine()"
+"189 : paidTo = s.nextLine()" -> "198 : newExpense = new PartialExpense(date, dollarAmount, centAmount, paidTo, category, remainingDollar, remainingCent, )"
+"189 : paidTo = s.nextLine()" -> "204 : newExpense = new InFullExpense(date, dollarAmount, centAmount, paidTo, category, )"
+"190 : System.out.print(\"Expense category: \", )"
+"191 : category = s.nextLine()"
+"191 : category = s.nextLine()" -> "198 : newExpense = new PartialExpense(date, dollarAmount, centAmount, paidTo, category, remainingDollar, remainingCent, )"
+"191 : category = s.nextLine()" -> "204 : newExpense = new InFullExpense(date, dollarAmount, centAmount, paidTo, category, )"
+"192 : type.equals(\"partial\", )"
+"194 : System.out.print(\"Expense Balance: \", )"
+"195 : temp = s.nextLine()"
+"195 : temp = s.nextLine()" -> "196 : remainingDollar = convertDollar(temp, )"
+"195 : temp = s.nextLine()" -> "197 : remainingCent = convertCent(temp, )"
+"196 : remainingDollar = convertDollar(temp, )"
+"196 : remainingDollar = convertDollar(temp, )" -> "198 : newExpense = new PartialExpense(date, dollarAmount, centAmount, paidTo, category, remainingDollar, remainingCent, )"
+"197 : remainingCent = convertCent(temp, )"
+"197 : remainingCent = convertCent(temp, )" -> "198 : newExpense = new PartialExpense(date, dollarAmount, centAmount, paidTo, category, remainingDollar, remainingCent, )"
+"198 : newExpense = new PartialExpense(date, dollarAmount, centAmount, paidTo, category, remainingDollar, remainingCent, )"
+"198 : newExpense = new PartialExpense(date, dollarAmount, centAmount, paidTo, category, remainingDollar, remainingCent, )" -> "200 : expensesList.add(newExpense, )"
+"200 : expensesList.add(newExpense, )"
+"202 : type.equals(\"in-full\", )"
+"204 : newExpense = new InFullExpense(date, dollarAmount, centAmount, paidTo, category, )"
+"204 : newExpense = new InFullExpense(date, dollarAmount, centAmount, paidTo, category, )" -> "206 : expensesList.add(newExpense, )"
+"206 : expensesList.add(newExpense, )"
+"210 : System.out.println(\"Please define in-full or partial expense.\", )"
+"211 : addExpense(s, expensesList, )"
+"218 : System.out.println(\"Invalid date. Please enter valid date.\", )"
+"219 : addExpense(s, expensesList, )"
+"223 : System.out.println(\"Invalid amount. Please enter valid amount.\", )"
+"224 : addExpense(s, expensesList, )"
+}

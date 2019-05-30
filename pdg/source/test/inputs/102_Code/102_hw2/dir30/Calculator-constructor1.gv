@@ -1,0 +1,14 @@
+digraph G {
+"3 : this.header = null"
+"3 : this.header = null" -> "11 : this.header = header" [style=dashed]
+"4 : this.prompt = null"
+"4 : this.prompt = null" -> "12 : this.prompt = prompt" [style=dashed]
+"5 : this.parser = null"
+"5 : this.parser = null" -> "13 : this.parser = parser" [style=dashed]
+"6 : this.bindings = null"
+"6 : this.bindings = null" -> "14 : this.bindings = bindings" [style=dashed]
+"11 : this.header = header"
+"12 : this.prompt = prompt"
+"13 : this.parser = parser"
+"14 : this.bindings = bindings"
+}

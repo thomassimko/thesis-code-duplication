@@ -1,0 +1,9 @@
+digraph G {
+"5 : this.value = null"
+"6 : this.next = null"
+"6 : this.next = null" -> "47 : this.next = this.next.add(index - 1, element, )" [style=dashed]
+"40 : index == 0"
+"42 : n = new R00Node(element, this, )"
+"47 : this.next = this.next.add(index - 1, element, )"
+"49 : this"
+}

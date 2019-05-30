@@ -1,0 +1,6 @@
+digraph G {
+"4 : this.head = null"
+"49 : index < 0 || index >= size()"
+"51 : new IndexOutOfBoundsException()"
+"55 : get(index, )"
+}

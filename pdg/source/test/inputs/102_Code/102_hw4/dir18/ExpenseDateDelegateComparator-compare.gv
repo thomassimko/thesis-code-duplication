@@ -1,0 +1,6 @@
+digraph G {
+"6 : this.comp = null"
+"13 : compareTo(right.getDate(), ) == 0"
+"14 : this.comp.compare(left, right, )"
+"16 : compareTo(right.getDate(), )"
+}

@@ -1,0 +1,6 @@
+digraph G {
+"4 : this.node = null"
+"144 : n instanceof RIOEmpty"
+"146 : 0"
+"150 : 1 + size(n.next(), )"
+}

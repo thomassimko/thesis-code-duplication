@@ -1,0 +1,15 @@
+digraph G {
+"4 : this.r = 0.0"
+"4 : this.r = 0.0" -> "60 : newpoint = new PolarPoint(this.r, this.a + 90.0, )"
+"4 : this.r = 0.0" -> "56 : newpoint = new PolarPoint(this.r, this.a + 90.0 - 360.0, )"
+"5 : this.a = 0.0"
+"5 : this.a = 0.0" -> "54 : this.a + 90.0 >= 360.0"
+"5 : this.a = 0.0" -> "60 : newpoint = new PolarPoint(this.r, this.a + 90.0, )"
+"5 : this.a = 0.0" -> "56 : newpoint = new PolarPoint(this.r, this.a + 90.0 - 360.0, )"
+"53 : newpoint = null"
+"53 : newpoint = null" -> "60 : newpoint = new PolarPoint(this.r, this.a + 90.0, )" [style=dashed]
+"53 : newpoint = null" -> "56 : newpoint = new PolarPoint(this.r, this.a + 90.0 - 360.0, )" [style=dashed]
+"54 : this.a + 90.0 >= 360.0"
+"56 : newpoint = new PolarPoint(this.r, this.a + 90.0 - 360.0, )"
+"60 : newpoint = new PolarPoint(this.r, this.a + 90.0, )"
+}

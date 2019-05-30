@@ -1,0 +1,15 @@
+digraph G {
+"11 : this.sources = null"
+"12 : this.badSources = null"
+"79 : c = null"
+"82 : df = new SimpleDateFormat(\"EEE, dd MMM yyyy HH:mm:ss z\", )"
+"83 : d = df.parse(date, )"
+"83 : d = df.parse(date, )" -> "86 : formatted = dff.format(d, )"
+"85 : dff = new SimpleDateFormat(\"MM/dd/yyyy HH:mm\", )"
+"86 : formatted = dff.format(d, )"
+"86 : formatted = dff.format(d, )" -> "88 : da = dff.parse(formatted, )"
+"88 : da = dff.parse(formatted, )"
+"88 : da = dff.parse(formatted, )" -> "90 : c.setTime(da, )"
+"89 : c = Calendar.getInstance()"
+"90 : c.setTime(da, )"
+}

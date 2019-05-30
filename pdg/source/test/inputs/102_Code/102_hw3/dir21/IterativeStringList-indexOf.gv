@@ -1,0 +1,24 @@
+digraph G {
+"2 : this.head = null"
+"2 : this.head = null" -> "65 : tmp = this.head"
+"65 : tmp = this.head"
+"65 : tmp = this.head" -> "68 : tmp != null"
+"65 : tmp = this.head" -> "72 : tmp = tmp.next()" [style=dashed]
+"66 : index = 1"
+"67 : count = 0"
+"67 : count = 0" -> "73 : count = count + 1"
+"67 : count = 0" -> "73 : @temp4 = count"
+"67 : count = 0" -> "73 : count = count + 1" [style=dashed]
+"68 : tmp != null"
+"69 : equals(element, )"
+"72 : tmp = tmp.next()"
+"72 : tmp = tmp.next()" -> "68 : tmp != null"
+"72 : tmp = tmp.next()" -> "72 : tmp = tmp.next()" [style=dashed]
+"73 : @temp4 = count"
+"73 : @temp4 = count" -> "73 : @temp4 = count" [style=dashed]
+"73 : count = count + 1"
+"73 : count = count + 1" -> "73 : count = count + 1"
+"73 : count = count + 1" -> "73 : @temp4 = count"
+"73 : count = count + 1" -> "73 : count = count + 1" [style=dashed]
+"68 : tmp != null"
+}

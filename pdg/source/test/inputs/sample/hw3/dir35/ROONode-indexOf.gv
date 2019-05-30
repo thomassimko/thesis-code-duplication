@@ -1,0 +1,9 @@
+digraph G {
+"7 : this.string = null"
+"8 : this.next = null"
+"86 : equals(element, )"
+"88 : 0"
+"92 : indexOf(element, ) == 1"
+"94 : new NoSuchElementException()"
+"97 : 1 + indexOf(element, )"
+}

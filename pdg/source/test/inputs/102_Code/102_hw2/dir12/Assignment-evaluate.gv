@@ -1,0 +1,10 @@
+digraph G {
+"3 : this.name = null"
+"3 : this.name = null" -> "18 : bindings.addBinding(this.name, this.value, )"
+"4 : this.expression = null"
+"5 : this.value = 0.0"
+"5 : this.value = 0.0" -> "16 : this.value = this.expression.evaluate(bindings, )" [style=dashed]
+"16 : this.value = this.expression.evaluate(bindings, )"
+"16 : this.value = this.expression.evaluate(bindings, )" -> "18 : bindings.addBinding(this.name, this.value, )"
+"18 : bindings.addBinding(this.name, this.value, )"
+}

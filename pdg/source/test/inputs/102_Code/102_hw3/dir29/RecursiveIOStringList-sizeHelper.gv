@@ -1,0 +1,6 @@
+digraph G {
+"3 : this.first = new RIOEmpty()"
+"128 : cur instanceof RIOEmpty"
+"129 : 0"
+"130 : sizeHelper(cur.getNext(), ) + 1"
+}

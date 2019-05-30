@@ -1,0 +1,12 @@
+digraph G {
+"7 : this.comp = null"
+"17 : paid1 = expense1.getPaidDollars() * 100 + expense1.getPaidCents()"
+"17 : paid1 = expense1.getPaidDollars() * 100 + expense1.getPaidCents()" -> "20 : paid1 - paid2 == 0"
+"17 : paid1 = expense1.getPaidDollars() * 100 + expense1.getPaidCents()" -> "24 : paid1 - paid2"
+"18 : paid2 = expense2.getPaidDollars() * 100 + expense2.getPaidCents()"
+"18 : paid2 = expense2.getPaidDollars() * 100 + expense2.getPaidCents()" -> "20 : paid1 - paid2 == 0"
+"18 : paid2 = expense2.getPaidDollars() * 100 + expense2.getPaidCents()" -> "24 : paid1 - paid2"
+"20 : paid1 - paid2 == 0"
+"22 : this.comp.compare(expense1, expense2, )"
+"24 : paid1 - paid2"
+}

@@ -1,0 +1,9 @@
+digraph G {
+"4 : this.left = null"
+"5 : this.right = null"
+"11 : x = this.left.evaluate(binding, )"
+"11 : x = this.left.evaluate(binding, )" -> "13 : divide = x / y"
+"12 : y = this.right.evaluate(binding, )"
+"12 : y = this.right.evaluate(binding, )" -> "13 : divide = x / y"
+"13 : divide = x / y"
+}

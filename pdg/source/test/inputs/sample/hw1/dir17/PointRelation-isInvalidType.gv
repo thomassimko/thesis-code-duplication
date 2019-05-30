@@ -1,0 +1,3 @@
+digraph G {
+"76 : type == 1 || type == 2"
+}

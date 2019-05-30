@@ -1,0 +1,10 @@
+digraph G {
+"20 : this.scan = null"
+"145 : System.out.println(\"1. Display\", )"
+"146 : System.out.println(\"2. Add Expense\", )"
+"147 : System.out.println(\"3. Sort\", )"
+"148 : System.out.println(\"4. Save\", )"
+"149 : System.out.println(\"5. Quit\", )"
+"150 : System.out.println()"
+"151 : System.out.print(\"Enter choice: \", )"
+}

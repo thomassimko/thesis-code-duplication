@@ -1,0 +1,7 @@
+digraph G {
+"10 : ce = new DoubleConstantExpression(5.2, )"
+"10 : ce = new DoubleConstantExpression(5.2, )" -> "11 : nce = new NegationExpression(ce, )"
+"11 : nce = new NegationExpression(ce, )"
+"12 : Check.check(nce.evaluate(null, ), 5.2, )"
+"13 : Check.check(nce.toString(), \"-5.2\", )"
+}

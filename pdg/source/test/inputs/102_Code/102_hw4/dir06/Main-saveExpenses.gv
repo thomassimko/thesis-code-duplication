@@ -1,0 +1,23 @@
+digraph G {
+"61 : saver = new PrintWriter(saveTo, )"
+"62 : i = 0"
+"62 : i = 0" -> "62 : i < expensesList.size()"
+"62 : i = 0" -> "62 : i = i + 1"
+"62 : i = 0" -> "62 : @temp1 = i"
+"62 : i = 0" -> "62 : i = i + 1" [style=dashed]
+"62 : i < expensesList.size()"
+"64 : saver.println(getType(), )"
+"65 : saver.println(getDateString(), )"
+"66 : saver.println(getCategory(), )"
+"67 : saver.println(getPaidTo(), )"
+"68 : saver.println(paidString(), )"
+"69 : saver.println(remainingString(), )"
+"62 : @temp1 = i"
+"62 : @temp1 = i" -> "62 : @temp1 = i" [style=dashed]
+"62 : i = i + 1"
+"62 : i = i + 1" -> "62 : i < expensesList.size()"
+"62 : i = i + 1" -> "62 : i = i + 1"
+"62 : i = i + 1" -> "62 : @temp1 = i"
+"62 : i = i + 1" -> "62 : i = i + 1" [style=dashed]
+"71 : saver.close()"
+}

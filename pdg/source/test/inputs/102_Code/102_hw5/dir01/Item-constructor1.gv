@@ -1,0 +1,19 @@
+digraph G {
+"5 : this.title = null"
+"5 : this.title = null" -> "11 : this.title = title" [style=dashed]
+"6 : this.date = null"
+"6 : this.date = null" -> "12 : this.date = date" [style=dashed]
+"7 : this.link = null"
+"7 : this.link = null" -> "14 : this.link = link" [style=dashed]
+"8 : this.datez = null"
+"8 : this.datez = null" -> "15 : this.datez = getDatez()" [style=dashed]
+"11 : this.title = title"
+"12 : this.date = date"
+"12 : this.date = date" -> "13 : this.date = substring(5, 25, )" [style=dashed]
+"13 : this.date = substring(5, 25, )"
+"14 : this.link = link"
+"15 : this.datez = getDatez()"
+"15 : this.datez = getDatez()" -> "16 : this.datez == null"
+"16 : this.datez == null"
+"17 : new BadItemException()"
+}

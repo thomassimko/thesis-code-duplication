@@ -1,0 +1,19 @@
+digraph G {
+"15 : this.feed = null"
+"15 : this.feed = null" -> "19 : this.feed = feed" [style=dashed]
+"19 : this.feed = feed"
+"21 : feedItems = new JTextArea()"
+"21 : feedItems = new JTextArea()" -> "30 : add(createCenter(feedItems, sources, ), BorderLayout.CENTER, )"
+"21 : feedItems = new JTextArea()" -> "29 : add(createRight(feedItems, sources, ), BorderLayout.EAST, )"
+"22 : sources = new JTextArea()"
+"22 : sources = new JTextArea()" -> "30 : add(createCenter(feedItems, sources, ), BorderLayout.CENTER, )"
+"22 : sources = new JTextArea()" -> "28 : add(createTop(sources, ), BorderLayout.NORTH, )"
+"22 : sources = new JTextArea()" -> "29 : add(createRight(feedItems, sources, ), BorderLayout.EAST, )"
+"24 : setLayout(new BorderLayout(), )"
+"25 : setSize(650, 750, )"
+"26 : setResizable(false, )"
+"28 : add(createTop(sources, ), BorderLayout.NORTH, )"
+"29 : add(createRight(feedItems, sources, ), BorderLayout.EAST, )"
+"30 : add(createCenter(feedItems, sources, ), BorderLayout.CENTER, )"
+"32 : setVisible(true, )"
+}

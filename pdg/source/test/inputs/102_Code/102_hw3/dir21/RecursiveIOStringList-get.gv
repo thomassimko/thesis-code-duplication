@@ -1,0 +1,13 @@
+digraph G {
+"2 : this.head = null"
+"2 : this.head = null" -> "50 : this.iter = this.head"
+"2 : this.iter = null"
+"2 : this.iter = null" -> "54 : this.iter = this.iter.next()" [style=dashed]
+"2 : this.iter = null" -> "50 : this.iter = this.head" [style=dashed]
+"2 : this.iterPrev = null"
+"49 : index == 0"
+"50 : this.iter = this.head"
+"51 : this.iter.getVal()"
+"54 : this.iter = this.iter.next()"
+"55 : get(index - 1, )"
+}

@@ -1,0 +1,15 @@
+digraph G {
+"5 : this.next = null"
+"13 : o1 = e1.getAmount()"
+"14 : o2 = e2.getAmount()"
+"16 : o1.getDollar() > o2.getDollar()"
+"18 : 1"
+"20 : o1.getDollar() == o2.getDollar()"
+"22 : o1.getCents() > o2.getCents()"
+"24 : 1"
+"26 : o1.getCents() < o2.getCents()"
+"28 : 1"
+"31 : o1.getDollar() < o2.getDollar()"
+"33 : 1"
+"35 : this.next.compare(e1, e2, )"
+}

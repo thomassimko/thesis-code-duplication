@@ -1,0 +1,9 @@
+digraph G {
+"4 : this.node = null"
+"91 : index < 0"
+"93 : new IndexOutOfBoundsException()"
+"95 : index == 1"
+"97 : temp = str()"
+"98 : n.setNext(next(), )"
+"101 : remove(index - 1, n.next(), )"
+}

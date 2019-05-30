@@ -1,0 +1,5 @@
+digraph G {
+"7 : this.title = null"
+"8 : this.link = null"
+"9 : this.date = null"
+}

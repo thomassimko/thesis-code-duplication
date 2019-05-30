@@ -1,0 +1,29 @@
+digraph G {
+"6 : this.head = null"
+"174 : upper = new IterativeStringList()"
+"175 : newString = null"
+"175 : newString = null" -> "179 : newString = get(i, )" [style=dashed]
+"176 : size = size()"
+"176 : size = size()" -> "177 : i < size"
+"177 : i = 0"
+"177 : i = 0" -> "179 : newString = get(i, )"
+"177 : i = 0" -> "177 : @temp8 = i"
+"177 : i = 0" -> "177 : i = i + 1"
+"177 : i = 0" -> "177 : i < size"
+"177 : i = 0" -> "177 : i = i + 1" [style=dashed]
+"177 : i < size"
+"179 : newString = get(i, )"
+"179 : newString = get(i, )" -> "180 : newString = newString.toUpperCase()" [style=dashed]
+"180 : newString = newString.toUpperCase()"
+"180 : newString = newString.toUpperCase()" -> "181 : upper.addToEnd(newString, )"
+"180 : newString = newString.toUpperCase()" -> "179 : newString = get(i, )" [style=dashed]
+"181 : upper.addToEnd(newString, )"
+"177 : @temp8 = i"
+"177 : @temp8 = i" -> "177 : @temp8 = i" [style=dashed]
+"177 : i = i + 1"
+"177 : i = i + 1" -> "179 : newString = get(i, )"
+"177 : i = i + 1" -> "177 : @temp8 = i"
+"177 : i = i + 1" -> "177 : i = i + 1"
+"177 : i = i + 1" -> "177 : i < size"
+"177 : i = i + 1" -> "177 : i = i + 1" [style=dashed]
+}

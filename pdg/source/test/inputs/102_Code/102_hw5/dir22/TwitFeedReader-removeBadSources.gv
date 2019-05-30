@@ -1,0 +1,39 @@
+digraph G {
+"13 : this.sourcesList = new ArrayList()"
+"14 : this.badSources = new ArrayList()"
+"15 : this.feedDocument = null"
+"112 : i = 0"
+"112 : i = 0" -> "112 : @temp4 = i"
+"112 : i = 0" -> "112 : i < this.badSources.size()"
+"112 : i = 0" -> "112 : i = i + 1"
+"112 : i = 0" -> "112 : i = i + 1" [style=dashed]
+"112 : i < this.badSources.size()"
+"114 : j = 0"
+"114 : j = 0" -> "114 : j = j + 1"
+"114 : j = 0" -> "116 : equals(this.sourcesList.get(j, ), )"
+"114 : j = 0" -> "118 : this.sourcesList.remove(j, )"
+"114 : j = 0" -> "114 : @temp3 = j"
+"114 : j = 0" -> "114 : j < this.sourcesList.size()"
+"114 : j = 0" -> "114 : j = 0" [style=dashed]
+"114 : j = 0" -> "114 : j = j + 1" [style=dashed]
+"114 : j < this.sourcesList.size()"
+"116 : equals(this.sourcesList.get(j, ), )"
+"112 : @temp4 = i"
+"112 : @temp4 = i" -> "112 : @temp4 = i" [style=dashed]
+"112 : i = i + 1"
+"112 : i = i + 1" -> "112 : @temp4 = i"
+"112 : i = i + 1" -> "112 : i < this.badSources.size()"
+"112 : i = i + 1" -> "112 : i = i + 1"
+"112 : i = i + 1" -> "112 : i = i + 1" [style=dashed]
+"118 : this.sourcesList.remove(j, )"
+"114 : @temp3 = j"
+"114 : @temp3 = j" -> "114 : @temp3 = j" [style=dashed]
+"114 : j = j + 1"
+"114 : j = j + 1" -> "114 : j = j + 1"
+"114 : j = j + 1" -> "116 : equals(this.sourcesList.get(j, ), )"
+"114 : j = j + 1" -> "118 : this.sourcesList.remove(j, )"
+"114 : j = j + 1" -> "114 : @temp3 = j"
+"114 : j = j + 1" -> "114 : j < this.sourcesList.size()"
+"114 : j = j + 1" -> "114 : j = 0" [style=dashed]
+"114 : j = j + 1" -> "114 : j = j + 1" [style=dashed]
+}

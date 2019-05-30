@@ -1,0 +1,9 @@
+digraph G {
+"4 : this.string = null"
+"4 : this.string = null" -> "56 : n = new ROONode(this.string, )"
+"5 : this.next = null"
+"54 : startsWith(prefix, )"
+"56 : n = new ROONode(this.string, )"
+"57 : n.setNext(statsWith(prefix, ), )"
+"60 : statsWith(prefix, )"
+}

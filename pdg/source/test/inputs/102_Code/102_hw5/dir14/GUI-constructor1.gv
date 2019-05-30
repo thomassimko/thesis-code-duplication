@@ -1,0 +1,14 @@
+digraph G {
+"23 : this.gui = this"
+"24 : this.feedReader = null"
+"24 : this.feedReader = null" -> "32 : this.feedReader = feedReader" [style=dashed]
+"25 : this.source = null"
+"26 : this.data = null"
+"27 : this.sources = null"
+"32 : this.feedReader = feedReader"
+"34 : this.setSize(650, 750, )"
+"35 : this.setResizable(false, )"
+"36 : this.setDefaultCloseOperation(EXIT_ON_CLOSE, )"
+"38 : createContainer()"
+"40 : this.setVisible(true, )"
+}

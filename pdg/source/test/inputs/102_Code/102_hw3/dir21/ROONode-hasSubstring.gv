@@ -1,0 +1,7 @@
+digraph G {
+"2 : this.value = null"
+"3 : this.nextLink = null"
+"88 : s = this.nextLink.hasSubstring(substring, )"
+"89 : this.value.indexOf(substring, ) != 1"
+"90 : s.add(0, substring, )"
+}

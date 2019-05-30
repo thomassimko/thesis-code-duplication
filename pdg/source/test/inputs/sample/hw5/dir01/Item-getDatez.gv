@@ -1,0 +1,76 @@
+digraph G {
+"5 : this.title = null"
+"6 : this.date = null"
+"7 : this.link = null"
+"8 : this.datez = null"
+"29 : year = Integer.parseInt(substring(7, 11, ), )"
+"29 : year = Integer.parseInt(substring(7, 11, ), )" -> "65 : day.set(year, month, date, hourOfDay, minute, second, )"
+"30 : m = substring(3, 6, )"
+"31 : month = 0"
+"31 : month = 0" -> "65 : day.set(year, month, date, hourOfDay, minute, second, )"
+"31 : month = 0" -> "55 : month = 11" [style=dashed]
+"31 : month = 0" -> "45 : month = 1" [style=dashed]
+"31 : month = 0" -> "39 : month = 6" [style=dashed]
+"31 : month = 0" -> "35 : month = 2" [style=dashed]
+"31 : month = 0" -> "47 : month = 3" [style=dashed]
+"31 : month = 0" -> "49 : month = 5" [style=dashed]
+"31 : month = 0" -> "33 : month = 0" [style=dashed]
+"31 : month = 0" -> "41 : month = 8" [style=dashed]
+"31 : month = 0" -> "43 : month = 10" [style=dashed]
+"31 : month = 0" -> "37 : month = 4" [style=dashed]
+"31 : month = 0" -> "51 : month = 7" [style=dashed]
+"31 : month = 0" -> "53 : month = 9" [style=dashed]
+"32 : m.equals(\"Jan\", )"
+"33 : month = 0"
+"33 : month = 0" -> "65 : day.set(year, month, date, hourOfDay, minute, second, )"
+"34 : m.equals(\"Mar\", )"
+"35 : month = 2"
+"35 : month = 2" -> "65 : day.set(year, month, date, hourOfDay, minute, second, )"
+"36 : m.equals(\"May\", )"
+"37 : month = 4"
+"37 : month = 4" -> "65 : day.set(year, month, date, hourOfDay, minute, second, )"
+"38 : m.equals(\"Jul\", )"
+"39 : month = 6"
+"39 : month = 6" -> "65 : day.set(year, month, date, hourOfDay, minute, second, )"
+"40 : m.equals(\"Sept\", )"
+"41 : month = 8"
+"41 : month = 8" -> "65 : day.set(year, month, date, hourOfDay, minute, second, )"
+"42 : m.equals(\"Nov\", )"
+"43 : month = 10"
+"43 : month = 10" -> "65 : day.set(year, month, date, hourOfDay, minute, second, )"
+"44 : m.equals(\"Feb\", )"
+"45 : month = 1"
+"45 : month = 1" -> "65 : day.set(year, month, date, hourOfDay, minute, second, )"
+"46 : m.equals(\"Apr\", )"
+"47 : month = 3"
+"47 : month = 3" -> "65 : day.set(year, month, date, hourOfDay, minute, second, )"
+"48 : m.equals(\"Jun\", )"
+"49 : month = 5"
+"49 : month = 5" -> "65 : day.set(year, month, date, hourOfDay, minute, second, )"
+"50 : m.equals(\"Aug\", )"
+"51 : month = 7"
+"51 : month = 7" -> "65 : day.set(year, month, date, hourOfDay, minute, second, )"
+"52 : m.equals(\"Oct\", )"
+"53 : month = 9"
+"53 : month = 9" -> "65 : day.set(year, month, date, hourOfDay, minute, second, )"
+"54 : m.equals(\"Dec\", )"
+"55 : month = 11"
+"55 : month = 11" -> "65 : day.set(year, month, date, hourOfDay, minute, second, )"
+"57 : null"
+"59 : date = Integer.parseInt(substring(0, 2, ), )"
+"59 : date = Integer.parseInt(substring(0, 2, ), )" -> "65 : day.set(year, month, date, hourOfDay, minute, second, )"
+"59 : date = Integer.parseInt(substring(0, 2, ), )" -> "59 : date = Integer.parseInt(substring(0, 2, ), )" [style=dashed]
+"60 : hourOfDay = Integer.parseInt(substring(12, 14, ), )"
+"60 : hourOfDay = Integer.parseInt(substring(12, 14, ), )" -> "65 : day.set(year, month, date, hourOfDay, minute, second, )"
+"60 : hourOfDay = Integer.parseInt(substring(12, 14, ), )" -> "60 : hourOfDay = Integer.parseInt(substring(12, 14, ), )" [style=dashed]
+"61 : minute = Integer.parseInt(substring(15, 17, ), )"
+"61 : minute = Integer.parseInt(substring(15, 17, ), )" -> "65 : day.set(year, month, date, hourOfDay, minute, second, )"
+"61 : minute = Integer.parseInt(substring(15, 17, ), )" -> "61 : minute = Integer.parseInt(substring(15, 17, ), )" [style=dashed]
+"62 : second = Integer.parseInt(substring(18, 20, ), )"
+"62 : second = Integer.parseInt(substring(18, 20, ), )" -> "65 : day.set(year, month, date, hourOfDay, minute, second, )"
+"62 : second = Integer.parseInt(substring(18, 20, ), )" -> "62 : second = Integer.parseInt(substring(18, 20, ), )" [style=dashed]
+"64 : day = Calendar.getInstance()"
+"64 : day = Calendar.getInstance()" -> "64 : day = Calendar.getInstance()" [style=dashed]
+"65 : day.set(year, month, date, hourOfDay, minute, second, )"
+"71 : null"
+}

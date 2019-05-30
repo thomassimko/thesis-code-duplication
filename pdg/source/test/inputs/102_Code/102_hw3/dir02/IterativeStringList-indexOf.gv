@@ -1,0 +1,38 @@
+digraph G {
+"5 : this.head = null"
+"5 : this.head = null" -> "73 : cur = this.head"
+"73 : cur = this.head"
+"73 : cur = this.head" -> "78 : cur = cur.getNext()" [style=dashed]
+"74 : flag = true"
+"74 : flag = true" -> "85 : flag = false" [style=dashed]
+"75 : counter = 0"
+"75 : counter = 0" -> "88 : counter = counter + 1"
+"75 : counter = 0" -> "86 : @temp4 = counter"
+"75 : counter = 0" -> "88 : @temp5 = counter"
+"75 : counter = 0" -> "86 : counter = counter - 1"
+"75 : counter = 0" -> "88 : counter = counter + 1" [style=dashed]
+"75 : counter = 0" -> "86 : counter = counter - 1" [style=dashed]
+"78 : cur = cur.getNext()"
+"78 : cur = cur.getNext()" -> "79 : cur == null"
+"78 : cur = cur.getNext()" -> "78 : cur = cur.getNext()" [style=dashed]
+"79 : cur == null"
+"81 : new NoSuchElementException()"
+"83 : equals(element, )"
+"85 : flag = false"
+"85 : flag = false" -> "85 : flag = false" [style=dashed]
+"86 : @temp4 = counter"
+"86 : @temp4 = counter" -> "86 : @temp4 = counter" [style=dashed]
+"86 : counter = counter - 1"
+"86 : counter = counter - 1" -> "88 : counter = counter + 1"
+"86 : counter = counter - 1" -> "88 : @temp5 = counter"
+"86 : counter = counter - 1" -> "88 : counter = counter + 1" [style=dashed]
+"88 : @temp5 = counter"
+"88 : @temp5 = counter" -> "88 : @temp5 = counter" [style=dashed]
+"88 : counter = counter + 1"
+"88 : counter = counter + 1" -> "88 : counter = counter + 1"
+"88 : counter = counter + 1" -> "86 : @temp4 = counter"
+"88 : counter = counter + 1" -> "88 : @temp5 = counter"
+"88 : counter = counter + 1" -> "86 : counter = counter - 1"
+"88 : counter = counter + 1" -> "88 : counter = counter + 1" [style=dashed]
+"88 : counter = counter + 1" -> "86 : counter = counter - 1" [style=dashed]
+}

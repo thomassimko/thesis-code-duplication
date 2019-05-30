@@ -1,0 +1,22 @@
+digraph G {
+"4 : this.first = null"
+"4 : this.first = null" -> "89 : node = this.first"
+"89 : node = this.first"
+"89 : node = this.first" -> "91 : node != null"
+"89 : node = this.first" -> "92 : node = node.getNext()" [style=dashed]
+"90 : i = 0"
+"90 : i = 0" -> "93 : @temp6 = i"
+"90 : i = 0" -> "93 : i = i + 1"
+"90 : i = 0" -> "93 : i = i + 1" [style=dashed]
+"91 : node != null"
+"92 : node = node.getNext()"
+"92 : node = node.getNext()" -> "91 : node != null"
+"92 : node = node.getNext()" -> "92 : node = node.getNext()" [style=dashed]
+"93 : @temp6 = i"
+"93 : @temp6 = i" -> "93 : @temp6 = i" [style=dashed]
+"93 : i = i + 1"
+"93 : i = i + 1" -> "93 : @temp6 = i"
+"93 : i = i + 1" -> "93 : i = i + 1"
+"93 : i = i + 1" -> "93 : i = i + 1" [style=dashed]
+"91 : node != null"
+}

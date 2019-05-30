@@ -1,0 +1,60 @@
+digraph G {
+"15 : sourceList = new ArrayList()"
+"15 : sourceList = new ArrayList()" -> "23 : twit = new TwitterReader(sourceList, )"
+"16 : rssItemList = new ArrayList()"
+"16 : rssItemList = new ArrayList()" -> "29 : rssItemList = twit.retrieveFeedItems()" [style=dashed]
+"17 : badSourceList = new ArrayList()"
+"17 : badSourceList = new ArrayList()" -> "31 : badSourceList = twit.getBadSources()" [style=dashed]
+"19 : string1 = \"http://search.twitter.com/search.rss?q=from:keen_csc102\""
+"19 : string1 = \"http://search.twitter.com/search.rss?q=from:keen_csc102\"" -> "21 : sourceList.add(string1, )"
+"21 : sourceList.add(string1, )"
+"23 : twit = new TwitterReader(sourceList, )"
+"25 : check = twit.getSources()"
+"27 : System.out.println(check.get(0, ), )"
+"29 : rssItemList = twit.retrieveFeedItems()"
+"31 : badSourceList = twit.getBadSources()"
+"33 : System.out.println(rssItemList.size(), )"
+"35 : i = 0"
+"35 : i = 0" -> "35 : i < rssItemList.size()"
+"35 : i = 0" -> "35 : @temp3 = i"
+"35 : i = 0" -> "35 : i = i + 1"
+"35 : i = 0" -> "35 : i = i + 1" [style=dashed]
+"35 : i < rssItemList.size()"
+"38 : regDate = new SimpleDateFormat(\"EEE, d MMM yyyy HH:mm:ss Z\", )"
+"38 : regDate = new SimpleDateFormat(\"EEE, d MMM yyyy HH:mm:ss Z\", )" -> "38 : regDate = new SimpleDateFormat(\"EEE, d MMM yyyy HH:mm:ss Z\", )" [style=dashed]
+"39 : calDate = getDate()"
+"39 : calDate = getDate()" -> "39 : calDate = getDate()" [style=dashed]
+"40 : zDate = null"
+"40 : zDate = null" -> "41 : zDate = regDate.format(calDate.getTime(), )" [style=dashed]
+"41 : zDate = regDate.format(calDate.getTime(), )"
+"41 : zDate = regDate.format(calDate.getTime(), )" -> "46 : System.out.println(zDate, )"
+"41 : zDate = regDate.format(calDate.getTime(), )" -> "40 : zDate = null" [style=dashed]
+"44 : System.out.println(getTitle(), )"
+"46 : System.out.println(zDate, )"
+"47 : System.out.println(getLink(), )"
+"48 : System.out.println()"
+"35 : @temp3 = i"
+"35 : @temp3 = i" -> "35 : @temp3 = i" [style=dashed]
+"35 : i = i + 1"
+"35 : i = i + 1" -> "35 : i < rssItemList.size()"
+"35 : i = i + 1" -> "35 : @temp3 = i"
+"35 : i = i + 1" -> "35 : i = i + 1"
+"35 : i = i + 1" -> "35 : i = i + 1" [style=dashed]
+"52 : j = 0"
+"52 : j = 0" -> "52 : j < badSourceList.size()"
+"52 : j = 0" -> "54 : System.out.println(badSourceList.get(j, ), )"
+"52 : j = 0" -> "52 : @temp4 = j"
+"52 : j = 0" -> "52 : j = j + 1"
+"52 : j = 0" -> "52 : j = j + 1" [style=dashed]
+"52 : j < badSourceList.size()"
+"54 : System.out.println(badSourceList.get(j, ), )"
+"52 : @temp4 = j"
+"52 : @temp4 = j" -> "52 : @temp4 = j" [style=dashed]
+"52 : j = j + 1"
+"52 : j = j + 1" -> "52 : j < badSourceList.size()"
+"52 : j = j + 1" -> "54 : System.out.println(badSourceList.get(j, ), )"
+"52 : j = j + 1" -> "52 : @temp4 = j"
+"52 : j = j + 1" -> "52 : j = j + 1"
+"52 : j = j + 1" -> "52 : j = j + 1" [style=dashed]
+"57 : gui = new TwitterGUI()"
+}

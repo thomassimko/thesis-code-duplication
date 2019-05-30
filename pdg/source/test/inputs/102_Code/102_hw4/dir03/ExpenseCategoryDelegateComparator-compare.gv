@@ -1,0 +1,10 @@
+digraph G {
+"7 : this.primary = null"
+"15 : leftString = left.getPayee()"
+"16 : rightString = right.getPayee()"
+"16 : rightString = right.getPayee()" -> "19 : leftString.compareTo(rightString, )"
+"16 : rightString = right.getPayee()" -> "17 : leftString.compareTo(rightString, ) == 0"
+"17 : leftString.compareTo(rightString, ) == 0"
+"18 : this.primary.compare(left, right, )"
+"19 : leftString.compareTo(rightString, )"
+}

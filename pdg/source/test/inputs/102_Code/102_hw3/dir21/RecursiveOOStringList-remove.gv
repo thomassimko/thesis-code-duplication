@@ -1,0 +1,4 @@
+digraph G {
+"2 : this.head = null"
+"24 : this.head.remove(index, )"
+}

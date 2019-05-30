@@ -1,0 +1,5 @@
+digraph G {
+"44 : b = new Binding(\"hello\", 4, )"
+"45 : Check.check(b.getId(), \"hello\", )"
+"46 : Check.check(b.getValue(), 4, )"
+}

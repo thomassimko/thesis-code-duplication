@@ -1,0 +1,31 @@
+digraph G {
+"3 : this.dollar = 0"
+"3 : this.dollar = 0" -> "20 : this.dollar = Integer.parseInt(toDollar, )" [style=dashed]
+"4 : this.cent = 0"
+"4 : this.cent = 0" -> "21 : this.cent = Integer.parseInt(toCent, )" [style=dashed]
+"9 : i = 0"
+"9 : i = 0" -> "10 : i = 0" [style=dashed]
+"10 : i = 0"
+"10 : i = 0" -> "10 : amount.charAt(i, ) != '"
+"10 : i = 0" -> "10 : i = i + 1"
+"10 : i = 0" -> "14 : toCent = amount.substring(i + 1, )"
+"10 : i = 0" -> "10 : @temp1 = i"
+"10 : i = 0" -> "13 : toDollar = amount.substring(0, i, )"
+"10 : i = 0" -> "10 : i = i + 1" [style=dashed]
+"10 : amount.charAt(i, ) != '"
+"10 : @temp1 = i"
+"10 : @temp1 = i" -> "10 : @temp1 = i" [style=dashed]
+"10 : i = i + 1"
+"10 : i = i + 1" -> "10 : amount.charAt(i, ) != '"
+"10 : i = i + 1" -> "10 : i = i + 1"
+"10 : i = i + 1" -> "14 : toCent = amount.substring(i + 1, )"
+"10 : i = i + 1" -> "10 : @temp1 = i"
+"10 : i = i + 1" -> "13 : toDollar = amount.substring(0, i, )"
+"10 : i = i + 1" -> "10 : i = i + 1" [style=dashed]
+"13 : toDollar = amount.substring(0, i, )"
+"13 : toDollar = amount.substring(0, i, )" -> "20 : this.dollar = Integer.parseInt(toDollar, )"
+"14 : toCent = amount.substring(i + 1, )"
+"14 : toCent = amount.substring(i + 1, )" -> "21 : this.cent = Integer.parseInt(toCent, )"
+"20 : this.dollar = Integer.parseInt(toDollar, )"
+"21 : this.cent = Integer.parseInt(toCent, )"
+}

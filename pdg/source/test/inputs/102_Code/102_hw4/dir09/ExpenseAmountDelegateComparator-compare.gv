@@ -1,0 +1,6 @@
+digraph G {
+"6 : this.comp = null"
+"15 : first.paidValue() == second.paidValue()"
+"17 : this.comp.compare(first, second, )"
+"19 : first.paidValue() - second.paidValue()"
+}

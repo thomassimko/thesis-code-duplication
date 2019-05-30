@@ -1,0 +1,5 @@
+digraph G {
+"3 : this.first = new RIOEmpty()"
+"3 : this.first = new RIOEmpty()" -> "10 : this.first = first" [style=dashed]
+"10 : this.first = first"
+}

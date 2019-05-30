@@ -56,6 +56,8 @@ public class MyClassDeclarationVisitor extends Java8BaseVisitor<ClassObject> {
     }
 
     private Method handleConstructor(Java8Parser.ConstructorDeclarationContext ctx, int count) {
+        if(ctx.constructorBody() == null)
+            return null;
         Block block = Driver.blockVisitor.visitBlockStatements(ctx.constructorBody().blockStatements());
         List<DeclarationStatement> params = new ArrayList<>();
         Driver.methodVisitor.handleParameters(ctx.constructorDeclarator().formalParameterList(), params);

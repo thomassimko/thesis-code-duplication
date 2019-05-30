@@ -1,6 +1,0 @@
-digraph G {
-"4 : this.lft = null"
-"5 : this.rht = null"
-"6 : this.divide = 0.0"
-"19 : \"(\" + this.lft.toString() + \" / \" + this.rht.toString() + \")\""
-}

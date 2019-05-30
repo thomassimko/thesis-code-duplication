@@ -1,0 +1,20 @@
+digraph G {
+"8 : this.head = null"
+"8 : this.head = null" -> "126 : cur = this.head"
+"126 : cur = this.head"
+"126 : cur = this.head" -> "131 : cur = cur.getNext()" [style=dashed]
+"127 : size = 1"
+"127 : size = 1" -> "132 : size = size + 1"
+"127 : size = 1" -> "132 : @temp10 = size"
+"127 : size = 1" -> "132 : size = size + 1" [style=dashed]
+"129 : cur.getNext() != null"
+"131 : cur = cur.getNext()"
+"131 : cur = cur.getNext()" -> "131 : cur = cur.getNext()" [style=dashed]
+"132 : @temp10 = size"
+"132 : @temp10 = size" -> "132 : @temp10 = size" [style=dashed]
+"132 : size = size + 1"
+"132 : size = size + 1" -> "132 : size = size + 1"
+"132 : size = size + 1" -> "132 : @temp10 = size"
+"132 : size = size + 1" -> "132 : size = size + 1" [style=dashed]
+"129 : cur.getNext() != null"
+}

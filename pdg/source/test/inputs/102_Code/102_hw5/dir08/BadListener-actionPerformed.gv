@@ -1,0 +1,13 @@
+digraph G {
+"8 : this.r = null"
+"9 : this.s = null"
+"10 : this.list = null"
+"10 : this.list = null" -> "22 : this.list = this.r.getBadSources()" [style=dashed]
+"20 : this.s.setText(\"\", )"
+"22 : this.list = this.r.getBadSources()"
+"22 : this.list = this.r.getBadSources()" -> "24 : k = this.list"
+"24 : k = this.list"
+"24 : k = this.list" -> "26 : this.s.append(k + \"\n\", )"
+"24 : k = this.list" -> "24 : k = this.list" [style=dashed]
+"26 : this.s.append(k + \"\n\", )"
+}

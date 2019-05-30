@@ -1,0 +1,6 @@
+digraph G {
+"12 : this.itemlist = null"
+"13 : this.sources = null"
+"14 : this.badsources = null"
+"25 : this.sources.add(src, )"
+}

@@ -1,0 +1,5 @@
+digraph G {
+"4 : this.first = null"
+"5 : this.second = null"
+"20 : \"(\" + this.first.toString() + \" / \" + this.second.toString() + \")\""
+}

@@ -1,0 +1,36 @@
+digraph G {
+"23 : this.gui = this"
+"24 : this.feedReader = null"
+"25 : this.source = null"
+"26 : this.data = null"
+"27 : this.sources = null"
+"153 : this.data.setText(\"\", )"
+"154 : items = new ArrayList()"
+"154 : items = new ArrayList()" -> "155 : items = this.feedReader.retrieveFeedItems()" [style=dashed]
+"155 : items = this.feedReader.retrieveFeedItems()"
+"156 : i = 0"
+"156 : i = 0" -> "156 : i = i + 1"
+"156 : i = 0" -> "156 : i < items.size()"
+"156 : i = 0" -> "156 : @temp3 = i"
+"156 : i = 0" -> "156 : i = i + 1" [style=dashed]
+"156 : i < items.size()"
+"158 : title = getTitle()"
+"158 : title = getTitle()" -> "161 : this.data.append(title + \"\n\", )"
+"158 : title = getTitle()" -> "158 : title = getTitle()" [style=dashed]
+"159 : date = getStringDate()"
+"159 : date = getStringDate()" -> "162 : this.data.append(date + \"\n\", )"
+"159 : date = getStringDate()" -> "159 : date = getStringDate()" [style=dashed]
+"160 : link = getLink()"
+"160 : link = getLink()" -> "163 : this.data.append(link + \"\n\n\", )"
+"160 : link = getLink()" -> "160 : link = getLink()" [style=dashed]
+"161 : this.data.append(title + \"\n\", )"
+"162 : this.data.append(date + \"\n\", )"
+"163 : this.data.append(link + \"\n\n\", )"
+"156 : @temp3 = i"
+"156 : @temp3 = i" -> "156 : @temp3 = i" [style=dashed]
+"156 : i = i + 1"
+"156 : i = i + 1" -> "156 : i = i + 1"
+"156 : i = i + 1" -> "156 : i < items.size()"
+"156 : i = i + 1" -> "156 : @temp3 = i"
+"156 : i = i + 1" -> "156 : i = i + 1" [style=dashed]
+}

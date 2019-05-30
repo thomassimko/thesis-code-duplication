@@ -1,0 +1,9 @@
+digraph G {
+"8 : this.eDate = Calendar.getInstance()"
+"9 : this.payee = null"
+"10 : this.category = null"
+"11 : this.dollarsPaid = 0"
+"12 : this.centsPaid = 0"
+"13 : this.dollarsRemain = 0"
+"14 : this.centsRemain = 0"
+}

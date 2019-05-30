@@ -1,0 +1,9 @@
+digraph G {
+"4 : this.string = null"
+"4 : this.string = null" -> "115 : list.addToFront(this.string, )"
+"5 : this.next = null"
+"112 : list = hasSubstring(substring, )"
+"112 : list = hasSubstring(substring, )" -> "115 : list.addToFront(this.string, )"
+"113 : contains(substring, )"
+"115 : list.addToFront(this.string, )"
+}

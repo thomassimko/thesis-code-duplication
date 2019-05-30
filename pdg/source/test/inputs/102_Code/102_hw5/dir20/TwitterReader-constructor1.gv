@@ -1,0 +1,7 @@
+digraph G {
+"24 : this.rssItemList = new ArrayList()"
+"25 : this.badSourceList = new ArrayList()"
+"26 : this.sourceList = new ArrayList()"
+"26 : this.sourceList = new ArrayList()" -> "30 : this.sourceList = sourceList" [style=dashed]
+"30 : this.sourceList = sourceList"
+}

@@ -1,0 +1,6 @@
+digraph G {
+"6 : this.comp = null"
+"13 : left.getAmount() == right.getAmount()"
+"14 : this.comp.compare(left, right, )"
+"16 : left.getAmount() - right.getAmount()"
+}

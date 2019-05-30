@@ -1,0 +1,6 @@
+digraph G {
+"23 : this.srcList = new ArrayList()"
+"24 : this.documentList = new ArrayList()"
+"25 : this.badSrcList = new ArrayList()"
+"26 : this.badDocumentList = new ArrayList()"
+}

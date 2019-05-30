@@ -1,0 +1,50 @@
+digraph G {
+"10 : scanner = new Scanner(System.in, )"
+"11 : list = new ArrayList()"
+"11 : list = new ArrayList()" -> "12 : list = l" [style=dashed]
+"12 : list = l"
+"12 : list = l" -> "28 : display(list, )"
+"12 : list = l" -> "44 : save(list, )"
+"12 : list = l" -> "40 : Collections.sort(list, comp, )"
+"12 : list = l" -> "32 : list = l" [style=dashed]
+"13 : choice = 0"
+"13 : choice = 0" -> "15 : choice != 5"
+"13 : choice = 0" -> "24 : choice = scanner.nextInt()" [style=dashed]
+"15 : choice != 5"
+"17 : System.out.println(\"1. Display\", )"
+"18 : System.out.println(\"2. Add Expense\", )"
+"19 : System.out.println(\"3. Sort\", )"
+"20 : System.out.println(\"4. Save\", )"
+"21 : System.out.println(\"5. Quit\" + \"\n\", )"
+"23 : System.out.print(\"Enter choice: \", )"
+"24 : choice = scanner.nextInt()"
+"24 : choice = scanner.nextInt()" -> "26 : choice == 1"
+"24 : choice = scanner.nextInt()" -> "15 : choice != 5"
+"24 : choice = scanner.nextInt()" -> "42 : choice == 4"
+"24 : choice = scanner.nextInt()" -> "30 : choice == 2"
+"24 : choice = scanner.nextInt()" -> "36 : choice == 3"
+"24 : choice = scanner.nextInt()" -> "24 : choice = scanner.nextInt()" [style=dashed]
+"26 : choice == 1"
+"28 : display(list, )"
+"30 : choice == 2"
+"32 : list = l"
+"32 : list = l" -> "28 : display(list, )"
+"32 : list = l" -> "44 : save(list, )"
+"32 : list = l" -> "40 : Collections.sort(list, comp, )"
+"32 : list = l" -> "32 : list = l" [style=dashed]
+"33 : e = addExpense()"
+"33 : e = addExpense()" -> "34 : list.add(0, e, )"
+"33 : e = addExpense()" -> "33 : e = addExpense()" [style=dashed]
+"34 : list.add(0, e, )"
+"36 : choice == 3"
+"38 : s = sortInput()"
+"38 : s = sortInput()" -> "39 : comp = sort(s, )"
+"38 : s = sortInput()" -> "38 : s = sortInput()" [style=dashed]
+"39 : comp = sort(s, )"
+"39 : comp = sort(s, )" -> "40 : Collections.sort(list, comp, )"
+"39 : comp = sort(s, )" -> "39 : comp = sort(s, )" [style=dashed]
+"40 : Collections.sort(list, comp, )"
+"42 : choice == 4"
+"44 : save(list, )"
+"15 : choice != 5"
+}

@@ -1,0 +1,8 @@
+digraph G {
+"3 : this.header = null"
+"4 : this.prompt = null"
+"5 : this.parser = null"
+"6 : this.bindings = null"
+"53 : new Calculator(\"Welcome to the simple calculator.\n To exit, hit <ctrl-d> in Unix or <ctrl-z> in Windows.\", \"-> \", new Parser(new Scanner(), ), new VariableBindings(), ).calculate()"
+"58 : System.out.println()"
+}

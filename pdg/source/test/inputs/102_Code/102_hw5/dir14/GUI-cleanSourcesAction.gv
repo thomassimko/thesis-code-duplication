@@ -1,0 +1,19 @@
+digraph G {
+"23 : this.gui = this"
+"24 : this.feedReader = null"
+"25 : this.source = null"
+"26 : this.data = null"
+"27 : this.sources = null"
+"181 : sourceList = new ArrayList()"
+"181 : sourceList = new ArrayList()" -> "183 : sourceList = this.feedReader.getSources()" [style=dashed]
+"182 : this.feedReader.removeBadSources()"
+"183 : sourceList = this.feedReader.getSources()"
+"183 : sourceList = this.feedReader.getSources()" -> "186 : s = sourceList"
+"183 : sourceList = this.feedReader.getSources()" -> "184 : Collections.sort(sourceList, )"
+"184 : Collections.sort(sourceList, )"
+"185 : this.sources.setText(\"\", )"
+"186 : s = sourceList"
+"186 : s = sourceList" -> "188 : this.sources.append(s + \"\n\", )"
+"186 : s = sourceList" -> "186 : s = sourceList" [style=dashed]
+"188 : this.sources.append(s + \"\n\", )"
+}

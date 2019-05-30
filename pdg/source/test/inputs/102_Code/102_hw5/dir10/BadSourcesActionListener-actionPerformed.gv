@@ -1,0 +1,23 @@
+digraph G {
+"9 : this.feed = null"
+"10 : this.srcFeed = null"
+"19 : this.srcFeed.setText(\"\", )"
+"20 : newList = this.feed.getBadSources()"
+"21 : i = 0"
+"21 : i = 0" -> "21 : i < newList.size()"
+"21 : i = 0" -> "21 : @temp3 = i"
+"21 : i = 0" -> "21 : i = i + 1"
+"21 : i = 0" -> "22 : this.srcFeed.append(newList.get(i, ), )"
+"21 : i = 0" -> "21 : i = i + 1" [style=dashed]
+"21 : i < newList.size()"
+"22 : this.srcFeed.append(newList.get(i, ), )"
+"23 : this.srcFeed.append(\"\n\", )"
+"21 : @temp3 = i"
+"21 : @temp3 = i" -> "21 : @temp3 = i" [style=dashed]
+"21 : i = i + 1"
+"21 : i = i + 1" -> "21 : i < newList.size()"
+"21 : i = i + 1" -> "21 : @temp3 = i"
+"21 : i = i + 1" -> "21 : i = i + 1"
+"21 : i = i + 1" -> "22 : this.srcFeed.append(newList.get(i, ), )"
+"21 : i = i + 1" -> "21 : i = i + 1" [style=dashed]
+}

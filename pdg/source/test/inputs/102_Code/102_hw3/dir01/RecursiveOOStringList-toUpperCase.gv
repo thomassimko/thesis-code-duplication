@@ -1,0 +1,5 @@
+digraph G {
+"4 : this.node = null"
+"83 : L = new RecursiveOOStringList()"
+"84 : L.node = this.node.allUppered()"
+}

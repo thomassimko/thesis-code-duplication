@@ -1,0 +1,17 @@
+digraph G {
+"19 : this.expenseList = new LinkedList()"
+"19 : this.expenseList = new LinkedList()" -> "23 : this.expenseList = readInFile()" [style=dashed]
+"23 : this.expenseList = readInFile()"
+"24 : scan = new Scanner(System.in, )"
+"24 : scan = new Scanner(System.in, )" -> "28 : inputAction(scan, choice, )"
+"24 : scan = new Scanner(System.in, )" -> "26 : choice = userInputChoice(scan, ) != 5"
+"25 : choice = 0"
+"25 : choice = 0" -> "26 : choice = userInputChoice(scan, ) != 5" [style=dashed]
+"26 : choice = userInputChoice(scan, ) != 5"
+"26 : choice = userInputChoice(scan, ) != 5" -> "28 : inputAction(scan, choice, )"
+"26 : choice = userInputChoice(scan, ) != 5" -> "26 : choice = userInputChoice(scan, ) != 5" [style=dashed]
+"28 : inputAction(scan, choice, )"
+"26 : choice = userInputChoice(scan, ) != 5"
+"26 : choice = userInputChoice(scan, ) != 5" -> "28 : inputAction(scan, choice, )"
+"26 : choice = userInputChoice(scan, ) != 5" -> "26 : choice = userInputChoice(scan, ) != 5" [style=dashed]
+}

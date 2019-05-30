@@ -1,0 +1,3 @@
+digraph G {
+"9 : amt1.getDollars() * 100 + amt1.getCents() - amt2.getDollars() * 100 + amt2.getCents()"
+}

@@ -1,0 +1,8 @@
+digraph G {
+"5 : this.element = null"
+"5 : this.element = null" -> "112 : stringy.add(0, this.element, )"
+"6 : this.next = null"
+"109 : stringy = this.next.startsWith(prefix, )"
+"110 : startsWith(prefix, )"
+"112 : stringy.add(0, this.element, )"
+}

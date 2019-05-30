@@ -1,0 +1,9 @@
+digraph G {
+"4 : this.head = null"
+"212 : cur instanceof RIOEmpty"
+"214 : new RecursiveIOStringList()"
+"216 : cur instanceof RIONode"
+"218 : list = toUpperCase(cur.next(), )"
+"219 : list.addToFront(toUpperCase(), )"
+"224 : new IndexOutOfBoundsException()"
+}

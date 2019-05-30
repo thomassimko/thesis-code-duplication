@@ -1,0 +1,17 @@
+digraph G {
+"4 : this.x_coord = 0.0"
+"4 : this.y_coord = 0.0"
+"5 : this.MAX_DEGREES = 180.0"
+"42 : newX_Coord = 0.0"
+"42 : newX_Coord = 0.0" -> "45 : newX_Coord = radius() * Math.cos(newAngle, )" [style=dashed]
+"43 : newY_Coord = 0.0"
+"43 : newY_Coord = 0.0" -> "46 : newY_Coord = radius() * Math.sin(newAngle, )" [style=dashed]
+"44 : newAngle = Math.PI / 2 + angle()"
+"44 : newAngle = Math.PI / 2 + angle()" -> "45 : newX_Coord = radius() * Math.cos(newAngle, )"
+"44 : newAngle = Math.PI / 2 + angle()" -> "46 : newY_Coord = radius() * Math.sin(newAngle, )"
+"45 : newX_Coord = radius() * Math.cos(newAngle, )"
+"45 : newX_Coord = radius() * Math.cos(newAngle, )" -> "47 : result = new CartesianPoint(newX_Coord, newY_Coord, )"
+"46 : newY_Coord = radius() * Math.sin(newAngle, )"
+"46 : newY_Coord = radius() * Math.sin(newAngle, )" -> "47 : result = new CartesianPoint(newX_Coord, newY_Coord, )"
+"47 : result = new CartesianPoint(newX_Coord, newY_Coord, )"
+}

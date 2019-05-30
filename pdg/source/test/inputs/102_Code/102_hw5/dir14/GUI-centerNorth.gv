@@ -1,0 +1,11 @@
+digraph G {
+"23 : this.gui = this"
+"24 : this.feedReader = null"
+"25 : this.source = null"
+"26 : this.data = null"
+"27 : this.sources = null"
+"205 : centerNorth = new JPanel()"
+"206 : centerNorth.setLayout(new BorderLayout(), )"
+"207 : centerNorth.add(northTextArea(), BorderLayout.NORTH, )"
+"208 : centerNorth.add(centerTextArea(), BorderLayout.CENTER, )"
+}

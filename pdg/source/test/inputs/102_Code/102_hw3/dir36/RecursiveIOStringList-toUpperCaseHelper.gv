@@ -1,0 +1,9 @@
+digraph G {
+"5 : this.head = null"
+"6 : this.temp = null"
+"185 : temp instanceof RIONode"
+"187 : t = toUpperCaseHelper(temp.next(), )"
+"187 : t = toUpperCaseHelper(temp.next(), )" -> "188 : n = new RIONode(toUpperCase(), t, )"
+"188 : n = new RIONode(toUpperCase(), t, )"
+"193 : n = new RIOEmpty()"
+}

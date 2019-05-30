@@ -1,0 +1,6 @@
+digraph G {
+"5 : UI = new GUI()"
+"6 : reader = new FeedReaderClass()"
+"6 : reader = new FeedReaderClass()" -> "7 : UI.initialize(reader, )"
+"7 : UI.initialize(reader, )"
+}

@@ -1,0 +1,26 @@
+digraph G {
+"6 : this.head = null"
+"6 : this.head = null" -> "104 : this.cur = this.head"
+"7 : this.cur = null"
+"7 : this.cur = null" -> "104 : this.cur = this.head" [style=dashed]
+"104 : this.cur = this.head"
+"104 : this.cur = this.head" -> "107 : this.cur != null"
+"104 : this.cur = this.head" -> "115 : this.cur = getNext()" [style=dashed]
+"105 : indexCount = 0"
+"105 : indexCount = 0" -> "116 : @temp4 = indexCount"
+"105 : indexCount = 0" -> "116 : indexCount = indexCount + 1"
+"105 : indexCount = 0" -> "116 : indexCount = indexCount + 1" [style=dashed]
+"107 : this.cur != null"
+"109 : equals(element, )"
+"119 : new NoSuchElementException()"
+"115 : this.cur = getNext()"
+"115 : this.cur = getNext()" -> "107 : this.cur != null"
+"115 : this.cur = getNext()" -> "115 : this.cur = getNext()" [style=dashed]
+"116 : @temp4 = indexCount"
+"116 : @temp4 = indexCount" -> "116 : @temp4 = indexCount" [style=dashed]
+"116 : indexCount = indexCount + 1"
+"116 : indexCount = indexCount + 1" -> "116 : @temp4 = indexCount"
+"116 : indexCount = indexCount + 1" -> "116 : indexCount = indexCount + 1"
+"116 : indexCount = indexCount + 1" -> "116 : indexCount = indexCount + 1" [style=dashed]
+"107 : this.cur != null"
+}

@@ -39,8 +39,10 @@ public abstract class CFGBlock {
     }
 
     public void addSuccessor(CFGBlock successor) {
-        successors.add(successor);
-        successor.addPredecessor(this);
+        if(successor != null) {
+            successors.add(successor);
+            successor.addPredecessor(this);
+        }
     }
 
     public List<Expression> getExpressions() {

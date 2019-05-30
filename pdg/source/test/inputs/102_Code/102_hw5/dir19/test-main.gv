@@ -1,0 +1,9 @@
+digraph G {
+"14 : read = new Reader()"
+"15 : read.addSource(\"http://search.twitter.com/search.rss?q=from:espn\", )"
+"16 : list = read.retrieveFeedItems()"
+"17 : System.out.println(getTitle(), )"
+"18 : System.out.println(dateString(), )"
+"19 : System.out.println(getLink(), )"
+"23 : System.err.println(\"err\", )"
+}

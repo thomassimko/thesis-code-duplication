@@ -1,0 +1,5 @@
+digraph G {
+"247 : storedExpenses = new File(\"StoredExpenses\", )"
+"248 : storedExpenses.exists()"
+"254 : storedExpenses.createNewFile()"
+}

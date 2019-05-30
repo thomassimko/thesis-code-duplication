@@ -1,0 +1,9 @@
+digraph G {
+"16 : lft = new DoubleConstantExpression(5.0, )"
+"16 : lft = new DoubleConstantExpression(5.0, )" -> "18 : addexp = new AddExpression(lft, rht, )"
+"17 : rht = new DoubleConstantExpression(1.5, )"
+"17 : rht = new DoubleConstantExpression(1.5, )" -> "18 : addexp = new AddExpression(lft, rht, )"
+"18 : addexp = new AddExpression(lft, rht, )"
+"19 : Check.check(addexp.evaluate(null, ), 6.5, )"
+"20 : Check.check(addexp.toString(), \"(5.0 + 1.5)\", )"
+}

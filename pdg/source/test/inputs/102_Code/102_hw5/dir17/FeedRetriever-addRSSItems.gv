@@ -1,0 +1,13 @@
+digraph G {
+"18 : this.sources = new ArrayList()"
+"19 : this.badSources = null"
+"84 : System.out.println(\"adding \" + itemCount + \" items\", )"
+"85 : i = 0"
+"85 : i = 0" -> "85 : i < itemCount"
+"85 : i < itemCount"
+"89 : list.add(getRSSItem(i, feedDoc, xpath, ), )"
+"85 : @temp1 = i"
+"85 : i = i + 1"
+"85 : i = i + 1" -> "85 : i < itemCount"
+"93 : System.out.println(\"DATE ERROR: \" + e, )"
+}

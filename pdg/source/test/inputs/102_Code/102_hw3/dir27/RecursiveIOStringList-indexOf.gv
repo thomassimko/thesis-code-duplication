@@ -1,0 +1,10 @@
+digraph G {
+"6 : this.head = null"
+"119 : count = 0"
+"119 : count = 0" -> "130 : count = indexOf(element, cur.getNext(), ) + 1" [style=dashed]
+"120 : cur instanceof RIOEmpty"
+"122 : new NoSuchElementException()"
+"124 : equals(element, )"
+"126 : 0"
+"130 : count = indexOf(element, cur.getNext(), ) + 1"
+}

@@ -1,0 +1,15 @@
+digraph G {
+"16 : this.storedExpensesList = new ArrayList()"
+"89 : wholeKeyLine = null"
+"89 : wholeKeyLine = null" -> "93 : wholeKeyLine = scan.nextLine()" [style=dashed]
+"91 : System.out.print(\"Keys to sort by: \", )"
+"92 : scan.nextLine()"
+"93 : wholeKeyLine = scan.nextLine()"
+"95 : keys = wholeKeyLine.split(\" \", )"
+"95 : keys = wholeKeyLine.split(\" \", )" -> "98 : comp = chooseComp(fileScan, keys, ind, )"
+"97 : ind = keys.length - 1"
+"97 : ind = keys.length - 1" -> "98 : comp = chooseComp(fileScan, keys, ind, )"
+"98 : comp = chooseComp(fileScan, keys, ind, )"
+"98 : comp = chooseComp(fileScan, keys, ind, )" -> "99 : changeList(comp, )"
+"99 : changeList(comp, )"
+}

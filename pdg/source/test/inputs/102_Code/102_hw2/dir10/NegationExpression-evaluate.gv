@@ -1,0 +1,6 @@
+digraph G {
+"3 : this.e = null"
+"10 : negatedEval = 0.0"
+"10 : negatedEval = 0.0" -> "11 : negatedEval = 1 * this.e.evaluate(bindings, )" [style=dashed]
+"11 : negatedEval = 1 * this.e.evaluate(bindings, )"
+}

@@ -1,0 +1,166 @@
+digraph G {
+"8 : type = 0"
+"8 : type = 0" -> "20 : type = in.nextInt()" [style=dashed]
+"9 : x = 0.0"
+"9 : x = 0.0" -> "25 : x = in.nextDouble()" [style=dashed]
+"9 : x = 0.0" -> "41 : x = in.nextDouble()" [style=dashed]
+"10 : y = 0.0"
+"10 : y = 0.0" -> "27 : y = in.nextDouble()" [style=dashed]
+"10 : y = 0.0" -> "43 : y = in.nextDouble()" [style=dashed]
+"11 : point1 = new CartesianPoint(0, 0, )"
+"11 : point1 = new CartesianPoint(0, 0, )" -> "64 : distan = distance(point1, point2, )"
+"11 : point1 = new CartesianPoint(0, 0, )" -> "57 : point1 = new CartesianPoint(1, 1, )" [style=dashed]
+"11 : point1 = new CartesianPoint(0, 0, )" -> "34 : point1 = new CartesianPoint(1, 1, )" [style=dashed]
+"11 : point1 = new CartesianPoint(0, 0, )" -> "46 : point1 = new PolarPoint(x, y, )" [style=dashed]
+"11 : point1 = new CartesianPoint(0, 0, )" -> "51 : point1 = new CartesianPoint(1, 1, )" [style=dashed]
+"11 : point1 = new CartesianPoint(0, 0, )" -> "29 : point1 = new CartesianPoint(x, y, )" [style=dashed]
+"12 : point2 = new CartesianPoint(0, 0, )"
+"12 : point2 = new CartesianPoint(0, 0, )" -> "64 : distan = distance(point1, point2, )"
+"12 : point2 = new CartesianPoint(0, 0, )" -> "35 : point2 = new CartesianPoint(1, 1, )" [style=dashed]
+"12 : point2 = new CartesianPoint(0, 0, )" -> "48 : point2 = new PolarPoint(x, y, )" [style=dashed]
+"12 : point2 = new CartesianPoint(0, 0, )" -> "52 : point2 = new CartesianPoint(1, 1, )" [style=dashed]
+"12 : point2 = new CartesianPoint(0, 0, )" -> "31 : point2 = new CartesianPoint(x, y, )" [style=dashed]
+"12 : point2 = new CartesianPoint(0, 0, )" -> "58 : point2 = new CartesianPoint(1, 1, )" [style=dashed]
+"13 : distan = 0.0"
+"13 : distan = 0.0" -> "64 : distan = distance(point1, point2, )" [style=dashed]
+"14 : quadrant = false"
+"14 : quadrant = false" -> "67 : quadrant = quadrant(point1.angle(), point2.angle(), )" [style=dashed]
+"16 : in = new Scanner(System.in, )"
+"18 : count = 0"
+"18 : count = 0" -> "28 : count == 0"
+"18 : count = 0" -> "18 : @temp1 = count"
+"18 : count = 0" -> "18 : count < 2"
+"18 : count = 0" -> "18 : count = count + 1"
+"18 : count = 0" -> "47 : count == 1"
+"18 : count = 0" -> "45 : count == 0"
+"18 : count = 0" -> "30 : count == 1"
+"18 : count = 0" -> "18 : count = count + 1" [style=dashed]
+"18 : count < 2"
+"19 : System.out.print(\"Which type of point should be created (1 for Cartesion, 2 for Polar)? \", )"
+"20 : type = in.nextInt()"
+"20 : type = in.nextInt()" -> "22 : type == 1"
+"20 : type = in.nextInt()" -> "38 : type == 2"
+"20 : type = in.nextInt()" -> "20 : type = in.nextInt()" [style=dashed]
+"22 : type == 1"
+"64 : distan = distance(point1, point2, )"
+"64 : distan = distance(point1, point2, )" -> "65 : System.out.println(\"Distance between points: \" + distan, )"
+"65 : System.out.println(\"Distance between points: \" + distan, )"
+"67 : quadrant = quadrant(point1.angle(), point2.angle(), )"
+"24 : System.out.print(\"Enter x-coordinate: \", )"
+"25 : x = in.nextDouble()"
+"25 : x = in.nextDouble()" -> "29 : point1 = new CartesianPoint(x, y, )"
+"25 : x = in.nextDouble()" -> "31 : point2 = new CartesianPoint(x, y, )"
+"25 : x = in.nextDouble()" -> "25 : x = in.nextDouble()" [style=dashed]
+"25 : x = in.nextDouble()" -> "41 : x = in.nextDouble()" [style=dashed]
+"26 : System.out.print(\"Enter y-coordinate: \", )"
+"27 : y = in.nextDouble()"
+"27 : y = in.nextDouble()" -> "29 : point1 = new CartesianPoint(x, y, )"
+"27 : y = in.nextDouble()" -> "31 : point2 = new CartesianPoint(x, y, )"
+"27 : y = in.nextDouble()" -> "27 : y = in.nextDouble()" [style=dashed]
+"27 : y = in.nextDouble()" -> "43 : y = in.nextDouble()" [style=dashed]
+"28 : count == 0"
+"29 : point1 = new CartesianPoint(x, y, )"
+"29 : point1 = new CartesianPoint(x, y, )" -> "64 : distan = distance(point1, point2, )"
+"29 : point1 = new CartesianPoint(x, y, )" -> "57 : point1 = new CartesianPoint(1, 1, )" [style=dashed]
+"29 : point1 = new CartesianPoint(x, y, )" -> "34 : point1 = new CartesianPoint(1, 1, )" [style=dashed]
+"29 : point1 = new CartesianPoint(x, y, )" -> "46 : point1 = new PolarPoint(x, y, )" [style=dashed]
+"29 : point1 = new CartesianPoint(x, y, )" -> "51 : point1 = new CartesianPoint(1, 1, )" [style=dashed]
+"29 : point1 = new CartesianPoint(x, y, )" -> "29 : point1 = new CartesianPoint(x, y, )" [style=dashed]
+"30 : count == 1"
+"31 : point2 = new CartesianPoint(x, y, )"
+"31 : point2 = new CartesianPoint(x, y, )" -> "64 : distan = distance(point1, point2, )"
+"31 : point2 = new CartesianPoint(x, y, )" -> "35 : point2 = new CartesianPoint(1, 1, )" [style=dashed]
+"31 : point2 = new CartesianPoint(x, y, )" -> "48 : point2 = new PolarPoint(x, y, )" [style=dashed]
+"31 : point2 = new CartesianPoint(x, y, )" -> "52 : point2 = new CartesianPoint(1, 1, )" [style=dashed]
+"31 : point2 = new CartesianPoint(x, y, )" -> "31 : point2 = new CartesianPoint(x, y, )" [style=dashed]
+"31 : point2 = new CartesianPoint(x, y, )" -> "58 : point2 = new CartesianPoint(1, 1, )" [style=dashed]
+"34 : point1 = new CartesianPoint(1, 1, )"
+"34 : point1 = new CartesianPoint(1, 1, )" -> "64 : distan = distance(point1, point2, )"
+"34 : point1 = new CartesianPoint(1, 1, )" -> "57 : point1 = new CartesianPoint(1, 1, )" [style=dashed]
+"34 : point1 = new CartesianPoint(1, 1, )" -> "34 : point1 = new CartesianPoint(1, 1, )" [style=dashed]
+"34 : point1 = new CartesianPoint(1, 1, )" -> "46 : point1 = new PolarPoint(x, y, )" [style=dashed]
+"34 : point1 = new CartesianPoint(1, 1, )" -> "51 : point1 = new CartesianPoint(1, 1, )" [style=dashed]
+"34 : point1 = new CartesianPoint(1, 1, )" -> "29 : point1 = new CartesianPoint(x, y, )" [style=dashed]
+"35 : point2 = new CartesianPoint(1, 1, )"
+"35 : point2 = new CartesianPoint(1, 1, )" -> "64 : distan = distance(point1, point2, )"
+"35 : point2 = new CartesianPoint(1, 1, )" -> "35 : point2 = new CartesianPoint(1, 1, )" [style=dashed]
+"35 : point2 = new CartesianPoint(1, 1, )" -> "48 : point2 = new PolarPoint(x, y, )" [style=dashed]
+"35 : point2 = new CartesianPoint(1, 1, )" -> "52 : point2 = new CartesianPoint(1, 1, )" [style=dashed]
+"35 : point2 = new CartesianPoint(1, 1, )" -> "31 : point2 = new CartesianPoint(x, y, )" [style=dashed]
+"35 : point2 = new CartesianPoint(1, 1, )" -> "58 : point2 = new CartesianPoint(1, 1, )" [style=dashed]
+"38 : type == 2"
+"40 : System.out.print(\"Enter radius: \", )"
+"41 : x = in.nextDouble()"
+"41 : x = in.nextDouble()" -> "48 : point2 = new PolarPoint(x, y, )"
+"41 : x = in.nextDouble()" -> "46 : point1 = new PolarPoint(x, y, )"
+"41 : x = in.nextDouble()" -> "25 : x = in.nextDouble()" [style=dashed]
+"41 : x = in.nextDouble()" -> "41 : x = in.nextDouble()" [style=dashed]
+"42 : System.out.print(\"Enter angle (in degrees): \", )"
+"43 : y = in.nextDouble()"
+"43 : y = in.nextDouble()" -> "44 : y = y * Math.PI / 180"
+"43 : y = in.nextDouble()" -> "44 : y = y * Math.PI / 180" [style=dashed]
+"44 : y = y * Math.PI / 180"
+"44 : y = y * Math.PI / 180" -> "48 : point2 = new PolarPoint(x, y, )"
+"44 : y = y * Math.PI / 180" -> "46 : point1 = new PolarPoint(x, y, )"
+"44 : y = y * Math.PI / 180" -> "27 : y = in.nextDouble()" [style=dashed]
+"44 : y = y * Math.PI / 180" -> "43 : y = in.nextDouble()" [style=dashed]
+"45 : count == 0"
+"46 : point1 = new PolarPoint(x, y, )"
+"46 : point1 = new PolarPoint(x, y, )" -> "64 : distan = distance(point1, point2, )"
+"46 : point1 = new PolarPoint(x, y, )" -> "57 : point1 = new CartesianPoint(1, 1, )" [style=dashed]
+"46 : point1 = new PolarPoint(x, y, )" -> "34 : point1 = new CartesianPoint(1, 1, )" [style=dashed]
+"46 : point1 = new PolarPoint(x, y, )" -> "46 : point1 = new PolarPoint(x, y, )" [style=dashed]
+"46 : point1 = new PolarPoint(x, y, )" -> "51 : point1 = new CartesianPoint(1, 1, )" [style=dashed]
+"46 : point1 = new PolarPoint(x, y, )" -> "29 : point1 = new CartesianPoint(x, y, )" [style=dashed]
+"47 : count == 1"
+"48 : point2 = new PolarPoint(x, y, )"
+"48 : point2 = new PolarPoint(x, y, )" -> "64 : distan = distance(point1, point2, )"
+"48 : point2 = new PolarPoint(x, y, )" -> "35 : point2 = new CartesianPoint(1, 1, )" [style=dashed]
+"48 : point2 = new PolarPoint(x, y, )" -> "48 : point2 = new PolarPoint(x, y, )" [style=dashed]
+"48 : point2 = new PolarPoint(x, y, )" -> "52 : point2 = new CartesianPoint(1, 1, )" [style=dashed]
+"48 : point2 = new PolarPoint(x, y, )" -> "31 : point2 = new CartesianPoint(x, y, )" [style=dashed]
+"48 : point2 = new PolarPoint(x, y, )" -> "58 : point2 = new CartesianPoint(1, 1, )" [style=dashed]
+"51 : point1 = new CartesianPoint(1, 1, )"
+"51 : point1 = new CartesianPoint(1, 1, )" -> "64 : distan = distance(point1, point2, )"
+"51 : point1 = new CartesianPoint(1, 1, )" -> "57 : point1 = new CartesianPoint(1, 1, )" [style=dashed]
+"51 : point1 = new CartesianPoint(1, 1, )" -> "34 : point1 = new CartesianPoint(1, 1, )" [style=dashed]
+"51 : point1 = new CartesianPoint(1, 1, )" -> "46 : point1 = new PolarPoint(x, y, )" [style=dashed]
+"51 : point1 = new CartesianPoint(1, 1, )" -> "51 : point1 = new CartesianPoint(1, 1, )" [style=dashed]
+"51 : point1 = new CartesianPoint(1, 1, )" -> "29 : point1 = new CartesianPoint(x, y, )" [style=dashed]
+"52 : point2 = new CartesianPoint(1, 1, )"
+"52 : point2 = new CartesianPoint(1, 1, )" -> "64 : distan = distance(point1, point2, )"
+"52 : point2 = new CartesianPoint(1, 1, )" -> "35 : point2 = new CartesianPoint(1, 1, )" [style=dashed]
+"52 : point2 = new CartesianPoint(1, 1, )" -> "48 : point2 = new PolarPoint(x, y, )" [style=dashed]
+"52 : point2 = new CartesianPoint(1, 1, )" -> "52 : point2 = new CartesianPoint(1, 1, )" [style=dashed]
+"52 : point2 = new CartesianPoint(1, 1, )" -> "31 : point2 = new CartesianPoint(x, y, )" [style=dashed]
+"52 : point2 = new CartesianPoint(1, 1, )" -> "58 : point2 = new CartesianPoint(1, 1, )" [style=dashed]
+"57 : point1 = new CartesianPoint(1, 1, )"
+"57 : point1 = new CartesianPoint(1, 1, )" -> "64 : distan = distance(point1, point2, )"
+"57 : point1 = new CartesianPoint(1, 1, )" -> "57 : point1 = new CartesianPoint(1, 1, )" [style=dashed]
+"57 : point1 = new CartesianPoint(1, 1, )" -> "34 : point1 = new CartesianPoint(1, 1, )" [style=dashed]
+"57 : point1 = new CartesianPoint(1, 1, )" -> "46 : point1 = new PolarPoint(x, y, )" [style=dashed]
+"57 : point1 = new CartesianPoint(1, 1, )" -> "51 : point1 = new CartesianPoint(1, 1, )" [style=dashed]
+"57 : point1 = new CartesianPoint(1, 1, )" -> "29 : point1 = new CartesianPoint(x, y, )" [style=dashed]
+"58 : point2 = new CartesianPoint(1, 1, )"
+"58 : point2 = new CartesianPoint(1, 1, )" -> "64 : distan = distance(point1, point2, )"
+"58 : point2 = new CartesianPoint(1, 1, )" -> "35 : point2 = new CartesianPoint(1, 1, )" [style=dashed]
+"58 : point2 = new CartesianPoint(1, 1, )" -> "48 : point2 = new PolarPoint(x, y, )" [style=dashed]
+"58 : point2 = new CartesianPoint(1, 1, )" -> "52 : point2 = new CartesianPoint(1, 1, )" [style=dashed]
+"58 : point2 = new CartesianPoint(1, 1, )" -> "31 : point2 = new CartesianPoint(x, y, )" [style=dashed]
+"58 : point2 = new CartesianPoint(1, 1, )" -> "58 : point2 = new CartesianPoint(1, 1, )" [style=dashed]
+"59 : System.out.print(\"Invalid input.\", )"
+"60 : System.exit(1, )"
+"18 : @temp1 = count"
+"18 : @temp1 = count" -> "18 : @temp1 = count" [style=dashed]
+"18 : count = count + 1"
+"18 : count = count + 1" -> "28 : count == 0"
+"18 : count = count + 1" -> "18 : @temp1 = count"
+"18 : count = count + 1" -> "18 : count < 2"
+"18 : count = count + 1" -> "18 : count = count + 1"
+"18 : count = count + 1" -> "47 : count == 1"
+"18 : count = count + 1" -> "45 : count == 0"
+"18 : count = count + 1" -> "30 : count == 1"
+"18 : count = count + 1" -> "18 : count = count + 1" [style=dashed]
+"69 : System.out.println(\"In same quadrant.\", )"
+"71 : System.out.println(\"Not in same quadrant\", )"
+}

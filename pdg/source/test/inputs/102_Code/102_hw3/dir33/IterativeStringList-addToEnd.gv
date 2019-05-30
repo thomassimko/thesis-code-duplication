@@ -1,0 +1,28 @@
+digraph G {
+"7 : this.head = null"
+"7 : this.head = null" -> "13 : tempNode = this.head"
+"7 : this.head = null" -> "14 : previousNode = this.head"
+"7 : this.head = null" -> "20 : this.head == null"
+"7 : this.head = null" -> "22 : this.head = new IterativeNode(element, null, )" [style=dashed]
+"12 : tempNode = null"
+"12 : tempNode = null" -> "13 : tempNode = this.head" [style=dashed]
+"12 : previousNode = null"
+"12 : previousNode = null" -> "14 : previousNode = this.head" [style=dashed]
+"13 : tempNode = this.head"
+"13 : tempNode = this.head" -> "17 : previousNode = tempNode"
+"13 : tempNode = this.head" -> "15 : tempNode != null"
+"13 : tempNode = this.head" -> "18 : tempNode = tempNode.getNext()" [style=dashed]
+"14 : previousNode = this.head"
+"14 : previousNode = this.head" -> "17 : previousNode = tempNode" [style=dashed]
+"15 : tempNode != null"
+"17 : previousNode = tempNode"
+"17 : previousNode = tempNode" -> "17 : previousNode = tempNode" [style=dashed]
+"18 : tempNode = tempNode.getNext()"
+"18 : tempNode = tempNode.getNext()" -> "17 : previousNode = tempNode"
+"18 : tempNode = tempNode.getNext()" -> "15 : tempNode != null"
+"18 : tempNode = tempNode.getNext()" -> "18 : tempNode = tempNode.getNext()" [style=dashed]
+"15 : tempNode != null"
+"20 : this.head == null"
+"22 : this.head = new IterativeNode(element, null, )"
+"26 : previousNode.setNext(new IterativeNode(element, null, ), )"
+}

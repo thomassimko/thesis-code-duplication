@@ -1,0 +1,8 @@
+digraph G {
+"3 : this.p1 = new PolarPoint(1, 3.141592, )"
+"4 : this.p2 = new PolarPoint(0, 0, )"
+"5 : this.p3 = new PolarPoint(-2, 1, )"
+"30 : Check.check(this.p1.angle(), 3.141592, )"
+"31 : Check.check(this.p2.angle(), 0, )"
+"32 : Check.check(this.p3.angle(), 4.141592, )"
+}

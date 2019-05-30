@@ -1,0 +1,82 @@
+digraph G {
+"15 : this.feed = new ArrayList()"
+"15 : this.feed = new ArrayList()" -> "88 : Collections.sort(this.feed, new DateComparator(), )"
+"16 : this.bad = new ArrayList()"
+"17 : this.sources = new ArrayList()"
+"36 : this.feed.clear()"
+"37 : this.bad.clear()"
+"38 : j = 0"
+"38 : j = 0" -> "38 : j < this.sources.size()"
+"38 : j < this.sources.size()"
+"88 : Collections.sort(this.feed, new DateComparator(), )"
+"42 : factory = DocumentBuilderFactory.newInstance()"
+"44 : builder = factory.newDocumentBuilder()"
+"45 : feedDocument = builder.parse(this.sources.get(j, ), )"
+"45 : feedDocument = builder.parse(this.sources.get(j, ), )" -> "49 : countStr = xpath.evaluate(\"count(/rss/channel/item)\", feedDocument, )"
+"45 : feedDocument = builder.parse(this.sources.get(j, ), )" -> "54 : title = xpath.evaluate(\"/rss/channel/item[\" + i + \"]/title\", feedDocument, )"
+"45 : feedDocument = builder.parse(this.sources.get(j, ), )" -> "58 : date = xpath.evaluate(\"/rss/channel/item[\" + i + \"]/pubDate\", feedDocument, )"
+"45 : feedDocument = builder.parse(this.sources.get(j, ), )" -> "56 : link = xpath.evaluate(\"/rss/channel/item[\" + i + \"]/link\", feedDocument, )"
+"47 : xpfactory = XPathFactory.newInstance()"
+"48 : xpath = xpfactory.newXPath()"
+"49 : countStr = xpath.evaluate(\"count(/rss/channel/item)\", feedDocument, )"
+"49 : countStr = xpath.evaluate(\"count(/rss/channel/item)\", feedDocument, )" -> "51 : itemCount = Integer.parseInt(countStr, )"
+"51 : itemCount = Integer.parseInt(countStr, )"
+"51 : itemCount = Integer.parseInt(countStr, )" -> "52 : i <= itemCount"
+"38 : @temp2 = j"
+"38 : j = j + 1"
+"38 : j = j + 1" -> "38 : j < this.sources.size()"
+"52 : i = 1"
+"52 : i = 1" -> "52 : i = i + 1"
+"52 : i = 1" -> "54 : title = xpath.evaluate(\"/rss/channel/item[\" + i + \"]/title\", feedDocument, )"
+"52 : i = 1" -> "52 : @temp1 = i"
+"52 : i = 1" -> "52 : i <= itemCount"
+"52 : i = 1" -> "58 : date = xpath.evaluate(\"/rss/channel/item[\" + i + \"]/pubDate\", feedDocument, )"
+"52 : i = 1" -> "56 : link = xpath.evaluate(\"/rss/channel/item[\" + i + \"]/link\", feedDocument, )"
+"52 : i = 1" -> "52 : i = i + 1" [style=dashed]
+"52 : i <= itemCount"
+"54 : title = xpath.evaluate(\"/rss/channel/item[\" + i + \"]/title\", feedDocument, )"
+"54 : title = xpath.evaluate(\"/rss/channel/item[\" + i + \"]/title\", feedDocument, )" -> "68 : item = new RSS(title, calendar, link, )"
+"54 : title = xpath.evaluate(\"/rss/channel/item[\" + i + \"]/title\", feedDocument, )" -> "54 : title = xpath.evaluate(\"/rss/channel/item[\" + i + \"]/title\", feedDocument, )" [style=dashed]
+"56 : link = xpath.evaluate(\"/rss/channel/item[\" + i + \"]/link\", feedDocument, )"
+"56 : link = xpath.evaluate(\"/rss/channel/item[\" + i + \"]/link\", feedDocument, )" -> "68 : item = new RSS(title, calendar, link, )"
+"56 : link = xpath.evaluate(\"/rss/channel/item[\" + i + \"]/link\", feedDocument, )" -> "56 : link = xpath.evaluate(\"/rss/channel/item[\" + i + \"]/link\", feedDocument, )" [style=dashed]
+"58 : date = xpath.evaluate(\"/rss/channel/item[\" + i + \"]/pubDate\", feedDocument, )"
+"58 : date = xpath.evaluate(\"/rss/channel/item[\" + i + \"]/pubDate\", feedDocument, )" -> "63 : formatted = format.parse(date, )"
+"58 : date = xpath.evaluate(\"/rss/channel/item[\" + i + \"]/pubDate\", feedDocument, )" -> "58 : date = xpath.evaluate(\"/rss/channel/item[\" + i + \"]/pubDate\", feedDocument, )" [style=dashed]
+"60 : format = new SimpleDateFormat(\"EEE, dd MMM yyyy HH:mm:ss z\", )"
+"60 : format = new SimpleDateFormat(\"EEE, dd MMM yyyy HH:mm:ss z\", )" -> "60 : format = new SimpleDateFormat(\"EEE, dd MMM yyyy HH:mm:ss z\", )" [style=dashed]
+"62 : format1 = new SimpleDateFormat(\"MM/dd/yyyy HH:mm\", )"
+"62 : format1 = new SimpleDateFormat(\"MM/dd/yyyy HH:mm\", )" -> "62 : format1 = new SimpleDateFormat(\"MM/dd/yyyy HH:mm\", )" [style=dashed]
+"63 : formatted = format.parse(date, )"
+"63 : formatted = format.parse(date, )" -> "64 : formatted1 = format1.format(formatted, )"
+"63 : formatted = format.parse(date, )" -> "63 : formatted = format.parse(date, )" [style=dashed]
+"64 : formatted1 = format1.format(formatted, )"
+"64 : formatted1 = format1.format(formatted, )" -> "65 : last = format1.parse(formatted1, )"
+"64 : formatted1 = format1.format(formatted, )" -> "64 : formatted1 = format1.format(formatted, )" [style=dashed]
+"65 : last = format1.parse(formatted1, )"
+"65 : last = format1.parse(formatted1, )" -> "67 : calendar.setTime(last, )"
+"65 : last = format1.parse(formatted1, )" -> "65 : last = format1.parse(formatted1, )" [style=dashed]
+"66 : calendar = Calendar.getInstance()"
+"66 : calendar = Calendar.getInstance()" -> "68 : item = new RSS(title, calendar, link, )"
+"66 : calendar = Calendar.getInstance()" -> "66 : calendar = Calendar.getInstance()" [style=dashed]
+"67 : calendar.setTime(last, )"
+"68 : item = new RSS(title, calendar, link, )"
+"68 : item = new RSS(title, calendar, link, )" -> "69 : this.feed.add(item, )"
+"68 : item = new RSS(title, calendar, link, )" -> "68 : item = new RSS(title, calendar, link, )" [style=dashed]
+"69 : this.feed.add(item, )"
+"52 : @temp1 = i"
+"52 : @temp1 = i" -> "52 : @temp1 = i" [style=dashed]
+"52 : i = i + 1"
+"52 : i = i + 1" -> "52 : i = i + 1"
+"52 : i = i + 1" -> "54 : title = xpath.evaluate(\"/rss/channel/item[\" + i + \"]/title\", feedDocument, )"
+"52 : i = i + 1" -> "52 : @temp1 = i"
+"52 : i = i + 1" -> "52 : i <= itemCount"
+"52 : i = i + 1" -> "58 : date = xpath.evaluate(\"/rss/channel/item[\" + i + \"]/pubDate\", feedDocument, )"
+"52 : i = i + 1" -> "56 : link = xpath.evaluate(\"/rss/channel/item[\" + i + \"]/link\", feedDocument, )"
+"52 : i = i + 1" -> "52 : i = i + 1" [style=dashed]
+"73 : System.err.println(\"Parser Exception\", )"
+"76 : this.bad.add(this.sources.get(j, ), )"
+"79 : this.bad.add(this.sources.get(j, ), )"
+"82 : this.bad.add(this.sources.get(j, ), )"
+"85 : this.bad.add(this.sources.get(j, ), )"
+}

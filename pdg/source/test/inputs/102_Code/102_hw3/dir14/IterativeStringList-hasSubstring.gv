@@ -1,0 +1,21 @@
+digraph G {
+"6 : this.head = null"
+"6 : this.head = null" -> "177 : cur = this.head"
+"177 : cur = this.head"
+"177 : cur = this.head" -> "179 : cur != null"
+"177 : cur = this.head" -> "187 : cur = cur.getNext()" [style=dashed]
+"178 : newList = new IterativeStringList()"
+"179 : cur != null"
+"181 : s = cur.getElement()"
+"181 : s = cur.getElement()" -> "184 : hasSubstring = s"
+"181 : s = cur.getElement()" -> "181 : s = cur.getElement()" [style=dashed]
+"182 : s.contains(substring, )"
+"184 : hasSubstring = s"
+"184 : hasSubstring = s" -> "185 : newList.addToEnd(hasSubstring, )"
+"184 : hasSubstring = s" -> "184 : hasSubstring = s" [style=dashed]
+"185 : newList.addToEnd(hasSubstring, )"
+"187 : cur = cur.getNext()"
+"187 : cur = cur.getNext()" -> "179 : cur != null"
+"187 : cur = cur.getNext()" -> "187 : cur = cur.getNext()" [style=dashed]
+"179 : cur != null"
+}

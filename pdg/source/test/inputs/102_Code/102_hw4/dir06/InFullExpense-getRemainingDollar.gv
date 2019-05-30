@@ -1,0 +1,9 @@
+digraph G {
+"7 : this.date = null"
+"8 : this.dollarAmount = 0"
+"9 : this.centAmount = 0"
+"10 : this.paidTo = null"
+"11 : this.category = null"
+"12 : this.type = \"in-full\""
+"55 : new UnsupportedOperationException()"
+}

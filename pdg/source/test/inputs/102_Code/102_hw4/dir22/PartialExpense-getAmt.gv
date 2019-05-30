@@ -1,0 +1,17 @@
+digraph G {
+"6 : this.dollarsPaid = 0"
+"6 : this.dollarsPaid = 0" -> "37 : this.dollarsPaid + \".\" + this.centsPaid"
+"6 : this.dollarsPaid = 0" -> "41 : this.dollarsPaid + \".0\" + this.centsPaid"
+"7 : this.centsPaid = 0"
+"7 : this.centsPaid = 0" -> "35 : this.centsPaid >= 10"
+"7 : this.centsPaid = 0" -> "37 : this.dollarsPaid + \".\" + this.centsPaid"
+"7 : this.centsPaid = 0" -> "41 : this.dollarsPaid + \".0\" + this.centsPaid"
+"8 : this.dollarsDue = 0"
+"9 : this.centsDue = 0"
+"10 : this.c = null"
+"11 : this.paidTo = null"
+"12 : this.category = null"
+"35 : this.centsPaid >= 10"
+"37 : this.dollarsPaid + \".\" + this.centsPaid"
+"41 : this.dollarsPaid + \".0\" + this.centsPaid"
+}

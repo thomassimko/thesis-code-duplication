@@ -1,0 +1,5 @@
+digraph G {
+"8 : lft.getDollNum() != rht.getDollNum()"
+"10 : lft.getDollNum() - rht.getDollNum()"
+"14 : lft.getCentNum() - rht.getCentNum()"
+}

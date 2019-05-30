@@ -1,0 +1,9 @@
+digraph G {
+"14 : this.feedReader = null"
+"15 : this.sourceField = null"
+"16 : this.itemArea = null"
+"17 : this.sourceArea = null"
+"30 : getSource()"
+"31 : displayFeeds()"
+"32 : displayListOfSources()"
+}

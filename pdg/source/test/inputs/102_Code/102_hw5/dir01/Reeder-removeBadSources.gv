@@ -1,0 +1,61 @@
+digraph G {
+"17 : this.sources = null"
+"17 : this.sources = null" -> "136 : this.sources = new ArrayList()" [style=dashed]
+"18 : this.sourceStrs = null"
+"19 : this.items = null"
+"20 : this.badStrs = null"
+"136 : this.sources = new ArrayList()"
+"137 : v = 0"
+"137 : v = 0" -> "137 : v < size()"
+"137 : v = 0" -> "138 : src = get(v, )"
+"137 : v < size()"
+"138 : src = get(v, )"
+"139 : factory = DocumentBuilderFactory.newInstance()"
+"141 : builder = null"
+"143 : builder = factory.newDocumentBuilder()"
+"143 : builder = factory.newDocumentBuilder()" -> "141 : builder = null" [style=dashed]
+"144 : feedDocument = builder.parse(src, )"
+"144 : feedDocument = builder.parse(src, )" -> "145 : this.sources.add(feedDocument, )"
+"145 : this.sources.add(feedDocument, )"
+"137 : @temp9 = v"
+"137 : v = v + 1"
+"137 : v = v + 1" -> "137 : v < size()"
+"137 : v = v + 1" -> "138 : src = get(v, )"
+"149 : this.badStrs.add(get(v, ), )"
+"153 : this.badStrs.add(get(v, ), )"
+"157 : this.badStrs.add(get(v, ), )"
+"160 : i = 0"
+"160 : i = 0" -> "160 : i < size()"
+"160 : i = 0" -> "160 : i = i + 1"
+"160 : i = 0" -> "163 : this.sourceStrs.remove(i, )"
+"160 : i = 0" -> "160 : @temp11 = i"
+"160 : i = 0" -> "160 : i = i + 1" [style=dashed]
+"160 : i < size()"
+"161 : y = 0"
+"161 : y = 0" -> "161 : y = y + 1"
+"161 : y = 0" -> "161 : @temp10 = y"
+"161 : y = 0" -> "161 : y < size()"
+"161 : y = 0" -> "162 : equals(get(y, ), )"
+"161 : y = 0" -> "161 : y = 0" [style=dashed]
+"161 : y = 0" -> "161 : y = y + 1" [style=dashed]
+"161 : y < size()"
+"162 : equals(get(y, ), )"
+"160 : @temp11 = i"
+"160 : @temp11 = i" -> "160 : @temp11 = i" [style=dashed]
+"160 : i = i + 1"
+"160 : i = i + 1" -> "160 : i < size()"
+"160 : i = i + 1" -> "160 : i = i + 1"
+"160 : i = i + 1" -> "163 : this.sourceStrs.remove(i, )"
+"160 : i = i + 1" -> "160 : @temp11 = i"
+"160 : i = i + 1" -> "160 : i = i + 1" [style=dashed]
+"163 : this.sourceStrs.remove(i, )"
+"161 : @temp10 = y"
+"161 : @temp10 = y" -> "161 : @temp10 = y" [style=dashed]
+"161 : y = y + 1"
+"161 : y = y + 1" -> "161 : y = y + 1"
+"161 : y = y + 1" -> "161 : @temp10 = y"
+"161 : y = y + 1" -> "161 : y < size()"
+"161 : y = y + 1" -> "162 : equals(get(y, ), )"
+"161 : y = y + 1" -> "161 : y = 0" [style=dashed]
+"161 : y = y + 1" -> "161 : y = y + 1" [style=dashed]
+}

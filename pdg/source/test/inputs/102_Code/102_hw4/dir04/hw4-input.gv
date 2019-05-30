@@ -1,0 +1,49 @@
+digraph G {
+"16 : this.storedExpensesList = new ArrayList()"
+"214 : expenseType = null"
+"214 : expenseType = null" -> "225 : expenseType = scan.nextLine()" [style=dashed]
+"215 : date = null"
+"215 : date = null" -> "228 : date = scan.nextLine()" [style=dashed]
+"216 : category = null"
+"216 : category = null" -> "237 : category = scan.nextLine()" [style=dashed]
+"217 : paidTo = null"
+"217 : paidTo = null" -> "234 : paidTo = scan.nextLine()" [style=dashed]
+"218 : amount = null"
+"218 : amount = null" -> "231 : amount = scan.nextLine()" [style=dashed]
+"219 : remainingAmt = null"
+"219 : remainingAmt = null" -> "242 : remainingAmt = scan.nextLine()" [style=dashed]
+"221 : scan = scans"
+"223 : System.out.print(\"Expense type (in-full, partial)? \", )"
+"224 : scan.nextLine()"
+"225 : expenseType = scan.nextLine()"
+"227 : System.out.print(\"Payment date: \", )"
+"228 : date = scan.nextLine()"
+"230 : System.out.print(\"Expense Amount: \", )"
+"231 : amount = scan.nextLine()"
+"233 : System.out.print(\"Who was this expense paid to? \", )"
+"234 : paidTo = scan.nextLine()"
+"236 : System.out.print(\"Expense category: \", )"
+"237 : category = scan.nextLine()"
+"239 : expenseType.equals(\"partial\", )"
+"241 : System.out.print(\"Expense Balance: \", )"
+"242 : remainingAmt = scan.nextLine()"
+"247 : date = parseDate(date, )"
+"247 : date = parseDate(date, )" -> "257 : add = new partialExpense(date, category, paidTo, amount, remainingAmt, )"
+"247 : date = parseDate(date, )" -> "261 : add = new infullExpense(date, category, paidTo, amount, remainingAmt, )"
+"253 : add = null"
+"253 : add = null" -> "257 : add = new partialExpense(date, category, paidTo, amount, remainingAmt, )" [style=dashed]
+"253 : add = null" -> "261 : add = new infullExpense(date, category, paidTo, amount, remainingAmt, )" [style=dashed]
+"253 : add = null" -> "267 : add = null" [style=dashed]
+"255 : expenseType.equals(\"partial\", )"
+"251 : System.err.println(\"Parse error, yo.\", )"
+"257 : add = new partialExpense(date, category, paidTo, amount, remainingAmt, )"
+"257 : add = new partialExpense(date, category, paidTo, amount, remainingAmt, )" -> "269 : this.storedExpensesList.add(0, add, )"
+"259 : expenseType.equals(\"in-full\", )"
+"261 : add = new infullExpense(date, category, paidTo, amount, remainingAmt, )"
+"261 : add = new infullExpense(date, category, paidTo, amount, remainingAmt, )" -> "269 : this.storedExpensesList.add(0, add, )"
+"265 : System.err.println(\"Input error, not a valid type of expense\", )"
+"266 : menu(scans, )"
+"267 : add = null"
+"267 : add = null" -> "269 : this.storedExpensesList.add(0, add, )"
+"269 : this.storedExpensesList.add(0, add, )"
+}

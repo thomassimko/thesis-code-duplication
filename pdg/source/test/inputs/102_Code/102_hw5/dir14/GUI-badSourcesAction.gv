@@ -1,0 +1,25 @@
+digraph G {
+"23 : this.gui = this"
+"24 : this.feedReader = null"
+"25 : this.source = null"
+"26 : this.data = null"
+"27 : this.sources = null"
+"170 : badSources = this.feedReader.getBadSources()"
+"171 : this.sources.setText(\"\", )"
+"172 : i = 0"
+"172 : i = 0" -> "172 : i < badSources.size()"
+"172 : i = 0" -> "174 : this.sources.setText(badSources.get(i, ), )"
+"172 : i = 0" -> "172 : @temp4 = i"
+"172 : i = 0" -> "172 : i = i + 1"
+"172 : i = 0" -> "172 : i = i + 1" [style=dashed]
+"172 : i < badSources.size()"
+"174 : this.sources.setText(badSources.get(i, ), )"
+"172 : @temp4 = i"
+"172 : @temp4 = i" -> "172 : @temp4 = i" [style=dashed]
+"172 : i = i + 1"
+"172 : i = i + 1" -> "172 : i < badSources.size()"
+"172 : i = i + 1" -> "174 : this.sources.setText(badSources.get(i, ), )"
+"172 : i = i + 1" -> "172 : @temp4 = i"
+"172 : i = i + 1" -> "172 : i = i + 1"
+"172 : i = i + 1" -> "172 : i = i + 1" [style=dashed]
+}

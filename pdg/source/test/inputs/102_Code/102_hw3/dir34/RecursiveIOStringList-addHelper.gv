@@ -1,0 +1,9 @@
+digraph G {
+"6 : this.head = null"
+"6 : this.head = null" -> "22 : this.head = this.head.add(index, element, )" [style=dashed]
+"20 : cur instanceof RIONode"
+"22 : this.head = this.head.add(index, element, )"
+"28 : node = new ROONode(element, this, )"
+"29 : index != 0"
+"31 : new IndexOutOfBoundsException()"
+}

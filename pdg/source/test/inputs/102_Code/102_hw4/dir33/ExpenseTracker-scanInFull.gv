@@ -1,0 +1,19 @@
+digraph G {
+"222 : tempDate = null"
+"222 : tempDate = null" -> "227 : tempDate = dateReader(scanner.next(), )" [style=dashed]
+"223 : tempCategory = null"
+"223 : tempCategory = null" -> "228 : tempCategory = scanner.next()" [style=dashed]
+"224 : tempPayee = null"
+"224 : tempPayee = null" -> "229 : tempPayee = scanner.next()" [style=dashed]
+"225 : tempPaid = null"
+"225 : tempPaid = null" -> "230 : tempPaid = stringToAmount(scanner.next(), )" [style=dashed]
+"227 : tempDate = dateReader(scanner.next(), )"
+"227 : tempDate = dateReader(scanner.next(), )" -> "232 : new InFull(tempDate, tempCategory, tempPayee, tempPaid, )"
+"228 : tempCategory = scanner.next()"
+"228 : tempCategory = scanner.next()" -> "232 : new InFull(tempDate, tempCategory, tempPayee, tempPaid, )"
+"229 : tempPayee = scanner.next()"
+"229 : tempPayee = scanner.next()" -> "232 : new InFull(tempDate, tempCategory, tempPayee, tempPaid, )"
+"230 : tempPaid = stringToAmount(scanner.next(), )"
+"230 : tempPaid = stringToAmount(scanner.next(), )" -> "232 : new InFull(tempDate, tempCategory, tempPayee, tempPaid, )"
+"232 : new InFull(tempDate, tempCategory, tempPayee, tempPaid, )"
+}

@@ -1,0 +1,23 @@
+digraph G {
+"2 : this.head = null"
+"2 : this.head = null" -> "111 : this.iter = this.head"
+"2 : this.head = null" -> "99 : this.iter.equals(this.head, ) && this.iter.next() instanceof RIOEmpty"
+"2 : this.iter = null"
+"2 : this.iter = null" -> "111 : this.iter = this.head" [style=dashed]
+"2 : this.iter = null" -> "105 : this.iter = this.iter.next()" [style=dashed]
+"2 : this.iterPrev = null"
+"99 : this.iter.equals(this.head, ) && this.iter.next() instanceof RIOEmpty"
+"100 : s = toUpperCase()"
+"101 : s.add(0, toUpperCase(), )"
+"104 : this.iter.next() instanceof RIOEmpty"
+"105 : this.iter = this.iter.next()"
+"105 : this.iter = this.iter.next()" -> "111 : this.iter = this.head" [style=dashed]
+"105 : this.iter = this.iter.next()" -> "105 : this.iter = this.iter.next()" [style=dashed]
+"106 : s = toUpperCase()"
+"106 : s = toUpperCase()" -> "106 : s = toUpperCase()" [style=dashed]
+"107 : s.add(0, toUpperCase(), )"
+"111 : this.iter = this.head"
+"111 : this.iter = this.head" -> "111 : this.iter = this.head" [style=dashed]
+"111 : this.iter = this.head" -> "105 : this.iter = this.iter.next()" [style=dashed]
+"112 : new RecursiveIOStringList()"
+}

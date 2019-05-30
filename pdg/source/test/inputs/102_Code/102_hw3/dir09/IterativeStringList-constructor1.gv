@@ -1,0 +1,8 @@
+digraph G {
+"7 : this.head = null"
+"7 : this.head = null" -> "12 : this.head = null" [style=dashed]
+"8 : this.size = 0"
+"8 : this.size = 0" -> "13 : this.size = 0" [style=dashed]
+"12 : this.head = null"
+"13 : this.size = 0"
+}

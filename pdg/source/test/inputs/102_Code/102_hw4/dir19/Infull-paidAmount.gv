@@ -1,0 +1,7 @@
+digraph G {
+"6 : this.date = null"
+"7 : this.money = null"
+"8 : this.paidTo = null"
+"9 : this.desc = null"
+"26 : toString()"
+}

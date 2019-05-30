@@ -1,0 +1,7 @@
+digraph G {
+"3 : this.str = null"
+"4 : this.next = null"
+"70 : getString() == element"
+"71 : 0"
+"74 : 1 + this.next.indexOf(element, )"
+}

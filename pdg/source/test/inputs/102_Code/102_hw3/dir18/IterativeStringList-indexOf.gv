@@ -1,0 +1,24 @@
+digraph G {
+"4 : this.head = null"
+"4 : this.head = null" -> "99 : n = this.head"
+"98 : index = 0"
+"98 : index = 0" -> "104 : index = index + 1"
+"98 : index = 0" -> "104 : @temp5 = index"
+"98 : index = 0" -> "104 : index = index + 1" [style=dashed]
+"99 : n = this.head"
+"99 : n = this.head" -> "100 : n != null"
+"99 : n = this.head" -> "105 : n = n.getNext()" [style=dashed]
+"100 : n != null"
+"101 : equals(element, )"
+"107 : 1"
+"104 : @temp5 = index"
+"104 : @temp5 = index" -> "104 : @temp5 = index" [style=dashed]
+"104 : index = index + 1"
+"104 : index = index + 1" -> "104 : index = index + 1"
+"104 : index = index + 1" -> "104 : @temp5 = index"
+"104 : index = index + 1" -> "104 : index = index + 1" [style=dashed]
+"105 : n = n.getNext()"
+"105 : n = n.getNext()" -> "100 : n != null"
+"105 : n = n.getNext()" -> "105 : n = n.getNext()" [style=dashed]
+"100 : n != null"
+}

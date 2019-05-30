@@ -1,0 +1,13 @@
+digraph G {
+"5 : this.node = null"
+"5 : this.node = null" -> "148 : n = this.node"
+"147 : list = new IterativeStringList()"
+"148 : n = this.node"
+"148 : n = this.node" -> "155 : n = n.next()" [style=dashed]
+"149 : n.next() != null"
+"151 : contains(substring, )"
+"153 : list.addToEnd(n.str(), )"
+"155 : n = n.next()"
+"155 : n = n.next()" -> "155 : n = n.next()" [style=dashed]
+"149 : n.next() != null"
+}

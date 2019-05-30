@@ -1,0 +1,5 @@
+digraph G {
+"5 : this.head = null"
+"73 : r = new RecursiveOOStringList()"
+"74 : r.changeHead(this.head.hasSubstring(substring, ), )"
+}

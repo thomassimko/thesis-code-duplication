@@ -1,0 +1,11 @@
+digraph G {
+"12 : this.sources = null"
+"12 : this.badSources = null"
+"12 : this.badSources = null" -> "127 : bs = this.badSources"
+"13 : this.feedItems = null"
+"127 : bs = this.badSources"
+"127 : bs = this.badSources" -> "128 : this.sources.remove(bs, )"
+"127 : bs = this.badSources" -> "127 : bs = this.badSources" [style=dashed]
+"128 : this.sources.remove(bs, )"
+"130 : this.badSources.clear()"
+}

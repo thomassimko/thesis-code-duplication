@@ -1,0 +1,53 @@
+digraph G {
+"4 : this.head = null"
+"4 : this.head = null" -> "69 : cur = this.head"
+"4 : this.head = null" -> "66 : this.head = new IterativeNode(element, this.head, )"
+"4 : this.head = null" -> "56 : this.head == null"
+"4 : this.head = null" -> "58 : this.head = new IterativeNode(element, null, )" [style=dashed]
+"4 : this.head = null" -> "66 : this.head = new IterativeNode(element, this.head, )" [style=dashed]
+"5 : this.counter = 0"
+"5 : this.counter = 0" -> "82 : @temp3 = this.counter"
+"5 : this.counter = 0" -> "82 : this.counter = this.counter + 1"
+"5 : this.counter = 0" -> "82 : this.counter = this.counter + 1" [style=dashed]
+"56 : this.head == null"
+"57 : index == 0"
+"58 : this.head = new IterativeNode(element, null, )"
+"61 : new IndexOutOfBoundsException()"
+"65 : index == 0"
+"66 : this.head = new IterativeNode(element, this.head, )"
+"68 : index > 0"
+"69 : cur = this.head"
+"69 : cur = this.head" -> "70 : i < index && cur != null"
+"69 : cur = this.head" -> "77 : n = new IterativeNode(element, cur.getNode(), )"
+"69 : cur = this.head" -> "71 : cur = cur.getNode()"
+"69 : cur = this.head" -> "78 : cur.setNext(n, )"
+"69 : cur = this.head" -> "73 : cur == null"
+"69 : cur = this.head" -> "71 : cur = cur.getNode()" [style=dashed]
+"70 : i = 1"
+"70 : i = 1" -> "70 : i < index && cur != null"
+"70 : i = 1" -> "70 : @temp2 = i"
+"70 : i = 1" -> "70 : i = i + 1"
+"70 : i = 1" -> "70 : i = i + 1" [style=dashed]
+"70 : i < index && cur != null"
+"71 : cur = cur.getNode()"
+"71 : cur = cur.getNode()" -> "70 : i < index && cur != null"
+"71 : cur = cur.getNode()" -> "77 : n = new IterativeNode(element, cur.getNode(), )"
+"71 : cur = cur.getNode()" -> "71 : cur = cur.getNode()"
+"71 : cur = cur.getNode()" -> "78 : cur.setNext(n, )"
+"71 : cur = cur.getNode()" -> "73 : cur == null"
+"71 : cur = cur.getNode()" -> "71 : cur = cur.getNode()" [style=dashed]
+"70 : @temp2 = i"
+"70 : @temp2 = i" -> "70 : @temp2 = i" [style=dashed]
+"70 : i = i + 1"
+"70 : i = i + 1" -> "70 : i < index && cur != null"
+"70 : i = i + 1" -> "70 : @temp2 = i"
+"70 : i = i + 1" -> "70 : i = i + 1"
+"70 : i = i + 1" -> "70 : i = i + 1" [style=dashed]
+"73 : cur == null"
+"74 : new IndexOutOfBoundsException()"
+"77 : n = new IterativeNode(element, cur.getNode(), )"
+"77 : n = new IterativeNode(element, cur.getNode(), )" -> "78 : cur.setNext(n, )"
+"78 : cur.setNext(n, )"
+"82 : @temp3 = this.counter"
+"82 : this.counter = this.counter + 1"
+}

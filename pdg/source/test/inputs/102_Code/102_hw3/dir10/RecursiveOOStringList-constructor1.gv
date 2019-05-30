@@ -1,0 +1,5 @@
+digraph G {
+"3 : this.head = null"
+"3 : this.head = null" -> "6 : this.head = new ROOEmpty()" [style=dashed]
+"6 : this.head = new ROOEmpty()"
+}

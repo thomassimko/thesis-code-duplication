@@ -1,0 +1,13 @@
+digraph G {
+"4 : this.date = null"
+"4 : this.date = null" -> "39 : String.format(\"%1$2tm/%<2td/%<tY \", this.date, ) + String.format(\"%-15.15s %s (%s) [%s]\", this.name, this.amount / 100, this.balance, this.category, )"
+"5 : this.balance = 0.0"
+"5 : this.balance = 0.0" -> "39 : String.format(\"%1$2tm/%<2td/%<tY \", this.date, ) + String.format(\"%-15.15s %s (%s) [%s]\", this.name, this.amount / 100, this.balance, this.category, )"
+"6 : this.amount = 0"
+"6 : this.amount = 0" -> "39 : String.format(\"%1$2tm/%<2td/%<tY \", this.date, ) + String.format(\"%-15.15s %s (%s) [%s]\", this.name, this.amount / 100, this.balance, this.category, )"
+"7 : this.name = null"
+"7 : this.name = null" -> "39 : String.format(\"%1$2tm/%<2td/%<tY \", this.date, ) + String.format(\"%-15.15s %s (%s) [%s]\", this.name, this.amount / 100, this.balance, this.category, )"
+"7 : this.category = null"
+"7 : this.category = null" -> "39 : String.format(\"%1$2tm/%<2td/%<tY \", this.date, ) + String.format(\"%-15.15s %s (%s) [%s]\", this.name, this.amount / 100, this.balance, this.category, )"
+"39 : String.format(\"%1$2tm/%<2td/%<tY \", this.date, ) + String.format(\"%-15.15s %s (%s) [%s]\", this.name, this.amount / 100, this.balance, this.category, )"
+}

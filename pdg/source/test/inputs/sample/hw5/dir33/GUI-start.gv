@@ -1,0 +1,6 @@
+digraph G {
+"15 : this.frame = null"
+"19 : this.frame.setVisible(true, )"
+"20 : this.frame.setResizable(false, )"
+"21 : this.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE, )"
+}

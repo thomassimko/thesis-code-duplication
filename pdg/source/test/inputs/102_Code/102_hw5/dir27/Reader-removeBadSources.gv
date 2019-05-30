@@ -1,0 +1,7 @@
+digraph G {
+"21 : this.srcs = new ArrayList()"
+"22 : this.bads = new ArrayList()"
+"22 : this.bads = new ArrayList()" -> "133 : this.srcs.removeAll(this.bads, )"
+"133 : this.srcs.removeAll(this.bads, )"
+"134 : this.bads.clear()"
+}

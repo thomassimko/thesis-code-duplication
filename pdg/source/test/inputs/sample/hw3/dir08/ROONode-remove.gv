@@ -1,0 +1,10 @@
+digraph G {
+"4 : this.string = null"
+"4 : this.string = null" -> "47 : s.setString(this.string, )"
+"5 : this.next = null"
+"5 : this.next = null" -> "52 : this.next = remove(index - 1, s, )" [style=dashed]
+"45 : index == 0"
+"47 : s.setString(this.string, )"
+"52 : this.next = remove(index - 1, s, )"
+"53 : this"
+}

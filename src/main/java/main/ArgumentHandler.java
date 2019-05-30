@@ -7,6 +7,7 @@ public class ArgumentHandler {
     public static int minGraphSize = 6;
     public static boolean verbose = false;
     public static boolean strictEdges = false;
+    public static boolean checkMethodLeft = false;
 
     public static String getHelp() {
         return (
@@ -14,7 +15,8 @@ public class ArgumentHandler {
                 "-v -- Verbose \n" +
                 "-e -- Strict edge comparison \n" +
                 "-ignoreLeft -- Ignores left check \n" +
-                "-l -- hard check literals\n"
+                "-l -- hard check literals\n" +
+                "-c -- check method left expression"
         );
     }
 
@@ -32,6 +34,8 @@ public class ArgumentHandler {
                     checkLeft = false;
                 } else if(args[i].equalsIgnoreCase("-l")) {
                     checkLiterals = true;
+                } else if(args[i].equalsIgnoreCase("-c")) {
+                    checkMethodLeft = true;
                 } else if(args[i].equalsIgnoreCase("-h")) {
                     System.out.println(getHelp());
                     System.exit(0);

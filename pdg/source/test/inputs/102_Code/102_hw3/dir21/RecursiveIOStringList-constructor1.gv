@@ -1,0 +1,10 @@
+digraph G {
+"2 : this.head = null"
+"2 : this.head = null" -> "5 : this.head = new RIOEmpty()" [style=dashed]
+"2 : this.iter = null"
+"2 : this.iter = null" -> "6 : this.iter = this.head" [style=dashed]
+"2 : this.iterPrev = null"
+"5 : this.head = new RIOEmpty()"
+"5 : this.head = new RIOEmpty()" -> "6 : this.iter = this.head"
+"6 : this.iter = this.head"
+}

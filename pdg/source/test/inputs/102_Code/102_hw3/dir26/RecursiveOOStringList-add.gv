@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.first = null"
+"4 : this.first = null" -> "23 : this.first = this.first.add(index, element, )" [style=dashed]
+"21 : index < 0"
+"22 : new IndexOutOfBoundsException()"
+"23 : this.first = this.first.add(index, element, )"
+}

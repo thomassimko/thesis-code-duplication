@@ -1,0 +1,10 @@
+digraph G {
+"6 : this.date = null"
+"7 : this.paidDollar = 0"
+"7 : this.paidCent = 0"
+"7 : this.remainingDollar = 0"
+"7 : this.remainingCent = 0"
+"8 : this.payee = null"
+"8 : this.category = null"
+"23 : \"partial\""
+}

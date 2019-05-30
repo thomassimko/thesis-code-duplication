@@ -1,0 +1,46 @@
+digraph G {
+"15 : this.reader = null"
+"16 : this.text = null"
+"17 : this.source = null"
+"18 : this.rss = null"
+"27 : this.text.setText(\"\", )"
+"28 : this.source.setText(\"\", )"
+"29 : comp = new DateComparator()"
+"29 : comp = new DateComparator()" -> "34 : Collections.sort(rss, comp, )"
+"30 : rss = this.reader.retrieveFeedItems()"
+"30 : rss = this.reader.retrieveFeedItems()" -> "34 : Collections.sort(rss, comp, )"
+"31 : sources = this.reader.getSources()"
+"31 : sources = this.reader.getSources()" -> "44 : string = sources"
+"31 : sources = this.reader.getSources()" -> "43 : Collections.sort(sources, )"
+"32 : size = rss.size()"
+"32 : size = rss.size()" -> "35 : i < size"
+"33 : item = null"
+"33 : item = null" -> "37 : item = rss.get(i, )" [style=dashed]
+"34 : Collections.sort(rss, comp, )"
+"35 : i = 0"
+"35 : i = 0" -> "37 : item = rss.get(i, )"
+"35 : i = 0" -> "35 : i < size"
+"35 : i = 0" -> "35 : @temp10 = i"
+"35 : i = 0" -> "35 : i = i + 1"
+"35 : i = 0" -> "35 : i = i + 1" [style=dashed]
+"35 : i < size"
+"37 : item = rss.get(i, )"
+"37 : item = rss.get(i, )" -> "37 : item = rss.get(i, )" [style=dashed]
+"38 : this.text.append(item.getTitle() + \"\n\", )"
+"39 : this.text.append(\"   \" + item.getDateString() + \"\n\", )"
+"40 : this.text.append(\"   \" + item.getLink() + \"\n\", )"
+"41 : this.text.append(\"\n\", )"
+"35 : @temp10 = i"
+"35 : @temp10 = i" -> "35 : @temp10 = i" [style=dashed]
+"35 : i = i + 1"
+"35 : i = i + 1" -> "37 : item = rss.get(i, )"
+"35 : i = i + 1" -> "35 : i < size"
+"35 : i = i + 1" -> "35 : @temp10 = i"
+"35 : i = i + 1" -> "35 : i = i + 1"
+"35 : i = i + 1" -> "35 : i = i + 1" [style=dashed]
+"43 : Collections.sort(sources, )"
+"44 : string = sources"
+"44 : string = sources" -> "46 : this.source.append(string + \"\n\", )"
+"44 : string = sources" -> "44 : string = sources" [style=dashed]
+"46 : this.source.append(string + \"\n\", )"
+}

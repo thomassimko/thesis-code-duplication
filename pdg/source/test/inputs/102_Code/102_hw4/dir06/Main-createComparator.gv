@@ -1,0 +1,22 @@
+digraph G {
+"89 : comp = null"
+"89 : comp = null" -> "113 : comp = new ExpenseAmountDelegateComparator(createComparator(sortChoice, i + 1, ), )" [style=dashed]
+"89 : comp = null" -> "128 : comp = new ExpenseCategoryDelegateComparator(createComparator(sortChoice, i + 1, ), )" [style=dashed]
+"89 : comp = null" -> "123 : comp = new ExpensePayeeDelegateComparator(createComparator(sortChoice, i + 1, ), )" [style=dashed]
+"89 : comp = null" -> "118 : comp = new ExpenseDateDelegateComparator(createComparator(sortChoice, i + 1, ), )" [style=dashed]
+"90 : i == sortChoice.size() - 1"
+"92 : equals(\"amount\", )"
+"94 : new ExpenseAmountComparator()"
+"96 : equals(\"date\", )"
+"98 : new ExpenseDateComparator()"
+"100 : equals(\"payee\", )"
+"102 : new ExpensePayeeComparator()"
+"106 : new ExpenseCategoryComparator()"
+"111 : equals(\"amount\", )"
+"113 : comp = new ExpenseAmountDelegateComparator(createComparator(sortChoice, i + 1, ), )"
+"116 : equals(\"date\", )"
+"118 : comp = new ExpenseDateDelegateComparator(createComparator(sortChoice, i + 1, ), )"
+"121 : equals(\"payee\", )"
+"123 : comp = new ExpensePayeeDelegateComparator(createComparator(sortChoice, i + 1, ), )"
+"128 : comp = new ExpenseCategoryDelegateComparator(createComparator(sortChoice, i + 1, ), )"
+}

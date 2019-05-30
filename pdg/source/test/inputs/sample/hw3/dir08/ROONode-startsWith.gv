@@ -1,0 +1,9 @@
+digraph G {
+"4 : this.string = null"
+"4 : this.string = null" -> "105 : list.addToFront(this.string, )"
+"5 : this.next = null"
+"102 : list = startsWith(prefix, )"
+"102 : list = startsWith(prefix, )" -> "105 : list.addToFront(this.string, )"
+"103 : startsWith(prefix, )"
+"105 : list.addToFront(this.string, )"
+}

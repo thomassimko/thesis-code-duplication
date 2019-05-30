@@ -1,0 +1,8 @@
+digraph G {
+"55 : div1 = new DivideExpression(new DoubleConstantExpression(1, ), new DoubleConstantExpression(2, ), )"
+"56 : div2 = new DivideExpression(new DoubleConstantExpression(-10, ), new DoubleConstantExpression(20, ), )"
+"57 : div3 = new DivideExpression(new DoubleConstantExpression(5.5, ), new DoubleConstantExpression(1.1, ), )"
+"58 : Check.check(div1.evaluate(bindings, ), 0.5, )"
+"59 : Check.check(div2.evaluate(bindings, ), 0.5, )"
+"60 : Check.check(div3.evaluate(bindings, ), 5, )"
+}

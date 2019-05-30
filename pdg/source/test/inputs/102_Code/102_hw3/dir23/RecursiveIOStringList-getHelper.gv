@@ -1,0 +1,12 @@
+digraph G {
+"4 : this.cur = null"
+"4 : this.head = null"
+"64 : cur instanceof RIOEmpty"
+"65 : new UnsupportedOperationException()"
+"68 : index == 0"
+"71 : index > 0"
+"72 : cur = getHelper(index - 1, cur.getNode(), )"
+"72 : cur = getHelper(index - 1, cur.getNode(), )" -> "72 : cur = getHelper(index - 1, cur.getNode(), )"
+"72 : cur = getHelper(index - 1, cur.getNode(), )" -> "72 : cur = getHelper(index - 1, cur.getNode(), )" [style=dashed]
+"76 : new IndexOutOfBoundsException()"
+}

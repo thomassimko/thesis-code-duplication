@@ -1,0 +1,6 @@
+digraph G {
+"27 : this.goodList = null"
+"28 : this.badList = null"
+"29 : this.RSSList = null"
+"40 : this.goodList.add(src, )"
+}

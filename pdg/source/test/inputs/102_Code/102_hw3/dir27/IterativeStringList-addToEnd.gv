@@ -1,0 +1,18 @@
+digraph G {
+"6 : this.head = null"
+"6 : this.head = null" -> "24 : cur = this.head"
+"6 : this.head = null" -> "18 : this.head == null"
+"6 : this.head = null" -> "20 : this.head = n" [style=dashed]
+"17 : n = new IterativeNode(element, null, )"
+"17 : n = new IterativeNode(element, null, )" -> "29 : cur.setNext(n, )"
+"17 : n = new IterativeNode(element, null, )" -> "20 : this.head = n"
+"18 : this.head == null"
+"20 : this.head = n"
+"24 : cur = this.head"
+"24 : cur = this.head" -> "27 : cur = cur.getNext()" [style=dashed]
+"25 : cur.getNext() != null"
+"27 : cur = cur.getNext()"
+"27 : cur = cur.getNext()" -> "27 : cur = cur.getNext()" [style=dashed]
+"25 : cur.getNext() != null"
+"29 : cur.setNext(n, )"
+}

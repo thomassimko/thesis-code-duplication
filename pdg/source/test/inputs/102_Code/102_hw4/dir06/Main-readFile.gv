@@ -1,0 +1,21 @@
+digraph G {
+"263 : s = new Scanner(storedExpenses, )"
+"264 : newList = new LinkedList()"
+"265 : s.hasNext()"
+"267 : type = toLowerCase()"
+"267 : type = toLowerCase()" -> "267 : type = toLowerCase()" [style=dashed]
+"268 : type.equals(\"in-full\", )"
+"297 : System.out.println(\"File Loaded\" + \"\n\", )"
+"272 : newInFull = readInExpense(s, type, )"
+"272 : newInFull = readInExpense(s, type, )" -> "273 : newList.add(newInFull, )"
+"273 : newList.add(newInFull, )"
+"277 : System.out.println(\"Date error\", )"
+"280 : type.equals(\"partial\", )"
+"284 : newPartial = readInExpense(s, type, )"
+"284 : newPartial = readInExpense(s, type, )" -> "285 : newList.add(newPartial, )"
+"285 : newList.add(newPartial, )"
+"289 : System.out.println(\"Date error\", )"
+"294 : s.nextLine()"
+"265 : s.hasNext()"
+"303 : System.out.println(\"File does not exist\", )"
+}

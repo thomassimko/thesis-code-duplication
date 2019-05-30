@@ -1,0 +1,8 @@
+digraph G {
+"4 : this.cur = null"
+"4 : this.head = null"
+"4 : this.head = null" -> "228 : newList.changeHead(hasSubstringHelper(substring, this.head, ), )"
+"227 : newList = new RecursiveIOStringList()"
+"227 : newList = new RecursiveIOStringList()" -> "228 : newList.changeHead(hasSubstringHelper(substring, this.head, ), )"
+"228 : newList.changeHead(hasSubstringHelper(substring, this.head, ), )"
+}

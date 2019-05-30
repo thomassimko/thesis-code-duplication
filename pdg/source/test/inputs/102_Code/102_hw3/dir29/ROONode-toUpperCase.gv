@@ -1,0 +1,6 @@
+digraph G {
+"3 : this.string = null"
+"4 : this.next = null"
+"4 : this.next = null" -> "92 : new ROONode(this.string.toLowerCase(), this.next, )"
+"92 : new ROONode(this.string.toLowerCase(), this.next, )"
+}

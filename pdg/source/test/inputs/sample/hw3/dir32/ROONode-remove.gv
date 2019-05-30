@@ -1,0 +1,8 @@
+digraph G {
+"4 : this.data = null"
+"5 : this.next = null"
+"5 : this.next = null" -> "43 : this.next = remove(index - 1, )" [style=dashed]
+"37 : index == 0"
+"43 : this.next = remove(index - 1, )"
+"44 : this"
+}

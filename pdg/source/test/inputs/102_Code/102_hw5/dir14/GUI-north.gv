@@ -1,0 +1,22 @@
+digraph G {
+"23 : this.gui = this"
+"24 : this.feedReader = null"
+"25 : this.source = null"
+"25 : this.source = null" -> "58 : this.source = source" [style=dashed]
+"26 : this.data = null"
+"27 : this.sources = null"
+"56 : sourceLabel = new JLabel(\"Source:\", )"
+"56 : sourceLabel = new JLabel(\"Source:\", )" -> "64 : northPanel.add(sourceLabel, )"
+"57 : source = new JTextField(20, )"
+"57 : source = new JTextField(20, )" -> "65 : northPanel.add(source, )"
+"57 : source = new JTextField(20, )" -> "58 : this.source = source"
+"58 : this.source = source"
+"59 : northPanel = new JPanel()"
+"60 : northPanel.setLayout(new FlowLayout(), )"
+"62 : addButton = new JButton(\"Add\", )"
+"62 : addButton = new JButton(\"Add\", )" -> "66 : northPanel.add(addButton, )"
+"64 : northPanel.add(sourceLabel, )"
+"65 : northPanel.add(source, )"
+"66 : northPanel.add(addButton, )"
+"68 : addButton.addActionListener(new ActionListener(), )"
+}

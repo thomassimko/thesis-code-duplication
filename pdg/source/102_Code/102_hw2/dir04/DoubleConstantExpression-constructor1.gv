@@ -1,5 +1,0 @@
-digraph G {
-"5 : this.schnyeh = 0.0"
-"5 : this.schnyeh = 0.0" -> "8 : this.schnyeh = parseDouble" [style=dashed]
-"8 : this.schnyeh = parseDouble"
-}

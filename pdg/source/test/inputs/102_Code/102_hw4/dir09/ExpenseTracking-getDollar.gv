@@ -1,0 +1,5 @@
+digraph G {
+"224 : i = str.indexOf(\".\", )"
+"224 : i = str.indexOf(\".\", )" -> "225 : Integer.parseInt(str.substring(0, i, ), )"
+"225 : Integer.parseInt(str.substring(0, i, ), )"
+}

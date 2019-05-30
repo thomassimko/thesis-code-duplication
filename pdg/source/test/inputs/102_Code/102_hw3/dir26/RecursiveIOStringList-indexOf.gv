@@ -1,0 +1,5 @@
+digraph G {
+"4 : this.first = new RIOEmpty()"
+"4 : this.first = new RIOEmpty()" -> "81 : mIndexOf(element, this.first, )"
+"81 : mIndexOf(element, this.first, )"
+}

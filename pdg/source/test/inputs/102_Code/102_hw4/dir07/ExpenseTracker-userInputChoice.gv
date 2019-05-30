@@ -1,0 +1,14 @@
+digraph G {
+"19 : this.expenseList = new LinkedList()"
+"82 : choice = 5"
+"85 : System.out.println(\"\", )"
+"86 : System.out.println(\"1. Display\", )"
+"87 : System.out.println(\"2. Add Expense\", )"
+"88 : System.out.println(\"3. Sort\", )"
+"89 : System.out.println(\"4. Save\", )"
+"90 : System.out.println(\"5. Quit\", )"
+"91 : System.out.println(\"\", )"
+"92 : System.out.print(\"Enter Choice: \", )"
+"93 : choice = scan.nextInt()"
+"97 : System.err.println(\"Not a valid input ---> Terminating...\", )"
+}

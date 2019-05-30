@@ -1,0 +1,7 @@
+digraph G {
+"6 : this.comp = null"
+"13 : categoryComp = new ExpenseCategoryComparator()"
+"14 : categoryComp.compare(e1, e2, ) == 0"
+"16 : compare(e1, e2, )"
+"18 : categoryComp.compare(e1, e2, )"
+}

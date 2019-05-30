@@ -1,0 +1,77 @@
+digraph G {
+"162 : check = false"
+"162 : check = false" -> "214 : check == false"
+"162 : check = false" -> "195 : check = true" [style=dashed]
+"162 : check = false" -> "177 : check = true" [style=dashed]
+"177 : check = true"
+"177 : check = true" -> "214 : check == false"
+"177 : check = true" -> "195 : check = true" [style=dashed]
+"177 : check = true" -> "177 : check = true" [style=dashed]
+"179 : System.out.print(\"Payment date: \", )"
+"180 : tempDate = dateReader(system.next(), )"
+"180 : tempDate = dateReader(system.next(), )" -> "191 : list.add(0, new InFull(tempDate, tempCategory, tempPayee, tempPaid, ), )"
+"180 : tempDate = dateReader(system.next(), )" -> "169 : tempDate = null" [style=dashed]
+"182 : System.out.print(\"Expense Amount: \", )"
+"183 : tempPaid = stringToAmount(system.next(), )"
+"183 : tempPaid = stringToAmount(system.next(), )" -> "191 : list.add(0, new InFull(tempDate, tempCategory, tempPayee, tempPaid, ), )"
+"183 : tempPaid = stringToAmount(system.next(), )" -> "170 : tempPaid = null" [style=dashed]
+"185 : System.out.print(\"Who was this expense paid to? \", )"
+"186 : tempPayee = system.next()"
+"186 : tempPayee = system.next()" -> "191 : list.add(0, new InFull(tempDate, tempCategory, tempPayee, tempPaid, ), )"
+"186 : tempPayee = system.next()" -> "171 : tempPayee = null" [style=dashed]
+"188 : System.out.print(\"Expense category: \", )"
+"189 : tempCategory = system.next()"
+"189 : tempCategory = system.next()" -> "191 : list.add(0, new InFull(tempDate, tempCategory, tempPayee, tempPaid, ), )"
+"189 : tempCategory = system.next()" -> "172 : tempCategory = null" [style=dashed]
+"191 : list.add(0, new InFull(tempDate, tempCategory, tempPayee, tempPaid, ), )"
+"193 : tempNext.equals(\"partial\", )"
+"195 : check = true"
+"195 : check = true" -> "214 : check == false"
+"195 : check = true" -> "195 : check = true" [style=dashed]
+"195 : check = true" -> "177 : check = true" [style=dashed]
+"197 : System.out.print(\"Payment date: \", )"
+"198 : tempDate = dateReader(system.next(), )"
+"198 : tempDate = dateReader(system.next(), )" -> "212 : list.add(0, new Partial(tempDate, tempCategory, tempPayee, tempPaid, tempRemaining, ), )"
+"198 : tempDate = dateReader(system.next(), )" -> "169 : tempDate = null" [style=dashed]
+"200 : System.out.print(\"Expense Amount: \", )"
+"201 : tempPaid = stringToAmount(system.next(), )"
+"201 : tempPaid = stringToAmount(system.next(), )" -> "212 : list.add(0, new Partial(tempDate, tempCategory, tempPayee, tempPaid, tempRemaining, ), )"
+"201 : tempPaid = stringToAmount(system.next(), )" -> "170 : tempPaid = null" [style=dashed]
+"203 : System.out.print(\"Who was this expense paid to? \", )"
+"204 : tempPayee = system.next()"
+"204 : tempPayee = system.next()" -> "212 : list.add(0, new Partial(tempDate, tempCategory, tempPayee, tempPaid, tempRemaining, ), )"
+"204 : tempPayee = system.next()" -> "171 : tempPayee = null" [style=dashed]
+"206 : System.out.print(\"Expense category: \", )"
+"207 : tempCategory = system.next()"
+"207 : tempCategory = system.next()" -> "212 : list.add(0, new Partial(tempDate, tempCategory, tempPayee, tempPaid, tempRemaining, ), )"
+"207 : tempCategory = system.next()" -> "172 : tempCategory = null" [style=dashed]
+"209 : System.out.print(\"Expense Balance: \", )"
+"210 : tempRemaining = stringToAmount(system.next(), )"
+"210 : tempRemaining = stringToAmount(system.next(), )" -> "212 : list.add(0, new Partial(tempDate, tempCategory, tempPayee, tempPaid, tempRemaining, ), )"
+"210 : tempRemaining = stringToAmount(system.next(), )" -> "173 : tempRemaining = null" [style=dashed]
+"212 : list.add(0, new Partial(tempDate, tempCategory, tempPayee, tempPaid, tempRemaining, ), )"
+"166 : System.out.print(\"Expense type (in-full, partial)? \", )"
+"167 : tempNext = system.next()"
+"167 : tempNext = system.next()" -> "167 : tempNext = system.next()" [style=dashed]
+"169 : tempDate = null"
+"169 : tempDate = null" -> "180 : tempDate = dateReader(system.next(), )" [style=dashed]
+"169 : tempDate = null" -> "198 : tempDate = dateReader(system.next(), )" [style=dashed]
+"169 : tempDate = null" -> "169 : tempDate = null" [style=dashed]
+"170 : tempPaid = null"
+"170 : tempPaid = null" -> "183 : tempPaid = stringToAmount(system.next(), )" [style=dashed]
+"170 : tempPaid = null" -> "170 : tempPaid = null" [style=dashed]
+"170 : tempPaid = null" -> "201 : tempPaid = stringToAmount(system.next(), )" [style=dashed]
+"171 : tempPayee = null"
+"171 : tempPayee = null" -> "204 : tempPayee = system.next()" [style=dashed]
+"171 : tempPayee = null" -> "171 : tempPayee = null" [style=dashed]
+"171 : tempPayee = null" -> "186 : tempPayee = system.next()" [style=dashed]
+"172 : tempCategory = null"
+"172 : tempCategory = null" -> "189 : tempCategory = system.next()" [style=dashed]
+"172 : tempCategory = null" -> "207 : tempCategory = system.next()" [style=dashed]
+"172 : tempCategory = null" -> "172 : tempCategory = null" [style=dashed]
+"173 : tempRemaining = null"
+"173 : tempRemaining = null" -> "173 : tempRemaining = null" [style=dashed]
+"173 : tempRemaining = null" -> "210 : tempRemaining = stringToAmount(system.next(), )" [style=dashed]
+"175 : tempNext.equals(\"in-full\", )"
+"214 : check == false"
+}

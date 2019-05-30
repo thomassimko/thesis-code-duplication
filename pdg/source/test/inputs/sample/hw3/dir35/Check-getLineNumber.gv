@@ -1,0 +1,6 @@
+digraph G {
+"157 : trace = getStackTrace()"
+"158 : trace.length > 4"
+"160 : getLineNumber()"
+"164 : 1"
+}

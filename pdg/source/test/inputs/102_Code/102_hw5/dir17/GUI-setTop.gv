@@ -1,0 +1,28 @@
+digraph G {
+"23 : this.topText = null"
+"23 : this.topText = null" -> "80 : this.topText = topText" [style=dashed]
+"24 : this.addButton = null"
+"24 : this.addButton = null" -> "79 : this.addButton = topButton" [style=dashed]
+"25 : this.refreshButton = null"
+"26 : this.badSourcesButton = null"
+"27 : this.cleanSourcesButton = null"
+"28 : this.rssItemText = null"
+"29 : this.sourcesText = null"
+"31 : this.reader = null"
+"32 : this.gui = this"
+"65 : top = new JPanel(new FlowLayout(), )"
+"67 : topLabel = new JLabel(\"Source:\", )"
+"67 : topLabel = new JLabel(\"Source:\", )" -> "82 : top.add(topLabel, )"
+"68 : topText = new JTextField(20, )"
+"68 : topText = new JTextField(20, )" -> "80 : this.topText = topText"
+"68 : topText = new JTextField(20, )" -> "83 : top.add(topText, )"
+"69 : topButton = new JButton(\"Add\", )"
+"69 : topButton = new JButton(\"Add\", )" -> "79 : this.addButton = topButton"
+"69 : topButton = new JButton(\"Add\", )" -> "84 : top.add(topButton, )"
+"71 : topButton.addActionListener(new ActionListener(), )"
+"79 : this.addButton = topButton"
+"80 : this.topText = topText"
+"82 : top.add(topLabel, )"
+"83 : top.add(topText, )"
+"84 : top.add(topButton, )"
+}

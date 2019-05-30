@@ -1,7 +1,0 @@
-digraph G {
-"7 : this.x_coord = 0.0"
-"8 : this.y_coord = 0.0"
-"9 : this.radius = 0.0"
-"10 : this.angle = 0.0"
-"11 : this.pt = null"
-}

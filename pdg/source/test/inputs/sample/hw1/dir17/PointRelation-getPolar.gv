@@ -1,0 +1,13 @@
+digraph G {
+"52 : radius = 0.0"
+"52 : radius = 0.0" -> "55 : radius = scan.nextDouble()" [style=dashed]
+"52 : degrees = 0.0"
+"52 : degrees = 0.0" -> "57 : degrees = scan.nextDouble()" [style=dashed]
+"54 : System.out.print(\"Enter radius: \", )"
+"55 : radius = scan.nextDouble()"
+"55 : radius = scan.nextDouble()" -> "59 : new PolarPoint(radius, Math.toRadians(degrees, ), )"
+"56 : System.out.print(\"Enter angle (in degrees): \", )"
+"57 : degrees = scan.nextDouble()"
+"57 : degrees = scan.nextDouble()" -> "59 : new PolarPoint(radius, Math.toRadians(degrees, ), )"
+"59 : new PolarPoint(radius, Math.toRadians(degrees, ), )"
+}

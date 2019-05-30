@@ -1,0 +1,7 @@
+digraph G {
+"7 : this.comp = null"
+"17 : compareResult = compareTo(expense2.getPayee(), )"
+"17 : compareResult = compareTo(expense2.getPayee(), )" -> "19 : compareResult == 0"
+"19 : compareResult == 0"
+"21 : this.comp.compare(expense1, expense2, )"
+}

@@ -1,0 +1,10 @@
+digraph G {
+"78 : bindings.addBinding(\"cats\", 100, )"
+"79 : bindings.addBinding(\"a\", 2.2, )"
+"80 : Check.check(bindings.lookupBinding(\"cats\", ), 100, )"
+"81 : Check.check(bindings.lookupBinding(\"a\", ), 2.2, )"
+"82 : bindings.addBinding(\"a\", 1.1, )"
+"83 : bindings.addBinding(\"cats\", 991231, )"
+"84 : Check.check(bindings.lookupBinding(\"a\", ), 1.1, )"
+"85 : Check.check(bindings.lookupBinding(\"cats\", ), 991231, )"
+}

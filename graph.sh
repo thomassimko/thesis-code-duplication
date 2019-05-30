@@ -2,6 +2,7 @@
 
 dot -Tpng cfg.gv -o cfg.png
 for filename in `find ./pdg/source -name "*.gv"`; do
+    echo $filename
     prefix="./pdg/source/"
     newName=${filename#"$prefix"}
     newName=${newName%".gv"}
@@ -10,3 +11,6 @@ for filename in `find ./pdg/source -name "*.gv"`; do
     mkdir -p "$newDir"
     dot -Tpng "$filename" -o ./pdg/images/"$newName".png
 done
+
+rm -rf ./pdg/source
+mkdir ./pdg/source

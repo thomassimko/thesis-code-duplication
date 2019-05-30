@@ -1,0 +1,39 @@
+digraph G {
+"112 : System.out.println(\"obtaining from following areas:\", )"
+"113 : i = 0"
+"113 : i = 0" -> "114 : System.out.println(get(i, ), )"
+"113 : i = 0" -> "113 : @temp3 = i"
+"113 : i = 0" -> "113 : i = i + 1"
+"113 : i = 0" -> "113 : i < size()"
+"113 : i = 0" -> "113 : i = i + 1" [style=dashed]
+"113 : i < size()"
+"114 : System.out.println(get(i, ), )"
+"113 : @temp3 = i"
+"113 : @temp3 = i" -> "113 : @temp3 = i" [style=dashed]
+"113 : i = i + 1"
+"113 : i = i + 1" -> "114 : System.out.println(get(i, ), )"
+"113 : i = i + 1" -> "113 : @temp3 = i"
+"113 : i = i + 1" -> "113 : i = i + 1"
+"113 : i = i + 1" -> "113 : i < size()"
+"113 : i = i + 1" -> "113 : i = i + 1" [style=dashed]
+"115 : System.out.println()"
+"116 : System.out.println(\"prnting items:\", )"
+"117 : r.retrieveFeedItems()"
+"118 : i = 0"
+"118 : i = 0" -> "118 : @temp4 = i"
+"118 : i = 0" -> "118 : i < size()"
+"118 : i = 0" -> "118 : i = i + 1"
+"118 : i = 0" -> "118 : i = i + 1" [style=dashed]
+"118 : i < size()"
+"119 : System.out.println(\"The Title: \" + getTitle(), )"
+"120 : System.out.println(\"The  Link: \" + getLink(), )"
+"121 : System.out.println(\"The  Date: \" + caltoread(getDate(), ), )"
+"123 : System.out.println()"
+"118 : @temp4 = i"
+"118 : @temp4 = i" -> "118 : @temp4 = i" [style=dashed]
+"118 : i = i + 1"
+"118 : i = i + 1" -> "118 : @temp4 = i"
+"118 : i = i + 1" -> "118 : i < size()"
+"118 : i = i + 1" -> "118 : i = i + 1"
+"118 : i = i + 1" -> "118 : i = i + 1" [style=dashed]
+}

@@ -1,0 +1,38 @@
+digraph G {
+"7 : this.p = null"
+"22 : index = front"
+"22 : index = front" -> "23 : elementIndex = list.get(index, )"
+"22 : index = front" -> "30 : index = i" [style=dashed]
+"23 : elementIndex = list.get(index, )"
+"23 : elementIndex = list.get(index, )" -> "28 : comp.compare(elementIndex, elementI, ) < 0"
+"23 : elementIndex = list.get(index, )" -> "31 : elementIndex = elementI" [style=dashed]
+"24 : size = list.size()"
+"24 : size = list.size()" -> "25 : i < size"
+"25 : i = front + 1"
+"25 : i = front + 1" -> "27 : elementI = list.get(i, )"
+"25 : i = front + 1" -> "25 : i < size"
+"25 : i = front + 1" -> "30 : index = i"
+"25 : i = front + 1" -> "25 : i = i + 1"
+"25 : i = front + 1" -> "25 : @temp5 = i"
+"25 : i = front + 1" -> "25 : i = i + 1" [style=dashed]
+"25 : i < size"
+"27 : elementI = list.get(i, )"
+"27 : elementI = list.get(i, )" -> "28 : comp.compare(elementIndex, elementI, ) < 0"
+"27 : elementI = list.get(i, )" -> "31 : elementIndex = elementI"
+"27 : elementI = list.get(i, )" -> "27 : elementI = list.get(i, )" [style=dashed]
+"28 : comp.compare(elementIndex, elementI, ) < 0"
+"30 : index = i"
+"30 : index = i" -> "30 : index = i" [style=dashed]
+"31 : elementIndex = elementI"
+"31 : elementIndex = elementI" -> "28 : comp.compare(elementIndex, elementI, ) < 0"
+"31 : elementIndex = elementI" -> "31 : elementIndex = elementI" [style=dashed]
+"25 : @temp5 = i"
+"25 : @temp5 = i" -> "25 : @temp5 = i" [style=dashed]
+"25 : i = i + 1"
+"25 : i = i + 1" -> "27 : elementI = list.get(i, )"
+"25 : i = i + 1" -> "25 : i < size"
+"25 : i = i + 1" -> "30 : index = i"
+"25 : i = i + 1" -> "25 : i = i + 1"
+"25 : i = i + 1" -> "25 : @temp5 = i"
+"25 : i = i + 1" -> "25 : i = i + 1" [style=dashed]
+}

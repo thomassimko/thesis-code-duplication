@@ -1,4 +1,0 @@
-digraph G {
-"4 : this.e = null"
-"18 : \"-\" + toString()"
-}

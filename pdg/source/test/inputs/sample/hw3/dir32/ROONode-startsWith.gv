@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.data = null"
+"5 : this.next = null"
+"97 : startsWith(prefix, )"
+"99 : n = new ROONode(getData(), startsWith(prefix, ), )"
+"104 : startsWith(prefix, )"
+}

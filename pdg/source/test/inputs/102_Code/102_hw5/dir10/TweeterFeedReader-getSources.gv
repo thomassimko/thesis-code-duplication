@@ -1,0 +1,23 @@
+digraph G {
+"19 : this.feedDocument = null"
+"20 : this.itemList = null"
+"21 : this.sourceList = null"
+"22 : this.badSources = null"
+"39 : stringSourceList = new LinkedList()"
+"40 : i = 0"
+"40 : i = 0" -> "40 : i = i + 1"
+"40 : i = 0" -> "40 : i < this.sourceList.size()"
+"40 : i = 0" -> "41 : stringSourceList.add(this.sourceList.get(i, ), )"
+"40 : i = 0" -> "40 : @temp6 = i"
+"40 : i = 0" -> "40 : i = i + 1" [style=dashed]
+"40 : i < this.sourceList.size()"
+"41 : stringSourceList.add(this.sourceList.get(i, ), )"
+"40 : @temp6 = i"
+"40 : @temp6 = i" -> "40 : @temp6 = i" [style=dashed]
+"40 : i = i + 1"
+"40 : i = i + 1" -> "40 : i = i + 1"
+"40 : i = i + 1" -> "40 : i < this.sourceList.size()"
+"40 : i = i + 1" -> "41 : stringSourceList.add(this.sourceList.get(i, ), )"
+"40 : i = i + 1" -> "40 : @temp6 = i"
+"40 : i = i + 1" -> "40 : i = i + 1" [style=dashed]
+}

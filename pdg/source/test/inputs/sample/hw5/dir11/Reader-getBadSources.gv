@@ -1,0 +1,11 @@
+digraph G {
+"24 : this.factory = DocumentBuilderFactory.newInstance()"
+"25 : this.feedDocument = null"
+"26 : this.builder = null"
+"27 : this.itemCount = 0"
+"28 : this.xpfactory = XPathFactory.newInstance()"
+"29 : this.xpath = this.xpfactory.newXPath()"
+"30 : this.countStr = null"
+"31 : this.sources = new LinkedList()"
+"32 : this.badSources = null"
+}

@@ -1,0 +1,13 @@
+digraph G {
+"7 : this.date = null"
+"7 : this.date = null" -> "76 : \"partial\n\" + String.format(\"%1$2tm/%<2td/%<tY\", this.date, ) + \"\n\" + this.description + \"\n\" + this.payee + \"\n\" + getPaid() + \"\n\" + getLeft()"
+"8 : this.description = null"
+"8 : this.description = null" -> "76 : \"partial\n\" + String.format(\"%1$2tm/%<2td/%<tY\", this.date, ) + \"\n\" + this.description + \"\n\" + this.payee + \"\n\" + getPaid() + \"\n\" + getLeft()"
+"9 : this.payee = null"
+"9 : this.payee = null" -> "76 : \"partial\n\" + String.format(\"%1$2tm/%<2td/%<tY\", this.date, ) + \"\n\" + this.description + \"\n\" + this.payee + \"\n\" + getPaid() + \"\n\" + getLeft()"
+"10 : this.dollarsPaid = 0"
+"11 : this.centsPaid = 0"
+"12 : this.dollarsLeft = 0"
+"13 : this.centsLeft = 0"
+"76 : \"partial\n\" + String.format(\"%1$2tm/%<2td/%<tY\", this.date, ) + \"\n\" + this.description + \"\n\" + this.payee + \"\n\" + getPaid() + \"\n\" + getLeft()"
+}

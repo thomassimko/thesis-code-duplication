@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.string = null"
+"5 : this.next = null"
+"95 : list = toUpperCase()"
+"95 : list = toUpperCase()" -> "96 : list.addToFront(toUpperCase(), )"
+"96 : list.addToFront(toUpperCase(), )"
+}

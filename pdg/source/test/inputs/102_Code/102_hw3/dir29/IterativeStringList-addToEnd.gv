@@ -1,0 +1,18 @@
+digraph G {
+"3 : this.first = null"
+"3 : this.first = null" -> "10 : node = this.first"
+"3 : this.first = null" -> "7 : this.first == null"
+"3 : this.first = null" -> "8 : this.first = end" [style=dashed]
+"6 : end = new IterativeNode(element, null, )"
+"6 : end = new IterativeNode(element, null, )" -> "14 : node.setNext(end, )"
+"6 : end = new IterativeNode(element, null, )" -> "8 : this.first = end"
+"7 : this.first == null"
+"8 : this.first = end"
+"10 : node = this.first"
+"10 : node = this.first" -> "12 : node = node.getNext()" [style=dashed]
+"11 : node.getNext() != null"
+"12 : node = node.getNext()"
+"12 : node = node.getNext()" -> "12 : node = node.getNext()" [style=dashed]
+"11 : node.getNext() != null"
+"14 : node.setNext(end, )"
+}

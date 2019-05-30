@@ -1,0 +1,11 @@
+digraph G {
+"7 : this.date = null"
+"7 : this.date = null" -> "31 : \"partial\n\" + String.format(\"%1$2tm/%<2td/%<tY \", this.date, ) + \"\n\" + this.category + \"\n\" + this.payee + \"\n\" + toString() + \"\n\" + toString()"
+"8 : this.category = null"
+"8 : this.category = null" -> "31 : \"partial\n\" + String.format(\"%1$2tm/%<2td/%<tY \", this.date, ) + \"\n\" + this.category + \"\n\" + this.payee + \"\n\" + toString() + \"\n\" + toString()"
+"9 : this.payee = null"
+"9 : this.payee = null" -> "31 : \"partial\n\" + String.format(\"%1$2tm/%<2td/%<tY \", this.date, ) + \"\n\" + this.category + \"\n\" + this.payee + \"\n\" + toString() + \"\n\" + toString()"
+"10 : this.paid = null"
+"11 : this.remaining = null"
+"31 : \"partial\n\" + String.format(\"%1$2tm/%<2td/%<tY \", this.date, ) + \"\n\" + this.category + \"\n\" + this.payee + \"\n\" + toString() + \"\n\" + toString()"
+}

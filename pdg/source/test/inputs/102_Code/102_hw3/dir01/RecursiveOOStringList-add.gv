@@ -1,0 +1,13 @@
+digraph G {
+"4 : this.node = null"
+"4 : this.node = null" -> "25 : temp.setNext(this.node, )"
+"4 : this.node = null" -> "26 : this.node = temp" [style=dashed]
+"18 : index < 0"
+"20 : new IndexOutOfBoundsException()"
+"22 : index == 0"
+"24 : temp = new ROONode(element, )"
+"24 : temp = new ROONode(element, )" -> "26 : this.node = temp"
+"25 : temp.setNext(this.node, )"
+"26 : this.node = temp"
+"30 : this.node.add(index, element, )"
+}

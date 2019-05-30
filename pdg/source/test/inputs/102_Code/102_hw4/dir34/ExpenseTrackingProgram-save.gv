@@ -1,0 +1,32 @@
+digraph G {
+"20 : this.scan = null"
+"164 : size = list.size()"
+"165 : p = null"
+"168 : p = new PrintWriter(input, )"
+"172 : e.printStackTrace()"
+"174 : i = 0"
+"174 : i = 0" -> "174 : i = i + 1"
+"174 : i = 0" -> "174 : i < size"
+"174 : i = 0" -> "174 : @temp3 = i"
+"174 : i = 0" -> "174 : i = i + 1" [style=dashed]
+"174 : i < size"
+"176 : p.println(getType(), )"
+"177 : c = getDate()"
+"177 : c = getDate()" -> "177 : c = getDate()" [style=dashed]
+"178 : d = c.getTime()"
+"178 : d = c.getTime()" -> "179 : p.println(String.format(\"%1$2tm/%<2td/%<tY \", d, ), )"
+"178 : d = c.getTime()" -> "178 : d = c.getTime()" [style=dashed]
+"179 : p.println(String.format(\"%1$2tm/%<2td/%<tY \", d, ), )"
+"180 : p.println(getPayee(), )"
+"181 : p.println(getCategory(), )"
+"182 : p.println(getAmountPaid(), )"
+"183 : p.println(getBalance(), )"
+"174 : @temp3 = i"
+"174 : @temp3 = i" -> "174 : @temp3 = i" [style=dashed]
+"174 : i = i + 1"
+"174 : i = i + 1" -> "174 : i = i + 1"
+"174 : i = i + 1" -> "174 : i < size"
+"174 : i = i + 1" -> "174 : @temp3 = i"
+"174 : i = i + 1" -> "174 : i = i + 1" [style=dashed]
+"185 : p.close()"
+}

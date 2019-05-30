@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.head = null"
+"4 : this.head = null" -> "60 : newList.changeHead(this.head.toUpperCase(), )"
+"59 : newList = new RecursiveOOStringList()"
+"59 : newList = new RecursiveOOStringList()" -> "60 : newList.changeHead(this.head.toUpperCase(), )"
+"60 : newList.changeHead(this.head.toUpperCase(), )"
+}

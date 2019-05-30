@@ -1,0 +1,7 @@
+digraph G {
+"10 : this.tweets = null"
+"10 : this.tweets = null" -> "125 : this.tweets = new TwitterFeedReader()" [style=dashed]
+"122 : window = new TwitterGuiFeed()"
+"123 : window.setVisible(true, )"
+"125 : this.tweets = new TwitterFeedReader()"
+}

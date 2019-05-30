@@ -1,0 +1,5 @@
+digraph G {
+"7 : this.head = null"
+"7 : this.head = null" -> "203 : newList = startsWithHelper(this.head, prefix, )"
+"203 : newList = startsWithHelper(this.head, prefix, )"
+}

@@ -1,0 +1,24 @@
+digraph G {
+"6 : this.head = null"
+"6 : this.head = null" -> "125 : this.cur = this.head"
+"7 : this.cur = null"
+"7 : this.cur = null" -> "125 : this.cur = this.head" [style=dashed]
+"125 : this.cur = this.head"
+"125 : this.cur = this.head" -> "128 : this.cur != null"
+"125 : this.cur = this.head" -> "130 : this.cur = getNext()" [style=dashed]
+"126 : indexCount = 0"
+"126 : indexCount = 0" -> "131 : indexCount = indexCount + 1"
+"126 : indexCount = 0" -> "131 : @temp5 = indexCount"
+"126 : indexCount = 0" -> "131 : indexCount = indexCount + 1" [style=dashed]
+"128 : this.cur != null"
+"130 : this.cur = getNext()"
+"130 : this.cur = getNext()" -> "128 : this.cur != null"
+"130 : this.cur = getNext()" -> "130 : this.cur = getNext()" [style=dashed]
+"131 : @temp5 = indexCount"
+"131 : @temp5 = indexCount" -> "131 : @temp5 = indexCount" [style=dashed]
+"131 : indexCount = indexCount + 1"
+"131 : indexCount = indexCount + 1" -> "131 : indexCount = indexCount + 1"
+"131 : indexCount = indexCount + 1" -> "131 : @temp5 = indexCount"
+"131 : indexCount = indexCount + 1" -> "131 : indexCount = indexCount + 1" [style=dashed]
+"128 : this.cur != null"
+}

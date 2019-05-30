@@ -1,0 +1,6 @@
+digraph G {
+"7 : this.id = null"
+"7 : this.id = null" -> "17 : bindThis.lookupBinding(this.id, )"
+"16 : bindThis = new VariableBindings()"
+"17 : bindThis.lookupBinding(this.id, )"
+}

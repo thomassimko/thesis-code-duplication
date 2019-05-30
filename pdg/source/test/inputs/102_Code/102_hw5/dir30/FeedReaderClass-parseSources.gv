@@ -1,0 +1,35 @@
+digraph G {
+"23 : this.srcList = new ArrayList()"
+"24 : this.documentList = new ArrayList()"
+"25 : this.badSrcList = new ArrayList()"
+"26 : this.badDocumentList = new ArrayList()"
+"131 : factory = DocumentBuilderFactory.newInstance()"
+"132 : builder = null"
+"133 : feedDocument = null"
+"137 : builder = factory.newDocumentBuilder()"
+"141 : e.printStackTrace()"
+"145 : this.documentList.clear()"
+"147 : i = 0"
+"147 : i = 0" -> "147 : i < this.srcList.size()"
+"147 : i = 0" -> "147 : @temp8 = i"
+"147 : i = 0" -> "147 : i = i + 1"
+"147 : i = 0" -> "149 : feedDocument = builder.parse(this.srcList.get(i, ), )"
+"147 : i = 0" -> "147 : i = i + 1" [style=dashed]
+"147 : i < this.srcList.size()"
+"149 : feedDocument = builder.parse(this.srcList.get(i, ), )"
+"149 : feedDocument = builder.parse(this.srcList.get(i, ), )" -> "150 : this.documentList.add(feedDocument, )"
+"149 : feedDocument = builder.parse(this.srcList.get(i, ), )" -> "155 : this.badDocumentList.add(feedDocument, )"
+"149 : feedDocument = builder.parse(this.srcList.get(i, ), )" -> "159 : this.badDocumentList.add(feedDocument, )"
+"149 : feedDocument = builder.parse(this.srcList.get(i, ), )" -> "149 : feedDocument = builder.parse(this.srcList.get(i, ), )" [style=dashed]
+"150 : this.documentList.add(feedDocument, )"
+"147 : @temp8 = i"
+"147 : @temp8 = i" -> "147 : @temp8 = i" [style=dashed]
+"147 : i = i + 1"
+"147 : i = i + 1" -> "147 : i < this.srcList.size()"
+"147 : i = i + 1" -> "147 : @temp8 = i"
+"147 : i = i + 1" -> "147 : i = i + 1"
+"147 : i = i + 1" -> "149 : feedDocument = builder.parse(this.srcList.get(i, ), )"
+"147 : i = i + 1" -> "147 : i = i + 1" [style=dashed]
+"155 : this.badDocumentList.add(feedDocument, )"
+"159 : this.badDocumentList.add(feedDocument, )"
+}

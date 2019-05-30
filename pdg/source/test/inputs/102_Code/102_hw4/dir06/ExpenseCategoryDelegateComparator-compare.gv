@@ -1,0 +1,6 @@
+digraph G {
+"7 : this.nextComp = null"
+"16 : compareTo(o2.getCategory(), ) == 0"
+"18 : this.nextComp.compare(o1, o2, )"
+"22 : compareTo(o2.getCategory(), )"
+}

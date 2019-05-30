@@ -1,0 +1,6 @@
+digraph G {
+"5 : this.values = new ArrayList()"
+"8 : next = new Binding(id, value, )"
+"8 : next = new Binding(id, value, )" -> "9 : this.values.add(next, )"
+"9 : this.values.add(next, )"
+}

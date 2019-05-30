@@ -1,0 +1,18 @@
+digraph G {
+"23 : this.topText = null"
+"24 : this.addButton = null"
+"25 : this.refreshButton = null"
+"26 : this.badSourcesButton = null"
+"27 : this.cleanSourcesButton = null"
+"28 : this.rssItemText = null"
+"29 : this.sourcesText = null"
+"31 : this.reader = null"
+"32 : this.gui = this"
+"181 : src = this.topText.getText()"
+"181 : src = this.topText.getText()" -> "185 : this.sourcesText.append(src + \"\n\", )"
+"181 : src = this.topText.getText()" -> "184 : this.reader.addSource(src, )"
+"183 : this.topText.setText(\"\", )"
+"184 : this.reader.addSource(src, )"
+"185 : this.sourcesText.append(src + \"\n\", )"
+"187 : invokeRefreshButton()"
+}

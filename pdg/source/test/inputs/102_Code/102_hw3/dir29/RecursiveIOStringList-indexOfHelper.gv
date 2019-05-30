@@ -1,0 +1,10 @@
+digraph G {
+"3 : this.first = new RIOEmpty()"
+"115 : cur instanceof RIOEmpty"
+"116 : 1"
+"118 : equals(element, )"
+"119 : 0"
+"121 : indexOfHelper(cur.getNext(), element, ) == 1"
+"122 : 1"
+"124 : indexOfHelper(cur.getNext(), element, ) + 1"
+}

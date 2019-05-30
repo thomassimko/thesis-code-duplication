@@ -1,8 +1,0 @@
-digraph G {
-"3 : this.id = null"
-"3 : this.id = null" -> "7 : this.id = id" [style=dashed]
-"4 : this.value = 0.0"
-"4 : this.value = 0.0" -> "8 : this.value = value" [style=dashed]
-"7 : this.id = id"
-"8 : this.value = value"
-}

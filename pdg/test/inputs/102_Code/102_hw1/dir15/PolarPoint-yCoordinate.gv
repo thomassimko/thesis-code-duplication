@@ -1,8 +1,0 @@
-digraph G {
-"4 : this.p = null"
-"5 : this.r = 0.0"
-"5 : this.r = 0.0" -> "23 : this.r * Math.sin(this.theta, )"
-"6 : this.theta = 0.0"
-"6 : this.theta = 0.0" -> "23 : this.r * Math.sin(this.theta, )"
-"23 : this.r * Math.sin(this.theta, )"
-}

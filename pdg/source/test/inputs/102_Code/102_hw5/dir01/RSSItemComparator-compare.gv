@@ -1,0 +1,7 @@
+digraph G {
+"8 : before(b.getDate(), )"
+"9 : 1"
+"10 : after(b.getDate(), )"
+"11 : 1"
+"13 : 0"
+}

@@ -1,0 +1,5 @@
+digraph G {
+"4 : this.first = new RIOEmpty()"
+"4 : this.first = new RIOEmpty()" -> "95 : mSize(this.first, )"
+"95 : mSize(this.first, )"
+}

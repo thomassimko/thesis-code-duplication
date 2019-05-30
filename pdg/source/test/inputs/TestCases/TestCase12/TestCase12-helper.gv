@@ -1,0 +1,5 @@
+digraph G {
+"28 : index >= 3"
+"29 : 0"
+"31 : helper(arr, index + 1, ) + arr[index]"
+}

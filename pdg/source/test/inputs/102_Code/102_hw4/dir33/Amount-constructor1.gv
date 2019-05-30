@@ -1,0 +1,8 @@
+digraph G {
+"3 : this.coins = 0"
+"3 : this.coins = 0" -> "8 : this.coins = coins" [style=dashed]
+"4 : this.dollars = 0"
+"4 : this.dollars = 0" -> "9 : this.dollars = dollars" [style=dashed]
+"8 : this.coins = coins"
+"9 : this.dollars = dollars"
+}

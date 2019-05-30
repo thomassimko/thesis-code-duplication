@@ -1,0 +1,20 @@
+digraph G {
+"4 : this.head = null"
+"4 : this.head = null" -> "140 : n = this.head"
+"138 : newList = new IterativeStringList()"
+"139 : str = null"
+"139 : str = null" -> "142 : str = n.getString()" [style=dashed]
+"140 : n = this.head"
+"140 : n = this.head" -> "141 : n != null"
+"140 : n = this.head" -> "146 : n = n.getNext()" [style=dashed]
+"141 : n != null"
+"142 : str = n.getString()"
+"142 : str = n.getString()" -> "144 : newList.addToEnd(str, )"
+"142 : str = n.getString()" -> "142 : str = n.getString()" [style=dashed]
+"143 : str.startsWith(prefix, )"
+"144 : newList.addToEnd(str, )"
+"146 : n = n.getNext()"
+"146 : n = n.getNext()" -> "141 : n != null"
+"146 : n = n.getNext()" -> "146 : n = n.getNext()" [style=dashed]
+"141 : n != null"
+}

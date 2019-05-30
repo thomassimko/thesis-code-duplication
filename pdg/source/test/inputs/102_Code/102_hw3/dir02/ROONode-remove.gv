@@ -1,0 +1,10 @@
+digraph G {
+"4 : this.str = null"
+"5 : this.next = null"
+"5 : this.next = null" -> "52 : this.next = remove(index - 1, )" [style=dashed]
+"42 : index < 0"
+"44 : new IndexOutOfBoundsException()"
+"46 : index == 0"
+"52 : this.next = remove(index - 1, )"
+"54 : this"
+}

@@ -1,0 +1,41 @@
+digraph G {
+"81 : i = 0"
+"81 : i = 0" -> "87 : i = 0" [style=dashed]
+"82 : type = {2, }"
+"83 : p = {2, }"
+"85 : scan = new Scanner(System.in, )"
+"85 : scan = new Scanner(System.in, )" -> "90 : type[i] = scan.nextInt()"
+"85 : scan = new Scanner(System.in, )" -> "98 : p[i] = PointRelation.getPoint(type[i], scan, )"
+"87 : i = 0"
+"87 : i = 0" -> "90 : type[i] = scan.nextInt()"
+"87 : i = 0" -> "87 : i < 2"
+"87 : i = 0" -> "87 : i = i + 1"
+"87 : i = 0" -> "92 : PointRelation.isInvalidType(type[i], )"
+"87 : i = 0" -> "98 : p[i] = PointRelation.getPoint(type[i], scan, )"
+"87 : i = 0" -> "87 : @temp1 = i"
+"87 : i = 0" -> "87 : i = i + 1" [style=dashed]
+"87 : i < 2"
+"89 : System.out.print(\"Which type of point should be created (1 for Cartesian, 2 for Polar)? \", )"
+"90 : type[i] = scan.nextInt()"
+"90 : type[i] = scan.nextInt()" -> "90 : type[i] = scan.nextInt()" [style=dashed]
+"92 : PointRelation.isInvalidType(type[i], )"
+"101 : System.out.print(\"Distance bewteen points: \", )"
+"102 : System.out.println(PointRelation.distance(p[0], p[1], ), )"
+"104 : PointRelation.sameQuadrant(p[0], p[1], )"
+"94 : System.out.println(\"Invalid type.\", )"
+"95 : System.exit(1, )"
+"98 : p[i] = PointRelation.getPoint(type[i], scan, )"
+"98 : p[i] = PointRelation.getPoint(type[i], scan, )" -> "98 : p[i] = PointRelation.getPoint(type[i], scan, )" [style=dashed]
+"87 : @temp1 = i"
+"87 : @temp1 = i" -> "87 : @temp1 = i" [style=dashed]
+"87 : i = i + 1"
+"87 : i = i + 1" -> "90 : type[i] = scan.nextInt()"
+"87 : i = i + 1" -> "87 : i < 2"
+"87 : i = i + 1" -> "87 : i = i + 1"
+"87 : i = i + 1" -> "92 : PointRelation.isInvalidType(type[i], )"
+"87 : i = i + 1" -> "98 : p[i] = PointRelation.getPoint(type[i], scan, )"
+"87 : i = i + 1" -> "87 : @temp1 = i"
+"87 : i = i + 1" -> "87 : i = i + 1" [style=dashed]
+"106 : System.out.println(\"In same quadrant.\", )"
+"110 : System.out.println(\"Not in same quadrant.\", )"
+}

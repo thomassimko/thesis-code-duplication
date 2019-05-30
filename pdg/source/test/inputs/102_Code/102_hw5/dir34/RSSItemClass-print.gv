@@ -1,0 +1,9 @@
+digraph G {
+"6 : this.date = null"
+"6 : this.date = null" -> "30 : this.title + \"\n\" + \"   \" + String.format(\"%1$2tm/%<2td/%<tY %<tH:%<tM\", this.date, ) + \"\n\" + \"   \" + this.link"
+"7 : this.link = null"
+"7 : this.link = null" -> "30 : this.title + \"\n\" + \"   \" + String.format(\"%1$2tm/%<2td/%<tY %<tH:%<tM\", this.date, ) + \"\n\" + \"   \" + this.link"
+"8 : this.title = null"
+"8 : this.title = null" -> "30 : this.title + \"\n\" + \"   \" + String.format(\"%1$2tm/%<2td/%<tY %<tH:%<tM\", this.date, ) + \"\n\" + \"   \" + this.link"
+"30 : this.title + \"\n\" + \"   \" + String.format(\"%1$2tm/%<2td/%<tY %<tH:%<tM\", this.date, ) + \"\n\" + \"   \" + this.link"
+}

@@ -1,0 +1,11 @@
+digraph G {
+"6 : this.head = null"
+"98 : want = null"
+"98 : want = null" -> "109 : want = get(index - 1, cur.getNext(), )" [style=dashed]
+"98 : want = null" -> "105 : want = cur.getName()" [style=dashed]
+"99 : cur instanceof RIOEmpty"
+"101 : new IndexOutOfBoundsException()"
+"103 : index == 0"
+"105 : want = cur.getName()"
+"109 : want = get(index - 1, cur.getNext(), )"
+}

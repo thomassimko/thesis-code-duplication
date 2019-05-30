@@ -1,0 +1,6 @@
+digraph G {
+"4 : this.string = null"
+"5 : this.next = null"
+"38 : n = new ROONode(toLowerCase(), )"
+"39 : n.setNext(this.next.allLowered(), )"
+}

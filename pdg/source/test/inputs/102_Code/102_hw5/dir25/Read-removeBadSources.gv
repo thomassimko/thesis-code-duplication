@@ -1,0 +1,10 @@
+digraph G {
+"15 : this.feed = new ArrayList()"
+"16 : this.bad = new ArrayList()"
+"16 : this.bad = new ArrayList()" -> "103 : bstring = this.bad"
+"17 : this.sources = new ArrayList()"
+"103 : bstring = this.bad"
+"103 : bstring = this.bad" -> "105 : this.sources.remove(bstring, )"
+"103 : bstring = this.bad" -> "103 : bstring = this.bad" [style=dashed]
+"105 : this.sources.remove(bstring, )"
+}

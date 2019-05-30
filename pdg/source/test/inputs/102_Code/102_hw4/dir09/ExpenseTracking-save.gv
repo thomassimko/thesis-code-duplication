@@ -1,0 +1,18 @@
+digraph G {
+"190 : writer = new PrintWriter(new File(\"StoredExpenses\", ), )"
+"191 : size = list.size()"
+"192 : e = list"
+"192 : e = list" -> "199 : e instanceof Partial"
+"192 : e = list" -> "192 : e = list" [style=dashed]
+"194 : writer.println(e.getType(), )"
+"195 : writer.println(String.format(\"%1$2tm/%<2td/%<tY \", e.date(), ), )"
+"196 : writer.println(e.category(), )"
+"197 : writer.println(e.payee(), )"
+"198 : writer.println(e.paid(), )"
+"199 : e instanceof Partial"
+"204 : writer.close()"
+"205 : System.out.println(\"\", )"
+"206 : System.out.println(\"Expenses Saved.\", )"
+"201 : writer.println(remaining(), )"
+"210 : System.err.println(\"File not found. Saving unsuccessful.\", )"
+}

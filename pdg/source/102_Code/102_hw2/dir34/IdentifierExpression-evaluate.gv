@@ -1,5 +1,0 @@
-digraph G {
-"4 : this.identifier = null"
-"4 : this.identifier = null" -> "13 : bindings.lookupBinding(this.identifier, )"
-"13 : bindings.lookupBinding(this.identifier, )"
-}

@@ -1,0 +1,34 @@
+digraph G {
+"8 : this.itemPanel = null"
+"8 : this.itemPanel = null" -> "14 : this.itemPanel = new JPanel(new BorderLayout(), )" [style=dashed]
+"8 : this.sourcePanel = null"
+"8 : this.sourcePanel = null" -> "23 : this.sourcePanel = new JPanel(new BorderLayout(), )" [style=dashed]
+"9 : this.itemText = null"
+"9 : this.itemText = null" -> "18 : this.itemText = new JTextArea(30, 40, )" [style=dashed]
+"9 : this.sourceText = null"
+"9 : this.sourceText = null" -> "27 : this.sourceText = new JTextArea(7, 40, )" [style=dashed]
+"10 : this.itemScroll = null"
+"10 : this.itemScroll = null" -> "19 : this.itemScroll = new JScrollPane(this.itemText, )" [style=dashed]
+"10 : this.sourceScroll = null"
+"10 : this.sourceScroll = null" -> "28 : this.sourceScroll = new JScrollPane(this.sourceText, )" [style=dashed]
+"14 : this.itemPanel = new JPanel(new BorderLayout(), )"
+"14 : this.itemPanel = new JPanel(new BorderLayout(), )" -> "32 : add(this.itemPanel, )"
+"16 : this.itemPanel.add(new JLabel(\"RSS Items\", ), BorderLayout.NORTH, )"
+"18 : this.itemText = new JTextArea(30, 40, )"
+"18 : this.itemText = new JTextArea(30, 40, )" -> "19 : this.itemScroll = new JScrollPane(this.itemText, )"
+"19 : this.itemScroll = new JScrollPane(this.itemText, )"
+"19 : this.itemScroll = new JScrollPane(this.itemText, )" -> "21 : this.itemPanel.add(this.itemScroll, BorderLayout.CENTER, )"
+"20 : this.itemText.setEditable(false, )"
+"21 : this.itemPanel.add(this.itemScroll, BorderLayout.CENTER, )"
+"23 : this.sourcePanel = new JPanel(new BorderLayout(), )"
+"23 : this.sourcePanel = new JPanel(new BorderLayout(), )" -> "33 : add(this.sourcePanel, )"
+"25 : this.sourcePanel.add(new JLabel(\"Sources\", ), BorderLayout.NORTH, )"
+"27 : this.sourceText = new JTextArea(7, 40, )"
+"27 : this.sourceText = new JTextArea(7, 40, )" -> "28 : this.sourceScroll = new JScrollPane(this.sourceText, )"
+"28 : this.sourceScroll = new JScrollPane(this.sourceText, )"
+"28 : this.sourceScroll = new JScrollPane(this.sourceText, )" -> "30 : this.sourcePanel.add(this.sourceScroll, BorderLayout.CENTER, )"
+"29 : this.sourceText.setEditable(false, )"
+"30 : this.sourcePanel.add(this.sourceScroll, BorderLayout.CENTER, )"
+"32 : add(this.itemPanel, )"
+"33 : add(this.sourcePanel, )"
+}

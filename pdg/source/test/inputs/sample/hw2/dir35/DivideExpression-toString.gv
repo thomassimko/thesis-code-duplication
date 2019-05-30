@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.left = null"
+"4 : this.left = null" -> "18 : \"(\" + this.left + \" / \" + this.right + \")\""
+"5 : this.right = null"
+"5 : this.right = null" -> "18 : \"(\" + this.left + \" / \" + this.right + \")\""
+"18 : \"(\" + this.left + \" / \" + this.right + \")\""
+}

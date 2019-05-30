@@ -1,0 +1,8 @@
+digraph G {
+"4 : this.variable = null"
+"4 : this.variable = null" -> "9 : this.variable = id" [style=dashed]
+"5 : this.exp = null"
+"5 : this.exp = null" -> "10 : this.exp = e" [style=dashed]
+"9 : this.variable = id"
+"10 : this.exp = e"
+}

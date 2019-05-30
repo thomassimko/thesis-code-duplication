@@ -1,0 +1,18 @@
+digraph G {
+"7 : this.date = null"
+"8 : this.dollarAmount = 0"
+"9 : this.centAmount = 0"
+"10 : this.paidTo = null"
+"11 : this.category = null"
+"12 : this.remainingDollar = 0"
+"12 : this.remainingDollar = 0" -> "101 : this.remainingDollar + \".\" + this.remainingCent"
+"12 : this.remainingDollar = 0" -> "99 : this.remainingDollar + \".\" + \"0\" + this.remainingCent"
+"13 : this.remainingCent = 0"
+"13 : this.remainingCent = 0" -> "101 : this.remainingDollar + \".\" + this.remainingCent"
+"13 : this.remainingCent = 0" -> "99 : this.remainingDollar + \".\" + \"0\" + this.remainingCent"
+"13 : this.remainingCent = 0" -> "97 : this.remainingCent < 10"
+"14 : this.type = \"partial\""
+"97 : this.remainingCent < 10"
+"99 : this.remainingDollar + \".\" + \"0\" + this.remainingCent"
+"101 : this.remainingDollar + \".\" + this.remainingCent"
+}

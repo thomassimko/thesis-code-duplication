@@ -1,0 +1,9 @@
+digraph G {
+"4 : this.first = new RIOEmpty()"
+"132 : r instanceof RIOEmpty"
+"133 : new RIOEmpty()"
+"134 : @temp8 = startsWith(prefix, )"
+"134 : @temp8 = startsWith(prefix, )" -> "134 : @temp8 ? new RIONode(r.getValue(), mStartsWith(r.getNext(), prefix, ), ) : mStartsWith(r.getNext(), prefix, )"
+"134 : @temp8 = startsWith(prefix, )" -> "134 : @temp8 = startsWith(prefix, )" [style=dashed]
+"134 : @temp8 ? new RIONode(r.getValue(), mStartsWith(r.getNext(), prefix, ), ) : mStartsWith(r.getNext(), prefix, )"
+}

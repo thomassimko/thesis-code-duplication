@@ -1,0 +1,10 @@
+digraph G {
+"4 : this.value = null"
+"4 : this.value = null" -> "133 : l.add(0, this.value, )"
+"5 : this.next = null"
+"129 : l = new RecursiveOOStringList()"
+"129 : l = new RecursiveOOStringList()" -> "130 : l = hasSubstring(substring, )" [style=dashed]
+"130 : l = hasSubstring(substring, )"
+"131 : contains(substring, )"
+"133 : l.add(0, this.value, )"
+}

@@ -1,0 +1,8 @@
+digraph G {
+"9 : this.reeder = null"
+"9 : this.reeder = null" -> "14 : this.reeder = bookworm" [style=dashed]
+"10 : this.source = null"
+"10 : this.source = null" -> "15 : this.source = sourceText" [style=dashed]
+"14 : this.reeder = bookworm"
+"15 : this.source = sourceText"
+}

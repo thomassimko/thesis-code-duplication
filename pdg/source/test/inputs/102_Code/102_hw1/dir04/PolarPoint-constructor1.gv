@@ -1,0 +1,19 @@
+digraph G {
+"4 : this.r = 0.0"
+"4 : this.r = 0.0" -> "11 : this.r = r" [style=dashed]
+"4 : this.r = 0.0" -> "23 : this.r = r" [style=dashed]
+"5 : this.theta = 0.0"
+"5 : this.theta = 0.0" -> "18 : this.theta = theta + Math.PI" [style=dashed]
+"5 : this.theta = 0.0" -> "14 : this.theta = theta + Math.PI / 2" [style=dashed]
+"5 : this.theta = 0.0" -> "31 : this.theta = theta" [style=dashed]
+"5 : this.theta = 0.0" -> "27 : this.theta = 2 * Math.PI + theta" [style=dashed]
+"9 : r < 0"
+"11 : this.r = r"
+"12 : theta < 0"
+"14 : this.theta = theta + Math.PI / 2"
+"18 : this.theta = theta + Math.PI"
+"23 : this.r = r"
+"25 : theta < 0"
+"27 : this.theta = 2 * Math.PI + theta"
+"31 : this.theta = theta"
+}

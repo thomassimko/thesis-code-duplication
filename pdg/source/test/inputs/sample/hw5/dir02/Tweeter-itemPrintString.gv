@@ -1,0 +1,28 @@
+digraph G {
+"112 : printStr = \"\""
+"112 : printStr = \"\"" -> "122 : printStr = printStr + titleToPrint + \"\n\" + \"   \" + dateToPrint + \"\n\" + \"   \" + linkToPrint + \"\n\n\""
+"112 : printStr = \"\"" -> "122 : printStr = printStr + titleToPrint + \"\n\" + \"   \" + dateToPrint + \"\n\" + \"   \" + linkToPrint + \"\n\n\"" [style=dashed]
+"113 : date = null"
+"113 : date = null" -> "119 : date = item.getDate()" [style=dashed]
+"114 : titleToPrint = \"\""
+"114 : titleToPrint = \"\"" -> "118 : titleToPrint = item.getTitle()" [style=dashed]
+"115 : linkToPrint = \"\""
+"115 : linkToPrint = \"\"" -> "121 : linkToPrint = item.getLink()" [style=dashed]
+"116 : item = itemList"
+"116 : item = itemList" -> "116 : item = itemList" [style=dashed]
+"118 : titleToPrint = item.getTitle()"
+"118 : titleToPrint = item.getTitle()" -> "122 : printStr = printStr + titleToPrint + \"\n\" + \"   \" + dateToPrint + \"\n\" + \"   \" + linkToPrint + \"\n\n\""
+"118 : titleToPrint = item.getTitle()" -> "118 : titleToPrint = item.getTitle()" [style=dashed]
+"119 : date = item.getDate()"
+"119 : date = item.getDate()" -> "120 : dateToPrint = String.format(\"%1$tm/%<2td/%tY \", date, )"
+"119 : date = item.getDate()" -> "119 : date = item.getDate()" [style=dashed]
+"120 : dateToPrint = String.format(\"%1$tm/%<2td/%tY \", date, )"
+"120 : dateToPrint = String.format(\"%1$tm/%<2td/%tY \", date, )" -> "122 : printStr = printStr + titleToPrint + \"\n\" + \"   \" + dateToPrint + \"\n\" + \"   \" + linkToPrint + \"\n\n\""
+"120 : dateToPrint = String.format(\"%1$tm/%<2td/%tY \", date, )" -> "120 : dateToPrint = String.format(\"%1$tm/%<2td/%tY \", date, )" [style=dashed]
+"121 : linkToPrint = item.getLink()"
+"121 : linkToPrint = item.getLink()" -> "122 : printStr = printStr + titleToPrint + \"\n\" + \"   \" + dateToPrint + \"\n\" + \"   \" + linkToPrint + \"\n\n\""
+"121 : linkToPrint = item.getLink()" -> "121 : linkToPrint = item.getLink()" [style=dashed]
+"122 : printStr = printStr + titleToPrint + \"\n\" + \"   \" + dateToPrint + \"\n\" + \"   \" + linkToPrint + \"\n\n\""
+"122 : printStr = printStr + titleToPrint + \"\n\" + \"   \" + dateToPrint + \"\n\" + \"   \" + linkToPrint + \"\n\n\"" -> "122 : printStr = printStr + titleToPrint + \"\n\" + \"   \" + dateToPrint + \"\n\" + \"   \" + linkToPrint + \"\n\n\""
+"122 : printStr = printStr + titleToPrint + \"\n\" + \"   \" + dateToPrint + \"\n\" + \"   \" + linkToPrint + \"\n\n\"" -> "122 : printStr = printStr + titleToPrint + \"\n\" + \"   \" + dateToPrint + \"\n\" + \"   \" + linkToPrint + \"\n\n\"" [style=dashed]
+}

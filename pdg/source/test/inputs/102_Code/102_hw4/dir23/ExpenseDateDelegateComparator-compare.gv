@@ -1,0 +1,7 @@
+digraph G {
+"5 : this.expenseComparator = null"
+"14 : temp = compareTo(o2.getDate(), )"
+"14 : temp = compareTo(o2.getDate(), )" -> "15 : temp == 0"
+"15 : temp == 0"
+"16 : this.expenseComparator.compare(o1, o2, )"
+}

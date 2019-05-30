@@ -1,0 +1,16 @@
+digraph G {
+"8 : this.payee = null"
+"8 : this.payee = null" -> "18 : this.payee = payee" [style=dashed]
+"9 : this.category = null"
+"9 : this.category = null" -> "19 : this.category = category" [style=dashed]
+"10 : this.dollarsPaid = 0"
+"10 : this.dollarsPaid = 0" -> "20 : this.dollarsPaid = dollarsPaid" [style=dashed]
+"11 : this.centsPaid = 0"
+"11 : this.centsPaid = 0" -> "21 : this.centsPaid = centsPaid" [style=dashed]
+"12 : this.eDate = Calendar.getInstance()"
+"17 : this.eDate.setTime(eDate, )"
+"18 : this.payee = payee"
+"19 : this.category = category"
+"20 : this.dollarsPaid = dollarsPaid"
+"21 : this.centsPaid = centsPaid"
+}

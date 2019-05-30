@@ -1,0 +1,9 @@
+digraph G {
+"2 : this.value = null"
+"3 : this.nextLink = null"
+"3 : this.nextLink = null" -> "18 : this.nextLink instanceof ROOEmpty"
+"3 : this.nextLink = null" -> "19 : this.nextLink = new ROONode(element, )" [style=dashed]
+"18 : this.nextLink instanceof ROOEmpty"
+"19 : this.nextLink = new ROONode(element, )"
+"22 : this.nextLink.addToEnd(element, )"
+}

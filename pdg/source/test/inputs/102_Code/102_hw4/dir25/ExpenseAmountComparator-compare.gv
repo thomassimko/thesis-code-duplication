@@ -1,0 +1,14 @@
+digraph G {
+"9 : o1 = e1.getAmount()"
+"10 : o2 = e2.getAmount()"
+"12 : o1.getDollar() > o2.getDollar()"
+"14 : 1"
+"16 : o1.getDollar() == o2.getDollar()"
+"18 : o1.getCents() > o2.getCents()"
+"20 : 1"
+"22 : o1.getCents() < o2.getCents()"
+"24 : 1"
+"27 : o1.getDollar() < o2.getDollar()"
+"29 : 1"
+"31 : 0"
+}

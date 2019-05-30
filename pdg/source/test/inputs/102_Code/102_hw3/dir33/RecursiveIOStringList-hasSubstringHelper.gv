@@ -1,0 +1,7 @@
+digraph G {
+"5 : this.head = null"
+"247 : cur instanceof RIOEmpty"
+"253 : contains(substring, )"
+"255 : list.addToEnd(cur.getValue(), )"
+"257 : hasSubstringHelper(list, cur.getNext(), substring, )"
+}

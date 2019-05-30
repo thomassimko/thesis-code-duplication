@@ -1,0 +1,11 @@
+digraph G {
+"23 : this.gui = this"
+"24 : this.feedReader = null"
+"25 : this.source = null"
+"26 : this.data = null"
+"27 : this.sources = null"
+"248 : northSources = new JPanel()"
+"249 : sourcesLabel = new JLabel(\"Sources\", )"
+"249 : sourcesLabel = new JLabel(\"Sources\", )" -> "250 : northSources.add(sourcesLabel, )"
+"250 : northSources.add(sourcesLabel, )"
+}

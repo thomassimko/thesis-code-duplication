@@ -1,0 +1,23 @@
+digraph G {
+"8 : this.date = null"
+"8 : this.date = null" -> "14 : this.date = d" [style=dashed]
+"9 : this.payee = null"
+"9 : this.payee = null" -> "15 : this.payee = p" [style=dashed]
+"9 : this.cat = null"
+"9 : this.cat = null" -> "16 : this.cat = category" [style=dashed]
+"10 : this.dollars = 0"
+"10 : this.dollars = 0" -> "17 : this.dollars = dol" [style=dashed]
+"10 : this.cents = 0"
+"10 : this.cents = 0" -> "18 : this.cents = cent" [style=dashed]
+"10 : this.dollars2 = 0"
+"10 : this.dollars2 = 0" -> "19 : this.dollars2 = dol2" [style=dashed]
+"10 : this.cents2 = 0"
+"10 : this.cents2 = 0" -> "20 : this.cents2 = cent2" [style=dashed]
+"14 : this.date = d"
+"15 : this.payee = p"
+"16 : this.cat = category"
+"17 : this.dollars = dol"
+"18 : this.cents = cent"
+"19 : this.dollars2 = dol2"
+"20 : this.cents2 = cent2"
+}

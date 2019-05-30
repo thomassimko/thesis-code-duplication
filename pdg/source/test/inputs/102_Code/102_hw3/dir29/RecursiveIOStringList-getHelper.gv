@@ -1,0 +1,8 @@
+digraph G {
+"3 : this.first = new RIOEmpty()"
+"105 : cur instanceof RIOEmpty"
+"106 : new IndexOutOfBoundsException()"
+"108 : index == 0"
+"109 : cur.getString()"
+"111 : getHelper(cur.getNext(), index - 1, )"
+}

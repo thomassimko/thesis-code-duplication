@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.first = new RIOEmpty()"
+"36 : index == 0"
+"37 : r.setNext(new RIONode(r.getValue(), r.getNext(), ), )"
+"38 : r.setValue(element, )"
+"40 : mAdd(index - 1, element, r.getNext(), )"
+}

@@ -1,0 +1,30 @@
+digraph G {
+"24 : this.documents = new ArrayList()"
+"25 : this.sources = new ArrayList()"
+"26 : this.items = new ArrayList()"
+"27 : this.badSources = new ArrayList()"
+"115 : index = 1"
+"115 : index = 1" -> "118 : index = this.sources.indexOf(this.badSources.get(x, ), )" [style=dashed]
+"116 : x = 0"
+"116 : x = 0" -> "116 : @temp4 = x"
+"116 : x = 0" -> "116 : x = x + 1"
+"116 : x = 0" -> "118 : index = this.sources.indexOf(this.badSources.get(x, ), )"
+"116 : x = 0" -> "116 : x < this.badSources.size()"
+"116 : x = 0" -> "116 : x = x + 1" [style=dashed]
+"116 : x < this.badSources.size()"
+"118 : index = this.sources.indexOf(this.badSources.get(x, ), )"
+"118 : index = this.sources.indexOf(this.badSources.get(x, ), )" -> "121 : this.sources.remove(index, )"
+"118 : index = this.sources.indexOf(this.badSources.get(x, ), )" -> "119 : index >= 0"
+"118 : index = this.sources.indexOf(this.badSources.get(x, ), )" -> "118 : index = this.sources.indexOf(this.badSources.get(x, ), )" [style=dashed]
+"119 : index >= 0"
+"124 : this.badSources.clear()"
+"121 : this.sources.remove(index, )"
+"116 : @temp4 = x"
+"116 : @temp4 = x" -> "116 : @temp4 = x" [style=dashed]
+"116 : x = x + 1"
+"116 : x = x + 1" -> "116 : @temp4 = x"
+"116 : x = x + 1" -> "116 : x = x + 1"
+"116 : x = x + 1" -> "118 : index = this.sources.indexOf(this.badSources.get(x, ), )"
+"116 : x = x + 1" -> "116 : x < this.badSources.size()"
+"116 : x = x + 1" -> "116 : x = x + 1" [style=dashed]
+}

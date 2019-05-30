@@ -1,0 +1,58 @@
+digraph G {
+"8 : this.list = new ArrayList()"
+"113 : input = new Scanner(System.in, )"
+"114 : type = null"
+"114 : type = null" -> "117 : type = input.nextLine()" [style=dashed]
+"114 : stramt = null"
+"114 : payee = null"
+"114 : category = null"
+"114 : balamt = null"
+"115 : amtDollars = 0"
+"115 : amtCents = 0"
+"115 : balDollars = 0"
+"115 : balCents = 0"
+"116 : System.out.print(\"Expense type (In-Full, Partial)?\", )"
+"117 : type = input.nextLine()"
+"119 : System.out.print(\"Payment date: \", )"
+"120 : cal = null"
+"123 : cal = datemaker(input, )"
+"123 : cal = datemaker(input, )" -> "149 : this.list.add(new Partial(cal, amtDollars, amtCents, payee, category, balDollars, balCents, ), )"
+"123 : cal = datemaker(input, )" -> "153 : this.list.add(new InFull(cal, amtDollars, amtCents, payee, category, ), )"
+"129 : System.out.print(\"Expense Amount: \", )"
+"130 : stramt = input.nextLine()"
+"130 : stramt = input.nextLine()" -> "130 : stramt = input.nextLine()" [style=dashed]
+"131 : sa = stramt.split(\"[.]\", )"
+"131 : sa = stramt.split(\"[.]\", )" -> "131 : sa = stramt.split(\"[.]\", )" [style=dashed]
+"132 : amtDollars = Integer.parseInt(sa[0], )"
+"132 : amtDollars = Integer.parseInt(sa[0], )" -> "149 : this.list.add(new Partial(cal, amtDollars, amtCents, payee, category, balDollars, balCents, ), )"
+"132 : amtDollars = Integer.parseInt(sa[0], )" -> "153 : this.list.add(new InFull(cal, amtDollars, amtCents, payee, category, ), )"
+"132 : amtDollars = Integer.parseInt(sa[0], )" -> "132 : amtDollars = Integer.parseInt(sa[0], )" [style=dashed]
+"133 : amtCents = Integer.parseInt(sa[1], )"
+"133 : amtCents = Integer.parseInt(sa[1], )" -> "149 : this.list.add(new Partial(cal, amtDollars, amtCents, payee, category, balDollars, balCents, ), )"
+"133 : amtCents = Integer.parseInt(sa[1], )" -> "153 : this.list.add(new InFull(cal, amtDollars, amtCents, payee, category, ), )"
+"133 : amtCents = Integer.parseInt(sa[1], )" -> "133 : amtCents = Integer.parseInt(sa[1], )" [style=dashed]
+"135 : System.out.print(\"Who was this expense paid to? \", )"
+"136 : payee = input.nextLine()"
+"136 : payee = input.nextLine()" -> "149 : this.list.add(new Partial(cal, amtDollars, amtCents, payee, category, balDollars, balCents, ), )"
+"136 : payee = input.nextLine()" -> "153 : this.list.add(new InFull(cal, amtDollars, amtCents, payee, category, ), )"
+"136 : payee = input.nextLine()" -> "136 : payee = input.nextLine()" [style=dashed]
+"138 : System.out.print(\"Expense category: \", )"
+"139 : category = input.nextLine()"
+"139 : category = input.nextLine()" -> "149 : this.list.add(new Partial(cal, amtDollars, amtCents, payee, category, balDollars, balCents, ), )"
+"139 : category = input.nextLine()" -> "153 : this.list.add(new InFull(cal, amtDollars, amtCents, payee, category, ), )"
+"139 : category = input.nextLine()" -> "139 : category = input.nextLine()" [style=dashed]
+"141 : type.equals(\"Partial\", )"
+"143 : System.out.print(\"Expense Balance: \", )"
+"144 : balamt = input.nextLine()"
+"144 : balamt = input.nextLine()" -> "144 : balamt = input.nextLine()" [style=dashed]
+"145 : sb = balamt.split(\"[.]\", )"
+"145 : sb = balamt.split(\"[.]\", )" -> "145 : sb = balamt.split(\"[.]\", )" [style=dashed]
+"146 : balDollars = Integer.parseInt(sb[0], )"
+"146 : balDollars = Integer.parseInt(sb[0], )" -> "149 : this.list.add(new Partial(cal, amtDollars, amtCents, payee, category, balDollars, balCents, ), )"
+"146 : balDollars = Integer.parseInt(sb[0], )" -> "146 : balDollars = Integer.parseInt(sb[0], )" [style=dashed]
+"147 : balCents = Integer.parseInt(sb[1], )"
+"147 : balCents = Integer.parseInt(sb[1], )" -> "149 : this.list.add(new Partial(cal, amtDollars, amtCents, payee, category, balDollars, balCents, ), )"
+"147 : balCents = Integer.parseInt(sb[1], )" -> "147 : balCents = Integer.parseInt(sb[1], )" [style=dashed]
+"149 : this.list.add(new Partial(cal, amtDollars, amtCents, payee, category, balDollars, balCents, ), )"
+"153 : this.list.add(new InFull(cal, amtDollars, amtCents, payee, category, ), )"
+}

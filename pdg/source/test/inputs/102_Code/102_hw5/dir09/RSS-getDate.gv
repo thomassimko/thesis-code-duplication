@@ -1,0 +1,8 @@
+digraph G {
+"7 : this.title = null"
+"7 : this.link = null"
+"8 : this.date = null"
+"8 : this.date = null" -> "25 : c.setTime(this.date, )"
+"24 : c = Calendar.getInstance()"
+"25 : c.setTime(this.date, )"
+}

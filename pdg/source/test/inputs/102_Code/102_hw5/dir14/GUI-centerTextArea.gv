@@ -1,0 +1,17 @@
+digraph G {
+"23 : this.gui = this"
+"24 : this.feedReader = null"
+"25 : this.source = null"
+"26 : this.data = null"
+"26 : this.data = null" -> "227 : this.data = data" [style=dashed]
+"27 : this.sources = null"
+"225 : centerTextArea = new JPanel()"
+"226 : data = new JTextArea(30, 40, )"
+"226 : data = new JTextArea(30, 40, )" -> "228 : scroll = new JScrollPane(data, )"
+"226 : data = new JTextArea(30, 40, )" -> "227 : this.data = data"
+"227 : this.data = data"
+"228 : scroll = new JScrollPane(data, )"
+"228 : scroll = new JScrollPane(data, )" -> "230 : centerTextArea.add(scroll, )"
+"229 : data.setEditable(false, )"
+"230 : centerTextArea.add(scroll, )"
+}

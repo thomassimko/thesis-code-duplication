@@ -1,0 +1,9 @@
+digraph G {
+"7 : cal1 = item1.getDate()"
+"8 : cal2 = item2.getDate()"
+"8 : cal2 = item2.getDate()" -> "10 : cal1.after(cal2, )"
+"9 : returnVal = 1"
+"9 : returnVal = 1" -> "12 : returnVal = 1" [style=dashed]
+"10 : cal1.after(cal2, )"
+"12 : returnVal = 1"
+}

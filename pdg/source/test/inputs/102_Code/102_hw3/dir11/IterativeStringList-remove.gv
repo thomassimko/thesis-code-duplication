@@ -1,0 +1,33 @@
+digraph G {
+"6 : this.head = null"
+"6 : this.head = null" -> "61 : this.cur = this.head"
+"7 : this.cur = null"
+"7 : this.cur = null" -> "61 : this.cur = this.head" [style=dashed]
+"61 : this.cur = this.head"
+"61 : this.cur = this.head" -> "66 : this.cur == null"
+"61 : this.cur = this.head" -> "72 : this.cur = getNext()" [style=dashed]
+"62 : temp = null"
+"62 : temp = null" -> "76 : temp = getNext()" [style=dashed]
+"64 : i = 0"
+"64 : i = 0" -> "64 : @temp2 = i"
+"64 : i = 0" -> "64 : i = i + 1"
+"64 : i = 0" -> "64 : i < index - 1"
+"64 : i = 0" -> "64 : i = i + 1" [style=dashed]
+"64 : i < index - 1"
+"66 : this.cur == null"
+"76 : temp = getNext()"
+"76 : temp = getNext()" -> "77 : this.cur.setNext(temp, )"
+"77 : this.cur.setNext(temp, )"
+"78 : temp.getString()"
+"68 : new IndexOutOfBoundsException()"
+"72 : this.cur = getNext()"
+"72 : this.cur = getNext()" -> "66 : this.cur == null"
+"72 : this.cur = getNext()" -> "72 : this.cur = getNext()" [style=dashed]
+"64 : @temp2 = i"
+"64 : @temp2 = i" -> "64 : @temp2 = i" [style=dashed]
+"64 : i = i + 1"
+"64 : i = i + 1" -> "64 : @temp2 = i"
+"64 : i = i + 1" -> "64 : i = i + 1"
+"64 : i = i + 1" -> "64 : i < index - 1"
+"64 : i = i + 1" -> "64 : i = i + 1" [style=dashed]
+}

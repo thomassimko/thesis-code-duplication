@@ -1,0 +1,24 @@
+digraph G {
+"4 : this.head = null"
+"4 : this.head = null" -> "116 : cur = this.head"
+"5 : this.next = null"
+"116 : cur = this.head"
+"116 : cur = this.head" -> "117 : cur != null"
+"116 : cur = this.head" -> "121 : cur = cur.getNext()" [style=dashed]
+"117 : i = 0"
+"117 : i = 0" -> "117 : i = i + 1"
+"117 : i = 0" -> "117 : @temp4 = i"
+"117 : i = 0" -> "117 : i = i + 1" [style=dashed]
+"117 : cur != null"
+"118 : equalsIgnoreCase(element, ) == true"
+"123 : new NoSuchElementException()"
+"121 : cur = cur.getNext()"
+"121 : cur = cur.getNext()" -> "117 : cur != null"
+"121 : cur = cur.getNext()" -> "121 : cur = cur.getNext()" [style=dashed]
+"117 : @temp4 = i"
+"117 : @temp4 = i" -> "117 : @temp4 = i" [style=dashed]
+"117 : i = i + 1"
+"117 : i = i + 1" -> "117 : i = i + 1"
+"117 : i = i + 1" -> "117 : @temp4 = i"
+"117 : i = i + 1" -> "117 : i = i + 1" [style=dashed]
+}

@@ -1,0 +1,5 @@
+digraph G {
+"11 : this.feedReader = null"
+"12 : this.sourceArea = null"
+"23 : displayListOfBadSources()"
+}

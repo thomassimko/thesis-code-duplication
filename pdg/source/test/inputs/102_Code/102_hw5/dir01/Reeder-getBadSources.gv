@@ -1,0 +1,29 @@
+digraph G {
+"17 : this.sources = null"
+"17 : this.sources = null" -> "107 : this.sources = new ArrayList()" [style=dashed]
+"18 : this.sourceStrs = null"
+"19 : this.items = null"
+"20 : this.badStrs = null"
+"20 : this.badStrs = null" -> "106 : this.badStrs = new ArrayList()" [style=dashed]
+"106 : this.badStrs = new ArrayList()"
+"107 : this.sources = new ArrayList()"
+"108 : v = 0"
+"108 : v = 0" -> "109 : src = get(v, )"
+"108 : v = 0" -> "108 : v < size()"
+"108 : v < size()"
+"109 : src = get(v, )"
+"110 : factory = DocumentBuilderFactory.newInstance()"
+"112 : builder = null"
+"114 : builder = factory.newDocumentBuilder()"
+"114 : builder = factory.newDocumentBuilder()" -> "112 : builder = null" [style=dashed]
+"115 : feedDocument = builder.parse(src, )"
+"115 : feedDocument = builder.parse(src, )" -> "116 : this.sources.add(feedDocument, )"
+"116 : this.sources.add(feedDocument, )"
+"108 : @temp8 = v"
+"108 : v = v + 1"
+"108 : v = v + 1" -> "109 : src = get(v, )"
+"108 : v = v + 1" -> "108 : v < size()"
+"120 : this.badStrs.add(src, )"
+"124 : this.badStrs.add(src, )"
+"128 : this.badStrs.add(src, )"
+}

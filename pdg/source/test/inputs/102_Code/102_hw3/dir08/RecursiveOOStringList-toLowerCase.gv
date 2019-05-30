@@ -1,0 +1,4 @@
+digraph G {
+"4 : this.head = null"
+"71 : this.head.toLowerCase()"
+}

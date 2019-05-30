@@ -1,0 +1,13 @@
+digraph G {
+"4 : this.element = null"
+"5 : this.next = null"
+"5 : this.next = null" -> "40 : this.next = this.next.remove(index - 1, )"
+"5 : this.next = null" -> "40 : this.next = this.next.remove(index - 1, )" [style=dashed]
+"36 : index == 0"
+"39 : index > 0"
+"40 : this.next = this.next.remove(index - 1, )"
+"40 : this.next = this.next.remove(index - 1, )" -> "40 : this.next = this.next.remove(index - 1, )"
+"40 : this.next = this.next.remove(index - 1, )" -> "40 : this.next = this.next.remove(index - 1, )" [style=dashed]
+"41 : this"
+"44 : new IndexOutOfBoundsException()"
+}

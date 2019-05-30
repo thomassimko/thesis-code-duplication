@@ -1,0 +1,13 @@
+digraph G {
+"4 : this.element = null"
+"4 : this.element = null" -> "101 : n = new ROONode(this.element, this.next.startsWith(prefix, ), )"
+"4 : this.element = null" -> "100 : this.element.startsWith(prefix, )"
+"5 : this.next = null"
+"5 : this.next = null" -> "101 : n = new ROONode(this.element, this.next.startsWith(prefix, ), )"
+"5 : this.next = null" -> "104 : this.next.startsWith(prefix, )"
+"99 : n = null"
+"99 : n = null" -> "101 : n = new ROONode(this.element, this.next.startsWith(prefix, ), )" [style=dashed]
+"100 : this.element.startsWith(prefix, )"
+"101 : n = new ROONode(this.element, this.next.startsWith(prefix, ), )"
+"104 : this.next.startsWith(prefix, )"
+}

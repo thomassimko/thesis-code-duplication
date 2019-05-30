@@ -1,0 +1,18 @@
+digraph G {
+"7 : this.date = null"
+"7 : this.date = null" -> "16 : this.date = date" [style=dashed]
+"8 : this.dollarAmount = 0"
+"8 : this.dollarAmount = 0" -> "17 : this.dollarAmount = dollarAmount" [style=dashed]
+"9 : this.centAmount = 0"
+"9 : this.centAmount = 0" -> "18 : this.centAmount = centAmount" [style=dashed]
+"10 : this.paidTo = null"
+"10 : this.paidTo = null" -> "19 : this.paidTo = paidTo" [style=dashed]
+"11 : this.category = null"
+"11 : this.category = null" -> "20 : this.category = category" [style=dashed]
+"12 : this.type = \"in-full\""
+"16 : this.date = date"
+"17 : this.dollarAmount = dollarAmount"
+"18 : this.centAmount = centAmount"
+"19 : this.paidTo = paidTo"
+"20 : this.category = category"
+}

@@ -1,0 +1,11 @@
+digraph G {
+"4 : this.head = null"
+"235 : cur instanceof RIOEmpty"
+"237 : new RecursiveIOStringList()"
+"239 : cur instanceof RIONode"
+"241 : list = startsWith(prefix, cur.next(), )"
+"241 : list = startsWith(prefix, cur.next(), )" -> "244 : list.addToFront(cur.toString(), )"
+"242 : startsWith(prefix, )"
+"244 : list.addToFront(cur.toString(), )"
+"250 : new IndexOutOfBoundsException()"
+}

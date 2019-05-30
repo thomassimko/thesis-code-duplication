@@ -1,0 +1,29 @@
+digraph G {
+"7 : this.head = null"
+"7 : this.head = null" -> "20 : this.head == null"
+"7 : this.head = null" -> "27 : cursor = this.head"
+"7 : this.head = null" -> "22 : this.head = n" [style=dashed]
+"8 : this.size = 0"
+"8 : this.size = 0" -> "23 : @temp1 = this.size"
+"8 : this.size = 0" -> "23 : this.size = this.size + 1"
+"8 : this.size = 0" -> "34 : @temp2 = this.size"
+"8 : this.size = 0" -> "34 : this.size = this.size + 1"
+"8 : this.size = 0" -> "23 : this.size = this.size + 1" [style=dashed]
+"8 : this.size = 0" -> "34 : this.size = this.size + 1" [style=dashed]
+"18 : n = new IterativeNode(element, null, )"
+"18 : n = new IterativeNode(element, null, )" -> "22 : this.head = n"
+"18 : n = new IterativeNode(element, null, )" -> "33 : cursor.setNext(n, )"
+"20 : this.head == null"
+"22 : this.head = n"
+"23 : @temp1 = this.size"
+"23 : this.size = this.size + 1"
+"27 : cursor = this.head"
+"27 : cursor = this.head" -> "31 : cursor = cursor.getNext()" [style=dashed]
+"29 : cursor.getNext() != null"
+"31 : cursor = cursor.getNext()"
+"31 : cursor = cursor.getNext()" -> "31 : cursor = cursor.getNext()" [style=dashed]
+"29 : cursor.getNext() != null"
+"33 : cursor.setNext(n, )"
+"34 : @temp2 = this.size"
+"34 : this.size = this.size + 1"
+}

@@ -1,0 +1,5 @@
+digraph G {
+"3 : this.first = new RIOEmpty()"
+"3 : this.first = new RIOEmpty()" -> "44 : sizeHelper(this.first, )"
+"44 : sizeHelper(this.first, )"
+}

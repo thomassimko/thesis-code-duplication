@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.head = null"
+"144 : index = 0"
+"145 : node instanceof RIONode"
+"147 : sizeHelper(getNext(), ) + 1"
+"149 : node instanceof RIOEmpty"
+}

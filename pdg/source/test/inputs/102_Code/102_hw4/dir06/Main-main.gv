@@ -1,0 +1,15 @@
+digraph G {
+"15 : userChoice = 0"
+"15 : userChoice = 0" -> "20 : userChoice = inScan.nextInt()" [style=dashed]
+"16 : inScan = new Scanner(System.in, )"
+"17 : storedExpenses = loadFile()"
+"17 : storedExpenses = loadFile()" -> "18 : expensesList = readFile(storedExpenses, )"
+"18 : expensesList = readFile(storedExpenses, )"
+"19 : printMenu()"
+"20 : userChoice = inScan.nextInt()"
+"20 : userChoice = inScan.nextInt()" -> "22 : userChoice != 5"
+"21 : inScan.nextLine()"
+"22 : userChoice != 5"
+"49 : System.out.println(\"File not found\", )"
+"53 : System.out.println(\"File was not loaded properly\", )"
+}

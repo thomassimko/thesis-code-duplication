@@ -1,0 +1,5 @@
+digraph G {
+"3 : this.search = null"
+"3 : this.search = null" -> "6 : this.search = search" [style=dashed]
+"6 : this.search = search"
+}

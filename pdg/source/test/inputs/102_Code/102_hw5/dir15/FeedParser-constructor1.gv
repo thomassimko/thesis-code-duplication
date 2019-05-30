@@ -1,0 +1,8 @@
+digraph G {
+"23 : this.sources = null"
+"23 : this.sources = null" -> "28 : this.sources = new ArrayList()" [style=dashed]
+"24 : this.badList = null"
+"24 : this.badList = null" -> "29 : this.badList = new ArrayList()" [style=dashed]
+"28 : this.sources = new ArrayList()"
+"29 : this.badList = new ArrayList()"
+}

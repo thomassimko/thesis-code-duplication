@@ -1,0 +1,12 @@
+digraph G {
+"5 : this.next = null"
+"13 : o1 = e1.getCategory()"
+"14 : o2 = e2.getCategory()"
+"14 : o2 = e2.getCategory()" -> "15 : compare = o1.compareTo(o2, )"
+"15 : compare = o1.compareTo(o2, )"
+"15 : compare = o1.compareTo(o2, )" -> "16 : @temp1 = compare == 0"
+"15 : compare = o1.compareTo(o2, )" -> "16 : @temp1 ? this.next.compare(e1, e2, ) : compare"
+"16 : @temp1 = compare == 0"
+"16 : @temp1 = compare == 0" -> "16 : @temp1 ? this.next.compare(e1, e2, ) : compare"
+"16 : @temp1 ? this.next.compare(e1, e2, ) : compare"
+}

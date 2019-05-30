@@ -1,0 +1,10 @@
+digraph G {
+"27 : e1 = new DoubleConstantExpression(1, )"
+"28 : e2 = new DoubleConstantExpression(2, )"
+"30 : Check.check(evaluate(null, ), 3, )"
+"31 : Check.check(evaluate(null, ), 1, )"
+"32 : Check.check(evaluate(null, ), 1, )"
+"33 : Check.check(evaluate(null, ), 2, )"
+"34 : Check.check(evaluate(null, ), 0.5, )"
+"35 : Check.check(evaluate(null, ), 2, )"
+}

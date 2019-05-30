@@ -1,0 +1,8 @@
+digraph G {
+"4 : this.string = null"
+"4 : this.string = null" -> "89 : list.add(0, this.string, )"
+"5 : this.next = null"
+"88 : list = this.next.startsWith(list, prefix, )"
+"89 : startsWith(prefix, )"
+"89 : list.add(0, this.string, )"
+}

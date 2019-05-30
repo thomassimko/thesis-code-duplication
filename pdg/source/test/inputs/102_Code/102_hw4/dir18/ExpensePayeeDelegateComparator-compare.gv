@@ -1,0 +1,6 @@
+digraph G {
+"6 : this.comp = null"
+"13 : equals(right.getPayee(), )"
+"14 : this.comp.compare(left, right, )"
+"16 : compareToIgnoreCase(right.getPayee(), )"
+}

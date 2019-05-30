@@ -1,0 +1,16 @@
+digraph G {
+"8 : this.type = null"
+"9 : this.date = null"
+"10 : this.category = null"
+"11 : this.paidTo = null"
+"12 : this.dollarAmnt = 0"
+"12 : this.dollarAmnt = 0" -> "48 : this.dollarAmnt + \".\" + this.centAmnt"
+"12 : this.dollarAmnt = 0" -> "46 : this.dollarAmnt + \".\" + this.centAmnt + \"0\""
+"13 : this.centAmnt = 0"
+"13 : this.centAmnt = 0" -> "45 : this.centAmnt <= 9"
+"13 : this.centAmnt = 0" -> "48 : this.dollarAmnt + \".\" + this.centAmnt"
+"13 : this.centAmnt = 0" -> "46 : this.dollarAmnt + \".\" + this.centAmnt + \"0\""
+"45 : this.centAmnt <= 9"
+"46 : this.dollarAmnt + \".\" + this.centAmnt + \"0\""
+"48 : this.dollarAmnt + \".\" + this.centAmnt"
+}

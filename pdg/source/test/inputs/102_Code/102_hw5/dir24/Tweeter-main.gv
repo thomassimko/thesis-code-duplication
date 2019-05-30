@@ -1,0 +1,4 @@
+digraph G {
+"5 : gui = new RSSGUI()"
+"6 : gui.initialize()"
+}

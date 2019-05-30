@@ -1,0 +1,22 @@
+digraph G {
+"16 : this.list = null"
+"17 : this.badSources = null"
+"18 : this.RSSItemList = null"
+"154 : i = 0"
+"154 : i = 0" -> "154 : i = i + 1"
+"154 : i = 0" -> "156 : this.list.remove(this.badSources.get(i, ), )"
+"154 : i = 0" -> "154 : @temp3 = i"
+"154 : i = 0" -> "154 : i < this.badSources.size()"
+"154 : i = 0" -> "154 : i = i + 1" [style=dashed]
+"154 : i < this.badSources.size()"
+"156 : this.list.remove(this.badSources.get(i, ), )"
+"154 : @temp3 = i"
+"154 : @temp3 = i" -> "154 : @temp3 = i" [style=dashed]
+"154 : i = i + 1"
+"154 : i = i + 1" -> "154 : i = i + 1"
+"154 : i = i + 1" -> "156 : this.list.remove(this.badSources.get(i, ), )"
+"154 : i = i + 1" -> "154 : @temp3 = i"
+"154 : i = i + 1" -> "154 : i < this.badSources.size()"
+"154 : i = i + 1" -> "154 : i = i + 1" [style=dashed]
+"159 : this.badSources.clear()"
+}

@@ -1,0 +1,13 @@
+digraph G {
+"5 : this.str = null"
+"6 : this.next = null"
+"31 : cur = this"
+"31 : cur = this" -> "35 : cur = cur.getNext()" [style=dashed]
+"33 : cur.getNext() instanceof ROONode"
+"35 : cur = cur.getNext()"
+"35 : cur = cur.getNext()" -> "35 : cur = cur.getNext()" [style=dashed]
+"33 : cur.getNext() instanceof ROONode"
+"37 : add = new ROONode(element, cur.getNext(), )"
+"37 : add = new ROONode(element, cur.getNext(), )" -> "39 : cur.setNext(add, )"
+"39 : cur.setNext(add, )"
+}

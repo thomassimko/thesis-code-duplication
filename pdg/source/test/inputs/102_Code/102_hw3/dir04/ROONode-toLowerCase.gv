@@ -1,0 +1,14 @@
+digraph G {
+"5 : this.str = null"
+"6 : this.next = null"
+"120 : cur = this"
+"120 : cur = this" -> "123 : cur instanceof ROONode"
+"120 : cur = this" -> "126 : cur = cur.getNext()" [style=dashed]
+"121 : LowerCase = new RecursiveOOStringList()"
+"123 : cur instanceof ROONode"
+"125 : LowerCase.addToEnd(toLowerCase(), )"
+"126 : cur = cur.getNext()"
+"126 : cur = cur.getNext()" -> "123 : cur instanceof ROONode"
+"126 : cur = cur.getNext()" -> "126 : cur = cur.getNext()" [style=dashed]
+"123 : cur instanceof ROONode"
+}

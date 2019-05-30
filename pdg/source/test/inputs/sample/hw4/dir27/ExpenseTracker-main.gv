@@ -1,0 +1,5 @@
+digraph G {
+"20 : read = new File(\"StoredExpenses.txt\", )"
+"20 : read = new File(\"StoredExpenses.txt\", )" -> "21 : readFile(read, )"
+"21 : readFile(read, )"
+}

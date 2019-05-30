@@ -1,0 +1,13 @@
+digraph G {
+"9 : o1 = e1.getPayee()"
+"10 : o2 = e2.getPayee()"
+"10 : o2 = e2.getPayee()" -> "11 : comparisonResult = o1.compareTo(o2, )"
+"11 : comparisonResult = o1.compareTo(o2, )"
+"11 : comparisonResult = o1.compareTo(o2, )" -> "12 : comparisonResult > 0"
+"11 : comparisonResult = o1.compareTo(o2, )" -> "16 : comparisonResult < 0"
+"12 : comparisonResult > 0"
+"14 : 1"
+"16 : comparisonResult < 0"
+"18 : 1"
+"22 : 0"
+}

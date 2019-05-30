@@ -1,0 +1,13 @@
+digraph G {
+"2 : this.head = null"
+"2 : this.head = null" -> "11 : this.iter = this.head"
+"2 : this.iter = null"
+"2 : this.iter = null" -> "14 : this.iter = this.iter.next()" [style=dashed]
+"2 : this.iter = null" -> "11 : this.iter = this.head" [style=dashed]
+"2 : this.iterPrev = null"
+"9 : this.iter.next() instanceof RIOEmpty"
+"10 : this.iter.linkNext(new RIONode(element, ), )"
+"11 : this.iter = this.head"
+"14 : this.iter = this.iter.next()"
+"15 : addToEnd(element, )"
+}

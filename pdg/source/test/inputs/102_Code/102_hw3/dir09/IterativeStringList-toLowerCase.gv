@@ -1,0 +1,18 @@
+digraph G {
+"7 : this.head = null"
+"7 : this.head = null" -> "128 : cursor = this.head"
+"8 : this.size = 0"
+"128 : cursor = this.head"
+"128 : cursor = this.head" -> "131 : cursor != null"
+"128 : cursor = this.head" -> "135 : cursor = cursor.getNext()" [style=dashed]
+"129 : list = new IterativeStringList()"
+"131 : cursor != null"
+"133 : s = toLowerCase()"
+"133 : s = toLowerCase()" -> "134 : list.addToEnd(s, )"
+"133 : s = toLowerCase()" -> "133 : s = toLowerCase()" [style=dashed]
+"134 : list.addToEnd(s, )"
+"135 : cursor = cursor.getNext()"
+"135 : cursor = cursor.getNext()" -> "131 : cursor != null"
+"135 : cursor = cursor.getNext()" -> "135 : cursor = cursor.getNext()" [style=dashed]
+"131 : cursor != null"
+}

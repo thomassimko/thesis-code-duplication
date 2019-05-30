@@ -1,8 +1,0 @@
-digraph G {
-"4 : this.p = null"
-"5 : this.x = 0.0"
-"5 : this.x = 0.0" -> "27 : Math.atan2(this.y, this.x, ) * 180 / Math.PI"
-"6 : this.y = 0.0"
-"6 : this.y = 0.0" -> "27 : Math.atan2(this.y, this.x, ) * 180 / Math.PI"
-"27 : Math.atan2(this.y, this.x, ) * 180 / Math.PI"
-}

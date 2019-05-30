@@ -1,0 +1,8 @@
+digraph G {
+"265 : s = getKeys(system, )"
+"265 : s = getKeys(system, )" -> "266 : comp = createComparator(s, )"
+"266 : comp = createComparator(s, )"
+"266 : comp = createComparator(s, )" -> "267 : Collections.sort(list, comp, )"
+"267 : Collections.sort(list, comp, )"
+"271 : System.err.println(\"Invalid keys entered.\", )"
+}

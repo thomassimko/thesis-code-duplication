@@ -1,0 +1,8 @@
+digraph G {
+"7 : this.dollars = 0"
+"8 : this.cents = 0"
+"9 : this.c = null"
+"10 : this.paidTo = null"
+"11 : this.category = null"
+"22 : \"in-full\""
+}

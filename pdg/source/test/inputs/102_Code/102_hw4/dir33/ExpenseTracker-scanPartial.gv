@@ -1,0 +1,23 @@
+digraph G {
+"238 : tempDate = null"
+"238 : tempDate = null" -> "244 : tempDate = dateReader(scanner.next(), )" [style=dashed]
+"239 : tempCategory = null"
+"239 : tempCategory = null" -> "245 : tempCategory = scanner.next()" [style=dashed]
+"240 : tempPayee = null"
+"240 : tempPayee = null" -> "246 : tempPayee = scanner.next()" [style=dashed]
+"241 : tempPaid = null"
+"241 : tempPaid = null" -> "247 : tempPaid = stringToAmount(scanner.next(), )" [style=dashed]
+"242 : tempRemaining = null"
+"242 : tempRemaining = null" -> "248 : tempRemaining = stringToAmount(scanner.next(), )" [style=dashed]
+"244 : tempDate = dateReader(scanner.next(), )"
+"244 : tempDate = dateReader(scanner.next(), )" -> "250 : new Partial(tempDate, tempCategory, tempPayee, tempPaid, tempRemaining, )"
+"245 : tempCategory = scanner.next()"
+"245 : tempCategory = scanner.next()" -> "250 : new Partial(tempDate, tempCategory, tempPayee, tempPaid, tempRemaining, )"
+"246 : tempPayee = scanner.next()"
+"246 : tempPayee = scanner.next()" -> "250 : new Partial(tempDate, tempCategory, tempPayee, tempPaid, tempRemaining, )"
+"247 : tempPaid = stringToAmount(scanner.next(), )"
+"247 : tempPaid = stringToAmount(scanner.next(), )" -> "250 : new Partial(tempDate, tempCategory, tempPayee, tempPaid, tempRemaining, )"
+"248 : tempRemaining = stringToAmount(scanner.next(), )"
+"248 : tempRemaining = stringToAmount(scanner.next(), )" -> "250 : new Partial(tempDate, tempCategory, tempPayee, tempPaid, tempRemaining, )"
+"250 : new Partial(tempDate, tempCategory, tempPayee, tempPaid, tempRemaining, )"
+}

@@ -1,0 +1,9 @@
+digraph G {
+"12 : this.sources = null"
+"13 : this.badSources = null"
+"108 : df = new SimpleDateFormat(\"EEE, d MMM yyyy HH:mm:ss Z\", )"
+"109 : d = df.parse(date, )"
+"109 : d = df.parse(date, )" -> "111 : c.setTime(d, )"
+"110 : c = Calendar.getInstance()"
+"111 : c.setTime(d, )"
+}

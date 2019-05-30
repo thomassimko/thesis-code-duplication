@@ -1,0 +1,71 @@
+digraph G {
+"18 : this.userInput = new Scanner(System.in, )"
+"253 : in = new File(\"StoredExpenses.txt\", )"
+"256 : fileInput = new Scanner(in, )"
+"258 : type = \"\""
+"258 : type = \"\"" -> "261 : type = fileInput.nextLine()" [style=dashed]
+"259 : fileInput.hasNextLine()"
+"261 : type = fileInput.nextLine()"
+"261 : type = fileInput.nextLine()" -> "261 : type = fileInput.nextLine()" [style=dashed]
+"262 : paidTo = \"\""
+"262 : paidTo = \"\"" -> "303 : list.add(new FullExpense(c, category, paidTo, amount, ), )"
+"262 : paidTo = \"\"" -> "299 : list.add(new PartialExpense(c, category, paidTo, amount, remaining, ), )"
+"262 : paidTo = \"\"" -> "284 : paidTo = fileInput.nextLine()" [style=dashed]
+"262 : paidTo = \"\"" -> "262 : paidTo = \"\"" [style=dashed]
+"262 : amount = \"\""
+"262 : amount = \"\"" -> "303 : list.add(new FullExpense(c, category, paidTo, amount, ), )"
+"262 : amount = \"\"" -> "299 : list.add(new PartialExpense(c, category, paidTo, amount, remaining, ), )"
+"262 : amount = \"\"" -> "262 : amount = \"\"" [style=dashed]
+"262 : amount = \"\"" -> "289 : amount = fileInput.nextLine()" [style=dashed]
+"262 : remaining = \"\""
+"262 : remaining = \"\"" -> "299 : list.add(new PartialExpense(c, category, paidTo, amount, remaining, ), )"
+"262 : remaining = \"\"" -> "294 : remaining = fileInput.nextLine()" [style=dashed]
+"262 : remaining = \"\"" -> "262 : remaining = \"\"" [style=dashed]
+"262 : category = \"\""
+"262 : category = \"\"" -> "303 : list.add(new FullExpense(c, category, paidTo, amount, ), )"
+"262 : category = \"\"" -> "299 : list.add(new PartialExpense(c, category, paidTo, amount, remaining, ), )"
+"262 : category = \"\"" -> "262 : category = \"\"" [style=dashed]
+"262 : category = \"\"" -> "279 : category = fileInput.nextLine()" [style=dashed]
+"263 : c = Calendar.getInstance()"
+"263 : c = Calendar.getInstance()" -> "303 : list.add(new FullExpense(c, category, paidTo, amount, ), )"
+"263 : c = Calendar.getInstance()" -> "299 : list.add(new PartialExpense(c, category, paidTo, amount, remaining, ), )"
+"263 : c = Calendar.getInstance()" -> "263 : c = Calendar.getInstance()" [style=dashed]
+"264 : fileInput.hasNextLine()"
+"266 : df = new SimpleDateFormat(\"MM/dd/yyyy\", )"
+"267 : d = null"
+"269 : d = df.parse(fileInput.nextLine(), )"
+"269 : d = df.parse(fileInput.nextLine(), )" -> "270 : c.setTime(d, )"
+"269 : d = df.parse(fileInput.nextLine(), )" -> "267 : d = null" [style=dashed]
+"270 : c.setTime(d, )"
+"272 : new ExpenseReadException()"
+"276 : new ExpenseReadException()"
+"277 : fileInput.hasNextLine()"
+"279 : category = fileInput.nextLine()"
+"279 : category = fileInput.nextLine()" -> "303 : list.add(new FullExpense(c, category, paidTo, amount, ), )"
+"279 : category = fileInput.nextLine()" -> "299 : list.add(new PartialExpense(c, category, paidTo, amount, remaining, ), )"
+"279 : category = fileInput.nextLine()" -> "262 : category = \"\"" [style=dashed]
+"281 : new ExpenseReadException()"
+"282 : fileInput.hasNextLine()"
+"284 : paidTo = fileInput.nextLine()"
+"284 : paidTo = fileInput.nextLine()" -> "303 : list.add(new FullExpense(c, category, paidTo, amount, ), )"
+"284 : paidTo = fileInput.nextLine()" -> "299 : list.add(new PartialExpense(c, category, paidTo, amount, remaining, ), )"
+"284 : paidTo = fileInput.nextLine()" -> "262 : paidTo = \"\"" [style=dashed]
+"286 : new ExpenseReadException()"
+"287 : fileInput.hasNextLine()"
+"289 : amount = fileInput.nextLine()"
+"289 : amount = fileInput.nextLine()" -> "303 : list.add(new FullExpense(c, category, paidTo, amount, ), )"
+"289 : amount = fileInput.nextLine()" -> "299 : list.add(new PartialExpense(c, category, paidTo, amount, remaining, ), )"
+"289 : amount = fileInput.nextLine()" -> "262 : amount = \"\"" [style=dashed]
+"291 : new ExpenseReadException()"
+"292 : fileInput.hasNextLine()"
+"294 : remaining = fileInput.nextLine()"
+"294 : remaining = fileInput.nextLine()" -> "299 : list.add(new PartialExpense(c, category, paidTo, amount, remaining, ), )"
+"294 : remaining = fileInput.nextLine()" -> "262 : remaining = \"\"" [style=dashed]
+"296 : new ExpenseReadException()"
+"297 : type.equals(\"partial\", )"
+"299 : list.add(new PartialExpense(c, category, paidTo, amount, remaining, ), )"
+"301 : type.equals(\"in-full\", )"
+"303 : list.add(new FullExpense(c, category, paidTo, amount, ), )"
+"259 : fileInput.hasNextLine()"
+"310 : System.out.println(\"The stored expenses file cannot be found. A new one will be created when you save this session.\", )"
+}

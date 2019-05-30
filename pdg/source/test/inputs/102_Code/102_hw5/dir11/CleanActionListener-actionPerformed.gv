@@ -1,0 +1,11 @@
+digraph G {
+"10 : this.feed = null"
+"11 : this.sources = null"
+"22 : this.sources.setText(\"\", )"
+"23 : this.feed.removeBadSources()"
+"24 : Collections.sort(this.feed.getBadSources(), new SourceComparator(), )"
+"25 : f = this.feed.getSources()"
+"25 : f = this.feed.getSources()" -> "27 : this.sources.append(f, )"
+"25 : f = this.feed.getSources()" -> "25 : f = this.feed.getSources()" [style=dashed]
+"27 : this.sources.append(f, )"
+}

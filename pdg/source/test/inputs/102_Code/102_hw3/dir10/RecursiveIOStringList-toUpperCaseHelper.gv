@@ -1,0 +1,6 @@
+digraph G {
+"5 : this.head = null"
+"151 : cur instanceof RIONode"
+"152 : newList.addToEnd(toUpperCase(), )"
+"153 : toUpperCaseHelper(cur.getNext(), newList, )"
+}

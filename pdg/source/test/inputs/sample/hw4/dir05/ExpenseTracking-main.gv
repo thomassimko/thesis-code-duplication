@@ -1,0 +1,95 @@
+digraph G {
+"244 : list = new ArrayList()"
+"247 : f = new File(\"StoredExpenses.txt\", )"
+"247 : f = new File(\"StoredExpenses.txt\", )" -> "252 : infile = new Scanner(f, )"
+"248 : f.exists() == false"
+"250 : f.createNewFile()"
+"252 : infile = new Scanner(f, )"
+"253 : infile.hasNextLine()"
+"255 : type = infile.nextLine()"
+"255 : type = infile.nextLine()" -> "255 : type = infile.nextLine()" [style=dashed]
+"256 : type.equals(\"In-full\", )"
+"310 : System.out.println(\"File Loaded\" + \"\n\", )"
+"311 : UI(list, )"
+"258 : d = infile.nextLine()"
+"258 : d = infile.nextLine()" -> "261 : da = df.parse(d, )"
+"258 : d = infile.nextLine()" -> "258 : d = infile.nextLine()" [style=dashed]
+"260 : df = new SimpleDateFormat(\"EEE MMM dd HH:mm:ss z yyyy\", )"
+"260 : df = new SimpleDateFormat(\"EEE MMM dd HH:mm:ss z yyyy\", )" -> "260 : df = new SimpleDateFormat(\"EEE MMM dd HH:mm:ss z yyyy\", )" [style=dashed]
+"261 : da = df.parse(d, )"
+"261 : da = df.parse(d, )" -> "264 : formatted = dff.format(da, )"
+"261 : da = df.parse(d, )" -> "261 : da = df.parse(d, )" [style=dashed]
+"263 : dff = new SimpleDateFormat(\"MM/dd/yyyy\", )"
+"263 : dff = new SimpleDateFormat(\"MM/dd/yyyy\", )" -> "263 : dff = new SimpleDateFormat(\"MM/dd/yyyy\", )" [style=dashed]
+"264 : formatted = dff.format(da, )"
+"264 : formatted = dff.format(da, )" -> "266 : date = dff.parse(formatted, )"
+"264 : formatted = dff.format(da, )" -> "264 : formatted = dff.format(da, )" [style=dashed]
+"266 : date = dff.parse(formatted, )"
+"266 : date = dff.parse(formatted, )" -> "276 : e = new InFull(date, category, payee, amount1, amount2, )"
+"266 : date = dff.parse(formatted, )" -> "266 : date = dff.parse(formatted, )" [style=dashed]
+"268 : category = infile.nextLine()"
+"268 : category = infile.nextLine()" -> "276 : e = new InFull(date, category, payee, amount1, amount2, )"
+"268 : category = infile.nextLine()" -> "268 : category = infile.nextLine()" [style=dashed]
+"269 : payee = infile.nextLine()"
+"269 : payee = infile.nextLine()" -> "276 : e = new InFull(date, category, payee, amount1, amount2, )"
+"269 : payee = infile.nextLine()" -> "269 : payee = infile.nextLine()" [style=dashed]
+"270 : paid = infile.nextLine()"
+"270 : paid = infile.nextLine()" -> "270 : paid = infile.nextLine()" [style=dashed]
+"272 : amount1 = Integer.parseInt(paid.substring(0, paid.indexOf(', ), ), )"
+"272 : amount1 = Integer.parseInt(paid.substring(0, paid.indexOf(', ), ), )" -> "276 : e = new InFull(date, category, payee, amount1, amount2, )"
+"272 : amount1 = Integer.parseInt(paid.substring(0, paid.indexOf(', ), ), )" -> "272 : amount1 = Integer.parseInt(paid.substring(0, paid.indexOf(', ), ), )" [style=dashed]
+"273 : amount2 = Integer.parseInt(paid.substring(paid.indexOf(', ) + 1, paid.length(), ), )"
+"273 : amount2 = Integer.parseInt(paid.substring(paid.indexOf(', ) + 1, paid.length(), ), )" -> "276 : e = new InFull(date, category, payee, amount1, amount2, )"
+"273 : amount2 = Integer.parseInt(paid.substring(paid.indexOf(', ) + 1, paid.length(), ), )" -> "273 : amount2 = Integer.parseInt(paid.substring(paid.indexOf(', ) + 1, paid.length(), ), )" [style=dashed]
+"276 : e = new InFull(date, category, payee, amount1, amount2, )"
+"276 : e = new InFull(date, category, payee, amount1, amount2, )" -> "277 : list.add(e, )"
+"276 : e = new InFull(date, category, payee, amount1, amount2, )" -> "276 : e = new InFull(date, category, payee, amount1, amount2, )" [style=dashed]
+"277 : list.add(e, )"
+"279 : type.equals(\"Partial\", )"
+"281 : d = infile.nextLine()"
+"281 : d = infile.nextLine()" -> "284 : da = df.parse(d, )"
+"281 : d = infile.nextLine()" -> "281 : d = infile.nextLine()" [style=dashed]
+"283 : df = new SimpleDateFormat(\"EEE MMM dd HH:mm:ss z yyyy\", )"
+"283 : df = new SimpleDateFormat(\"EEE MMM dd HH:mm:ss z yyyy\", )" -> "283 : df = new SimpleDateFormat(\"EEE MMM dd HH:mm:ss z yyyy\", )" [style=dashed]
+"284 : da = df.parse(d, )"
+"284 : da = df.parse(d, )" -> "287 : formatted = dff.format(da, )"
+"284 : da = df.parse(d, )" -> "284 : da = df.parse(d, )" [style=dashed]
+"286 : dff = new SimpleDateFormat(\"MM/dd/yyyy\", )"
+"286 : dff = new SimpleDateFormat(\"MM/dd/yyyy\", )" -> "286 : dff = new SimpleDateFormat(\"MM/dd/yyyy\", )" [style=dashed]
+"287 : formatted = dff.format(da, )"
+"287 : formatted = dff.format(da, )" -> "289 : date = dff.parse(formatted, )"
+"287 : formatted = dff.format(da, )" -> "287 : formatted = dff.format(da, )" [style=dashed]
+"289 : date = dff.parse(formatted, )"
+"289 : date = dff.parse(formatted, )" -> "304 : e = new Partial(date, category, payee, amount1, amount2, remaining1, remaining2, )"
+"289 : date = dff.parse(formatted, )" -> "289 : date = dff.parse(formatted, )" [style=dashed]
+"291 : category = infile.nextLine()"
+"291 : category = infile.nextLine()" -> "304 : e = new Partial(date, category, payee, amount1, amount2, remaining1, remaining2, )"
+"291 : category = infile.nextLine()" -> "291 : category = infile.nextLine()" [style=dashed]
+"292 : payee = infile.nextLine()"
+"292 : payee = infile.nextLine()" -> "304 : e = new Partial(date, category, payee, amount1, amount2, remaining1, remaining2, )"
+"292 : payee = infile.nextLine()" -> "292 : payee = infile.nextLine()" [style=dashed]
+"293 : paid = infile.nextLine()"
+"293 : paid = infile.nextLine()" -> "293 : paid = infile.nextLine()" [style=dashed]
+"295 : amount1 = Integer.parseInt(paid.substring(0, paid.indexOf(', ), ), )"
+"295 : amount1 = Integer.parseInt(paid.substring(0, paid.indexOf(', ), ), )" -> "304 : e = new Partial(date, category, payee, amount1, amount2, remaining1, remaining2, )"
+"295 : amount1 = Integer.parseInt(paid.substring(0, paid.indexOf(', ), ), )" -> "295 : amount1 = Integer.parseInt(paid.substring(0, paid.indexOf(', ), ), )" [style=dashed]
+"296 : amount2 = Integer.parseInt(paid.substring(paid.indexOf(', ) + 1, paid.length(), ), )"
+"296 : amount2 = Integer.parseInt(paid.substring(paid.indexOf(', ) + 1, paid.length(), ), )" -> "304 : e = new Partial(date, category, payee, amount1, amount2, remaining1, remaining2, )"
+"296 : amount2 = Integer.parseInt(paid.substring(paid.indexOf(', ) + 1, paid.length(), ), )" -> "296 : amount2 = Integer.parseInt(paid.substring(paid.indexOf(', ) + 1, paid.length(), ), )" [style=dashed]
+"299 : bal = infile.nextLine()"
+"299 : bal = infile.nextLine()" -> "299 : bal = infile.nextLine()" [style=dashed]
+"300 : remaining1 = Integer.parseInt(bal.substring(0, bal.indexOf(', ), ), )"
+"300 : remaining1 = Integer.parseInt(bal.substring(0, bal.indexOf(', ), ), )" -> "304 : e = new Partial(date, category, payee, amount1, amount2, remaining1, remaining2, )"
+"300 : remaining1 = Integer.parseInt(bal.substring(0, bal.indexOf(', ), ), )" -> "300 : remaining1 = Integer.parseInt(bal.substring(0, bal.indexOf(', ), ), )" [style=dashed]
+"301 : remaining2 = Integer.parseInt(bal.substring(bal.indexOf(', ) + 1, bal.length(), ), )"
+"301 : remaining2 = Integer.parseInt(bal.substring(bal.indexOf(', ) + 1, bal.length(), ), )" -> "304 : e = new Partial(date, category, payee, amount1, amount2, remaining1, remaining2, )"
+"301 : remaining2 = Integer.parseInt(bal.substring(bal.indexOf(', ) + 1, bal.length(), ), )" -> "301 : remaining2 = Integer.parseInt(bal.substring(bal.indexOf(', ) + 1, bal.length(), ), )" [style=dashed]
+"304 : e = new Partial(date, category, payee, amount1, amount2, remaining1, remaining2, )"
+"304 : e = new Partial(date, category, payee, amount1, amount2, remaining1, remaining2, )" -> "306 : list.add(e, )"
+"304 : e = new Partial(date, category, payee, amount1, amount2, remaining1, remaining2, )" -> "304 : e = new Partial(date, category, payee, amount1, amount2, remaining1, remaining2, )" [style=dashed]
+"306 : list.add(e, )"
+"253 : infile.hasNextLine()"
+"315 : System.err.println(\"Error: File not found\", )"
+"319 : System.err.println(\"Parsing error\", )"
+"323 : System.err.println(\"Error\", )"
+}

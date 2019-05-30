@@ -1,0 +1,28 @@
+digraph G {
+"8 : this.textField = null"
+"8 : this.textField = null" -> "19 : this.textField = new JTextField(20, )" [style=dashed]
+"9 : this.button = null"
+"9 : this.button = null" -> "22 : this.button = new JButton(\"Add\", )" [style=dashed]
+"10 : this.reader = null"
+"10 : this.reader = null" -> "15 : this.reader = r" [style=dashed]
+"11 : this.itemText = null"
+"11 : this.itemText = null" -> "16 : this.itemText = i" [style=dashed]
+"11 : this.sourceText = null"
+"11 : this.sourceText = null" -> "17 : this.sourceText = s" [style=dashed]
+"15 : this.reader = r"
+"15 : this.reader = r" -> "23 : this.button.addActionListener(new AddListener(this.reader, this.textField, this.itemText, this.sourceText, ), )"
+"16 : this.itemText = i"
+"16 : this.itemText = i" -> "23 : this.button.addActionListener(new AddListener(this.reader, this.textField, this.itemText, this.sourceText, ), )"
+"17 : this.sourceText = s"
+"17 : this.sourceText = s" -> "23 : this.button.addActionListener(new AddListener(this.reader, this.textField, this.itemText, this.sourceText, ), )"
+"19 : this.textField = new JTextField(20, )"
+"19 : this.textField = new JTextField(20, )" -> "23 : this.button.addActionListener(new AddListener(this.reader, this.textField, this.itemText, this.sourceText, ), )"
+"19 : this.textField = new JTextField(20, )" -> "26 : add(this.textField, )"
+"20 : this.textField.setEditable(true, )"
+"22 : this.button = new JButton(\"Add\", )"
+"22 : this.button = new JButton(\"Add\", )" -> "27 : add(this.button, )"
+"23 : this.button.addActionListener(new AddListener(this.reader, this.textField, this.itemText, this.sourceText, ), )"
+"25 : add(new JLabel(\"Source: \", ), )"
+"26 : add(this.textField, )"
+"27 : add(this.button, )"
+}

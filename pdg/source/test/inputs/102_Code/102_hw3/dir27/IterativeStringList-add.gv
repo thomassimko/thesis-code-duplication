@@ -1,0 +1,39 @@
+digraph G {
+"6 : this.head = null"
+"6 : this.head = null" -> "41 : this.head == null && index == 0"
+"6 : this.head = null" -> "51 : this.head = new IterativeNode(element, this.head, )"
+"6 : this.head = null" -> "55 : cur = this.head"
+"6 : this.head = null" -> "43 : this.head = new IterativeNode(element, null, )" [style=dashed]
+"6 : this.head = null" -> "51 : this.head = new IterativeNode(element, this.head, )" [style=dashed]
+"41 : this.head == null && index == 0"
+"43 : this.head = new IterativeNode(element, null, )"
+"45 : index < 0"
+"47 : new IndexOutOfBoundsException()"
+"49 : index == 0"
+"51 : this.head = new IterativeNode(element, this.head, )"
+"53 : index > 0"
+"55 : cur = this.head"
+"55 : cur = this.head" -> "60 : cur == null"
+"55 : cur = this.head" -> "58 : cur = cur.getNext()" [style=dashed]
+"56 : i = 1"
+"56 : i = 1" -> "56 : @temp1 = i"
+"56 : i = 1" -> "56 : cur.getNext() != null && i < index"
+"56 : i = 1" -> "56 : i = i + 1"
+"56 : i = 1" -> "56 : i = i + 1" [style=dashed]
+"56 : cur.getNext() != null && i < index"
+"58 : cur = cur.getNext()"
+"58 : cur = cur.getNext()" -> "60 : cur == null"
+"58 : cur = cur.getNext()" -> "58 : cur = cur.getNext()" [style=dashed]
+"56 : @temp1 = i"
+"56 : @temp1 = i" -> "56 : @temp1 = i" [style=dashed]
+"56 : i = i + 1"
+"56 : i = i + 1" -> "56 : @temp1 = i"
+"56 : i = i + 1" -> "56 : cur.getNext() != null && i < index"
+"56 : i = i + 1" -> "56 : i = i + 1"
+"56 : i = i + 1" -> "56 : i = i + 1" [style=dashed]
+"60 : cur == null"
+"62 : new IndexOutOfBoundsException()"
+"64 : n = new IterativeNode(element, cur.getNext(), )"
+"64 : n = new IterativeNode(element, cur.getNext(), )" -> "65 : cur.setNext(n, )"
+"65 : cur.setNext(n, )"
+}

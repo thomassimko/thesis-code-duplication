@@ -1,0 +1,11 @@
+digraph G {
+"5 : this.v = null"
+"6 : this.next = null"
+"6 : this.next = null" -> "33 : this.next = this.next.add(index - 1, element, )" [style=dashed]
+"7 : this.i = 0"
+"8 : this.s = null"
+"26 : index == 0"
+"28 : n = new ROONode(element, this, )"
+"33 : this.next = this.next.add(index - 1, element, )"
+"34 : this"
+}

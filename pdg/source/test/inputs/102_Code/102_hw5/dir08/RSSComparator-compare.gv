@@ -1,0 +1,6 @@
+digraph G {
+"8 : c1 = getDate()"
+"9 : c2 = getDate()"
+"9 : c2 = getDate()" -> "11 : Math.signum(c1.compareTo(c2, ), )"
+"11 : Math.signum(c1.compareTo(c2, ), )"
+}

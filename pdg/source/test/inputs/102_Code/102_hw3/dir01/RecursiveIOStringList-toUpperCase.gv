@@ -1,0 +1,6 @@
+digraph G {
+"4 : this.node = null"
+"4 : this.node = null" -> "176 : L.node = allUppered(this.node, )"
+"175 : L = new RecursiveIOStringList()"
+"176 : L.node = allUppered(this.node, )"
+}

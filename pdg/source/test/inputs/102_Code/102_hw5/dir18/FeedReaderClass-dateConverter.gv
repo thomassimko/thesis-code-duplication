@@ -1,0 +1,12 @@
+digraph G {
+"12 : this.listSources = null"
+"13 : this.listItems = null"
+"14 : this.listBadSources = null"
+"75 : c = null"
+"77 : df = new SimpleDateFormat(\"EEE, dd MMMM yyyy \" + \"HH:mm:ss zzz\", )"
+"78 : d = df.parse(str, )"
+"78 : d = df.parse(str, )" -> "80 : c.setTime(d, )"
+"79 : c = Calendar.getInstance()"
+"80 : c.setTime(d, )"
+"83 : System.err.println(\"Wrong date format\", )"
+}

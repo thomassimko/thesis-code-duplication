@@ -1,0 +1,7 @@
+digraph G {
+"81 : sortChoice = getSortType(s, )"
+"81 : sortChoice = getSortType(s, )" -> "82 : c = createComparator(sortChoice, 0, )"
+"82 : c = createComparator(sortChoice, 0, )"
+"82 : c = createComparator(sortChoice, 0, )" -> "83 : Collections.sort(expensesList, c, )"
+"83 : Collections.sort(expensesList, c, )"
+}

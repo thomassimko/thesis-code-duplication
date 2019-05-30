@@ -1,0 +1,5 @@
+digraph G {
+"4 : this.node = null"
+"4 : this.node = null" -> "53 : this.node.startsWith(prefix, )"
+"53 : this.node.startsWith(prefix, )"
+}

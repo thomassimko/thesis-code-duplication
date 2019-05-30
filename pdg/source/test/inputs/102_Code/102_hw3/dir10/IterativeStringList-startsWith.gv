@@ -1,0 +1,17 @@
+digraph G {
+"4 : this.head = null"
+"4 : this.head = null" -> "161 : cur = this.head"
+"5 : this.next = null"
+"159 : prefixList = new IterativeStringList()"
+"160 : cur = null"
+"160 : cur = null" -> "161 : cur = this.head" [style=dashed]
+"161 : cur = this.head"
+"161 : cur = this.head" -> "161 : cur != null"
+"161 : cur = this.head" -> "161 : cur = cur.getNext()" [style=dashed]
+"161 : cur != null"
+"162 : startsWith(prefix, ) == true"
+"163 : prefixList.addToEnd(cur.getString(), )"
+"161 : cur = cur.getNext()"
+"161 : cur = cur.getNext()" -> "161 : cur != null"
+"161 : cur = cur.getNext()" -> "161 : cur = cur.getNext()" [style=dashed]
+}

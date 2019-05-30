@@ -1,0 +1,6 @@
+digraph G {
+"7 : this.head = null"
+"7 : this.head = null" -> "16 : this.head = addToEndHelper(element, this.head, )"
+"7 : this.head = null" -> "16 : this.head = addToEndHelper(element, this.head, )" [style=dashed]
+"16 : this.head = addToEndHelper(element, this.head, )"
+}

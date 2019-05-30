@@ -1,0 +1,11 @@
+digraph G {
+"4 : this.cur = null"
+"4 : this.head = null"
+"146 : cur instanceof RIOEmpty"
+"147 : n = new RIOEmpty()"
+"151 : n = null"
+"151 : n = null" -> "153 : n = new RIONode(cur.getElement(), hasSubstringHelper(substring, cur.getNode(), ), )" [style=dashed]
+"152 : indexOf(substring, ) > 0"
+"153 : n = new RIONode(cur.getElement(), hasSubstringHelper(substring, cur.getNode(), ), )"
+"156 : hasSubstringHelper(substring, cur.getNode(), )"
+}

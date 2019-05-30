@@ -1,9 +1,0 @@
-digraph G {
-"5 : pp1 = new PolarPoint(3, 90, )"
-"6 : Check.check(pp1.xCoordinate(), 0, )"
-"7 : Check.check(pp1.yCoordinate(), 3, )"
-"8 : Check.check(pp1.radius(), 3, )"
-"9 : Check.check(pp1.angle(), 1.5707963, )"
-"10 : Check.check(xCoordinate(), 3, )"
-"11 : Check.check(yCoordinate(), 0, )"
-}

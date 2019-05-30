@@ -1,0 +1,140 @@
+digraph G {
+"22 : date = null"
+"23 : category = null"
+"24 : paidTo = null"
+"25 : key = null"
+"26 : amount = null"
+"27 : remain = null"
+"28 : choice = 0"
+"29 : scan = new Scanner(System.in, )"
+"30 : list = new ArrayList()"
+"31 : hasFile = false"
+"32 : exit = false"
+"33 : check = false"
+"36 : input = new File(\"StoredExpenses\", )"
+"36 : input = new File(\"StoredExpenses\", )" -> "37 : sc = new Scanner(input, )"
+"37 : sc = new Scanner(input, )"
+"38 : sc.hasNext()"
+"40 : hasFile = true"
+"40 : hasFile = true" -> "71 : hasFile == true"
+"40 : hasFile = true" -> "40 : hasFile = true" [style=dashed]
+"40 : hasFile = true" -> "68 : hasFile = false" [style=dashed]
+"41 : next = sc.next()"
+"41 : next = sc.next()" -> "41 : next = sc.next()" [style=dashed]
+"42 : next.equals(\"in-full\", )"
+"44 : date = dateRead(sc.next(), )"
+"44 : date = dateRead(sc.next(), )" -> "48 : exp = new Infull(date, amount, paidTo, category, )"
+"44 : date = dateRead(sc.next(), )" -> "44 : date = dateRead(sc.next(), )" [style=dashed]
+"44 : date = dateRead(sc.next(), )" -> "53 : date = dateRead(sc.next(), )" [style=dashed]
+"45 : category = sc.next()"
+"45 : category = sc.next()" -> "48 : exp = new Infull(date, amount, paidTo, category, )"
+"45 : category = sc.next()" -> "45 : category = sc.next()" [style=dashed]
+"45 : category = sc.next()" -> "54 : category = sc.next()" [style=dashed]
+"46 : paidTo = sc.next()"
+"46 : paidTo = sc.next()" -> "48 : exp = new Infull(date, amount, paidTo, category, )"
+"46 : paidTo = sc.next()" -> "55 : paidTo = sc.next()" [style=dashed]
+"46 : paidTo = sc.next()" -> "46 : paidTo = sc.next()" [style=dashed]
+"47 : amount = toMoney(sc.next(), )"
+"47 : amount = toMoney(sc.next(), )" -> "48 : exp = new Infull(date, amount, paidTo, category, )"
+"47 : amount = toMoney(sc.next(), )" -> "56 : amount = toMoney(sc.next(), )" [style=dashed]
+"47 : amount = toMoney(sc.next(), )" -> "47 : amount = toMoney(sc.next(), )" [style=dashed]
+"48 : exp = new Infull(date, amount, paidTo, category, )"
+"48 : exp = new Infull(date, amount, paidTo, category, )" -> "49 : list.add(exp, )"
+"48 : exp = new Infull(date, amount, paidTo, category, )" -> "48 : exp = new Infull(date, amount, paidTo, category, )" [style=dashed]
+"49 : list.add(exp, )"
+"51 : next.equals(\"partial\", )"
+"53 : date = dateRead(sc.next(), )"
+"53 : date = dateRead(sc.next(), )" -> "58 : exp = new Partial(date, amount, paidTo, category, remain, )"
+"53 : date = dateRead(sc.next(), )" -> "44 : date = dateRead(sc.next(), )" [style=dashed]
+"53 : date = dateRead(sc.next(), )" -> "53 : date = dateRead(sc.next(), )" [style=dashed]
+"54 : category = sc.next()"
+"54 : category = sc.next()" -> "58 : exp = new Partial(date, amount, paidTo, category, remain, )"
+"54 : category = sc.next()" -> "45 : category = sc.next()" [style=dashed]
+"54 : category = sc.next()" -> "54 : category = sc.next()" [style=dashed]
+"55 : paidTo = sc.next()"
+"55 : paidTo = sc.next()" -> "58 : exp = new Partial(date, amount, paidTo, category, remain, )"
+"55 : paidTo = sc.next()" -> "55 : paidTo = sc.next()" [style=dashed]
+"55 : paidTo = sc.next()" -> "46 : paidTo = sc.next()" [style=dashed]
+"56 : amount = toMoney(sc.next(), )"
+"56 : amount = toMoney(sc.next(), )" -> "58 : exp = new Partial(date, amount, paidTo, category, remain, )"
+"56 : amount = toMoney(sc.next(), )" -> "56 : amount = toMoney(sc.next(), )" [style=dashed]
+"56 : amount = toMoney(sc.next(), )" -> "47 : amount = toMoney(sc.next(), )" [style=dashed]
+"57 : remain = toMoney(sc.next(), )"
+"57 : remain = toMoney(sc.next(), )" -> "58 : exp = new Partial(date, amount, paidTo, category, remain, )"
+"57 : remain = toMoney(sc.next(), )" -> "57 : remain = toMoney(sc.next(), )" [style=dashed]
+"58 : exp = new Partial(date, amount, paidTo, category, remain, )"
+"58 : exp = new Partial(date, amount, paidTo, category, remain, )" -> "59 : list.add(exp, )"
+"58 : exp = new Partial(date, amount, paidTo, category, remain, )" -> "58 : exp = new Partial(date, amount, paidTo, category, remain, )" [style=dashed]
+"59 : list.add(exp, )"
+"63 : check = true"
+"63 : check = true" -> "63 : check = true" [style=dashed]
+"38 : sc.hasNext()"
+"68 : hasFile = false"
+"68 : hasFile = false" -> "71 : hasFile == true"
+"69 : System.out.println(\"Incorrect file format\", )"
+"71 : hasFile == true"
+"73 : System.out.println(\"File Loaded\", )"
+"74 : System.out.println(\"\", )"
+"79 : System.err.println(\"No file exists\", )"
+"83 : System.err.println(\"Parse Exception\", )"
+"87 : System.err.println(\"Not an amount\", )"
+"91 : true"
+"93 : System.out.println(\"1. Display\", )"
+"94 : System.out.println(\"2. Add Expense\", )"
+"95 : System.out.println(\"3. Sort\", )"
+"96 : System.out.println(\"4. Save\", )"
+"97 : System.out.println(\"5. Quit\", )"
+"98 : System.out.println(\"\", )"
+"99 : System.out.print(\"Enter choice: \", )"
+"101 : choice = scan.nextInt()"
+"101 : choice = scan.nextInt()" -> "101 : choice = scan.nextInt()" [style=dashed]
+"102 : System.out.println(\"\", )"
+"106 : i = 0"
+"106 : i = 0" -> "106 : i < list.size()"
+"106 : i = 0" -> "106 : i = i + 1"
+"106 : i = 0" -> "106 : @temp1 = i"
+"106 : i = 0" -> "106 : i = 0" [style=dashed]
+"106 : i = 0" -> "106 : i = i + 1" [style=dashed]
+"106 : i < list.size()"
+"108 : System.out.println(print(), )"
+"106 : @temp1 = i"
+"106 : @temp1 = i" -> "106 : @temp1 = i" [style=dashed]
+"106 : i = i + 1"
+"106 : i = i + 1" -> "106 : i < list.size()"
+"106 : i = i + 1" -> "106 : i = i + 1"
+"106 : i = i + 1" -> "106 : @temp1 = i"
+"106 : i = i + 1" -> "106 : i = 0" [style=dashed]
+"106 : i = i + 1" -> "106 : i = i + 1" [style=dashed]
+"110 : System.out.println(\"\", )"
+"115 : addExp(list, scan, )"
+"116 : System.out.println(\"\", )"
+"120 : System.err.println(\"Not a number\", )"
+"124 : System.err.println(\"Parse Exception\", )"
+"133 : printer = new PrintWriter(\"StoredExpenses\", )"
+"134 : i = 0"
+"134 : i = 0" -> "134 : @temp2 = i"
+"134 : i = 0" -> "134 : i < list.size()"
+"134 : i = 0" -> "134 : i = i + 1"
+"134 : i = 0" -> "134 : i = i + 1" [style=dashed]
+"134 : i < list.size()"
+"136 : equals(\"0\", )"
+"150 : printer.close()"
+"151 : System.out.println(\"Expenses Saved\", )"
+"138 : printer.write(\"in-full\" + \"\n\", )"
+"142 : printer.write(\"partial\" + \"\n\", )"
+"144 : printer.write(String.format(\"%1$2tm/%<2td/%<tY \", getDate(), ) + \"\n\", )"
+"145 : printer.write(getDesc() + \"\n\", )"
+"146 : printer.write(paidTo() + \"\n\", )"
+"147 : printer.write(paidAmount() + \"\n\", )"
+"148 : printer.write(getBal() + \"\n\", )"
+"134 : @temp2 = i"
+"134 : @temp2 = i" -> "134 : @temp2 = i" [style=dashed]
+"134 : i = i + 1"
+"134 : i = i + 1" -> "134 : @temp2 = i"
+"134 : i = i + 1" -> "134 : i < list.size()"
+"134 : i = i + 1" -> "134 : i = i + 1"
+"134 : i = i + 1" -> "134 : i = i + 1" [style=dashed]
+"155 : System.out.print(\"No file exists\", )"
+"91 : true"
+"170 : System.err.println(\"Not an option!\", )"
+}

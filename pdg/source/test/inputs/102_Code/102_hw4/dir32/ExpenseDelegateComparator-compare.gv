@@ -1,0 +1,7 @@
+digraph G {
+"6 : this.taco = null"
+"7 : this.burritos = null"
+"17 : this.taco.compare(enchiladas, hamburgers, ) == 0"
+"19 : this.burritos.compare(enchiladas, hamburgers, )"
+"23 : this.taco.compare(enchiladas, hamburgers, )"
+}

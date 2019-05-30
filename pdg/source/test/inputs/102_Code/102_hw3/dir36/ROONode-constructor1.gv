@@ -1,0 +1,14 @@
+digraph G {
+"5 : this.v = null"
+"5 : this.v = null" -> "11 : this.v = value" [style=dashed]
+"6 : this.next = null"
+"6 : this.next = null" -> "12 : this.next = n" [style=dashed]
+"7 : this.i = 0"
+"7 : this.i = 0" -> "13 : this.i = 0" [style=dashed]
+"8 : this.s = null"
+"8 : this.s = null" -> "14 : this.s = null" [style=dashed]
+"11 : this.v = value"
+"12 : this.next = n"
+"13 : this.i = 0"
+"14 : this.s = null"
+}

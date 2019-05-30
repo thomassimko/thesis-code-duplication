@@ -1,0 +1,34 @@
+digraph G {
+"24 : this.factory = DocumentBuilderFactory.newInstance()"
+"25 : this.feedDocument = null"
+"26 : this.builder = null"
+"27 : this.itemCount = 0"
+"28 : this.xpfactory = XPathFactory.newInstance()"
+"29 : this.xpath = this.xpfactory.newXPath()"
+"30 : this.countStr = null"
+"31 : this.sources = new LinkedList()"
+"32 : this.badSources = null"
+"116 : size = this.badSources.size()"
+"116 : size = this.badSources.size()" -> "118 : i < size"
+"118 : i = 0"
+"118 : i = 0" -> "118 : i = i + 1"
+"118 : i = 0" -> "120 : bad = this.badSources.get(i, )"
+"118 : i = 0" -> "118 : @temp2 = i"
+"118 : i = 0" -> "118 : i < size"
+"118 : i = 0" -> "118 : i = i + 1" [style=dashed]
+"118 : i < size"
+"120 : bad = this.badSources.get(i, )"
+"120 : bad = this.badSources.get(i, )" -> "121 : this.sources.contains(bad, )"
+"120 : bad = this.badSources.get(i, )" -> "123 : this.sources.remove(this.sources.indexOf(bad, ), )"
+"120 : bad = this.badSources.get(i, )" -> "120 : bad = this.badSources.get(i, )" [style=dashed]
+"121 : this.sources.contains(bad, )"
+"123 : this.sources.remove(this.sources.indexOf(bad, ), )"
+"118 : @temp2 = i"
+"118 : @temp2 = i" -> "118 : @temp2 = i" [style=dashed]
+"118 : i = i + 1"
+"118 : i = i + 1" -> "118 : i = i + 1"
+"118 : i = i + 1" -> "120 : bad = this.badSources.get(i, )"
+"118 : i = i + 1" -> "118 : @temp2 = i"
+"118 : i = i + 1" -> "118 : i < size"
+"118 : i = i + 1" -> "118 : i = i + 1" [style=dashed]
+}

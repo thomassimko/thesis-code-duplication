@@ -1,0 +1,22 @@
+digraph G {
+"3 : this.first = null"
+"3 : this.first = null" -> "78 : node = this.first"
+"78 : node = this.first"
+"78 : node = this.first" -> "81 : node = node.getNext()" [style=dashed]
+"79 : i = 0"
+"79 : i = 0" -> "82 : @temp4 = i"
+"79 : i = 0" -> "82 : i = i + 1"
+"79 : i = 0" -> "82 : i = i + 1" [style=dashed]
+"80 : node.getNext() != null && equals(element, )"
+"81 : node = node.getNext()"
+"81 : node = node.getNext()" -> "81 : node = node.getNext()" [style=dashed]
+"82 : @temp4 = i"
+"82 : @temp4 = i" -> "82 : @temp4 = i" [style=dashed]
+"82 : i = i + 1"
+"82 : i = i + 1" -> "82 : @temp4 = i"
+"82 : i = i + 1" -> "82 : i = i + 1"
+"82 : i = i + 1" -> "82 : i = i + 1" [style=dashed]
+"80 : node.getNext() != null && equals(element, )"
+"84 : equals(element, )"
+"87 : new IndexOutOfBoundsException()"
+}

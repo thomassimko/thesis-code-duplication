@@ -1,0 +1,8 @@
+digraph G {
+"2 : this.value = null"
+"2 : this.value = null" -> "80 : s.add(0, this.value, )"
+"3 : this.nextLink = null"
+"78 : s = this.nextLink.startsWith(prefix, )"
+"79 : this.value.indexOf(prefix, ) == 0"
+"80 : s.add(0, this.value, )"
+}

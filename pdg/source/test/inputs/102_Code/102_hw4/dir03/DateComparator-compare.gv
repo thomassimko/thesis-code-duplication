@@ -1,0 +1,6 @@
+digraph G {
+"8 : leftDate = left.getDate()"
+"9 : rightDate = right.getDate()"
+"9 : rightDate = right.getDate()" -> "10 : leftDate.compareTo(rightDate, )"
+"10 : leftDate.compareTo(rightDate, )"
+}

@@ -1,0 +1,165 @@
+digraph G {
+"20 : s = null"
+"21 : out = null"
+"22 : scan = new Scanner(System.in, )"
+"23 : expenseList = new ArrayList()"
+"24 : error = false"
+"27 : date = null"
+"27 : date = null" -> "40 : date = df.parse(s.nextLine(), )" [style=dashed]
+"27 : date = null" -> "49 : date = df.parse(s.nextLine(), )" [style=dashed]
+"28 : category = null"
+"28 : category = null" -> "41 : category = s.nextLine()" [style=dashed]
+"28 : category = null" -> "50 : category = s.nextLine()" [style=dashed]
+"29 : payee = null"
+"29 : payee = null" -> "51 : payee = s.nextLine()" [style=dashed]
+"29 : payee = null" -> "42 : payee = s.nextLine()" [style=dashed]
+"30 : amount = 0.0"
+"30 : amount = 0.0" -> "43 : amount = Double.parseDouble(s.nextLine(), )" [style=dashed]
+"30 : amount = 0.0" -> "52 : amount = Double.parseDouble(s.nextLine(), )" [style=dashed]
+"31 : remainingAmount = 0.0"
+"31 : remainingAmount = 0.0" -> "53 : remainingAmount = Double.parseDouble(s.nextLine(), )" [style=dashed]
+"33 : s = new Scanner(new BufferedReader(new FileReader(\"StoredExpenses\", ), ), )"
+"36 : s.hasNextLine()"
+"37 : str = s.nextLine()"
+"37 : str = s.nextLine()" -> "37 : str = s.nextLine()" [style=dashed]
+"38 : str.equals(\"in-full\", )"
+"39 : df = new SimpleDateFormat(\"MM/dd/yyyy\", )"
+"39 : df = new SimpleDateFormat(\"MM/dd/yyyy\", )" -> "39 : df = new SimpleDateFormat(\"MM/dd/yyyy\", )" [style=dashed]
+"40 : date = df.parse(s.nextLine(), )"
+"40 : date = df.parse(s.nextLine(), )" -> "45 : expenseList.add(new FullExpense(date, category, payee, amount, ), )"
+"40 : date = df.parse(s.nextLine(), )" -> "40 : date = df.parse(s.nextLine(), )" [style=dashed]
+"40 : date = df.parse(s.nextLine(), )" -> "49 : date = df.parse(s.nextLine(), )" [style=dashed]
+"41 : category = s.nextLine()"
+"41 : category = s.nextLine()" -> "45 : expenseList.add(new FullExpense(date, category, payee, amount, ), )"
+"41 : category = s.nextLine()" -> "41 : category = s.nextLine()" [style=dashed]
+"41 : category = s.nextLine()" -> "50 : category = s.nextLine()" [style=dashed]
+"42 : payee = s.nextLine()"
+"42 : payee = s.nextLine()" -> "45 : expenseList.add(new FullExpense(date, category, payee, amount, ), )"
+"42 : payee = s.nextLine()" -> "51 : payee = s.nextLine()" [style=dashed]
+"42 : payee = s.nextLine()" -> "42 : payee = s.nextLine()" [style=dashed]
+"43 : amount = Double.parseDouble(s.nextLine(), )"
+"43 : amount = Double.parseDouble(s.nextLine(), )" -> "45 : expenseList.add(new FullExpense(date, category, payee, amount, ), )"
+"43 : amount = Double.parseDouble(s.nextLine(), )" -> "43 : amount = Double.parseDouble(s.nextLine(), )" [style=dashed]
+"43 : amount = Double.parseDouble(s.nextLine(), )" -> "52 : amount = Double.parseDouble(s.nextLine(), )" [style=dashed]
+"45 : expenseList.add(new FullExpense(date, category, payee, amount, ), )"
+"47 : str.equals(\"partial\", )"
+"48 : df = new SimpleDateFormat(\"MM/dd/yyyy\", )"
+"48 : df = new SimpleDateFormat(\"MM/dd/yyyy\", )" -> "48 : df = new SimpleDateFormat(\"MM/dd/yyyy\", )" [style=dashed]
+"49 : date = df.parse(s.nextLine(), )"
+"49 : date = df.parse(s.nextLine(), )" -> "55 : expenseList.add(new PartialExpense(date, category, payee, amount, remainingAmount, ), )"
+"49 : date = df.parse(s.nextLine(), )" -> "40 : date = df.parse(s.nextLine(), )" [style=dashed]
+"49 : date = df.parse(s.nextLine(), )" -> "49 : date = df.parse(s.nextLine(), )" [style=dashed]
+"50 : category = s.nextLine()"
+"50 : category = s.nextLine()" -> "55 : expenseList.add(new PartialExpense(date, category, payee, amount, remainingAmount, ), )"
+"50 : category = s.nextLine()" -> "41 : category = s.nextLine()" [style=dashed]
+"50 : category = s.nextLine()" -> "50 : category = s.nextLine()" [style=dashed]
+"51 : payee = s.nextLine()"
+"51 : payee = s.nextLine()" -> "55 : expenseList.add(new PartialExpense(date, category, payee, amount, remainingAmount, ), )"
+"51 : payee = s.nextLine()" -> "51 : payee = s.nextLine()" [style=dashed]
+"51 : payee = s.nextLine()" -> "42 : payee = s.nextLine()" [style=dashed]
+"52 : amount = Double.parseDouble(s.nextLine(), )"
+"52 : amount = Double.parseDouble(s.nextLine(), )" -> "55 : expenseList.add(new PartialExpense(date, category, payee, amount, remainingAmount, ), )"
+"52 : amount = Double.parseDouble(s.nextLine(), )" -> "43 : amount = Double.parseDouble(s.nextLine(), )" [style=dashed]
+"52 : amount = Double.parseDouble(s.nextLine(), )" -> "52 : amount = Double.parseDouble(s.nextLine(), )" [style=dashed]
+"53 : remainingAmount = Double.parseDouble(s.nextLine(), )"
+"53 : remainingAmount = Double.parseDouble(s.nextLine(), )" -> "55 : expenseList.add(new PartialExpense(date, category, payee, amount, remainingAmount, ), )"
+"53 : remainingAmount = Double.parseDouble(s.nextLine(), )" -> "53 : remainingAmount = Double.parseDouble(s.nextLine(), )" [style=dashed]
+"55 : expenseList.add(new PartialExpense(date, category, payee, amount, remainingAmount, ), )"
+"36 : s.hasNextLine()"
+"61 : System.out.print(\"File Not Completely Loaded\n\", )"
+"62 : error = true"
+"64 : System.out.print(\"File Not Completely Loaded\n\", )"
+"65 : error = true"
+"68 : System.out.print(\"File Loaded\n\", )"
+"71 : choice = 0"
+"71 : choice = 0" -> "79 : choice = Integer.parseInt(scan.next(), )" [style=dashed]
+"72 : true"
+"73 : System.out.println(\"\n1. Display\", )"
+"74 : System.out.println(\"2. Add Expense\", )"
+"75 : System.out.println(\"3. Sort\", )"
+"76 : System.out.println(\"4. Save\", )"
+"77 : System.out.println(\"5. Quit\", )"
+"78 : System.out.print(\"\nEnter choice: \", )"
+"79 : choice = Integer.parseInt(scan.next(), )"
+"79 : choice = Integer.parseInt(scan.next(), )" -> "81 : choice == 5"
+"79 : choice = Integer.parseInt(scan.next(), )" -> "79 : choice = Integer.parseInt(scan.next(), )" [style=dashed]
+"81 : choice == 5"
+"86 : exp = expenseList"
+"86 : exp = expenseList" -> "93 : exp instanceof PartialExpense"
+"86 : exp = expenseList" -> "86 : exp = expenseList" [style=dashed]
+"87 : strOut = null"
+"87 : strOut = null" -> "101 : strOut = String.format(\"%1$2tm/%<2td/%<tY \", expDate, ) + String.format(\"%-15.15s %10s [%s]\", expPayee, expAmount.toString(), expCategory, )" [style=dashed]
+"87 : strOut = null" -> "87 : strOut = null" [style=dashed]
+"87 : strOut = null" -> "96 : strOut = String.format(\"%1$2tm/%<2td/%<tY \", expDate, ) + String.format(\"%-15.15s %10s (%s) [%s]\", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, )" [style=dashed]
+"88 : expDate = exp.getDate()"
+"88 : expDate = exp.getDate()" -> "101 : strOut = String.format(\"%1$2tm/%<2td/%<tY \", expDate, ) + String.format(\"%-15.15s %10s [%s]\", expPayee, expAmount.toString(), expCategory, )"
+"88 : expDate = exp.getDate()" -> "96 : strOut = String.format(\"%1$2tm/%<2td/%<tY \", expDate, ) + String.format(\"%-15.15s %10s (%s) [%s]\", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, )"
+"88 : expDate = exp.getDate()" -> "88 : expDate = exp.getDate()" [style=dashed]
+"89 : expPayee = exp.getPayee()"
+"89 : expPayee = exp.getPayee()" -> "101 : strOut = String.format(\"%1$2tm/%<2td/%<tY \", expDate, ) + String.format(\"%-15.15s %10s [%s]\", expPayee, expAmount.toString(), expCategory, )"
+"89 : expPayee = exp.getPayee()" -> "96 : strOut = String.format(\"%1$2tm/%<2td/%<tY \", expDate, ) + String.format(\"%-15.15s %10s (%s) [%s]\", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, )"
+"89 : expPayee = exp.getPayee()" -> "89 : expPayee = exp.getPayee()" [style=dashed]
+"90 : expAmount = exp.getAmountPaid()"
+"90 : expAmount = exp.getAmountPaid()" -> "90 : expAmount = exp.getAmountPaid()" [style=dashed]
+"91 : expCategory = exp.getCategory()"
+"91 : expCategory = exp.getCategory()" -> "101 : strOut = String.format(\"%1$2tm/%<2td/%<tY \", expDate, ) + String.format(\"%-15.15s %10s [%s]\", expPayee, expAmount.toString(), expCategory, )"
+"91 : expCategory = exp.getCategory()" -> "96 : strOut = String.format(\"%1$2tm/%<2td/%<tY \", expDate, ) + String.format(\"%-15.15s %10s (%s) [%s]\", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, )"
+"91 : expCategory = exp.getCategory()" -> "91 : expCategory = exp.getCategory()" [style=dashed]
+"93 : exp instanceof PartialExpense"
+"108 : System.out.print(\"\n\", )"
+"94 : expRemaining = getRemainingAmount()"
+"94 : expRemaining = getRemainingAmount()" -> "94 : expRemaining = getRemainingAmount()" [style=dashed]
+"96 : strOut = String.format(\"%1$2tm/%<2td/%<tY \", expDate, ) + String.format(\"%-15.15s %10s (%s) [%s]\", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, )"
+"96 : strOut = String.format(\"%1$2tm/%<2td/%<tY \", expDate, ) + String.format(\"%-15.15s %10s (%s) [%s]\", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, )" -> "106 : System.out.print(\"\n\" + strOut, )"
+"96 : strOut = String.format(\"%1$2tm/%<2td/%<tY \", expDate, ) + String.format(\"%-15.15s %10s (%s) [%s]\", expPayee, expAmount.toString(), expRemaining.toString(), expCategory, )" -> "87 : strOut = null" [style=dashed]
+"101 : strOut = String.format(\"%1$2tm/%<2td/%<tY \", expDate, ) + String.format(\"%-15.15s %10s [%s]\", expPayee, expAmount.toString(), expCategory, )"
+"101 : strOut = String.format(\"%1$2tm/%<2td/%<tY \", expDate, ) + String.format(\"%-15.15s %10s [%s]\", expPayee, expAmount.toString(), expCategory, )" -> "106 : System.out.print(\"\n\" + strOut, )"
+"101 : strOut = String.format(\"%1$2tm/%<2td/%<tY \", expDate, ) + String.format(\"%-15.15s %10s [%s]\", expPayee, expAmount.toString(), expCategory, )" -> "87 : strOut = null" [style=dashed]
+"106 : System.out.print(\"\n\" + strOut, )"
+"125 : listNew = new ArrayList()"
+"125 : listNew = new ArrayList()" -> "130 : expenseList = listNew"
+"125 : listNew = new ArrayList()" -> "125 : listNew = new ArrayList()" [style=dashed]
+"127 : listNew.add(new FullExpense(date, category, payee, amount, ), )"
+"128 : listNew.addAll(expenseList, )"
+"130 : expenseList = listNew"
+"130 : expenseList = listNew" -> "86 : exp = expenseList"
+"130 : expenseList = listNew" -> "128 : listNew.addAll(expenseList, )"
+"130 : expenseList = listNew" -> "137 : listNew.addAll(expenseList, )"
+"130 : expenseList = listNew" -> "139 : expenseList = listNew" [style=dashed]
+"130 : expenseList = listNew" -> "130 : expenseList = listNew" [style=dashed]
+"132 : System.out.print(\"Expense Balance: \", )"
+"133 : remainingAmount = Double.parseDouble(scan.next(), )"
+"133 : remainingAmount = Double.parseDouble(scan.next(), )" -> "136 : listNew.add(new PartialExpense(date, category, payee, amount, remainingAmount, ), )"
+"133 : remainingAmount = Double.parseDouble(scan.next(), )" -> "133 : remainingAmount = Double.parseDouble(scan.next(), )" [style=dashed]
+"134 : listNew = new ArrayList()"
+"134 : listNew = new ArrayList()" -> "139 : expenseList = listNew"
+"134 : listNew = new ArrayList()" -> "134 : listNew = new ArrayList()" [style=dashed]
+"136 : listNew.add(new PartialExpense(date, category, payee, amount, remainingAmount, ), )"
+"137 : listNew.addAll(expenseList, )"
+"139 : expenseList = listNew"
+"139 : expenseList = listNew" -> "86 : exp = expenseList"
+"139 : expenseList = listNew" -> "128 : listNew.addAll(expenseList, )"
+"139 : expenseList = listNew" -> "137 : listNew.addAll(expenseList, )"
+"139 : expenseList = listNew" -> "139 : expenseList = listNew" [style=dashed]
+"139 : expenseList = listNew" -> "130 : expenseList = listNew" [style=dashed]
+"152 : out = new FileWriter(\"StoredExpenses\", )"
+"152 : out = new FileWriter(\"StoredExpenses\", )" -> "180 : out != null"
+"153 : exp = expenseList"
+"153 : exp = expenseList" -> "155 : exp instanceof PartialExpense"
+"153 : exp = expenseList" -> "153 : exp = expenseList" [style=dashed]
+"155 : exp instanceof PartialExpense"
+"177 : out.flush()"
+"156 : out.write(\"partial\r\n\", )"
+"157 : out.write(format(exp.getDate(), ) + \"\r\n\", )"
+"159 : out.write(exp.getCategory() + \"\r\n\", )"
+"160 : out.write(exp.getPayee() + \"\r\n\", )"
+"161 : out.write(Double.toString(exp.getAmountPaid(), ) + \"\r\n\", )"
+"163 : out.write(Double.toString(getRemainingAmount(), ) + \"\r\n\", )"
+"167 : out.write(\"in-full\r\n\", )"
+"168 : out.write(format(exp.getDate(), ) + \"\r\n\", )"
+"170 : out.write(exp.getCategory() + \"\r\n\", )"
+"171 : out.write(exp.getPayee() + \"\r\n\", )"
+"172 : out.write(Double.toString(exp.getAmountPaid(), ) + \"\r\n\", )"
+"180 : out != null"
+"181 : out.close()"
+}

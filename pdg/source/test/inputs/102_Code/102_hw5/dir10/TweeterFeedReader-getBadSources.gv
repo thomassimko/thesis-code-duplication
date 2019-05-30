@@ -1,0 +1,30 @@
+digraph G {
+"19 : this.feedDocument = null"
+"20 : this.itemList = null"
+"21 : this.sourceList = null"
+"22 : this.badSources = null"
+"22 : this.badSources = null" -> "122 : getBadSourcesHelper(this.badSources.get(i, ), this.badSources, i, ) == false"
+"22 : this.badSources = null" -> "127 : this.badSources = badSrcHelpList" [style=dashed]
+"120 : badSrcHelpList = new LinkedList()"
+"120 : badSrcHelpList = new LinkedList()" -> "127 : this.badSources = badSrcHelpList"
+"121 : i = 0"
+"121 : i = 0" -> "121 : i < this.badSources.size()"
+"121 : i = 0" -> "122 : getBadSourcesHelper(this.badSources.get(i, ), this.badSources, i, ) == false"
+"121 : i = 0" -> "121 : i = i + 1"
+"121 : i = 0" -> "123 : badSrcHelpList.add(this.badSources.get(i, ), )"
+"121 : i = 0" -> "121 : @temp10 = i"
+"121 : i = 0" -> "121 : i = i + 1" [style=dashed]
+"121 : i < this.badSources.size()"
+"122 : getBadSourcesHelper(this.badSources.get(i, ), this.badSources, i, ) == false"
+"127 : this.badSources = badSrcHelpList"
+"123 : badSrcHelpList.add(this.badSources.get(i, ), )"
+"121 : @temp10 = i"
+"121 : @temp10 = i" -> "121 : @temp10 = i" [style=dashed]
+"121 : i = i + 1"
+"121 : i = i + 1" -> "121 : i < this.badSources.size()"
+"121 : i = i + 1" -> "122 : getBadSourcesHelper(this.badSources.get(i, ), this.badSources, i, ) == false"
+"121 : i = i + 1" -> "121 : i = i + 1"
+"121 : i = i + 1" -> "123 : badSrcHelpList.add(this.badSources.get(i, ), )"
+"121 : i = i + 1" -> "121 : @temp10 = i"
+"121 : i = i + 1" -> "121 : i = i + 1" [style=dashed]
+}

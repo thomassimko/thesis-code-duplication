@@ -1,0 +1,8 @@
+digraph G {
+"100 : id1 = new IdentifierExpression(\"a\", )"
+"101 : id2 = new IdentifierExpression(\"b\", )"
+"102 : id3 = new IdentifierExpression(\"cats\", )"
+"103 : Check.check(id1.evaluate(bindings, ), 7.27, )"
+"104 : Check.check(id2.evaluate(bindings, ), 22, )"
+"105 : Check.check(id3.evaluate(bindings, ), 991231, )"
+}

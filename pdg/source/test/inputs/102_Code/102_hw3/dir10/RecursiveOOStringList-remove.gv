@@ -1,0 +1,6 @@
+digraph G {
+"3 : this.head = null"
+"3 : this.head = null" -> "22 : this.head = this.head.remove(index, )" [style=dashed]
+"21 : str = get(index, )"
+"22 : this.head = this.head.remove(index, )"
+}

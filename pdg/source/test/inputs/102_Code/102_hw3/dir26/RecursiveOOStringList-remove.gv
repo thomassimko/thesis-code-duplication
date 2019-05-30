@@ -1,0 +1,8 @@
+digraph G {
+"4 : this.first = null"
+"4 : this.first = null" -> "31 : this.first = this.first.remove(index, )" [style=dashed]
+"28 : index < 0"
+"29 : new IndexOutOfBoundsException()"
+"30 : remove = this.first.get(index, )"
+"31 : this.first = this.first.remove(index, )"
+}

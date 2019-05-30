@@ -1,0 +1,8 @@
+digraph G {
+"4 : this.value = null"
+"5 : this.next = null"
+"99 : l = new RecursiveOOStringList()"
+"99 : l = new RecursiveOOStringList()" -> "100 : l = toLowerCase()" [style=dashed]
+"100 : l = toLowerCase()"
+"101 : l.add(0, toLowerCase(), )"
+}

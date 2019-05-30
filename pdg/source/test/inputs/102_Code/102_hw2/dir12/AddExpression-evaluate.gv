@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.sum = 0.0"
+"4 : this.sum = 0.0" -> "15 : this.sum = this.num1.evaluate(bindings, ) + this.num2.evaluate(bindings, )" [style=dashed]
+"5 : this.num1 = null"
+"5 : this.num2 = null"
+"15 : this.sum = this.num1.evaluate(bindings, ) + this.num2.evaluate(bindings, )"
+}

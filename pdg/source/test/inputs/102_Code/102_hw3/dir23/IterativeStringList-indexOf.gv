@@ -1,0 +1,26 @@
+digraph G {
+"4 : this.head = null"
+"4 : this.head = null" -> "136 : cur = this.head"
+"5 : this.counter = 0"
+"135 : cur = null"
+"135 : cur = null" -> "136 : cur = this.head" [style=dashed]
+"136 : cur = this.head"
+"136 : cur = this.head" -> "141 : cur = cur.next" [style=dashed]
+"137 : i = 0"
+"137 : i = 0" -> "137 : i = i + 1"
+"137 : i = 0" -> "137 : @temp10 = i"
+"137 : i = 0" -> "137 : i < size()"
+"137 : i = 0" -> "137 : i = i + 1" [style=dashed]
+"137 : i < size()"
+"138 : cur.element.equals(element, )"
+"143 : new IndexOutOfBoundsException(\"Element does not match\", )"
+"141 : cur = cur.next"
+"141 : cur = cur.next" -> "141 : cur = cur.next" [style=dashed]
+"137 : @temp10 = i"
+"137 : @temp10 = i" -> "137 : @temp10 = i" [style=dashed]
+"137 : i = i + 1"
+"137 : i = i + 1" -> "137 : i = i + 1"
+"137 : i = i + 1" -> "137 : @temp10 = i"
+"137 : i = i + 1" -> "137 : i < size()"
+"137 : i = i + 1" -> "137 : i = i + 1" [style=dashed]
+}

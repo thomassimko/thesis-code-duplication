@@ -1,0 +1,6 @@
+digraph G {
+"7 : this.head = null"
+"7 : this.head = null" -> "67 : this.head = removeHelper(index, this.head, )"
+"7 : this.head = null" -> "67 : this.head = removeHelper(index, this.head, )" [style=dashed]
+"67 : this.head = removeHelper(index, this.head, )"
+}

@@ -1,0 +1,7 @@
+digraph G {
+"9 : this.reader = null"
+"10 : this.textField = null"
+"11 : this.rss = null"
+"20 : this.reader.addSource(this.textField.getText(), )"
+"21 : this.textField.setText(\"\", )"
+}

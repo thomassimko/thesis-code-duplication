@@ -1,0 +1,15 @@
+digraph G {
+"8 : oneDollar = getDollars()"
+"8 : oneDollar = getDollars()" -> "12 : oneDollar - twoDollar < 0 || oneDollar - twoDollar > 0"
+"8 : oneDollar = getDollars()" -> "14 : oneDollar - twoDollar"
+"9 : twoDollar = getDollars()"
+"9 : twoDollar = getDollars()" -> "12 : oneDollar - twoDollar < 0 || oneDollar - twoDollar > 0"
+"9 : twoDollar = getDollars()" -> "14 : oneDollar - twoDollar"
+"10 : oneCents = getCents()"
+"10 : oneCents = getCents()" -> "16 : oneCents - twoCents"
+"11 : twoCents = getCents()"
+"11 : twoCents = getCents()" -> "16 : oneCents - twoCents"
+"12 : oneDollar - twoDollar < 0 || oneDollar - twoDollar > 0"
+"14 : oneDollar - twoDollar"
+"16 : oneCents - twoCents"
+}

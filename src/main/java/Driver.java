@@ -65,7 +65,7 @@ public class Driver {
         generateReachingDefinitions(allBlocks, starts);
         //printReachingDefinitions(allBlocks);
 
-        //printPDG(starts);
+        printPDG(starts);
 
         return GraphComparison.compareGraphs(allExp);
     }
@@ -159,11 +159,12 @@ public class Driver {
 
             for (StartBlock method : methods) {
 
-                String path = method.getFile();
+                String path = method.getFile().replace("../", "");
                 String fileName = path.replace(".java", "") + "-" + method.getFunctionName() + ".gv";
                 String dir = new File("pdg/source/" + fileName).getParent();
                 new File(dir).mkdirs();
                 FileWriter writer = new FileWriter(new File("pdg/source/" + fileName));
+                System.out.println("Writing pdg to: pdg/source/" + fileName);
 
                 writer.write("digraph G {\n");
 

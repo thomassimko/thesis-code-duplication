@@ -1,0 +1,9 @@
+digraph G {
+"5 : this.element = null"
+"6 : this.next = null"
+"68 : index < 0"
+"70 : new IndexOutOfBoundsException()"
+"72 : index == 0"
+"74 : this"
+"76 : this.next.get(index - 1, )"
+}

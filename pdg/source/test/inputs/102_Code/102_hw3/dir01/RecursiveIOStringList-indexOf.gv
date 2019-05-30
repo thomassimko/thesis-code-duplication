@@ -1,0 +1,6 @@
+digraph G {
+"4 : this.node = null"
+"131 : equals(element, )"
+"133 : ind + 1"
+"135 : indexOf(element, ind + 1, n.next(), )"
+}

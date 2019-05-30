@@ -1,9 +1,0 @@
-digraph G {
-"4 : this.x = 0.0"
-"4 : this.x = 0.0" -> "20 : hyp = Math.sqrt(this.x * this.x + this.y * this.y, )"
-"5 : this.y = 0.0"
-"5 : this.y = 0.0" -> "20 : hyp = Math.sqrt(this.x * this.x + this.y * this.y, )"
-"19 : hyp = 0.0"
-"19 : hyp = 0.0" -> "20 : hyp = Math.sqrt(this.x * this.x + this.y * this.y, )" [style=dashed]
-"20 : hyp = Math.sqrt(this.x * this.x + this.y * this.y, )"
-}

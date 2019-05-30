@@ -1,0 +1,9 @@
+digraph G {
+"30 : lft = new DoubleConstantExpression(10, )"
+"30 : lft = new DoubleConstantExpression(10, )" -> "32 : multexp = new MultiplyExpression(lft, rht, )"
+"31 : rht = new DoubleConstantExpression(-2, )"
+"31 : rht = new DoubleConstantExpression(-2, )" -> "32 : multexp = new MultiplyExpression(lft, rht, )"
+"32 : multexp = new MultiplyExpression(lft, rht, )"
+"33 : Check.check(multexp.evaluate(null, ), 20, )"
+"34 : Check.check(multexp.toString(), \"(10.0 * -2.0)\", )"
+}

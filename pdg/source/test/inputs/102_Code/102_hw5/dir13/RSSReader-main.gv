@@ -1,0 +1,4 @@
+digraph G {
+"138 : test = new RSSReader()"
+"139 : test.setVisible(true, )"
+}

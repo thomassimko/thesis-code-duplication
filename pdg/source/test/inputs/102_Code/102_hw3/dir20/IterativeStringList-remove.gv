@@ -1,0 +1,41 @@
+digraph G {
+"6 : this.head = null"
+"6 : this.head = null" -> "76 : cur = this.head"
+"6 : this.head = null" -> "81 : this.head == null"
+"6 : this.head = null" -> "89 : this.head = cur.getNext()" [style=dashed]
+"76 : cur = this.head"
+"76 : cur = this.head" -> "98 : i < index && cur != null"
+"76 : cur = this.head" -> "102 : cur == null"
+"76 : cur = this.head" -> "100 : cur = cur.getNext()" [style=dashed]
+"77 : removed = null"
+"77 : removed = null" -> "87 : removed = cur.getString()" [style=dashed]
+"77 : removed = null" -> "108 : removed = getString()" [style=dashed]
+"79 : index == 0"
+"81 : this.head == null"
+"83 : new IndexOutOfBoundsException()"
+"87 : removed = cur.getString()"
+"89 : this.head = cur.getNext()"
+"92 : index < 0"
+"94 : new IndexOutOfBoundsException()"
+"98 : i = 1"
+"98 : i = 1" -> "98 : i < index && cur != null"
+"98 : i = 1" -> "98 : i = i + 1"
+"98 : i = 1" -> "98 : @temp2 = i"
+"98 : i = 1" -> "98 : i = i + 1" [style=dashed]
+"98 : i < index && cur != null"
+"100 : cur = cur.getNext()"
+"100 : cur = cur.getNext()" -> "98 : i < index && cur != null"
+"100 : cur = cur.getNext()" -> "102 : cur == null"
+"100 : cur = cur.getNext()" -> "100 : cur = cur.getNext()" [style=dashed]
+"98 : @temp2 = i"
+"98 : @temp2 = i" -> "98 : @temp2 = i" [style=dashed]
+"98 : i = i + 1"
+"98 : i = i + 1" -> "98 : i < index && cur != null"
+"98 : i = i + 1" -> "98 : i = i + 1"
+"98 : i = i + 1" -> "98 : @temp2 = i"
+"98 : i = i + 1" -> "98 : i = i + 1" [style=dashed]
+"102 : cur == null"
+"104 : new IndexOutOfBoundsException()"
+"108 : removed = getString()"
+"109 : cur.setNext(getNext(), )"
+}

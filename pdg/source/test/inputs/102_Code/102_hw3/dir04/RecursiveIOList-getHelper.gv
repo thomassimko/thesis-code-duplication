@@ -1,0 +1,6 @@
+digraph G {
+"4 : this.head = null"
+"86 : index == 0"
+"88 : cur.getStr()"
+"91 : getHelper(cur.getNext(), index - 1, )"
+}

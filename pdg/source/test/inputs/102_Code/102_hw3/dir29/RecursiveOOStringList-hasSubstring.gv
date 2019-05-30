@@ -1,0 +1,4 @@
+digraph G {
+"3 : this.first = new ROOEmpty()"
+"60 : new RecursiveOOStringList(this.first.hasSubstring(substring, ), )"
+}

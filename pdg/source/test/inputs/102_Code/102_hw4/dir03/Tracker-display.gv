@@ -1,0 +1,21 @@
+digraph G {
+"8 : this.list = new ArrayList()"
+"94 : j = 0"
+"94 : j = 0" -> "94 : @temp2 = j"
+"94 : j = 0" -> "94 : j < this.list.size()"
+"94 : j = 0" -> "96 : this.list.get(j, ) instanceof InFull"
+"94 : j = 0" -> "94 : j = j + 1"
+"94 : j = 0" -> "94 : j = j + 1" [style=dashed]
+"94 : j < this.list.size()"
+"96 : this.list.get(j, ) instanceof InFull"
+"98 : System.out.println(String.format(\"%1$2tm/%<2td/%<tY \", getDate(), ) + String.format(\"%-15.15s %10s [%s]\", getPayee(), getAmtString(), getCategory(), ), )"
+"104 : System.out.println(String.format(\"%1$2tm/%<2td/%<tY \", getDate(), ) + String.format(\"%-15.15s %10s (%s) [%s]\", getPayee(), getAmtString(), getBalString(), getCategory(), ), )"
+"94 : @temp2 = j"
+"94 : @temp2 = j" -> "94 : @temp2 = j" [style=dashed]
+"94 : j = j + 1"
+"94 : j = j + 1" -> "94 : @temp2 = j"
+"94 : j = j + 1" -> "94 : j < this.list.size()"
+"94 : j = j + 1" -> "96 : this.list.get(j, ) instanceof InFull"
+"94 : j = j + 1" -> "94 : j = j + 1"
+"94 : j = j + 1" -> "94 : j = j + 1" [style=dashed]
+}

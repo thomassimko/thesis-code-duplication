@@ -1,0 +1,10 @@
+digraph G {
+"97 : badSourceList = reader.getBadSources()"
+"97 : badSourceList = reader.getBadSources()" -> "101 : sourcesToPrint = sourcePrintString(badSourceList, )"
+"98 : sourcesToPrint = \"\""
+"98 : sourcesToPrint = \"\"" -> "105 : sourcesToPrint = \"\"" [style=dashed]
+"98 : sourcesToPrint = \"\"" -> "101 : sourcesToPrint = sourcePrintString(badSourceList, )" [style=dashed]
+"99 : badSourceList.size() != 0"
+"101 : sourcesToPrint = sourcePrintString(badSourceList, )"
+"105 : sourcesToPrint = \"\""
+}

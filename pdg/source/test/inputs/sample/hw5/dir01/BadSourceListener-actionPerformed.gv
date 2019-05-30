@@ -1,0 +1,31 @@
+digraph G {
+"10 : this.reeder = null"
+"11 : this.source = null"
+"22 : str = \"\""
+"22 : str = \"\"" -> "26 : str = str + get(i, ) + \"\n\""
+"22 : str = \"\"" -> "28 : this.source.setText(str, )"
+"22 : str = \"\"" -> "26 : str = str + get(i, ) + \"\n\"" [style=dashed]
+"23 : listy = getBadSources()"
+"23 : listy = getBadSources()" -> "24 : Collections.sort(listy, )"
+"24 : Collections.sort(listy, )"
+"25 : i = 0"
+"25 : i = 0" -> "26 : str = str + get(i, ) + \"\n\""
+"25 : i = 0" -> "25 : @temp2 = i"
+"25 : i = 0" -> "25 : i < size()"
+"25 : i = 0" -> "25 : i = i + 1"
+"25 : i = 0" -> "25 : i = i + 1" [style=dashed]
+"25 : i < size()"
+"26 : str = str + get(i, ) + \"\n\""
+"26 : str = str + get(i, ) + \"\n\"" -> "26 : str = str + get(i, ) + \"\n\""
+"26 : str = str + get(i, ) + \"\n\"" -> "28 : this.source.setText(str, )"
+"26 : str = str + get(i, ) + \"\n\"" -> "26 : str = str + get(i, ) + \"\n\"" [style=dashed]
+"25 : @temp2 = i"
+"25 : @temp2 = i" -> "25 : @temp2 = i" [style=dashed]
+"25 : i = i + 1"
+"25 : i = i + 1" -> "26 : str = str + get(i, ) + \"\n\""
+"25 : i = i + 1" -> "25 : @temp2 = i"
+"25 : i = i + 1" -> "25 : i < size()"
+"25 : i = i + 1" -> "25 : i = i + 1"
+"25 : i = i + 1" -> "25 : i = i + 1" [style=dashed]
+"28 : this.source.setText(str, )"
+}

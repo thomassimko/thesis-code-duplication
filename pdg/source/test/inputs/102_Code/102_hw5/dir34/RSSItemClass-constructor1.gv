@@ -1,0 +1,11 @@
+digraph G {
+"6 : this.date = null"
+"6 : this.date = null" -> "11 : this.date = cal" [style=dashed]
+"7 : this.link = null"
+"7 : this.link = null" -> "12 : this.link = links" [style=dashed]
+"8 : this.title = null"
+"8 : this.title = null" -> "13 : this.title = titles" [style=dashed]
+"11 : this.date = cal"
+"12 : this.link = links"
+"13 : this.title = titles"
+}

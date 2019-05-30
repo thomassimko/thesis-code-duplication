@@ -1,0 +1,11 @@
+digraph G {
+"19 : this.expenseList = new LinkedList()"
+"104 : choice == 1"
+"106 : display()"
+"108 : choice == 2"
+"110 : addExpense(scan, )"
+"112 : choice == 3"
+"114 : sort(scan, )"
+"116 : choice == 4"
+"118 : saveExpenses()"
+}

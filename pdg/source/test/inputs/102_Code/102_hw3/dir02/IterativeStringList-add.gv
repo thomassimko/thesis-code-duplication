@@ -1,0 +1,26 @@
+digraph G {
+"5 : this.head = null"
+"5 : this.head = null" -> "34 : cur = this.head"
+"30 : index > size() || index < 0"
+"32 : new IndexOutOfBoundsException()"
+"34 : cur = this.head"
+"34 : cur = this.head" -> "37 : cur = cur.getNext()" [style=dashed]
+"35 : i = 0"
+"35 : i = 0" -> "35 : i < index"
+"35 : i = 0" -> "35 : @temp1 = i"
+"35 : i = 0" -> "35 : i = i + 1"
+"35 : i = 0" -> "35 : i = i + 1" [style=dashed]
+"35 : i < index"
+"37 : cur = cur.getNext()"
+"37 : cur = cur.getNext()" -> "37 : cur = cur.getNext()" [style=dashed]
+"35 : @temp1 = i"
+"35 : @temp1 = i" -> "35 : @temp1 = i" [style=dashed]
+"35 : i = i + 1"
+"35 : i = i + 1" -> "35 : i < index"
+"35 : i = i + 1" -> "35 : @temp1 = i"
+"35 : i = i + 1" -> "35 : i = i + 1"
+"35 : i = i + 1" -> "35 : i = i + 1" [style=dashed]
+"39 : newNode = new IterativeNode(element, cur.getNext(), )"
+"39 : newNode = new IterativeNode(element, cur.getNext(), )" -> "40 : cur.changeNext(newNode, )"
+"40 : cur.changeNext(newNode, )"
+}

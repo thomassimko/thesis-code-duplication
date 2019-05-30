@@ -1,0 +1,16 @@
+digraph G {
+"17 : this.itemList = null"
+"18 : this.sourceList = null"
+"18 : this.sourceList = null" -> "40 : Collections.sort(this.sourceList, new AlphaComparator(), )"
+"18 : this.sourceList = null" -> "29 : s = this.sourceList"
+"19 : this.badSourceList = null"
+"28 : flag = true"
+"28 : flag = true" -> "33 : flag = false" [style=dashed]
+"29 : s = this.sourceList"
+"29 : s = this.sourceList" -> "29 : s = this.sourceList" [style=dashed]
+"31 : s.equals(src, )"
+"33 : flag = false"
+"33 : flag = false" -> "33 : flag = false" [style=dashed]
+"38 : this.sourceList.add(0, src, )"
+"40 : Collections.sort(this.sourceList, new AlphaComparator(), )"
+}

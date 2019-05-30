@@ -1,0 +1,15 @@
+digraph G {
+"4 : this.head = null"
+"4 : this.head = null" -> "190 : cursor = this.head"
+"189 : hasSubString = new IterativeStringList()"
+"190 : cursor = this.head"
+"190 : cursor = this.head" -> "191 : cursor != null"
+"190 : cursor = this.head" -> "197 : cursor = cursor.getNext()" [style=dashed]
+"191 : cursor != null"
+"193 : contains(substring, )"
+"195 : hasSubString.addToEnd(cursor.getValue(), )"
+"197 : cursor = cursor.getNext()"
+"197 : cursor = cursor.getNext()" -> "191 : cursor != null"
+"197 : cursor = cursor.getNext()" -> "197 : cursor = cursor.getNext()" [style=dashed]
+"191 : cursor != null"
+}

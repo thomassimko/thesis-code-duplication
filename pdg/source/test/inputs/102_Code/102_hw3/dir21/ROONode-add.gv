@@ -1,0 +1,17 @@
+digraph G {
+"2 : this.value = null"
+"3 : this.nextLink = null"
+"3 : this.nextLink = null" -> "27 : tmp = this.nextLink"
+"3 : this.nextLink = null" -> "26 : index == 0 && this.nextLink instanceof ROOEmpty"
+"3 : this.nextLink = null" -> "32 : this.nextLink instanceof ROOEmpty"
+"3 : this.nextLink = null" -> "33 : this.nextLink = new ROONode(element, )" [style=dashed]
+"3 : this.nextLink = null" -> "28 : this.nextLink = new ROONode(element, )" [style=dashed]
+"26 : index == 0 && this.nextLink instanceof ROOEmpty"
+"27 : tmp = this.nextLink"
+"27 : tmp = this.nextLink" -> "29 : this.nextLink.linkNext(tmp, )"
+"28 : this.nextLink = new ROONode(element, )"
+"29 : this.nextLink.linkNext(tmp, )"
+"32 : this.nextLink instanceof ROOEmpty"
+"33 : this.nextLink = new ROONode(element, )"
+"36 : this.nextLink.add(index - 1, element, )"
+}

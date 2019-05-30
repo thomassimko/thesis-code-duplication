@@ -1,0 +1,5 @@
+digraph G {
+"19 : this.feed = new TweeterFeedReader()"
+"19 : this.feed = new TweeterFeedReader()" -> "22 : this.feed = feed" [style=dashed]
+"22 : this.feed = feed"
+}

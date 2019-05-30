@@ -1,9 +1,0 @@
-digraph G {
-"3 : this.radius = 0.0"
-"3 : this.radius = 0.0" -> "13 : x = this.radius * Math.cos(this.angle, )"
-"4 : this.angle = 0.0"
-"4 : this.angle = 0.0" -> "13 : x = this.radius * Math.cos(this.angle, )"
-"12 : x = 0.0"
-"12 : x = 0.0" -> "13 : x = this.radius * Math.cos(this.angle, )" [style=dashed]
-"13 : x = this.radius * Math.cos(this.angle, )"
-}

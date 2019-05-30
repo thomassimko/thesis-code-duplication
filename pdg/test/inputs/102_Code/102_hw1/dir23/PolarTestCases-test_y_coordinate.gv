@@ -1,6 +1,0 @@
-digraph G {
-"14 : pt = new PolarPoint(5.0, Math.PI / 2, )"
-"15 : Check.check(pt.yCoordinate(), 5.0, )"
-"16 : pt2 = new PolarPoint(0.0, 0.0, )"
-"17 : Check.check(pt2.yCoordinate(), 0.0, )"
-}

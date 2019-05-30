@@ -1,8 +1,0 @@
-digraph G {
-"6 : this.x_coord = 0.0"
-"6 : this.x_coord = 0.0" -> "58 : p1 = new CartesianPoint(-1 * this.y_coord, this.x_coord, )"
-"7 : this.y_coord = 0.0"
-"7 : this.y_coord = 0.0" -> "58 : p1 = new CartesianPoint(-1 * this.y_coord, this.x_coord, )"
-"8 : this.radius = 0.0"
-"58 : p1 = new CartesianPoint(-1 * this.y_coord, this.x_coord, )"
-}

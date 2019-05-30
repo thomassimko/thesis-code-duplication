@@ -1,0 +1,5 @@
+digraph G {
+"4 : this.stringypoo = null"
+"5 : this.next = null"
+"9 : next()"
+}

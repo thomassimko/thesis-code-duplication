@@ -1,0 +1,7 @@
+digraph G {
+"6 : this.comp1 = null"
+"7 : this.comp2 = null"
+"19 : this.comp1.compare(lft, rht, ) == 0"
+"21 : this.comp2.compare(lft, rht, )"
+"25 : this.comp1.compare(lft, rht, )"
+}

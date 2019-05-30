@@ -127,6 +127,56 @@ Begin analysis
     -
 
 
+-----------------
+
+IntelliJ I can't get any duplicated to be reported
+
+Sonarqube grabs over one function worth of code and says is duplicate of another file even though it supposedly uses AST.  They force order of methods? Unable to detect any clones then...
+
+mvn sonar:sonar \
+  -Dsonar.projectKey=test1 \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.login=b5a3241635fd13016104425d03ab06dd64193712 \
+  -Dsonar.inclusions=**/TestCase1.java
+
+
+create test case where fails
+create test case where mine detects, but not actually a clone
+
+inaccuracy
+
+come up with name
+
+talk about temporary variables
+
+Results:
+
+write sections for simian vs my tool
+write subsections for each test case
+section for 102 code
+shortcomings
+issues comparing with other tools
+
+Future Work:
+
+lambda
+switch statements to if
+ternary to if
+
+
+Conclusion:
+
+Summarize
+
+
+
+------------------
+
+for the pdg graph I did it based on what my program would create. Should I do it for a basic PDG?
+
+
+
+
 
 
 

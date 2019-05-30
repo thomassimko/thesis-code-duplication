@@ -1,7 +1,0 @@
-digraph G {
-"4 : this.x = 0.0"
-"4 : this.x = 0.0" -> "31 : p90 = new CartesianPoint(-this.y, this.x, )"
-"4 : this.y = 0.0"
-"4 : this.y = 0.0" -> "31 : p90 = new CartesianPoint(-this.y, this.x, )"
-"31 : p90 = new CartesianPoint(-this.y, this.x, )"
-}

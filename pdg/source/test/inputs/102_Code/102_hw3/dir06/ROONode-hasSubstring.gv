@@ -1,0 +1,8 @@
+digraph G {
+"5 : this.next = null"
+"6 : this.string = null"
+"6 : this.string = null" -> "116 : newList.add(0, this.string, )"
+"113 : newList = this.next.hasSubstring(substring, )"
+"114 : this.string.indexOf(substring, ) >= 0"
+"116 : newList.add(0, this.string, )"
+}

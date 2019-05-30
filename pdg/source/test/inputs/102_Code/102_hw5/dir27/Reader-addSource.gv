@@ -1,0 +1,5 @@
+digraph G {
+"21 : this.srcs = new ArrayList()"
+"22 : this.bads = new ArrayList()"
+"31 : this.srcs.add(\"http://search.twitter.com/search.rss?q=from:\" + src, )"
+}

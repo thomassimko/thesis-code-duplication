@@ -1,0 +1,5 @@
+digraph G {
+"4 : this.first = null"
+"4 : this.first = null" -> "11 : this.first = new IterativeNode(firstString, )" [style=dashed]
+"11 : this.first = new IterativeNode(firstString, )"
+}

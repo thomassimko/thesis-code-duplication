@@ -1,0 +1,28 @@
+digraph G {
+"231 : System.out.print(\"Keys to sort by (amount, category, date, payee): \", )"
+"232 : sort = sc.nextLine()"
+"233 : sortSplit = sort.split(\" \", )"
+"234 : sortList = new ArrayList()"
+"234 : sortList = new ArrayList()" -> "239 : Collections.sort(expenses, recursiveSortHelper(sortList, ), )"
+"235 : length = sortSplit.length"
+"235 : length = sortSplit.length" -> "236 : i < length"
+"236 : i = 0"
+"236 : i = 0" -> "236 : i < length"
+"236 : i = 0" -> "236 : i = i + 1"
+"236 : i = 0" -> "237 : sortList.add(sortSplit[i], )"
+"236 : i = 0" -> "236 : @temp2 = i"
+"236 : i = 0" -> "236 : i = i + 1" [style=dashed]
+"236 : i < length"
+"237 : sortList.add(sortSplit[i], )"
+"236 : @temp2 = i"
+"236 : @temp2 = i" -> "236 : @temp2 = i" [style=dashed]
+"236 : i = i + 1"
+"236 : i = i + 1" -> "236 : i < length"
+"236 : i = i + 1" -> "236 : i = i + 1"
+"236 : i = i + 1" -> "237 : sortList.add(sortSplit[i], )"
+"236 : i = i + 1" -> "236 : @temp2 = i"
+"236 : i = i + 1" -> "236 : i = i + 1" [style=dashed]
+"239 : Collections.sort(expenses, recursiveSortHelper(sortList, ), )"
+"240 : System.out.println(\"Sorting finished.\", )"
+"241 : printMenu()"
+}

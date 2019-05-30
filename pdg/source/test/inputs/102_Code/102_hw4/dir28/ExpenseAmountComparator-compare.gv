@@ -1,0 +1,11 @@
+digraph G {
+"8 : e1.getDollars() > e2.getDollars()"
+"10 : 1"
+"12 : e1.getDollars() == e2.getDollars()"
+"14 : e1.getCents() > e2.getCents()"
+"16 : 1"
+"18 : e1.getCents() == e2.getCents()"
+"20 : 0"
+"24 : 1"
+"29 : 1"
+}

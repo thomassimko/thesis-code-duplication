@@ -1,0 +1,26 @@
+digraph G {
+"7 : this.head = null"
+"7 : this.head = null" -> "19 : this.head == null"
+"7 : this.head = null" -> "25 : this.temp = this.head"
+"7 : this.head = null" -> "21 : this.head = n" [style=dashed]
+"8 : this.temp = null"
+"8 : this.temp = null" -> "25 : this.temp = this.head" [style=dashed]
+"9 : this.counter = 0"
+"9 : this.counter = 0" -> "32 : @temp1 = this.counter"
+"9 : this.counter = 0" -> "32 : this.counter = this.counter + 1"
+"9 : this.counter = 0" -> "32 : this.counter = this.counter + 1" [style=dashed]
+"18 : n = new Node(element, null, )"
+"18 : n = new Node(element, null, )" -> "21 : this.head = n"
+"18 : n = new Node(element, null, )" -> "30 : this.temp.setNext(n, )"
+"19 : this.head == null"
+"21 : this.head = n"
+"25 : this.temp = this.head"
+"25 : this.temp = this.head" -> "28 : this.temp = temp.next" [style=dashed]
+"26 : temp.next != null"
+"28 : this.temp = temp.next"
+"28 : this.temp = temp.next" -> "28 : this.temp = temp.next" [style=dashed]
+"26 : temp.next != null"
+"30 : this.temp.setNext(n, )"
+"32 : @temp1 = this.counter"
+"32 : this.counter = this.counter + 1"
+}

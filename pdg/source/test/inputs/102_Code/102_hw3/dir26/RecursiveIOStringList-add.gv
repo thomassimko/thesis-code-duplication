@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.first = new RIOEmpty()"
+"4 : this.first = new RIOEmpty()" -> "32 : mAdd(index, element, this.first, )"
+"30 : index > size() || index < 0"
+"31 : new IndexOutOfBoundsException()"
+"32 : mAdd(index, element, this.first, )"
+}

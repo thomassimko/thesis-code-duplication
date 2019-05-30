@@ -1,0 +1,11 @@
+digraph G {
+"13 : this.feedReader = null"
+"13 : this.feedReader = null" -> "19 : this.feedReader = feedReader" [style=dashed]
+"14 : this.itemArea = null"
+"14 : this.itemArea = null" -> "20 : this.itemArea = itemArea" [style=dashed]
+"15 : this.sourceArea = null"
+"15 : this.sourceArea = null" -> "21 : this.sourceArea = sourceArea" [style=dashed]
+"19 : this.feedReader = feedReader"
+"20 : this.itemArea = itemArea"
+"21 : this.sourceArea = sourceArea"
+}

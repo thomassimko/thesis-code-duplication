@@ -1,7 +1,0 @@
-digraph G {
-"4 : this.lft = null"
-"5 : this.rht = null"
-"6 : this.product = 0.0"
-"6 : this.product = 0.0" -> "16 : this.product = this.lft.evaluate(bindings, ) * this.rht.evaluate(bindings, )" [style=dashed]
-"16 : this.product = this.lft.evaluate(bindings, ) * this.rht.evaluate(bindings, )"
-}

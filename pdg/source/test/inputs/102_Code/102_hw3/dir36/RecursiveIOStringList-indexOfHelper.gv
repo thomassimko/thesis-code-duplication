@@ -1,0 +1,9 @@
+digraph G {
+"5 : this.head = null"
+"6 : this.temp = null"
+"123 : temp instanceof RIONode"
+"125 : equals(element, )"
+"127 : 0"
+"131 : 1 + indexOfHelper(element, temp.next(), )"
+"136 : new UnsupportedOperationException(\"No Such Element\", )"
+}

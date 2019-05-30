@@ -1,5 +1,0 @@
-digraph G {
-"4 : this.id = null"
-"5 : this.e = null"
-"22 : toString()"
-}

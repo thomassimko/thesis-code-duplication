@@ -1,0 +1,9 @@
+digraph G {
+"4 : this.string = null"
+"5 : this.next = null"
+"5 : this.next = null" -> "39 : this.next = getNext()" [style=dashed]
+"36 : index == 1"
+"38 : tmp = getValue()"
+"39 : this.next = getNext()"
+"44 : remove(index - 1, )"
+}

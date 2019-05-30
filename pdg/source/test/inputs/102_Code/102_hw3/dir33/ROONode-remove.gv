@@ -1,0 +1,9 @@
+digraph G {
+"5 : this.val = null"
+"6 : this.next = null"
+"87 : temp = cur.getNext()"
+"87 : temp = cur.getNext()" -> "95 : n = remove(index - 1, temp, )"
+"88 : index == 1"
+"90 : cur.setNext(temp.getNext(), )"
+"95 : n = remove(index - 1, temp, )"
+}

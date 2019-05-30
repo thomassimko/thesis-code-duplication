@@ -1,0 +1,13 @@
+digraph G {
+"4 : this.value = null"
+"5 : this.next = null"
+"5 : this.next = null" -> "59 : this.next = this.next.remove(index - 1, )"
+"5 : this.next = null" -> "53 : n = this.next"
+"5 : this.next = null" -> "54 : this.next = getNext()" [style=dashed]
+"5 : this.next = null" -> "59 : this.next = this.next.remove(index - 1, )" [style=dashed]
+"51 : index == 0"
+"53 : n = this.next"
+"54 : this.next = getNext()"
+"59 : this.next = this.next.remove(index - 1, )"
+"60 : this"
+}

@@ -1,0 +1,17 @@
+digraph G {
+"3 : this.cents = 0"
+"3 : this.cents = 0" -> "14 : this.cents = Integer.parseInt(this.sCents, )" [style=dashed]
+"4 : this.dollars = 0"
+"4 : this.dollars = 0" -> "15 : this.dollars = Integer.parseInt(this.sDollars, )" [style=dashed]
+"6 : this.sCents = null"
+"6 : this.sCents = null" -> "12 : this.sCents = splitting[1]" [style=dashed]
+"7 : this.sDollars = null"
+"7 : this.sDollars = null" -> "13 : this.sDollars = splitting[0]" [style=dashed]
+"11 : splitting = amount.split(\"\\.\", )"
+"12 : this.sCents = splitting[1]"
+"12 : this.sCents = splitting[1]" -> "14 : this.cents = Integer.parseInt(this.sCents, )"
+"13 : this.sDollars = splitting[0]"
+"13 : this.sDollars = splitting[0]" -> "15 : this.dollars = Integer.parseInt(this.sDollars, )"
+"14 : this.cents = Integer.parseInt(this.sCents, )"
+"15 : this.dollars = Integer.parseInt(this.sDollars, )"
+}

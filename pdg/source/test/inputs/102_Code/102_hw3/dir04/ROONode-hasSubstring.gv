@@ -1,0 +1,15 @@
+digraph G {
+"5 : this.str = null"
+"6 : this.next = null"
+"163 : cur = this"
+"163 : cur = this" -> "166 : cur instanceof ROONode"
+"163 : cur = this" -> "172 : cur = cur.getNext()" [style=dashed]
+"164 : hasSubstring = new RecursiveOOStringList()"
+"166 : cur instanceof ROONode"
+"168 : contains(substring, )"
+"170 : hasSubstring.addToEnd(cur.getStr(), )"
+"172 : cur = cur.getNext()"
+"172 : cur = cur.getNext()" -> "166 : cur instanceof ROONode"
+"172 : cur = cur.getNext()" -> "172 : cur = cur.getNext()" [style=dashed]
+"166 : cur instanceof ROONode"
+}

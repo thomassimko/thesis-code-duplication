@@ -1,0 +1,51 @@
+digraph G {
+"23 : this.gui = this"
+"24 : this.feedReader = null"
+"25 : this.source = null"
+"26 : this.data = null"
+"27 : this.sources = null"
+"82 : this.sources.setText(\"\", )"
+"83 : this.data.setText(\"\", )"
+"84 : sourceList = new ArrayList()"
+"84 : sourceList = new ArrayList()" -> "89 : sourceList = this.feedReader.getSources()" [style=dashed]
+"85 : items = new ArrayList()"
+"85 : items = new ArrayList()" -> "90 : items = this.feedReader.retrieveFeedItems()" [style=dashed]
+"86 : src = this.source.getText()"
+"86 : src = this.source.getText()" -> "88 : this.feedReader.addSource(src, )"
+"87 : this.source.setText(\"\", )"
+"88 : this.feedReader.addSource(src, )"
+"89 : sourceList = this.feedReader.getSources()"
+"89 : sourceList = this.feedReader.getSources()" -> "103 : s = sourceList"
+"89 : sourceList = this.feedReader.getSources()" -> "102 : Collections.sort(sourceList, )"
+"90 : items = this.feedReader.retrieveFeedItems()"
+"92 : i = 0"
+"92 : i = 0" -> "92 : i = i + 1"
+"92 : i = 0" -> "92 : @temp2 = i"
+"92 : i = 0" -> "92 : i < items.size()"
+"92 : i = 0" -> "92 : i = i + 1" [style=dashed]
+"92 : i < items.size()"
+"94 : title = getTitle()"
+"94 : title = getTitle()" -> "97 : this.data.append(title + \"\n\", )"
+"94 : title = getTitle()" -> "94 : title = getTitle()" [style=dashed]
+"95 : date = getStringDate()"
+"95 : date = getStringDate()" -> "98 : this.data.append(date + \"\n\", )"
+"95 : date = getStringDate()" -> "95 : date = getStringDate()" [style=dashed]
+"96 : link = getLink()"
+"96 : link = getLink()" -> "99 : this.data.append(link + \"\n\n\", )"
+"96 : link = getLink()" -> "96 : link = getLink()" [style=dashed]
+"97 : this.data.append(title + \"\n\", )"
+"98 : this.data.append(date + \"\n\", )"
+"99 : this.data.append(link + \"\n\n\", )"
+"92 : @temp2 = i"
+"92 : @temp2 = i" -> "92 : @temp2 = i" [style=dashed]
+"92 : i = i + 1"
+"92 : i = i + 1" -> "92 : i = i + 1"
+"92 : i = i + 1" -> "92 : @temp2 = i"
+"92 : i = i + 1" -> "92 : i < items.size()"
+"92 : i = i + 1" -> "92 : i = i + 1" [style=dashed]
+"102 : Collections.sort(sourceList, )"
+"103 : s = sourceList"
+"103 : s = sourceList" -> "105 : this.sources.append(s + \"\n\", )"
+"103 : s = sourceList" -> "103 : s = sourceList" [style=dashed]
+"105 : this.sources.append(s + \"\n\", )"
+}

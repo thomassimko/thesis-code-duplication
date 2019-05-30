@@ -1,0 +1,19 @@
+digraph G {
+"23 : this.topText = null"
+"24 : this.addButton = null"
+"25 : this.refreshButton = null"
+"26 : this.badSourcesButton = null"
+"27 : this.cleanSourcesButton = null"
+"28 : this.rssItemText = null"
+"29 : this.sourcesText = null"
+"31 : this.reader = null"
+"31 : this.reader = null" -> "36 : this.reader = reader" [style=dashed]
+"32 : this.gui = this"
+"36 : this.reader = reader"
+"38 : this.setSize(650, 750, )"
+"39 : this.setResizable(false, )"
+"40 : this.setDefaultCloseOperation(this.EXIT_ON_CLOSE, )"
+"41 : this.setTitle(\"\", )"
+"43 : panel = setMain()"
+"45 : this.setVisible(true, )"
+}

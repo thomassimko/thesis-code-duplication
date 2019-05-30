@@ -1,0 +1,15 @@
+digraph G {
+"16 : this.list = null"
+"17 : this.badSources = null"
+"18 : this.RSSItemList = null"
+"117 : df = new SimpleDateFormat(\"EEE, d MMM yyyy HH:mm:ss Z\", )"
+"118 : newDf = new SimpleDateFormat(\"MM/dd/yyyy HH:mm\", )"
+"120 : d = df.parse(date, )"
+"120 : d = df.parse(date, )" -> "121 : newDate = newDf.format(d, )"
+"121 : newDate = newDf.format(d, )"
+"121 : newDate = newDf.format(d, )" -> "122 : newD = newDf.parse(newDate, )"
+"122 : newD = newDf.parse(newDate, )"
+"122 : newD = newDf.parse(newDate, )" -> "125 : c.setTime(newD, )"
+"124 : c = Calendar.getInstance()"
+"125 : c.setTime(newD, )"
+}

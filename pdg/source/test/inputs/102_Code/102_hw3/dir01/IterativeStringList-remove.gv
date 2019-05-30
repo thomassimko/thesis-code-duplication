@@ -1,0 +1,39 @@
+digraph G {
+"5 : this.node = null"
+"5 : this.node = null" -> "49 : n = this.node"
+"5 : this.node = null" -> "45 : n = this.node"
+"5 : this.node = null" -> "46 : this.node = this.node.next()" [style=dashed]
+"43 : index == 0"
+"45 : n = this.node"
+"46 : this.node = this.node.next()"
+"46 : this.node = this.node.next()" -> "49 : n = this.node"
+"47 : n.str()"
+"49 : n = this.node"
+"49 : n = this.node" -> "49 : n = this.node" [style=dashed]
+"49 : n = this.node" -> "52 : n = n.next()" [style=dashed]
+"50 : i = index"
+"50 : i = index" -> "50 : i > 1"
+"50 : i = index" -> "50 : i = i - 1"
+"50 : i = index" -> "50 : i = index" [style=dashed]
+"50 : i = index" -> "50 : i = i - 1" [style=dashed]
+"50 : i > 1"
+"52 : n = n.next()"
+"52 : n = n.next()" -> "49 : n = this.node" [style=dashed]
+"52 : n = n.next()" -> "52 : n = n.next()" [style=dashed]
+"53 : n.next() == null"
+"55 : ret = null"
+"55 : ret = null" -> "57 : ret = n.next()" [style=dashed]
+"56 : nn = next()"
+"56 : nn = next()" -> "58 : n.setNext(nn, )"
+"56 : nn = next()" -> "56 : nn = next()" [style=dashed]
+"57 : ret = n.next()"
+"57 : ret = n.next()" -> "55 : ret = null" [style=dashed]
+"58 : n.setNext(nn, )"
+"59 : ret.str()"
+"53 : new NoSuchElementException()"
+"50 : i = i - 1"
+"50 : i = i - 1" -> "50 : i > 1"
+"50 : i = i - 1" -> "50 : i = i - 1"
+"50 : i = i - 1" -> "50 : i = index" [style=dashed]
+"50 : i = i - 1" -> "50 : i = i - 1" [style=dashed]
+}

@@ -1,0 +1,10 @@
+digraph G {
+"7 : this.date = null"
+"8 : this.payee = null"
+"9 : this.category = null"
+"10 : this.amtDollars = 0"
+"10 : this.amtDollars = 0" -> "38 : this.amtDollars + \".\" + this.amtCents"
+"10 : this.amtCents = 0"
+"10 : this.amtCents = 0" -> "38 : this.amtDollars + \".\" + this.amtCents"
+"38 : this.amtDollars + \".\" + this.amtCents"
+}

@@ -1,7 +1,0 @@
-digraph G {
-"4 : this.x_coord = 0.0"
-"4 : this.x_coord = 0.0" -> "39 : Math.atan2(this.y_coord, this.x_coord, )"
-"4 : this.y_coord = 0.0"
-"4 : this.y_coord = 0.0" -> "39 : Math.atan2(this.y_coord, this.x_coord, )"
-"39 : Math.atan2(this.y_coord, this.x_coord, )"
-}

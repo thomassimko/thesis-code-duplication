@@ -1,0 +1,24 @@
+digraph G {
+"18 : this.userInput = new Scanner(System.in, )"
+"173 : out = new File(\"StoredExpenses.txt\", )"
+"175 : writer = new PrintWriter(out, )"
+"175 : writer = new PrintWriter(out, )" -> "179 : list.get(i, ).save(writer, )"
+"176 : size = list.size()"
+"176 : size = list.size()" -> "177 : i < size"
+"177 : i = 0"
+"177 : i = 0" -> "177 : @temp2 = i"
+"177 : i = 0" -> "177 : i < size"
+"177 : i = 0" -> "177 : i = i + 1"
+"177 : i = 0" -> "177 : i = i + 1" [style=dashed]
+"177 : i < size"
+"179 : list.get(i, ).save(writer, )"
+"177 : @temp2 = i"
+"177 : @temp2 = i" -> "177 : @temp2 = i" [style=dashed]
+"177 : i = i + 1"
+"177 : i = i + 1" -> "177 : @temp2 = i"
+"177 : i = i + 1" -> "177 : i < size"
+"177 : i = i + 1" -> "177 : i = i + 1"
+"177 : i = i + 1" -> "177 : i = i + 1" [style=dashed]
+"181 : writer.close()"
+"184 : System.out.println(\"The file cannot be found\", )"
+}

@@ -1,0 +1,5 @@
+digraph G {
+"5 : this.bindlist = null"
+"5 : this.bindlist = null" -> "9 : this.bindlist = new ArrayList()" [style=dashed]
+"9 : this.bindlist = new ArrayList()"
+}

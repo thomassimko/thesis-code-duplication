@@ -1,0 +1,24 @@
+digraph G {
+"7 : this.date = null"
+"7 : this.date = null" -> "19 : this.date = date" [style=dashed]
+"8 : this.dollarAmount = 0"
+"8 : this.dollarAmount = 0" -> "20 : this.dollarAmount = dollarAmount" [style=dashed]
+"9 : this.centAmount = 0"
+"9 : this.centAmount = 0" -> "21 : this.centAmount = centAmount" [style=dashed]
+"10 : this.paidTo = null"
+"10 : this.paidTo = null" -> "22 : this.paidTo = paidTo" [style=dashed]
+"11 : this.category = null"
+"11 : this.category = null" -> "23 : this.category = category" [style=dashed]
+"12 : this.remainingDollar = 0"
+"12 : this.remainingDollar = 0" -> "24 : this.remainingDollar = remainingDollar" [style=dashed]
+"13 : this.remainingCent = 0"
+"13 : this.remainingCent = 0" -> "25 : this.remainingCent = remainingCent" [style=dashed]
+"14 : this.type = \"partial\""
+"19 : this.date = date"
+"20 : this.dollarAmount = dollarAmount"
+"21 : this.centAmount = centAmount"
+"22 : this.paidTo = paidTo"
+"23 : this.category = category"
+"24 : this.remainingDollar = remainingDollar"
+"25 : this.remainingCent = remainingCent"
+}

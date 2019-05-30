@@ -1,0 +1,5 @@
+digraph G {
+"2 : this.value = null"
+"3 : this.nextLink = null"
+"65 : this.nextLink.size() + 1"
+}

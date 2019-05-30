@@ -1,0 +1,12 @@
+digraph G {
+"4 : this.string = null"
+"5 : this.next = null"
+"5 : this.next = null" -> "111 : n = this.next"
+"5 : this.next = null" -> "112 : this.next = new ROONode(element, )" [style=dashed]
+"109 : index == 1"
+"111 : n = this.next"
+"111 : n = this.next" -> "113 : this.next.setNext(n, )"
+"112 : this.next = new ROONode(element, )"
+"113 : this.next.setNext(n, )"
+"117 : this.next.add(index - 1, element, )"
+}

@@ -1,0 +1,20 @@
+digraph G {
+"7 : this.head = null"
+"7 : this.head = null" -> "139 : cur = this.head"
+"139 : cur = this.head"
+"139 : cur = this.head" -> "141 : cur.getNext() != null"
+"140 : index = 0"
+"140 : index = 0" -> "149 : @temp4 = index"
+"140 : index = 0" -> "149 : index = index + 1"
+"140 : index = 0" -> "149 : index = index + 1" [style=dashed]
+"141 : cur.getNext() != null"
+"143 : equals(element, )"
+"152 : new NoSuchElementException()"
+"149 : @temp4 = index"
+"149 : @temp4 = index" -> "149 : @temp4 = index" [style=dashed]
+"149 : index = index + 1"
+"149 : index = index + 1" -> "149 : @temp4 = index"
+"149 : index = index + 1" -> "149 : index = index + 1"
+"149 : index = index + 1" -> "149 : index = index + 1" [style=dashed]
+"141 : cur.getNext() != null"
+}

@@ -1,5 +1,0 @@
-digraph G {
-"3 : this.value = 0.0"
-"3 : this.value = 0.0" -> "14 : Double.toString(this.value, )"
-"14 : Double.toString(this.value, )"
-}

@@ -1,0 +1,10 @@
+digraph G {
+"7 : this.head = null"
+"123 : cur instanceof RIOEmpty"
+"125 : new NoSuchElementException()"
+"129 : element.equals(cur.getString(), )"
+"134 : @temp7 = index"
+"134 : index = index + 1"
+"134 : index = index + 1" -> "135 : indexOfHelper(element, cur.getNext(), index, )"
+"135 : indexOfHelper(element, cur.getNext(), index, )"
+}

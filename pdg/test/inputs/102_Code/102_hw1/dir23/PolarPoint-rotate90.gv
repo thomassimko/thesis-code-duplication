@@ -1,9 +1,0 @@
-digraph G {
-"4 : this.rad = 0.0"
-"4 : this.rad = 0.0" -> "49 : pt = new PolarPoint(this.rad, newAng, )"
-"5 : this.ang = 0.0"
-"5 : this.ang = 0.0" -> "48 : newAng = this.ang + Math.PI / 2"
-"48 : newAng = this.ang + Math.PI / 2"
-"48 : newAng = this.ang + Math.PI / 2" -> "49 : pt = new PolarPoint(this.rad, newAng, )"
-"49 : pt = new PolarPoint(this.rad, newAng, )"
-}

@@ -51,19 +51,33 @@ public class GraphComparison {
         while(mappings.size() > 0) {
             Mapping map = mappings.poll();
             boolean isSubMap = false;
-            //System.out.println(map.size());
 
-            //Check if they are the same
-            if(map.getKeyFile().equals(map.getValueFile()) && map.getKeyMin() == map.getValueMin() && map.getKeyMax() == map.getValueMax()) {
-                isSubMap = true;
-            } else {
-                //if one is a subset of the other map
-                for (Mapping filteredMap : mapListMask) {
+            Set<Expression> keys = new HashSet<>();
+            Set<Expression> values = new HashSet<>();
 
-                    if (filteredMap.isSubMapping(map)) {
+            for(Map.Entry<Expression, Expression> entry: map.getMap().entrySet()) {
+                keys.add(entry.getKey());
+                values.add(entry.getValue());
+//                System.out.println(entry.getKey() + " : " + entry.getValue());
+            }
+
+            //Check if the keys and values overlap
+            loop:
+            for(Expression key : keys) {
+                for(Expression value : values) {
+                    if(key.getFile().equals(value.getFile()) && key.getLine() == value.getLine()) {
                         isSubMap = true;
-                        break;
+                        break loop;
                     }
+                }
+            }
+
+            //if one is a subset of the other map
+            for (int i = 0; i < filteredMapList.size() && !isSubMap; i++) {
+
+                Mapping filteredMap = filteredMapList.get(i);
+                if (filteredMap.isSubMapping(map)) {
+                    isSubMap = true;
                 }
             }
 

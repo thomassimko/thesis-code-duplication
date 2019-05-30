@@ -115,14 +115,17 @@ public class MyStatementVisitor extends Java8BaseVisitor<Statement> {
             Statement stmt = null;
             List<Statement> updateStatements = new ArrayList<Statement>();
 
-            if(forStmt.basicForStatement().forInit().localVariableDeclaration() != null) {
-                declaration = Driver.declarationVisitor.visitLocalVariableDeclaration(
-                                forStmt.basicForStatement().forInit().localVariableDeclaration()).get(0);
-            }
-            if (forStmt.basicForStatement().forInit().statementExpressionList() != null ) {
-                for(Java8Parser.StatementExpressionContext stCtx : forStmt.basicForStatement().forInit().statementExpressionList().statementExpression()) {
-                    Statement initStmt = new ExpressionStatement(Driver.currentFileName, forStmt.start.getLine(), Driver.expressionVisitor.visitStatementExpression(stCtx));
-                    initStatements.add(initStmt);
+            if(forStmt.basicForStatement().forInit() != null) {
+
+                if (forStmt.basicForStatement().forInit().localVariableDeclaration() != null) {
+                    declaration = Driver.declarationVisitor.visitLocalVariableDeclaration(
+                            forStmt.basicForStatement().forInit().localVariableDeclaration()).get(0);
+                }
+                if (forStmt.basicForStatement().forInit().statementExpressionList() != null) {
+                    for (Java8Parser.StatementExpressionContext stCtx : forStmt.basicForStatement().forInit().statementExpressionList().statementExpression()) {
+                        Statement initStmt = new ExpressionStatement(Driver.currentFileName, forStmt.start.getLine(), Driver.expressionVisitor.visitStatementExpression(stCtx));
+                        initStatements.add(initStmt);
+                    }
                 }
             }
             if(forStmt.basicForStatement().expression() != null) {

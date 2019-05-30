@@ -1,0 +1,5 @@
+digraph G {
+"9 : o1.getDollarAmount() == o2.getDollarAmount()"
+"11 : o1.getCentAmount() - o2.getCentAmount()"
+"13 : o1.getDollarAmount() - o2.getDollarAmount()"
+}

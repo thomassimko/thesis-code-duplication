@@ -1,0 +1,25 @@
+digraph G {
+"2 : this.head = null"
+"2 : this.head = null" -> "116 : this.iter.equals(this.head, ) && this.iter.next() instanceof RIOEmpty"
+"2 : this.head = null" -> "132 : this.iter = this.head"
+"2 : this.iter = null"
+"2 : this.iter = null" -> "124 : this.iter = this.iter.next()" [style=dashed]
+"2 : this.iter = null" -> "132 : this.iter = this.head" [style=dashed]
+"2 : this.iterPrev = null"
+"116 : this.iter.equals(this.head, ) && this.iter.next() instanceof RIOEmpty"
+"117 : indexOf(prefix, ) == 0"
+"118 : s = startsWith(prefix, )"
+"119 : s.add(0, this.iter.getVal(), )"
+"123 : this.iter.next() instanceof RIOEmpty"
+"124 : this.iter = this.iter.next()"
+"124 : this.iter = this.iter.next()" -> "124 : this.iter = this.iter.next()" [style=dashed]
+"124 : this.iter = this.iter.next()" -> "132 : this.iter = this.head" [style=dashed]
+"125 : indexOf(prefix, ) == 0"
+"126 : s = startsWith(prefix, )"
+"126 : s = startsWith(prefix, )" -> "126 : s = startsWith(prefix, )" [style=dashed]
+"127 : s.add(0, this.iter.getVal(), )"
+"132 : this.iter = this.head"
+"132 : this.iter = this.head" -> "124 : this.iter = this.iter.next()" [style=dashed]
+"132 : this.iter = this.head" -> "132 : this.iter = this.head" [style=dashed]
+"133 : new RecursiveIOStringList()"
+}

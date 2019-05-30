@@ -1,0 +1,10 @@
+digraph G {
+"7 : this.primary = null"
+"15 : leftDate = left.getDate()"
+"16 : rightDate = right.getDate()"
+"16 : rightDate = right.getDate()" -> "19 : leftDate.compareTo(rightDate, )"
+"16 : rightDate = right.getDate()" -> "17 : leftDate.compareTo(rightDate, ) == 0"
+"17 : leftDate.compareTo(rightDate, ) == 0"
+"18 : this.primary.compare(left, right, )"
+"19 : leftDate.compareTo(rightDate, )"
+}

@@ -1,0 +1,18 @@
+digraph G {
+"6 : this.head = null"
+"6 : this.head = null" -> "138 : cur = this.head"
+"137 : counter = 0"
+"137 : counter = 0" -> "142 : counter = counter + 1"
+"137 : counter = 0" -> "142 : counter = counter + 1" [style=dashed]
+"138 : cur = this.head"
+"138 : cur = this.head" -> "139 : cur != null"
+"138 : cur = this.head" -> "141 : cur = cur.getNext()" [style=dashed]
+"139 : cur != null"
+"141 : cur = cur.getNext()"
+"141 : cur = cur.getNext()" -> "139 : cur != null"
+"141 : cur = cur.getNext()" -> "141 : cur = cur.getNext()" [style=dashed]
+"142 : counter = counter + 1"
+"142 : counter = counter + 1" -> "142 : counter = counter + 1"
+"142 : counter = counter + 1" -> "142 : counter = counter + 1" [style=dashed]
+"139 : cur != null"
+}

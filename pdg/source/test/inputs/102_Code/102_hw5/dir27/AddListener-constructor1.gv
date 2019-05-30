@@ -1,0 +1,9 @@
+digraph G {
+"9 : this.reader = null"
+"9 : this.reader = null" -> "14 : this.reader = reader" [style=dashed]
+"10 : this.textField = null"
+"10 : this.textField = null" -> "15 : this.textField = textField" [style=dashed]
+"11 : this.rss = null"
+"14 : this.reader = reader"
+"15 : this.textField = textField"
+}

@@ -1,0 +1,8 @@
+digraph G {
+"15 : neg1 = new NegationExpression(new DoubleConstantExpression(10.0, ), )"
+"16 : neg2 = new NegationExpression(new DoubleConstantExpression(2.2222, ), )"
+"17 : neg3 = new NegationExpression(new DoubleConstantExpression(-31.1, ), )"
+"18 : Check.check(neg1.evaluate(bindings, ), 10, )"
+"19 : Check.check(neg2.evaluate(bindings, ), 2.2222, )"
+"20 : Check.check(neg3.evaluate(bindings, ), 31.1, )"
+}

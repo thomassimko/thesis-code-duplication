@@ -1,0 +1,7 @@
+digraph G {
+"4 : this.cur = null"
+"4 : this.head = null"
+"4 : this.head = null" -> "171 : this.head = addHelper(index, element, this.head, )"
+"4 : this.head = null" -> "171 : this.head = addHelper(index, element, this.head, )" [style=dashed]
+"171 : this.head = addHelper(index, element, this.head, )"
+}

@@ -1,0 +1,5 @@
+digraph G {
+"13 : this.sourcesList = new ArrayList()"
+"14 : this.badSources = new ArrayList()"
+"15 : this.feedDocument = null"
+}

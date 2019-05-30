@@ -1,0 +1,7 @@
+digraph G {
+"15 : this.feed = new ArrayList()"
+"16 : this.bad = new ArrayList()"
+"16 : this.bad = new ArrayList()" -> "95 : Collections.sort(this.bad, new SourcesComparator(), )"
+"17 : this.sources = new ArrayList()"
+"95 : Collections.sort(this.bad, new SourcesComparator(), )"
+}

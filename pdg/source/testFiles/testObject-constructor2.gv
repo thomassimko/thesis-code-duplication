@@ -1,6 +1,0 @@
-digraph G {
-"5 : this.num = 0"
-"5 : this.num = 0" -> "15 : this.num = num" [style=dashed]
-"6 : this.text = null"
-"15 : this.num = num"
-}

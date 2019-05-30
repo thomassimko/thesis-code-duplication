@@ -1,0 +1,62 @@
+digraph G {
+"77 : this.panel = null"
+"78 : this.level = 0"
+"79 : this.fp = null"
+"80 : this.panel2 = null"
+"104 : i = 0"
+"104 : i = 0" -> "104 : i = i + 1"
+"104 : i = 0" -> "104 : @temp4 = i"
+"104 : i = 0" -> "104 : i < rss.size()"
+"104 : i = 0" -> "104 : i = i + 1" [style=dashed]
+"104 : i < rss.size()"
+"105 : str1 = str1 + getTitle() + \"\n   \""
+"105 : str1 = str1 + getTitle() + \"\n   \"" -> "106 : str1 = str1 + String.format(\"%1$tm/%1$td/%1$tY %1$tH:%1$tM\", getDate(), ) + \"\n   \""
+"105 : str1 = str1 + getTitle() + \"\n   \"" -> "106 : str1 = str1 + String.format(\"%1$tm/%1$td/%1$tY %1$tH:%1$tM\", getDate(), ) + \"\n   \"" [style=dashed]
+"106 : str1 = str1 + String.format(\"%1$tm/%1$td/%1$tY %1$tH:%1$tM\", getDate(), ) + \"\n   \""
+"106 : str1 = str1 + String.format(\"%1$tm/%1$td/%1$tY %1$tH:%1$tM\", getDate(), ) + \"\n   \"" -> "107 : str1 = str1 + getLink() + \"\n\n\""
+"106 : str1 = str1 + String.format(\"%1$tm/%1$td/%1$tY %1$tH:%1$tM\", getDate(), ) + \"\n   \"" -> "107 : str1 = str1 + getLink() + \"\n\n\"" [style=dashed]
+"107 : str1 = str1 + getLink() + \"\n\n\""
+"107 : str1 = str1 + getLink() + \"\n\n\"" -> "105 : str1 = str1 + getTitle() + \"\n   \""
+"107 : str1 = str1 + getLink() + \"\n\n\"" -> "110 : this.panel.setText(str1, )"
+"107 : str1 = str1 + getLink() + \"\n\n\"" -> "111 : str1 = \"\"" [style=dashed]
+"107 : str1 = str1 + getLink() + \"\n\n\"" -> "105 : str1 = str1 + getTitle() + \"\n   \"" [style=dashed]
+"104 : @temp4 = i"
+"104 : @temp4 = i" -> "104 : @temp4 = i" [style=dashed]
+"104 : i = i + 1"
+"104 : i = i + 1" -> "104 : i = i + 1"
+"104 : i = i + 1" -> "104 : @temp4 = i"
+"104 : i = i + 1" -> "104 : i < rss.size()"
+"104 : i = i + 1" -> "104 : i = i + 1" [style=dashed]
+"109 : this.panel.setText(\"\", )"
+"110 : this.panel.setText(str1, )"
+"111 : str1 = \"\""
+"111 : str1 = \"\"" -> "113 : str1 = str1 + source + \"\n\""
+"111 : str1 = \"\"" -> "113 : str1 = str1 + source + \"\n\"" [style=dashed]
+"112 : source = this.fp.getSources()"
+"112 : source = this.fp.getSources()" -> "113 : str1 = str1 + source + \"\n\""
+"112 : source = this.fp.getSources()" -> "112 : source = this.fp.getSources()" [style=dashed]
+"113 : str1 = str1 + source + \"\n\""
+"113 : str1 = str1 + source + \"\n\"" -> "113 : str1 = str1 + source + \"\n\""
+"113 : str1 = str1 + source + \"\n\"" -> "115 : this.panel2.setText(str1, )"
+"113 : str1 = str1 + source + \"\n\"" -> "113 : str1 = str1 + source + \"\n\"" [style=dashed]
+"114 : this.panel2.setText(\"\", )"
+"115 : this.panel2.setText(str1, )"
+"119 : bs = this.fp.getBadSources()"
+"119 : bs = this.fp.getBadSources()" -> "120 : str2 = str2 + bs + \"\n\""
+"119 : bs = this.fp.getBadSources()" -> "119 : bs = this.fp.getBadSources()" [style=dashed]
+"120 : str2 = str2 + bs + \"\n\""
+"120 : str2 = str2 + bs + \"\n\"" -> "120 : str2 = str2 + bs + \"\n\""
+"120 : str2 = str2 + bs + \"\n\"" -> "122 : this.panel.setText(str2, )"
+"120 : str2 = str2 + bs + \"\n\"" -> "120 : str2 = str2 + bs + \"\n\"" [style=dashed]
+"121 : this.panel.setText(\"\", )"
+"122 : this.panel.setText(str2, )"
+"127 : source = this.fp.getSources()"
+"127 : source = this.fp.getSources()" -> "128 : str3 = str3 + source + \"\n\""
+"127 : source = this.fp.getSources()" -> "127 : source = this.fp.getSources()" [style=dashed]
+"128 : str3 = str3 + source + \"\n\""
+"128 : str3 = str3 + source + \"\n\"" -> "130 : this.panel.setText(str3, )"
+"128 : str3 = str3 + source + \"\n\"" -> "128 : str3 = str3 + source + \"\n\""
+"128 : str3 = str3 + source + \"\n\"" -> "128 : str3 = str3 + source + \"\n\"" [style=dashed]
+"129 : this.panel.setText(\"\", )"
+"130 : this.panel.setText(str3, )"
+}

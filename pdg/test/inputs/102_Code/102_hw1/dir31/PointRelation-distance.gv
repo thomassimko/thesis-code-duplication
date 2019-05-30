@@ -1,5 +1,0 @@
-digraph G {
-"6 : p1.xCoord() - p2.xCoord() == 0"
-"7 : Math.abs(p1.yCoord() - p2.yCoord(), )"
-"9 : p1.yCoord() - p2.yCoord() / p1.xCoord() - p2.xCoord()"
-}

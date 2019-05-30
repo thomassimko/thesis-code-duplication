@@ -1,0 +1,9 @@
+digraph G {
+"37 : lft = new DoubleConstantExpression(10.0, )"
+"37 : lft = new DoubleConstantExpression(10.0, )" -> "39 : divexp = new DivideExpression(lft, rht, )"
+"38 : rht = new DoubleConstantExpression(2.5, )"
+"38 : rht = new DoubleConstantExpression(2.5, )" -> "39 : divexp = new DivideExpression(lft, rht, )"
+"39 : divexp = new DivideExpression(lft, rht, )"
+"40 : Check.check(divexp.evaluate(null, ), 4.0, )"
+"41 : Check.check(divexp.toString(), \"(10.0 / 2.5)\", )"
+}

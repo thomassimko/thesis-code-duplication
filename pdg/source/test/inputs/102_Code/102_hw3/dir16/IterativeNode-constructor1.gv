@@ -1,0 +1,8 @@
+digraph G {
+"3 : this.str = null"
+"3 : this.str = null" -> "8 : this.str = str" [style=dashed]
+"4 : this.next = null"
+"4 : this.next = null" -> "9 : this.next = next" [style=dashed]
+"8 : this.str = str"
+"9 : this.next = next"
+}

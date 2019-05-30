@@ -1,0 +1,8 @@
+digraph G {
+"4 : this.string = null"
+"4 : this.string = null" -> "137 : sl.add(0, this.string, )"
+"5 : this.next = null"
+"133 : sl = this.next.hasSubstring(substring, )"
+"135 : contains(substring, )"
+"137 : sl.add(0, this.string, )"
+}

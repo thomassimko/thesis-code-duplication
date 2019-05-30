@@ -1,0 +1,8 @@
+digraph G {
+"7 : this.comp = null"
+"16 : diff = compareTo(date2.makeDate(), )"
+"16 : diff = compareTo(date2.makeDate(), )" -> "18 : diff == 0"
+"16 : diff = compareTo(date2.makeDate(), )" -> "20 : diff = this.comp.compare(date1, date2, )" [style=dashed]
+"18 : diff == 0"
+"20 : diff = this.comp.compare(date1, date2, )"
+}

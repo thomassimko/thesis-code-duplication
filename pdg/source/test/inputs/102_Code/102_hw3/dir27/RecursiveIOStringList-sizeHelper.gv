@@ -1,0 +1,9 @@
+digraph G {
+"6 : this.head = null"
+"142 : count = 0"
+"142 : count = 0" -> "149 : count = sizeHelper(cur.getNext(), ) + 1" [style=dashed]
+"143 : cur instanceof RIOEmpty"
+"145 : 0"
+"147 : cur instanceof RIONode"
+"149 : count = sizeHelper(cur.getNext(), ) + 1"
+}

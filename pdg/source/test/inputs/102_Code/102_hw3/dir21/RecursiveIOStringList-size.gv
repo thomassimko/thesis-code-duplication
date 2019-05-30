@@ -1,0 +1,10 @@
+digraph G {
+"2 : this.head = null"
+"2 : this.iter = null"
+"2 : this.iter = null" -> "74 : this.iter = this.iter.next()" [style=dashed]
+"2 : this.iterPrev = null"
+"73 : this.iter.next() instanceof RIOEmpty"
+"74 : this.iter = this.iter.next()"
+"75 : size() + 1"
+"78 : 0"
+}

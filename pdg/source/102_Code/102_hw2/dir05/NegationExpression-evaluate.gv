@@ -1,4 +1,0 @@
-digraph G {
-"3 : this.e = null"
-"10 : this.e.evaluate(binding, ) * 1"
-}

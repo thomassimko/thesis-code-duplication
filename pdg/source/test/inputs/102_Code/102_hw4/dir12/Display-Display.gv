@@ -1,0 +1,23 @@
+digraph G {
+"5 : this.lenght = 0"
+"5 : this.lenght = 0" -> "9 : this.lenght = l.size()" [style=dashed]
+"8 : copy = l"
+"9 : this.lenght = l.size()"
+"9 : this.lenght = l.size()" -> "12 : i < this.lenght"
+"10 : l.isEmpty()"
+"11 : System.out.println(\"\", )"
+"12 : i = 0"
+"12 : i = 0" -> "12 : i < this.lenght"
+"12 : i = 0" -> "12 : @temp1 = i"
+"12 : i = 0" -> "12 : i = i + 1"
+"12 : i = 0" -> "12 : i = i + 1" [style=dashed]
+"12 : i < this.lenght"
+"13 : System.out.println(print(), )"
+"12 : @temp1 = i"
+"12 : @temp1 = i" -> "12 : @temp1 = i" [style=dashed]
+"12 : i = i + 1"
+"12 : i = i + 1" -> "12 : i < this.lenght"
+"12 : i = i + 1" -> "12 : @temp1 = i"
+"12 : i = i + 1" -> "12 : i = i + 1"
+"12 : i = i + 1" -> "12 : i = i + 1" [style=dashed]
+}

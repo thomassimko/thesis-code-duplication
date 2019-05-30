@@ -1,0 +1,125 @@
+digraph G {
+"240 : System.out.print(\"Keys to sort by: \", )"
+"241 : scan.nextLine()"
+"242 : key = scan.nextLine()"
+"243 : System.out.println(\"\", )"
+"244 : words = key.split(\" \", )"
+"245 : size = words.length - 1"
+"245 : size = words.length - 1" -> "263 : i = size - 1"
+"246 : comp = null"
+"246 : comp = null" -> "282 : Collections.sort(list, comp, )"
+"246 : comp = null" -> "275 : comp = new ExpenseDelegateComparator(new ExpensePayeeComparator(), comp, )"
+"246 : comp = null" -> "279 : comp = new ExpenseDelegateComparator(new ExpenseCategoryComparator(), comp, )"
+"246 : comp = null" -> "271 : comp = new ExpenseDelegateComparator(new ExpenseAmountComparator(), comp, )"
+"246 : comp = null" -> "267 : comp = new ExpenseDelegateComparator(new ExpenseDateComparator(), comp, )"
+"246 : comp = null" -> "257 : comp = new ExpensePayeeComparator()" [style=dashed]
+"246 : comp = null" -> "275 : comp = new ExpenseDelegateComparator(new ExpensePayeeComparator(), comp, )" [style=dashed]
+"246 : comp = null" -> "249 : comp = new ExpenseDateComparator()" [style=dashed]
+"246 : comp = null" -> "279 : comp = new ExpenseDelegateComparator(new ExpenseCategoryComparator(), comp, )" [style=dashed]
+"246 : comp = null" -> "271 : comp = new ExpenseDelegateComparator(new ExpenseAmountComparator(), comp, )" [style=dashed]
+"246 : comp = null" -> "261 : comp = new ExpenseCategoryComparator()" [style=dashed]
+"246 : comp = null" -> "253 : comp = new ExpenseAmountComparator()" [style=dashed]
+"246 : comp = null" -> "267 : comp = new ExpenseDelegateComparator(new ExpenseDateComparator(), comp, )" [style=dashed]
+"247 : equals(\"date\", )"
+"249 : comp = new ExpenseDateComparator()"
+"249 : comp = new ExpenseDateComparator()" -> "282 : Collections.sort(list, comp, )"
+"249 : comp = new ExpenseDateComparator()" -> "275 : comp = new ExpenseDelegateComparator(new ExpensePayeeComparator(), comp, )"
+"249 : comp = new ExpenseDateComparator()" -> "279 : comp = new ExpenseDelegateComparator(new ExpenseCategoryComparator(), comp, )"
+"249 : comp = new ExpenseDateComparator()" -> "271 : comp = new ExpenseDelegateComparator(new ExpenseAmountComparator(), comp, )"
+"249 : comp = new ExpenseDateComparator()" -> "267 : comp = new ExpenseDelegateComparator(new ExpenseDateComparator(), comp, )"
+"249 : comp = new ExpenseDateComparator()" -> "275 : comp = new ExpenseDelegateComparator(new ExpensePayeeComparator(), comp, )" [style=dashed]
+"249 : comp = new ExpenseDateComparator()" -> "279 : comp = new ExpenseDelegateComparator(new ExpenseCategoryComparator(), comp, )" [style=dashed]
+"249 : comp = new ExpenseDateComparator()" -> "271 : comp = new ExpenseDelegateComparator(new ExpenseAmountComparator(), comp, )" [style=dashed]
+"249 : comp = new ExpenseDateComparator()" -> "267 : comp = new ExpenseDelegateComparator(new ExpenseDateComparator(), comp, )" [style=dashed]
+"251 : equals(\"amount\", )"
+"253 : comp = new ExpenseAmountComparator()"
+"253 : comp = new ExpenseAmountComparator()" -> "282 : Collections.sort(list, comp, )"
+"253 : comp = new ExpenseAmountComparator()" -> "275 : comp = new ExpenseDelegateComparator(new ExpensePayeeComparator(), comp, )"
+"253 : comp = new ExpenseAmountComparator()" -> "279 : comp = new ExpenseDelegateComparator(new ExpenseCategoryComparator(), comp, )"
+"253 : comp = new ExpenseAmountComparator()" -> "271 : comp = new ExpenseDelegateComparator(new ExpenseAmountComparator(), comp, )"
+"253 : comp = new ExpenseAmountComparator()" -> "267 : comp = new ExpenseDelegateComparator(new ExpenseDateComparator(), comp, )"
+"253 : comp = new ExpenseAmountComparator()" -> "275 : comp = new ExpenseDelegateComparator(new ExpensePayeeComparator(), comp, )" [style=dashed]
+"253 : comp = new ExpenseAmountComparator()" -> "279 : comp = new ExpenseDelegateComparator(new ExpenseCategoryComparator(), comp, )" [style=dashed]
+"253 : comp = new ExpenseAmountComparator()" -> "271 : comp = new ExpenseDelegateComparator(new ExpenseAmountComparator(), comp, )" [style=dashed]
+"253 : comp = new ExpenseAmountComparator()" -> "267 : comp = new ExpenseDelegateComparator(new ExpenseDateComparator(), comp, )" [style=dashed]
+"255 : equals(\"payee\", )"
+"257 : comp = new ExpensePayeeComparator()"
+"257 : comp = new ExpensePayeeComparator()" -> "282 : Collections.sort(list, comp, )"
+"257 : comp = new ExpensePayeeComparator()" -> "275 : comp = new ExpenseDelegateComparator(new ExpensePayeeComparator(), comp, )"
+"257 : comp = new ExpensePayeeComparator()" -> "279 : comp = new ExpenseDelegateComparator(new ExpenseCategoryComparator(), comp, )"
+"257 : comp = new ExpensePayeeComparator()" -> "271 : comp = new ExpenseDelegateComparator(new ExpenseAmountComparator(), comp, )"
+"257 : comp = new ExpensePayeeComparator()" -> "267 : comp = new ExpenseDelegateComparator(new ExpenseDateComparator(), comp, )"
+"257 : comp = new ExpensePayeeComparator()" -> "275 : comp = new ExpenseDelegateComparator(new ExpensePayeeComparator(), comp, )" [style=dashed]
+"257 : comp = new ExpensePayeeComparator()" -> "279 : comp = new ExpenseDelegateComparator(new ExpenseCategoryComparator(), comp, )" [style=dashed]
+"257 : comp = new ExpensePayeeComparator()" -> "271 : comp = new ExpenseDelegateComparator(new ExpenseAmountComparator(), comp, )" [style=dashed]
+"257 : comp = new ExpensePayeeComparator()" -> "267 : comp = new ExpenseDelegateComparator(new ExpenseDateComparator(), comp, )" [style=dashed]
+"259 : equals(\"category\", )"
+"261 : comp = new ExpenseCategoryComparator()"
+"261 : comp = new ExpenseCategoryComparator()" -> "282 : Collections.sort(list, comp, )"
+"261 : comp = new ExpenseCategoryComparator()" -> "275 : comp = new ExpenseDelegateComparator(new ExpensePayeeComparator(), comp, )"
+"261 : comp = new ExpenseCategoryComparator()" -> "279 : comp = new ExpenseDelegateComparator(new ExpenseCategoryComparator(), comp, )"
+"261 : comp = new ExpenseCategoryComparator()" -> "271 : comp = new ExpenseDelegateComparator(new ExpenseAmountComparator(), comp, )"
+"261 : comp = new ExpenseCategoryComparator()" -> "267 : comp = new ExpenseDelegateComparator(new ExpenseDateComparator(), comp, )"
+"261 : comp = new ExpenseCategoryComparator()" -> "275 : comp = new ExpenseDelegateComparator(new ExpensePayeeComparator(), comp, )" [style=dashed]
+"261 : comp = new ExpenseCategoryComparator()" -> "279 : comp = new ExpenseDelegateComparator(new ExpenseCategoryComparator(), comp, )" [style=dashed]
+"261 : comp = new ExpenseCategoryComparator()" -> "271 : comp = new ExpenseDelegateComparator(new ExpenseAmountComparator(), comp, )" [style=dashed]
+"261 : comp = new ExpenseCategoryComparator()" -> "267 : comp = new ExpenseDelegateComparator(new ExpenseDateComparator(), comp, )" [style=dashed]
+"263 : i = size - 1"
+"263 : i = size - 1" -> "263 : i = i - 1"
+"263 : i = size - 1" -> "263 : @temp3 = i"
+"263 : i = size - 1" -> "263 : i >= 0"
+"263 : i = size - 1" -> "263 : i = i - 1" [style=dashed]
+"263 : i >= 0"
+"265 : equals(\"date\", )"
+"282 : Collections.sort(list, comp, )"
+"267 : comp = new ExpenseDelegateComparator(new ExpenseDateComparator(), comp, )"
+"267 : comp = new ExpenseDelegateComparator(new ExpenseDateComparator(), comp, )" -> "282 : Collections.sort(list, comp, )"
+"267 : comp = new ExpenseDelegateComparator(new ExpenseDateComparator(), comp, )" -> "275 : comp = new ExpenseDelegateComparator(new ExpensePayeeComparator(), comp, )"
+"267 : comp = new ExpenseDelegateComparator(new ExpenseDateComparator(), comp, )" -> "279 : comp = new ExpenseDelegateComparator(new ExpenseCategoryComparator(), comp, )"
+"267 : comp = new ExpenseDelegateComparator(new ExpenseDateComparator(), comp, )" -> "271 : comp = new ExpenseDelegateComparator(new ExpenseAmountComparator(), comp, )"
+"267 : comp = new ExpenseDelegateComparator(new ExpenseDateComparator(), comp, )" -> "267 : comp = new ExpenseDelegateComparator(new ExpenseDateComparator(), comp, )"
+"267 : comp = new ExpenseDelegateComparator(new ExpenseDateComparator(), comp, )" -> "275 : comp = new ExpenseDelegateComparator(new ExpensePayeeComparator(), comp, )" [style=dashed]
+"267 : comp = new ExpenseDelegateComparator(new ExpenseDateComparator(), comp, )" -> "279 : comp = new ExpenseDelegateComparator(new ExpenseCategoryComparator(), comp, )" [style=dashed]
+"267 : comp = new ExpenseDelegateComparator(new ExpenseDateComparator(), comp, )" -> "271 : comp = new ExpenseDelegateComparator(new ExpenseAmountComparator(), comp, )" [style=dashed]
+"267 : comp = new ExpenseDelegateComparator(new ExpenseDateComparator(), comp, )" -> "267 : comp = new ExpenseDelegateComparator(new ExpenseDateComparator(), comp, )" [style=dashed]
+"269 : equals(\"amount\", )"
+"271 : comp = new ExpenseDelegateComparator(new ExpenseAmountComparator(), comp, )"
+"271 : comp = new ExpenseDelegateComparator(new ExpenseAmountComparator(), comp, )" -> "282 : Collections.sort(list, comp, )"
+"271 : comp = new ExpenseDelegateComparator(new ExpenseAmountComparator(), comp, )" -> "275 : comp = new ExpenseDelegateComparator(new ExpensePayeeComparator(), comp, )"
+"271 : comp = new ExpenseDelegateComparator(new ExpenseAmountComparator(), comp, )" -> "279 : comp = new ExpenseDelegateComparator(new ExpenseCategoryComparator(), comp, )"
+"271 : comp = new ExpenseDelegateComparator(new ExpenseAmountComparator(), comp, )" -> "271 : comp = new ExpenseDelegateComparator(new ExpenseAmountComparator(), comp, )"
+"271 : comp = new ExpenseDelegateComparator(new ExpenseAmountComparator(), comp, )" -> "267 : comp = new ExpenseDelegateComparator(new ExpenseDateComparator(), comp, )"
+"271 : comp = new ExpenseDelegateComparator(new ExpenseAmountComparator(), comp, )" -> "275 : comp = new ExpenseDelegateComparator(new ExpensePayeeComparator(), comp, )" [style=dashed]
+"271 : comp = new ExpenseDelegateComparator(new ExpenseAmountComparator(), comp, )" -> "279 : comp = new ExpenseDelegateComparator(new ExpenseCategoryComparator(), comp, )" [style=dashed]
+"271 : comp = new ExpenseDelegateComparator(new ExpenseAmountComparator(), comp, )" -> "271 : comp = new ExpenseDelegateComparator(new ExpenseAmountComparator(), comp, )" [style=dashed]
+"271 : comp = new ExpenseDelegateComparator(new ExpenseAmountComparator(), comp, )" -> "267 : comp = new ExpenseDelegateComparator(new ExpenseDateComparator(), comp, )" [style=dashed]
+"273 : equals(\"payee\", )"
+"275 : comp = new ExpenseDelegateComparator(new ExpensePayeeComparator(), comp, )"
+"275 : comp = new ExpenseDelegateComparator(new ExpensePayeeComparator(), comp, )" -> "282 : Collections.sort(list, comp, )"
+"275 : comp = new ExpenseDelegateComparator(new ExpensePayeeComparator(), comp, )" -> "275 : comp = new ExpenseDelegateComparator(new ExpensePayeeComparator(), comp, )"
+"275 : comp = new ExpenseDelegateComparator(new ExpensePayeeComparator(), comp, )" -> "279 : comp = new ExpenseDelegateComparator(new ExpenseCategoryComparator(), comp, )"
+"275 : comp = new ExpenseDelegateComparator(new ExpensePayeeComparator(), comp, )" -> "271 : comp = new ExpenseDelegateComparator(new ExpenseAmountComparator(), comp, )"
+"275 : comp = new ExpenseDelegateComparator(new ExpensePayeeComparator(), comp, )" -> "267 : comp = new ExpenseDelegateComparator(new ExpenseDateComparator(), comp, )"
+"275 : comp = new ExpenseDelegateComparator(new ExpensePayeeComparator(), comp, )" -> "275 : comp = new ExpenseDelegateComparator(new ExpensePayeeComparator(), comp, )" [style=dashed]
+"275 : comp = new ExpenseDelegateComparator(new ExpensePayeeComparator(), comp, )" -> "279 : comp = new ExpenseDelegateComparator(new ExpenseCategoryComparator(), comp, )" [style=dashed]
+"275 : comp = new ExpenseDelegateComparator(new ExpensePayeeComparator(), comp, )" -> "271 : comp = new ExpenseDelegateComparator(new ExpenseAmountComparator(), comp, )" [style=dashed]
+"275 : comp = new ExpenseDelegateComparator(new ExpensePayeeComparator(), comp, )" -> "267 : comp = new ExpenseDelegateComparator(new ExpenseDateComparator(), comp, )" [style=dashed]
+"277 : equals(\"category\", )"
+"279 : comp = new ExpenseDelegateComparator(new ExpenseCategoryComparator(), comp, )"
+"279 : comp = new ExpenseDelegateComparator(new ExpenseCategoryComparator(), comp, )" -> "282 : Collections.sort(list, comp, )"
+"279 : comp = new ExpenseDelegateComparator(new ExpenseCategoryComparator(), comp, )" -> "275 : comp = new ExpenseDelegateComparator(new ExpensePayeeComparator(), comp, )"
+"279 : comp = new ExpenseDelegateComparator(new ExpenseCategoryComparator(), comp, )" -> "279 : comp = new ExpenseDelegateComparator(new ExpenseCategoryComparator(), comp, )"
+"279 : comp = new ExpenseDelegateComparator(new ExpenseCategoryComparator(), comp, )" -> "271 : comp = new ExpenseDelegateComparator(new ExpenseAmountComparator(), comp, )"
+"279 : comp = new ExpenseDelegateComparator(new ExpenseCategoryComparator(), comp, )" -> "267 : comp = new ExpenseDelegateComparator(new ExpenseDateComparator(), comp, )"
+"279 : comp = new ExpenseDelegateComparator(new ExpenseCategoryComparator(), comp, )" -> "275 : comp = new ExpenseDelegateComparator(new ExpensePayeeComparator(), comp, )" [style=dashed]
+"279 : comp = new ExpenseDelegateComparator(new ExpenseCategoryComparator(), comp, )" -> "279 : comp = new ExpenseDelegateComparator(new ExpenseCategoryComparator(), comp, )" [style=dashed]
+"279 : comp = new ExpenseDelegateComparator(new ExpenseCategoryComparator(), comp, )" -> "271 : comp = new ExpenseDelegateComparator(new ExpenseAmountComparator(), comp, )" [style=dashed]
+"279 : comp = new ExpenseDelegateComparator(new ExpenseCategoryComparator(), comp, )" -> "267 : comp = new ExpenseDelegateComparator(new ExpenseDateComparator(), comp, )" [style=dashed]
+"263 : @temp3 = i"
+"263 : @temp3 = i" -> "263 : @temp3 = i" [style=dashed]
+"263 : i = i - 1"
+"263 : i = i - 1" -> "263 : i = i - 1"
+"263 : i = i - 1" -> "263 : @temp3 = i"
+"263 : i = i - 1" -> "263 : i >= 0"
+"263 : i = i - 1" -> "263 : i = i - 1" [style=dashed]
+}

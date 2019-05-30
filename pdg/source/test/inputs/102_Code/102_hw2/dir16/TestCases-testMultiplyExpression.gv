@@ -1,0 +1,8 @@
+digraph G {
+"45 : mult1 = new MultiplyExpression(new DoubleConstantExpression(1, ), new DoubleConstantExpression(2, ), )"
+"46 : mult2 = new MultiplyExpression(new DoubleConstantExpression(10, ), new DoubleConstantExpression(-20, ), )"
+"47 : mult3 = new MultiplyExpression(new DoubleConstantExpression(1.2, ), new DoubleConstantExpression(1.2, ), )"
+"48 : Check.check(mult1.evaluate(bindings, ), 2, )"
+"49 : Check.check(mult2.evaluate(bindings, ), 200, )"
+"50 : Check.check(mult3.evaluate(bindings, ), 1.44, )"
+}

@@ -1,0 +1,61 @@
+digraph G {
+"12 : this.feed = null"
+"13 : this.tweeterFeed = null"
+"14 : this.srcFeed = null"
+"24 : this.tweeterFeed.setText(\"\", )"
+"25 : this.srcFeed.setText(\"\", )"
+"26 : newList = new LinkedList()"
+"26 : newList = new LinkedList()" -> "28 : newList = this.feed.retrieveFeedItems()" [style=dashed]
+"27 : newSrcList = this.feed.getSources()"
+"27 : newSrcList = this.feed.getSources()" -> "32 : Collections.sort(newSrcList, srcCompare, )"
+"28 : newList = this.feed.retrieveFeedItems()"
+"28 : newList = this.feed.retrieveFeedItems()" -> "30 : Collections.sort(newList, itemCompare, )"
+"29 : itemCompare = new RSSItemComparator()"
+"29 : itemCompare = new RSSItemComparator()" -> "30 : Collections.sort(newList, itemCompare, )"
+"30 : Collections.sort(newList, itemCompare, )"
+"31 : srcCompare = new SourceComparator()"
+"31 : srcCompare = new SourceComparator()" -> "32 : Collections.sort(newSrcList, srcCompare, )"
+"32 : Collections.sort(newSrcList, srcCompare, )"
+"33 : i = 0"
+"33 : i = 0" -> "33 : i < newList.size()"
+"33 : i = 0" -> "33 : @temp1 = i"
+"33 : i = 0" -> "33 : i = i + 1"
+"33 : i = 0" -> "33 : i = i + 1" [style=dashed]
+"33 : i < newList.size()"
+"34 : this.tweeterFeed.append(getTitle(), )"
+"35 : this.tweeterFeed.append(\"\n   \", )"
+"36 : dateString = null"
+"36 : dateString = null" -> "37 : dateString = String.format(\"%1$2tm/%<2td/%<tY %<tH:%<tm\", getDate(), )" [style=dashed]
+"37 : dateString = String.format(\"%1$2tm/%<2td/%<tY %<tH:%<tm\", getDate(), )"
+"37 : dateString = String.format(\"%1$2tm/%<2td/%<tY %<tH:%<tm\", getDate(), )" -> "38 : this.tweeterFeed.append(dateString, )"
+"37 : dateString = String.format(\"%1$2tm/%<2td/%<tY %<tH:%<tm\", getDate(), )" -> "36 : dateString = null" [style=dashed]
+"38 : this.tweeterFeed.append(dateString, )"
+"39 : this.tweeterFeed.append(\"\n   \", )"
+"40 : this.tweeterFeed.append(getLink(), )"
+"41 : this.tweeterFeed.append(\"\n\", )"
+"42 : this.tweeterFeed.append(\"\n\", )"
+"33 : @temp1 = i"
+"33 : @temp1 = i" -> "33 : @temp1 = i" [style=dashed]
+"33 : i = i + 1"
+"33 : i = i + 1" -> "33 : i < newList.size()"
+"33 : i = i + 1" -> "33 : @temp1 = i"
+"33 : i = i + 1" -> "33 : i = i + 1"
+"33 : i = i + 1" -> "33 : i = i + 1" [style=dashed]
+"44 : j = 0"
+"44 : j = 0" -> "44 : j < newSrcList.size()"
+"44 : j = 0" -> "44 : @temp2 = j"
+"44 : j = 0" -> "45 : this.srcFeed.append(newSrcList.get(j, ), )"
+"44 : j = 0" -> "44 : j = j + 1"
+"44 : j = 0" -> "44 : j = j + 1" [style=dashed]
+"44 : j < newSrcList.size()"
+"45 : this.srcFeed.append(newSrcList.get(j, ), )"
+"46 : this.srcFeed.append(\"\n\", )"
+"44 : @temp2 = j"
+"44 : @temp2 = j" -> "44 : @temp2 = j" [style=dashed]
+"44 : j = j + 1"
+"44 : j = j + 1" -> "44 : j < newSrcList.size()"
+"44 : j = j + 1" -> "44 : @temp2 = j"
+"44 : j = j + 1" -> "45 : this.srcFeed.append(newSrcList.get(j, ), )"
+"44 : j = j + 1" -> "44 : j = j + 1"
+"44 : j = j + 1" -> "44 : j = j + 1" [style=dashed]
+}

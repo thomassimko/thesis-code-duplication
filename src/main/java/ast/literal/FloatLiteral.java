@@ -1,6 +1,7 @@
 package ast.literal;
 
 import ast.expressions.Expression;
+import ast.expressions.left.Left;
 import main.ArgumentHandler;
 
 public class FloatLiteral extends Literal {
@@ -19,7 +20,10 @@ public class FloatLiteral extends Literal {
 
     @Override
     public int graphicalCompareTo(Expression o) {
-        if(o instanceof FloatLiteral) {
+        if(o instanceof Left && !ArgumentHandler.checkLeft) {
+            return 0;
+        }
+        else if(o instanceof FloatLiteral) {
             if (ArgumentHandler.checkLiterals) {
                 return value == ((FloatLiteral) o).value ? 0 : -1;
             } else {

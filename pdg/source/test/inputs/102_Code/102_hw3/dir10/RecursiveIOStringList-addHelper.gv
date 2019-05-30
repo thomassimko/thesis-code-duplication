@@ -1,0 +1,12 @@
+digraph G {
+"5 : this.head = null"
+"29 : cur instanceof RIOEmpty && index == 0"
+"30 : n = new RIONode(element, cur, )"
+"33 : cur instanceof RIONode"
+"34 : index == 0"
+"35 : new RIONode(element, cur, )"
+"38 : n = addHelper(index - 1, element, cur.getNext(), )"
+"38 : n = addHelper(index - 1, element, cur.getNext(), )" -> "39 : cur.setNext(n, )"
+"39 : cur.setNext(n, )"
+"44 : new IndexOutOfBoundsException()"
+}

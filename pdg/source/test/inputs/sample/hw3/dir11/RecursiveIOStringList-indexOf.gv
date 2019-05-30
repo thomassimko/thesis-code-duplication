@@ -1,0 +1,8 @@
+digraph G {
+"4 : this.head = null"
+"131 : cur instanceof RIOEmpty"
+"133 : new IndexOutOfBoundsException()"
+"137 : equals(element, )"
+"139 : 0"
+"143 : 1 + indexOf(element, cur.getNext(), )"
+}

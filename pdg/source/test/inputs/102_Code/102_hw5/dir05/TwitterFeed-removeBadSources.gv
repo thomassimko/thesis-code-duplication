@@ -1,0 +1,52 @@
+digraph G {
+"11 : this.sources = null"
+"12 : this.badSources = null"
+"104 : badSize = size()"
+"104 : badSize = size()" -> "107 : i < badSize"
+"105 : sourceSize = size()"
+"105 : sourceSize = size()" -> "109 : j < sourceSize"
+"105 : sourceSize = size()" -> "114 : @temp3 = sourceSize"
+"105 : sourceSize = size()" -> "114 : sourceSize = sourceSize - 1"
+"105 : sourceSize = size()" -> "114 : sourceSize = sourceSize - 1" [style=dashed]
+"107 : i = 0"
+"107 : i = 0" -> "107 : @temp5 = i"
+"107 : i = 0" -> "107 : i = i + 1"
+"107 : i = 0" -> "111 : equals(this.badSources.get(i, ), )"
+"107 : i = 0" -> "107 : i < badSize"
+"107 : i = 0" -> "107 : i = i + 1" [style=dashed]
+"107 : i < badSize"
+"109 : j = 0"
+"109 : j = 0" -> "109 : j < sourceSize"
+"109 : j = 0" -> "113 : this.sources.remove(j, )"
+"109 : j = 0" -> "109 : j = j + 1"
+"109 : j = 0" -> "109 : @temp4 = j"
+"109 : j = 0" -> "109 : j = 0" [style=dashed]
+"109 : j = 0" -> "109 : j = j + 1" [style=dashed]
+"109 : j < sourceSize"
+"111 : equals(this.badSources.get(i, ), )"
+"107 : @temp5 = i"
+"107 : @temp5 = i" -> "107 : @temp5 = i" [style=dashed]
+"107 : i = i + 1"
+"107 : i = i + 1" -> "107 : @temp5 = i"
+"107 : i = i + 1" -> "107 : i = i + 1"
+"107 : i = i + 1" -> "111 : equals(this.badSources.get(i, ), )"
+"107 : i = i + 1" -> "107 : i < badSize"
+"107 : i = i + 1" -> "107 : i = i + 1" [style=dashed]
+"113 : this.sources.remove(j, )"
+"114 : @temp3 = sourceSize"
+"114 : @temp3 = sourceSize" -> "114 : @temp3 = sourceSize" [style=dashed]
+"114 : sourceSize = sourceSize - 1"
+"114 : sourceSize = sourceSize - 1" -> "109 : j < sourceSize"
+"114 : sourceSize = sourceSize - 1" -> "114 : @temp3 = sourceSize"
+"114 : sourceSize = sourceSize - 1" -> "114 : sourceSize = sourceSize - 1"
+"114 : sourceSize = sourceSize - 1" -> "114 : sourceSize = sourceSize - 1" [style=dashed]
+"109 : @temp4 = j"
+"109 : @temp4 = j" -> "109 : @temp4 = j" [style=dashed]
+"109 : j = j + 1"
+"109 : j = j + 1" -> "109 : j < sourceSize"
+"109 : j = j + 1" -> "113 : this.sources.remove(j, )"
+"109 : j = j + 1" -> "109 : j = j + 1"
+"109 : j = j + 1" -> "109 : @temp4 = j"
+"109 : j = j + 1" -> "109 : j = 0" [style=dashed]
+"109 : j = j + 1" -> "109 : j = j + 1" [style=dashed]
+}

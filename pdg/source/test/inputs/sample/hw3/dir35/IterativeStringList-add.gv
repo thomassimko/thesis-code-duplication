@@ -1,0 +1,47 @@
+digraph G {
+"8 : this.node = null"
+"8 : this.node = null" -> "48 : this.node == null"
+"8 : this.node = null" -> "71 : cur = this.node"
+"8 : this.node = null" -> "63 : this.node.setNext(new IterativeNode(element, this.node, ), )"
+"8 : this.node = null" -> "52 : this.node = new IterativeNode(element, null, )" [style=dashed]
+"48 : this.node == null"
+"50 : index == 0"
+"52 : this.node = new IterativeNode(element, null, )"
+"56 : new IndexOutOfBoundsException()"
+"61 : index == 0"
+"63 : this.node.setNext(new IterativeNode(element, this.node, ), )"
+"65 : index < 0"
+"67 : new IndexOutOfBoundsException()"
+"71 : cur = this.node"
+"71 : cur = this.node" -> "79 : cur == null && i != index"
+"71 : cur = this.node" -> "74 : i < index && cur != null"
+"71 : cur = this.node" -> "85 : cur.setNext(new IterativeNode(element, cur.getNext(), ), )"
+"71 : cur = this.node" -> "76 : cur = cur.getNext()"
+"71 : cur = this.node" -> "76 : cur = cur.getNext()" [style=dashed]
+"72 : i = 0"
+"72 : i = 0" -> "74 : i = 1" [style=dashed]
+"74 : i = 1"
+"74 : i = 1" -> "74 : i = i + 1"
+"74 : i = 1" -> "74 : @temp1 = i"
+"74 : i = 1" -> "79 : cur == null && i != index"
+"74 : i = 1" -> "74 : i < index && cur != null"
+"74 : i = 1" -> "74 : i = i + 1" [style=dashed]
+"74 : i < index && cur != null"
+"76 : cur = cur.getNext()"
+"76 : cur = cur.getNext()" -> "79 : cur == null && i != index"
+"76 : cur = cur.getNext()" -> "74 : i < index && cur != null"
+"76 : cur = cur.getNext()" -> "85 : cur.setNext(new IterativeNode(element, cur.getNext(), ), )"
+"76 : cur = cur.getNext()" -> "76 : cur = cur.getNext()"
+"76 : cur = cur.getNext()" -> "76 : cur = cur.getNext()" [style=dashed]
+"74 : @temp1 = i"
+"74 : @temp1 = i" -> "74 : @temp1 = i" [style=dashed]
+"74 : i = i + 1"
+"74 : i = i + 1" -> "74 : i = i + 1"
+"74 : i = i + 1" -> "74 : @temp1 = i"
+"74 : i = i + 1" -> "79 : cur == null && i != index"
+"74 : i = i + 1" -> "74 : i < index && cur != null"
+"74 : i = i + 1" -> "74 : i = i + 1" [style=dashed]
+"79 : cur == null && i != index"
+"81 : new IndexOutOfBoundsException()"
+"85 : cur.setNext(new IterativeNode(element, cur.getNext(), ), )"
+}

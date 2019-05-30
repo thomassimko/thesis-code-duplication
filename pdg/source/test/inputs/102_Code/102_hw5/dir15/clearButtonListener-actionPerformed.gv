@@ -1,0 +1,6 @@
+digraph G {
+"11 : this.feed = null"
+"12 : this.sourceTextArea = null"
+"23 : this.feed.removeBadSources()"
+"24 : this.sourceTextArea.setText(\"\", )"
+}

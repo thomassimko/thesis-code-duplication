@@ -1,0 +1,9 @@
+digraph G {
+"4 : this.difference = 0.0"
+"5 : this.d1 = null"
+"5 : this.d1 = null" -> "7 : this.d1 = lft" [style=dashed]
+"5 : this.d2 = null"
+"5 : this.d2 = null" -> "8 : this.d2 = rht" [style=dashed]
+"7 : this.d1 = lft"
+"8 : this.d2 = rht"
+}

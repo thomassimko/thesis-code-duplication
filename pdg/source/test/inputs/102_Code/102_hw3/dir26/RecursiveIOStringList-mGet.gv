@@ -1,0 +1,6 @@
+digraph G {
+"4 : this.first = new RIOEmpty()"
+"74 : index == 0"
+"75 : r.getValue()"
+"76 : mGet(index - 1, r.getNext(), )"
+}

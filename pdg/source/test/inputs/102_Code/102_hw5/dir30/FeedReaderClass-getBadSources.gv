@@ -1,0 +1,26 @@
+digraph G {
+"23 : this.srcList = new ArrayList()"
+"24 : this.documentList = new ArrayList()"
+"25 : this.badSrcList = new ArrayList()"
+"26 : this.badDocumentList = new ArrayList()"
+"167 : badDocumentListSize = this.badDocumentList.size()"
+"167 : badDocumentListSize = this.badDocumentList.size()" -> "171 : i < badDocumentListSize"
+"169 : this.badSrcList.clear()"
+"171 : i = 0"
+"171 : i = 0" -> "171 : i < badDocumentListSize"
+"171 : i = 0" -> "171 : i = i + 1"
+"171 : i = 0" -> "171 : @temp9 = i"
+"171 : i = 0" -> "171 : i = i + 1" [style=dashed]
+"171 : i < badDocumentListSize"
+"173 : badSrc = getDocumentURI()"
+"173 : badSrc = getDocumentURI()" -> "174 : this.badSrcList.add(badSrc, )"
+"173 : badSrc = getDocumentURI()" -> "173 : badSrc = getDocumentURI()" [style=dashed]
+"174 : this.badSrcList.add(badSrc, )"
+"171 : @temp9 = i"
+"171 : @temp9 = i" -> "171 : @temp9 = i" [style=dashed]
+"171 : i = i + 1"
+"171 : i = i + 1" -> "171 : i < badDocumentListSize"
+"171 : i = i + 1" -> "171 : i = i + 1"
+"171 : i = i + 1" -> "171 : @temp9 = i"
+"171 : i = i + 1" -> "171 : i = i + 1" [style=dashed]
+}

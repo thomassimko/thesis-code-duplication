@@ -1,0 +1,16 @@
+digraph G {
+"6 : this.next = null"
+"13 : oneDollar = getDollars()"
+"13 : oneDollar = getDollars()" -> "17 : oneDollar - twoDollar < 0 || oneDollar - twoDollar > 0"
+"13 : oneDollar = getDollars()" -> "19 : oneDollar - twoDollar"
+"14 : twoDollar = getDollars()"
+"14 : twoDollar = getDollars()" -> "17 : oneDollar - twoDollar < 0 || oneDollar - twoDollar > 0"
+"14 : twoDollar = getDollars()" -> "19 : oneDollar - twoDollar"
+"15 : oneCents = getCents()"
+"15 : oneCents = getCents()" -> "21 : oneCents - twoCents"
+"16 : twoCents = getCents()"
+"16 : twoCents = getCents()" -> "21 : oneCents - twoCents"
+"17 : oneDollar - twoDollar < 0 || oneDollar - twoDollar > 0"
+"19 : oneDollar - twoDollar"
+"21 : oneCents - twoCents"
+}

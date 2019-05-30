@@ -1,0 +1,15 @@
+digraph G {
+"4 : this.name = null"
+"4 : this.name = null" -> "46 : ret = new ROONode(this.name, this.next, )"
+"5 : this.next = null"
+"5 : this.next = null" -> "46 : ret = new ROONode(this.name, this.next, )"
+"5 : this.next = null" -> "57 : this.next = this.next.remove(index - 1, )" [style=dashed]
+"5 : this.next = null" -> "52 : this.next = this.next.getNext()" [style=dashed]
+"44 : index == 0"
+"46 : ret = new ROONode(this.name, this.next, )"
+"49 : index == 1"
+"51 : ret = new ROONode(this.next.getName(), this.next.getNext(), )"
+"52 : this.next = this.next.getNext()"
+"57 : this.next = this.next.remove(index - 1, )"
+"59 : this"
+}

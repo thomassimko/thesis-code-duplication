@@ -1,0 +1,7 @@
+digraph G {
+"19 : this.feedDocument = null"
+"20 : this.itemList = null"
+"21 : this.sourceList = null"
+"22 : this.badSources = null"
+"32 : this.sourceList.add(src, )"
+}

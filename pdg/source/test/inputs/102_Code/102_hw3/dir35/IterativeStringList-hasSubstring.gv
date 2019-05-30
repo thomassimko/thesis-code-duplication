@@ -1,0 +1,15 @@
+digraph G {
+"8 : this.node = null"
+"8 : this.node = null" -> "283 : cur = this.node"
+"283 : cur = this.node"
+"283 : cur = this.node" -> "286 : cur != null"
+"283 : cur = this.node" -> "293 : cur = cur.getNext()" [style=dashed]
+"284 : newList = new IterativeStringList()"
+"286 : cur != null"
+"288 : contains(substring, )"
+"290 : newList.addToEnd(cur.getString(), )"
+"293 : cur = cur.getNext()"
+"293 : cur = cur.getNext()" -> "286 : cur != null"
+"293 : cur = cur.getNext()" -> "293 : cur = cur.getNext()" [style=dashed]
+"286 : cur != null"
+}

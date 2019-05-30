@@ -1,0 +1,5 @@
+digraph G {
+"6 : this.head = null"
+"6 : this.head = null" -> "111 : sizeHelper(this.head, )"
+"111 : sizeHelper(this.head, )"
+}

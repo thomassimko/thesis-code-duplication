@@ -1,0 +1,10 @@
+digraph G {
+"12 : this.listSources = null"
+"13 : this.listItems = null"
+"14 : this.listBadSources = null"
+"14 : this.listBadSources = null" -> "69 : s = this.listBadSources"
+"69 : s = this.listBadSources"
+"69 : s = this.listBadSources" -> "70 : this.listSources.remove(s, )"
+"69 : s = this.listBadSources" -> "69 : s = this.listBadSources" [style=dashed]
+"70 : this.listSources.remove(s, )"
+}

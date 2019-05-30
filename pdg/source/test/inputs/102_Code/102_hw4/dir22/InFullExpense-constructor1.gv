@@ -1,0 +1,17 @@
+digraph G {
+"7 : this.dollars = 0"
+"7 : this.dollars = 0" -> "14 : this.dollars = dollars" [style=dashed]
+"8 : this.cents = 0"
+"8 : this.cents = 0" -> "15 : this.cents = cents" [style=dashed]
+"9 : this.c = null"
+"9 : this.c = null" -> "16 : this.c = c" [style=dashed]
+"10 : this.paidTo = null"
+"10 : this.paidTo = null" -> "17 : this.paidTo = paidTo" [style=dashed]
+"11 : this.category = null"
+"11 : this.category = null" -> "18 : this.category = category" [style=dashed]
+"14 : this.dollars = dollars"
+"15 : this.cents = cents"
+"16 : this.c = c"
+"17 : this.paidTo = paidTo"
+"18 : this.category = category"
+}

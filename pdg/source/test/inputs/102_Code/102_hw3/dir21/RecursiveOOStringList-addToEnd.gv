@@ -1,0 +1,7 @@
+digraph G {
+"2 : this.head = null"
+"2 : this.head = null" -> "9 : this.head = new ROONode(element, )" [style=dashed]
+"8 : this.head.size() == 0"
+"9 : this.head = new ROONode(element, )"
+"12 : this.head.addToEnd(element, )"
+}

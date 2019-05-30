@@ -1,0 +1,8 @@
+digraph G {
+"4 : this.cur = null"
+"4 : this.head = null"
+"4 : this.head = null" -> "212 : newList.changeHead(toUpperCaseHelper(this.head, ), )"
+"211 : newList = new RecursiveIOStringList()"
+"211 : newList = new RecursiveIOStringList()" -> "212 : newList.changeHead(toUpperCaseHelper(this.head, ), )"
+"212 : newList.changeHead(toUpperCaseHelper(this.head, ), )"
+}

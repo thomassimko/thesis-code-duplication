@@ -1,0 +1,23 @@
+digraph G {
+"6 : this.head = null"
+"6 : this.head = null" -> "122 : cur = this.head"
+"121 : i = 0"
+"121 : i = 0" -> "123 : i = 0" [style=dashed]
+"122 : cur = this.head"
+"122 : cur = this.head" -> "123 : cur != null"
+"122 : cur = this.head" -> "125 : cur = cur.getNext()" [style=dashed]
+"123 : i = 0"
+"123 : i = 0" -> "123 : i = i + 1"
+"123 : i = 0" -> "123 : @temp5 = i"
+"123 : i = 0" -> "123 : i = i + 1" [style=dashed]
+"123 : cur != null"
+"125 : cur = cur.getNext()"
+"125 : cur = cur.getNext()" -> "123 : cur != null"
+"125 : cur = cur.getNext()" -> "125 : cur = cur.getNext()" [style=dashed]
+"123 : @temp5 = i"
+"123 : @temp5 = i" -> "123 : @temp5 = i" [style=dashed]
+"123 : i = i + 1"
+"123 : i = i + 1" -> "123 : i = i + 1"
+"123 : i = i + 1" -> "123 : @temp5 = i"
+"123 : i = i + 1" -> "123 : i = i + 1" [style=dashed]
+}

@@ -1,0 +1,34 @@
+digraph G {
+"293 : size = list.size()"
+"294 : pay = null"
+"295 : target = new File(\"StoredExpenses.txt\", )"
+"296 : formatted = new SimpleDateFormat(\"MM/dd/yyyy\", )"
+"297 : System.out.println()"
+"300 : w = new PrintWriter(target, )"
+"301 : i = 0"
+"301 : i = 0" -> "301 : i = i + 1"
+"301 : i = 0" -> "301 : @temp2 = i"
+"301 : i = 0" -> "301 : i < size"
+"301 : i = 0" -> "303 : pay = list.get(i, )"
+"301 : i = 0" -> "301 : i = i + 1" [style=dashed]
+"301 : i < size"
+"303 : pay = list.get(i, )"
+"303 : pay = list.get(i, )" -> "303 : pay = list.get(i, )" [style=dashed]
+"304 : w.println(pay.getType(), )"
+"305 : w.println(formatted.format(pay.getDate(), ), )"
+"306 : w.println(pay.getCategory(), )"
+"307 : w.println(pay.getPayee(), )"
+"308 : w.println(toString(), )"
+"309 : w.println(toString(), )"
+"301 : @temp2 = i"
+"301 : @temp2 = i" -> "301 : @temp2 = i" [style=dashed]
+"301 : i = i + 1"
+"301 : i = i + 1" -> "301 : i = i + 1"
+"301 : i = i + 1" -> "301 : @temp2 = i"
+"301 : i = i + 1" -> "301 : i < size"
+"301 : i = i + 1" -> "303 : pay = list.get(i, )"
+"301 : i = i + 1" -> "301 : i = i + 1" [style=dashed]
+"311 : w.close()"
+"312 : System.out.println(\"Expenses Saved\", )"
+"313 : System.out.println()"
+}

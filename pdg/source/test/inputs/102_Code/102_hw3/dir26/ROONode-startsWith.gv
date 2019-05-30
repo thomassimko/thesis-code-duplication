@@ -1,0 +1,8 @@
+digraph G {
+"4 : this.value = null"
+"4 : this.value = null" -> "86 : new ROONode(this.value, this.next.startsWith(prefix, ), )"
+"5 : this.next = null"
+"85 : this.value.startsWith(prefix, )"
+"86 : new ROONode(this.value, this.next.startsWith(prefix, ), )"
+"87 : this.next.startsWith(prefix, )"
+}

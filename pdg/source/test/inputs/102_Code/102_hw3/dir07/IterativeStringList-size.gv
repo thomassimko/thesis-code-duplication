@@ -1,0 +1,22 @@
+digraph G {
+"7 : this.head = null"
+"7 : this.head = null" -> "157 : cur = this.head"
+"157 : cur = this.head"
+"157 : cur = this.head" -> "160 : cur != null"
+"157 : cur = this.head" -> "163 : cur = cur.getNext()" [style=dashed]
+"158 : count = 0"
+"158 : count = 0" -> "162 : count = count + 1"
+"158 : count = 0" -> "162 : @temp5 = count"
+"158 : count = 0" -> "162 : count = count + 1" [style=dashed]
+"160 : cur != null"
+"162 : @temp5 = count"
+"162 : @temp5 = count" -> "162 : @temp5 = count" [style=dashed]
+"162 : count = count + 1"
+"162 : count = count + 1" -> "162 : count = count + 1"
+"162 : count = count + 1" -> "162 : @temp5 = count"
+"162 : count = count + 1" -> "162 : count = count + 1" [style=dashed]
+"163 : cur = cur.getNext()"
+"163 : cur = cur.getNext()" -> "160 : cur != null"
+"163 : cur = cur.getNext()" -> "163 : cur = cur.getNext()" [style=dashed]
+"160 : cur != null"
+}

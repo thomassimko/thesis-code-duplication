@@ -1,0 +1,7 @@
+digraph G {
+"5 : this.head = null"
+"5 : this.head = null" -> "77 : this.head instanceof RIOEmpty"
+"77 : this.head instanceof RIOEmpty"
+"79 : new IndexOutOfBoundsException()"
+"83 : this.head.getNext()"
+}

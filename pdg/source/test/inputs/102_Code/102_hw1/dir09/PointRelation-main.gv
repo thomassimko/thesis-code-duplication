@@ -1,0 +1,15 @@
+digraph G {
+"5 : this.scan = new Scanner(System.in, )"
+"110 : pt1 = null"
+"110 : pt1 = null" -> "112 : pt1 = readPoint()" [style=dashed]
+"110 : pt2 = null"
+"110 : pt2 = null" -> "113 : pt2 = readPoint()" [style=dashed]
+"112 : pt1 = readPoint()"
+"112 : pt1 = readPoint()" -> "116 : checkSameQuadrant(pt1, pt2, )"
+"112 : pt1 = readPoint()" -> "115 : System.out.println(\"Distance between points: \" + calcDistance(pt1, pt2, ), )"
+"113 : pt2 = readPoint()"
+"113 : pt2 = readPoint()" -> "116 : checkSameQuadrant(pt1, pt2, )"
+"113 : pt2 = readPoint()" -> "115 : System.out.println(\"Distance between points: \" + calcDistance(pt1, pt2, ), )"
+"115 : System.out.println(\"Distance between points: \" + calcDistance(pt1, pt2, ), )"
+"116 : checkSameQuadrant(pt1, pt2, )"
+}

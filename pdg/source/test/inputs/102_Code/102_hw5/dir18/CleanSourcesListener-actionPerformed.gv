@@ -1,0 +1,6 @@
+digraph G {
+"8 : this.reader = null"
+"9 : this.textArea = null"
+"17 : this.textArea.setText(\"\", )"
+"18 : this.reader.removeBadSources()"
+}

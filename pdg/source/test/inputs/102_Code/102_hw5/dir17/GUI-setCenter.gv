@@ -1,0 +1,18 @@
+digraph G {
+"23 : this.topText = null"
+"24 : this.addButton = null"
+"25 : this.refreshButton = null"
+"26 : this.badSourcesButton = null"
+"27 : this.cleanSourcesButton = null"
+"28 : this.rssItemText = null"
+"29 : this.sourcesText = null"
+"31 : this.reader = null"
+"32 : this.gui = this"
+"148 : cntr = new JPanel()"
+"150 : itemPanel = setCenterPanel(\"RSS Item\", 30, )"
+"150 : itemPanel = setCenterPanel(\"RSS Item\", 30, )" -> "153 : cntr.add(itemPanel, )"
+"151 : sourcePanel = setCenterPanel(\"Sources\", 7, )"
+"151 : sourcePanel = setCenterPanel(\"Sources\", 7, )" -> "154 : cntr.add(sourcePanel, )"
+"153 : cntr.add(itemPanel, )"
+"154 : cntr.add(sourcePanel, )"
+}

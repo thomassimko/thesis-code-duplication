@@ -1,0 +1,12 @@
+digraph G {
+"9 : this.title = null"
+"10 : this.date = null"
+"10 : this.date = null" -> "40 : this.date != null"
+"11 : this.link = null"
+"38 : s = null"
+"38 : s = null" -> "42 : s = form.format(this.date.getTime(), )" [style=dashed]
+"39 : form = new SimpleDateFormat(\"MM/dd/yyyy HH:mm\", )"
+"40 : this.date != null"
+"42 : s = form.format(this.date.getTime(), )"
+"45 : null"
+}

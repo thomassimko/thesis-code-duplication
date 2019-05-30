@@ -1,0 +1,22 @@
+digraph G {
+"168 : quad = 1"
+"168 : quad = 1" -> "174 : @temp1 = quad"
+"168 : quad = 1" -> "174 : quad = quad + 1"
+"168 : quad = 1" -> "174 : quad = quad + 1" [style=dashed]
+"169 : angle = pt.angle()"
+"169 : angle = pt.angle()" -> "171 : angle > 90"
+"169 : angle = pt.angle()" -> "173 : angle = angle - 90"
+"169 : angle = pt.angle()" -> "173 : angle = angle - 90" [style=dashed]
+"171 : angle > 90"
+"173 : angle = angle - 90"
+"173 : angle = angle - 90" -> "173 : angle = angle - 90"
+"173 : angle = angle - 90" -> "171 : angle > 90"
+"173 : angle = angle - 90" -> "173 : angle = angle - 90" [style=dashed]
+"174 : @temp1 = quad"
+"174 : @temp1 = quad" -> "174 : @temp1 = quad" [style=dashed]
+"174 : quad = quad + 1"
+"174 : quad = quad + 1" -> "174 : @temp1 = quad"
+"174 : quad = quad + 1" -> "174 : quad = quad + 1"
+"174 : quad = quad + 1" -> "174 : quad = quad + 1" [style=dashed]
+"171 : angle > 90"
+}

@@ -1,0 +1,10 @@
+digraph G {
+"4 : this.first = new RIOEmpty()"
+"4 : this.first = new RIOEmpty()" -> "15 : this.first instanceof RIOEmpty"
+"4 : this.first = new RIOEmpty()" -> "16 : this.first = new RIONode(element, this.first, )"
+"4 : this.first = new RIOEmpty()" -> "18 : mAddToEnd(this.first, element, )"
+"4 : this.first = new RIOEmpty()" -> "16 : this.first = new RIONode(element, this.first, )" [style=dashed]
+"15 : this.first instanceof RIOEmpty"
+"16 : this.first = new RIONode(element, this.first, )"
+"18 : mAddToEnd(this.first, element, )"
+}

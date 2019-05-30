@@ -1,0 +1,14 @@
+digraph G {
+"4 : this.date = null"
+"4 : this.date = null" -> "9 : this.date = date2" [style=dashed]
+"5 : this.amount = 0"
+"5 : this.amount = 0" -> "10 : this.amount = a" [style=dashed]
+"6 : this.name = null"
+"6 : this.name = null" -> "11 : this.name = name" [style=dashed]
+"6 : this.category = null"
+"6 : this.category = null" -> "12 : this.category = c" [style=dashed]
+"9 : this.date = date2"
+"10 : this.amount = a"
+"11 : this.name = name"
+"12 : this.category = c"
+}

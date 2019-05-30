@@ -1,0 +1,17 @@
+digraph G {
+"2 : this.head = null"
+"2 : this.head = null" -> "68 : this.iter = this.head"
+"2 : this.head = null" -> "60 : this.iter = this.head"
+"2 : this.iter = null"
+"2 : this.iter = null" -> "68 : this.iter = this.head" [style=dashed]
+"2 : this.iter = null" -> "60 : this.iter = this.head" [style=dashed]
+"2 : this.iterPrev = null"
+"59 : equals(element, )"
+"60 : this.iter = this.head"
+"61 : 1"
+"63 : this.iter.next() instanceof RIOEmpty"
+"64 : this.iter.next()"
+"65 : indexOf(element, ) + 1"
+"68 : this.iter = this.head"
+"69 : new IndexOutOfBoundsException()"
+}

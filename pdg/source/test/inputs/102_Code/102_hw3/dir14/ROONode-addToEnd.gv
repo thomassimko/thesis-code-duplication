@@ -1,0 +1,7 @@
+digraph G {
+"5 : this.element = null"
+"6 : this.next = null"
+"6 : this.next = null" -> "31 : this.next = this.next.addToEnd(element, )" [style=dashed]
+"31 : this.next = this.next.addToEnd(element, )"
+"32 : this"
+}

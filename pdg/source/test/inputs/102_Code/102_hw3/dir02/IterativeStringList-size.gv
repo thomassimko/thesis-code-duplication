@@ -1,0 +1,36 @@
+digraph G {
+"5 : this.head = null"
+"5 : this.head = null" -> "94 : cur = this.head"
+"94 : cur = this.head"
+"94 : cur = this.head" -> "99 : cur = cur.getNext()" [style=dashed]
+"95 : flag = true"
+"95 : flag = true" -> "102 : flag = false" [style=dashed]
+"96 : sizeCount = 0"
+"96 : sizeCount = 0" -> "103 : @temp6 = sizeCount"
+"96 : sizeCount = 0" -> "103 : sizeCount = sizeCount - 1"
+"96 : sizeCount = 0" -> "105 : sizeCount = sizeCount + 1"
+"96 : sizeCount = 0" -> "105 : @temp7 = sizeCount"
+"96 : sizeCount = 0" -> "103 : sizeCount = sizeCount - 1" [style=dashed]
+"96 : sizeCount = 0" -> "105 : sizeCount = sizeCount + 1" [style=dashed]
+"99 : cur = cur.getNext()"
+"99 : cur = cur.getNext()" -> "100 : cur == null"
+"99 : cur = cur.getNext()" -> "99 : cur = cur.getNext()" [style=dashed]
+"100 : cur == null"
+"102 : flag = false"
+"102 : flag = false" -> "102 : flag = false" [style=dashed]
+"103 : @temp6 = sizeCount"
+"103 : @temp6 = sizeCount" -> "103 : @temp6 = sizeCount" [style=dashed]
+"103 : sizeCount = sizeCount - 1"
+"103 : sizeCount = sizeCount - 1" -> "105 : sizeCount = sizeCount + 1"
+"103 : sizeCount = sizeCount - 1" -> "105 : @temp7 = sizeCount"
+"103 : sizeCount = sizeCount - 1" -> "105 : sizeCount = sizeCount + 1" [style=dashed]
+"105 : @temp7 = sizeCount"
+"105 : @temp7 = sizeCount" -> "105 : @temp7 = sizeCount" [style=dashed]
+"105 : sizeCount = sizeCount + 1"
+"105 : sizeCount = sizeCount + 1" -> "103 : @temp6 = sizeCount"
+"105 : sizeCount = sizeCount + 1" -> "103 : sizeCount = sizeCount - 1"
+"105 : sizeCount = sizeCount + 1" -> "105 : sizeCount = sizeCount + 1"
+"105 : sizeCount = sizeCount + 1" -> "105 : @temp7 = sizeCount"
+"105 : sizeCount = sizeCount + 1" -> "103 : sizeCount = sizeCount - 1" [style=dashed]
+"105 : sizeCount = sizeCount + 1" -> "105 : sizeCount = sizeCount + 1" [style=dashed]
+}

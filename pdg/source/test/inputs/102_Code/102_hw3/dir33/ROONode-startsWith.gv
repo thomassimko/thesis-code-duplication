@@ -1,0 +1,7 @@
+digraph G {
+"5 : this.val = null"
+"6 : this.next = null"
+"120 : startsWith(prefix, )"
+"122 : n = new ROONode(getValue(), startsWith(prefix, ), )"
+"125 : startsWith(prefix, )"
+}

@@ -1,0 +1,25 @@
+digraph G {
+"8 : this.r = null"
+"9 : this.t = null"
+"10 : this.i = null"
+"10 : this.s = null"
+"11 : this.list = null"
+"11 : this.list = null" -> "29 : this.list = this.r.retrieveFeedItems()" [style=dashed]
+"12 : this.sources = null"
+"12 : this.sources = null" -> "30 : this.sources = this.r.getSources()" [style=dashed]
+"24 : this.r.addSource(this.t.getText(), )"
+"25 : this.t.setText(\"\", )"
+"26 : this.i.setText(\"\", )"
+"27 : this.s.setText(\"\", )"
+"29 : this.list = this.r.retrieveFeedItems()"
+"29 : this.list = this.r.retrieveFeedItems()" -> "32 : m = this.list"
+"30 : this.sources = this.r.getSources()"
+"30 : this.sources = this.r.getSources()" -> "37 : k = this.sources"
+"32 : m = this.list"
+"32 : m = this.list" -> "32 : m = this.list" [style=dashed]
+"34 : this.i.insert(m.toString(), 0, )"
+"37 : k = this.sources"
+"37 : k = this.sources" -> "39 : this.s.append(k + \"\n\", )"
+"37 : k = this.sources" -> "37 : k = this.sources" [style=dashed]
+"39 : this.s.append(k + \"\n\", )"
+}

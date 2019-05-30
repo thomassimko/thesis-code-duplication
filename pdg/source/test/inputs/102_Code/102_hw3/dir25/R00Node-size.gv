@@ -1,0 +1,9 @@
+digraph G {
+"5 : this.value = null"
+"6 : this.next = null"
+"96 : count = 0"
+"96 : count = 0" -> "97 : count = this.next.size()" [style=dashed]
+"97 : count = this.next.size()"
+"97 : count = this.next.size()" -> "98 : count + 1"
+"98 : count + 1"
+}
